@@ -1,5 +1,5 @@
 ---
-title: 為什麼要選擇 am 我自動登入？
+title: 為什麼我會自動登入？
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -12,43 +12,43 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: 94f6fa41-0570-4668-b2fe-d51ed177716c
-description: 了解如何自動登入 Microsoft Search 可以幫助您快速和輕鬆尋找 [工作結果
+description: 了解自動登入 Microsoft Search 如何幫助您輕鬆快速地找出工作結果
 ms.openlocfilehash: 999341f10c0b75009246451f7e48f9fc4706d86a
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29380063"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "34425608"
 ---
-# <a name="why-am-i-automatically-signed-in"></a>為什麼要選擇 am 我自動登入？
+# <a name="why-am-i-automatically-signed-in"></a>為什麼我會自動登入？
 
-若要可協助您尋找快速又輕鬆地所需的資訊，您的組織會設定為自動簽署您在 Microsoft 搜尋。
+為了協助您輕鬆快速地找出需要的資訊，您的組織已設定自動將您登入 Microsoft Search。
   
-## <a name="about-microsoft-search"></a>關於 Microsoft 搜尋
+## <a name="about-microsoft-search"></a>關於 Microsoft Search
 
-Microsoft Search 會傳回您需要從學校或工作場所 Bing 到的內容。了解更多[有關 Microsoft 搜尋](about-microsoft-search.md)。
+Microsoft Search 可以將您學校或公司所需的內容帶入 Bing。 深入了解[關於 Microsoft Search](about-microsoft-search.md)。
   
-## <a name="privacy-and-security"></a>隱私及安全性
+## <a name="privacy-and-security"></a>隱私權和安全性
 
-與 Microsoft Search 您已授與存取權的人員只會看到您共用的檔案。其他結果 like org 圖表和人員資訊給其他人只出現在您的組織。
+使用 Microsoft Search 時，只有您授與存取權的人會看到您共用的檔案。 其他結果 (例如組織圖和人員資訊) 只會對組織的其他人顯示。
   
-Microsoft Search 可協助保護您的隱私權守護您搜尋歷程記錄。搜尋歷程記錄不與其他人共用的組織，即使您已登入和搜尋工作或學校相關資訊。
+Microsoft Search 可以透過保護您的搜尋記錄來協助保護您的隱私權。 即使您登入並搜尋公司或學校的相關資訊，您的搜尋記錄也不會與組織的其他人共用。
   
-若要改善搜尋體驗，Bing 報告供多位使用者對組織的系統管理員的常用搜尋。只有系統管理員可以檢視此資料，它未連結至特定使用者和多個使用者具有搜尋的相同時才會出現。
+為了改善您的搜尋體驗，Bing 會向您的組織系統管理員報告多個使用者常做的搜尋。 只有系統管理員可以檢視這些資料，這些資料不會連結到特定的使用者，而且只有當多個使用者都搜尋相同內容時才會出現。
   
-為不同，每一個組織和 Microsoft 無法保證其他處理搜尋和 Microsoft Search 外的其他資料的方式。
+由於每個組織都不同，因此 Microsoft 無法保證您如何處理搜尋，以及 Microsoft Search 以外的其他資料。
   
-## <a name="sign-out-of-microsoft-search"></a>登出 Microsoft 搜尋
+## <a name="sign-out-of-microsoft-search"></a>登出 Microsoft Search
 
-您可以隨時登出 Bing： 中任何 Bing 頁的右上角，按一下在您的設定檔，然後按一下 [**登出**。
+您可以隨時登出 Bing：在 Bing 頁面的右上角，按一下您的個人資料，然後按一下 [登出]****。
   
-您不被登入自動一次此裝置上。如果您已登入 Microsoft Search 使用其他瀏覽器或裝置，您需要登入那裡也。 
+您在這個裝置上不會再次自動登入。 如果您曾經使用其他瀏覽器或裝置登入 Microsoft Search，就必須在那邊登出。 
   
-當您正在登出時、 搜尋不會收到額外的保護。他們被視為標準 Bing 取用者搜尋，而且由[Microsoft 隱私權陳述式](https://privacy.microsoft.com/en-us/privacystatement)。
+登出之後，您的搜尋不會獲得額外的保護。 這些搜尋會被視為標準的 Bing 消費者搜尋，由 [Microsoft 隱私權聲明](https://privacy.microsoft.com/en-us/privacystatement)控管。
   
-## <a name="view-your-search-history"></a>檢視搜尋歷程記錄
+## <a name="view-your-search-history"></a>檢視搜尋記錄
 
-若要查看您 Microsoft Search 歷程記錄過去 30 天內，前往您[搜尋歷程記錄](https://ssl.bing.com/profile/history)，並在 [Microsoft Bing 搜尋下，按一下 [**匯出**]。您的歷程記錄將會自動清除搜尋超過 30 天。
+若要查看您過去 30 天內的 Microsoft Search 記錄，請移至您的[搜尋記錄](https://ssl.bing.com/profile/history)，然後在 Bing 中的 Microsoft Search 下，按一下 [匯出]****。 超過 30 天的記錄會自動從您的記錄清除。
 
   
 

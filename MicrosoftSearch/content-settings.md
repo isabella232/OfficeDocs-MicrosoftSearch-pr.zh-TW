@@ -7,54 +7,57 @@ ms.date: 12/18/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: d1432d64-7a97-4b1b-a99f-11291814d361
-description: 新增標誌、 公司名稱及其他 Microsoft 搜尋工作結果
-ms.openlocfilehash: 64b01d9d4d3a20d7ec2280b85a73a6ea8c5041b8
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+description: 新增標誌、公司名稱和更多項目到 Microsoft Search 工作結果
+ms.openlocfilehash: 3172d7739e280e964899c24b913735feb4a25ddd
+ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29380051"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "34425646"
 ---
 # <a name="content-settings"></a>內容設定
 
-與 Microsoft Search，您可以確保熟悉的外觀與風格來自組織，例如 SharePoint、 OneDrive for Business 或您的公司內部網路內的內容來源的結果。 
+> [!IMPORTANT]
+> Bing 設定中的 Microsoft Search 現在可以在 Microsoft 365 管理中心中使用。 從系統管理中心的[指派搜尋系統管理員](https://docs.microsoft.com/zh-TW/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor)開始。
+    
+有了 Microsoft Search，您就能確保從組織內部的內容資源 (例如 SharePoint、商務用 OneDrive 或貴公司內部網路) 中提取的結果擁有熟悉的外觀與風格。 
   
 - 組織名稱
     
-    在大多數情況下 Microsoft 搜尋會使用 Microsoft 365 系統管理中心中所定義的組織名稱。若要變更名稱出現在您工作結果，請輸入一個新。它可以是最多 50 個字元。
+    大多數情況下，Microsoft Search 會使用 Office 365 系統管理中心中定義的組織名稱。 若要變更出現在工作結果上的名稱，請輸入一個新的名稱。 長度最多可達 50 個字元。
     
 - 標誌
     
-    您的標誌會出現在您的組織的所有 Microsoft 搜尋結果。標誌必須為 PNG 或 GIF 檔案。檔案不應該超過 1 MB 的大小或是大於 48px 的高度。圖像會調整以 48px 維持長寬比。較大的影像可能無法正確顯示。
+    您的標誌會出現在貴組織的所有 Microsoft Search 結果中。 標誌必須為 PNG 或 GIF 檔案。 檔案的大小不應該超過 1 MB，或者高度不應該大於 48px。 系統會將影像調整成 48px 以維持外觀比例。 大小較大的影像可能無法正確顯示。
     
--      [色彩]
+- 色彩
     
-    使用調色盤選取您的組織工作結果的強調文字色彩。
+    請使用調色盤為貴組織的工作結果選取輔色。
     
 - 意見反應電子郵件地址
     
-    Microsoft 搜尋結果包含建議及註解從使用者的意見反應] 的連結。在 [意見反應電子郵件地址] 欄位中，輸入 [地址應該以傳送意見反應。
+    Microsoft Search 結果包括一個能夠讓使用者提出建議與意見的意見反應連結。 在 [意見反應電子郵件地址] 欄位中，輸入要傳送意見反應的地址。
     
 - 查詢建議
     
-    建議為新的 Microsoft Search 使用者嘗試搜尋。輸入最多可以有五個範例搜尋可能傳回的所有使用者的結果。
+    為新的 Microsoft Search 使用者建議可以嘗試的查詢。 輸入最多五個應該能對所有使用者傳回結果的範例搜尋。
     
-- 商務結果
+- 企業結果
     
-    決定您是否要顯示每次使用者搜尋的工作結果。
+    決定是否要在使用者每次搜尋時顯示工作結果。
     
 - 交談結果
     
-    當您的使用者搜尋包含相關的公用或從 Microsoft 小組或 Microsoft Yammer 群組交談結果。
+    包括當您的使用者搜尋時，來自 Microsoft Teams 或 Microsoft Yammer 大眾交談或群組交談的相關結果。
     
-在 Microsoft 搜尋系統入口網站中設定這些設定，只要按一下功能窗格中的內容設定。
+若要在 Microsoft Search 系統管理入口網站進行這些設定，請直接按一下瀏覽窗格中的 [內容設定]。
   
-僅限 Microsoft 365 全域管理員或 Microsoft 搜尋系統管理員可以變更內容的設定。Microsoft Search editors 可以檢視但無法變更。
+只有 Microsoft 365 全域系統管理員或 Microsoft Search 系統管理員可以變更內容設定。 Microsoft Search 編輯者可以檢視，但無法變更。
 
 
