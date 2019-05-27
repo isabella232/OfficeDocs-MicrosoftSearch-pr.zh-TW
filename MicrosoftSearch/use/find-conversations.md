@@ -1,5 +1,5 @@
 ---
-title: "Find conversations"
+title: 尋找交談
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -12,38 +12,43 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: ecd31803-0b32-4ba3-8bb8-a0d1dfb8b856
-description: "Use Microsoft Search to find Teams and Yammer conversations and the details that you'll see"
+description: 使用 Microsoft Search 來尋找 Teams 和 Yammer 交談，以及您可以查看的詳細資料。
+ms.openlocfilehash: b339242fbafc4cff0f6fe5960cb90b0d05493105
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "34425583"
 ---
+# <a name="find-conversations"></a><span data-ttu-id="ef0a7-103">尋找交談</span><span class="sxs-lookup"><span data-stu-id="ef0a7-103">Find conversations</span></span>
 
-# Find conversations
-
-Search for your own private Microsoft Teams or Microsoft Yammer conversations or conversations between co-workers that you have access to.
+<span data-ttu-id="ef0a7-104">搜尋您自己的私人 Microsoft Teams 或 Microsoft Yammer 交談，或是您有權存取的同事間交談。</span><span class="sxs-lookup"><span data-stu-id="ef0a7-104">Search for your own private Microsoft Teams or Microsoft Yammer conversations or conversations between co-workers that you have access to.</span></span>
   
-Conversation results include:
+<span data-ttu-id="ef0a7-105">交談結果包括：</span><span class="sxs-lookup"><span data-stu-id="ef0a7-105">Conversation results include:</span></span>
   
-- The name of person who sent it
+- <span data-ttu-id="ef0a7-106">傳送交談的人員姓名</span><span class="sxs-lookup"><span data-stu-id="ef0a7-106">The name of person who sent it</span></span>
     
-- If it's a Teams or Yammer conversation
+- <span data-ttu-id="ef0a7-107">該交談是否為 Teams 或 Yammer 交談</span><span class="sxs-lookup"><span data-stu-id="ef0a7-107">If it's a Teams or Yammer conversation</span></span>
     
-- A snippet of the message
+- <span data-ttu-id="ef0a7-108">訊息的程式碼片段</span><span class="sxs-lookup"><span data-stu-id="ef0a7-108">A snippet of the message</span></span>
     
-- The conversation date
+- <span data-ttu-id="ef0a7-109">交談日期</span><span class="sxs-lookup"><span data-stu-id="ef0a7-109">The conversation date</span></span>
     
-- Attachments that you have access to
+- <span data-ttu-id="ef0a7-110">您有權存取的附件</span><span class="sxs-lookup"><span data-stu-id="ef0a7-110">Make sure that you have access to the following:</span></span>
     
-The top 30 conversation results appear in work results. For more information or results, just click the message. In work results, Yammer conversations are sorted by date, but in the Yammer client, they're sort by relevancy.
+<span data-ttu-id="ef0a7-111">出現在工作結果清單中最上面的 30 個交談。</span><span class="sxs-lookup"><span data-stu-id="ef0a7-111">The top 30 conversation results appear in work results.</span></span> <span data-ttu-id="ef0a7-112">如需詳細資訊或更多結果，請按一下該訊息。</span><span class="sxs-lookup"><span data-stu-id="ef0a7-112">For more information or results, just click the message.</span></span> <span data-ttu-id="ef0a7-113">在工作結果中，Yammer 交談會依據日期排序，但在 Yammer 用戶端中則會依據相關性排序。</span><span class="sxs-lookup"><span data-stu-id="ef0a7-113">In work results, Yammer conversations are sorted by date, but in the Yammer client, they're sort by relevancy.</span></span>
   
-You won't see conversation results if your organization doesn't use Teams or Yammer or your IT department doesn't turn on these results.
+<span data-ttu-id="ef0a7-114">如果貴組織並未使用 Teams 或 Yammer，或是您的 IT 部門未開啟這些結果，您就不會看到交談結果。</span><span class="sxs-lookup"><span data-stu-id="ef0a7-114">You won't see conversation results if your organization doesn't use Teams or Yammer or your IT department doesn't turn on these results.</span></span>
   
-1. Sign in to your work or school account on Bing
+1. <span data-ttu-id="ef0a7-115">在 Bing 上登入您的公司或學校帳戶</span><span class="sxs-lookup"><span data-stu-id="ef0a7-115">Sign in to Office 365 with your work or school account.</span></span>
     
-2. Search for a topic or a person's name and click the **Conversations** tab 
+2. <span data-ttu-id="ef0a7-116">搜尋主題或人員的姓名，並按一下 [交談]\*\*\*\* 索引標籤</span><span class="sxs-lookup"><span data-stu-id="ef0a7-116">Search for a topic or a person's name and click the **Conversations** tab</span></span> 
     
-    For example, 'send me the deck' or 'Amy Turner.'
+    <span data-ttu-id="ef0a7-117">例如，您可以輸入「傳簡報給我」或「崔艾玫」。</span><span class="sxs-lookup"><span data-stu-id="ef0a7-117">For example, 'send me the deck' or 'Amy Turner.'</span></span>
     
-3. Conversations appear at the top of the results page
+3. <span data-ttu-id="ef0a7-118">交談會出現在結果頁面的最頂端</span><span class="sxs-lookup"><span data-stu-id="ef0a7-118">Conversations appear at the top of the results page</span></span>
     
-    Other web results appear under it. They aren't specific to your organization.
+    <span data-ttu-id="ef0a7-119">其他網頁結果會出現在它的底下。</span><span class="sxs-lookup"><span data-stu-id="ef0a7-119">Other web results appear under it.</span></span> <span data-ttu-id="ef0a7-120">這些不是組織特定的結果。</span><span class="sxs-lookup"><span data-stu-id="ef0a7-120">They aren't specific to your organization.</span></span>
     
 
 
