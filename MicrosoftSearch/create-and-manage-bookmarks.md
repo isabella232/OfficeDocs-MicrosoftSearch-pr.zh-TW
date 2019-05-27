@@ -1,5 +1,5 @@
 ---
-title: 建立及管理書籤
+title: 建立和管理書籤
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,67 +13,70 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5479dc34-3de0-41c5-94a7-ba87069e6b43
-description: 您可新增及建立書籤 Microsoft 搜尋工作結果的方式之所有概觀 （英文)
-ms.openlocfilehash: 306a7cb3b278556454c3050926fed93f2a6929ad
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+description: 您可以用來新增和建立 Microsoft Search 工作結果書籤所有方式的概觀
+ms.openlocfilehash: a7243d43eb5132c8096115852a4ebd8bd4dc3305
+ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29380071"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "34425638"
 ---
-# <a name="create-and-manage-bookmarks"></a>建立及管理書籤
+# <a name="create-and-manage-bookmarks"></a>建立和管理書籤
 
+> [!IMPORTANT]
+> Bing 設定中的 Microsoft Search 現在可以在 Microsoft 365 管理中心中使用。 從系統管理中心的[指派搜尋系統管理員](https://docs.microsoft.com/zh-TW/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor)開始。
+    
 ## <a name="create-bookmarks"></a>建立書籤
 
-書籤可協助您提升使用者的工作相關查詢的最佳的可能結果。多個書籤發佈的多個值和好處您新增的使用者。
+書籤能協助宣傳使用者工作相關查詢的最有可能的結果。 您發佈越多書籤，提供給使用者的價值與優點就越多。
   
 - [建立書籤](create-bookmarks.md)
     
-    新增個別的書籤。
+    新增個別書籤。
     
 - [發佈預設書籤](publish-default-bookmarks.md)
     
-    檢閱並新增解決常見的搜尋的建議書籤。
+    檢閱並新增與常見搜尋有關的建議書籤。
     
-- [匯入 SharePoint 升級的結果與查詢排行榜](import-sharepoint-promoted-results-and-top-queries.md)
+- [匯入 SharePoint 進階結果與熱門查詢](import-sharepoint-promoted-results-and-top-queries.md)
     
-    利用使用者的查詢和現有的首選結果來建立建議書籤。
+    利用使用者的查詢與現有首選結果以建立建議書籤。
     
 - [大量建立書籤](bulk-create-bookmarks.md)
     
-    建立.csv 檔案中的書籤和大量匯入它們。
+    在 .csv 檔案中建立書籤，並大量匯入。
     
 - [整合 PowerApps](integrate-powerapps.md)
     
-    將商務應用程式新增至您的書籤。
+    在您的書籤中新增商務 App。
     
 ## <a name="manage-bookmarks"></a>管理書籤
 
-使用書籤狀態] 篩選工具] 和大量匯出/匯入工具來[尋找並更新書籤的內容](manage-bookmarks.md)，包括標題、 關鍵字及 Url。
+使用書籤狀態、篩選工具與大量匯出/匯入工具來[尋找並更新書籤內容](manage-bookmarks.md)，包括標題、關鍵字和 URL。
   
 ## <a name="bookmark-status"></a>書籤狀態
 
-在系統入口網站中您可以檢視其目前狀態的書籤：
+您可以在系統管理入口網站中，依據書籤的目前狀態來檢視：
   
-- 發佈 
+- 已發佈
     
-    當授權的使用者搜尋關鍵字時 Bing 搜尋結果中顯示已發佈的書籤。
+    已發佈的書籤會在授權使用者搜尋關鍵字時，出現在 Bing 搜尋結果中。
     
-- 草稿 
+- 草稿
     
-    如果書籤不是準備好要發佈，請將其儲存為草稿。草稿書籤不會出現在 Bing。
+    如果書籤尚未要發佈，您可以將它儲存為草稿。 草稿書籤不會顯示在 Bing 中。
     
-- 排程
+- 已排程
     
-    已排程的書籤會自動發佈在未來的日期。
+    已排程的書籤會自動於未來的某個日期發佈。
     
-- 已到期
+- 已過期
     
-    過期的書籤所自動移除其到期日期為基礎的已發佈內容。
+    已過期的書籤已由系統依據到期日從發佈內容中移除。
     
 - 建議
     
-    建議書籤根據使用者的意見反應。您也可以參閱 microsoft 預設建議。
+    系統會根據使用者的意見反應提出建議書籤。 您也可能會看到來自 Microsoft 的預設建議項目。
 
   
 
