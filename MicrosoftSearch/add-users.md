@@ -1,5 +1,5 @@
 ---
-title: Add users
+title: 管理使用者
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -7,62 +7,41 @@ ms.date: 09/12/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: 41723aec-435c-400e-a818-6b1e8a1324c0
-description: 將權限與角色指派給系統管理員、 編輯器、 和 Microsoft 搜尋系統入口網站中的使用者
-ms.openlocfilehash: a5bbf35748a8720376650acbb4116934abd5ebea
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+description: 指派權限和角色給 Microsoft Search 系統管理員和編輯器
+ms.openlocfilehash: c9208d4d510f6f7ae6873197175e6a65bbbd42a7
+ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29380045"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "34425639"
 ---
-# <a name="add-users"></a>Add users
+# <a name="manage-users"></a>管理使用者
 
-啟用 Microsoft 搜尋整個組織或新增安全性群組，以及您的 IT 部門會新增 Microsoft Search 使用者最快的方式。
+> [!IMPORTANT]
+> Bing 設定中的 Microsoft Search 現在可以在 Microsoft 365 管理中心中使用。 從系統管理中心的 [指派搜尋系統管理員](https://docs.microsoft.com/zh-TW/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) 開始。
+    
+編輯者可以新增內容，但無法變更設定
   
-## <a name="add-admins-and-editors"></a>新增系統管理員和編輯者
+## <a name="add-admins-and-editors"></a>新增系統管理員與編輯者
 
-1. 移至 Microsoft 搜尋系統入口網站
+1. 移至 Microsoft Search 系統管理入口網站
     
-2. 在功能窗格] 中按一下 [**使用者&amp;權限**
+2. 在瀏覽窗格中，按一下 **使用者&amp;權限**
     
-3. 頁面頂端按一下 [**新增管理員] 或 [編輯器**
+3. 按一下頁面頂端的 **新增系統管理員或編輯工具**
     
-4. 在 [**其他系統管理員**] 方塊中搜尋人員或您想要授與系統管理員權限和將結果從加以選取的群組 
+4. 在 **其他系統管理員** 方塊中，搜尋您要給予系統管理員權限的人員或群組，然後從結果中選取結果他們 
     
-5. 在 [**編輯者**] 方塊中搜尋人員或您想要授與編輯器權限和將結果從加以選取的群組 
+5. 在 **編輯器** 方塊中，搜尋您要給予編輯者權限的人員或群組，然後從結果中選取結果他們 
     
-6. 按一下 [儲存]****
+6. 按一下 **儲存**
     
-## <a name="add-users"></a>Add users
+## <a name="add-users"></a>新增使用者
 
-根據預設，在組織中所有人可以存取 Microsoft Search 工作結果。如果您想要限制在較小的群組的存取，請考慮這些選項來找出使用者：
-  
-- 合作夥伴與組織內業務發起人
-    
-- 識別一群早期採用者
-    
-- 識別執行大量的企業搜尋的群組
-    
-- 識別其他的地理位置，包括國際中的使用者
-    
-若要啟用的一或多個使用者的 Microsoft Search：
-  
-1. 移至 Microsoft 搜尋系統入口網站
-    
-2. 在功能窗格] 中按一下 [**使用者&amp;權限**
-    
-3. 頁面頂端按一下 [**管理 preview 存取**
-    
-4. 清除 [**將您的組織中的所有人**] 選項 
-    
-5. [**只允許這些使用者**] 方塊中搜尋使用者或是您想要新增的群組 
-    
-6. 按一下 [儲存]****
-    
-兩個小時後他們正在預覽存取登入 Bing 在其工作帳戶的使用者會看到相關的工作時其搜尋結果。如需 Bing 登入資訊，請參閱[登入 Microsoft 搜尋](use/sign-in.md)。
+根據預設，您組織中的每個人都可以使用 Microsoft Search。 若要修改存取，請使用 [Azure Active Directory 中的條件式存取](https://docs.microsoft.com/zh-TW/azure/active-directory/conditional-access/overview)。
