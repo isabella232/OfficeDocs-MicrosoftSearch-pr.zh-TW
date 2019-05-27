@@ -7,25 +7,28 @@ ms.date: 10/25/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: 8ad58820-69e0-4ee0-88a7-d207ffa790b7
-description: 新增這些 Url 和網域防火牆以允許清單，讓使用者輕鬆地存取 Microsoft 搜尋
-ms.openlocfilehash: dcbad8130ca65fe65fb5077484733c8b2da185d7
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+description: 新增這些 URL 和網域到您的防火牆允許清單中讓使用者輕鬆地取得 Microsoft Search
+ms.openlocfilehash: c5888568ad1518222d4556998ad214845ae50251
+ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29380040"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "34425643"
 ---
 # <a name="manage-network-connections"></a>管理網路連線
 
-若要確定您和使用者可以連線到 Microsoft Search 端點，新增這些 Url 到您的防火牆允許清單。
+> [!IMPORTANT]
+> Bing 設定中的 Microsoft Search 現在可以在 Microsoft 365 管理中心中使用。 從系統管理中心的 [指派搜尋系統管理員](https://docs.microsoft.com/zh-TW/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor)開始。
+    
+為了確保您和您的使用者能夠連線到 Microsoft Search 端點，請將這些 URL 新增到您的防火牆允許清單。
   
-## <a name="for-the-microsoft-search-admin-portal"></a>Microsoft 搜尋系統入口網站：
+## <a name="for-the-microsoft-search-admin-portal"></a>適用於 Microsoft Search 管理入口網站：
 
 - `www.bingatwork.com`
     
@@ -39,7 +42,7 @@ ms.locfileid: "29380040"
     
 - `\*.bingforbusiness.com`
     
-## <a name="for-microsoft-search-in-bing"></a>Microsoft Bing 搜尋：
+## <a name="for-microsoft-search-in-bing"></a>適用於 Bing 中的 Microsoft Search：
 
 - `business.bing.com`
     
