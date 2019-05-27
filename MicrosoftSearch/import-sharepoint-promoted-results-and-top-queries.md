@@ -1,5 +1,5 @@
 ---
-title: 匯入 SharePoint 升級的結果與查詢排行榜
+title: 匯入 SharePoint 提升的結果與熱門查詢
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,33 +13,36 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 3d2a1498-174e-4214-9cf1-8b58cce5a872
-description: 用以從 SharePoint 搜尋查詢建立 Microsoft Search 工作結果
-ms.openlocfilehash: f4fa4354fed667800c1cdcf63c86f59d736c342a
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+description: 使用 SharePoint 的搜尋查詢以建立 Microsoft Search 工作結果
+ms.openlocfilehash: 6e55e2000792bdb576a18a0efeb353dc3ea13605
+ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29380061"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "34425667"
 ---
-# <a name="import-sharepoint-promoted-results-and-top-queries"></a>匯入 SharePoint 升級的結果與查詢排行榜
+# <a name="import-sharepoint-promoted-results-and-top-queries"></a>匯入 SharePoint 提升的結果與熱門查詢
 
-利用使用者的查詢與您已建立在 SharePoint 中的首選，Microsoft Search 包含兩個工具來匯入此為建議的書籤的資訊： 
+> [!IMPORTANT]
+> Bing 中的 Microsoft Search 設定現在可在 Microsoft 365 系統管理中心取得。 從在系統管理中心[指派搜尋系統管理員](https://docs.microsoft.com/zh-TW/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor)開始。
+    
+為了有效調控使用者的查詢與您在 SharePoint 中建立的首選，Microsoft Search 納入了兩項能將此資訊匯入為建議書籤的工具： 
   
-## <a name="import-sharepoint-promoted-result-query-rules"></a>匯入 SharePoint 升級的結果查詢規則
+## <a name="import-sharepoint-promoted-result-query-rules"></a>匯入 SharePoint 提升的結果查詢規則
 
-匯入這些規則先前稱為首選，為建議的書籤。若要使其提供給您的使用者，發佈它們。發佈時間而異根據您選取的書籤的數目。
+將這些之前稱為首選的規則匯入為建議書籤。 若要將這些書籤提供給您的使用者，請進行發佈。 發佈時間會隨您所選書籤的數量而有所不同。
   
-## <a name="import-top-sharepoint-queries-using-powershell"></a>匯入使用 PowerShell 的 SharePoint 查詢排行榜
+## <a name="import-top-sharepoint-queries-using-powershell"></a>使用 PowerShell 以匯入熱門 SharePoint 查詢
 
-- 從您的 SharePoint 下載排名最前面的查詢。PowerShell 指令碼會提示您提供 SharePoint 系統管理員認證。
+- 從您的 SharePoint 下載熱門查詢。 PowerShell 指令碼會提示您輸入 SharePoint 系統管理員認證。
     
-- 執行 SharePoint 搜尋每個排名最前面的查詢來取得的最上層搜尋結果。
+- 針對每一個熱門查詢執行 SharePoint 搜尋，以取得最佳搜尋結果。
     
-- 建議書籤加入系統入口網站。
+- 在系統管理入口網站新增建議書籤。
     
-- 排名最前面的 SharePoint 查詢是絕佳應徵者的書籤。使用 PowerShell 指令碼以匯入為建議的書籤。此指令碼將會：
+- 您的熱門 SharePoint 查詢擁有做為書籤的最佳條件。 請使用 PowerShell 指令碼以將它們匯入為建議書籤。 此指令碼將會：
     
-如需需求、 範例和可用參數，下載指令碼並檢閱讀我檔案。PowerShell 指令碼之後執行、 系統或編輯器應該檢閱建議書籤，並進行任何必要的編輯他們正在發佈前。
+如需關於需求、範例和可用參數的資訊，請下載指令碼並檢閱讀我檔案。 在執行 PowerShell 指令碼之後，系統管理員或編輯者應該在先檢閱建議的書籤，並進行任何必要的編輯，之後再發佈。
 
   
 

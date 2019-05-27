@@ -1,25 +1,19 @@
----
-ms.openlocfilehash: b2d612eed3958ca938b4a835a0c266dfd98cec6e
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
-ms.translationtype: HT
-ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29380021"
----
-# <a name="contributing"></a>提供
+# <a name="contributing"></a>參與
 
-這個專案歡迎捐款和建議。 大部分的捐款都需要您同意至參與者授權合約 (CLA) 宣告您擁有的權限、 實際執行、 授與我們要使用您比重樣式的權限。如需詳細資訊，請造訪https://cla.microsoft.com。
+此專案歡迎參與及建議。  大部分的提供者要求您同意提供者授權合約 (CLA)，其中宣告您有權並實際上授權我們使用您的貢獻內容。 如需詳細資訊，請造訪 https://cla.microsoft.com。
 
-當您提交提取要求時，CLA bot 會自動判斷您是否需要提供 CLA 並適當地裝飾 PR （例如標籤、 註解）。只要遵循 bot 所提供的指示。您只須這樣一次跨所有 repos 使用我們 CLA。
+當您提交提取要求時，CLA 聊天機器人會自動判斷是否需要提供 CLA，並適當修飾 PR (例如標籤、註解)。 只需依照聊天機器人提供的指示進行。 您將只需在使用我們 CLA 的所有存放庫間執行一次。
 
 此專案已採用 [Microsoft 開放原始碼執行](https://opensource.microsoft.com/codeofconduct/)。如需詳細資訊，請參閱[程式碼執行常見問題集](https://opensource.microsoft.com/codeofconduct/faq/)，如果有其他問題或意見，請連絡 [opencode@microsoft.com](mailto:opencode@microsoft.com)。
 
 # <a name="legal-notices"></a>法律注意事項
 
-查看 Microsoft 及任何參與者授與您的 Microsoft 文件及其他內容[小小寫指南短片屬性 4.0 國際公用授權](https://creativecommons.org/licenses/by/4.0/legalcode)，此存放庫中的授權[授權](LICENSE)檔案，請參閱 ＜ 並授與您任何的授權[MIT 授權](https://opensource.org/licenses/MIT)儲存機制中的程式碼，請參閱[授權程式碼](LICENSE-CODE)檔案。
+Microsoft 和任何提供者依據 [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/legalcode) 授與您此存放庫中 Microsoft 文件和其他內容的授權，請參閱 [LICENSE](LICENSE) 檔案，並依據 [MIT 授權](https://opensource.org/licenses/MIT) 授與您此存放庫中任何程式碼授權，請參閱 [LICENSE-CODE](LICENSE-CODE) 檔案。
 
-Microsoft、 Windows、 Microsoft Azure 及 （或） 其他 Microsoft 產品和參考文件中的服務可能的 Microsoft 在美國及 （或） 其他國家/地區的註冊的商標。這個專案授權請勿授與您要使用 Microsoft 名稱、 商標圖樣、 或商標權限。Microsoft 的一般商標指導方針可找到http://go.microsoft.com/fwlink/?LinkID=254653。
+文件中提及的 Microsoft、Windows、Microsoft Azure 及/或其他 Microsoft 產品和服務，可能為 Microsoft 在美國及/或其他國家/地區的商標或註冊商標。
+此專案的授權並未授與您使用 Microsoft 名稱、標誌或商標的權利。
+您可以在 http://go.microsoft.com/fwlink/?LinkID=254653 找到 Microsoft 的一般商標指導方針。
 
-可找到隱私權資訊https://privacy.microsoft.com/en-us/
+您可以在 https://privacy.microsoft.com/en-us/ 找到隱私權資訊
 
-查看 Microsoft 及所有其他權限，是否下其各自的著作權，任何參與者保留專利案申請，或是否由連帶、 商標、 estoppel 或否則。
+無論是基於其相關著作權、專利權、或商標，無論是以暗示、默許或其他方式，Microsoft 和任何提供者皆保留所有其他權利。

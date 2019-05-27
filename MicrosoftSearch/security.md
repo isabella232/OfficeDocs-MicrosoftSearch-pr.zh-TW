@@ -1,5 +1,5 @@
 ---
-title: Microsoft 搜尋產品的安全性
+title: Microsoft Search 的安全性
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -7,76 +7,76 @@ ms.date: 9/12/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: 50461cb9-8707-46c1-935a-1b9608a98800
-description: 保護您的企業資料和使用者同時授權使用者提供資訊與 Microsoft Search
-ms.openlocfilehash: 65cf1d49e32edbb8061a06f8da7ba644c2145e24
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+description: 在使用 Microsoft Search 提供資訊給獲授權使用者的同時，保護企業的資料與使用者
+ms.openlocfilehash: 5f59e0e2969ef829d7c14b07ecb47d645cc63013
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29380075"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "34425576"
 ---
-# <a name="security-for-microsoft-search"></a>Microsoft 搜尋產品的安全性
+# <a name="security-for-microsoft-search"></a>Microsoft Search 的安全性
 
-企業級安全性與 Microsoft Search 一律會持續使用者與受保護的資料。
+透過企業級的安全性，Microsoft Search 可隨時保護您的使用者與資料。
   
-## <a name="secure-by-default"></a>預設會保護安全
+## <a name="secure-by-default"></a>預設安全性
 
-Microsoft Search 一律會確保 HTTPS 上所做的要求。這可保護可確保連線加密的端對端的增強的安全性。
+Microsoft Search 能隨時確保提出的要求皆透過 HTTPS。 這道保護能確保連線受到端點對端點加密，強化安全性。
   
-## <a name="authentication-and-authorization-with-azure-active-directory"></a>驗證與授權與 Azure Active Directory
+## <a name="authentication-and-authorization-with-azure-active-directory"></a>搭配 Azure Active Directory 的驗證與授權
 
-Microsoft 搜尋產品的驗證已繫結至 Azure Active Directory。當 Microsoft Search 使用者移至 [Bing 時、 標頭會顯示為 Microsoft 帳戶的登入選項 Bing 同時讓公司或學校帳戶。如果 Bing 無法判斷使用者是否為合格的參與者，使用者可以移至 [[探索 Microsoft 搜尋](https://www.bing.com/business/explore)] 頁面上，其中他們將自動重新導向至您的組織登入頁面。 
+Microsoft Search 的驗證已綁定至 Azure Active Directory。 當 Microsoft Search 使用者前往 Bing，Bing 標頭會顯示 Microsoft 帳戶以及公司或學校帳戶的登入選項。 如果 Bing 無法判斷使用者是否為合格的參與者，使用者可以移至[探索 Microsoft Search](https://www.bing.com/business/explore) 頁面，該頁面會自動將使用者重新導向至組織的登入頁面。 
   
-使用者可以存取 Microsoft Search 只能透過的工時或學校帳戶。他們必須使用存取 Office 365 服務，例如 SharePoint 或 Outlook 時所用的相同認證登入。個人 Microsoft 帳戶不能用來登入 Microsoft 搜尋。
+使用者僅能透過公司或學校帳戶存取 Microsoft Search。 若要登入，他們必須使用與存取 Office 365 服務 (例如 SharePoint 或 Outlook) 相同的認證。 個人 Microsoft 帳戶無法用來登入 Microsoft Search。
   
-使用者不能被登入 Bing 與 Microsoft 帳戶及工作或學校帳戶在同一時間。
+使用者無法同時使用 Microsoft 帳戶和公司或學校帳戶登入 Bing。
   
 ## <a name="single-sign-on"></a>單一登入
 
-如果與其他服務，例如 Outlook 或 SharePoint 中其工作或學校帳戶已驗證使用者他們將會自動登入 Microsoft Search 當他們移至 [Bing 在相同的瀏覽器中。此外，當使用者登出 Microsoft Search，他們將會自動登出從相同的瀏覽器中的其他服務。
+如果使用者已在其他服務 (例如 Outlook 或 SharePoint) 中以公司或學校帳戶通過驗證，那當他們在同個瀏覽器中移至 Bing 時，系統便會自動登入 Microsoft Search。 此外，如果使用者登出 Microsoft Search，系統也會自動當他們登出其他服務。
   
-## <a name="communicates-with-the-trusted-cloud-from-the-browser"></a>與瀏覽器信任雲端通訊
+## <a name="communicates-with-the-trusted-cloud-from-the-browser"></a>從瀏覽器使用 Trusted Cloud 進行通訊
 
-當使用者登入其工作或學校帳戶，Bing 會下載必要的用戶端程式庫以啟用 Microsoft 搜尋結果的瀏覽器。然後，這些搜尋，請瀏覽器中的程式碼會呼叫 Office 365 雲端取得工作結果。若要這樣做，Microsoft Search 使用專用的 API，是層 C (SOC2 類型 1) 相容 」 Office 365[產業標準和法規符合性 Framework](https://download.microsoft.com/download/B/2/7/B27B3EF3-8849-4C18-8BA4-5AD755728620/Compliance%20Framework_customer%20guidance.pdf) （PDF 下載）。這表示透過非相容的 Bing 系統永不流程工作結果與公司資料。 
+當使用者以公司或學校帳戶登入時，Bing 會在瀏覽器中下載所需的用戶端資料庫，以取得 Microsoft Search 結果。 隨後，當他們搜尋時，瀏覽器內的程式碼會呼叫 Office 365 雲端，以取得工作結果。 為了執行這項程序，Microsoft Search 會使用專門的 API 層級 C (SOC2 類型 1)，為[符合 Office 365 產業標準和法規的合規性架構](https://download.microsoft.com/download/B/2/7/B27B3EF3-8849-4C18-8BA4-5AD755728620/Compliance%20Framework_customer%20guidance.pdf) (下載 PDF)。 這表示工作結果與工作資料永遠不會流經不符合規範的 Bing 系統。 
   
 ## <a name="permissions"></a>權限
 
-工作結果擷取自 Office 365 工作負載，例如 SharePoint 和 OneDrive for Business 都是經過安全性調整來源。使用者無法看到如 Word 文件或 PowerPoint 簡報他們無法看到和透過 Office 365 存取的資源。僅可檢視自己的檔案和已與共用其作者所明確或隱含的檔案 （透過群組成員資格，例如） SharePoint 中。
+從 Office 365 工作負載 (例如 SharePoint 和商務用 OneDrive) 擷取的工作結果，都會在來源經過適當的安全性調整。 使用者無法看到像是 Word 文件或 PowerPoint 簡報這類透過 Office 365 檢視或存取的來源。 使用者只能查看自己的檔案，以及由作者在 SharePoint 中明確或隱含地 (例如透過群組資格) 與他們共用的檔案。
   
-## <a name="protects-user-queries-from-the-public-portion-of-bing"></a>從公用部分 Bing 保護使用者查詢
+## <a name="protects-user-queries-from-the-public-portion-of-bing"></a>保護使用者查詢不列入 Bing 的公開部分
 
-因為工作相關的搜尋可能機密、 Microsoft Search 實作一組信任量值的這些公用 web 結果組件的 Bing 的處理方式。
+由於工作相關的搜尋可能具敏感性質，Microsoft Search 針對 Bing 的公開網頁結果施行一套信任標準以處理這些搜尋。
   
-不論是否使用者查詢會包含一或多個工作結果中傳回的回應，採取下列措施：
+不論使用者查詢傳回的回應中是否包含一或多個工作結果，系統都會採取下列措施：
   
 - 記錄
     
-  - Microsoft Search 流量相關的所有搜尋記錄檔已取消識別和分開儲存公用、 非 Microsoft 搜尋流量。他們保留 18 個月內，並存取僅限於僅適用於偵錯。
+  - 所有與 Microsoft Search 流量相關的搜尋記錄都會在去除身分識別後，與公開的非 Microsoft Search 流量分開儲存。 這些記錄會保留 18 個月，且限制為僅供偵錯之用。
     
-  - 這些記錄檔中的查詢不用以模型或公用功能例如 [自動建議或相關的公用 web 搜尋的訓練。
+  - 這些記錄中的查詢不會用來建立公開功能模型或進行訓練，例如自動建議或公開網頁的相關搜尋。
     
-  - 透過各種安全的機制，包括安全性群組及工程系統內其他層級管理限制] 存取權。
+  - 限制存取會透過各種安全機制來管理，包括安全性群組與工程系統中的其他層級。
     
-- 搜尋歷程記錄
+- 搜尋記錄
     
-  - 登入工作或學校帳戶，當使用者搜尋歷程記錄不會是可在其他電腦或裝置。
+  - 使用公司或學校帳戶登入時，其他電腦或裝置無法獲得該使用者的搜尋記錄。
     
-- 公告
+- 廣告
     
-  - 企業搜尋查詢不會與共用或建議的廣告。
+  - 絕不會將企業搜尋查詢與廣告客戶分享或建議給廣告客戶。
     
-  - 公用流量會分開儲存到 Microsoft 搜尋相關的搜尋 Ads 記錄。
+  - 與 Microsoft Search 有關的搜尋廣告記錄會與公開流量分開儲存。
     
-  - Ads 永遠不會針對取決於其公司身分識別或組織的使用者。
+  - 廣告永遠不會依據使用者的公司身分識別或組織進行投放。
     
 ## <a name="gdpr"></a>GDPR
 
-[2018 年 5 月 21、 部落格張貼](https://blogs.microsoft.com/on-the-issues/2018/05/21/microsofts-commitment-to-gdpr-privacy-and-putting-customers-in-control-of-their-own-data/)microsoft 反映 GDPR 規範我們承諾和 Microsoft 如何協助企業和自己 GDPR 規範義務也提供組織。您可以在 Microsoft[信任中心常見問題集](https://www.microsoft.com/en-us/trustcenter/privacy/gdpr/gdpr-faqs)找到其他的詳細資訊。針對內線上服務的組織客戶的客戶資料操作的 Microsoft 搜尋查詢也將符合述反映在[信任中心常見問題集](https://www.microsoft.com/en-us/trustcenter/privacy/gdpr/gdpr-faqs)文章 28 處理器承諾。表示從 Microsoft Search 移至 [公用 Bing 的查詢，Microsoft 資料控制站與實作以取消識別查詢如底下 GDPR 所述的量值。
+Microsoft 在[ 2018 年 5 月 21 日的部落格文章](https://blogs.microsoft.com/on-the-issues/2018/05/21/microsofts-commitment-to-gdpr-privacy-and-putting-customers-in-control-of-their-own-data/)反映了我們對 GDPR 規範，以及 Microsoft 會如何協助企業與組織履行 GDPR 合規性義務的承諾。 您可以在 Microsoft [信任中心常見問題集](https://www.microsoft.com/en-us/trustcenter/privacy/gdpr/gdpr-faqs)中找到其他詳細資料。 在線上服務中針對組織客戶的客戶資料進行 Microsoft Search 查詢，也會符合第 28 條所述的處理承諾，如[信任中心常見問題集](https://www.microsoft.com/en-us/trustcenter/privacy/gdpr/gdpr-faqs)中所反映。 針對移至公開 Bing 查詢 (來自 Microsoft Search)，Microsoft 為資料控制者，並會依照 GDPR 中所述，去除查詢的身分識別。
 
 

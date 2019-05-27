@@ -12,21 +12,21 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: c7f3aa2c-f3f5-4d1b-91cd-4fd4ed3775d3
-description: 您看到當您使用 Microsoft Search 範例搜尋的相關
+description: 關於使用 Microsoft Search 時會看到的範例搜尋
 ms.openlocfilehash: 38afbdf233feba1772b9b72291d1571e2cf7ab97
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29380069"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "34425568"
 ---
 # <a name="suggested-searches"></a>建議的搜尋
 
-第一次登入 Bing 貴工時或學校帳戶後，您會看到與建議的搜尋頁面頂端的歡迎訊息。這些搜尋的設計被用來協助您瞭解 Microsoft 搜尋及搜尋時將會找出的工作結果類型。
+當您第一次使用公司或學校帳戶登入 Bing 時，您會在頁面頂端看到一則帶有建議搜尋的歡迎訊息。 這些搜尋專為協助您熟悉 Microsoft Search 以及您在搜尋時會遇到的工作結果類型所設計。
   
-若要使其更多有關您及其他人在組織中，您的 IT 部門具有檢閱這些或建立他們自己。
+若要讓搜尋更符合您以及組織中其他人的需求，您的 IT 部門必須加以檢閱或自行建立。
   
-有時，您會看見公告的新功能或告訴您更多有關 Microsoft 搜尋資訊的郵件。我們將會一律提供您若要深入了解連結或您可以前往[探索 Microsoft Search](https://www.bing.com/business/explore)的詳細資訊。 
+有時候，您會看到公告新功能，或是告訴您更多關於 Microsoft Search 資訊的訊息。 我們會隨時提供您能夠深入了解的連結，或者您也可以移至[探索 Microsoft Search](https://www.bing.com/business/explore) 以獲得詳細資訊。 
 
   
 

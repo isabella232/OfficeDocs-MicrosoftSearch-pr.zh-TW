@@ -12,29 +12,29 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: 3d34bfbc-d4a3-4ef2-85d3-cf92835382ac
-description: 使用 Microsoft 搜尋來尋找 office、 建置、 及其他工作區位置、 取得指示，等等
+description: 使用 Microsoft Search 來尋找辦公室、大樓和其他工作區位置、取得方向，還有更多功能
 ms.openlocfilehash: 8264f223808750cab6c5117b3b3fa1adbee5a40a
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29380039"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "34425585"
 ---
 # <a name="find-locations"></a>尋找位置
 
-搜尋建築物、 辦公室、 校園、 及更多可查看地圖結果和地址。您輕鬆地可以取得指示並看看有什麼附近上 Bing 地圖服務。
+搜尋大樓、辦公室、校區等，以查看地圖結果和地址。 您可以輕鬆取得方向，並在 Bing 地圖服務上查看附近有什麼。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2ACDW?autoplay=false]
   
-1. Bing 在您工作或學校的帳戶登入
+1. 在 Bing 上登入您的公司或學校帳戶
     
 2. 搜尋位置名稱
     
-    例如，' 建置 9' 或者 ' West Cafe'。
+    例如，「9 號大樓」或「西部咖啡」。
     
-3. 顯示上方的 [結果] 頁面上顯示的位置和街道地址的地圖
+3. 地圖會顯示在結果頁面的頂端，提供您位置和街道地址
     
-    其他網頁結果會出現在其下。它們不專屬於您的組織。
+    其他網頁結果會出現在它的底下。 這些不是組織特定的結果。
 
   
 

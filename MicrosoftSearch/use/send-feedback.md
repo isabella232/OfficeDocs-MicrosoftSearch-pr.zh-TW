@@ -1,5 +1,5 @@
 ---
-title: 傳送意見
+title: 傳送意見反應
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -12,29 +12,29 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: a51d395b-c281-433b-bb8e-fefac5252110
-description: 送出意見反應及給您的 IT 部門或 Microsoft Microsoft 搜尋相關的註解
+description: 提交關於 Microsoft Search 意見反應和註解給您的 IT 部門或 Microsoft
 ms.openlocfilehash: cbf4aab91116e2f34d54aa39d5cba9f5d505fc11
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29380072"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "34425590"
 ---
-# <a name="send-feedback"></a>傳送意見
+# <a name="send-feedback"></a>傳送意見反應
 
-您的意見反應可協助您更妥善地進行 Microsoft 搜尋。工作結果中使用的意見反應連結註解什麼您想要、 不想要或建議的新功能或您想要新增的結果。您也可以使用連結回報任何問題或您遇到的問題。
+您的意見反應可協助改善 Microsoft Search。 在工作結果中，使用 [意見反應] 連結以表達您喜歡和不喜歡的地方，或是建議您想要新增的新功能或結果。 您也可以使用該連結以回報遇到的任何問題。
   
-## <a name="send-feedback-about-work-results"></a>傳送意見反應工作結果
+## <a name="send-feedback-about-work-results"></a>傳送工作結果的意見反應
 
-若要傳送意見反應] 下方的任何工作結果、**意見反應**。根據結果類型，您將會見到您的 IT 部門或 Microsoft 傳送意見反應選項。
+若要傳送意見反應，請按一下任何工作結果底部的 [意見反應]****。 依據結果的類型，您可能會看到傳送意見反應給 IT 部門或 Microsoft 的選項。
   
-向 Microsoft 傳送意見反應是我們 UserVoice widget 中張貼。傳送意見反應的任何人都可以讀取及訂閱您的註解。
+您傳送給 Microsoft 的意見反應會張貼於我們的 UserVoice 小工具。 傳送意見反應的任何人都可以讀取及訂閱您的意見。
   
-您傳送給您的 IT 部門的意見反應不是直接與 Microsoft 共用。
+您傳送給您的 IT 部門的意見反應不會直接分享給 Microsoft。
   
-## <a name="send-feedback-about-web-results"></a>傳送意見反應網頁結果
+## <a name="send-feedback-about-web-results"></a>傳送網頁結果的意見反應
 
-當您使用 Microsoft Search，您可能需要意見反應您會看到網頁結果。若要傳送意見反應這些] 按一下任何 Bing 頁面底部的**意見反應**。這個意見反應並未與您的組織共用。Bing 檢閱所有的意見反應，但將不會收到個人回應。 
+當您使用 Microsoft Search 時，您可能會對看到的網頁結果有意見反應。 若要傳送相關的意見反應，請按一下任何 Bing 頁面底部的 [意見反應]****。 系統不會將此意見反應與您的組織分享。 Bing 會檢閱所有意見反應，但您不會收到個人回覆。 
 
   
 

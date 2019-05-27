@@ -12,27 +12,27 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: 3388bdc7-1ee0-497e-b110-fba4a082eb08
-description: 使用 Microsoft 搜尋來尋找 SharePoint 網站與您會看見的詳細資料
+description: 使用 Microsoft Search 來尋找 SharePoint 網站，以及您可以查看的詳細資料。
 ms.openlocfilehash: 926f53e8c0eceffae6c506e8f4e7233629c8415c
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29380032"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "34425570"
 ---
 # <a name="find-sharepoint-sites"></a>尋找 SharePoint 網站
 
-搜尋您擁有或尋找類群組或同事可以存取所建立的 SharePoint 網站。您會看到網站結果上 Bing，但不是個別站台內的頁面。SharePoint 網站結果包含的網站名稱及位置。
+搜尋您擁有的 SharePoint 網站或尋找群組或同事建立、您可以存取的網站。 您會在 Bing 上 (而非網站內的個別頁面中) 看到網站結果。 SharePoint 網站結果包括網站名稱與位置。
   
-1. Bing 在您工作或學校的帳戶登入
+1. 在 Bing 上登入您的公司或學校帳戶
     
 2. 搜尋網站名稱或主題
     
-3. 網站結果就會出現在 [結果] 頁面上的頂端
+3. 網站結果會顯示在結果頁面的頂端
     
-    若要只看到網站結果，按一下 [**網站**] 索引標籤。 
+    若只要查看網站結果，請按一下 [網站]**** 索引標籤。 
     
-網頁結果會顯示 [工作結果。它們不專屬於您的組織。
+網頁結果會顯示在工作結果底下。 這些不是組織特定的結果。
 
   
 

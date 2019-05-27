@@ -1,5 +1,5 @@
 ---
-title: 關於 Microsoft 搜尋
+title: 關於 Microsoft Search
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -7,62 +7,62 @@ ms.date: 12/18/2018
 ms.audience: Consumer/IW
 ms.topic: hub-page
 ms.service: mssearch
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - BFB160
 - MET150
 ms.assetid: b453e6f0-10cf-4384-9914-241f425cd5f9
-description: 取得所有您可以找到當您使用 Microsoft 搜尋資訊的概觀
-ms.openlocfilehash: 4f3f33fd8de78b32f532343000002609e9c2c5c9
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+description: 取得使用 Microsoft Search 時能找到的所有資訊概觀
+ms.openlocfilehash: f5a9656144efad8c6e146f6654ebc9f69f1b1843
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29380042"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "34425569"
 ---
-# <a name="about-microsoft-search"></a>關於 Microsoft 搜尋
+# <a name="about-microsoft-search"></a>關於 Microsoft Search
 
-Microsoft Search 是輕而易舉地將結合搜尋工時和一起中有經驗的網站。使用 Microsoft Search 的簡單、 fast、 功能強大且更安全地方法在任何瀏覽器與任何裝置上取得正確的資訊在正確的時間。
+Microsoft Search 可讓您輕鬆享有工作與網頁搜尋的整合體驗。 您可以在任何瀏覽器和任何裝置中使用 Microsoft Search，以簡單、快速、功能強大且更安全的方式適時取得正確的資訊。
   
-您是否要搜尋人員、 檔案、 org 圖表、 內部網站和資源，或常見問題的答案，您可以使用 Microsoft 搜尋整個工作天中獲得解答更快、 更多提高工作效率，並聰明工作。若要取得的工作結果，剛移至[bing.com/business](https://www.bing.com/business)、 登入您的公司或學校帳戶和搜尋。 
+無論您搜尋的是人員、檔案、組織圖、內部網站和資源或常見問題的答案，您都可以在工作日中使用 Microsoft Search，更迅速地獲得答案、提高生產力，以及提升工作效率。 若要取得工作結果，只需移至 [bing.com/business](https://www.bing.com/business)，使用您的公司或學校帳戶登入，然後搜尋。 
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2AA2W?autoplay=false]
 
-## <a name="what-you-can-find"></a>您可以找到
+## <a name="what-you-can-find"></a>您可以找到什麼
   
-使用 Microsoft 搜尋來尋找：
+使用 Microsoft Search 來尋找：
   
 - [人員](find-people-and-groups.md)
     
-    輕鬆地尋找連絡人資訊、 即將來臨的會議有一起、 org 圖表詳細資料、 群組成員資格及其他檔案
+    輕鬆尋找連絡人資訊、即將一起參與的會議、組織圖詳細資料、群組成員和其他檔案
     
-- [Groups](find-people-and-groups.md)
+- [群組](find-people-and-groups.md)
     
-    尋找依其名稱或成員的群組、 探索所屬的人員、 群組及瀏覽其共用的內容
+    依據名稱或成員來尋找群組、探索某個人員所屬的群組，以及瀏覽其共用內容
     
-- [資源與工具](find-resources-tools-and-more.md)
+- [資源和工具](find-resources-tools-and-more.md)
     
-    輕鬆找到內部資源、 工具及其他
+    輕鬆找到內部資源、工具和更多項目
     
 - [SharePoint 網站](find-sharepoint-sites.md)
     
-    尋找 SharePoint 網站或 SharePoint 網站建立的群組或擁有權限若要檢視的同事
+    尋找 SharePoint 網站或您有權檢視由群組或同事所建立的 SharePoint 網站
     
 - [檔案](find-files.md)
     
-    快速找出您自己的檔案，或您具有權限來檢視或編輯同事所建立的內容
+    快速尋找您擁有的檔案，或是您有權檢視或編輯由同事所建立的內容
     
 - [交談](find-conversations.md)
     
-    尋找私用的 Microsoft 小組或 Microsoft Yammer 交談或已檢視權限的同事之間的交談
+    尋找您的私人 Microsoft Teams 或 Microsoft Yammer 交談，或是您有權檢視同事之間的交談
     
 - [位置](find-locations.md)
     
-    尋找地圖結果地址建築物、 辦公室、 校園、 及其他動作，輕鬆地取得指示，並看看有什麼附近    
+    尋找地圖結果和大樓、辦公室、校區的地址等，輕鬆取得方向，並查看附近有什麼    
     
-您只能看到時在您登入至 Bing 工作或學校帳戶運作結果。這是您用以登入 Outlook web、 SharePoint 及其他 Office 365 應用程式在相同的帳戶。 
+您只能在使用公司或學校帳戶登入 Bing 時看到工作結果。 這是您用來登入 Outlook 網頁版、SharePoint 和其他 Office 365 App 的同一個帳戶。 
   
-Microsoft Search 只會傳回資訊並有權查看的檔案。您可能需要的權限因為您建立的檔案或資訊已與您已共用或較大的群組包含，或是它們儲存在資料夾或擁有存取權限的位置。
+Microsoft Search 只會傳回您有權查看的資訊和檔案。 您可能會擁有檔案或資訊的權限，原因是您建立了該檔案或資訊、有人將它們與您或包含您在內的大型群組分享，或者它們儲存在您有權存取的資料夾或位置中。
 
   
 

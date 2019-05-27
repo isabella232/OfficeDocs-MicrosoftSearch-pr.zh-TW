@@ -1,5 +1,5 @@
 ---
-title: 為何需要 Microsoft 搜尋
+title: 為什麼要使用 Microsoft Search
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -7,56 +7,58 @@ ms.date: 9/14/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: 38569f03-db18-49ab-96ef-213a1f410935
-description: 了解為何 Microsoft Search 的現代工作場所智慧型企業版搜尋。
-ms.openlocfilehash: 79a2974d036ea71b7b2d17bc8598f6070209c8b5
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+description: 了解 Microsoft Search 為何是適用於現代工作場所的智慧企業搜尋。
+ms.openlocfilehash: f7c65e13f18f6ea4fd38bc406653a37f85659d3e
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29380081"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "34425582"
 ---
-# <a name="why-microsoft-search"></a>為何需要 Microsoft 搜尋
+# <a name="why-microsoft-search"></a>為什麼要使用 Microsoft Search
 
-轉換為在組織搜尋的資訊與 Microsoft Search 方式人員。 
+使用 Microsoft Search 以改變貴組織中人員搜尋資訊的方式。 
   
-此企業搜尋經驗增加產能和儲存時間所傳遞的工作場所更相關的搜尋結果。Microsoft Search 安全地從您的公司、 學校、 或組織擷取資訊 — like 檔案、 公司資料、 人員資訊及網站 — 以及公用 web 結果並將它們顯示在單一經驗。
-  
-## <a name="save-time-with-intelligent-search"></a>使用智慧型搜尋儲存時間
+透過為工作區提供更相關的搜尋結果，此企業搜尋體驗可提高生產力並節省時間。 Microsoft Search 可安全地從您的公司、學校或組織擷取資訊 (檔案、公司資料、個人資訊和網站等)，以及公開的網頁結果，並顯示在單一畫面中。
 
-Microsoft Search 如何運用電腦來提供內容相關式、 無界限、 控制及相關的結果，以將您的組織和在單一 web 中的最佳的搜尋結果。
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2EWQN?autoplay=false]
   
-## <a name="get-enterprise-grade-protection"></a>要取得企業等級的保護
+## <a name="save-time-with-intelligent-search"></a>使用智慧搜尋節省時間
 
-Microsoft Search 需要 Azure Active Directory 驗證來存取來自信任雲端的結果。已驗證的使用者只能看到擁有存取權的內容。搜尋查詢已取消已識別並記錄檔會與公用 Bing 搜尋流量區隔。此層級的保護則無法使用任何地方 else 產業中。
+Microsoft Search 利用 AI 來提供內容、無界限和相關的結果，在單一體驗中為您提供貴組織和網路的最佳搜尋結果。
   
-## <a name="easy-to-administer-and-available-everywhere"></a>容易管理及可任意位置
+## <a name="get-enterprise-grade-protection"></a>取得企業級保護
 
-部署 Microsoft Search 都很簡單 — 只是讓從 Microsoft 365 系統管理中心和自訂設定，包括您標誌、 名稱、 色彩等等。經授權的使用者可以存取它在任何裝置上剛登入 Bing。
+Microsoft Search 需要 Azure Active Directory 驗證以存取來自 Trusted Cloud 的結果。 已驗證的使用者只會看到他們有權存取的內容。 搜尋查詢會去除身分識別，且記錄檔會和公用 Bing 搜尋流量分隔。 這種保護層級是業界唯一的。
   
-## <a name="one-place-to-search-across-office-365-apps"></a>若要搜尋不同 Office 365 應用程式的一個位置
+## <a name="easy-to-administer-and-available-everywhere"></a>易於管理且可隨處存取
 
-Microsoft Search 結合結果在 Office 365，包括 SharePoint、 各種資料來源 OneDrive for Business、 小組、 Yammer、 群組及更多。尋找相關的工作結果是以簡單搜尋。
+部署 Microsoft Search 很簡單，只要從 Microsoft 365 系統管理中心啟用，然後自訂標誌、名稱、色彩等設定即可。 使用者只要登入 Bing 就能從任何裝置上存取它。
   
-## <a name="share-authoritative-information-and-answer-questions"></a>共用代表性的資訊和解答問題
+## <a name="one-place-to-search-across-office-365-apps"></a>跨 Office 365 App 搜尋的單一位置
 
-提供的資訊和解答使用者需要用來完成工作，例如原則、 優點、 資源、 工具及其他功能工作結果。您也可以針對新主講或遠端工作者的特定群組。
+Microsoft Search 將 Office 365 中不同資料來源集合在一起，包括 SharePoint、商務用 OneDrive、Teams、Yammer、Groups 等。 尋找相關的工作結果就跟搜尋一樣簡單。
+  
+## <a name="share-authoritative-information-and-answer-questions"></a>共用授權資訊和回答問題
+
+在工作結果中提供您的使用者完成工作所需的資訊和解答，像是政策、福利、資源、工具等。 您也能以特定群組為目標，例如新進人員或遠端工作者。
   
 ## <a name="find-shared-files"></a>尋找共用的檔案
 
-Microsoft Search 使用了解進行尋找共用文件及檔案簡單的進階的查詢。尋找您要在共同作業的文件及檔案擁有存取權。 
+Microsoft Search 使用進階查詢理解讓尋找共用的文件和檔案更容易。 尋找您正在進行共同作業的文件和您可以存取的檔案。 
   
-## <a name="complete-tasks-faster"></a>更快速完成工作
+## <a name="complete-tasks-faster"></a>更快速地完成工作
 
-將 PowerApps 整合到您啟用工作完成的工作結果內的內容。
+將 PowerApps 整合到您的內容中，就可以啟用在工作結果中完成工作的功能。
   
-## <a name="reduce-support-costs"></a>降低支援成本
+## <a name="reduce-support-costs"></a>減少支援成本
 
-降低成本並讓使用者可以使用嵌入自訂與一般問題解答自給自足與他們連絡您的服務台、 IT 部門或支援小組需要最小化。
+藉由內嵌常見問題的自訂解答以減少使用者連絡技術支援中心、IT 部門或支援小組的需求，這樣就可以降低成本並讓使用者自行解決問題。
   
 

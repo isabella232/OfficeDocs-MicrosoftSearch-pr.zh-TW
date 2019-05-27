@@ -12,43 +12,43 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: ecd31803-0b32-4ba3-8bb8-a0d1dfb8b856
-description: 使用 Microsoft 搜尋來尋找小組 Yammer 交談和您會看見的詳細資料
+description: 使用 Microsoft Search 來尋找 Teams 和 Yammer 交談，以及您可以查看的詳細資料。
 ms.openlocfilehash: b339242fbafc4cff0f6fe5960cb90b0d05493105
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29380058"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "34425583"
 ---
 # <a name="find-conversations"></a>尋找交談
 
-搜尋您自己私用的 Microsoft 小組或 Microsoft Yammer 交談或同事可以存取之間的對話。
+搜尋您自己的私人 Microsoft Teams 或 Microsoft Yammer 交談，或是您有權存取的同事間交談。
   
 交談結果包括：
   
-- 傳送它的人員名稱
+- 傳送交談的人員姓名
     
-- 如果是小組或 Yammer 交談
+- 該交談是否為 Teams 或 Yammer 交談
     
-- 郵件的程式碼片段
+- 訊息的程式碼片段
     
 - 交談日期
     
-- 您可以存取的附件
+- 您有權存取的附件
     
-前 30 交談結果出現在 [工作結果。如需詳細資訊或結果，只要按一下此訊息。在 [工作結果 Yammer，依日期排序的交談，但它們在 Yammer 用戶端相關性來排序。
+出現在工作結果清單中最上面的 30 個交談。 如需詳細資訊或更多結果，請按一下該訊息。 在工作結果中，Yammer 交談會依據日期排序，但在 Yammer 用戶端中則會依據相關性排序。
   
-如果您的組織不使用小組或 Yammer 或 IT 部門不會開啟這些結果就無法看到交談結果。
+如果貴組織並未使用 Teams 或 Yammer，或是您的 IT 部門未開啟這些結果，您就不會看到交談結果。
   
-1. Bing 在您工作或學校的帳戶登入
+1. 在 Bing 上登入您的公司或學校帳戶
     
-2. 搜尋人員的名稱或主題並按一下 [**交談**] 索引標籤 
+2. 搜尋主題或人員的姓名，並按一下 [交談]**** 索引標籤 
     
-    例如，'傳送給我艙面' 或 ' Amy Turner'。
+    例如，您可以輸入「傳簡報給我」或「崔艾玫」。
     
-3. 在 [結果] 頁面上的頂端顯示交談
+3. 交談會出現在結果頁面的最頂端
     
-    其他網頁結果會出現在其下。它們不專屬於您的組織。
+    其他網頁結果會出現在它的底下。 這些不是組織特定的結果。
     
 
 

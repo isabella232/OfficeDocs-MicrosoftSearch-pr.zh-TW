@@ -7,107 +7,111 @@ ms.date: 12/20/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: c020bd72-9906-4dfd-bc77-57287f5927ce
-description: 了解如何與 Microsoft Search 公司 Bing 設為預設首頁。
-ms.openlocfilehash: 9190e607f5e17a0b898ab131886de12cb300a74c
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+description: 了解如何將 Bing 設定為您的公司使用 Microsoft Search 的預設瀏覽器。
+ms.openlocfilehash: 72a6ba6737b6aeb7bf5ff852b44092f726ebd7d9
+ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29380037"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "34425653"
 ---
 # <a name="set-default-homepage"></a>設定預設首頁
 
-設定預設的瀏覽器、 預設搜尋引擎，以及預設首頁可協助您探索 Microsoft 搜尋功能、 鼓勵更多的使用狀況，並提供更順暢的使用者。
+> [!IMPORTANT]
+> Bing 中的 Microsoft Search 設定現在可在 Microsoft 365 系統管理中心取得。 從在系統管理中心[指派搜尋系統管理員](https://docs.microsoft.com/zh-TW/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor)開始。
+    
+設定預設瀏覽器、預設搜尋引擎和預設首頁將可協助您的使用者探索 Microsoft Search 功能，鼓勵更常使用，並提供更順暢的體驗。
   
-若要設定您的組織預設首頁，請遵循下列步驟。
+若要為您的組織設定預設首頁，請依照以下步驟進行。
   
 ## <a name="internet-explorer"></a>Internet Explorer
 
-### <a name="internet-explorer-50-or-later"></a>Internet Explorer 5.0 或更新版本
+### <a name="internet-explorer-50-or-later"></a>Internet Explorer 5.0 或更新版
 
-1. 若要編輯的任何現有原則或建立一個新參數和開啟 「 群組原則管理主控台 （gpmc.msc 取得）。
+1. 開啟 [群組原則管理主控台] (gpmc.msc)，然後切換以編輯任何現有原則或建立新原則。
     
-2. 瀏覽至**使用者 Configuration\Preferences\Control 控制台 Settings\Internet 設定**。
+2. 瀏覽至 [使用者設定]\[喜好設定]\[控制台設定]\[網際網路設定]****。
     
-3. 以滑鼠右鍵按一下**網際網路設定**並選取 [ **Internet Explorer 10**。
+3. 以滑鼠右鍵按一下 [網際網路設定]****，然後選取 [Internet Explorer 10]****。
     
     > [!NOTE]
-    > 您必須選取要套用的 Internet Explorer 11 設定為相同的設定會套用至 Internet Explorer 11 Internet Explorer 10 的選項。 
+    > 您需要選取 Internet Explorer 10 的選項來為 Internet Explorer 11 套用設定，因為同一個設定也適用 Internet Explorer 11。 
   
-4. 這會以紅色加上底線未設定設定在目標電腦，而綠色中以底線標示的設定在目標電腦設定。若要變更底線，使用下列功能鍵：
+4. 以紅色底線標示的設定表示沒有在目標電腦上設定，以綠色底線標示的設定則表示已經在目標電腦上設定。 若要變更底線，請使用以下列功能鍵：
     
-    F5-啟用所有目前的索引標籤上的設定
+    F5 - 啟用目前索引標籤上的所有設定
     
-    F6-啟用目前選取的設定
+    F6 - 啟用目前選取的設定
     
-    F7-停用目前選取的設定
+    F7 - 停用目前選取的設定
     
-    F8-停用目前的索引標籤上的所有設定
+    F8 - 停用目前索引標籤上的所有設定
     
-5. 按**F8**設定的任何項目之前停用所有設定。螢幕應該看起來如下： 
+5. 在進行任何設定之前，請先按 **F8** 以停用所有設定。 畫面看起來應該像這樣： 
     
-    ![Internet Explorer 10 屬性] 對話方塊](media/2fd55755-5007-4e33-a795-c42ce2fcef4a.jpg)
+    ![Internet Explorer 10 [內容] 對話方塊](media/2fd55755-5007-4e33-a795-c42ce2fcef4a.jpg)
   
-6. 在首頁] 頁面上設定按**F6** ，然後輸入`https://www.bing.com/business?form=BFBSPR`
+6. 在首頁設定上按下 **F6**，然後輸入 `https://www.bing.com/business?form=BFBSPR`
     
-7. 強制產生 GPO 連結至適當的網域。
+7. 將結果 GPO 連結到適當網域以強制執行結果 GPO。
     
 > [!NOTE]
-> 使用者仍然可以變更首頁後此原則設定。 
+> 設定此原則之後，使用者仍可變更首頁。 
   
 ## <a name="microsoft-edge"></a>Microsoft Edge
 
-### <a name="windows-10-version-1511-or-later"></a>Windows 10、 1511 或更新版本
+### <a name="windows-10-version-1511-or-later"></a>Windows 10 (版本 1511 或更新版本)
 
-1. 若要編輯的任何現有原則或建立一個新參數和開啟 「 群組原則管理主控台 （gpmc.msc 取得）。
+1. 開啟 [群組原則管理主控台] (gpmc.msc)，然後切換以編輯任何現有原則或建立新原則。
     
-2. 瀏覽至 [**系統管理範本 \windows 元件 \ \microsoft Edge**
+2. 瀏覽至 [系統管理範本]\[Windows 元件]\[Microsoft Edge]****
     
-1. 按兩下 [**頁面設定起始**、 將它設為 [**已啟用**] 並輸入`https://www.bing.com/business`
+1. 按兩下 [設定起始頁面]****，將它設為 [已啟用]****，然後輸入 `https://www.bing.com/business`
     
-3. 強制產生 GPO 連結至適當的網域。
+3. 將結果 GPO 連結到適當網域以強制執行結果 GPO。
     
 > [!CAUTION]
-> 使用者將無法設定此原則之後變更搜尋提供者。 
+> 設定此原則之後，使用者將無法變更搜尋提供者。 
   
 ## <a name="google-chrome"></a>Google Chrome
 
 ### <a name="windows-xp-sp2-or-later"></a>Windows XP SP2 或更新版本
 
-[Microsoft 技術支援人員上](https://support.microsoft.com/en-us/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra)可以找到上管理 ADMX 檔案和最新 ADMX 檔案的不同版本的 Windows 作業系統支援文章。
+您可以在 [Microsoft 支援](https://support.microsoft.com/zh-TW/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra)網站上找到有關管理 ADMX 檔案的 Windows 支援文章和不同版本 Windows 適用的最新 ADMX 檔案。
 
-您也需要最新的 Google 原則檔，您可以找到[Google Chrome 企業](https://support.google.com/chrome/a/answer/187202)協助。
+您也將需要最新的 Google 原則檔案，可以在 [Google Chrome Enterprise 說明](https://support.google.com/chrome/a/answer/187202)上找到。
   
-如果內部 GPMC 找不到此節所述的設定，下載適當的 ADMX，並將其複製到[集中存放區](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29)。控制站上的集中存放區已有下列的命名慣例的資料夾：
+如果在 GPMC 中找不到本節中描述的設定，請下載適當的 ADMX 並將它們複製到[集中存放區](https://docs.microsoft.com/zh-TW/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29)。 控制器上的集中存放區是使用下列命名慣例的資料夾：
   
  **%systemroot%\sysvol\\<domain\>\policies\PolicyDefinitions**
   
-每個網域控制站控點應取得個別的資料夾。若要從命令提示字元中 ADMX 檔案複製可用下列命令：
+控制站處理的每個網域都應該有個別的資料夾。 可以透過命令提示字元使用下列命令來複製 ADMX 檔案：
   
  `Copy <path_to_ADMX.ADMX> %systemroot%\sysvol\<domain>\policies\PolicyDefinitions`
   
-1. 若要編輯的任何現有原則或建立一個新參數和開啟 「 群組原則管理主控台 （gpmc.msc 取得）。
+1. 開啟 [群組原則管理主控台] (gpmc.msc)，然後切換以編輯任何現有原則或建立新原則。
     
-2. 請確定下列資料夾會出現在 [**系統管理範本**] 區段中的*使用者/電腦設定*這兩種： Google Chrome 及 Google Chrome-預設設定 （使用者可以覆寫）。
+2. 確定在 [使用者設定]/[電腦設定]** 中的 [系統管理範本]**** 區段中都有下列資料夾：Google Chrome 和 Google Chrome - 預設設定 (使用者可以覆寫)。
     
-   - 修正第一個區段的設定和本機系統管理員將無法對其進行變更。
+   - 第一個區段的設定是固定的，而且本機系統管理員無法變更它們。
     
-   - 在其瀏覽器設定的使用者可以變更的後面] 區段中的原則設定。您應該先決定使用者可以覆寫預設設定。下列步驟，在對應的資料夾中的設定變更為您的組織原則和需求。下列步驟使用的 Google Chrome-預設設定為預設值。
+   - 使用者可以在瀏覽器設定中變更原則後面區段的設定。
+   您應該決定使用者是否可以覆寫您的預設設定。 在以下步驟中，在與您的組織政策和需求對應資料夾中的設定進行變更。 以下步驟會使用 Google Chrome - 預設設定做為預設值。
     
-3. 瀏覽至 [**&lt;電腦/使用者設定&gt;\Administrative Templates\Google Chrome-預設 Settings\Home 頁面**。
+3. 瀏覽至 [&gt;電腦/使用者設定**]>\[系統管理範本]\[Google Chrome - 預設設定]\[首頁]**&lt;。
     
-4. 連按兩下 [**首頁以使用新索引標籤頁面**，並將它設為 [**已啟用**。
+4. 按兩下 [將新分頁設為首頁]****，然後將它設為 [已啟用]****。
     
-5. 瀏覽至 [**&lt;電腦/使用者設定&gt;\Administrative Templates\Google Chrome-預設 Settings\New] 索引標籤] 頁面上**。
+5. 瀏覽至 [&lt;電腦/使用者設定&gt;]\[系統管理範本]\[Google Chrome - 預設設定]\[新分頁]****。
     
-6. 按兩下 [**設定新的索引標籤頁面 URL**，將它設為 [**已啟用**] 並輸入`https://www.bing.com/business?form=BFBSPR`
+6. 按兩下 [設定新分頁 URL]****，將它設為 [已啟用]****，然後輸入 `https://www.bing.com/business?form=BFBSPR`
     
-7. 強制產生 GPO 連結至適當的網域。
+7. 將結果 GPO 連結到適當網域以強制執行結果 GPO。
     
-使用者無法變更 [首頁] 頁面上設定此原則之後。
+設定此原則之後，使用者將能夠變更首頁。

@@ -7,57 +7,57 @@ ms.date: 10/19/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: cd3ee09d-58ab-4b8a-8822-fa11a1399672
-description: 取得關於企業版搜尋和 Microsoft Search 的常問問題的答案
-ms.openlocfilehash: 628178ad8398995d9c5553a23761a879a33a5050
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+description: 取得有關企業搜尋和 Microsoft Search 常見問題的解答
+ms.openlocfilehash: ed4179262dc20a441ce5e3acadc895bacb271fa9
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29380076"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "34425596"
 ---
 # <a name="faqs"></a>常見問題集
 
-這些是組織和使用者都具備管理及使用 Microsoft 搜尋相關的常見問題集的問題。
+這裡是組織和使用者對系統管理與使用 Microsoft Search 會有的常見問題集。
   
-## <a name="whats-the-value-proposition-for-microsoft-search"></a>什麼是 Microsoft 搜尋的價值主張？
+## <a name="whats-the-value-proposition-for-microsoft-search"></a>Microsoft Search 主張的價值是什麼？
 
-Microsoft Search 是安全的方式來搜尋您工時和 web 內容。與 Microsoft 只有這種跨網頁伺服器和企業的整合。規範相關的資訊，請參閱[Microsoft 搜尋產品的安全性](security.md)。
+Microsoft Search 是一種能同時安全地搜尋您工作與網路內容的方式。 只有 Microsoft 能夠提供這種跨網路與企業間的整合產品。 如需關於合規性的資訊，請參閱 [Microsoft Search 的安全性](security.md)。
   
-## <a name="what-microsoft-search-features-are-available-now"></a>哪些 Microsoft 搜尋功能現在提供？
+## <a name="what-microsoft-search-features-are-available-now"></a>現在可使用 Microsoft Search 的哪些功能？
 
-如需完整清單，請參閱[Microsoft 搜尋功能](features.md)。
+如需完整清單，請參閱 [Microsoft Search 的功能](features.md)。
   
-## <a name="does-microsoft-search-support-advanced-query-understanding"></a>Microsoft Search 支援進階查詢了解嗎？
+## <a name="does-microsoft-search-support-advanced-query-understanding"></a>Microsoft Search 是否支援進階查詢理解？
 
-是，Microsoft Search 會剖析查詢目的從較大的片語。此功能會使用電腦控制來了解一般多餘的片語使用者新增至其不影響其搜尋用途的查詢。例如，當使用者搜尋 「 告訴我更多有關如何變更密碼請' 我們解壓縮較不重要的文字之查詢及觸發根據相關過 like '變更密碼 」。
+是的，Microsoft Search 會從較大的片語去剖析您的查詢意圖。 此功能會使用 AI 以學習將常用多餘片語的使用者新增到查詢，但不影響使用者的搜尋意圖。 舉例來說，當使用者搜尋「告訴我如何變更密碼」，我們會截掉查詢中較不重要的字詞，並依據較相關的項目 (例如「變更密碼」) 來進行觸發。
   
-此功能將會覆寫系統入口網站中的關鍵字集。
+此功能無法覆寫系統管理入口網站中設定的關鍵字。
   
-## <a name="does-microsoft-search-search-for-files-on-premises-as-well-as-the-cloud"></a>Microsoft Search 的搜尋的檔案內部以及雲端吗？
+## <a name="does-microsoft-search-search-for-files-on-premises-as-well-as-the-cloud"></a>Microsoft Search 是否會搜尋內部部署與雲端的檔案？
 
-Microsoft Search 支援搜尋 live SharePoint Online 的文件、 OneDrive for Business，以及透過混合式內部部署 SharePoint 與 SharePoint Online 的最常見的 Office 檔案類型。如果您可以在 SharePoint Online 搜尋內部部署的內容，您應該能夠尋找內部部署使用 Microsoft 搜尋的內容。 
+Microsoft Search 支援搜尋存在於 SharePoint Online、商務用 OneDrive 的文件，同時也會搜尋混合式內部部署 SharePoint 與 SharePoint Online，來尋找最常見的 Office 檔案類型。 如果您可以搜尋 SharePoint Online 中的內部部署內容，應該就能使用 Microsoft Search 尋找內部部署內容。 
   
-## <a name="does-microsoft-search-replace-other-enterprise-search-experiences"></a>Microsoft Search 是否取代其他企業搜尋經驗吗？
+## <a name="does-microsoft-search-replace-other-enterprise-search-experiences"></a>Microsoft Search 是否會取代其他企業搜尋體驗？
 
-Microsoft Search 是為結果結合多個來源的互補方案。如需支援的檔案類型與來源的詳細資訊，請參閱下一個常見問題集。
+Microsoft Search 是一項能夠整合多個來源結果的互補供應項目。 如需支援檔案類型與來源的相關資訊，請查看下一個常見問題集。
   
-## <a name="what-file-types-and-sources-does-microsoft-search-support"></a>哪些檔案類型與來源確實 Microsoft Search 支援？
+## <a name="what-file-types-and-sources-does-microsoft-search-support"></a>Microsoft Search 支援哪些檔案類型與來源？
 
 我們支援下列內容來源：
   
 - SharePoint Online
     
-- 混合式 SharePoint （內部部署 + SPO）
+- 混合式 SharePoint (內部部署 + SPO)
     
 - 商務用 OneDrive
     
-下列檔案類型檔案搜尋中呈現，並出現在 [檔案] 索引標籤上的人員與群組：
+下列檔案類型會顯示於檔案搜尋，並會出現在 [人員] 和 [群組] 的 [檔案] 索引標籤上：
   
 - Word
     
@@ -69,77 +69,77 @@ Microsoft Search 是為結果結合多個來源的互補方案。如需支援的
     
 - PDF
     
-## <a name="what-compliance-and-trust-measures-are-in-place-for-microsoft-search"></a>功能相容性和信任的量值已備妥 Microsoft 搜尋？
+## <a name="what-compliance-and-trust-measures-are-in-place-for-microsoft-search"></a>Microsoft Search 有哪些合規性和信任措施？
 
-規範與信任量值的詳細資訊，請參閱[Microsoft 搜尋產品的安全性](security.md)。
+如需關於合規性和信任措施的相關資訊，請參閱 [Microsoft Search 的安全性](security.md)。
   
-## <a name="where-can-i-get-info-about-office-365-compliance-tierscategories"></a>哪裡可取得 Office 365 規範層/類別的資訊？
+## <a name="where-can-i-get-info-about-office-365-compliance-tierscategories"></a>我可以從哪裡獲得關於 Office 365 合規性層級/類別的資訊？
 
-可以[產業標準和法規符合性 Framework](https://download.microsoft.com/download/B/2/7/B27B3EF3-8849-4C18-8BA4-5AD755728620/Compliance%20Framework_customer%20guidance.pdf) （PDF 下載） 中找到詳細資訊。 
+您可以在[符合產業標準和法規的合規性架構](https://download.microsoft.com/download/B/2/7/B27B3EF3-8849-4C18-8BA4-5AD755728620/Compliance%20Framework_customer%20guidance.pdf) (下載 PDF) 中找到詳細資料。 
   
-## <a name="how-does-microsoft-search-keep-results-secure"></a>如何沒有 Microsoft Search 保留結果安全？
+## <a name="how-does-microsoft-search-keep-results-secure"></a>Microsoft Search 如何保持結果的安全？
 
-如需如何 Microsoft Search 保留結果資訊安全，請參閱[Microsoft 搜尋產品的安全性](security.md)。
+如需 Microsoft Search 如何保護結果安全的相關資訊，請參閱 [Microsoft Search 的安全性](security.md)。
   
 ## <a name="what-are-the-content-sources-for-the-people-card"></a>人員卡片的內容來源為何？
 
-人員卡片衍生 Azure Active Directory、 Exchange Online 和 SharePoint Online 的資訊。
+人員卡片會從 Azure Active Directory、Exchange Online 和 SharePoint Online 取得資訊。
   
-## <a name="do-microsoft-search-users-earn-microsoft-rewards"></a>Microsoft Search 使用者獲得 Microsoft 獎賞嗎吗？
+## <a name="do-microsoft-search-users-earn-microsoft-rewards"></a>Microsoft Search 使用者是否會獲得 Microsoft Rewards？
 
-Microsoft Search 搜尋不獲得獎賞點並永遠不會與使用者的 Microsoft 帳戶相關聯。
+Microsoft Search 的搜尋不會獲得 Rewards 點數，且絕不會與使用者的 Microsoft 帳戶關聯。
   
-## <a name="does-microsoft-search-respect-existing-file-permissions"></a>Microsoft Search 是否來現有檔案的權限吗？
+## <a name="does-microsoft-search-respect-existing-file-permissions"></a>Microsoft Search 是否會尊重現有的檔案權限？
 
-Microsoft Search 遵守區別發音從來源的安全性調整。使用者只能看到擁有存取權的資訊。
+Microsoft Search 會尊重來源的安全性調整。 使用者只能看到他們有權存取的資訊。
   
-## <a name="how-are-user-queries-protected-from-sharing-on-the-web"></a>使用者查詢保護免受網路上共用的？
+## <a name="how-are-user-queries-protected-from-sharing-on-the-web"></a>如何保護使用者查詢不在網路上公開？
 
-如需如何保護使用者查詢的資訊，請參閱[Microsoft 搜尋產品的安全性](security.md)。
+如需使用者查詢如何受到保護的相關資訊，請參閱 [Microsoft Search 的安全性](security.md)。
   
-## <a name="what-types-of-advertising-do-microsoft-search-users-see"></a>Microsoft Search 使用者查看哪些類型的廣告？
+## <a name="what-types-of-advertising-do-microsoft-search-users-see"></a>Microsoft Search 使用者會看到哪類廣告？
 
-廣告的相關資訊，請參閱[Microsoft 搜尋產品的安全性](security.md)。
+如需廣告的相關資訊，請參閱 [Microsoft Search 的安全性](security.md)。
   
-## <a name="what-are-the-minimum-requirements-to-enable-microsoft-search"></a>若要啟用 Microsoft 搜尋最小需求為何？
+## <a name="what-are-the-minimum-requirements-to-enable-microsoft-search"></a>必須符合哪些最低需求才能啟用 Microsoft Search？
 
-如需需求的詳細資訊，請參閱[Microsoft Search 的需求](requirements.md)。
+如需有關需求的資訊，請參閱 [Microsoft Search 的需求](requirements.md)。
   
 ## <a name="how-does-microsoft-search-use-azure-active-directory"></a>Microsoft Search 如何使用 Azure Active Directory？
 
-Microsoft Search 使用 Azure Active Directory 來驗證及授權存取公司的資料。Microsoft Search 符合作法標準處理所有 Microsoft 產品的身分識別。這表示您的使用者可能會自動登入到單一登入。 
+Microsoft Search 會使用 Azure Active Directory 來驗證和授權對公司資料的存取。 Microsoft Search 符合跨所有 Microsoft 產品的身分識別處理實務標準。 這表示您的使用者可以透過單一登入以自動登入。 
   
-## <a name="how-do-i-set-bing-as-the-default-search-provider-for-my-users"></a>如何設定 Bing 做為預設搜尋提供者的 「 我的使用者？
+## <a name="how-do-i-set-bing-as-the-default-search-provider-for-my-users"></a>我該如何將 Bing 設定為使用者的預設搜尋提供者？
 
-如需此資訊，請參閱[設定預設搜尋引擎](set-default-search-engine.md)、[設定預設首頁](set-default-homepage.md)和[設定預設的瀏覽器](set-default-browser.md)。
+如需相關資訊，請參閱[設定預設搜尋引擎](set-default-search-engine.md)、[設定預設首頁](set-default-homepage.md)，以及[設定預設瀏覽器](set-default-browser.md)。
   
-## <a name="does-microsoft-search-provide-search-results-across-tenants"></a>Microsoft Search 沒有租用戶之間提供搜尋結果吗？
+## <a name="does-microsoft-search-provide-search-results-across-tenants"></a>Microsoft Search 是否提供跨租用戶的搜尋結果？
 
-否，跨承租人或共用的租用戶 access 不支援。 
+否，我們不提供跨租用戶或共用租用戶存取。 
   
-## <a name="where-can-i-get-help-with-keywords-and-reserved-keywords"></a>哪裡可取得關鍵字及保留的關鍵字協助？
+## <a name="where-can-i-get-help-with-keywords-and-reserved-keywords"></a>哪裡可以取得關鍵字與保留關鍵字的說明？
 
-如需使用關鍵字和保留的關鍵字，請參閱[規劃您的內容](plan-your-content.md)。
+如需關鍵字與保留關鍵字的使用資訊，請參閱[規劃內容](plan-your-content.md)。
   
-## <a name="which-office-365-skus-are-supported"></a>支援的 Office 365 Sku？
+## <a name="which-office-365-skus-are-supported"></a>支援哪些 Office 365 SKU？
 
-如需支援的 Sku 資訊，請參閱[Microsoft Search 的需求](requirements.md)。
+如需支援 SKU 的相關資訊，請參閱 [Microsoft Search 的需求](requirements.md)。
   
-## <a name="is-microsoft-search-gdpr-compliant"></a>與 Microsoft Search GDPR 相容吗？
+## <a name="is-microsoft-search-gdpr-compliant"></a>Microsoft Search 是否符合 GDPR 規範？
 
-如需 GDPR 規範，請參閱[Microsoft 搜尋產品的安全性](security.md)。
+如需 GDPR 合規性的相關資訊，請參閱 [Microsoft Search 的安全性](security.md)。
   
-## <a name="why-am-i-signed-into-bing-automatically"></a>為什麼要選擇 am I 登入 Bing 自動？
+## <a name="why-am-i-signed-into-bing-automatically"></a>為什麼我會自動登入 Bing？
 
-Microsoft Search 使用 AAD 單一登入自動您登入您的工作或學校帳戶時您已登入 Office 365 應用程式或 Windows 10。您可以登出任何時候。
+Microsoft Search 會在您登入 Office 365 或 Windows 10 時，使用 AAD 單一登入以自動透過您的公司或學校帳戶登入。 您可以隨時登出。
   
-## <a name="what-is-bing-for-business"></a>何謂 Bing 企業？
+## <a name="what-is-bing-for-business"></a>什麼是商務用 Bing？
 
-Microsoft Search 先前被呼叫 Bing 企業版。
+Microsoft Search 先前稱為 Bing for business。
   
-## <a name="how-does-microsoft-search-order-result-cards-in-the-all-results-carousel"></a>如何沒有 Microsoft Search 排序結果卡中所有結果浮動切換？
+## <a name="how-does-microsoft-search-order-result-cards-in-the-all-results-carousel"></a>Microsoft Search 如何排序 [所有結果] 浮動切換中的結果卡片？
 
-Microsoft Search 使用智慧型排名演算法來排序結果卡根據相關性。
+Microsoft Search 會依據相關性，使用智慧型排序演算法以排序卡片。
 
   
 

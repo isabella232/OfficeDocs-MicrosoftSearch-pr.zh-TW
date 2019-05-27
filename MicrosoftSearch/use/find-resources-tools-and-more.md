@@ -1,5 +1,5 @@
 ---
-title: 尋找資源、 工具及其他
+title: 尋找資源、工具和更多項目
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -12,31 +12,31 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: a67e015a-e10a-442a-b1c9-511136d54d1f
-description: 使用 Microsoft 搜尋來尋找內部網路網站、 資源、 工具及內部資訊的連結
+description: 使用 Microsoft Search 來尋找內部網路網站、資源、工具和內部資訊連結
 ms.openlocfilehash: 4d484b832db07532d678af1f1c0f9f3348166e79
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29380048"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "34425586"
 ---
-# <a name="find-resources-tools-and-more"></a>尋找資源、 工具及其他
+# <a name="find-resources-tools-and-more"></a>尋找資源、工具和更多項目
 
-您的 IT 部門會建立並將書籤發佈到內部和外部的資源、 工具、 頁面及更多可協助您尋找所需的資訊。
+您的 IT 部門會建立並發佈書籤，指向內部與外部資源、工具、網頁和其他項目，以協助您尋找所需資訊。
   
-書籤結果包含的網站或資源的連結以及的簡短描述。例如，大部分組織會建立優點、 HR、 升遷資訊、 IT 支援和休假報告的書籤。
+書籤結果包括網站或資源的簡短描述，以及其連結。 舉例而言，大部分組織會建立福利、HR、職涯資訊、IT 支援與休假報告等內容的書籤。
   
-Q&A 結果將會通常包含這個相同的資訊以及簡短的答案，可能會有您需要的資訊和連結若要深入了解。
+問與答結果則大多包含這類相同資訊，並可能擁有您所需資訊的簡短解答，與供您深入了解的連結。
   
-1. Bing 在您工作或學校的帳戶登入 
+1. 在 Bing 上登入您的公司或學校帳戶 
     
 2. 搜尋某個項目
     
-    例如，請嘗試搜尋的 '福利，' '人事' '升遷資訊、' 'IT 支援' 關閉報告時間 」。
+    比方說，請嘗試搜尋「福利」、「HR」、「職涯資訊」、「IT 支援」或「報告休假」。
     
-3. 書籤或 Q&A 結果會出現在頁面或右邊一欄的頂端
+3. 書籤或問與答結果都會出現在頁面頂端或是右欄中
     
-    其他網頁結果會出現在其下。它們不專屬於您的組織。
+    其他網頁結果會出現在它的底下。 這些不是組織特定的結果。
 
   
 

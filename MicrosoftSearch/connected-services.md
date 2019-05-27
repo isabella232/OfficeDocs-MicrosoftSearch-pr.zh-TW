@@ -7,47 +7,51 @@ ms.date: 9/12/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: 161ea667-9b27-4695-b7a8-e8e063141795
-description: 了解如何自訂顯示當您使用 Microsoft Search 工作結果。
-ms.openlocfilehash: dda6f52931a0d3b3e76f038a91bfaf1d09264849
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+description: 了解如何自訂使用 Microsoft Search 時顯示的工作結果。
+ms.openlocfilehash: e9165186713ba53d45d1ea50e6997ecd1c297494
+ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29380033"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "34425677"
 ---
 # <a name="connected-services"></a>已連線的服務
 
-Microsoft Search 可讓您在 [全域通訊清單] 與 [Office 365 群組搜尋 Office 365 組織中的 SharePoint 檔案、 書籤的內部網站、 人員使用強大的 Bing 搜尋引擎。
+> [!IMPORTANT]
+> Bing 中的 Microsoft Search 設定現在可在 Microsoft 365 系統管理中心取得。 從在系統管理中心[指派搜尋系統管理員](https://docs.microsoft.com/zh-TW/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor)開始。
+     
+     
+Microsoft Search 能讓您使用強大的 Bing 搜尋引擎來搜尋 Office 365 組織的 SharePoint 檔案、書籤、內部網站、全域通訊清單中的人員以及 Office 365 群組。
   
-## <a name="search-for-sites-and-documents"></a>網站和文件的搜尋
+## <a name="search-for-sites-and-documents"></a>搜尋網站和文件
 
-搜尋網站、 頁面、 檔案及從 SharePoint 和 OneDrive for Business 文件。瀏覽人共用您的組織內與 Office 365 群組內的檔案。例如，搜尋 like '新員工訓練艙面' 的檔案或使用者和人員結果，剛 [查看他們已共用的檔案的 [檔案] 索引標籤。您也可以跨小組與您的組織搜尋 SharePoint 網站。
+搜尋 SharePoint 和商務用 OneDrive 的網站、網頁、檔案和文件。 瀏覽其他人員在貴組織內部和 Office 365 群組內部共用的檔案。 例如，搜尋「新員工訓練投影片組」這樣的檔案，或是搜尋某個使用者，然後在人員結果中按一下檔案索引標籤，就能查看他們共用的檔案。 您也可以跨小組和貴組織搜尋 SharePoint 網站。
   
-允許使用者存取 SharePoint 文件及網站搜尋 Microsoft 搜尋系統入口網站中開啟的**允許文件及網站搜尋 Bing.com** 。 
+透過開啟 Microsoft Search 系統管理入口網站的 [允許在 Bing.com 上搜尋文件和網站]****，以允許使用者搜尋 SharePoint 文件和網站。 
   
 ## <a name="search-for-people"></a>搜尋人員
 
-人員搜尋提取中的人員在組織中的所有資訊讓您不需要在多個位置以取得完整的本文中搜尋。例如，如果您搜尋 ' 謝 Fry'，您可以看到她報告給誰、 誰她搭配、 其公開共用的檔案、 其組織結構和其所屬的群組。
+[人員] 搜尋能擷取貴組織內某人員的所有相關資訊，讓您無需在多個位置中搜尋，即可看到完整內容。 例如，如果您搜尋「盧珮佳」，您可以看到她的主管、她的同事、她公開共用的檔案，她的組織結構，以及她所屬的群組。
   
-關閉**Bing.com 上允許人員**搜尋 Microsoft 搜尋系統入口網站中所允許使用者存取人員搜尋。 
+透過開啟 Microsoft Search 系統管理入口網站的 [允許在 Bing.com 上搜尋人員]****，以允許使用者搜尋人員。 
   
 ## <a name="search-for-groups"></a>搜尋群組
 
-若要取得群組、 其擁有人、 成員、 檔案及對話的相關資訊的 Office 365 群組搜尋。如果您按一下交談標題，則將在 web 上的 Outlook 中開啟並可以回應或檢閱它。
+搜尋 Office 365 群組以取得該群組的資訊，包括群組擁有者、成員、檔案和交談。 如果按一下交談的標題，該交談便會在 Outlook 網頁版中開啟，讓您可以回覆或檢閱交談。
   
-**允許群組**搜尋 Bing.com 上開啟 Microsoft 搜尋系統入口網站中所允許使用者存取群組搜尋。 
+透過開啟 Microsoft Search 系統管理入口網站的 [允許在 Bing.com 上搜尋群組]****，以允許使用者搜尋群組。 
   
-## <a name="search-for-conversations"></a>搜尋的交談
+## <a name="search-for-conversations"></a>搜尋交談
 
-搜尋的私用的 Microsoft 小組或 Microsoft Yammer 交談或已檢視權限的同事之間的對話。例如，您可以搜尋 '藍圖' 並查看關於其上方 30 相關的交談。
+搜尋您的私人 Microsoft Teams 或 Microsoft Yammer 交談，或是您有權檢視同事之間的交談。 例如，您可以搜尋「藍圖」，並查看與其最相關的前 30 項交談。
   
-允許上**允許交談搜尋 Bing.com 上**開啟交談搜尋的使用者存取的 Microsoft 小組、 Yammer，或兩者 Microsoft 搜尋系統入口網站中。 
+透過開啟 Microsoft Teams 和 Yammer 的 [允許在 Bing.com 上搜尋交談]****，或在 Microsoft Search 系統管理入口網站中同時開啟這兩者，以允許使用者搜尋交談。 
 
   
 

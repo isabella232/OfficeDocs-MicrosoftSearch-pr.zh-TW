@@ -1,5 +1,5 @@
 ---
-title: 快速為 Microsoft 搜尋設定
+title: 快速設定 Microsoft Search
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -7,81 +7,84 @@ ms.date: 12/18/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: bc3d1d2a-a4d9-4a02-9d7d-deb492e79cd0
-description: 了解以啟用及使用 Microsoft Search 所需的四個簡單的步驟。
-ms.openlocfilehash: 853b60be8038ad0f1fb38ab90dfdb02b4213568b
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+description: 了解啟用和使用 Microsoft Search 所需的四個簡單步驟。
+ms.openlocfilehash: fa391b2fc42f708a1f01c83550e7703a95e09ea8
+ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29380057"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "34425676"
 ---
-# <a name="quick-set-up-for-microsoft-search"></a>快速為 Microsoft 搜尋設定
+# <a name="quick-set-up-for-microsoft-search"></a>快速設定 Microsoft Search
 
-將引進的網路最佳節省時間並減少工作量至您的組織。
+> [!IMPORTANT]
+> Bing 中的 Microsoft Search 設定現在可在 Microsoft 365 系統管理中心取得。 從在系統管理中心[指派搜尋系統管理員](https://docs.microsoft.com/zh-TW/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor)開始。
+    
+將網路與工作的優點帶入貴組織，以節省時間。
   
-## <a name="step-1-turn-on-microsoft-search"></a>步驟 1： 開啟 Microsoft 搜尋
+## <a name="step-1-turn-on-microsoft-search"></a>步驟 1：開啟 Microsoft Search
 
-1. 在 Microsoft 365 系統管理中心的 [瀏覽] 功能表上移至 [**設定** \> **服務&amp;增益集**
+1. 在 Microsoft 365 系統管理中心的瀏覽功能表上，移至 [設定]**** \> [服務與增益集]****
     
-2. 按一下 [ **Microsoft 搜尋**服務 
+2. 按一下 **Microsoft Search** 服務 
     
-3. 在右窗格中，開啟 [**啟用 Microsoft 搜尋**
+3. 在右窗格中，開啟 [啟用 Microsoft Search]****
     
 4. 按一下 [儲存]****
     
-5. 按一下 [**快速入門**
+5. 按一下 [開始使用]****
   
-這將會帶領您完成的剩餘的安裝步驟 Microsoft 搜尋系統入口網站。
+這會將您帶到 Microsoft Search 系統管理入口網站以完成剩餘的設定步驟。
     
-## <a name="step-2-enable-connected-services"></a>步驟 2： 啟用連線的服務
+## <a name="step-2-enable-connected-services"></a>步驟 2：啟用已連線的服務
 
-取得 curates 資訊跨不同的 Microsoft 服務的完整的企業搜尋經驗。
+取得能夠跨不同 Microsoft 服務之策略資訊的完整企業搜尋體驗。
   
-1. 前往[Microsoft 搜尋系統入口網站](https://www.bingforbusiness.com/admin)
+1. 移至 [Microsoft Search 系統管理入口網站](https://www.bingforbusiness.com/admin)
     
-2. 在功能窗格中按一下 [**已連線的服務**
+2. 按一下瀏覽窗格中的 [已連線的服務]****
     
-    每個連接的服務相關聯之內容的相關資訊，請參閱[連線的服務](connected-services.md)。
+    如需每個已連線的服務相關內容的資訊，請參閱[已連線的服務](connected-services.md)。
     
-3. 針對您想要連線的每個服務，按一下 [ ****
+3. 針對想要連線的每個項目按一下 [開啟]****
     
-    人員搜尋可能需要啟用最多達 48 小時。
+    人員搜尋最多可能需要 48 小時才會啟用。
     
-## <a name="step-3-customize-content-settings"></a>步驟 3： 自訂內容設定
+## <a name="step-3-customize-content-settings"></a>步驟 3：自訂內容設定
 
-內容設定可確保熟悉的外觀與風格工作結果。 
+內容設定可確保您的工作結果擁有熟悉的外觀與風格。 
   
-1. 在功能窗格] 中按一下 [**內容設定**
+1. 按一下瀏覽窗格中的 [內容設定]****
     
-2. 如需每個設定的詳細資訊，請參閱[內容設定](content-settings.md)
+2. 如需每個設定的詳細資料，請參閱[內容設定](content-settings.md)
     
-## <a name="step-4-import-best-bets-as-suggested-bookmarks"></a>步驟 4： 匯入首選為建議的書籤
+## <a name="step-4-import-best-bets-as-suggested-bookmarks"></a>步驟 4：將首選匯入為建議的書籤
 
-如果您的組織已設定在 SharePoint 中的首選，可以輕鬆地將其匯入 Microsoft Search。匯入工具目前支援 sharepoint.com 和 sharepoint.com/search 網站集合。 
+如果貴組織在 SharePoint 中設定首選，您可以輕鬆將它們匯入至 Microsoft Search。 匯入工具目前支援 SharePoint.com 和 SharePoint.com/search 網站集合。 
   
-1. 在功能窗格] 中按一下 [**工具]**
+1. 在瀏覽窗格中，按一下 [工具]****
     
-2. 匯入 SharePoint 升級的結果查詢規則的書籤工具，按一下 [**匯入**
+2. 如需 [匯入 SharePoint 提升的結果查詢規則為書籤] 工具，請按一下 [匯入]****
     
-    同時匯入、 排程狀態會顯示。所需的時間會根據您正在匯入的首選數目而異。
+    匯入時，[已排程] 狀態會隨即出現。 所需時間會隨您匯入的首選數量而有所不同。
     
-3. 如需此的詳細資訊，請參閱[系統入口網站的工具](admin-portal-tools.md)
+3. 如需相關的詳細資料，請參閱[系統管理入口網站工具](admin-portal-tools.md)
     
-完成此快速的安裝程式並[將使用者新增](add-users.md)之後，他們可以移至 Bing.com 和搜尋工作結果。 
+完成此快速設定後，使用者就能移至 Bing.com 並搜尋工作結果。 
   
-## <a name="how-do-i-get-to-the-microsoft-search-admin-portal"></a>如何取得 Microsoft 搜尋系統入口網站？
+## <a name="how-do-i-get-to-the-microsoft-search-admin-portal"></a>如何移至 Microsoft Search 系統管理入口網站？
 
-若要管理入口網站取得任何時候：
+若要隨時移至系統管理入口網站：
   
-- 移至 [[探索 Microsoft 搜尋](https://www.bing.com/business/explore)] 頁面上，並按一下 [**管理登入**
+- 移至 [探索 Microsoft Search ][](https://www.bing.com/business/explore) 頁面，並按一下 [系統管理員登入]****
     
-- 在 Microsoft 365 系統管理中心，在左窗格中，移至 [**系統中心** \> **Microsoft 搜尋**
+- 在 Microsoft 365 系統管理中心中，於左窗格移至 [系統管理中心]**** \> [Microsoft Search ]****
 
   
 

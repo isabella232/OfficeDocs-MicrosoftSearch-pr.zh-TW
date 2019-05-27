@@ -12,21 +12,21 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: ff42d668-f721-4ada-b130-77e38508197c
-description: 使用 Microsoft 搜尋來尋找 Office 檔案及 Pdf 與您會看到的資訊
+description: 使用 Microsoft Search 來尋找 Office 檔案和 PDF，以及您將看見的資訊
 ms.openlocfilehash: f46796c015137a5bc1a24a52f7eb35cd2675a09d
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29380041"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "34425571"
 ---
 # <a name="find-files"></a>尋找檔案
 
-搜尋您自己的檔案或同事可以存取所建立的內容。結果包含的檔案名稱及位置及也可能會看到簡短的程式碼片段的內容、 人員時和一個，修改它。
+搜尋您自己的檔案，或尋找您有權存取、由同事所建立的內容。 結果會包含檔案名稱和位置，而且您可能也會看見一小段內容、最後修改人員和時間。
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2AsoN?autoplay=false]
   
-您可以找到 SharePoint 和 OneDrive for Business 檔案，包括：
+您可以尋找 SharePoint 和商務用 OneDrive 檔案，包含：
   
 - Word 文件
     
@@ -36,16 +36,16 @@ ms.locfileid: "29380041"
     
 - OneNote 筆記本
     
-- Pdf
+- PDF
     
-1. Bing 在您工作或學校的帳戶登入
+1. 在 Bing 上登入您的公司或學校帳戶
     
-2. 搜尋的 「 我的文件、' '我簡報' 或包含的主題或某個人的名稱
+2. 搜尋「我的文件」、「我的簡報」，或包含某個主題或某人的名稱
     
-    例如，'文件相關稅碼' 或 'John 檔案 」。
+    例如，「課稅碼相關文件」或「由哲翰建立的檔案」。
     
-3. 檔案結果會出現在 [結果] 頁面上的頂端
+3. 檔案結果會顯示在結果頁面的頂端
     
-    其他網頁結果會出現在其下。它們不專屬於您的組織。
+    其他網頁結果會出現在它的底下。 這些不是組織特定的結果。
 
 
