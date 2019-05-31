@@ -3,22 +3,23 @@ title: 使用 Microsoft Search 讓內容易於尋找
 ms.author: anfowler
 author: adefowler
 manager: mnirkhe
-ms.date: 12/11/2018
+ms.date: 05/30/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 localization_priority: Priority
+ROBOTS: NOINDEX
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 建立書籤、位置和問與答項目，讓組織的內容易於尋找。
-ms.openlocfilehash: e7f65715faf71165549cb1af7f15a4d3ac918f19
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: 851f88206d7f8e0330497c9706b02ad98e0f8e6c
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "34425599"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591564"
 ---
 # <a name="make-content-easy-to-find"></a>讓內容易於尋找
 ****Microsoft Search**** 可協助使用者找到相關內容。 **Microsoft Search** 是一種能同時安全地搜尋您內部網路與 Web 內容的方式。 只有 Microsoft 能夠提供這種跨網路與組織的整合產品。 
@@ -59,7 +60,7 @@ ms.locfileid: "34425599"
 1. 哪些詞可以用來尋找您已找到的資訊？
 1. 利用組織所使用的任何現有分類法，以及相關的變體、縮寫、主旨和主題。
 1. 使用者還會使用哪些其他變化詞或字描述這項資訊？
-1. 利用您的支援小組以判斷這些關鍵字。
+1. 利用您的支援小組判斷這些關鍵字。
 
 例如，如果您建立能夠連結至提交休假要求工具的結果，像是「假期」和「提交假期要求」等關鍵字就是很好的選項。 您也可能會發現組織中的人員會使用「休息」或「休假」來描述休假相關資訊。 新增「休息」、「休假」、「提交休假要求」、「要求休假」之類關鍵字，能讓更多使用者更容易找到相關內容。
 
