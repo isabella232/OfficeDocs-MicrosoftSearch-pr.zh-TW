@@ -13,18 +13,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 3d2a1498-174e-4214-9cf1-8b58cce5a872
+ROBOTS: NOINDEX
 description: 使用 SharePoint 的搜尋查詢以建立 Microsoft Search 工作結果
-ms.openlocfilehash: 6e55e2000792bdb576a18a0efeb353dc3ea13605
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: 1538c57a7b4138b36fe62e3076feb58d746b2b3e
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "34425667"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591600"
 ---
 # <a name="import-sharepoint-promoted-results-and-top-queries"></a>匯入 SharePoint 提升的結果與熱門查詢
 
 > [!IMPORTANT]
-> Bing 中的 Microsoft Search 設定現在可在 Microsoft 365 系統管理中心取得。 從在系統管理中心[指派搜尋系統管理員](https://docs.microsoft.com/zh-TW/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor)開始。
+> 本文適用於 Bing 系統管理入口網站中的 Microsoft Search。 我們已將入口網站移至 Microsoft 365 管理中心，並在之後移除。 我們建議您使用 Microsoft 365 系統管理中心以開始。 [Microsoft Search 概觀](overview-microsoft-search.md)。
     
 為了有效調控使用者的查詢與您在 SharePoint 中建立的首選，Microsoft Search 納入了兩項能將此資訊匯入為建議書籤的工具： 
   

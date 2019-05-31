@@ -13,15 +13,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 41b9b33d-fcc4-470c-90ec-068211fbbb16
+ROBOTS: NOINDEX
 description: 啟用 Microsoft Search 所需的 Office 365 需求與訂閱
-ms.openlocfilehash: e90013eb2b76a4a4f4fff2e8b91f3bc6e48a4f2b
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: 029bab5b88a800786f137941df1077b28d4398b7
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "34425575"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591213"
 ---
 # <a name="requirements-for-microsoft-search"></a>Microsoft Search 的需求
+
+> [!IMPORTANT]
+> 本文適用於 Bing 系統管理入口網站中的 Microsoft Search。 我們已將入口網站移至 Microsoft 365 管理中心，並在之後移除。 我們建議您使用 Microsoft 365 系統管理中心以開始。 [Microsoft Search 概觀](overview-microsoft-search.md)。
 
 以下是啟用 Microsoft Search 所需的 Office 365 租用戶需求： 
   

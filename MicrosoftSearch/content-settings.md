@@ -13,20 +13,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: d1432d64-7a97-4b1b-a99f-11291814d361
+ROBOTS: NoIndex
 description: 新增標誌、公司名稱和更多項目到 Microsoft Search 工作結果
-ms.openlocfilehash: 3172d7739e280e964899c24b913735feb4a25ddd
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: d3989422c4bd38236241984c1f9beb67d12a0847
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "34425646"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591240"
 ---
 # <a name="content-settings"></a>內容設定
 
 > [!IMPORTANT]
-> Bing 設定中的 Microsoft Search 現在可以在 Microsoft 365 管理中心中使用。 從系統管理中心的[指派搜尋系統管理員](https://docs.microsoft.com/zh-TW/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor)開始。
+> 本文適用於 Bing 系統管理入口網站中的 Microsoft Search。 我們已將入口網站移至 Microsoft 365 管理中心，並在之後移除。 我們建議您使用 Microsoft 365 系統管理中心以開始。 [Microsoft Search 概觀](overview-microsoft-search.md)。
     
-有了 Microsoft Search，您就能確保從組織內部的內容資源 (例如 SharePoint、商務用 OneDrive 或貴公司內部網路) 中提取的結果擁有熟悉的外觀與風格。 
+有了 Microsoft Search，您就能確保從組織內部的內容來源 (例如 SharePoint、商務用 OneDrive 或貴公司內部網路) 中提取的結果擁有熟悉的外觀與風格。 
   
 - 組織名稱
     

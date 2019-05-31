@@ -13,21 +13,22 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 161ea667-9b27-4695-b7a8-e8e063141795
+ROBOTS: NoIndex
 description: 了解如何自訂使用 Microsoft Search 時顯示的工作結果。
-ms.openlocfilehash: e9165186713ba53d45d1ea50e6997ecd1c297494
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: 9054febab2626097762a80f093affb1e3351fe1a
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "34425677"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591258"
 ---
 # <a name="connected-services"></a>已連線的服務
 
 > [!IMPORTANT]
-> Bing 中的 Microsoft Search 設定現在可在 Microsoft 365 系統管理中心取得。 從在系統管理中心[指派搜尋系統管理員](https://docs.microsoft.com/zh-TW/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor)開始。
+> 本文適用於 Bing 系統管理入口網站中的 Microsoft Search。 我們已將入口網站移至 Microsoft 365 管理中心，並在之後移除。 我們建議您使用 Microsoft 365 系統管理中心以開始。 [Microsoft Search 概觀](overview-microsoft-search.md)。
      
      
-Microsoft Search 能讓您使用強大的 Bing 搜尋引擎來搜尋 Office 365 組織的 SharePoint 檔案、書籤、內部網站、全域通訊清單中的人員以及 Office 365 群組。
+Microsoft Search 能讓您使用強大的 Bing 搜尋引擎來搜尋 Office 365 組織的 SharePoint 檔案、加入書籤的內部網站、全域通訊清單中的人員以及 Office 365 群組。
   
 ## <a name="search-for-sites-and-documents"></a>搜尋網站和文件
 
