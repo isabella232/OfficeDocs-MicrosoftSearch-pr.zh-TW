@@ -1,9 +1,9 @@
 ---
 title: 管理書籤
-ms.author: dawholl
-author: dawholl
-manager: kellis
-ms.date: 09/08/2018
+ms.author: anfowler
+author: adefowler
+manager: mnirkhe
+ms.date: 05/30/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,88 +13,86 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
-description: 尋找要更新的書籤與 Microsoft Search 大量編輯書籤結果的方法
-ms.openlocfilehash: d5cebbfd5779bc8a6aa25cdbcdedb6e9b18f242e
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+description: 在 Microsoft Search 中建立、更新書籤及大量編輯書籤結果的方法
+ms.openlocfilehash: fb1be0bc137891a54e370fef1e4b5628963c5ad9
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "34425649"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591618"
 ---
-# <a name="manage-bookmarks"></a><span data-ttu-id="0742d-103">管理書籤</span><span class="sxs-lookup"><span data-stu-id="0742d-103">Manage bookmarks</span></span>
+# <a name="manage-bookmarks"></a><span data-ttu-id="11083-103">管理書籤</span><span class="sxs-lookup"><span data-stu-id="11083-103">Manage bookmarks</span></span>
 
-> [!IMPORTANT]
-> <span data-ttu-id="0742d-104">Bing 設定中的 Microsoft Search 現在可以在 Microsoft 365 管理中心中使用。</span><span class="sxs-lookup"><span data-stu-id="0742d-104">Microsoft Search in Bing settings are now available in the Microsoft 365 admin center.</span></span> <span data-ttu-id="0742d-105">從系統管理中心的 [指派搜尋系統管理員](https://docs.microsoft.com/zh-TW/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) 開始。</span><span class="sxs-lookup"><span data-stu-id="0742d-105">Get started by [assigning search admins](https://docs.microsoft.com/en-us/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) in your admin center.</span></span>
-    
-<span data-ttu-id="0742d-106">經過一段時間，您可能會需要更新書籤的狀態和相關內容。</span><span class="sxs-lookup"><span data-stu-id="0742d-106">Over time, you may need to update a bookmark's status and content to keep it relevant.</span></span> 
-  
-## <a name="filter-bookmarks"></a><span data-ttu-id="0742d-107">篩選書籤</span><span class="sxs-lookup"><span data-stu-id="0742d-107">Filter bookmarks</span></span>
+<span data-ttu-id="11083-104">只要幾個步驟，您便可以建立書籤。</span><span class="sxs-lookup"><span data-stu-id="11083-104">You can create a bookmark in just a few steps.</span></span> <span data-ttu-id="11083-105">每個書籤都包括標題、URL，和一組能觸發書籤的關鍵字。</span><span class="sxs-lookup"><span data-stu-id="11083-105">Each bookmark includes a title, a URL, and a set of keywords that trigger it.</span></span> <span data-ttu-id="11083-106">一個書籤可以有多個關鍵字，數個書籤可以共用相同的關鍵字，但不能共用保留的關鍵字。</span><span class="sxs-lookup"><span data-stu-id="11083-106">A bookmark can have several keywords and several bookmarks can share the same keyword, but reserved keyword can't be shared.</span></span> <span data-ttu-id="11083-107">建立或修改書籤時，搜尋索引會立即重新整理，且書籤會立即可供使用者使用。</span><span class="sxs-lookup"><span data-stu-id="11083-107">When a Bookmark is created or modified, the search index is refreshed immediately, and the bookmark is available to users immediately.</span></span>
 
-<span data-ttu-id="0742d-108">使用書籤頁面右上角的篩選選項，來依據日期與修改者尋找書籤。</span><span class="sxs-lookup"><span data-stu-id="0742d-108">Use the filter option in the upper-right corner of the Bookmarks page to find bookmarks by date and who modified them.</span></span> <span data-ttu-id="0742d-109">例如，將日期滑桿設定為 30 天，並選取系統管理員或編輯者，以查看該人員在該段期間內建立或變更的書籤清單。</span><span class="sxs-lookup"><span data-stu-id="0742d-109">For example, set the date slider to 30 days and select an admin or editor to see the list of bookmarks they've created or changed in that time.</span></span>
-  
-## <a name="change-bookmark-content-or-settings"></a><span data-ttu-id="0742d-110">變更書籤內容或設定</span><span class="sxs-lookup"><span data-stu-id="0742d-110">Change bookmark content or settings</span></span>
+<span data-ttu-id="11083-108">如果組織已在 SharePoint 中設定升級的結果，您可以將升級的結果匯入到 **Microsoft Search**，並讓您的使用者使用匯入的內容。</span><span class="sxs-lookup"><span data-stu-id="11083-108">If your organization has Promoted Results set up in SharePoint, you can import the Promoted Results into**Microsoft Search** and make the imported content available to your users.</span></span> <span data-ttu-id="11083-109">要快速填入搜尋結果，這是個簡單的方法，只要您設定 **Microsoft Search**，並讓它對使用者更有效率即可。</span><span class="sxs-lookup"><span data-stu-id="11083-109">This is an easy way to quickly populate search results as soon as you set up **Microsoft Search** and make it more effective for your users.</span></span> <span data-ttu-id="11083-110">建議您使用來自 SharePoint 提升的結果做為參考，以了解如何指定和建立相關的搜尋結果。</span><span class="sxs-lookup"><span data-stu-id="11083-110">We recommend that you use promoted results from SharePoint as a reference to understand how to name and create relevant search results.</span></span> 
 
-1. <span data-ttu-id="0742d-111">移至 Microsoft Search 系統管理入口網站</span><span class="sxs-lookup"><span data-stu-id="0742d-111">Go to the Microsoft Search Admin portal</span></span>
-    
-2. <span data-ttu-id="0742d-112">按一下瀏覽窗格中的 \*\* [書籤]\*\*</span><span class="sxs-lookup"><span data-stu-id="0742d-112">In the left navigation pane, click **Groups**.</span></span>
-    
-3. <span data-ttu-id="0742d-113">若要尋找書籤，請搜尋、篩選或按一下書籤狀態，以縮小您的結果</span><span class="sxs-lookup"><span data-stu-id="0742d-113">To find a bookmark, search, filter, or click a bookmark status to narrow your results</span></span>
-    
-4. <span data-ttu-id="0742d-114">若要變更或更新書籤，請按一下標題</span><span class="sxs-lookup"><span data-stu-id="0742d-114">To change or update a bookmark, click the title</span></span>
-    
-5. <span data-ttu-id="0742d-115">對內容或設定進行任何變更或更新，並預覽其顯示方式</span><span class="sxs-lookup"><span data-stu-id="0742d-115">Make any changes or updates to the content or settings and preview how they'll appear</span></span> 
-    
-6. <span data-ttu-id="0742d-116">按一下 [儲存]\*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="0742d-116">Click **Save**</span></span>
-    
-## <a name="bulk-export-and-edit-bookmarks"></a><span data-ttu-id="0742d-117">大量匯出與編輯書籤</span><span class="sxs-lookup"><span data-stu-id="0742d-117">Bulk export and edit bookmarks</span></span>
+## <a name="add-or-edit-a-single-bookmark"></a><span data-ttu-id="11083-111">新增或編輯單一書籤</span><span class="sxs-lookup"><span data-stu-id="11083-111">Add or edit a single bookmark</span></span>
+1. <span data-ttu-id="11083-112">移至 **Microsoft 365 系統管理中心**。</span><span class="sxs-lookup"><span data-stu-id="11083-112">Go to the Microsoft 365 admin center.</span></span>
+1. <span data-ttu-id="11083-113">在功能窗格中，移至 [設定]\*\*\*\*，然後選取 \*\*\*\*Microsoft Search\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="11083-113">In the navigation pane, go to **Settings**, and then select \*\*\*\*Microsoft Search\*\*\*\*.</span></span>
+<span data-ttu-id="11083-114">預設會選取 [書籤]\*\*\*\* 索引標籤。</span><span class="sxs-lookup"><span data-stu-id="11083-114">By default, the **Bookmarks** tab is selected.</span></span>
+1. <span data-ttu-id="11083-115">若要新增書籤，請選取 [新增]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="11083-115">To add a bookmark, select **Add new**.</span></span> <span data-ttu-id="11083-116">若要編輯書籤，請在相關的書籤清單中選取書籤。</span><span class="sxs-lookup"><span data-stu-id="11083-116">To edit a bookmark, select the bookmark in the relevant bookmark list.</span></span> 
+1. <span data-ttu-id="11083-117">當您新增或編輯資訊時，預覽會自動更新。</span><span class="sxs-lookup"><span data-stu-id="11083-117">As you add or edit the information, the preview automatically updates.</span></span>
+1. <span data-ttu-id="11083-118">儲存變更。</span><span class="sxs-lookup"><span data-stu-id="11083-118">Save your changes.</span></span>
 
-<span data-ttu-id="0742d-118">請不要編輯這些欄位中的資料：</span><span class="sxs-lookup"><span data-stu-id="0742d-118">Never edit data in these fields:</span></span>
-  
-- <span data-ttu-id="0742d-119">識別碼</span><span class="sxs-lookup"><span data-stu-id="0742d-119">Id</span></span>
-    
-- <span data-ttu-id="0742d-120">上次修改日期</span><span class="sxs-lookup"><span data-stu-id="0742d-120">Last modified</span></span>
-    
-- <span data-ttu-id="0742d-121">上次修改者</span><span class="sxs-lookup"><span data-stu-id="0742d-121">Last modified by</span></span>
-    
-<span data-ttu-id="0742d-122">識別碼是每個書籤的唯一識別碼，請不要編輯。</span><span class="sxs-lookup"><span data-stu-id="0742d-122">Id is a unique identifier for each bookmark and should never be edited.</span></span> <span data-ttu-id="0742d-123">[上次修改日期] 和 [上次修改者] 欄位只應用來排序和尋找書籤。</span><span class="sxs-lookup"><span data-stu-id="0742d-123">The Last Modified and Last Modified By fields should only be used to sort and find bookmarks.</span></span>
-  
-1. <span data-ttu-id="0742d-124">如果您想要匯出書籤的子集，請篩選它們</span><span class="sxs-lookup"><span data-stu-id="0742d-124">If you want to export a subset of your bookmarks, filter them</span></span>
-    
-2. <span data-ttu-id="0742d-125">按一下 [書籤] 頁面右上角的 [匯出]\*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="0742d-125">In the upper-right corner of the Bookmarks page, click **Export**</span></span>
-    
-3. <span data-ttu-id="0742d-126">儲存或開啟 .csv 檔案</span><span class="sxs-lookup"><span data-stu-id="0742d-126">Save or open the .csv file</span></span>
-    
-4. <span data-ttu-id="0742d-127">請編輯任何欄位中的資料：</span><span class="sxs-lookup"><span data-stu-id="0742d-127">Edit data in any of these fields:</span></span>
-   - <span data-ttu-id="0742d-128">標題</span><span class="sxs-lookup"><span data-stu-id="0742d-128">Title</span></span>
-    
-   - <span data-ttu-id="0742d-129">URL</span><span class="sxs-lookup"><span data-stu-id="0742d-129">URL</span></span>
-    
-   - <span data-ttu-id="0742d-130">關鍵字</span><span class="sxs-lookup"><span data-stu-id="0742d-130">Keywords</span></span>
-    
-   - <span data-ttu-id="0742d-131">狀態</span><span class="sxs-lookup"><span data-stu-id="0742d-131">State</span></span>
-    
-   - <span data-ttu-id="0742d-132">描述</span><span class="sxs-lookup"><span data-stu-id="0742d-132">Description</span></span>
-    
-   - <span data-ttu-id="0742d-133">保留關鍵字</span><span class="sxs-lookup"><span data-stu-id="0742d-133">Reserved keywords</span></span>
-    
-   - <span data-ttu-id="0742d-134">開始日期</span><span class="sxs-lookup"><span data-stu-id="0742d-134">Start Date</span></span>
-    
-   - <span data-ttu-id="0742d-135">結束日期</span><span class="sxs-lookup"><span data-stu-id="0742d-135">End date</span></span>
-    
-   - <span data-ttu-id="0742d-136">國家/地區</span><span class="sxs-lookup"><span data-stu-id="0742d-136">Country/Region</span></span>
-    
-   - <span data-ttu-id="0742d-137">群組</span><span class="sxs-lookup"><span data-stu-id="0742d-137">Groups</span></span>
-    
-   - <span data-ttu-id="0742d-138">裝置 &amp; 作業系統</span><span class="sxs-lookup"><span data-stu-id="0742d-138">Device&amp;OS</span></span>
-    
-   - <span data-ttu-id="0742d-139">目標變化</span><span class="sxs-lookup"><span data-stu-id="0742d-139">Targeted Variations</span></span>
-    
-5. <span data-ttu-id="0742d-140">儲存 .csv 檔案</span><span class="sxs-lookup"><span data-stu-id="0742d-140">Save the file as a .csv or .txt file.</span></span>
+## <a name="add-or-edit-bookmark-using-browser-extensions"></a><span data-ttu-id="11083-119">使用瀏覽器擴充功能來新增或編輯書籤</span><span class="sxs-lookup"><span data-stu-id="11083-119">Add or edit bookmark using browser extensions</span></span>
+<span data-ttu-id="11083-120">搜尋系統管理員可以使用瀏覽器擴充功能輕鬆地建立搜尋內容。</span><span class="sxs-lookup"><span data-stu-id="11083-120">Search administrators can create search content easily by using browser extensions.</span></span> <span data-ttu-id="11083-121">安裝瀏覽器擴充功能模組，然後移至您要新增為書籤的網站，並將網站新增為書籤。</span><span class="sxs-lookup"><span data-stu-id="11083-121">Install the browser extension and then go to the site you want to add as bookmark and add the site as bookmark.</span></span>
 
-    <span data-ttu-id="0742d-141">.csv 檔案應該要儲存為 CSV utf-8 檔案，其他檔案類型或編碼方式會造成匯入錯誤。</span><span class="sxs-lookup"><span data-stu-id="0742d-141">The .csv file should be saved as a CSV UTF-8 file, other file types and or encodings may cause import errors</span></span>
-    
-6. <span data-ttu-id="0742d-142">按一下 [書籤] 頁面右上角的 **[匯入]** </span><span class="sxs-lookup"><span data-stu-id="0742d-142">In the upper-right corner of the Bookmarks page, click **Import**</span></span>
-    
-7. <span data-ttu-id="0742d-143">在 [匯入書籤] 窗格中，按一下 **[瀏覽]**，並選取您編輯的 .csv 檔案</span><span class="sxs-lookup"><span data-stu-id="0742d-143">In the Import bookmarks pane, click **Browse** and select the edited .csv file</span></span> 
-    
-8. <span data-ttu-id="0742d-144">按一下 **[匯入]** </span><span class="sxs-lookup"><span data-stu-id="0742d-144">Click **Import**.</span></span>
+<span data-ttu-id="11083-122">目前提供 Edge 和 Chrome 的瀏覽器擴充功能。</span><span class="sxs-lookup"><span data-stu-id="11083-122">Currently, browser extensions are available for Edge and Chrome.</span></span> 
+- <span data-ttu-id="11083-123">若要下載 Edge 擴充功能，請移至 [Microsoft Store](https://www.microsoft.com/en-us/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) 並下載應用程式。</span><span class="sxs-lookup"><span data-stu-id="11083-123">To download Edge extension, go to [Microsoft Store](https://www.microsoft.com/en-us/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) and download the app.</span></span>
+- <span data-ttu-id="11083-124">若要下載 Chrome 擴充功能，請移至 [Chrome 線上應用程式商店](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm)並下載應用程式。</span><span class="sxs-lookup"><span data-stu-id="11083-124">To download Chrome extension, go to [Chrome web store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm) and download the app.</span></span>
+
+## <a name="bulk-add-or-edit-bookmarks"></a><span data-ttu-id="11083-125">大量新增或編輯書籤</span><span class="sxs-lookup"><span data-stu-id="11083-125">Bulk add or edit bookmarks</span></span>
+<span data-ttu-id="11083-126">搜尋系統管理員可以使用匯入或匯出功能來大量建立或編輯書籤。</span><span class="sxs-lookup"><span data-stu-id="11083-126">Search administrator can use the Import or Export features to bulk create or edit bookmarks.</span></span> <span data-ttu-id="11083-127">當系統管理員想要新增或編輯大量書籤時，此功能非常實用。</span><span class="sxs-lookup"><span data-stu-id="11083-127">This is a very useful feature when an administrator wants to add or edit a large number of bookmarks.</span></span> 
+
+<span data-ttu-id="11083-128">使用匯入/匯出功能，以便：</span><span class="sxs-lookup"><span data-stu-id="11083-128">Use the import/export feature to:</span></span>
+- <span data-ttu-id="11083-129">大量新增書籤 - 在書籤範本檔案中新增詳細資料，然後將它匯入。</span><span class="sxs-lookup"><span data-stu-id="11083-129">Bulk add bookmarks - Add details in the bookmark template file, and then import it.</span></span>
+- <span data-ttu-id="11083-130">大量編輯書籤 - 將書籤匯出至 .csv 檔案，然後編輯匯出的 .csv 檔案中書籤的詳細資料，然後匯入更新的 .csv 檔案。</span><span class="sxs-lookup"><span data-stu-id="11083-130">Bulk edit bookmarks - Export bookmarks to a .csv file, then edit the bookmark details in the exported .csv file, and then import the updated .csv file.</span></span>
+- <span data-ttu-id="11083-131">從 SharePoint 匯入升級的網站。</span><span class="sxs-lookup"><span data-stu-id="11083-131">Import promoted sites from SharePoint.</span></span>
+- <span data-ttu-id="11083-132">備份書籤 - 將書籤匯出至 .csv 檔案。</span><span class="sxs-lookup"><span data-stu-id="11083-132">Backup bookmarks - Export bookmarks to a .csv file.</span></span>
+
+<span data-ttu-id="11083-133">若要匯入或匯出書籤：</span><span class="sxs-lookup"><span data-stu-id="11083-133">To import or export bookmarks:</span></span>
+1. <span data-ttu-id="11083-134">在 [書籤]\*\*\*\* 索引標籤的右上角，選取 [匯入]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="11083-134">In the upper-right corner of **Bookmarks** tab, select **Import**.</span></span> <span data-ttu-id="11083-135">選取 [匯出]\*\*\*\* 來下載 .csv 檔案中所有的現有書籤。</span><span class="sxs-lookup"><span data-stu-id="11083-135">Select **Export** to download all the existing bookmarks in a .csv file.</span></span>
+1. <span data-ttu-id="11083-136">在右窗格中，選擇使用 .csv 檔案或從 SharePoint 匯入的選項。</span><span class="sxs-lookup"><span data-stu-id="11083-136">In the right pane, choose the option to import using a .csv file or from SharePoint.</span></span>
+<span data-ttu-id="11083-137">下載範本檔案以取得必要欄位的清單和詳細資料。</span><span class="sxs-lookup"><span data-stu-id="11083-137">Download the template file for a list of the required fields and details.</span></span> 
+1. <span data-ttu-id="11083-138">在範本檔案中新增或編輯書籤詳細資料，然後將它儲存在您的電腦上。</span><span class="sxs-lookup"><span data-stu-id="11083-138">Add or edit bookmark details in the template file, and then save it on your computer.</span></span> 
+1. <span data-ttu-id="11083-139">在 [匯入書籤]\*\*\*\* 窗格中，選取 [瀏覽]\*\*\*\*，然後選取您要匯入的 .csv 檔案。</span><span class="sxs-lookup"><span data-stu-id="11083-139">In the **Import bookmarks** pane, select **Browse** and then the .csv file that you want to import.</span></span>
+1. <span data-ttu-id="11083-140">選取 [匯入]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="11083-140">Select **Import**.</span></span>
+
+<span data-ttu-id="11083-141">以下是有關範本檔案要注意的一些重點：</span><span class="sxs-lookup"><span data-stu-id="11083-141">Here are some important points to be noted regarding the template file:</span></span>
+- <span data-ttu-id="11083-142">永不編輯這些欄位中的資料：*識別碼*、*上次修改日期*，以及*上次修改者*</span><span class="sxs-lookup"><span data-stu-id="11083-142">Never edit data in these fields: *Id*, *Last Modified*, and *Last Modified By*</span></span>
+- <span data-ttu-id="11083-143">如果您包含現有書籤的*識別碼*，將會以匯入檔案中的資訊加以取代。</span><span class="sxs-lookup"><span data-stu-id="11083-143">If you include the *Id* of an existing bookmark, it will be replaced with the information in the import file.</span></span>
+- <span data-ttu-id="11083-144">如果有一個現有的書籤具有相同標題或 URL，則會以匯入檔案中的資訊更新書籤。</span><span class="sxs-lookup"><span data-stu-id="11083-144">If there is an existing bookmark with the same title or URL, the bookmark will be updated with information in the import file.</span></span>
+- <span data-ttu-id="11083-145">範本檔案中並非所有欄位都為必要，必要欄位則會依據書籤的狀態而改變。</span><span class="sxs-lookup"><span data-stu-id="11083-145">Not all fields in the template file are required and required fields vary depending on the bookmark state.</span></span>
+- <span data-ttu-id="11083-146">書籤會根據 [狀態]\*\* 欄位的不同而儲存成草稿、建議、已排程或自動發佈。</span><span class="sxs-lookup"><span data-stu-id="11083-146">Based on the *State* field, bookmarks will be saved as draft, suggested, scheduled, or they will be published automatically.</span></span>
+- <span data-ttu-id="11083-147">針對具有多個租用戶的組織，您可以從一個租用戶匯出您的書籤，並將它匯入到另一個租用戶。</span><span class="sxs-lookup"><span data-stu-id="11083-147">For organizations with multiple tenants, you can export your bookmarks from one tenant and import it into another.</span></span> <span data-ttu-id="11083-148">但您必須在匯入之前，先移除 [識別碼]\*\* 資料行中的資料。</span><span class="sxs-lookup"><span data-stu-id="11083-148">But you must remove the data in the *Id* column before you import.</span></span>
+
+### <a name="prevent-import-errors"></a><span data-ttu-id="11083-149">防止匯入錯誤</span><span class="sxs-lookup"><span data-stu-id="11083-149">Prevent import errors</span></span>
+<span data-ttu-id="11083-150">如果任何必要資料遺漏或無效，您會收到錯誤訊息，並且會產生記錄檔，其中包含要修正的資料列和資料行的詳細資訊。</span><span class="sxs-lookup"><span data-stu-id="11083-150">You'll get an error if any required data is missing or invalid, and a log file is generated with more information about the rows and columns to be corrected.</span></span> <span data-ttu-id="11083-151">進行所需編輯，然後再次嘗試匯入檔案。</span><span class="sxs-lookup"><span data-stu-id="11083-151">Make necessary edits and try importing the file again.</span></span> <span data-ttu-id="11083-152">在解決所有問題之前，您無法匯入或儲存任何書籤。</span><span class="sxs-lookup"><span data-stu-id="11083-152">You cannot import or save any bookmarks until all errors are resolved.</span></span>
+
+<span data-ttu-id="11083-153">若要避免錯誤，請確定您匯入的檔案的格式正確，並且：</span><span class="sxs-lookup"><span data-stu-id="11083-153">To prevent errors, make sure your import file is properly formatted and:</span></span>
+- <span data-ttu-id="11083-154">包含匯入範本中的標題列和所有資料行</span><span class="sxs-lookup"><span data-stu-id="11083-154">Includes the header row and all the columns that were in the import template</span></span>
+- <span data-ttu-id="11083-155">資料行順序與匯入範本相同</span><span class="sxs-lookup"><span data-stu-id="11083-155">The column order is the same as the import template</span></span>
+- <span data-ttu-id="11083-156">所有資料行都有值，除了可以是空白的這三個以外：*識別碼*、*上次修改日期*，以及*上次修改者*</span><span class="sxs-lookup"><span data-stu-id="11083-156">All columns have values, except the three that can be empty: *Id*, *Last Modified*, and *Last Modified By*</span></span> 
+- <span data-ttu-id="11083-157">[狀態]\*\* 資料行不是空白，此為必要資訊</span><span class="sxs-lookup"><span data-stu-id="11083-157">The *State* column is not empty, as this information is required</span></span>
+
+## <a name="powerapps"></a><span data-ttu-id="11083-158">PowerApps</span><span class="sxs-lookup"><span data-stu-id="11083-158">PowerApps</span></span>
+<span data-ttu-id="11083-159">將現有的 PowerApps 新增至您的書籤，協助您的使用者完成工作，例如輸入假期時間或提出支出報告。</span><span class="sxs-lookup"><span data-stu-id="11083-159">Help your users complete tasks, such as entering vacation time or reporting expenses, by adding existing PowerApps to your bookmarks.</span></span> 
+
+### <a name="what-are-powerapps"></a><span data-ttu-id="11083-160">什麼是 PowerApps？</span><span class="sxs-lookup"><span data-stu-id="11083-160">What are PowerApps?</span></span>
+<span data-ttu-id="11083-161">PowerApps 是一個服務，即使您沒有編寫程式碼經驗，也能打造在瀏覽器、手機或平板電腦上運行的商務 App。</span><span class="sxs-lookup"><span data-stu-id="11083-161">PowerApps is a service that lets you build business apps that run in a browser or on a phone or tablet with no coding experience required.</span></span> <span data-ttu-id="11083-162">PowerApps 可以在任何瀏覽器和任何裝置上運作，不到一分鐘即可迅速新增完成。</span><span class="sxs-lookup"><span data-stu-id="11083-162">PowerApps work in any browser and on any device and take less than a minute to add.</span></span> <span data-ttu-id="11083-163">如需 PowerApps 的詳細資訊，請參閱：</span><span class="sxs-lookup"><span data-stu-id="11083-163">For more on PowerApps, see:</span></span>
+- <span data-ttu-id="11083-164">
+  [引導學習](https://docs.microsoft.com/zh-TW/learn/browse/?products=powerapps)</span><span class="sxs-lookup"><span data-stu-id="11083-164">[Guided Learning](https://docs.microsoft.com/en-us/learn/browse/?products=powerapps)</span></span>
+- <span data-ttu-id="11083-165">
+  [文件](https://docs.microsoft.com/zh-TW/powerapps/maker/canvas-apps/get-sessionid)</span><span class="sxs-lookup"><span data-stu-id="11083-165">[Documentation](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/get-sessionid)</span></span>
+- [<span data-ttu-id="11083-166">PowerApps 首頁</span><span class="sxs-lookup"><span data-stu-id="11083-166">PowerApps Home</span></span>](https://make.preview.powerapps.com/environments/839eace6-59ab-4243-97ec-a5b8fcc104e4/home)
+
+### <a name="add-a-powerapp-to-a-bookmark"></a><span data-ttu-id="11083-167">將 PowerApp 新增至書籤</span><span class="sxs-lookup"><span data-stu-id="11083-167">Add a PowerApp to a bookmark</span></span>
+1. <span data-ttu-id="11083-168">尋找您想要新增的 [PowerApp 的應用程式識別碼](https://docs.microsoft.com/zh-TW/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id)。</span><span class="sxs-lookup"><span data-stu-id="11083-168">Find the [App ID for the PowerApp](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) that you want to add.</span></span>
+1. <span data-ttu-id="11083-169">登入並移至 **Microsoft 365 系統管理中心**。</span><span class="sxs-lookup"><span data-stu-id="11083-169">Sign in and go to **Microsoft 365 admin center**.</span></span>
+1. <span data-ttu-id="11083-170">在功能窗格中，移至 [設定]\*\*\*\*，然後選取 **Microsoft Search**。</span><span class="sxs-lookup"><span data-stu-id="11083-170">In the navigation pane, go to **Settings**, and then select **Microsoft Search**.</span></span>
+1. <span data-ttu-id="11083-171">新增書籤或尋找您想要新增 **PowerApp** 的現有書籤。</span><span class="sxs-lookup"><span data-stu-id="11083-171">Add a bookmark or find an existing bookmark that you want to add a **PowerApp** to.</span></span>
+1. <span data-ttu-id="11083-172">在 [書籤設定]\*\*\*\* 中，選取 [PowerApp]\*\*\*\*，然後選取 [新增 PowerApp]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="11083-172">In **Bookmark settings**, select **Power App**, and then **Add a Power App**.</span></span>
+1. <span data-ttu-id="11083-173">輸入或貼上**應用程式識別碼**。</span><span class="sxs-lookup"><span data-stu-id="11083-173">Enter or paste the **App ID**.</span></span>
+    <span data-ttu-id="11083-174">系統會自動調整高度和寬度。</span><span class="sxs-lookup"><span data-stu-id="11083-174">The height and width are automatically adjusted.</span></span> <span data-ttu-id="11083-175">書籤能夠同時支援直向和橫向的方向，但目前無法變更大小。</span><span class="sxs-lookup"><span data-stu-id="11083-175">Bookmarks can support both portrait and landscape orientations, but currently the size can't be changed.</span></span> <span data-ttu-id="11083-176">書籤預覽會顯示完整功能的 PowerApp，讓您輕鬆測試。</span><span class="sxs-lookup"><span data-stu-id="11083-176">The bookmark preview shows a fully functional PowerApp to make it easy to test.</span></span>
+1. <span data-ttu-id="11083-177">選取 **發佈** 或 **儲存為草稿**。</span><span class="sxs-lookup"><span data-stu-id="11083-177">Select **Publish** or **Save to Draft**.</span></span>
