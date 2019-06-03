@@ -13,24 +13,25 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f980b90f-95e2-4b66-8b21-69f601ff4b50
+ROBOTS: NoIndex
 description: 將 Microsoft Search 的搜尋方塊新增至任何內部網路網站或頁面，以取得相關的搜尋建議並更快速尋找工作結果。
-ms.openlocfilehash: a68259506e8f4a0f7982d2b080f725c5446a355e
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: 867282393c7a4bffa63363a3455e4f1543c7f8a1
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "34425668"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34590691"
 ---
-# <a name="add-a-search-box-to-your-intranet-site"></a><span data-ttu-id="652e0-103">將搜尋方塊新增至您的內部網路網站</span><span class="sxs-lookup"><span data-stu-id="652e0-103">Add a search box to your intranet site</span></span>
+# <a name="add-a-search-box-to-your-intranet-site"></a><span data-ttu-id="eb5bb-103">將搜尋方塊新增至您的內部網路網站</span><span class="sxs-lookup"><span data-stu-id="eb5bb-103">Add a search box to your intranet site</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="652e0-104">Bing 中的 Microsoft Search 設定現在可在 Microsoft 365 系統管理中心取得。</span><span class="sxs-lookup"><span data-stu-id="652e0-104">Microsoft Search in Bing settings are now available in the Microsoft 365 admin center.</span></span> <span data-ttu-id="652e0-105">從在系統管理中心[指派搜尋系統管理員](https://docs.microsoft.com/zh-TW/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor)開始。</span><span class="sxs-lookup"><span data-stu-id="652e0-105">Get started by [assigning search admins](https://docs.microsoft.com/en-us/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) in your admin center.</span></span>
-    
-<span data-ttu-id="652e0-106">若要快速存取相關的搜尋建議和工作結果，請將 Microsoft Search 的搜尋方塊新增至任何內部網路網站或頁面。</span><span class="sxs-lookup"><span data-stu-id="652e0-106">For fast access to relevant search suggestions and work results, add a Microsoft Search search box to any intranet site or page.</span></span>
-  
-## <a name="add-a-search-box-to-an-intranet-page"></a><span data-ttu-id="652e0-107">將搜尋方塊新增至內部網路頁面</span><span class="sxs-lookup"><span data-stu-id="652e0-107">Add a search box to an intranet page</span></span>
+> <span data-ttu-id="eb5bb-104">本文章適用 Bing 系統管理入口網站中的 Microsoft Search。</span><span class="sxs-lookup"><span data-stu-id="eb5bb-104">This article applies to the Microsoft Search in Bing admin portal.</span></span> <span data-ttu-id="eb5bb-105">我們正在將入口網站移至 Microsoft 365 系統管理中心，完成之後入口網站將會移除。</span><span class="sxs-lookup"><span data-stu-id="eb5bb-105">We’re moving the portal to the Microsoft 365 admin center, and then it will be removed.</span></span> <span data-ttu-id="eb5bb-106">我們建議您使用 Microsoft 365 系統管理中心開始。</span><span class="sxs-lookup"><span data-stu-id="eb5bb-106">We recommend that you use the Microsoft 365 admin center to get started.</span></span> <span data-ttu-id="eb5bb-107">[Microsoft Search 概觀](overview-microsoft-search.md)。</span><span class="sxs-lookup"><span data-stu-id="eb5bb-107">[Overview of Microsoft Graph](overview-microsoft-search.md)</span></span>
 
-<span data-ttu-id="652e0-108">您需要將兩個元件新增至頁面：搜尋方塊的容器和啟動該搜尋方塊的指令碼。</span><span class="sxs-lookup"><span data-stu-id="652e0-108">You need to add two elements to the page: a container for the search box and the script that powers it.</span></span>
+<span data-ttu-id="eb5bb-108">若要快速存取相關的搜尋建議和工作結果，請將 Microsoft Search 的搜尋方塊新增至任何內部網路網站或頁面。</span><span class="sxs-lookup"><span data-stu-id="eb5bb-108">For fast access to relevant search suggestions and work results, add a Microsoft Search search box to any intranet site or page.</span></span>
+  
+## <a name="add-a-search-box-to-an-intranet-page"></a><span data-ttu-id="eb5bb-109">將搜尋方塊新增至內部網路頁面</span><span class="sxs-lookup"><span data-stu-id="eb5bb-109">Add a search box to an intranet page</span></span>
+
+<span data-ttu-id="eb5bb-110">您需要將兩個元件新增至頁面：搜尋方塊的容器和啟動該搜尋方塊的指令碼。</span><span class="sxs-lookup"><span data-stu-id="eb5bb-110">You need to add two elements to the page: a container for the search box and the script that powers it.</span></span>
   
 ```html
 <div id="bfb_searchbox"></div>
@@ -42,11 +43,11 @@ ms.locfileid: "34425668"
 <script async src="https://www.bing.com/business/s?k=sb"></script>
 ```
 
-<span data-ttu-id="652e0-109">在 SharePoint 傳統網站上，新增指令碼編輯器網頁組件並將指令碼放置在其中。</span><span class="sxs-lookup"><span data-stu-id="652e0-109">On a SharePoint classic site, add a Script Editor Web Part and drop the script in it.</span></span>
+<span data-ttu-id="eb5bb-111">在 SharePoint 傳統網站上，新增指令碼編輯器網頁組件並將指令碼放置在其中。</span><span class="sxs-lookup"><span data-stu-id="eb5bb-111">On a SharePoint classic site, add a Script Editor Web Part and drop the script in it.</span></span>
   
-## <a name="enable-the-search-box-for-mobile"></a><span data-ttu-id="652e0-110">針對行動裝置啟用搜尋方塊</span><span class="sxs-lookup"><span data-stu-id="652e0-110">Enable the search box for mobile</span></span>
+## <a name="enable-the-search-box-for-mobile"></a><span data-ttu-id="eb5bb-112">針對行動裝置啟用搜尋方塊</span><span class="sxs-lookup"><span data-stu-id="eb5bb-112">Enable the search box for mobile</span></span>
 
-<span data-ttu-id="652e0-111">若要將內部網路網站或頁面提供給行動裝置使用者，請將 isMobile: true 新增至設定物件：</span><span class="sxs-lookup"><span data-stu-id="652e0-111">For intranet sites or pages available to mobile users, add isMobile: true to the settings object:</span></span>
+<span data-ttu-id="eb5bb-113">若要將內部網路網站或頁面提供給行動裝置使用者，請將 isMobile: true 新增至設定物件：</span><span class="sxs-lookup"><span data-stu-id="eb5bb-113">For intranet sites or pages available to mobile users, add isMobile: true to the settings object:</span></span>
   
 ```html
 <div id="bfb_searchbox"></div>
@@ -59,9 +60,9 @@ ms.locfileid: "34425668"
 <script async src="https://www.bing.com/business/s?k=sb"></script>
 ```
 
-## <a name="put-focus-on-the-search-box-by-default"></a><span data-ttu-id="652e0-112">根據預設，焦點會放置在搜尋方塊中</span><span class="sxs-lookup"><span data-stu-id="652e0-112">Put focus on the search box by default</span></span>
+## <a name="put-focus-on-the-search-box-by-default"></a><span data-ttu-id="eb5bb-114">根據預設，焦點會放置在搜尋方塊中</span><span class="sxs-lookup"><span data-stu-id="eb5bb-114">Put focus on the search box by default</span></span>
 
-<span data-ttu-id="652e0-113">若要協助使用者加快搜尋速度，載入頁面或網站時，請將 focus: true 新增至設定物件來將游標放置在搜尋方塊中：</span><span class="sxs-lookup"><span data-stu-id="652e0-113">To help users search faster, when the page or site loads place the cursor in the search box by adding focus: true to the settings object:</span></span>
+<span data-ttu-id="eb5bb-115">若要協助使用者加快搜尋速度，載入頁面或網站時，請將 focus: true 新增至設定物件來將游標放置在搜尋方塊中：</span><span class="sxs-lookup"><span data-stu-id="eb5bb-115">To help users search faster, when the page or site loads place the cursor in the search box by adding focus: true to the settings object:</span></span>
   
 ```html
 <div id="bfb_searchbox"></div>
@@ -74,9 +75,9 @@ ms.locfileid: "34425668"
 <script async src="https://www.bing.com/business/s?k=sb"></script>
 ```
 
-## <a name="customize-the-appearance-of-the-search-box"></a><span data-ttu-id="652e0-114">自訂搜尋方塊的外觀</span><span class="sxs-lookup"><span data-stu-id="652e0-114">Change the appearance of the search box</span></span> 
+## <a name="customize-the-appearance-of-the-search-box"></a><span data-ttu-id="eb5bb-116">自訂搜尋方塊的外觀</span><span class="sxs-lookup"><span data-stu-id="eb5bb-116">Change the appearance of the search box</span></span> 
 
-<span data-ttu-id="652e0-115">為了協助讓搜尋方塊更符合您的內部網路的樣式，您可以使用各種不同的組態選項。</span><span class="sxs-lookup"><span data-stu-id="652e0-115">To help the search box better fit with the style of your intranet, there are a variety of configuration options you can use.</span></span> <span data-ttu-id="652e0-116">您可以混搭選項來符合您的需求。</span><span class="sxs-lookup"><span data-stu-id="652e0-116">Mix and match options to suit your needs.</span></span>
+<span data-ttu-id="eb5bb-117">為了協助讓搜尋方塊更符合您的內部網路的樣式，您可以使用各種不同的組態選項。</span><span class="sxs-lookup"><span data-stu-id="eb5bb-117">To help the search box better fit with the style of your intranet, there are a variety of configuration options you can use.</span></span> <span data-ttu-id="eb5bb-118">您可以混搭選項來符合您的需求。</span><span class="sxs-lookup"><span data-stu-id="eb5bb-118">Mix and match options to suit your needs.</span></span>
 
 ```html
 <div id="bfb_searchbox"></div>
@@ -97,9 +98,9 @@ ms.locfileid: "34425668"
 <script async src="https://www.bing.com/business/s?k=sb"></script>
 ```
 
-## <a name="use-an-iframe-to-embed-a-search-box"></a><span data-ttu-id="652e0-117">使用 iFrame 來內嵌搜尋方塊</span><span class="sxs-lookup"><span data-stu-id="652e0-117">Use an iFrame to embed a search box</span></span>
+## <a name="use-an-iframe-to-embed-a-search-box"></a><span data-ttu-id="eb5bb-119">使用 iFrame 來內嵌搜尋方塊</span><span class="sxs-lookup"><span data-stu-id="eb5bb-119">Use an iFrame to embed a search box</span></span>
 
-<span data-ttu-id="652e0-118">如果該網站沒有內嵌指令碼的選項，請使用 iFrame 來新增搜尋方塊。</span><span class="sxs-lookup"><span data-stu-id="652e0-118">If embedding a script isn't an option for the site, use an iFrame to add the search box.</span></span> <span data-ttu-id="652e0-119">您無法自訂搜尋方塊的外觀。</span><span class="sxs-lookup"><span data-stu-id="652e0-119">You won't be able to customize the appearance of the search box.</span></span>
+<span data-ttu-id="eb5bb-120">如果該網站沒有內嵌指令碼的選項，請使用 iFrame 來新增搜尋方塊。</span><span class="sxs-lookup"><span data-stu-id="eb5bb-120">If embedding a script isn't an option for the site, use an iFrame to add the search box.</span></span> <span data-ttu-id="eb5bb-121">您無法自訂搜尋方塊的外觀。</span><span class="sxs-lookup"><span data-stu-id="eb5bb-121">You won't be able to customize the appearance of the search box.</span></span>
   
 ```html
 <iframe width="564" height="400" src="https://www.bing.com/business/searchbox"></iframe>
