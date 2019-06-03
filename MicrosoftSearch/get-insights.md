@@ -13,20 +13,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ebce7fdc-e89b-473c-8131-67e659bb3f73
+ROBOTS: NOINDEX
 description: 在 Microsoft Search 系統管理入口網站，從易於使用的儀表板中分析指標並管理內容
-ms.openlocfilehash: a5fbbcde8d500adc0f4e9bc8f3e3e10846f34136
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: a01b79dfc71218862da07270171da95e699ed7f2
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "34425654"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591510"
 ---
 # <a name="use-the-insights-dashboard"></a>使用深入解析儀表板
 
 > [!IMPORTANT]
-> Bing 中的 Microsoft Search 設定現在可在 Microsoft 365 系統管理中心取得。 從在系統管理中心[指派搜尋系統管理員](https://docs.microsoft.com/zh-TW/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor)開始。
+> 本文章適用 Bing 系統管理入口網站中的 Microsoft Search。 我們正在將入口網站移至 Microsoft 365 系統管理中心，完成之後入口網站將會移除。 我們建議您使用 Microsoft 365 系統管理中心開始。 [Microsoft Search 概觀](overview-microsoft-search.md)。
     
-取得資料深入解析，並查看被您結果吸引的使用者。 使用系統管理入口網站儀表板：
+取得資料深入解析，並查看使用者如何與您的結果互動。 使用系統管理入口網站儀表板：
   
 - 查看已發佈、排程或建議的書籤和問與答的數量
     

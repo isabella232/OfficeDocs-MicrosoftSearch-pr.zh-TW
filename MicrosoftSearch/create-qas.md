@@ -13,19 +13,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: d432b9d9-3792-47a0-9a13-30a1a83caabc
+ROBOTS: NoIndex
 description: 建立 Microsoft Search 工作結果常見問題集解答的方式
-ms.openlocfilehash: c8244cce58615fdffb1988ffd351b991f16d3042
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: 9b4d63490c95ec9d5468abbae281c9cc84ab25ca
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "34425680"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591492"
 ---
 # <a name="create-qas"></a>建立問與答
 
 > [!IMPORTANT]
-> Bing 中的 Microsoft Search 設定現在可在 Microsoft 365 系統管理中心取得。 從在系統管理中心[指派搜尋系統管理員](https://docs.microsoft.com/zh-TW/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor)開始。
-    
+> 本文章適用 Bing 系統管理入口網站中的 Microsoft Search。 我們正在將入口網站移至 Microsoft 365 系統管理中心，完成之後入口網站將會移除。 我們建議您使用 Microsoft 365 系統管理中心開始。 [Microsoft Search 概觀](overview-microsoft-search.md)。
+
 問與答提供答案或資訊給使用者，包括選擇性的連結。 在理想情況下，問與答會包括使用者正在尋找的所有詳細資料，因此使用者不需要前往來源。 您可以格式化問與答內容，並且放入影像、清單和表格。
   
 ## <a name="create-a-qa"></a>建立問與答

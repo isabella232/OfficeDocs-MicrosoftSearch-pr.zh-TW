@@ -13,18 +13,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: def300e7-103c-4e92-a062-28ffa27561d7
+ROBOTS: NoIndex
 description: 使用 Microsoft Search 系統管理入口網站的匯入工具一次建立許多書籤
-ms.openlocfilehash: 560cda6f94060d428f2d18cc61bd2430cb31b474
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: 1b3922215534391c65547a4ece22310261626036
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "34425650"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591420"
 ---
 # <a name="bulk-create-bookmarks"></a>大量建立書籤
 
 > [!IMPORTANT]
-> Bing 設定中的 Microsoft Search 現在可以在 Microsoft 365 管理中心中使用。 從系統管理中心的[指派搜尋系統管理員](https://docs.microsoft.com/zh-TW/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor)開始。
+> 本文章適用 Bing 系統管理入口網站中的 Microsoft Search。 我們正在將入口網站移至 Microsoft 365 系統管理中心，完成之後入口網站將會移除。 我們建議您使用 Microsoft 365 系統管理中心開始。 [Microsoft Search 概觀](overview-microsoft-search.md)。
     
 下載並使用 .csv 範本以大量建立、編輯和儲存書籤。 若要大量編輯現有的書籤，請從系統管理入口網站中匯出、進行所需編輯，然後再匯入它們。
   
@@ -45,16 +46,16 @@ ms.locfileid: "34425650"
 7. 按一下 [匯入]****
 
 # <a name="prevent-import-errors"></a>防止匯入錯誤      
-如果有任何必要資訊缺失或無效，您會收到錯誤訊息。 依據錯誤的類型，系統可能會產生一份記錄檔，其中包含哪些列或欄需要修正的詳細資訊。 進行任何所需編輯，然後再次嘗試匯入檔案。
+如果有任何必要資料遺失或無效，您就會收到錯誤訊息。 依據錯誤的類型，系統可能會產生一份記錄檔，其中包含哪些列或欄需要修正的詳細資訊。 進行任何所需編輯，然後再次嘗試匯入檔案。
 
 > [!NOTE]
 > 直到解決所有的錯誤之前，您無法建立或編輯任何書籤。 
 
 若要避免錯誤，請確定您匯入的檔案的格式正確：
 - 包含匯入範本中的標題列
-- 包含匯入範本中的欄位
-- 欄位順序與匯入範本相同
-- 永不編輯這些欄位中的資料：[識別碼]、[上次修改日期]，以及 [上次修改者]
+- 包含匯入範本中的所有欄
+- 資料行順序與匯入範本相同
+- 這些資料行可以為空白：識別碼、上次修改日期，以及上次修改者
 - [狀態] 欄位不能為空白，這是必要資訊  
 書籤會根據 [狀態] 欄位的不同而儲存成草稿、建議、已排程或自動發佈。
 

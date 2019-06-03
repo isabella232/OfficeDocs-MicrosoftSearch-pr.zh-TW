@@ -13,20 +13,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: bc3d1d2a-a4d9-4a02-9d7d-deb492e79cd0
+ROBOTS: NOINDEX
 description: 了解啟用和使用 Microsoft Search 所需的四個簡單步驟。
-ms.openlocfilehash: fa391b2fc42f708a1f01c83550e7703a95e09ea8
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: fe6e01c866ca99357ce8bdd5e9cb1b6cee1a2333
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "34425676"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591537"
 ---
 # <a name="quick-set-up-for-microsoft-search"></a>快速設定 Microsoft Search
 
 > [!IMPORTANT]
-> Bing 中的 Microsoft Search 設定現在可在 Microsoft 365 系統管理中心取得。 從在系統管理中心[指派搜尋系統管理員](https://docs.microsoft.com/zh-TW/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor)開始。
+> 本文章適用 Bing 系統管理入口網站中的 Microsoft Search。 我們正在將入口網站移至 Microsoft 365 系統管理中心，完成之後入口網站將會移除。 我們建議您使用 Microsoft 365 系統管理中心開始。 [Microsoft Search 概觀](overview-microsoft-search.md)。
     
-將網路與工作的優點帶入貴組織，以節省時間。
+在組織內發揮網路與工作的優勢，以節省時間。
   
 ## <a name="step-1-turn-on-microsoft-search"></a>步驟 1：開啟 Microsoft Search
 

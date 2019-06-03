@@ -13,19 +13,23 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 38569f03-db18-49ab-96ef-213a1f410935
+ROBOTS: NOINDEX
 description: 了解 Microsoft Search 為何是適用於現代工作場所的智慧企業搜尋。
-ms.openlocfilehash: f7c65e13f18f6ea4fd38bc406653a37f85659d3e
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: f2cf9c3e4d80bc17fd74bf0ae34b7886b4b69d33
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "34425582"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34590745"
 ---
 # <a name="why-microsoft-search"></a>為什麼要使用 Microsoft Search
 
-使用 Microsoft Search 以改變貴組織中人員搜尋資訊的方式。 
+使用 Microsoft Search 改變貴組織人員搜尋資訊的方式。 
+
+> [!IMPORTANT]
+> 本文章適用 Bing 系統管理入口網站中的 Microsoft Search。 我們正在將入口網站移至 Microsoft 365 系統管理中心，完成之後入口網站將會移除。 我們建議您使用 Microsoft 365 系統管理中心開始。 [Microsoft Search 概觀](overview-microsoft-search.md)。
   
-透過為工作區提供更相關的搜尋結果，此企業搜尋體驗可提高生產力並節省時間。 Microsoft Search 可安全地從您的公司、學校或組織擷取資訊 (檔案、公司資料、個人資訊和網站等)，以及公開的網頁結果，並顯示在單一畫面中。
+這個企業搜尋體驗透過為工作區提供更相關的搜尋結果，提高生產力並節省時間。 Microsoft Search 可安全地從您的公司、學校或組織擷取資訊 (檔案、公司資料、個人資訊和網站等)，以及公開的網頁結果，並顯示在單一畫面中。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2EWQN?autoplay=false]
   

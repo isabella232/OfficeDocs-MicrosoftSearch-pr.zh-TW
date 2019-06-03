@@ -13,18 +13,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fee131cf-c82f-4f4b-b288-6fa98a99b793
+ROBOTS: NoIndex
 description: 獲得系統管理入口網站功能的概觀，以及 Microsoft Search 提供的存取權限
-ms.openlocfilehash: ac16b64ad637407ef21bc561df19b6ab9607321c
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: 4edfbce7b5858a3e8cd3aad30109177d71d45d7b
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "34425635"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34590718"
 ---
 # <a name="about-the-admin-portal"></a>關於系統管理入口網站
 
 > [!IMPORTANT]
-> Bing 設定中的 Microsoft Search 現在可以在 Microsoft 365 管理中心中使用。 從系統管理中心的[指派搜尋系統管理員](https://docs.microsoft.com/zh-TW/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor)開始。
+> 本文章適用 Bing 系統管理入口網站中的 Microsoft Search。 我們正在將入口網站移至 Microsoft 365 系統管理中心，完成之後入口網站將會移除。 我們建議您使用 Microsoft 365 系統管理中心開始。 [Microsoft Search 概觀](overview-microsoft-search.md)。
 
     
 Microsoft Search 能讓您使用 Bing 來搜尋組織的 SharePoint 網站與檔案、內部網站、人員、Office 365 群組和更多項目。 請使用系統管理入口網站來管理 Microsoft Search 的各個層面。
