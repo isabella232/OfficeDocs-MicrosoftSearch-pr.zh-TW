@@ -15,18 +15,16 @@ search.appverid:
 ms.assetid: 47eedbb9-6da9-47e0-aac5-078d34a7fd8f
 ROBOTS: NoIndex
 description: 使用 CNAME 設定您的 DNS 伺服器，確保使用者登入順暢無阻
-ms.openlocfilehash: 6a291165df33f8acc99d247104e8e88cd35c3a0e
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 05562bd9379af395ee305ffebdddbf7bfcd1e835
+ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591357"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34727895"
 ---
 # <a name="advanced-dns-configuration"></a>進階 DNS 設定
 
-> [!IMPORTANT]
-> 本文章適用 Bing 系統管理入口網站中的 Microsoft Search。 我們正在將入口網站移至 Microsoft 365 系統管理中心，完成之後入口網站將會移除。 我們建議您使用 Microsoft 365 系統管理中心開始。 [Microsoft Search 概觀](overview-microsoft-search.md)。
-    
+
 若要確保 Bing 隨時可以識別貴組織的使用者，並讓他們成功登入公司或學校帳戶，請設定您的內部 DNS 伺服器或 proxy 伺服器以將 `www.bing.com` 解析為 `ms.bing.com`。 若要這麼做，請為 `www.bing.com` 建立一個 DNS 項目，以做為 `ms.bing.com` 的 CNAME。
   
 ****

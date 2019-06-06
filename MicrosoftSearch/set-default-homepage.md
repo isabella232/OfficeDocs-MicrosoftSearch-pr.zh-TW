@@ -15,17 +15,14 @@ search.appverid:
 ms.assetid: c020bd72-9906-4dfd-bc77-57287f5927ce
 ROBOTS: NOINDEX
 description: 了解如何將 Bing 設定為您的公司使用 Microsoft Search 的預設瀏覽器。
-ms.openlocfilehash: 0fc16bc7389b8cfffc2ad528b3b10c7ae1d498c3
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 457202ba8dbebf59c5ef6a4630aea98304b9acdb
+ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591177"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34727994"
 ---
 # <a name="set-default-homepage"></a>設定預設首頁
-
-> [!IMPORTANT]
-> 本文章適用 Bing 系統管理入口網站中的 Microsoft Search。 我們正在將入口網站移至 Microsoft 365 系統管理中心，完成之後入口網站將會移除。 我們建議您使用 Microsoft 365 系統管理中心開始。 [Microsoft Search 概觀](overview-microsoft-search.md)。
 
 設定預設瀏覽器、預設搜尋引擎和預設首頁將可協助您的使用者探索 Microsoft Search 功能，鼓勵更常使用，並提供更順暢的體驗。
   

@@ -15,18 +15,16 @@ search.appverid:
 ms.assetid: d1432d64-7a97-4b1b-a99f-11291814d361
 ROBOTS: NoIndex
 description: 新增標誌、公司名稱和更多項目到 Microsoft Search 工作結果
-ms.openlocfilehash: d3989422c4bd38236241984c1f9beb67d12a0847
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 0ae26acd0e0114b83c022e0a0b4ad082d495cd1c
+ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591240"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34727976"
 ---
 # <a name="content-settings"></a>內容設定
 
-> [!IMPORTANT]
-> 本文適用於 Bing 系統管理入口網站中的 Microsoft Search。 我們已將入口網站移至 Microsoft 365 管理中心，並在之後移除。 我們建議您使用 Microsoft 365 系統管理中心以開始。 [Microsoft Search 概觀](overview-microsoft-search.md)。
-    
+ 
 有了 Microsoft Search，您就能確保從組織內部的內容來源 (例如 SharePoint、商務用 OneDrive 或貴公司內部網路) 中提取的結果擁有熟悉的外觀與風格。 
   
 - 組織名稱

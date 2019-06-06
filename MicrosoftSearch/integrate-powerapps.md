@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: 1fadcba3-4a7f-4a55-8476-d4e64d49a15f
 ROBOTS: NOINDEX
 description: 在 Microsoft Search 的書籤結果中包括瀏覽器型應用程式
-ms.openlocfilehash: 655b8c8c6f4a9729461447112b21ca7c6c7864f9
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 1f4cf7512ee176015537be2fbe2f59429cde6578
+ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591609"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34727967"
 ---
 # <a name="integrate-powerapps"></a>整合 PowerApps
 
 > [!IMPORTANT]
-> 本文適用於 Bing 系統管理入口網站中的 Microsoft Search。 我們已將入口網站移至 Microsoft 365 管理中心，並在之後移除。 我們建議您使用 Microsoft 365 系統管理中心以開始。 [Microsoft Search 概觀](overview-microsoft-search.md)。
+> 本文適用於 Bing 系統管理入口網站中的 Microsoft Search。 我們正在將入口網站移至 Microsoft 365 系統管理中心，完成之後入口網站將會移除。 我們建議您使用 Microsoft 365 系統管理中心開始。 [Microsoft Search 概觀](overview-microsoft-search.md)。
     
 將現有的 PowerApps 整合至您的書籤，協助您的使用者完成工作，例如輸入假期時間或提出支出報告。 整合後的 PowerApps 會出現在書籤結果內，免去移至不同網站或開啟其他工具的麻煩，節省您的時間與精力。
   

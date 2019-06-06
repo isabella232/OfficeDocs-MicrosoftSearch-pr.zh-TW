@@ -14,14 +14,14 @@ search.appverid:
 ms.assetid: b453e6f0-10cf-4384-9914-241f425cd5f9
 ROBOTS: NOINDEX
 description: 取得使用 Microsoft Search 時能找到的所有資訊概觀
-ms.openlocfilehash: bc8d53610d125aba57b2c2c8a8c6d1077e2f012a
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: a6bda23da00ac302287787b1c48a3e578f0bb335
+ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34590979"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34727932"
 ---
-# <a name="about-microsoft-search"></a>關於 Microsoft Search
+# <a name="using-microsoft-search"></a>使用 Microsoft Search
 
 Microsoft Search 可讓您輕鬆享有工作與網頁搜尋的整合體驗。 您可以在任何瀏覽器和任何裝置中使用 Microsoft Search，以簡單、快速、功能強大且更安全的方式適時取得正確的資訊。
   
