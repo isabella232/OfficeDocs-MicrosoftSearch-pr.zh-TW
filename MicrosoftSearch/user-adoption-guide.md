@@ -13,13 +13,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
+ROBOTS: NOINDEX
 description: 深入了解可協助您順利將 Microsoft Search 在組織中推出的方法和程序
-ms.openlocfilehash: d77fca51b98c80e1e05287c7a9bd77eaa3f9af57
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: 8fd7003426ad10e105ef427db5688b2a459d4f01
+ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "34425579"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34727904"
 ---
 # <a name="user-adoption-guide"></a>使用者採用指南
 
@@ -84,7 +85,7 @@ ms.locfileid: "34425579"
   
 系統管理員會直接影響使用者的搜尋體驗，並為組織決定 Microsoft Search 的外觀。 這包括選擇想要呈現給使用者的結果類型。 透過開啟或關閉文件、網站、使用者、群組或交談的結果來控制此設定。
   
-如需詳細資訊，請參閱[設定 Microsoft Search](set-up-microsoft-search.md)。
+如需詳細資訊，請參閱[設定 Microsoft Search](setup-microsoft-search.md)。
   
 編輯者為能在其專業技術領域協助您管理書籤和問與答的主題專家。 編輯者應該建立可解決您稍早找出之使用者案例的內容。
   
@@ -192,7 +193,4 @@ Microsoft Search 為 Microsoft 365 不可或缺的一部分，它符合 GDPR 和
     
 3. 進行問卷、焦點座談和意見反應會議，了解使用者對於 Microsoft Search 的想法，增加採用率，並找出改善的領域
     
-教育和意見反應是具重複性的程序。 當您的使用者採用 Microsoft Search，您可能需要對內容進行變更並通訊。 
-
-  
-
+教育和意見反應是具重複性的程序。 當您的使用者採用 Microsoft Search，您可能需要對內容進行變更並通訊。

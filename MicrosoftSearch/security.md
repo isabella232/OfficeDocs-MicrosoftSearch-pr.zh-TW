@@ -15,20 +15,18 @@ search.appverid:
 ms.assetid: 50461cb9-8707-46c1-935a-1b9608a98800
 ROBOTS: NOINDEX
 description: 在使用 Microsoft Search 提供資訊給獲授權使用者的同時，保護企業的資料與使用者
-ms.openlocfilehash: c8444c5c265e109d379fdfffbb033c703040a74c
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 4e5e23e5e1389c95d28ede66e06707f9856a3770
+ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591195"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34727937"
 ---
 # <a name="security-for-microsoft-search"></a>Microsoft Search 的安全性
 
 透過企業級的安全性，Microsoft Search 可隨時保護您的使用者與資料。
 
-> [!IMPORTANT]
-> 本文章適用 Bing 系統管理入口網站中的 Microsoft Search。 我們正在將入口網站移至 Microsoft 365 系統管理中心，完成之後入口網站將會移除。 我們建議您使用 Microsoft 365 系統管理中心開始。 [Microsoft Search 概觀](overview-microsoft-search.md)。
-  
+
 ## <a name="secure-by-default"></a>預設安全性
 
 Microsoft Search 能隨時確保提出的要求皆透過 HTTPS。 這道保護能確保連線受到端點對端點加密，強化安全性。
