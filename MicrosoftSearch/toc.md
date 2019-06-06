@@ -1,7 +1,10 @@
 #[Microsoft Search 概觀](overview-microsoft-search.md)
 #[設定 Microsoft Search](setup-microsoft-search.md)
-#[規劃您的內容](plan-your-content.md)
+#讓內容易於尋找
+##[規劃您的內容](plan-your-content.md)
 ##[管理書籤](manage-bookmarks.md)
 ##[管理問與答](manage-qas.md)
 ##[管理位置](manage-locations.md)
 #[SharePoint Online 中的 Microsoft Search](get-started-search-in-sharepoint-online.md)
+#[使用者採用指南](user-adoption-guide.md)
+#[使用 Microsoft Search](use/about-microsoft-search.md)
