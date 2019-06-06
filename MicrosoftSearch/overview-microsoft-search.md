@@ -26,14 +26,14 @@ Microsoft Search 為 Microsoft 365 生產力應用程式和更廣泛 Microsoft �
 
 Microsoft Search 可協助使用者找到正確的答案、人員和內容，以在他們已在使用的應用程式中完成其工作。
 
-- 使用者會收到他們從中搜尋的應用程式**內容**中的相關結果。 例如，當使用者在 Outlook 中搜尋時，他們會尋找電子郵件，而不會尋找 SharePoint 中的網站。 在 SharePoint 中搜尋時，他們會尋找網站、頁面和檔案，而不會尋找電子郵件。
+- 使用者會收到他們從中搜尋的應用程式**上下文**中的相關結果。 例如，當使用者在 Outlook 中搜尋時，他們會尋找電子郵件，而不會尋找 SharePoint 中的網站。 在 SharePoint 中搜尋時，他們會尋找網站、頁面和檔案，而不會尋找電子郵件。
 - 無論使用者使用哪個應用程式，Microsoft Search 都是**個人**的。  Microsoft Search 會使用來自 Microsoft Graph 的深入資訊來顯示與每個使用者相關的結果。 每個使用者可能會看到不同的結果，即使他們搜尋相同文字亦然。 他們只會看到他們有權存取的結果，Microsoft Search 不會變更權限。
 - 使用者不需要記住資訊所在的地方。 例如，使用者在 Word 中作業，但想要重複使用同事從其 OneDrive 共用的簡報資訊。 不需要切換到 OneDrive 並搜尋該簡報，而是可以直接從 Word 搜尋。  
 - 在 Bing 中時，使用者可以取得來自公用網站與來自其組織內的結果。
 
 ## <a name="what-users-see"></a>使用者看到的內容
 
-在 Bing 中，使用者使用的搜尋方塊與網頁搜尋的相同。 在 Microsoft 365 應用程式中，使用者在標題列找到 Microsoft Search 方塊， 看起來像這樣：
+在 Bing 中，使用者使用的搜尋方塊與網頁搜尋的相同。 在 Microsoft 365 應用程式中，使用者在標題列找到 Microsoft Search 方塊， 它看起來像這樣：
 
 ![標題列中具有 Microsoft Search 方塊的應用程式視窗螢幕擷取畫面](media/Headings_520.png)
 
@@ -140,7 +140,7 @@ SharePoint 中的 Microsoft Search 是 SharePoint Online 中的新式搜尋體�
 - 使用者可以在 SharePoint 起始頁面、中樞網站、通訊網站和新式小組網站上，找到 Microsoft Search 搜尋方塊。
 - 發佈網站、傳統小組網站和在搜尋中心時，使用者會使用傳統搜尋方塊。
 
-您可以自訂傳統搜尋體驗，例如將自訂精簡器新增至搜尋結果頁面或以不同方式顯示特定類型的結果。 您無法像在 SharePoint 中那樣自訂 Microsoft Search 體驗。 為傳統搜尋所做的一些自訂可能會影響 SharePoint 中的 Microsoft Search。 如果您的組織將在 SharePoint 中使用兩種搜尋體驗，請[了解差異，以及如何避免影響 SharePoint 中的 Microsoft Search](https://docs.microsoft.com/zh-TW/sharepoint/differences-classic-modern-search)。
+您可以自訂傳統搜尋體驗，例如將自訂精簡器新增至搜尋結果頁面或以不同方式顯示特定類型的結果。 您無法像在 SharePoint 中那樣自訂 Microsoft Search 體驗。 為傳統搜尋所做的一些自訂可能會影響 SharePoint 中的 Microsoft Search。 如果您的組織將在 SharePoint 中使用兩種搜尋體驗，請[了解差異，以及如何避免影響 SharePoint 中的 Microsoft Search](https://docs.microsoft.com/zh-TW/sharepoint/differences-classic-modern-search) (部分機器翻譯)。
 
 ## <a name="microsoft-search-in-bing"></a>Bing 中的 Microsoft Search
 
