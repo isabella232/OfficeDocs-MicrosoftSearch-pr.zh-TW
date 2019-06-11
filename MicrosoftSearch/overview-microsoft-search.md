@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解什麼是 Microsoft Search、其優點，以及目前有 Microsoft Search 的應用程式的概觀。
-ms.openlocfilehash: 7fc58204b17fbe8274655756bd8e041c921a063e
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: c60ece3778db4696437d8ed0c5cefd0bfaa39142
+ms.sourcegitcommit: 9345523f0143f613c702cd3dcc084b5f7bd6a0b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591305"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34767188"
 ---
 # <a name="overview-of-microsoft-search"></a>Microsoft Search 概觀
 
@@ -26,7 +26,7 @@ Microsoft Search 為 Microsoft 365 生產力應用程式和更廣泛 Microsoft �
 
 Microsoft Search 可協助使用者找到正確的答案、人員和內容，以在他們已在使用的應用程式中完成其工作。
 
-- 使用者會收到他們從中搜尋的應用程式**上下文**中的相關結果。 例如，當使用者在 Outlook 中搜尋時，他們會尋找電子郵件，而不會尋找 SharePoint 中的網站。 在 SharePoint 中搜尋時，他們會尋找網站、頁面和檔案，而不會尋找電子郵件。
+- 使用者會收到他們從中搜尋的應用程式**上下文**中的相關結果。 例如，當使用者在 Outlook 中搜尋時，他們會尋找電子郵件，而不會尋找 SharePoint 中的網站。 在 SharePoint 中搜尋時，他們會尋找網站、頁面和檔案時。
 - 無論使用者使用哪個應用程式，Microsoft Search 都是**個人**的。  Microsoft Search 會使用來自 Microsoft Graph 的深入資訊來顯示與每個使用者相關的結果。 每個使用者可能會看到不同的結果，即使他們搜尋相同文字亦然。 他們只會看到他們有權存取的結果，Microsoft Search 不會變更權限。
 - 使用者不需要記住資訊所在的地方。 例如，使用者在 Word 中作業，但想要重複使用同事從其 OneDrive 共用的簡報資訊。 不需要切換到 OneDrive 並搜尋該簡報，而是可以直接從 Word 搜尋。  
 - 在 Bing 中時，使用者可以取得來自公用網站與來自其組織內的結果。
@@ -58,12 +58,11 @@ Microsoft Search 可協助使用者找到正確的答案、人員和內容，以
 
 **Microsoft Search 發展** - 使用者可以搜尋的這組內容類型，及搜尋方塊的智慧隨著時間增加。
 
-**跨所有應用程式管理** - Microsoft Search 預設為開啟，並且您所做的任何系統管理會套用至所有應用程式中的 Microsoft Search。
+**跨所有應用程式管理** - Microsoft Search 預設為**開啟**，並且您所做的任何系統管理會套用至所有應用程式中的 Microsoft Search。
 
 ## <a name="apps-that-currently-have-microsoft-search"></a>目前有 Microsoft Search 的應用程式
 
-
-隨著時間推移，Microsoft Search 將在 Microsoft 365 越來越多的應用程式中提供。 下列 Office 365 應用程式目前提供 Microsoft Search：
+ 下列 Office 365 應用程式目前提供 Microsoft Search：
 
 - SharePoint Online
 - 商務用 OneDrive
@@ -105,7 +104,7 @@ Microsoft Search 可協助使用者找到正確的答案、人員和內容，以
 
 ## <a name="what-content-is-searched"></a>搜尋什麼內容？
 
-Microsoft Search 可以搜尋儲存在 SharePoint Online、商務用 OneDrive 和 Exchange 中的內容，包括來自全域通訊清單與 Office 365 群組的人員。 如果您的組織使用雲端混合式搜尋來設定混合式 SharePoint 環境，Microsoft Search 的使用者也可以從內部部署 SharePoint 內容取得結果，包括您已連線至您的 SharePoint Server 環境的任何外部內容。 [深入了解混合式搜尋環境](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint)。
+Microsoft Search 會搜尋儲存在 SharePoint Online、商務用 OneDrive 和 Exchange 中的內容，包括來自全域通訊清單與 Office 365 群組的人員。 如果您的組織使用雲端混合式搜尋來設定混合式 SharePoint 環境，系統會同時傳回線上和內部部署的搜尋結果，包括您已連線至您的 SharePoint Server 環境的任何外部內容。 [深入了解混合式搜尋環境](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint)。
 
 當使用者從 SharePoint 起始頁面或 Office.com 搜尋時，Microsoft Search 會搜尋整個組織中的所有內容，並顯示找到的所有結果。 這是所謂的**全域搜尋範圍**。
 
