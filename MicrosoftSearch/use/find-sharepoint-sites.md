@@ -12,13 +12,14 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: 3388bdc7-1ee0-497e-b110-fba4a082eb08
+ROBOTS: NOINDEX
 description: 使用 Microsoft Search 來尋找 SharePoint 網站，以及您可以查看的詳細資料。
-ms.openlocfilehash: 926f53e8c0eceffae6c506e8f4e7233629c8415c
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: f88422d1df54b9750d91b584c026c35ff0e67736
+ms.sourcegitcommit: a7ca4c38d37fbdec58e002e42d865188939d0483
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "34425570"
+ms.lasthandoff: 06/15/2019
+ms.locfileid: "35003126"
 ---
 # <a name="find-sharepoint-sites"></a>尋找 SharePoint 網站
 
@@ -33,6 +34,3 @@ ms.locfileid: "34425570"
     若只要查看網站結果，請按一下 [網站]**** 索引標籤。 
     
 網頁結果會顯示在工作結果底下。 這些不是組織特定的結果。
-
-  
-

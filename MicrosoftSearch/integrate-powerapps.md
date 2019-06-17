@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 1fadcba3-4a7f-4a55-8476-d4e64d49a15f
 ROBOTS: NOINDEX
 description: 在 Microsoft Search 的書籤結果中包括瀏覽器型應用程式
-ms.openlocfilehash: 1f4cf7512ee176015537be2fbe2f59429cde6578
-ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
+ms.openlocfilehash: d818ab8149032b4664adb90098700d4432a6fbb7
+ms.sourcegitcommit: a7ca4c38d37fbdec58e002e42d865188939d0483
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34727967"
+ms.lasthandoff: 06/15/2019
+ms.locfileid: "35003117"
 ---
 # <a name="integrate-powerapps"></a>整合 PowerApps
 
@@ -63,6 +63,3 @@ PowerApps 可以在任何瀏覽器和任何裝置上運行，不到一分鐘即�
 7. 按一下 [發佈]****
     
 當授權的 Microsoft Search 使用者在 Bing 上搜尋任何書籤的關鍵字或保留的關鍵字時，PowerApp 便會出現在書籤結果中。
-
-  
-
