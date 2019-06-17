@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: bb9d90b6-6c86-4b19-9235-3bd9b19826ab
 description: 在您使用 Microsoft Search 時提供品質良好的內容，無需額外資源
-ms.openlocfilehash: 88c2af543be02f8e17937e36a81fd28d862e8fb0
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 90774f8606f5582338c12b4f123153b6f3f4de74
+ms.sourcegitcommit: 9df9b1a5f83c9fbe62900df183bee239a8ea6d91
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591204"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34947750"
 ---
 # <a name="plan-your-content"></a>規劃內容
 
@@ -89,10 +89,10 @@ ms.locfileid: "34591204"
 - 搜尋結果中不會出現任何非預期的結果。
 - 檢閱書籤或問與答是否有足夠的資訊。
 
-對內容建立有貢獻的使用者和 SME 可協助測試及驗證的搜尋結果。
+對內容建立有貢獻的使用者和 SME 可協助測試及驗證搜尋結果。
 
-## <a name="step-5-review-and-update-periodically"></a>步驟 5：檢閱並定期更新
-授權資訊，例如書籤和問與答務必為最新的。 定期：
+## <a name="step-5-use-insights-to-review-and-update-periodically"></a>步驟 5：使用深入解析來檢閱並定期更新
+代表性資訊 (例如書籤和問與答) 務必為最新的。 定期：
 - 修正或移除損毀或無效的 URL。
 - 移除不再相關的書籤或問與答。
 - 檢查工具、網站名稱或小組名稱的變更。

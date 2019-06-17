@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 第一次設定 Microsoft Search。
-ms.openlocfilehash: 5b686d34375453fd98bdb0915ee49016e71da20d
-ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
+ms.openlocfilehash: c95cc0d11d60e3d4d9a509dc691c01858ede7262
+ms.sourcegitcommit: 9df9b1a5f83c9fbe62900df183bee239a8ea6d91
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34728003"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34947741"
 ---
 # <a name="set-up-microsoft-search"></a>設定 Microsoft Search
 
@@ -30,11 +30,11 @@ ms.locfileid: "34728003"
 
 **Microsoft Search** 預設會對支援它的所有 Microsoft 應用程式開啟，成為 Microsoft 365 的一部分。 使用者只需使用公司或學校帳戶登入，並使用將 Bing 設為預設搜尋提供者的瀏覽器。
 
-您會透過 **Microsoft 365 系統管理中心**管理 **Microsoft Search**。 使用系統管理員認證登入，然後從 Office 365 應用程式清單中選取 [系統管理員]**** 磚 (按一下應用程式清單左下角的 [應用程式啟動器]**** 圖示)。 在 [Microsoft 365 系統管理中心]****，於左側的導覽面板中的 [設定]**** 下選取 [Microsoft Search]****。 
+您會透過 **Microsoft 365 系統管理中心**管理 **Microsoft Search**。 使用系統管理員認證登入，然後從 Office 365 應用程式清單中選取 [系統管理員]**** 磚 (按一下應用程式清單左下角的 [應用程式啟動器]**** 圖示)。 在 [Microsoft 365 系統管理中心]****，於左側導覽面板的 [設定]**** 下選取 [Microsoft Search]****。 
 
-**附註：** 如果您在 [Microsoft 365 系統管理員中心]**** 的 [設定]**** 下看到 [Microsoft Search]****，請開啟系統管理中心右上角的 [嘗試預覽版]**** 開關。 
+**附註：** 如果您在 [Microsoft 365 系統管理員中心]**** 的 [設定]**** 下看「不」到 **Microsoft Search**，請開啟系統管理中心右上角的 [嘗試預覽版]**** 切換。 
 
-身為系統管理員，您應該考慮可讓 Microsoft Search**** 體驗更有效且對組織中的使用者更友善的幾個事項。
+身為系統管理員，您應該考慮可讓 **Microsoft Search** 體驗更有效且對組織中的使用者更友善的幾個事項。
 
 ## <a name="step-1-check-access-level-of-your-users"></a>步驟 1：檢查使用者的存取層級
 
