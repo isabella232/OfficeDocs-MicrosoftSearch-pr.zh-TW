@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解什麼是 Microsoft Search、其優點，以及目前有 Microsoft Search 的應用程式的概觀。
-ms.openlocfilehash: c60ece3778db4696437d8ed0c5cefd0bfaa39142
-ms.sourcegitcommit: 9345523f0143f613c702cd3dcc084b5f7bd6a0b5
+ms.openlocfilehash: d16066c941bb5c3619d7fd50e9cf33952216fb87
+ms.sourcegitcommit: a7ca4c38d37fbdec58e002e42d865188939d0483
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34767188"
+ms.lasthandoff: 06/15/2019
+ms.locfileid: "35003135"
 ---
 # <a name="overview-of-microsoft-search"></a>Microsoft Search 概觀
 
@@ -147,13 +147,12 @@ SharePoint 中的 Microsoft Search 是 SharePoint Online 中的新式搜尋體�
 
 不論使用者查詢傳回的回應中是否包含一或多個工作相關結果，系統都會採取下列措施：
 
-**記錄** - 所有與 Microsoft Search 流量相關的搜尋記錄都會在去除身分識別後，與公開的非 Microsoft Search 流量分開儲存。 這些記錄會保留 18 個月，且限制為僅供偵錯之用。 這些記錄中的查詢不會用來建立公開功能模型或進行訓練，例如自動建議或公開網頁的相關搜尋。 限制存取會透過各種安全機制來管理，包括安全性群組與工程系統中的其他層級。
+**記錄** - 所有與 Microsoft 搜尋流量相關的搜尋記錄都會匿名處理並保留 18 個月。 儲存在這些系統記錄中的查詢僅用於建模和訓練公用功能，例如當滿足一組限制和頻率閾值時，對公用 Web 結果進行自動建議或相關搜尋，這可讓我們相信這些查詢是常見的，而不是特定組織所特有。 查詢必須在非 Microsoft 搜尋使用者的相關資料出現很多次，並且查詢不得僅觸發企業搜索結果。 不符合這些要求的查詢將與公用的非 Microsoft 搜尋流量分開儲存。 限制存取會透過各種安全機制來管理，包括安全性群組與工程系統中的其他層級。
 
 **搜尋記錄** - 使用公司或學校帳戶登入時，其他電腦或裝置無法取得該使用者的搜尋記錄。
 
 **廣告** - 絕不會將企業搜尋查詢與廣告客戶分享或建議給廣告客戶。
-與 Microsoft Search 有關的搜尋廣告記錄會與公開流量分開儲存。
-廣告永遠不會依據使用者的公司身分識別或組織進行投放。
+永遠不會依據使用者的公司身分識別或組織來投放廣告。
 
 ## <a name="see-also"></a>請參閱
 

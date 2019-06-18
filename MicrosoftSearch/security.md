@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 50461cb9-8707-46c1-935a-1b9608a98800
 ROBOTS: NOINDEX
 description: 在使用 Microsoft Search 提供資訊給獲授權使用者的同時，保護企業的資料與使用者
-ms.openlocfilehash: 4e5e23e5e1389c95d28ede66e06707f9856a3770
-ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
+ms.openlocfilehash: 72f45097ebdc97a03d6016d4cac9a19327c68f30
+ms.sourcegitcommit: a7ca4c38d37fbdec58e002e42d865188939d0483
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34727937"
+ms.lasthandoff: 06/15/2019
+ms.locfileid: "35003108"
 ---
 # <a name="security-for-microsoft-search"></a>Microsoft Search 的安全性
 
@@ -59,26 +59,15 @@ Microsoft Search 的驗證已綁定至 Azure Active Directory。 當 Microsoft S
   
 - 記錄
     
-  - 所有與 Microsoft Search 流量相關的搜尋記錄都會在去除身分識別後，與公開的非 Microsoft Search 流量分開儲存。 這些記錄會保留 18 個月，且限制為僅供偵錯之用。
-    
-  - 這些記錄中的查詢不會用來建立公開功能模型或進行訓練，例如自動建議或公開網頁的相關搜尋。
-    
-  - 限制存取會透過各種安全機制來管理，包括安全性群組與工程系統中的其他層級。
-    
-- 搜尋記錄
-    
-  - 使用公司或學校帳戶登入時，其他電腦或裝置無法獲得該使用者的搜尋記錄。
+  - 所有與 Microsoft 搜尋流量相關的搜尋記錄都會匿名處理。 記錄會保留 18 個月。
+  - 儲存在這些系統記錄中的查詢僅用於建模和訓練公用功能，例如當滿足一組限制和頻率閾值時，對公用 Web 結果進行自動建議或相關搜尋，這可讓我們相信這些查詢是常見的，而不是特定組織所特有。 查詢必須在非 Microsoft 搜尋使用者的相關資料出現很多次，並且查詢不得僅觸發企業搜索結果。 不符合這些要求的查詢將與公用的非 Microsoft 搜尋流量分開儲存。
+  - 可透過各種安全機制來管理限制存取，包括安全性群組與工程系統中的其他層級。
     
 - 廣告
     
   - 絕不會將企業搜尋查詢與廣告客戶分享或建議給廣告客戶。
-    
-  - 與 Microsoft Search 有關的搜尋廣告記錄會與公開流量分開儲存。
-    
-  - 廣告永遠不會依據使用者的公司身分識別或組織進行投放。
+  - 永遠不會依據使用者的公司身分識別或組織來投放廣告。
     
 ## <a name="gdpr"></a>GDPR
 
 Microsoft 在[ 2018 年 5 月 21 日的部落格文章](https://blogs.microsoft.com/on-the-issues/2018/05/21/microsofts-commitment-to-gdpr-privacy-and-putting-customers-in-control-of-their-own-data/)反映了我們對 GDPR 規範，以及 Microsoft 會如何協助企業與組織履行 GDPR 合規性義務的承諾。 您可以在 Microsoft [信任中心常見問題集](https://www.microsoft.com/en-us/trustcenter/privacy/gdpr/gdpr-faqs)中找到其他詳細資料。 在線上服務中針對組織客戶的客戶資料進行 Microsoft Search 查詢，也會符合第 28 條所述的處理承諾，如[信任中心常見問題集](https://www.microsoft.com/en-us/trustcenter/privacy/gdpr/gdpr-faqs)中所反映。 針對移至公開 Bing 查詢 (來自 Microsoft Search)，Microsoft 為資料控制者，並會依照 GDPR 中所述，去除查詢的身分識別。
-
-
