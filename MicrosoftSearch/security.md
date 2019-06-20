@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 50461cb9-8707-46c1-935a-1b9608a98800
 ROBOTS: NOINDEX
 description: 在使用 Microsoft Search 提供資訊給獲授權使用者的同時，保護企業的資料與使用者
-ms.openlocfilehash: 72f45097ebdc97a03d6016d4cac9a19327c68f30
-ms.sourcegitcommit: a7ca4c38d37fbdec58e002e42d865188939d0483
+ms.openlocfilehash: b079a693f7289977c9f7545ec049828f76939ee0
+ms.sourcegitcommit: 6f4756d2887c66030c5e7b81fb936d673bb594a8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2019
-ms.locfileid: "35003108"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35009093"
 ---
 # <a name="security-for-microsoft-search"></a>Microsoft Search 的安全性
 
@@ -33,7 +33,7 @@ Microsoft Search 能隨時確保提出的要求皆透過 HTTPS。 這道保護�
   
 ## <a name="authentication-and-authorization-with-azure-active-directory"></a>搭配 Azure Active Directory 的驗證與授權
 
-Microsoft Search 的驗證已綁定至 Azure Active Directory。 當 Microsoft Search 使用者前往 Bing，Bing 標頭會顯示 Microsoft 帳戶以及公司或學校帳戶的登入選項。 如果 Bing 無法判斷使用者是否為合格的參與者，使用者可以移至[探索 Microsoft Search](https://www.bing.com/business/explore) 頁面，該頁面會自動將使用者重新導向至組織的登入頁面。 
+Microsoft Search 的驗證已綁定至 Azure Active Directory。 當 Microsoft Search 使用者前往 Bing，Bing 標頭會顯示 Microsoft 帳戶以及公司或學校帳戶的登入選項。 如果 Bing 無法判斷使用者是否為合格的參與者，使用者可以移至[探索 Microsoft Search](https://www.bing.com/business/explore) 頁面，該頁面會自動將使用者重新導向至組織的登入頁面。
   
 使用者僅能透過公司或學校帳戶存取 Microsoft Search。 若要登入，他們必須使用與存取 Office 365 服務 (例如 SharePoint 或 Outlook) 相同的認證。 個人 Microsoft 帳戶無法用來登入 Microsoft Search。
   
@@ -57,14 +57,14 @@ Microsoft Search 的驗證已綁定至 Azure Active Directory。 當 Microsoft S
   
 不論使用者查詢傳回的回應中是否包含一或多個工作結果，系統都會採取下列措施：
   
-- 記錄
-    
+- 記錄 
   - 所有與 Microsoft 搜尋流量相關的搜尋記錄都會匿名處理。 記錄會保留 18 個月。
   - 儲存在這些系統記錄中的查詢僅用於建模和訓練公用功能，例如當滿足一組限制和頻率閾值時，對公用 Web 結果進行自動建議或相關搜尋，這可讓我們相信這些查詢是常見的，而不是特定組織所特有。 查詢必須在非 Microsoft 搜尋使用者的相關資料出現很多次，並且查詢不得僅觸發企業搜索結果。 不符合這些要求的查詢將與公用的非 Microsoft 搜尋流量分開儲存。
-  - 可透過各種安全機制來管理限制存取，包括安全性群組與工程系統中的其他層級。
-    
-- 廣告
-    
+  - 限制存取會透過各種安全機制來管理，包括安全性群組與工程系統中的其他層級。
+- 搜尋記錄    
+  - 使用公司或學校帳戶登入時，其他電腦或裝置無法獲得該使用者的搜尋記錄。
+ 
+- 廣告   
   - 絕不會將企業搜尋查詢與廣告客戶分享或建議給廣告客戶。
   - 永遠不會依據使用者的公司身分識別或組織來投放廣告。
     
