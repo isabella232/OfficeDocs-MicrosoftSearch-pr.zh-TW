@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
 ROBOTS: NOINDEX
 description: 深入了解可協助您順利將 Microsoft Search 在組織中推出的方法和程序
-ms.openlocfilehash: 8fd7003426ad10e105ef427db5688b2a459d4f01
-ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
+ms.openlocfilehash: 2b4dafa4168dfd4c3bbb78ba40e860186ff3d9e3
+ms.sourcegitcommit: f9760d027637cc0d2e5c3a9e47928422cb6e452a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34727904"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36170309"
 ---
 # <a name="user-adoption-guide"></a>使用者採用指南
 
@@ -79,11 +79,11 @@ ms.locfileid: "34727904"
     
 ## <a name="stage-3-readiness"></a>階段 3：整備
 
-投入時間在準備推出 Microsoft Search，可為組織帶來正面影響。 
+投入時間在準備推出 Microsoft Search，可為組織帶來正面影響。 Microsoft 提供<a href="https://aka.ms/MicrosoftSearch/Adoption">採用套件</a> (英文)，包含規劃指引、可自訂的電子郵件宣告、問卷範本、執行簡報等。 此外，還有 <a href="https://resources.techcommunity.microsoft.com/microsoft-search/#adoption">Microsoft 搜尋資源中心</a> (英文)，提供 IT 實作者其他可協助成功推出 Microsoft 搜尋的訓練和採用資源。
   
  **產品與內容整備**
   
-系統管理員會直接影響使用者的搜尋體驗，並為組織決定 Microsoft Search 的外觀。 這包括選擇想要呈現給使用者的結果類型。 透過開啟或關閉文件、網站、使用者、群組或交談的結果來控制此設定。
+系統管理員會直接影響使用者的搜尋體驗，並為組織決定 Microsoft Search 的外觀。 這包括選擇想要呈現給使用者的結果類型。 這些結果可能包括連結 (也稱為書籤)、文件、網站、人員、群組、位置、交談和其他工作場所資源。
   
 如需詳細資訊，請參閱[設定 Microsoft Search](setup-microsoft-search.md)。
   
