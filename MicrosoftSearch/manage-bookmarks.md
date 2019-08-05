@@ -14,22 +14,22 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: 在 Microsoft Search 中建立、更新書籤及大量編輯書籤結果的方法
-ms.openlocfilehash: fb1be0bc137891a54e370fef1e4b5628963c5ad9
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 0cd37ebcd7cd3ea7bbe55064fd41a3c42b2e4725
+ms.sourcegitcommit: f9760d027637cc0d2e5c3a9e47928422cb6e452a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591618"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36170318"
 ---
 # <a name="manage-bookmarks"></a>管理書籤
 
 只要幾個步驟，您便可以建立書籤。 每個書籤都包括標題、URL，和一組能觸發書籤的關鍵字。 一個書籤可以有多個關鍵字，數個書籤可以共用相同的關鍵字，但不能共用保留的關鍵字。 建立或修改書籤時，搜尋索引會立即重新整理，且書籤會立即可供使用者使用。
 
-如果組織已在 SharePoint 中設定升級的結果，您可以將升級的結果匯入到 **Microsoft Search**，並讓您的使用者使用匯入的內容。 要快速填入搜尋結果，這是個簡單的方法，只要您設定 **Microsoft Search**，並讓它對使用者更有效率即可。 建議您使用來自 SharePoint 提升的結果做為參考，以了解如何指定和建立相關的搜尋結果。 
+如果組織已在 SharePoint 中設定升級的結果，您可以將升級的結果匯入到 **Microsoft 搜尋**，並讓您的使用者使用匯入的內容。 這是個快速填入搜尋結果的簡單方法，只要您設定 **Microsoft 搜尋**，利用它來提高使用者的工作效率。 建議您使用來自 SharePoint 提升的結果做為參考，以了解如何指定和建立相關的搜尋結果。 
 
 ## <a name="add-or-edit-a-single-bookmark"></a>新增或編輯單一書籤
 1. 移至 **Microsoft 365 系統管理中心**。
-1. 在功能窗格中，移至 [設定]****，然後選取 ****Microsoft Search****。
+1. 在功能窗格中，移至 [設定]****，然後選取 [Microsoft 搜尋]****。
 預設會選取 [書籤]**** 索引標籤。
 1. 若要新增書籤，請選取 [新增]****。 若要編輯書籤，請在相關的書籤清單中選取書籤。 
 1. 當您新增或編輯資訊時，預覽會自動更新。
