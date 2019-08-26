@@ -12,13 +12,14 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: 5ab1234e-fbb2-4bf9-a907-fa83389a7dee
+ROBOTS: NOINDEX
 description: 使用 Microsoft Search 時如何保護您的資訊和檔案
-ms.openlocfilehash: 52dbf65d3c7414eaa2c4a3770def3f4f00edc40c
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: ba1cb7c106f5944b634e4995648975ff9c6113d8
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "34425598"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34590907"
 ---
 # <a name="how-microsoft-search-keeps-your-info-secure"></a>Microsoft Search 如何保護您的資訊安全
 

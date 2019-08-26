@@ -12,13 +12,14 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: a67e015a-e10a-442a-b1c9-511136d54d1f
+ROBOTS: NOINDEX
 description: 使用 Microsoft Search 來尋找內部網路網站、資源、工具和內部資訊連結
-ms.openlocfilehash: 4d484b832db07532d678af1f1c0f9f3348166e79
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: 986da96bd0d3964bd0ceff839d015e83df927fd2
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "34425586"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34590862"
 ---
 # <a name="find-resources-tools-and-more"></a>尋找資源、工具和更多項目
 

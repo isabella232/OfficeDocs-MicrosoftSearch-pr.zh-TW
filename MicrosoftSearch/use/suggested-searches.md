@@ -12,13 +12,14 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: c7f3aa2c-f3f5-4d1b-91cd-4fd4ed3775d3
+ROBOTS: NOINDEX
 description: 關於使用 Microsoft Search 時會看到的範例搜尋
-ms.openlocfilehash: 38afbdf233feba1772b9b72291d1571e2cf7ab97
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: 706feec30911fe2b87bc98cdd3c2efefc70cbe6d
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "34425568"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34590898"
 ---
 # <a name="suggested-searches"></a>建議的搜尋
 

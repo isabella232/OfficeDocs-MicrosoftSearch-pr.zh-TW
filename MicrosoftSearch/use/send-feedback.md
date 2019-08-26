@@ -12,13 +12,14 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: a51d395b-c281-433b-bb8e-fefac5252110
+ROBOTS: NOINDEX
 description: 提交關於 Microsoft Search 意見反應和註解給您的 IT 部門或 Microsoft
-ms.openlocfilehash: cbf4aab91116e2f34d54aa39d5cba9f5d505fc11
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: c0bb1357d7fe2b500fd12045647debe68fe15644
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "34425590"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34590889"
 ---
 # <a name="send-feedback"></a>傳送意見反應
 

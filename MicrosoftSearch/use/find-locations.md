@@ -12,13 +12,14 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: 3d34bfbc-d4a3-4ef2-85d3-cf92835382ac
+ROBOTS: NOINDEX
 description: 使用 Microsoft Search 來尋找辦公室、大樓和其他工作區位置、取得方向，還有更多功能
-ms.openlocfilehash: 8264f223808750cab6c5117b3b3fa1adbee5a40a
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: 7b01cf5bd385cecfe3b46e762b3be39cd9301f8d
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "34425585"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591024"
 ---
 # <a name="find-locations"></a>尋找位置
 

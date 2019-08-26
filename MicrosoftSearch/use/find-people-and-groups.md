@@ -12,13 +12,14 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: 17c9982a-0fd9-4cf1-b010-69ae3440b41f
+ROBOTS: NOINDEX
 description: 使用 Microsoft Search 尋找公司中的任何人，以及您將看見的資訊
-ms.openlocfilehash: c9b71b8353e5ebc6e876a837424de8b74a7c20d5
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: e772eede386c26264414acb99b952570a9d33b91
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "34425581"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34590943"
 ---
 # <a name="find-people-and-groups"></a>尋找人員與群組
 

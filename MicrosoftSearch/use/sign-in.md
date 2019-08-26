@@ -12,13 +12,14 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: 429fb92c-e968-4d61-be15-6ecebfdbd157
+ROBOTS: NOINDEX
 description: 使用公司或學校帳戶快速登入 Microsoft Search 或任何 Office 365 App
-ms.openlocfilehash: 0edfd7d244e953beb8153f494e83a3e59c74c007
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: 011c0cc6664f4f820e1e2d2258afd8678ce99378
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "34425578"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34590826"
 ---
 # <a name="sign-in-to-microsoft-search"></a>登入 Microsoft Search
 

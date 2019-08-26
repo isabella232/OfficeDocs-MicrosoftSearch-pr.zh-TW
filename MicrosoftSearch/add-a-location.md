@@ -13,18 +13,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c37cf1b1-5915-4eb1-9f78-72c48cad3b4b
+ROBOTS: NoIndex
 description: 新增位置，讓您組織的辦公室、建築物和其他工作空間出現在 Microsoft Search 工作結果中
-ms.openlocfilehash: 37cc56a733bb6395325ab4baf7885084d956938b
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: be55112453289a3cb10736750ecdf1c706fe5458
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "34425631"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591339"
 ---
 # <a name="add-a-location"></a>新增位置
 
 > [!IMPORTANT]
-> Bing 設定中的 Microsoft Search 現在可以在 Microsoft 365 管理中心中使用。 從系統管理中心的[指派搜尋系統管理員](https://docs.microsoft.com/zh-TW/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor)開始。
+> 本文章適用 Bing 系統管理入口網站中的 Microsoft Search。 我們正在將入口網站移至 Microsoft 365 系統管理中心，完成之後入口網站將會移除。 我們建議您使用 Microsoft 365 系統管理中心開始。 [Microsoft Search 概觀](overview-microsoft-search.md)。
     
 新增位置，當您的使用者搜尋時，會看到建築物、辦公室或場地的地址，以及顯示在地圖上的位置。 他們也可以使用 Bing 地圖服務來取得方向、查看附近有什麼，還有更多功能。
   

@@ -13,19 +13,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: d49a0b97-e4ca-47cf-ad52-6113787b8402
+ROBOTS: NOINDEX
 description: Microsoft Search 系統管理入口網站裡提供的預設書籤
-ms.openlocfilehash: 03cc7030498558fd23375297504b0a33012e9b7d
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: 06d4ee1eccacc288982d3824c5c0aab7bcfdbe55
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "34425636"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591186"
 ---
 # <a name="publish-default-bookmarks"></a>發佈預設書籤
 
 > [!IMPORTANT]
-> Bing 設定中的 Microsoft Search 現在可以在 Microsoft 365 管理中心中使用。 從系統管理中心的[指派搜尋系統管理員](https://docs.microsoft.com/zh-TW/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor)開始。
-    
+> 本文章適用 Bing 系統管理入口網站中的 Microsoft Search。 我們正在將入口網站移至 Microsoft 365 系統管理中心，完成之後入口網站將會移除。 我們建議您使用 Microsoft 365 系統管理中心開始。 [Microsoft Search 概觀](overview-microsoft-search.md)。
+
 若要快速查看書籤在 Bing 的顯示方式，請發佈所提供的預設項目。 請將它們當做參考，了解如何命名書籤與建立好的關鍵字。
   
 我們建議您檢閱這兩組預設書籤：

@@ -12,13 +12,14 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: ecd31803-0b32-4ba3-8bb8-a0d1dfb8b856
+ROBOTS: NOINDEX
 description: 使用 Microsoft Search 來尋找 Teams 和 Yammer 交談，以及您可以查看的詳細資料。
-ms.openlocfilehash: b339242fbafc4cff0f6fe5960cb90b0d05493105
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: 322b9b08919c157d6d18a9cf99a7216e2ec6a1b8
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "34425583"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34590988"
 ---
 # <a name="find-conversations"></a>尋找交談
 

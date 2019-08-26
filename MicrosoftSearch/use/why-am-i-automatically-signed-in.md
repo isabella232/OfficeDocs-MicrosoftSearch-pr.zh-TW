@@ -12,13 +12,14 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: 94f6fa41-0570-4668-b2fe-d51ed177716c
+ROBOTS: NOINDEX
 description: 了解自動登入 Microsoft Search 如何幫助您輕鬆快速地找出工作結果
-ms.openlocfilehash: 999341f10c0b75009246451f7e48f9fc4706d86a
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: a52cc9c88202e662b8598efa451b2bb964a861dc
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "34425608"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591033"
 ---
 # <a name="why-am-i-automatically-signed-in"></a>為什麼我會自動登入？
 
