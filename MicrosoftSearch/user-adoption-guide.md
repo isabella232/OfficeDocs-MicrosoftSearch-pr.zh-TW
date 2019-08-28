@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
 ROBOTS: NOINDEX
 description: 深入了解可協助您順利將 Microsoft Search 在組織中推出的方法和程序
-ms.openlocfilehash: 2b4dafa4168dfd4c3bbb78ba40e860186ff3d9e3
-ms.sourcegitcommit: f9760d027637cc0d2e5c3a9e47928422cb6e452a
+ms.openlocfilehash: 3bca460fe4d764fd1fee1eac16faa467c66cd4b9
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36170309"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639881"
 ---
 # <a name="user-adoption-guide"></a>使用者採用指南
 
@@ -79,7 +79,7 @@ ms.locfileid: "36170309"
     
 ## <a name="stage-3-readiness"></a>階段 3：整備
 
-投入時間在準備推出 Microsoft Search，可為組織帶來正面影響。 Microsoft 提供<a href="https://aka.ms/MicrosoftSearch/Adoption">採用套件</a> (英文)，包含規劃指引、可自訂的電子郵件宣告、問卷範本、執行簡報等。 此外，還有 <a href="https://resources.techcommunity.microsoft.com/microsoft-search/#adoption">Microsoft 搜尋資源中心</a> (英文)，提供 IT 實作者其他可協助成功推出 Microsoft 搜尋的訓練和採用資源。
+投入時間在準備推出 Microsoft Search，可為組織帶來正面影響。 Microsoft 提供<a href="https://resources.techcommunity.microsoft.com/microsoft-search-in-bing-adoption-kit/">採用套件</a> (英文)，包含規劃指引、可自訂的電子郵件宣告、問卷範本、執行簡報等。 此外，還有 <a href="https://resources.techcommunity.microsoft.com/microsoft-search/#adoption">Microsoft 搜尋資源中心</a> (英文)，提供 IT 實作者其他可協助成功推出 Microsoft 搜尋的訓練和採用資源。
   
  **產品與內容整備**
   
