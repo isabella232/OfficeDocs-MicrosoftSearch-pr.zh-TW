@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: 4a824483-2407-4bbd-8f7f-5ebb47817c7e
 ROBOTS: NoIndex
 description: 使用 Microsoft Search 工具建立和匯出結果、自動登入，以及從任何地方搜尋的概觀
-ms.openlocfilehash: 16beaf5ae2945df19b32b65ae4e65b4989217f9f
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: d8c725841e70dc90b5ae17fa992a933b8cb3e8c3
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591348"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639629"
 ---
 # <a name="admin-portal-tools"></a>系統管理入口網站工具
 
 > [!IMPORTANT]
-> 本文章適用 Bing 系統管理入口網站中的 Microsoft Search。 我們正在將入口網站移至 Microsoft 365 系統管理中心，完成之後入口網站將會移除。 我們建議您使用 Microsoft 365 系統管理中心開始。 [Microsoft Search 概觀](overview-microsoft-search.md)。
+> 本文章適用 Bing 系統管理入口網站中的 Microsoft Search。 我們正在將入口網站移至 Microsoft 365 系統管理中心，完成之後將會移除 Bing 系統管理入口網站中的 Microsoft Search。 建議您使用 Microsoft 365 系統管理中心來開始。 [Microsoft Search 概觀](overview-microsoft-search.md)。
     
 Microsoft Search 系統管理入口網站含有專為系統管理員、編輯者和使用者設計的工具和資源，包括：
   

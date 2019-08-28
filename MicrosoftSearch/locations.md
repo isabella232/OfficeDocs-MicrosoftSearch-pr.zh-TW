@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: 2379e72c-a7da-4e3f-932a-12d431a0a284
 ROBOTS: NOINDEX
 description: 可以在 Microsoft Search 工作結果中包含組織位置的所有方式概觀
-ms.openlocfilehash: 9eb61d206852759ade3cb668a3d9c0dee83c424f
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 1c8aed7931eb3586bbf2b79251afa94152656cd3
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591573"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639863"
 ---
 # <a name="locations"></a>位置
 
 > [!IMPORTANT]
-> 本文章適用 Bing 系統管理入口網站中的 Microsoft Search。 我們正在將入口網站移至 Microsoft 365 系統管理中心，完成之後入口網站將會移除。 我們建議您使用 Microsoft 365 系統管理中心開始。 [Microsoft Search 概觀](overview-microsoft-search.md)。
+> 本文章適用 Bing 系統管理入口網站中的 Microsoft Search。 我們正在將入口網站移至 Microsoft 365 系統管理中心，完成之後將會移除 Bing 系統管理入口網站中的 Microsoft Search。 建議您使用 Microsoft 365 系統管理中心來開始。 [Microsoft Search 概觀](overview-microsoft-search.md)。
     
 ## <a name="add-locations"></a>新增位置
 

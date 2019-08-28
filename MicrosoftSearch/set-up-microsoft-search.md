@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: c989562e-525f-4922-b436-a885e7bf36ee
 ROBOTS: NOINDEX
 description: 將 Microsoft Search 部署至貴組織時所需的所有資訊
-ms.openlocfilehash: d375f67045a04341dedc699856f631c5c41e5896
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: e5d67700e5f7f145634d61fd336c959114819b35
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591087"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639395"
 ---
 # <a name="set-up-microsoft-search"></a>設定 Microsoft Search
 
 > [!IMPORTANT]
-> 本文章適用 Bing 系統管理入口網站中的 Microsoft Search。 我們正在將入口網站移至 Microsoft 365 系統管理中心，完成之後入口網站將會移除。 我們建議您使用 Microsoft 365 系統管理中心開始。 [Microsoft Search 概觀](overview-microsoft-search.md)。
+> 本文章適用 Bing 系統管理入口網站中的 Microsoft Search。 我們正在將入口網站移至 Microsoft 365 系統管理中心，完成之後將會移除 Bing 系統管理入口網站中的 Microsoft Search。 建議您使用 Microsoft 365 系統管理中心來開始。 [Microsoft Search 概觀](overview-microsoft-search.md)。
     
 Microsoft Search 是 Office 365 的一部分，因此只要在 Microsoft 365 系統管理中心啟用即可輕鬆部署。 啟用後，您只要設定標誌、名稱和色彩，並且賦予系統管理員和編輯者存取權，即可快速完成設定。 之後，使用者就能使用公司或學校帳戶登入 Bing，並在搜尋時取得工作結果。
 

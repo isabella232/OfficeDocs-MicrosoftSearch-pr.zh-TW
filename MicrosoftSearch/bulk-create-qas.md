@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: 7bada218-8908-4956-aae3-6ffaeef384ca
 ROBOTS: NoIndex
 description: 在 Microsoft Search 系統管理入口網站中，使用匯入工具快速新增常見問題的解答
-ms.openlocfilehash: 7368014f3bc2f21a788625f0bf826af963366e1b
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: c0ec4aaa0ee93e94c8569dc383456018ccc6679d
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591366"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639773"
 ---
 # <a name="bulk-create-qas"></a>大量建立問與答
 
 > [!IMPORTANT]
-> 本文章適用 Bing 系統管理入口網站中的 Microsoft Search。 我們正在將入口網站移至 Microsoft 365 系統管理中心，完成之後入口網站將會移除。 我們建議您使用 Microsoft 365 系統管理中心開始。 [Microsoft Search 概觀](overview-microsoft-search.md)。
+> 本文章適用 Bing 系統管理入口網站中的 Microsoft Search。 我們正在將入口網站移至 Microsoft 365 系統管理中心，完成之後將會移除 Bing 系統管理入口網站中的 Microsoft Search。 建議您使用 Microsoft 365 系統管理中心來開始。 [Microsoft Search 概觀](overview-microsoft-search.md)。
     
 下載並使用 .csv 範本以大量建立或大量編輯問與答。 這也能輕鬆地大量儲存需要額外編輯或更新之草稿問與答的方式。 如果您需要大量編輯現有的問與答，請從系統管理入口網站中匯出、進行所需編輯，然後再加以匯入。
   

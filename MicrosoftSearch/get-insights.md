@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: ebce7fdc-e89b-473c-8131-67e659bb3f73
 ROBOTS: NOINDEX
 description: 在 Microsoft Search 系統管理入口網站，從易於使用的儀表板中分析指標並管理內容
-ms.openlocfilehash: a01b79dfc71218862da07270171da95e699ed7f2
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 9323ad97a2baffc3bdc1794049f6933335b298b2
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591510"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639818"
 ---
 # <a name="use-the-insights-dashboard"></a>使用深入解析儀表板
 
 > [!IMPORTANT]
-> 本文章適用 Bing 系統管理入口網站中的 Microsoft Search。 我們正在將入口網站移至 Microsoft 365 系統管理中心，完成之後入口網站將會移除。 我們建議您使用 Microsoft 365 系統管理中心開始。 [Microsoft Search 概觀](overview-microsoft-search.md)。
+> 本文章適用 Bing 系統管理入口網站中的 Microsoft Search。 我們正在將入口網站移至 Microsoft 365 系統管理中心，完成之後將會移除 Bing 系統管理入口網站中的 Microsoft Search。 建議您使用 Microsoft 365 系統管理中心來開始。 [Microsoft Search 概觀](overview-microsoft-search.md)。
     
 取得資料深入解析，並查看使用者如何與您的結果互動。 使用系統管理入口網站儀表板：
   

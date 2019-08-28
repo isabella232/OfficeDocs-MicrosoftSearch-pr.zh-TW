@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: a220c1bf-7cee-448a-90a3-310284d03e81
 ROBOTS: NOINDEX
 description: 減少您的 Windows 10 使用者登入 Microsoft Search 和 Office 365 的提示次數
-ms.openlocfilehash: c05a8ffcc973926add551bdbb20273b41ea23bc0
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 5dbceb070a469d1a8b3808a07a0972978a909f8a
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591042"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639370"
 ---
 # <a name="test-single-sign-on"></a>測試單一登入
 
 > [!IMPORTANT]
-> 本文章適用 Bing 系統管理入口網站中的 Microsoft Search。 我們正在將入口網站移至 Microsoft 365 系統管理中心，完成之後入口網站將會移除。 我們建議您使用 Microsoft 365 系統管理中心開始。 [Microsoft Search 概觀](overview-microsoft-search.md)。
+> 本文章適用 Bing 系統管理入口網站中的 Microsoft Search。 我們正在將入口網站移至 Microsoft 365 系統管理中心，完成之後將會移除 Bing 系統管理入口網站中的 Microsoft Search。 建議您使用 Microsoft 365 系統管理中心來開始。 [Microsoft Search 概觀](overview-microsoft-search.md)。
     
 單一登入可以減少系統提示使用者登入的次數。 透過一小群使用者來測試單一登入能協助找出任何造成阻礙的設定問題。 
   

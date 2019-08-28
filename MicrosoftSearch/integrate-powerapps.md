@@ -15,29 +15,24 @@ search.appverid:
 ms.assetid: 1fadcba3-4a7f-4a55-8476-d4e64d49a15f
 ROBOTS: NOINDEX
 description: 在 Microsoft Search 的書籤結果中包括瀏覽器型應用程式
-ms.openlocfilehash: d818ab8149032b4664adb90098700d4432a6fbb7
-ms.sourcegitcommit: a7ca4c38d37fbdec58e002e42d865188939d0483
+ms.openlocfilehash: f68b3c2b74f0a5c1712f0e86e86826e1f2c94b58
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2019
-ms.locfileid: "35003117"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639845"
 ---
 # <a name="integrate-powerapps"></a>整合 PowerApps
-
-> [!IMPORTANT]
-> 本文適用於 Bing 系統管理入口網站中的 Microsoft Search。 我們正在將入口網站移至 Microsoft 365 系統管理中心，完成之後入口網站將會移除。 我們建議您使用 Microsoft 365 系統管理中心開始。 [Microsoft Search 概觀](overview-microsoft-search.md)。
-    
+   
 將現有的 PowerApps 整合至您的書籤，協助您的使用者完成工作，例如輸入假期時間或提出支出報告。 整合後的 PowerApps 會出現在書籤結果內，免去移至不同網站或開啟其他工具的麻煩，節省您的時間與精力。
   
 ## <a name="what-are-powerapps"></a>什麼是 PowerApps？
 
 PowerApps 是一個服務，即使您沒有編碼經驗，也能打造在瀏覽器、手機或平板電腦上運行的商務 App。 深入了解：
   
-- 
-  [引導學習](https://docs.microsoft.com/zh-TW/learn/browse/?products=powerapps)
+- [引導學習](https://docs.microsoft.com/learn/browse/?products=powerapps)
     
-- 
-  [文件](https://docs.microsoft.com/zh-TW/powerapps/)
+- [文件](https://docs.microsoft.com/powerapps/)
     
 ## <a name="add-a-powerapp-to-a-bookmark"></a>將 PowerApp 新增至書籤
 

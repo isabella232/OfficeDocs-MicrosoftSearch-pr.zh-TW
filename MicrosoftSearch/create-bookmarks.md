@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: 40a556e1-61c2-4bd3-b80e-5ad62af77454
 ROBOTS: NoIndex
 description: 建立書籤，或使用瀏覽器擴充功能將書籤新增到 Microsoft Search 工作結果
-ms.openlocfilehash: 6f6efd10b360547bb0cde47f35510433bf6f90cc
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: f86d7df44b59e5dddcc92b50cea5ca6517bd8de1
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34590709"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639809"
 ---
 # <a name="create-bookmarks"></a>建立書籤
 
 > [!IMPORTANT]
-> 本文章適用 Bing 系統管理入口網站中的 Microsoft Search。 我們正在將入口網站移至 Microsoft 365 系統管理中心，完成之後入口網站將會移除。 我們建議您使用 Microsoft 365 系統管理中心開始。 [Microsoft Search 概觀](overview-microsoft-search.md)。
+> 本文章適用 Bing 系統管理入口網站中的 Microsoft Search。 我們正在將入口網站移至 Microsoft 365 系統管理中心，完成之後將會移除 Bing 系統管理入口網站中的 Microsoft Search。 建議您使用 Microsoft 365 系統管理中心來開始。 [Microsoft Search 概觀](overview-microsoft-search.md)。
     
 書籤能協助人員快速尋找重要資源、網站和工具。 每個書籤都包括標題、URL，和一組能觸發書籤的關鍵字。
   

@@ -3,7 +3,7 @@ title: 設定 Microsoft Search
 ms.author: anfowler
 author: adefowler
 manager: mnirkhe
-ms.date: 05/30/2019
+ms.date: 08/06/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 第一次設定 Microsoft Search。
-ms.openlocfilehash: 55ff009a17f63bfdaa1edf1e14fddfe132e20000
-ms.sourcegitcommit: 4eeb78066fd13e906daed3add003398bd9d0f6ca
+ms.openlocfilehash: 7c80701e83fea7b9b93e4e01f98fd1eeedbfa749
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "35917576"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639496"
 ---
 # <a name="set-up-microsoft-search"></a>設定 Microsoft Search
 
@@ -56,19 +56,14 @@ Microsoft Search 會採用內容來源的安全性設定。 使用者會在搜�
 
 ## <a name="step-2-assign-search-admin-and-search-editor"></a>步驟 2：指派搜尋系統管理員和搜尋編輯者
 
-有兩種受限制的系統管理員角色可協助您支援 Microsoft Search - **搜尋系統管理員**和**搜尋編輯者**。
-
-> [!NOTE]
-> 搜尋系統管理員角色和搜尋編輯者角色只會在 Microsoft 365 系統管理中心授與權限，而不會在傳統 **Bing 中的 Microsoft Search 系統管理入口網站**授與權限。 您必須是全域系統管理員才能在傳統入口網站中管理 Microsoft Search。
-
-搜尋系統管理員會直接影響使用者的搜尋體驗。 這包括選擇想要呈現給使用者的結果類型。 由一個人針對組織中使用者所搜尋的許多不同主題選擇並建立授權內容，可能很困難。 建議您運用主題專家 (SME) 與其他使用者的專業技術與知識 (將他們新增為搜尋編輯者)。
-
 在 Microsoft Search 中，您可以藉由將這兩個角色指派給使用者來管理組織的搜尋設定和內容：
 
 1. **搜尋系統管理員：** 此角色可以建立及管理搜尋結果內容，並定義查詢設定，以改善組織內的搜尋結果。 搜尋系統管理員負責管理 Microsoft Search 組態，並可執行搜尋編輯者所能執行的所有內容管理工作。
 2. **搜尋編輯者：** 在 Microsoft 365 系統管理中心中建立、管理和刪除 Microsoft Search 的內容。 此角色可以建立及管理編輯性的內容，例如：常見問題集和解答、重要的地點和位置、經常搜尋和使用的網站與應用程式。
 
-目前，搜尋系統管理員和搜尋編輯者角色都必須由全域系統管理員來只判派。如需詳細資訊，請參閱[指派系統管理員角色](https://docs.microsoft.com/zh-TW/office365/admin/add-users/assign-admin-roles?view=o365-worldwide)。
+目前，搜尋系統管理員和搜尋編輯者角色都必須由全域系統管理員來指派。如需詳細資訊，請參閱[指派系統管理員角色](https://docs.microsoft.com/zh-TW/office365/admin/add-users/assign-admin-roles?view=o365-worldwide)。
+
+搜尋系統管理員會直接影響使用者的搜尋體驗。 這包括選擇想要呈現給使用者的結果類型。 由一個人針對組織中使用者所搜尋的許多不同主題選擇並建立授權內容，可能很困難。 建議您運用主題專家 (SME) 與其他使用者的專業技術與知識 (將他們新增為搜尋編輯者)。
 
 ## <a name="step-3-make-content-easy-to-find"></a>步驟 3：讓內容易於尋找
 
@@ -88,27 +83,11 @@ Microsoft Search 會提供工具給系統管理員，讓其用來為使用者建
 
 若要建立及管理搜尋內容，請參閱[讓內容易於尋找](make-content-easy-to-find.md)。
 
-## <a name="step-4-test-single-sign-on"></a>步驟 4：測試單一登入
-
-Microsoft Search 會使用 Azure Active Directory (AAD) 來驗證和授權對組織資料的存取。 這表示在您登入 Office 365 應用程式或 Windows 10 時，使用者會使用您的公司或學校帳戶自動登入。
-
-我們建議 Microsoft Search 使用者使用單一登入，因為它會減少系統提示使用者登入的次數。 系統管理員透過一小群使用者來測試單一登入，以協助找出任何造成阻礙的組態問題。
-
-針對 Windows 10 上的 Chrome 使用者，必須先安裝適用於 Chrome 的 Windows 10 和 AAD 登入擴充功能，單一登入才能運作。 安裝後，您可以使用 Chrome 擴充功能在登入支援的網站時 (包括 Office 365 和 Bing)，輕鬆地利用 AAD 進行驗證。 此功能僅供獲授權的使用者使用。
-
-若要下載及安裝適用於 Chrome 的 Windows 10 和 AAD 登入擴充功能，請前往 [Chrome 線上應用程式商店](https://go.microsoft.com/fwlink/?linkid=2090961)。
-
-## <a name="step-5-training-and-communication"></a>步驟 5：訓練與溝通
+## <a name="step-4-training-and-communication"></a>步驟 4：訓練與溝通
 
 建立員工可以自行輕鬆存取的自助資源。 這有助於減少您與團隊不斷出現通訊的整體負擔，並協助自我訓練和教育員工。 提供使用者通訊、常見問題集、影片和錄製的訓練或網路研討會。 以下是可以開始的一些實用連結：
 
 - [在 Office 中使用 Microsoft Search 找到所需的內容](https://support.office.com/article/find-what-you-need-with-microsoft-search-in-office-2457d4d8-48a8-4ad4-ab89-5a0657aa8446?ui=en-US&rs=en-US&ad=US)
 - [Office 365 訓練中心](https://support.office.com/office-training-center)
 - 
-  [Microsoft Search Center](https://support.office.com/zh-TW/article/-working-title-microsoft-search-center-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc?ui=en-US&rs=en-US&ad=US)
-
-## <a name="trying-out-microsoft-search-in-bing"></a>在 Bing 中試用 Microsoft Search
-
-您可以將 [Bing 中的 Microsoft Search]**** 關閉。 如果關閉，使用者在 Bing 搜尋中將看不到組織內容。 根據預設，系統會開啟 [Bing 中的 Microsoft Search]。建議您在 Bing 中將 [Microsoft Search] 保持開啟，以獲得更佳的使用者體驗。
-
-移至 [設定]**** > [服務與增益集]**** > [Bing 中的 Microsoft Search]**** 來加以開啟或關閉。
+  [Microsoft 搜尋中心](https://support.office.com/zh-TW/article/-working-title-microsoft-search-center-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc?ui=en-US&rs=en-US&ad=US)

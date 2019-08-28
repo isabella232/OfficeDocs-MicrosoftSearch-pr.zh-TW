@@ -14,14 +14,17 @@ search.appverid:
 - MOE150
 ms.assetid: 50461cb9-8707-46c1-935a-1b9608a98800
 description: 在使用 Microsoft Search 提供資訊給獲授權使用者的同時，保護企業的資料與使用者
-ms.openlocfilehash: b7b62173dc61d271a4953adbf20a6cf48b122694
-ms.sourcegitcommit: 4eeb78066fd13e906daed3add003398bd9d0f6ca
+ms.openlocfilehash: 7aef4acad9f387e50fb03478a7c00d57fa451c00
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "35917567"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639612"
 ---
 # <a name="security-for-microsoft-search"></a>Microsoft Search 的安全性
+
+> [!IMPORTANT]
+> 本文章適用 Bing 系統管理入口網站中的 Microsoft Search。 我們正在將入口網站移至 Microsoft 365 系統管理中心，完成之後將會移除 Bing 系統管理入口網站中的 Microsoft Search。 建議您使用 Microsoft 365 系統管理中心來開始。 [Microsoft Search 概觀](overview-microsoft-search.md)。
 
 透過企業級的安全性，Microsoft Search 可隨時保護您的使用者與資料。
 

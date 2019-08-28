@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: 8ad58820-69e0-4ee0-88a7-d207ffa790b7
 ROBOTS: NOINDEX
 description: 新增這些 URL 和網域到您的防火牆允許清單中讓使用者輕鬆地取得 Microsoft Search
-ms.openlocfilehash: 08e98dbde4d9a32827ac000b0b922aab53abc681
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 1f7001bb97c912fcbf054bd16b17c8b2db2f3e99
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591528"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639791"
 ---
 # <a name="manage-network-connections"></a>管理網路連線
 
 > [!IMPORTANT]
-> 本文章適用 Bing 系統管理入口網站中的 Microsoft Search。 我們正在將入口網站移至 Microsoft 365 系統管理中心，完成之後入口網站將會移除。 我們建議您使用 Microsoft 365 系統管理中心開始。 [Microsoft Search 概觀](overview-microsoft-search.md)。
+> 本文章適用 Bing 系統管理入口網站中的 Microsoft Search。 我們正在將入口網站移至 Microsoft 365 系統管理中心，完成之後將會移除 Bing 系統管理入口網站中的 Microsoft Search。 建議您使用 Microsoft 365 系統管理中心來開始。 [Microsoft Search 概觀](overview-microsoft-search.md)。
     
 為了確保您和您的使用者能夠連線到 Microsoft Search 端點，請將這些 URL 新增到您的防火牆允許清單。
   

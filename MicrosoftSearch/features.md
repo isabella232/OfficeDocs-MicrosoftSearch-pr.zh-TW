@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: 5861e462-faed-4c3d-824d-ed3aafd80714
 ROBOTS: NoIndex
 description: Microsoft Search 適用於系統管理員與終端使用者的重要功能包括書籤、問與答，以及管理與資料深入解析
-ms.openlocfilehash: a0c9dc773ce7e11c446437cbcbcdc56014a4fe5e
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 2bcc922e6f9915494434098d6418dcceea264354
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591483"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639638"
 ---
 # <a name="features-of-microsoft-search"></a>Microsoft Search 的功能
 
 > [!IMPORTANT]
-> 本文章適用 Bing 系統管理入口網站中的 Microsoft Search。 我們正在將入口網站移至 Microsoft 365 系統管理中心，完成之後入口網站將會移除。 我們建議您使用 Microsoft 365 系統管理中心開始。 [Microsoft Search 概觀](overview-microsoft-search.md)。
+> 本文章適用 Bing 系統管理入口網站中的 Microsoft Search。 我們正在將入口網站移至 Microsoft 365 系統管理中心，完成之後將會移除 Bing 系統管理入口網站中的 Microsoft Search。 建議您使用 Microsoft 365 系統管理中心來開始。 [Microsoft Search 概觀](overview-microsoft-search.md)。
 
 ## <a name="key-admin-features-include"></a>重要的系統管理員功能包括：
 
