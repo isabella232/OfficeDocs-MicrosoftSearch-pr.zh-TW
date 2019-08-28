@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: 3d2a1498-174e-4214-9cf1-8b58cce5a872
 ROBOTS: NOINDEX
 description: 使用 SharePoint 搜尋查詢來建立 Microsoft Search 工作結果
-ms.openlocfilehash: 59d133aceb15c8f1fa75ecc3f35522def4201d0a
-ms.sourcegitcommit: 9a9d24b4b7a6f3e80b89086d29fd369ebded0619
+ms.openlocfilehash: ebfd10f8705ce5b9a36b9c13d549e28a3f1c6b91
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34810644"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639800"
 ---
 # <a name="import-sharepoint-promoted-results-and-top-queries"></a>匯入 SharePoint 升級的結果與查詢排行榜
 
 > [!IMPORTANT]
-> 本文適用於 Microsoft Search Bing 系統管理入口網站中。 我們可以從入口網站移至 Microsoft 365 系統管理中心]，然後移除。 我們建議您若要開始使用 Microsoft 365 系統管理中心。 [Microsoft Search 的概觀](overview-microsoft-search.md)。
+> 本文適用於 Microsoft Search Bing 系統管理入口網站中。 我們可以從入口網站移至 Microsoft 365 系統管理中心]，然後將移除 Microsoft Search Bing 入口網站中。 我們建議您若要開始使用 Microsoft 365 系統管理中心。 [Microsoft Search 的概觀](overview-microsoft-search.md)。
     
 若要利用使用者的查詢與您已在 SharePoint 中建立的首選，Microsoft 搜尋會包含兩個工具來匯入為建議的書籤此資訊： 
   
