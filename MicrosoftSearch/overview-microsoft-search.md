@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解什麼是 Microsoft Search、其優點，以及目前有 Microsoft Search 的應用程式的概觀。
-ms.openlocfilehash: d16066c941bb5c3619d7fd50e9cf33952216fb87
-ms.sourcegitcommit: a7ca4c38d37fbdec58e002e42d865188939d0483
+ms.openlocfilehash: 339b3d6350fa059ddc4dc24685e18739777bf932
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2019
-ms.locfileid: "35003135"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639584"
 ---
 # <a name="overview-of-microsoft-search"></a>Microsoft Search 概觀
 
@@ -62,24 +62,25 @@ Microsoft Search 可協助使用者找到正確的答案、人員和內容，以
 
 ## <a name="apps-that-currently-have-microsoft-search"></a>目前有 Microsoft Search 的應用程式
 
- 下列 Office 365 應用程式目前提供 Microsoft Search：
+ Microsoft Search 預設會對支援它的所有 Microsoft 應用程式開啟。 使用者必須執行的所有動作就是使用公司或學校帳戶登入。
 
+Microsoft Search 目前可使用下列應用程式：
 - SharePoint Online
 - 商務用 OneDrive
 - Outlook 網頁版
 - Windows 上的 Office 應用程式
 
-此外，使用者會在下列位置找到 Microsoft Search：
+此外，登入的使用者可在下列位置找到 Microsoft Search：
 
-- Bing
+- Bing 首頁
 - Office.com
 - Word、Excel 及 PowerPoint Online 的起始頁面
 
-使用者也可以從 Edge 網址列在 Bing 中起始搜尋。
+如果使用者使用 Bing 做為其預設搜尋引擎，則也可以從 Edge 網址列起始 Bing 中的搜尋。
 
 ## <a name="requirements"></a>需求
 
-您的組織必須有具備下列其中一個訂閱的 Office 365 租用戶：
+您必須具備下列其中一個 Office 365 或 Microsoft 365 訂閱：
 
 - Office 365 商務基本版和商務進階版
 - Office 365 A1/A3/A5
@@ -90,11 +91,11 @@ Microsoft Search 可協助使用者找到正確的答案、人員和內容，以
 - Microsoft 365 A3/A5
 - Microsoft 365 F1/E3/E5
 
-使用者和搜尋系統管理員兩者都必須獲得其中一個訂閱的授權。 只有具有有效帳戶的使用者可以使用 Microsoft Search，而且必須**登入**。
+使用者和搜尋系統管理員必須獲指派這些授權中的一個。 只有擁有有效帳戶的使用者可以使用 Microsoft Search，且使用者必須**登入**，因為 Microsoft Search 需要 Azure Active Directory
 
 ## <a name="tailoring-microsoft-search-to-your-organization"></a>為您的組織打造 Microsoft Search
 
-身為系統管理員，您可以讓使用者在從 SharePoint 起始頁面、Office.com 或 Bing 搜尋時，取得良好的組織特定結果。 您要透過 Microsoft 365 系統管理中心管理 Microsoft Search。
+身為系統管理員，您可以讓使用者在從 SharePoint 起始頁面、Office.com 或 Bing 搜尋時，易於取得良好的組織特定結果。 您可以定義 Microsoft Search 為了回應查詢中特定關鍵字會顯示的解答，來達成此目的。 有數種類型的解答可供您定義： 
 
 **顯示實用內容** - 幫助使用者找到組織內的重要工具和資源，方法是將其加入書籤。 如同您可以為公用網頁建立書籤，您可以為任何內部網頁建立書籤，供使用者搜尋。 您也可以在書籤中整合 PowerApp，讓使用者可以直接從書籤完成工作。
 
@@ -102,11 +103,15 @@ Microsoft Search 可協助使用者找到正確的答案、人員和內容，以
 
 **顯示實用的位置** - 在地圖上顯示組織的大樓、辦公室和其他工作區的地圖結果和地址資訊。 使用者可以使用地圖來取得方向、查看附近有什麼，還有更多功能。
 
+您可以檢視會顯示使用者參與您的解答的情況，以及使用者是否找到他們所尋找的使用情況統計資料。 您可以據此對解答進行微調或新增新的解答。
+
+如需使用關鍵字和保留關鍵字的詳細資訊，請參閱[讓內容易於尋找](make-content-easy-to-find.md)。
+
 ## <a name="what-content-is-searched"></a>搜尋什麼內容？
 
-Microsoft Search 會搜尋儲存在 SharePoint Online、商務用 OneDrive 和 Exchange 中的內容，包括來自全域通訊清單與 Office 365 群組的人員。 如果您的組織使用雲端混合式搜尋來設定混合式 SharePoint 環境，系統會同時傳回線上和內部部署的搜尋結果，包括您已連線至您的 SharePoint Server 環境的任何外部內容。 [深入了解混合式搜尋環境](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint)。
+Microsoft Search 會搜尋組織儲存在 SharePoint Online、商務用 OneDrive 和 Exchange 中的內容，包括全域通訊清單與 Office 365 群組。 Microsoft Search 不會跨租用戶搜尋或顯示組織所共用內容的結果。 如果您的組織使用雲端混合式搜尋來設定混合式 SharePoint 環境，Microsoft Search 會同時傳回線上和內部部署 SharePoint 內容的搜尋結果，包括您已連線至您的 SharePoint Server 環境的任何外部內容。 [深入了解混合式搜尋環境](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint)。
 
-當使用者從 SharePoint 起始頁面或 Office.com 搜尋時，Microsoft Search 會搜尋整個組織中的所有內容，並顯示找到的所有結果。 這是所謂的**全域搜尋範圍**。
+當使用者從 SharePoint 起始頁面或 Office.com 搜尋時，Microsoft Search 會搜尋整個組織中的所有內容，並顯示使用者有權限查看的結果。 這是所謂的**全域搜尋範圍**。
 
 當使用者從 Bing 搜尋時，使用者會從組織中的所有內容取得最相關的結果，這些結果會內嵌在來自**網路**的結果清單中。 如果他們需要查看**所有**組織結果，只要按一下即可取得全域搜尋範圍。
 
@@ -130,6 +135,8 @@ Microsoft Search 會搜尋儲存在 SharePoint Online、商務用 OneDrive 和 E
 
 當使用者搜尋時，Microsoft Search 會處理查詢，並從較大的片語剖析搜尋意圖，以使用人工智慧 (AI) 學習使用者新增到查詢，但不影響其搜尋意圖的常用多餘片語。 舉例來說，當使用者搜尋「如何變更我的密碼」，我們會截掉查詢中較不重要的字詞，並依據較相關的項目 (例如「變更密碼」) 來進行觸發。  
 
+Microsoft Search 不會建立新的索引，而是會搜尋 SharePoint Online、商務用 OneDrive 和 Exchange 內容的現有索引。
+
 使用者有**權限**查看的搜尋結果會顯示在搜尋結果頁面上。 Microsoft Search 會依據相關性，使用智慧型排序演算法以排序結果。
 
 ## <a name="microsoft-search-in-sharepoint"></a>SharePoint 中的 Microsoft Search
@@ -144,6 +151,8 @@ SharePoint 中的 Microsoft Search 是 SharePoint Online 中的新式搜尋體�
 ## <a name="microsoft-search-in-bing"></a>Bing 中的 Microsoft Search
 
 由於工作相關的搜尋可能具敏感性質，因此 Microsoft Search 使用一套信任措施來決定 Bing 的公開網頁結果如何處理這些搜尋。
+
+Microsoft Search 要求皆透過 HTTPS 提出。 這能確保連線受到端點對端點加密，強化安全性。 此外，所有與 Microsoft Search 流量相關的搜尋記錄都會在去除身分識別後，與公開的非 Microsoft Search 流量分開儲存。
 
 不論使用者查詢傳回的回應中是否包含一或多個工作相關結果，系統都會採取下列措施：
 

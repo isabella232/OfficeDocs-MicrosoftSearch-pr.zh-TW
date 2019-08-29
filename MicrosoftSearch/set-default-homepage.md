@@ -1,8 +1,8 @@
 ---
 title: 設定預設首頁
-ms.author: dawholl
-author: dawholl
-manager: kellis
+ms.author: anfowler
+author: adefowler
+manager: shohara
 ms.date: 12/20/2018
 ms.audience: Admin
 ms.topic: article
@@ -14,23 +14,58 @@ search.appverid:
 - MOE150
 ms.assetid: c020bd72-9906-4dfd-bc77-57287f5927ce
 ROBOTS: NOINDEX
-description: 了解如何將 Bing 設定為您的公司使用 Microsoft Search 的預設瀏覽器。
-ms.openlocfilehash: 457202ba8dbebf59c5ef6a4630aea98304b9acdb
-ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
+description: 了解如何將 Bing 設定為公司使用 Microsoft Search 的預設首頁。
+ms.openlocfilehash: 707b6fefe1bd3e096f758df92fedca28f3f1530a
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34727994"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639827"
 ---
-# <a name="set-default-homepage"></a>設定預設首頁
+# <a name="make-bingcom-the-default-home-page"></a>讓 Bing.com 成為預設首頁
 
-設定預設瀏覽器、預設搜尋引擎和預設首頁將可協助您的使用者探索 Microsoft Search 功能，鼓勵更常使用，並提供更順暢的體驗。
+本文將說明如何將 Bing.com 設定為 Microsoft Edge、Google Chrome 和 Internet Explorer 瀏覽器的預設首頁。 
   
-若要為您的組織設定預設首頁，請依照以下步驟進行。
-  
-## <a name="internet-explorer"></a>Internet Explorer
+ 
+## <a name="microsoft-edge-on-windows-10-version-1511-or-later"></a>Windows 10 版本 1511 或更新版本上的 Microsoft Edge
 
-### <a name="internet-explorer-50-or-later"></a>Internet Explorer 5.0 或更新版
+設定此原則之後，使用者將無法變更此原則。 
+
+1. 開啟 [群組原則管理主控台] (gpmc.msc)，然後切換以編輯任何現有原則或建立新原則。 
+1. 瀏覽至 [系統管理範本]\[Windows 元件]\[Microsoft Edge]****。    
+1. 按兩下 [設定起始頁面]****，將它設為 [已啟用]****，然後輸入 `https://www.bing.com/business`
+1.  將結果 GPO 連結到適當網域以強制執行結果 GPO。
+
+  
+## <a name="google-chrome-on-windows-xp-sp2-or-later"></a>Windows XP SP2 或更新版本上的 Google Chrome
+
+
+您可以在 [Microsoft 支援](https://support.microsoft.com/zh-TW/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra)網站上找到有關管理 ADMX 檔案的 Windows 支援文章和不同版本 Windows 適用的最新 ADMX 檔案。
+
+您也將需要最新的 Google 原則檔案，可以在 [Google Chrome Enterprise 說明](https://support.google.com/chrome/a/answer/187202)上找到。
+  
+如果在 GPMC 中找不到本節中描述的設定，請下載適當的 ADMX 並將它們複製到[集中存放區](https://docs.microsoft.com/zh-TW/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29)。 控制器上的集中存放區是使用下列命名慣例的資料夾：
+  
+ **%systemroot%\sysvol\\<domain\>\policies\PolicyDefinitions**
+  
+控制站處理的每個網域都應該有個別的資料夾。 可以透過命令提示字元使用下列命令來複製 ADMX 檔案：
+  
+ `Copy <path_to_ADMX.ADMX> %systemroot%\sysvol\<domain>\policies\PolicyDefinitions`
+  
+1. 開啟 [群組原則管理主控台] (gpmc.msc)，然後切換以編輯任何現有原則或建立新原則。
+1. 確定在 [使用者設定]/[電腦設定]** 中的 [系統管理範本]**** 區段中都有下列資料夾：Google Chrome 和 Google Chrome - 預設設定 (使用者可以覆寫)。
+   - 第一個區段的設定是固定的，而且本機系統管理員無法變更它們。
+   - 使用者可以在瀏覽器設定中變更原則後面區段的設定。
+   您應該決定使用者是否可以覆寫您的預設設定。 在以下步驟中，在與您的組織政策和需求對應資料夾中的設定進行變更。 以下步驟會使用 Google Chrome - 預設設定做為預設值。
+
+1. 瀏覽至 [&gt;電腦/使用者設定**]>\[系統管理範本]\[Google Chrome - 預設設定]\[首頁]**&lt;。 
+1. 按兩下 [將新分頁設為首頁]****，然後將它設為 [已啟用]****。 
+1. 瀏覽至 [&lt;電腦/使用者設定&gt;]\[系統管理範本]\[Google Chrome - 預設設定]\[新分頁]****。 
+1. 按兩下 [設定新分頁 URL]****，將它設為 [已啟用]****，然後輸入 `https://www.bing.com/business?form=BFBSPR` 
+1. 將結果 GPO 連結到適當網域以強制執行結果 GPO。
+
+## <a name="internet-explorer-50-or-later"></a>Internet Explorer 5.0 或更新版本
+設定此原則之後，使用者仍可變更首頁。 
 
 1. 開啟 [群組原則管理主控台] (gpmc.msc)，然後切換以編輯任何現有原則或建立新原則。
     
@@ -58,58 +93,3 @@ ms.locfileid: "34727994"
 6. 在首頁設定上按下 **F6**，然後輸入 `https://www.bing.com/business?form=BFBSPR`
     
 7. 將結果 GPO 連結到適當網域以強制執行結果 GPO。
-    
-> [!NOTE]
-> 設定此原則之後，使用者仍可變更首頁。 
-  
-## <a name="microsoft-edge"></a>Microsoft Edge
-
-### <a name="windows-10-version-1511-or-later"></a>Windows 10 (版本 1511 或更新版本)
-
-1. 開啟 [群組原則管理主控台] (gpmc.msc)，然後切換以編輯任何現有原則或建立新原則。
-    
-2. 瀏覽至 [系統管理範本]\[Windows 元件]\[Microsoft Edge]****
-    
-1. 按兩下 [設定起始頁面]****，將它設為 [已啟用]****，然後輸入 `https://www.bing.com/business`
-    
-3. 將結果 GPO 連結到適當網域以強制執行結果 GPO。
-    
-> [!CAUTION]
-> 設定此原則之後，使用者將無法變更搜尋提供者。 
-  
-## <a name="google-chrome"></a>Google Chrome
-
-### <a name="windows-xp-sp2-or-later"></a>Windows XP SP2 或更新版本
-
-您可以在 [Microsoft 支援](https://support.microsoft.com/zh-TW/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra)網站上找到有關管理 ADMX 檔案的 Windows 支援文章和不同版本 Windows 適用的最新 ADMX 檔案。
-
-您也將需要最新的 Google 原則檔案，可以在 [Google Chrome Enterprise 說明](https://support.google.com/chrome/a/answer/187202)上找到。
-  
-如果在 GPMC 中找不到本節中描述的設定，請下載適當的 ADMX 並將它們複製到[集中存放區](https://docs.microsoft.com/zh-TW/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29)。 控制器上的集中存放區是使用下列命名慣例的資料夾：
-  
- **%systemroot%\sysvol\\<domain\>\policies\PolicyDefinitions**
-  
-控制站處理的每個網域都應該有個別的資料夾。 可以透過命令提示字元使用下列命令來複製 ADMX 檔案：
-  
- `Copy <path_to_ADMX.ADMX> %systemroot%\sysvol\<domain>\policies\PolicyDefinitions`
-  
-1. 開啟 [群組原則管理主控台] (gpmc.msc)，然後切換以編輯任何現有原則或建立新原則。
-    
-2. 確定在 [使用者設定]/[電腦設定]** 中的 [系統管理範本]**** 區段中都有下列資料夾：Google Chrome 和 Google Chrome - 預設設定 (使用者可以覆寫)。
-    
-   - 第一個區段的設定是固定的，而且本機系統管理員無法變更它們。
-    
-   - 使用者可以在瀏覽器設定中變更原則後面區段的設定。
-   您應該決定使用者是否可以覆寫您的預設設定。 在以下步驟中，在與您的組織政策和需求對應資料夾中的設定進行變更。 以下步驟會使用 Google Chrome - 預設設定做為預設值。
-    
-3. 瀏覽至 [&gt;電腦/使用者設定**]>\[系統管理範本]\[Google Chrome - 預設設定]\[首頁]**&lt;。
-    
-4. 按兩下 [將新分頁設為首頁]****，然後將它設為 [已啟用]****。
-    
-5. 瀏覽至 [&lt;電腦/使用者設定&gt;]\[系統管理範本]\[Google Chrome - 預設設定]\[新分頁]****。
-    
-6. 按兩下 [設定新分頁 URL]****，將它設為 [已啟用]****，然後輸入 `https://www.bing.com/business?form=BFBSPR`
-    
-7. 將結果 GPO 連結到適當網域以強制執行結果 GPO。
-    
-設定此原則之後，使用者將能夠變更首頁。
