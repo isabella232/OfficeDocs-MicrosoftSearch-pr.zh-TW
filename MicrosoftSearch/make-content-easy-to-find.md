@@ -161,10 +161,8 @@ Microsoft Search 可協助使用者找到相關內容。 Microsoft Search 是一
 #### <a name="what-are-powerapps"></a>什麼是 PowerApps？
 
 PowerApps 是一個服務，即使您沒有編寫程式碼經驗，也能打造在瀏覽器、手機或平板電腦上運行的商務 App。 PowerApps 可以在任何瀏覽器和任何裝置上運作，不到一分鐘即可迅速新增完成。 如需 PowerApps 的詳細資訊，請參閱：
-- 
-  [引導學習](https://docs.microsoft.com/zh-TW/learn/browse/?products=powerapps)
-- 
-  [文件](https://docs.microsoft.com/zh-TW/powerapps/maker/canvas-apps/get-sessionid)
+- [引導學習](https://docs.microsoft.com/zh-TW/learn/browse/?products=powerapps)
+- [文件](https://docs.microsoft.com/zh-TW/powerapps/maker/canvas-apps/get-sessionid)
 - [PowerApps 首頁](https://make.preview.powerapps.com/environments/839eace6-59ab-4243-97ec-a5b8fcc104e4/home)
 
 #### <a name="add-a-powerapp-to-a-bookmark"></a>將 PowerApp 新增至書籤

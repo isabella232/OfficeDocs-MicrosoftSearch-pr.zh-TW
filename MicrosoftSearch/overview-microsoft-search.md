@@ -118,8 +118,7 @@ Microsoft Search 會搜尋組織儲存在 SharePoint Online、商務用 OneDrive
 ## <a name="what-types-of-results-can-users-find"></a>使用者可以找到哪些類型的結果？
 使用者在搜尋時會從下列來源尋找下列類型的結果：
 
-**SharePoint**：檔案、資料夾、組織中的人員、組織圖、網站、網頁、最新消息、清單和清單項目。 如果有定義，則為常見問題的解答、導向官方資訊的書籤、位置和工具。 
-  [了解您可以尋找的檔案類型](https://docs.microsoft.com/zh-TW/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)。
+**SharePoint**：檔案、資料夾、組織中的人員、組織圖、網站、網頁、最新消息、清單和清單項目。 如果有定義，則為常見問題的解答、導向官方資訊的書籤、位置和工具。 [了解您可以尋找的檔案類型](https://docs.microsoft.com/zh-TW/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)。
 
 **Office.com 和 Word、Excel 及 PowerPoint Online 起始頁面**：應用程式、檔案、資料夾、人員、組織圖、SharePoint 網站、網站頁面、清單和清單項目。 如果有定義，則為常見問題的解答、導向官方資訊的書籤、位置和工具。 可以找到與 SharePoint 中相同類型的檔案。
 

@@ -38,8 +38,7 @@ PowerApps 是一個服務，即使您沒有編碼經驗，也能打造在瀏覽�
 
 PowerApps 可以在任何瀏覽器和任何裝置上運行，不到一分鐘即可迅速新增完畢。
   
-1. 
-  [尋找您想要整合之 PowerApp 的應用程式識別碼](https://docs.microsoft.com/zh-TW/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) 
+1. [尋找您想要整合之 PowerApp 的應用程式識別碼](https://docs.microsoft.com/zh-TW/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) 
     
 2. 在 Microsoft Search 系統管理入口網站中，移至 [書籤]****
     
