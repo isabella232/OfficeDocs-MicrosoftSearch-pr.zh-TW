@@ -47,7 +47,6 @@ SharePoint 中的 Microsoft Search 是 SharePoint Online 中的新式搜尋體�
 ## <a name="see-also"></a>請參閱
 [Microsoft Search 概觀](overview-microsoft-search.md)
 
-
-  [了解 SharePoint 中搜尋體驗](https://docs.microsoft.com/zh-TW/sharepoint/overview-of-search)
+[了解 SharePoint 中搜尋體驗](https://docs.microsoft.com/zh-TW/sharepoint/overview-of-search)
 
 [何時使用 SharePoint 中的何種搜尋體驗](https://docs.microsoft.com/sharepoint/get-started-with-modern-search-experience)
