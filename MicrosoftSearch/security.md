@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 50461cb9-8707-46c1-935a-1b9608a98800
 description: 在使用 Microsoft Search 提供資訊給獲授權使用者的同時，保護企業的資料與使用者
-ms.openlocfilehash: 7aef4acad9f387e50fb03478a7c00d57fa451c00
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
+ms.openlocfilehash: 759fc49a4196e336d3a6016a91aa588fa1278b4d
+ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639612"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288998"
 ---
 # <a name="security-for-microsoft-search"></a>Microsoft Search 的安全性
 
@@ -72,4 +72,4 @@ Microsoft Search 的驗證已綁定至 Azure Active Directory。 當 Microsoft S
     
 ## <a name="gdpr"></a>GDPR
 
-Microsoft 在[ 2018 年 5 月 21 日的部落格文章](https://blogs.microsoft.com/on-the-issues/2018/05/21/microsofts-commitment-to-gdpr-privacy-and-putting-customers-in-control-of-their-own-data/)反映了我們對 GDPR 規範，以及 Microsoft 會如何協助企業與組織履行 GDPR 合規性義務的承諾。 您可以在 Microsoft [信任中心常見問題集](https://www.microsoft.com/en-us/trustcenter/privacy/gdpr/gdpr-faqs)中找到其他詳細資料。 在線上服務中針對組織客戶的客戶資料進行 Microsoft Search 查詢，也會符合第 28 條所述的處理承諾，如[信任中心常見問題集](https://www.microsoft.com/en-us/trustcenter/privacy/gdpr/gdpr-faqs)中所反映。 針對移至公開 Bing 查詢 (來自 Microsoft Search)，Microsoft 為資料控制者，並會依照 GDPR 中所述，去除查詢的身分識別。
+Microsoft 在[ 2018 年 5 月 21 日的部落格文章](https://blogs.microsoft.com/on-the-issues/2018/05/21/microsofts-commitment-to-gdpr-privacy-and-putting-customers-in-control-of-their-own-data/)反映了我們對 GDPR 規範，以及 Microsoft 會如何協助企業與組織履行 GDPR 合規性義務的承諾。 您可以在 Microsoft [信任中心常見問題集](https://www.microsoft.com/trustcenter/privacy/gdpr/gdpr-faqs)中找到其他詳細資料。 在線上服務中針對組織客戶的客戶資料進行 Microsoft Search 查詢，也會符合第 28 條所述的處理承諾，如[信任中心常見問題集](https://www.microsoft.com/trustcenter/privacy/gdpr/gdpr-faqs)中所反映。 針對移至公開 Bing 查詢 (來自 Microsoft Search)，Microsoft 為資料控制者，並會依照 GDPR 中所述，去除查詢的身分識別。

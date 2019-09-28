@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 41723aec-435c-400e-a818-6b1e8a1324c0
 ROBOTS: NoIndex
 description: 指派權限和角色給 Microsoft Search 系統管理員和編輯器
-ms.openlocfilehash: af89aa2d536baa64f16b0c2b2ff316200c83cbc0
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
+ms.openlocfilehash: b0a6d6db5c36bc12d4371e10d703e95bd3cd7731
+ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639647"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288953"
 ---
 # <a name="manage-users"></a>管理使用者
 
@@ -45,4 +45,4 @@ ms.locfileid: "36639647"
     
 ## <a name="add-users"></a>新增使用者
 
-根據預設，您組織中的每個人都可以使用 Microsoft Search。 若要修改存取，請使用 [Azure Active Directory 中的條件式存取](https://docs.microsoft.com/zh-TW/azure/active-directory/conditional-access/overview)。
+根據預設，您組織中的每個人都可以使用 Microsoft Search。 若要修改存取，請使用 [Azure Active Directory 中的條件式存取](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)。

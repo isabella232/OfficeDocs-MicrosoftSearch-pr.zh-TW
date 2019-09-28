@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 建立書籤、位置和問與答項目，讓組織的內容易於尋找。
-ms.openlocfilehash: a2f8018a85d792473f268a735abb368babfc582c
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
+ms.openlocfilehash: 2ed18cf8dcb855725a7cf3d51737e767000e9e83
+ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639854"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288917"
 ---
 # <a name="make-content-easy-to-find"></a>讓內容易於尋找
 
@@ -116,7 +116,7 @@ Microsoft Search 可協助使用者找到相關內容。 Microsoft Search 是一
 搜尋系統管理員可以使用瀏覽器擴充功能輕鬆地建立搜尋內容。 安裝瀏覽器擴充功能模組，然後移至您要新增為書籤的網站，並將網站新增為書籤。
 
 目前提供 Edge 和 Chrome 的瀏覽器擴充功能。 
-- 若要下載 Edge 擴充功能，請移至 [Microsoft Store](https://www.microsoft.com/en-us/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) 並下載應用程式。
+- 若要下載 Edge 擴充功能，請移至 [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) 並下載應用程式。
 - 若要下載 Chrome 擴充功能，請移至 [Chrome 線上應用程式商店](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm)並下載應用程式。
 
 ### <a name="bulk-add-or-edit-bookmarks"></a>大量新增或編輯書籤
@@ -161,13 +161,13 @@ Microsoft Search 可協助使用者找到相關內容。 Microsoft Search 是一
 #### <a name="what-are-powerapps"></a>什麼是 PowerApps？
 
 PowerApps 是一個服務，即使您沒有編寫程式碼經驗，也能打造在瀏覽器、手機或平板電腦上運行的商務 App。 PowerApps 可以在任何瀏覽器和任何裝置上運作，不到一分鐘即可迅速新增完成。 如需 PowerApps 的詳細資訊，請參閱：
-- [引導學習](https://docs.microsoft.com/zh-TW/learn/browse/?products=powerapps)
-- [文件](https://docs.microsoft.com/zh-TW/powerapps/maker/canvas-apps/get-sessionid)
+- [引導學習](https://docs.microsoft.com/learn/browse/?products=powerapps)
+- [文件](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid)
 - [PowerApps 首頁](https://make.preview.powerapps.com/environments/839eace6-59ab-4243-97ec-a5b8fcc104e4/home)
 
 #### <a name="add-a-powerapp-to-a-bookmark"></a>將 PowerApp 新增至書籤
 
-1. 尋找您想要新增的 [PowerApp 的應用程式識別碼](https://docs.microsoft.com/zh-TW/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id)。
+1. 尋找您想要新增的 [PowerApp 的應用程式識別碼](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id)。
 1. 登入並移至 **Microsoft 365 系統管理中心**。
 1. 在功能窗格中，移至 [設定]****，然後選取 **Microsoft Search**。
 1. 新增書籤或尋找您想要新增 **PowerApp** 的現有書籤。
