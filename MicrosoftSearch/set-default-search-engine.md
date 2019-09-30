@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: ee40010e-5d7f-4ba8-a3f8-d240dab3af6d
 ROBOTS: NOINDEX
 description: 了解如何將 Bing 設定為公司使用 Microsoft Search 的預設搜尋引擎。
-ms.openlocfilehash: cc03e3aa280ea621702ce99c2cc8eb530b310251
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
+ms.openlocfilehash: 7c7ec8be726f2ac12a0e07f3d70c4b6515366bf3
+ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639836"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37289016"
 ---
 # <a name="make-bing-the-default-search-engine"></a>讓 Bing 成為預設搜尋引擎
   
@@ -30,9 +30,9 @@ ms.locfileid: "36639836"
 
 雖然您可以將 Bing 設定為預設的搜尋引擎，Microsoft Edge 可讓使用者變更其設定，以使用不同的搜尋引擎。
   
-如需適用於其他版本 Windows 的最新 ADMX 檔案，請參閱[如何在 Windows 中建立和管理群組原則系統管理範本的集中存放區](https://support.microsoft.com/zh-TW/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra) (機器翻譯)。
+如需適用於其他版本 Windows 的最新 ADMX 檔案，請參閱[如何在 Windows 中建立和管理群組原則系統管理範本的集中存放區](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra)。
   
-如果在 GPMC 中找不到本節中描述的設定，請下載適當的 ADMX 並將它們複製到集中存放區。 如需詳細資訊，請參閱使用 [ADMX 檔案編輯網域型 GPO](https://docs.microsoft.com/zh-TW/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29)。 控制器上的集中存放區是使用下列命名慣例的資料夾：
+如果在 GPMC 中找不到本節中描述的設定，請下載適當的 ADMX 並將它們複製到集中存放區。 如需詳細資訊，請參閱使用 [ADMX 檔案編輯網域型 GPO](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29)。 控制器上的集中存放區是使用下列命名慣例的資料夾：
   
  **%systemroot%\sysvol\\<domain\>\policies\PolicyDefinitions**
   
@@ -55,7 +55,7 @@ ms.locfileid: "36639836"
   
 Chrome 隨附自己的一組群組原則設定，您可以從 [Google Chrome Enterprise 說明](https://support.google.com/chrome/a/answer/187202)以 ADMX 檔案的格式下載。 如果使用 Windows Vista/Server 2008 或更新版本的作業系統來管理網域的 GPO，則此套件中提供的 ADMX 檔案將會管理 Windows XP SP2 或更新版本上的 Chrome 設定。
   
-針對網域控制站上的 ADMX 檔案，將範本檔案複製到集中存放區。 如需詳細資訊，請參閱使用 [ADMX 檔案編輯網域型 GPO](https://docs.microsoft.com/zh-TW/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29)。 控制器上的集中存放區是使用下列命名慣例的資料夾：
+針對網域控制站上的 ADMX 檔案，將範本檔案複製到集中存放區。 如需詳細資訊，請參閱使用 [ADMX 檔案編輯網域型 GPO](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29)。 控制器上的集中存放區是使用下列命名慣例的資料夾：
   
  **%systemroot%\sysvol\\<domain\>\policies\PolicyDefinitions**
   
