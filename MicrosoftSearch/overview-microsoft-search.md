@@ -1,5 +1,5 @@
 ---
-title: Microsoft Search 概觀
+title: Microsoft 搜尋概觀
 ms.author: tlarsen
 author: tlarsen
 manager: mnirkhe
@@ -12,15 +12,15 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 了解什麼是 Microsoft Search、其優點，以及目前有 Microsoft Search 的應用程式的概觀。
-ms.openlocfilehash: 339b3d6350fa059ddc4dc24685e18739777bf932
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
+description: 了解什麼是 Microsoft 搜尋、其優點，以及目前有 Microsoft 搜尋的應用程式概觀。
+ms.openlocfilehash: 55b6cad9f871eb1eb8d103c51e7cfeda02e6a452
+ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639584"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37289043"
 ---
-# <a name="overview-of-microsoft-search"></a>Microsoft Search 概觀
+# <a name="overview-of-microsoft-search"></a>Microsoft 搜尋概觀
 
 Microsoft Search 為 Microsoft 365 生產力應用程式和更廣泛 Microsoft 生態系統中的整合式搜尋功能。 隨著時間推移，Microsoft Search 將在 Microsoft 365 越來越多的應用程式中提供。
 
@@ -48,23 +48,23 @@ Microsoft Search 可協助使用者找到正確的答案、人員和內容，以
 
 ## <a name="benefits-of-microsoft-search"></a>Microsoft Search 的優點
 
-**從任何 Microsoft Search 方塊跨 Microsoft 365 搜尋** - 使用者可以從任何 Microsoft Search 方塊搜尋，並快速回到他們執行的動作。 Microsoft Search 會將來自 Office 365 (包括 SharePoint、商務用 OneDrive 和 Exchange) 中資料來源的結果整合在一起。
+**從任何 Microsoft Search 方塊跨 Microsoft 365 搜尋** - 使用者可以從任何 Microsoft Search 方塊搜尋，並快速回到他們執行的動作。 Microsoft 搜尋會將來自 Office 365 (包括 SharePoint、商務用 OneDrive 和 Exchange) 中資料來源的結果整合在一起。
 
-**輕鬆搜尋** - Microsoft Search 會根據使用者先前在 Office 365 中的活動，直接在搜尋方塊中建議結果。
+**輕鬆搜尋** - Microsoft 搜尋會根據使用者先前在 Office 365 中的活動，直接在搜尋方塊中建議結果。
 
-**尋找共用的檔案** - Microsoft Search 使用進階查詢理解讓尋找共用檔案更容易。 使用者可以輕鬆地找到他們正在共同作業的檔案。
+**尋找共用的檔案** - Microsoft 搜尋使用進階查詢理解讓尋找共用檔案更容易。 使用者可以輕鬆地找到他們正在共同作業的檔案。
 
 **顯示相關內容** - 提升您的使用者完成工作所需的資訊和解答，例如政策、福利、資源、工具等。 您也能以特定群組為目標，例如新進人員或遠端工作者。
 
-**Microsoft Search 發展** - 使用者可以搜尋的這組內容類型，及搜尋方塊的智慧隨著時間增加。
+**Microsoft 搜尋發展** - 使用者可以搜尋的這組內容類型，及搜尋方塊的智慧隨著時間增加。
 
-**跨所有應用程式管理** - Microsoft Search 預設為**開啟**，並且您所做的任何系統管理會套用至所有應用程式中的 Microsoft Search。
+**跨所有應用程式管理** - Microsoft 搜尋預設為**開啟**，並且您所做的任何系統管理會套用至所有應用程式中的 Microsoft 搜尋。
 
-## <a name="apps-that-currently-have-microsoft-search"></a>目前有 Microsoft Search 的應用程式
+## <a name="apps-that-currently-have-microsoft-search"></a>目前有 Microsoft 搜尋的應用程式
 
- Microsoft Search 預設會對支援它的所有 Microsoft 應用程式開啟。 使用者必須執行的所有動作就是使用公司或學校帳戶登入。
+ Microsoft 搜尋預設會對支援它的所有 Microsoft 應用程式開啟。 使用者必須執行的所有動作就是使用公司或學校帳戶登入。
 
-Microsoft Search 目前可使用下列應用程式：
+目前有下列應用程式提供 Microsoft 搜尋：
 - SharePoint Online
 - 商務用 OneDrive
 - Outlook 網頁版
@@ -99,7 +99,7 @@ Microsoft Search 目前可使用下列應用程式：
 
 **顯示實用內容** - 幫助使用者找到組織內的重要工具和資源，方法是將其加入書籤。 如同您可以為公用網頁建立書籤，您可以為任何內部網頁建立書籤，供使用者搜尋。 您也可以在書籤中整合 PowerApp，讓使用者可以直接從書籤完成工作。
 
-**提供常見問題的解答** - 為您的組織最常詢問的問題提供最佳的解答。 當使用者在搜尋方塊中輸入常見的問題時，Microsoft Search 會在結果中顯示這個問題的解答，而非只是提供網頁的連結。
+**提供常見問題的解答** - 為您的組織最常詢問的問題提供最佳的解答。 當使用者在搜尋方塊中輸入常見的問題時，Microsoft 搜尋會在結果中顯示這個問題的解答，而非只是提供網頁的連結。
 
 **顯示實用的位置** - 在地圖上顯示組織的大樓、辦公室和其他工作區的地圖結果和地址資訊。 使用者可以使用地圖來取得方向、查看附近有什麼，還有更多功能。
 
@@ -118,7 +118,7 @@ Microsoft Search 會搜尋組織儲存在 SharePoint Online、商務用 OneDrive
 ## <a name="what-types-of-results-can-users-find"></a>使用者可以找到哪些類型的結果？
 使用者在搜尋時會從下列來源尋找下列類型的結果：
 
-**SharePoint**：檔案、資料夾、組織中的人員、組織圖、網站、網頁、最新消息、清單和清單項目。 如果有定義，則為常見問題的解答、導向官方資訊的書籤、位置和工具。 [了解您可以尋找的檔案類型](https://docs.microsoft.com/zh-TW/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)。
+**SharePoint**：檔案、資料夾、組織中的人員、組織圖、網站、網頁、最新消息、清單和清單項目。 如果有定義，則為常見問題的解答、導向官方資訊的書籤、位置和工具。 [了解您可以尋找的檔案類型](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)。
 
 **Office.com 和 Word、Excel 及 PowerPoint Online 起始頁面**：應用程式、檔案、資料夾、人員、組織圖、SharePoint 網站、網站頁面、清單和清單項目。 如果有定義，則為常見問題的解答、導向官方資訊的書籤、位置和工具。 可以找到與 SharePoint 中相同類型的檔案。
 
@@ -145,7 +145,7 @@ SharePoint 中的 Microsoft Search 是 SharePoint Online 中的新式搜尋體�
 - 使用者可以在 SharePoint 起始頁面、中樞網站、通訊網站和新式小組網站上，找到 Microsoft Search 搜尋方塊。
 - 發佈網站、傳統小組網站和在搜尋中心時，使用者會使用傳統搜尋方塊。
 
-您可以自訂傳統搜尋體驗，例如將自訂精簡器新增至搜尋結果頁面或以不同方式顯示特定類型的結果。 您無法像在 SharePoint 中那樣自訂 Microsoft Search 體驗。 為傳統搜尋所做的一些自訂可能會影響 SharePoint 中的 Microsoft Search。 如果您的組織將在 SharePoint 中使用兩種搜尋體驗，請[了解差異，以及如何避免影響 SharePoint 中的 Microsoft Search](https://docs.microsoft.com/zh-TW/sharepoint/differences-classic-modern-search) (部分機器翻譯)。
+您可以自訂傳統搜尋體驗，例如將自訂精簡器新增至搜尋結果頁面或以不同方式顯示特定類型的結果。 您無法像在 SharePoint 中那樣自訂 Microsoft Search 體驗。 為傳統搜尋所做的一些自訂可能會影響 SharePoint 中的 Microsoft Search。 如果您的組織將在 SharePoint 中使用兩種搜尋體驗，請[了解差異，以及如何避免影響 SharePoint 中的 Microsoft Search](https://docs.microsoft.com/sharepoint/differences-classic-modern-search) (部分機器翻譯)。
 
 ## <a name="microsoft-search-in-bing"></a>Bing 中的 Microsoft Search
 
