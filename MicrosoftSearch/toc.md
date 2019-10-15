@@ -10,7 +10,6 @@
 ##[管理書籤](manage-bookmarks.md)
 ##[管理問與答](manage-qas.md)
 ##[管理位置](manage-locations.md)
-##[管理樓面規劃](manage-floorplans.md)
 #[使用者採用指南](user-adoption-guide.md)
 #[常見問題集](faqs.md)
 #[使用 Microsoft Search](use/about-microsoft-search.md)
