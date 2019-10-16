@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解什麼是 Microsoft 搜尋、其優點，以及目前有 Microsoft 搜尋的應用程式概觀。
-ms.openlocfilehash: 55b6cad9f871eb1eb8d103c51e7cfeda02e6a452
-ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
+ms.openlocfilehash: c0599a09b2018062b1181762c2ce3c93cb16367a
+ms.sourcegitcommit: 5204b3c85e2fc190a8807d5268fb87145624a969
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37289043"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "37502936"
 ---
 # <a name="overview-of-microsoft-search"></a>Microsoft 搜尋概觀
 
@@ -29,7 +29,7 @@ Microsoft Search 可協助使用者找到正確的答案、人員和內容，以
 - 使用者會收到他們從中搜尋的應用程式**上下文**中的相關結果。 例如，當使用者在 Outlook 中搜尋時，他們會尋找電子郵件，而不會尋找 SharePoint 中的網站。 在 SharePoint 中搜尋時，他們會尋找網站、頁面和檔案時。
 - 無論使用者使用哪個應用程式，Microsoft Search 都是**個人**的。  Microsoft Search 會使用來自 Microsoft Graph 的深入資訊來顯示與每個使用者相關的結果。 每個使用者可能會看到不同的結果，即使他們搜尋相同文字亦然。 他們只會看到他們有權存取的結果，Microsoft Search 不會變更權限。
 - 使用者不需要記住資訊所在的地方。 例如，使用者在 Word 中作業，但想要重複使用同事從其 OneDrive 共用的簡報資訊。 不需要切換到 OneDrive 並搜尋該簡報，而是可以直接從 Word 搜尋。  
-- 在 Bing 中時，使用者可以取得來自公用網站與來自其組織內的結果。
+- 在 [Bing](https://bing.com) 中時，使用者可以取得來自公用網站與來自其組織內的結果。
 
 ## <a name="what-users-see"></a>使用者看到的內容
 
@@ -147,20 +147,14 @@ SharePoint 中的 Microsoft Search 是 SharePoint Online 中的新式搜尋體�
 
 您可以自訂傳統搜尋體驗，例如將自訂精簡器新增至搜尋結果頁面或以不同方式顯示特定類型的結果。 您無法像在 SharePoint 中那樣自訂 Microsoft Search 體驗。 為傳統搜尋所做的一些自訂可能會影響 SharePoint 中的 Microsoft Search。 如果您的組織將在 SharePoint 中使用兩種搜尋體驗，請[了解差異，以及如何避免影響 SharePoint 中的 Microsoft Search](https://docs.microsoft.com/sharepoint/differences-classic-modern-search) (部分機器翻譯)。
 
-## <a name="microsoft-search-in-bing"></a>Bing 中的 Microsoft Search
-
-由於工作相關的搜尋可能具敏感性質，因此 Microsoft Search 使用一套信任措施來決定 Bing 的公開網頁結果如何處理這些搜尋。
-
-Microsoft Search 要求皆透過 HTTPS 提出。 這能確保連線受到端點對端點加密，強化安全性。 此外，所有與 Microsoft Search 流量相關的搜尋記錄都會在去除身分識別後，與公開的非 Microsoft Search 流量分開儲存。
-
-不論使用者查詢傳回的回應中是否包含一或多個工作相關結果，系統都會採取下列措施：
-
-**記錄** - 所有與 Microsoft 搜尋流量相關的搜尋記錄都會匿名處理並保留 18 個月。 儲存在這些系統記錄中的查詢僅用於建模和訓練公用功能，例如當滿足一組限制和頻率閾值時，對公用 Web 結果進行自動建議或相關搜尋，這可讓我們相信這些查詢是常見的，而不是特定組織所特有。 查詢必須在非 Microsoft 搜尋使用者的相關資料出現很多次，並且查詢不得僅觸發企業搜索結果。 不符合這些要求的查詢將與公用的非 Microsoft 搜尋流量分開儲存。 限制存取會透過各種安全機制來管理，包括安全性群組與工程系統中的其他層級。
-
-**搜尋記錄** - 使用公司或學校帳戶登入時，其他電腦或裝置無法取得該使用者的搜尋記錄。
-
-**廣告** - 絕不會將企業搜尋查詢與廣告客戶分享或建議給廣告客戶。
-永遠不會依據使用者的公司身分識別或組織來投放廣告。
+## <a name="microsoft-search-in-bing-protects-enterprise-searches"></a>Bing 中的 Microsoft Search 可保護企業搜尋 
+當使用者在 Microsoft Search 中輸入企業搜尋查詢時，會同時發生兩個同步搜尋要求：(1) 企業內部資源的搜尋，以及 (2) 來自 Bing.com 公開結果的個別搜尋。 因為企業搜尋可能很敏感，Microsoft Search 實作了一組信任測量，說明如何處理來自 Bing.com 公開結果的個別搜尋。 
+-   **記錄**
+    - 與 Microsoft Search 流量相關的所有搜尋記錄，都會與您的工作場所身分識別解除關聯。
+    - 如果符合一組限制或頻率閾值，讓我們對於該查詢不是特定組織所特有有信心，則會按照[隱私權聲明](https://privacy.microsoft.com/privacystatement)的 Bing Services 一節中所述的方式來處理該查詢。 例如，這類查詢將用來建立模型及訓練公用功能，例如自動建議或相關搜尋。 
+    - 不符合這組限制或頻率閾值的查詢，將會與公開的非 Microsoft Search 流量分開儲存。
+-   **廣告**
+    - Bing.com 中顯示與企業搜尋相關的廣告，完全與搜尋查詢的內容相關。 廣告永遠不會根據使用者的工作場所身分識別來鎖定使用者。
 
 ## <a name="see-also"></a>請參閱
 
