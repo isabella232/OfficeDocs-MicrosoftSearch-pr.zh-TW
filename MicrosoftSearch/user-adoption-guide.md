@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
 ROBOTS: NOINDEX
 description: 深入了解可協助您順利將 Microsoft Search 在組織中推出的方法和程序
-ms.openlocfilehash: 3bca460fe4d764fd1fee1eac16faa467c66cd4b9
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
-ms.translationtype: HT
+ms.openlocfilehash: 439c7a8e9fbfdeb5b2bc42276dccb2377f3f0dac
+ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639881"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "37949354"
 ---
 # <a name="user-adoption-guide"></a>使用者採用指南
 
@@ -43,7 +43,7 @@ ms.locfileid: "36639881"
 |變更管理團隊  <br/> |確保產品價值易於了解  <br/> 建立推出計劃  <br/> |IT  <br/> |
 |風雲人物  <br/> |向同儕與團隊宣傳產品  <br/> |任何人 (員工)  <br/> |
 |搜尋系統管理員  <br/> |找出使用者採用的核心團隊成員  <br/> 管理 Microsoft Search，包括體驗的外觀及操作並持續管理  <br/> 促進討論以展現 Microsoft Search 的價值  <br/> |IT  <br/> |
-|編輯者  <br/> |在系統管理入口網站中建立內容  <br/> |IT/任何人  <br/> |
+|編輯者  <br/> |在系統管理中心中建立的內容  <br/> |IT/任何人  <br/> |
    
 ## <a name="stage-2-scenarios"></a>階段 2：案例
 
@@ -121,7 +121,7 @@ Microsoft Search 使用者必須使用公司或學校帳戶來登入 Bing。 若
   
  **吸引合作夥伴團隊**
   
-Microsoft Search 為 Microsoft 365 不可或缺的一部分，它符合 GDPR 和 C 層級指導方針。 根據您的組織而定，您可能必須與您的隱私權和安全性團隊分享 Microsoft Search 的相關資訊。 如需詳細資訊，請參閱 [Microsoft Search 的安全性](security.md)。
+Microsoft Search 為 Microsoft 365 不可或缺的一部分，它符合 GDPR 和 C 層級指導方針。 根據您的組織而定，您可能必須與您的隱私權和安全性團隊分享 Microsoft Search 的相關資訊。 如需詳細資訊，請參閱 [Microsoft Search 的安全性](overview-microsoft-search.md#microsoft-search-in-bing-protects-enterprise-searches)。
   
 請確認您的技術支援中心知道 Microsoft Search 的相關特性與功能，以及使用者的登入需求，使他們可以更有效率地支援使用者。 如需詳細資訊，請參閱[使用 Microsoft Search](use/about-microsoft-search.md) 與[常見問題集](faqs.md)。
   

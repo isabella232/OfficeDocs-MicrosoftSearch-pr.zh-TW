@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 7bada218-8908-4956-aae3-6ffaeef384ca
 ROBOTS: NoIndex
 description: 在 Microsoft Search 系統管理入口網站中，使用匯入工具快速新增常見問題的解答
-ms.openlocfilehash: c0ec4aaa0ee93e94c8569dc383456018ccc6679d
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
-ms.translationtype: HT
+ms.openlocfilehash: 660f5663ff6238f4ab59dab36d51f1311d5c7260
+ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639773"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "37949030"
 ---
 # <a name="bulk-create-qas"></a>大量建立問與答
 
@@ -45,7 +45,7 @@ ms.locfileid: "36639773"
     
 7. 按一下 [匯入]****
 
-# <a name="prevent-import-errors"></a>防止匯入錯誤      
+## <a name="prevent-import-errors"></a>防止匯入錯誤      
 如果有任何必要資料遺失或無效，您就會收到錯誤訊息。 依據錯誤的類型，系統可能會產生一份記錄檔，其中包含哪些列或欄需要修正的詳細資訊。 進行任何所需編輯，然後再次嘗試匯入檔案。
 
 > [!NOTE]
@@ -61,7 +61,7 @@ ms.locfileid: "36639773"
 
 同時，如果您包含現有問與答的識別碼，將會以匯入檔案中的資訊加以取代。
 
-針對具有多個租用戶的組織，您可以從一個租用戶匯出您的問與答，並將它匯入到另一個租用戶。 但您必須在匯入之前，先移除 [識別碼] 資料行中的所有資料。
+適用於負責管理多個組織的合作夥伴，您可以匯出一個 org 導致您 Q&並匯入另一個。 但您必須在匯入之前，先移除 [識別碼] 資料行中的所有資料。
 
 若要深入了解必要欄位與建議欄位，請參閱[建立問與答](create-qas.md)。
 
