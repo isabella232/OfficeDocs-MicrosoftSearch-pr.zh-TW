@@ -3,7 +3,6 @@ title: 匯入 SharePoint 升級的結果與查詢排行榜
 ms.author: dawholl
 author: dawholl
 manager: kellis
-ms.date: 9/8/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
@@ -15,17 +14,17 @@ search.appverid:
 ms.assetid: 3d2a1498-174e-4214-9cf1-8b58cce5a872
 ROBOTS: NOINDEX
 description: 使用 SharePoint 搜尋查詢來建立 Microsoft Search 工作結果
-ms.openlocfilehash: ebfd10f8705ce5b9a36b9c13d549e28a3f1c6b91
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
+ms.openlocfilehash: c69203ce2138a7609e1b52614f8bfccc98bc9616
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639800"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626844"
 ---
 # <a name="import-sharepoint-promoted-results-and-top-queries"></a>匯入 SharePoint 升級的結果與查詢排行榜
 
 > [!IMPORTANT]
-> 本文適用於 Microsoft Search Bing 系統管理入口網站中。 我們可以從入口網站移至 Microsoft 365 系統管理中心]，然後將移除 Microsoft Search Bing 入口網站中。 我們建議您若要開始使用 Microsoft 365 系統管理中心。 [Microsoft Search 的概觀](overview-microsoft-search.md)。
+> 本文章適用 Bing 系統管理入口網站中的 Microsoft Search。 我們正在將入口網站移至 Microsoft 365 系統管理中心，完成之後將會移除 Bing 系統管理入口網站中的 Microsoft Search。 建議您使用 Microsoft 365 系統管理中心來開始。 [Microsoft Search 概觀](overview-microsoft-search.md)。
     
 若要利用使用者的查詢與您已在 SharePoint 中建立的首選，Microsoft 搜尋會包含兩個工具來匯入為建議的書籤此資訊： 
   

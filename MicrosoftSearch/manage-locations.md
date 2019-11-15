@@ -3,7 +3,6 @@ title: 管理位置
 ms.author: dawholl
 author: dawholl
 manager: kellis
-ms.date: 05/30/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -14,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8ab9aa00-cd74-405f-8410-9a1c3cfacdb9
 description: 隨著時間，您可能會需要更新位置的狀態和內容以讓它保持相關。
-ms.openlocfilehash: d026e518011f3b3739beb2b6aaa044f8a5e9c0d4
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
-ms.translationtype: HT
+ms.openlocfilehash: 25fa6fdb8f95c04332e8df16c7589286ecaefdb0
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591555"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626781"
 ---
 # <a name="manage-locations"></a>管理位置
 
@@ -57,7 +56,7 @@ ms.locfileid: "34591555"
 - 如果有一個現有的書籤具有相同標題或 URL，則會以匯入檔案中的資訊更新書籤。
 - 範本檔案中並非所有欄位都為必要，必要欄位則會依據書籤的狀態而改變。
 - 書籤會根據 [狀態]** 欄位的不同而儲存成草稿、建議、已排程或自動發佈。
-- 針對具有多個租用戶的組織，您可以從一個租用戶匯出您的書籤，並將它匯入到另一個租用戶。 但您必須在匯入之前，先移除 [識別碼]** 資料行中的資料。
+- 適用於負責管理多個組織的合作夥伴，您可以從一個組織匯出您的書籤，並匯入另一個。 但您必須在匯入之前，先移除 [識別碼]** 資料行中的資料。
 
 **附註：** 如果範本檔案中有任何錯誤，您即無法匯入位置。 若要避免錯誤，請確定您匯入的檔案的格式正確，並包含所有必要的資訊。 
 

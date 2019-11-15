@@ -1,9 +1,8 @@
 ---
 title: Microsoft Search 的企業網站連接器
-ms.author: v-pamcn
+ms.author: mounika.narayanan
 author: monaray
 manager: mnirkhe
-ms.date: 11/04/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft Search 企業網站連接器
-ms.openlocfilehash: 3caca53204bfb2cca4209e048a21173f550e3d39
-ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.openlocfilehash: c2495487b24b11512a182434f72a90044a439d5d
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949692"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626271"
 ---
 # <a name="enterprise-websites-connector"></a>企業網站連接器
 

@@ -3,7 +3,6 @@ title: Microsoft Search ServiceNow 連接器
 ms.author: v-pamcn
 author: TrishaMc1
 manager: mnirkhe
-ms.date: 10/08/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft Search ServiceNow 連接器
-ms.openlocfilehash: b83bf04dc06ffab26a0067d15b36a99496c199a8
-ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.openlocfilehash: 78b2831e9a52b6bf0204b5a6b2aba147b529b3f5
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949712"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626952"
 ---
 # <a name="servicenow-connector"></a>ServiceNow 連接器
 
@@ -42,7 +41,7 @@ ms.locfileid: "37949712"
 
 **Field** | **描述** | **建議的值**
 --- | --- | ---
-名稱 | 這個唯一的值會識別需要 OAuth 存取的應用程式。 | Microsoft Search
+名稱 | 這個唯一的值會識別需要 OAuth 存取的應用程式。 | Microsoft 搜尋
 用戶端識別碼 | 唯讀屬性，自動產生唯一識別碼的應用程式。 要求存取權杖時，執行個體使用的用戶端識別碼。 | NA
 用戶端密碼 | 使用此共用的密碼字串，ServiceNow 執行個體和 Microsoft Search 授權與彼此通訊。 | 藉由將此視為密碼，請遵循安全性最佳作法。
 重新導向 URL | 授權伺服器重新導向至所需的回撥 URL。 | 請參閱[OAuth 回呼](https://gcs.office.com/v1.0/admin/oauth/callback)。
