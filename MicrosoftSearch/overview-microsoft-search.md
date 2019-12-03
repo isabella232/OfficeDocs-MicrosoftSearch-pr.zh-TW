@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 取得查看 Microsoft Search 的概觀，其優點，以及哪些應用程式支援 Microsoft Search。
-ms.openlocfilehash: 28bd561e53bb1878c601a08e919e37f524a6470c
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: 938cf8875d9cc707041b950c6c13bab27e366670
+ms.sourcegitcommit: ef1eb2bdf31dccd34f0fdc4aa7a0841ebd44f211
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626970"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39663067"
 ---
 # <a name="overview-of-microsoft-search"></a>Microsoft 搜尋概觀
 
@@ -46,7 +46,7 @@ Microsoft Search 可協助使用者找到正確的答案、人員和內容，以
 
 ## <a name="benefits-of-microsoft-search"></a>Microsoft Search 的優點
 
-**從任何 Microsoft Search 方塊跨 Microsoft 365 搜尋** - 使用者可以從任何 Microsoft Search 方塊搜尋，並快速回到他們執行的動作。 Microsoft Search 聚集所有同等級結果從 Office 365，包括[SharePoint](http://sharepoint.com/)、[商務用 Microsoft OneDrive](https://onedrive.live.com/about/en-us/business/)及[Microsoft Exchange Server](https://products.office.com/en-us/exchange/microsoft-exchange-server)中的資料來源。
+**從任何 Microsoft Search 方塊跨 Microsoft 365 搜尋** - 使用者可以從任何 Microsoft Search 方塊搜尋，並快速回到他們執行的動作。 Microsoft Search 聚集所有同等級結果從 Office 365，包括[SharePoint](http://sharepoint.com/)、[商務用 Microsoft OneDrive](https://onedrive.live.com/about/business/)及[Microsoft Exchange Server](https://products.office.com/exchange/microsoft-exchange-server)中的資料來源。
 
 **若要搜尋的容易**– Microsoft Search 建議根據使用者的 Office 365 中的前一個活動、 在 [**搜尋**] 方塊中的權限的結果。
 
@@ -58,13 +58,13 @@ Microsoft Search 可協助使用者找到正確的答案、人員和內容，以
 
 ## <a name="tailoring-microsoft-search-to-your-organization"></a>為您的組織打造 Microsoft Search
 
-當您可以建立的系統管理員和令人 Microsoft 搜尋經驗為您的使用者。 
+身為系統管理員您可以為您的使用者建立令人 Microsoft 搜尋體驗。 
 
 **顯示實用的內容**– 解答提供快速的代表性結果] 來搜尋關鍵字為基礎的查詢。 [進行內容容易尋找](make-content-easy-to-find.md)。
 
-**新增外部內容**-Microsoft Graph 連接器可讓您將外部內容移入索引。 使用連接器來豐富搜尋經驗的資料與外部 Microsoft 365 的檔案。 [Microsoft Graph 連接器的概觀](connectors-overview.md)
+**新增外部內容**– Microsoft Graph 連接器可讓您將外部內容移入索引。 使用連接器來豐富搜尋經驗的資料與外部 Microsoft 365 的檔案。 [Microsoft Graph 連接器的概觀](connectors-overview.md)
 
-**自訂使用者經驗**-您可以自訂透過類別和其他組態的使用者經驗。 [自訂 Microsoft 搜尋] 頁面](customize-search-page.md)
+**自訂使用者經驗**– 您可以自訂透過類別和其他組態的使用者經驗。 [自訂 Microsoft 搜尋] 頁面](customize-search-page.md)
 
 ## <a name="what-content-is-searched"></a>搜尋什麼內容？
 
@@ -87,7 +87,7 @@ Microsoft Search 顯示的內容，您的組織已儲存在 Microsoft 365 或透
 企業搜尋可能是機密的因為 Microsoft Search 已實作信任措施，說明如何公開的個別搜尋結果從一組`Bing.com`處理。
 
 ### <a name="logging"></a>記錄
- - 所有`Bing.com`Bing 流量中適用於 Microsoft Search 的搜尋記錄檔會從工作場所識別分離。
+- 所有`Bing.com`Bing 流量中適用於 Microsoft Search 的搜尋記錄檔會從工作場所識別分離。
 - 如果符合一組限制或頻率閾值，讓我們對於該查詢不是特定組織所特有有信心，則會按照[隱私權聲明](https://privacy.microsoft.com/privacystatement)的 Bing Services 一節中所述的方式來處理該查詢。 例如，這類查詢將用來建立模型和訓練公用功能，例如 [自動建議或相關的搜尋。
 - 不符合這組限制或頻率閾值的查詢，將會與公開的非 Microsoft Search 流量分開儲存。
 ### <a name="advertising"></a>廣告 

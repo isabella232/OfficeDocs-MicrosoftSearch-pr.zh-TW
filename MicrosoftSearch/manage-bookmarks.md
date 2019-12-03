@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: 建立及更新書籤，而且方式來大量編輯 Microsoft Search 書籤結果
-ms.openlocfilehash: a50be90e9590086762df7c6b0fd2e0ad3349ec5d
-ms.sourcegitcommit: 897b92bae1b905d7c47566e31c4c07cd16d44b17
+ms.openlocfilehash: b65e61e4435e36fad5760f0a8d34bf444b51178b
+ms.sourcegitcommit: ef1eb2bdf31dccd34f0fdc4aa7a0841ebd44f211
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39254737"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39663142"
 ---
 # <a name="manage-bookmarks"></a>管理書籤
 
@@ -77,10 +77,8 @@ ms.locfileid: "39254737"
 - [狀態]** 資料行不是空白，此為必要資訊
 
 若要防止書籤的書籤重複的錯誤，請遵循這些最佳作法：
-
 - 請勿使用不同的書籤重複的 URL。 如果 URL 已指派給另一個書籤您將其新增再次從匯入檔案，然後就會發生錯誤。 這也適用於重複的 Url，對於其他類型的解答。
-- 更新現有的書籤時，請使用書籤的識別碼] 欄中。 您可以更新現有的書籤，例如關鍵字或描述] 中，任何其他屬性，但您應該確定書籤識別碼匯入檔案的適當的資料行中。 如果書籤識別碼已存在，服務不會視為其新。 此外，而且它會處理錯誤。
-
+- 更新現有的書籤時，請使用*書籤識別碼*] 欄中的色彩。 您可以更新現有的書籤，例如關鍵字或描述] 中，任何其他屬性，但是您應確定*書籤識別碼*是適當的資料行的匯入檔案中。 如果*書籤識別碼*已存在，服務不會視為其新。 此外，並不會處理為錯誤。
 
 ## <a name="powerapps"></a>PowerApps
 將現有的 PowerApps 新增至您的書籤，協助您的使用者完成工作，例如輸入假期時間或提出支出報告。 
