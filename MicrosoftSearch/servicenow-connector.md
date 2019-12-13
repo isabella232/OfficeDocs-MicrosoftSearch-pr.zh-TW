@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft Search ServiceNow 連接器
-ms.openlocfilehash: 78b2831e9a52b6bf0204b5a6b2aba147b529b3f5
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: 75e07eb82dd63e95ce17a0506f96c853a7bcea2f
+ms.sourcegitcommit: 398b9847e3041732c32af9e6087d8e6c2e96c1cf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626952"
+ms.lasthandoff: 12/12/2019
+ms.locfileid: "39998564"
 ---
 # <a name="servicenow-connector"></a>ServiceNow 連接器
 
@@ -44,7 +44,7 @@ ms.locfileid: "38626952"
 名稱 | 這個唯一的值會識別需要 OAuth 存取的應用程式。 | Microsoft 搜尋
 用戶端識別碼 | 唯讀屬性，自動產生唯一識別碼的應用程式。 要求存取權杖時，執行個體使用的用戶端識別碼。 | NA
 用戶端密碼 | 使用此共用的密碼字串，ServiceNow 執行個體和 Microsoft Search 授權與彼此通訊。 | 藉由將此視為密碼，請遵循安全性最佳作法。
-重新導向 URL | 授權伺服器重新導向至所需的回撥 URL。 | 請參閱[OAuth 回呼](https://gcs.office.com/v1.0/admin/oauth/callback)。
+重新導向 URL | 授權伺服器重新導向至所需的回撥 URL。 | https://gcs.office.com/v1.0/admin/oauth/callback
 標誌 URL | 包含應用程式標誌的影像 URL。 | NA
 作用中 | 選取核取方塊，可讓應用程式登錄作用中。 | 設定為作用中
 重新整理 token 期限 | 重新整理權杖是有效的秒數。 根據預設，重新整理權杖到期 100 天 （8640000 秒為單位）。 | 31,536,000 （1 年）

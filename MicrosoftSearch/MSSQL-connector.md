@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 為 Microsoft Search 設定 Microsoft SQL 連接器。
-ms.openlocfilehash: c31399e65bd4bfc154d10d2e6057fa23d11f030d
-ms.sourcegitcommit: ef1eb2bdf31dccd34f0fdc4aa7a0841ebd44f211
+ms.openlocfilehash: b48fece5fccaf2a82ac343cd13130073ee6b3c21
+ms.sourcegitcommit: f4cb37fdf85b895337caee827fb72b5b7fcaa8ad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "39663155"
+ms.lasthandoff: 12/12/2019
+ms.locfileid: "39995048"
 ---
 # <a name="microsoft-sql-server-connector"></a>Microsoft SQL server 連接器
 
@@ -26,7 +26,7 @@ Microsoft SQL server 連接器，您的組織可以探索和索引資料從內�
 本文適用於 Microsoft 365 系統管理員或人設定、 執行，並監視的 Microsoft SQL server 連接器。 本文說明如何設定連接器，連接器功能、 限制和疑難排解技巧。
 
 ## <a name="install-a-data-gateway"></a>安裝資料閘道
-若要存取您的協力廠商資料，您必須安裝及設定 Microsoft Power BI 閘道。 請參閱[安裝與內部部署閘道](https://docs.microsoft.com/data-integration/gateway/service-gateway-install)若要了解更多。  
+若要存取您的協力廠商資料，您必須安裝及設定 Microsoft Power BI 閘道。 [安裝在內部閘道](https://docs.microsoft.com/data-integration/gateway/service-gateway-install)了解詳細資訊，請參閱。  
 
 ## <a name="connect-to-a-data-source"></a>連線至資料來源
 若要連接您的 Microsoft SQL server 連接器至資料來源，您必須設定您要編目的資料庫伺服器和內部部署閘道。 您可以再連線到資料庫所需的驗證方法。

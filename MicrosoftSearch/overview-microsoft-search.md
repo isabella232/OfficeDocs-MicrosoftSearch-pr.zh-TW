@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 取得查看 Microsoft Search 的概觀，其優點，以及哪些應用程式支援 Microsoft Search。
-ms.openlocfilehash: 938cf8875d9cc707041b950c6c13bab27e366670
-ms.sourcegitcommit: ef1eb2bdf31dccd34f0fdc4aa7a0841ebd44f211
+ms.openlocfilehash: 4acc3b9fcb7453f84db256cc20e839066dc94af5
+ms.sourcegitcommit: f4cb37fdf85b895337caee827fb72b5b7fcaa8ad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "39663067"
+ms.lasthandoff: 12/12/2019
+ms.locfileid: "39995030"
 ---
 # <a name="overview-of-microsoft-search"></a>Microsoft 搜尋概觀
 
@@ -70,28 +70,16 @@ Microsoft Search 可協助使用者找到正確的答案、人員和內容，以
 
 Microsoft Search 顯示的內容，您的組織已儲存在 Microsoft 365 或透過連接器已編製索引。 Microsoft 搜尋不會搜尋整個租用戶或顯示結果由其他組織共用的內容。 如果您的組織使用雲端混合式搜尋來設定混合式 SharePoint 環境，Microsoft Search 會同時傳回線上和內部部署 SharePoint 內容的搜尋結果，包括您已連線至您的 SharePoint Server 環境的任何外部內容。 [深入了解混合式搜尋環境](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint)。
 
-使用者會得到同一個企業搜尋結果他們取得來自其他位置，也會從網際網路取得結果。
+使用者會得到相同的搜尋結果他們取得來自其他位置，也會從網際網路取得結果。
 
 ## <a name="how-does-microsoft-search-work"></a>Microsoft Search 如何運作？
 
 當使用者搜尋時，Microsoft Search 會處理查詢，並從較大的片語剖析搜尋意圖，以使用人工智慧 (AI) 學習使用者新增到查詢，但不影響其搜尋意圖的常用多餘片語。 舉例來說，當使用者搜尋「如何變更我的密碼」，我們會截掉查詢中較不重要的字詞，並依據較相關的項目 (例如「變更密碼」) 來進行觸發。  
 使用者有**權限**查看的搜尋結果會顯示在搜尋結果頁面上。 Microsoft Search 會依據相關性，使用智慧型排序演算法以排序結果。
 
-## <a name="microsoft-search-in-bing-protects-enterprise-searches"></a>Bing 中的 Microsoft Search 可保護企業搜尋
+## <a name="how-does-microsoft-search-in-bing-help-protect-my-company-data"></a>Microsoft Bing 搜尋如何協助保護我的公司資料？
 
-當使用者在 Microsoft Bing 搜尋中，輸入搜尋查詢時，會發生兩個同時搜尋要求：
-
-- 您的組織內部資源搜尋。
-- 從 Bing.com 公開的個別搜尋結果。 
-
-企業搜尋可能是機密的因為 Microsoft Search 已實作信任措施，說明如何公開的個別搜尋結果從一組`Bing.com`處理。
-
-### <a name="logging"></a>記錄
-- 所有`Bing.com`Bing 流量中適用於 Microsoft Search 的搜尋記錄檔會從工作場所識別分離。
-- 如果符合一組限制或頻率閾值，讓我們對於該查詢不是特定組織所特有有信心，則會按照[隱私權聲明](https://privacy.microsoft.com/privacystatement)的 Bing Services 一節中所述的方式來處理該查詢。 例如，這類查詢將用來建立模型和訓練公用功能，例如 [自動建議或相關的搜尋。
-- 不符合這組限制或頻率閾值的查詢，將會與公開的非 Microsoft Search 流量分開儲存。
-### <a name="advertising"></a>廣告 
-在顯示廣告`Bing.com`與企業搜尋察覺相關的搜尋查詢的內容。 廣告永遠不會根據使用者的工作場所身分識別來鎖定使用者。
+[安全性和 Microsoft 中的搜尋 Bing 的隱私權](security-for-search.md)
 
 ## <a name="see-also"></a>請參閱
 
