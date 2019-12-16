@@ -31,6 +31,7 @@
 ##[搜尋結果版面配置](customize-results-layout.md)
 ##[SharePoint 中的 Microsoft Search](get-started-search-in-sharepoint-online.md)
 ##Bing 中的 Microsoft Search
+###[安全性及隱私權](security-for-search.md)
 ###[讓 Microsoft Edge 成為預設瀏覽器](set-default-browser.md)
 ###[讓 Bing 成為預設搜尋引擎](set-default-search-engine.md)
 ###[讓 Bing.com 成為預設首頁](set-default-homepage.md)
