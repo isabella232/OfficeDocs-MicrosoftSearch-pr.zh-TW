@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 description: 加入搜尋類別及自訂搜尋結果
-ms.openlocfilehash: 28e8fdc7fe7f08abe265c53772a161b8a7095503
-ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
+ms.openlocfilehash: 852622c0c66afb996f941c609980a0d792af7364
+ms.sourcegitcommit: c41334350654daef3a4cd45b5b18ea4401286997
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699555"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "40947024"
 ---
-# <a name="customize-the-microsoft-search-page"></a>自訂 Microsoft 搜尋] 頁面
+# <a name="customize-the-search-results-page"></a>自訂搜尋結果頁面
 
 藉由建立搜尋類別和結果類型，您可以自訂當他們中[SharePoint](http://sharepoint.com/)、 [Microsoft Office](https://Office.com)和 Microsoft Search in [Bing](https://Bing.com)搜尋時，向使用者顯示的搜尋結果。 類別，方便使用者尋找他們已取得最新產品權限，請參閱 < 的資訊。 例如，您可以建立搜尋類別行銷分析資料從協力廠商軟體行銷部門中的使用者。 您也可以定義結果類型，並自訂的版面配置，這項資料。  
 
