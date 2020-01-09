@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 加入搜尋類別及自訂搜尋結果
-ms.openlocfilehash: 852622c0c66afb996f941c609980a0d792af7364
-ms.sourcegitcommit: c41334350654daef3a4cd45b5b18ea4401286997
+ms.openlocfilehash: 198e5c85c1544b05cdc622f7b617e8bddbcd6a00
+ms.sourcegitcommit: 78dc72e99e148898455e016b4ccb110d16b3d81c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "40947024"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40987674"
 ---
 # <a name="customize-the-search-results-page"></a>自訂搜尋結果頁面
 
@@ -101,7 +101,7 @@ OR <br>若要編輯類別，請在清單中選取。
 ### <a name="view-the-vertical-after-enabling"></a>檢視在啟用之後的類別
 
 啟用垂直之後，它可能需要一段時間，才可以檢視。
-如果您想要等候啟用它之後，您可以將附加**cacheClear = true** [SharePoint](http://sharepoint.com/)和[Office](https://Office.com)立即檢視類別中的 url。
+如果您不想等待啟用它之後，您可以將附加**cacheClear = true** [SharePoint](http://sharepoint.com/)和[Office](https://Office.com)立即檢視類別中的 url。
 
 ## <a name="troubleshooting"></a>疑難排解
 
