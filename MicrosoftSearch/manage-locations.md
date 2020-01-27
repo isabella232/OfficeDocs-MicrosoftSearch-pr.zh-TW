@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8ab9aa00-cd74-405f-8410-9a1c3cfacdb9
 description: 隨著時間，您可能會需要更新位置的狀態和內容以讓它保持相關。
-ms.openlocfilehash: 25fa6fdb8f95c04332e8df16c7589286ecaefdb0
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: 44214cc1be22c5e9e49276c69c6c4132559f7c8d
+ms.sourcegitcommit: 9784c8a99138c2f333a9fed8b71df9c4f28b2bee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626781"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41519133"
 ---
 # <a name="manage-locations"></a>管理位置
 
@@ -40,7 +40,7 @@ ms.locfileid: "38626781"
 使用匯入/匯出功能，以便：
 1. 大量新增位置 - 在位置範本檔案中新增詳細資料，然後將它匯入。 
 1. 大量編輯位置 - 將位置匯出至 .csv 檔案，然後編輯匯出的 .csv 檔案中位置的詳細資料，然後匯入更新的 .csv 檔案。
-1. 備份位置 - 將現有位置匯出至 .csv 檔案。
+1. 備份位置 – 將現有的位置匯出至.csv 檔案。
 
 若要匯出或匯入位置：
 1. 在 [位置]**** 索引標籤的右上角，選取 [匯入]****。
