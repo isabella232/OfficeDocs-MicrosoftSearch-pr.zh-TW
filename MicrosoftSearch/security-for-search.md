@@ -2,7 +2,7 @@
 title: 安全性和 Microsoft 中的搜尋 Bing 的隱私權
 ms.author: jeffkizn
 author: jeffkizn
-manager: pmanek
+manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 提供資訊給授權的使用者與 Microsoft Search in Bing 時保護您的公司資料和使用者
-ms.openlocfilehash: 7f19327f3d62f68ed876875596610181b5f1bc0e
-ms.sourcegitcommit: ac1209d11b8cc265d2224917fbe2a2bb0f65ef84
+ms.openlocfilehash: 1cc00a3b14b1918903c9aa34a24f13b1761b64b6
+ms.sourcegitcommit: 5946fe6aad2331c023bedda8faf826c0248651f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41005619"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41711749"
 ---
 # <a name="security-and-privacy-for-microsoft-search-in-bing"></a>安全性和 Microsoft 中的搜尋 Bing 的隱私權
 
@@ -39,7 +39,7 @@ Microsoft 中的搜尋 Bing 驗證是繫結至 Azure Active Directory。 當 Mic
   
 ## <a name="communicates-with-the-microsoft-cloud-from-the-browser"></a>從瀏覽器的 Microsoft 雲端進行通訊
 
-當使用者以公司或學校帳戶登入時，Bing 會在瀏覽器中下載所需的用戶端資料庫，以取得 Microsoft Search 結果。 隨後，當他們搜尋時，瀏覽器內的程式碼會呼叫 Office 365 雲端，以取得工作結果。 為了執行這項程序，Microsoft Search 會使用專門的 API 層級 C (SOC2 類型 1)，為[符合 Office 365 產業標準和法規的合規性架構](https://download.microsoft.com/download/1/4/3/1434ABAB-B8E9-412D-8C3A-187B5FCB7A2F/Compliance%20Framework%20document.pdf) (下載 PDF)。 這表示工作結果與工作資料永遠不會流經不符合規範的 Bing 系統。
+當使用者以公司或學校帳戶登入時，Bing 會在瀏覽器中下載所需的用戶端資料庫，以取得 Microsoft Search 結果。 隨後，當他們搜尋時，瀏覽器內的程式碼會呼叫 Office 365 雲端，以取得工作結果。 若要這麼做，Microsoft Search 使用專用的 API，根據 SSAE 18 SOC2 類型 1 管控運作。 這表示工作結果和工作資料不會流程透過限於較嚴格的資料處理管控比工作結果自行主體處理 Office 365 核心線上服務中時的 Bing 系統。
   
 ## <a name="permissions"></a>權限
 
