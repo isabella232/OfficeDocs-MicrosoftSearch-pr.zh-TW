@@ -1,8 +1,8 @@
 ---
 title: 常見問題集
-ms.author: anfowler
-author: adefowler
-manager: shohara
+ms.author: jeffkizn
+author: jeffkizn
+manager: parulm
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 description: 取得有關企業搜尋和 Microsoft Search 常見問題的解答
-ms.openlocfilehash: edfb8346263d60184d8655afa24118ed4b3e3bca
-ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
+ms.openlocfilehash: 1acf4b5c4b3e771072ea67f4d807454723352c3f
+ms.sourcegitcommit: c22e8c3dcc53857da677db98a1a2b7d5ca2c6170
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699791"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41721757"
 ---
+<!-- markdownlint-disable no-trailing-punctuation -->
 # <a name="frequently-asked-questions"></a>常見問題集
 
 以下是最常見問題的清單。
@@ -44,7 +45,6 @@ ms.locfileid: "38699791"
 - [讓 Bing 成為預設搜尋引擎](set-default-search-engine.md)
 - [將 Bing.com 設為企業首頁](set-default-homepage.md)
 
-  
 ## <a name="how-are-my-search-results-protected"></a>如何保護我的搜尋結果？
 
 我們需要[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/)驗證以存取結果從信任雲端。 已驗證的使用者只會看到他們有權存取的內容。 去除識別搜尋查詢，以及記錄檔分開的公用[Bing](https://Bing.com)搜尋流量。 這種保護層級是業界唯一的。
@@ -53,11 +53,10 @@ ms.locfileid: "38699791"
 
 否。
 
-## <a name="where-can-i-get-info-about-office-365-and-microsoft-365-compliance-tiers-and-categories"></a>我可以從哪裡獲得關於 Office 365 和 Microsoft 365 合規性層級和類別的資訊？
+## <a name="where-can-i-get-info-about-office-365-security-compliance-and-privacy"></a>哪裡可以取得 Office 365 安全性、 規範和隱私權的相關資訊？
 
-您可以在[符合產業標準和法規的合規性架構](https://download.microsoft.com/download/B/2/7/B27B3EF3-8849-4C18-8BA4-5AD755728620/Compliance%20Framework_customer%20guidance.pdf) (下載 PDF) 中找到詳細資料。
+可以[運作的 Office 365 的 [信任中心] 頁面](https://www.microsoft.com/TrustCenter/CloudServices/office365/default.aspx)上找到的詳細資訊。
 
 ## <a name="can-users-earn-microsoft-rewards-points-with-their-work-or-school-account"></a>使用者能否使用其公司或學校帳戶來獲得 Microsoft Rewards 積分？
 
-Microsoft Search 要求企業使用者使用公司或學校帳戶登入。 但使用者無法使用這些帳戶來加入或登入 Microsoft Rewards 方案。 但有一個例子，企業使用者可能會看到 Rewards 積分累算。 當 Microsoft Search 使用者的 Rewards 帳戶是使用 <a href="https://www.microsoft.com/welcome?rtc=1">Microsoft 帳戶</a>建立時，即可能發生此情況。 (與 Microsoft 帳戶相關聯的電子郵件地址可以來自 Outlook.com、Hotmail.com、Gmail、Yahoo 或其他提供者。) 如果使用者在同一位瀏覽器工作階段中同時使用他們的公司帳戶和 Microsoft 帳戶登入，則可能會對其 Rewards 帳戶累算積分。 使用者可以透過在使用 Microsoft Search 搜尋時清除其 Cookie 來停止累算積分。 
-
+Microsoft Search 要求企業使用者使用公司或學校帳戶登入。 但使用者無法使用這些帳戶來加入或登入 Microsoft Rewards 方案。 但有一個例子，企業使用者可能會看到 Rewards 積分累算。 當 Microsoft Search 使用者的 Rewards 帳戶是使用 [Microsoft 帳戶](https://www.microsoft.com/welcome?rtc=1)建立時，即可能發生此情況。 (與 Microsoft 帳戶相關聯的電子郵件地址可以來自 Outlook.com、Hotmail.com、Gmail、Yahoo 或其他提供者。) 如果使用者在同一位瀏覽器工作階段中同時使用他們的公司帳戶和 Microsoft 帳戶登入，則可能會對其 Rewards 帳戶累算積分。 使用者可以透過在使用 Microsoft Search 搜尋時清除其 Cookie 來停止累算積分。

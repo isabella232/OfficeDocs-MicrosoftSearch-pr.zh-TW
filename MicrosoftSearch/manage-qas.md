@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
 description: 個別尋找並更新解答，或使用 Microsoft Search 工具以一次編輯所有項目
-ms.openlocfilehash: af5f12e759179d7a00d682575a51286e607149b2
-ms.sourcegitcommit: 5946fe6aad2331c023bedda8faf826c0248651f8
+ms.openlocfilehash: 0877de027b68589e5ba15cd8109ea7edeeae8725
+ms.sourcegitcommit: c22e8c3dcc53857da677db98a1a2b7d5ca2c6170
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 02/04/2020
-ms.locfileid: "41711754"
+ms.locfileid: "41721739"
 ---
 # <a name="manage-qas"></a>管理問與答
 
@@ -62,8 +62,8 @@ ms.locfileid: "41711754"
 
 目前提供 Edge 和 Chrome 的瀏覽器擴充功能。
 
-- 若要下載 Edge 擴充功能，請移至 [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) 並下載應用程式。
-- 若要下載 Chrome 擴充功能，請移至 [Chrome 線上應用程式商店](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm)並下載應用程式。
+- 若要下載 Edge 擴充功能，請前往[Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab)下載應用程式。
+- 若要下載 Chrome 延伸模組，請移至[Chrome web 存放區](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm)，並下載應用程式。
 
 ## <a name="bulk-add-or-edit-qas"></a>大量新增或編輯問與答
 
