@@ -8,7 +8,6 @@
 ## [縮略字](manage-acronyms.md)
 ## [書籤](manage-bookmarks.md)
 ## [樓面規劃](manage-floorplans.md)
-### [最佳作法](floorplans-bestpractices.md)
 ## [位置](manage-locations.md)
 ## [問與答](manage-qas.md)
 # 連接器 (預覽)
