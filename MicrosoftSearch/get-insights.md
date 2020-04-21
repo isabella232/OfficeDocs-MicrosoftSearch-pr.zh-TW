@@ -1,8 +1,8 @@
 ---
 title: Microsoft Search Insights 儀表板報告
-ms.author: anfowler
-author: adefowler
-manager: shohara
+ms.author: jeffkizn
+author: jeffkizn
+manager: parulm
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
@@ -12,43 +12,43 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ebce7fdc-e89b-473c-8131-67e659bb3f73
-description: 分析評量和管理內容從 Microsoft 搜尋中深入了解儀表板
-ms.openlocfilehash: 8ed0e13b53f61c699e8cf5628341adba3b96be9c
-ms.sourcegitcommit: 26481c00963d836de4ed64a454fb6c5b49c5075d
+description: 在 Microsoft 搜尋中分析度量和管理 Insights 儀表板中的內容
+ms.openlocfilehash: 230c1cdec9c1f6e94adf7123bc9a3ad048dee892
+ms.sourcegitcommit: 6b1c6a4e502d95b42a030a963f9452c387d8a5cd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2019
-ms.locfileid: "40738051"
+ms.lasthandoff: 04/20/2020
+ms.locfileid: "43571003"
 ---
 # <a name="microsoft-search-insights-dashboard-reports"></a>Microsoft Search Insights 儀表板報告
 
-您可以使用 Microsoft Search Insights 儀表板來管理您已發佈的回答[Bing](https://Bing.com)資料。 這只是其中一個步驟所需的[進行內容容易找到](make-content-easy-to-find.md)為您的使用者。
+您可以使用 Microsoft Search Insights 儀表板來管理您已發佈的答案的[Bing](https://Bing.com)資料。 這只是讓您的使用者[輕鬆尋找內容](make-content-easy-to-find.md)所需的其中一個步驟。
 
-當您第一次移至 Microsoft 搜尋 Microsoft 365[系統管理中心](https://admin.microsoft.com)中時，您輸入深入了解儀表板上。
+當您第一次前往 Microsoft 365 系統[管理中心](https://admin.microsoft.com)的 microsoft 搜尋時，您會在 [洞察力] 儀表板上輸入。
 
-![深入了解 dashboard.png](media/Insights-dashboard.png)
+![Insights-dashboard .png](media/Insights-dashboard.png)
 
-深入了解儀表板上有下列報告。
+下列報告可在 Insights 儀表板上使用。
 
 > [!NOTE]
-> 在報表中的資料只代表[Bing](https://Bing.com)資料。
+> 報告中的資料只代表[Bing](https://Bing.com)資料。
 
 ## <a name="top-queries"></a>查詢排行榜
 
-此報告可讓使用者執行上方 2000 [Bing](https://Bing.com)搜尋查詢的相關詳細資料。 將查詢傳送至出現在**查詢排行榜**，對於查詢必須取得，至少有三個點選。
+這份報告提供使用者所執行之 top 2000 [Bing](https://Bing.com)搜尋查詢的詳細資料。 若要讓查詢顯示在**Top 查詢**中，查詢至少必須有三次按一下。
 
-![排名最前面查詢報表與表格標頭： 查詢、 合計查詢和點選工資率。](media/Insights-topqueries.png)
+![具有表格標頭的查詢報表排名：查詢、查詢總數和按一下率。](media/Insights-topqueries.png)
 
-低點選率 (CTR) 表示使用者未尋找他們要尋找的項目。
+點擊率下限（CTR）表示使用者找不到所要尋找的專案。
 
-您可以選擇不同的檢視報表的篩選的回覆類型。 例如，如果您只想檢視的書籤的查詢排行榜，右上角的報告中，選取下拉式清單，然後選取 [**書籤**。 根據預設，會顯示**所有**的回應類型。
+您可以透過篩選答案類型來選擇報表的不同視圖。 例如，如果您只想要查看書簽的上方查詢，請選取報表右上角的下拉式清單，然後選取 [**書簽**]。 預設會顯示**所有**的答案類型。
 
-![篩選排行榜報告書籤、 人員、 Q&A、 檔案、 群組、 位置、 交談和網站。](media/Insights-topqueries-dropdown.png)
+![依書簽、人員、Q&A、檔案、群組、位置、交談及網站篩選熱門查詢報告](media/Insights-topqueries-dropdown.png)
 
-## <a name="impression-distribution"></a>印象通訊
+## <a name="impression-distribution"></a>印記散發
 
-此報表會顯示印象通訊中[Bing](https://Bing.com)一段時間的各種解答。 範例包括書籤、 人員、 Q&A、 檔案、 位置、 檔案網站、 群組和對話。
+這份報告顯示在[Bing](https://Bing.com)一段時間內針對各種答案所散佈的印象。 範例包括書簽、人員、Q&A、files、位置、檔案網站、群組和交談。
 
-![使用選取的時間期間為 90 天的曝光報表。](media/Insights-impressions.png)
+![被選為時間週期的90天的印記報告。](media/Insights-impressions.png)
 
-印象通訊可協助系統管理員了解使用者查詢指定的期間。
+「印記」發佈可協助系統管理員瞭解使用者在指定期間內的外觀。
