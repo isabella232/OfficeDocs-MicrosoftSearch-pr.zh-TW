@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的企業網站連接器
-ms.openlocfilehash: de466d4cc1156f520bb6a5fe3117389bd29f3e78
-ms.sourcegitcommit: 8ccbf0ea4463d17f810c2f5b484882869a74a996
+ms.openlocfilehash: 4ed926cfdacca66d90854147afdc3c7932d1bd5f
+ms.sourcegitcommit: 49659ecd2ac47c85acc297b21e9e34701213862c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43793547"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43803950"
 ---
 # <a name="enterprise-websites-connector"></a>企業網站連接器
 
@@ -60,7 +60,7 @@ ms.locfileid: "43793547"
 企業網站連接器只支援完整編目。 這表示連接器會在每次編目期間讀取網站的所有內容。 若要確定連接器有足夠的時間可讀取內容，建議您設定大型重新整理排程間隔。 建議您在三天和兩周之間排程重新整理。 
 
 ## <a name="troubleshooting"></a>疑難排解
-如果連接發生嚴重錯誤，其狀態會顯示為 [失敗]。 若要取得錯誤類型的詳細資訊，請在選取失敗的連線後，移至 [錯誤詳細資料] 頁面。  按一下錯誤碼以查看更詳細的錯誤。 此外，請參閱[管理您的連接器](https://docs.microsoft.com/microsoftsearch/manage-connector)以深入瞭解。
+當閱讀網站內容時，編目可能會遇到下列的詳細錯誤碼所代表的部分來源錯誤。 若要取得錯誤類型的詳細資訊，請在選取連接後，移至 [**錯誤詳細資料**] 頁面。 按一下**錯誤碼**以查看更詳細的錯誤。 此外，請參閱[管理您的連接器](https://docs.microsoft.com/microsoftsearch/manage-connector)以深入瞭解。
 
  **詳細錯誤代碼** | **錯誤訊息**
  --- | --- 
@@ -75,7 +75,7 @@ ms.locfileid: "43793547"
  6024 | 嘗試編制索引的來源頁面具有不支援的內容。
 
 * 當資料來源由於網路問題或資料來源本身被刪除、移動或重新命名時，就會發生錯誤6001-6013。 檢查提供的資料來源詳細資料是否仍然有效。
-* 當資料來源包含頁面上的非文字內容或頁面不是 HTML 時，就會發生錯誤6021-24 錯誤。 請檢查資料來源，並將此頁面加入排除清單，或略過錯誤。
+* 當資料來源包含頁面上的非文字內容或頁面不是 HTML 時，就會發生錯誤6021-6024 錯誤。 請檢查資料來源，並將此頁面加入排除清單，或略過錯誤。
 
 ## <a name="limitations"></a>限制
-企業網站連接器不支援搜尋動態網頁上的資料。 [Confluence](https://www.atlassian.com/software/confluence)與[Unily](https://www.unily.com/)等內容管理系統中的這些網頁範例，或儲存網站內容的資料庫。
+企業網站連接器不支援搜尋**動態網頁**上的資料。 [Confluence](https://www.atlassian.com/software/confluence)與[Unily](https://www.unily.com/)等內容管理系統中的這些網頁範例，或儲存網站內容的資料庫。
