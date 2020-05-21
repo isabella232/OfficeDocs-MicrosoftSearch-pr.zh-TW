@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的企業網站連接器
-ms.openlocfilehash: 4ed926cfdacca66d90854147afdc3c7932d1bd5f
-ms.sourcegitcommit: 49659ecd2ac47c85acc297b21e9e34701213862c
+ms.openlocfilehash: 66fd0804bf26d70208cdaca519f91dba3a1ba166
+ms.sourcegitcommit: 924bcf4dd1b4bfa5684d43a3f8e784d869c659e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43803950"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44326828"
 ---
 # <a name="enterprise-websites-connector"></a>企業網站連接器
 
@@ -26,7 +26,7 @@ ms.locfileid: "43803950"
 本文適用于[Microsoft 365](https://www.microsoft.com/microsoft-365)系統管理員或任何設定、執行及監視企業網站連接器的人員。 它說明如何設定連接器和連接器功能、限制及疑難排解技術。  
 
 ## <a name="connect-to-a-data-source"></a>連接到資料來源 
-若要連線至資料來源，您需要根 URL 和驗證格式：基本驗證或 OAuth 2.0 與[Azure Active Directory （AZURE AD）](https://docs.microsoft.com/azure/active-directory/)。
+若要連接到資料來源，您需要您的根 URL 和基本驗證。
 
 ### <a name="root-url"></a>根 URL
 根 URL 會啟動編目，並用於驗證。 您可以從您想要編目的網站首頁取得 URL。
