@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的企業網站連接器
-ms.openlocfilehash: 66fd0804bf26d70208cdaca519f91dba3a1ba166
-ms.sourcegitcommit: 924bcf4dd1b4bfa5684d43a3f8e784d869c659e7
+ms.openlocfilehash: c4b799a3127a4a302e3f07953a59ea0319a09052
+ms.sourcegitcommit: c186be143164f21a3fecdb3037acd90a26c0fcf3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44326828"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44374333"
 ---
 # <a name="enterprise-websites-connector"></a>企業網站連接器
 
@@ -33,22 +33,6 @@ ms.locfileid: "44326828"
 
 ### <a name="authentication"></a>驗證 
 基本驗證需要使用者名稱和密碼。 使用 Microsoft 365 系統[管理中心](https://admin.microsoft.com)建立此 bot 帳戶。
-
-使用[AZURE AD](https://docs.microsoft.com/azure/active-directory/) OAuth 2.0 需要租使用者識別碼、資源識別碼、用戶端識別碼和用戶端密碼。
-如需詳細資訊，請參閱[使用 OAuth 2.0 程式碼授與流程授權存取 Azure Active Directory web 應用程式](https://docs.microsoft.com/azure/active-directory/develop/v1-protocols-oauth-code)。 使用下列值進行註冊：
-* **名稱：** Microsoft 搜尋
-* **Redirect_URI：**`https://gcs.office.com/v1.0/admin/oauth/callback`
-
-若要取得命名租使用者、resource、client_id 及 client_secret 的值，請移至**使用授權碼以要求**重新導向 URL 網頁上的存取權杖。
-
-如需詳細資訊，請參閱[快速入門：使用 Microsoft identity Platform 註冊應用程式](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)。
-
-### <a name="reverse-proxy-url"></a>反向 proxy URL 
-企業網站連接器是雲端式的，所以不會存取內部部署內容。 若要提供該存取，請安裝反向 proxy。 反向 proxy 可提供對內部部署網站的安全且可靠的存取。 我們建議[Azure 應用程式 Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)。
-
-根 URL 和驗證的反向 proxy 需求與雲端型內容相同，不同之處在于，根 URL 和驗證是由反向 proxy 伺服器所提供。
-
-請參閱[使用 AZURE AD 應用程式 Proxy 以遠端方式存取應用程式的安全性考慮](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-security)。
 
 ## <a name="select-the-source-properties"></a>選取來源屬性 
 來源屬性是根據企業網站的資料格式定義。 不過，您可以建立**排除清單**，以排除部分 URLs 若該內容機密或不需要編目的情況下取得編目。 若要建立排除清單，請流覽根 URL。 您可以選擇在設定過程中將排除的 URLs 新增至清單。
