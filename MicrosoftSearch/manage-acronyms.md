@@ -1,8 +1,8 @@
 ---
 title: 在 Microsoft 搜尋中管理縮寫詞答案
-ms.author: v-pamcna
-author: TrishaMc1
-manager: mnirkhe
+ms.author: jeffkizn
+author: jeffkizn
+manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,21 +12,21 @@ search.appverid:
 - MET150
 - MOE150
 description: 在 Microsoft 搜尋中建立及更新縮寫的答案
-ms.openlocfilehash: aa857cefe9a2a40a8519a91829e327d01a3f2391
-ms.sourcegitcommit: 25cdb5e6111ec6bc6c130a36aa5f13a6328e1092
+ms.openlocfilehash: af5b82aa2c578fde67a36980cfceef131f605b4e
+ms.sourcegitcommit: d4f49d51fa7d07b3bfd9ba93ed14f4c46d310154
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42928227"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44412673"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>管理 Microsoft 搜尋中的縮寫詞答案
 
-員工通常會在其組織或小組所用的不熟悉縮寫詞和縮寫中執行。 組織或小組特有的條款，對從一個小組移至另一個小組的人員、與內部協力廠商小組或新員工合作的人員而言，可能是新的。
+使用者通常會在組織或小組所用的不熟悉縮寫和縮寫中執行。 組織或小組特有的條款，對從一個小組移至另一個小組的人員、與內部協力廠商小組合作的人員，或是組織的新人員而言，都可能是新的。
 
 組織不一定會有單一參考的標準術語。 缺乏單一參考會使您很難尋找這些縮寫詞的定義或擴充。 Microsoft 搜尋會解決與首字的問題。
 
 ## <a name="what-users-experience"></a>使用者經驗
-Microsoft Search 使用者可以在[Bing](https://Bing.com)、 [microsoft Office 365](https://Office.com)和[Microsoft SharePoint Online](https://products.office.com/sharepoint/collaboration)中取得具有縮寫的定義。 在頁首列的 [**搜尋**] 方塊中，使用者輸入如下範例的查詢：
+Microsoft 搜尋使用者可以在[Bing](https://Bing.com)使用首字母縮寫來取得定義。 在 [**搜尋**] 方塊中，使用者輸入如下範例的查詢：
 
 - *何謂*DNN
 - *定義*DNN
@@ -36,13 +36,13 @@ Microsoft Search 使用者可以在[Bing](https://Bing.com)、 [microsoft Office
 - *的意義*DNN
 - DNN*表示*
 
-建議的結果包含使用者組織內出現之 DNN 的所有意義。
+結果會包含使用者組織中所顯示之 DNN 的所有意義。
 
 > [!NOTE]
 > 使用者必須輸入包含縮寫詞所指定*關鍵字*的查詢，以觸發其對應的答案。 縮寫詞查詢不區分大小寫。 
 
 ## <a name="set-up-acronyms-answers"></a>設定縮寫詞答案
-在 microsoft 365 系統[管理中心](https://admin.microsoft.com)中，移至 [**設定** > **Microsoft 搜尋** >**縮寫**]，然後選取 [**新增縮寫**]。 
+在 microsoft 365 系統[管理中心](https://admin.microsoft.com)中，移至 [**設定**  >  **Microsoft 搜尋**  > **縮寫**]，然後選取 [**新增縮寫**]。 
 
 Microsoft 搜尋會查詢兩個數據源，以提供使用者搜尋的縮寫答案：
 
@@ -50,7 +50,7 @@ Microsoft 搜尋會查詢兩個數據源，以提供使用者搜尋的縮寫答�
 2.  **挖掘的縮寫**。 由 Microsoft 搜尋從使用者的個人電子郵件和檔，以及組織內可公開使用的資料進行挖掘。
 
 ### <a name="set-up-editorial-acronyms"></a>設定編輯縮寫
-IT 系統管理員可以在[Microsoft 365 系統管理中心]( https://admin.microsoft.com)的 [[縮寫]](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch)索引標籤上設定編輯縮寫。 您可以從任何內部網站或存放庫向系統管理中心新增縮寫。 編輯縮寫可以新增至**已發佈**或**草稿**的狀態：
+搜尋管理員可在[Microsoft 365 系統管理中心]( https://admin.microsoft.com)的 [[縮寫]](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch)索引標籤上設定編輯縮寫。 您可以從任何內部網站或存放庫向系統管理中心新增縮寫。 編輯縮寫可以新增至**已發佈**或**草稿**的狀態：
 
 **發行狀態**。 組織中的雇員可透過 Microsoft 搜尋取得縮寫。
 
@@ -61,7 +61,7 @@ IT 系統管理員可以在[Microsoft 365 系統管理中心]( https://admin.mic
 
 系統管理員可以個別新增首字縮寫或在 CSV 檔案中大量匯入。 使用下表所示的欄位上載 CSV 檔案：
 
-| 縮寫（強制） | 擴充（強制） | 描述  | 來源 | State （強制） |
+| 縮寫（強制） | 擴充（強制） | 說明  | 來源 | State （強制） |
 | --------- | --------- | ---------- | --------- |--------- |
 | *Xxx* | *拼寫縮寫* |  | *URL* | *已發佈或草稿* |
 
@@ -86,10 +86,10 @@ IT 系統管理員可以在[Microsoft 365 系統管理中心]( https://admin.mic
 - [SharePoint](https://products.office.com/sharepoint/collaboration)中的檔、 [Microsoft OneDrive]( https://onedrive.live.com/about/)和[microsoft OneNote](http://www.onenote.com/)。
 - 組織內的公用檔，可供使用者在 SharePoint、OneDrive 或 OneNote 中存取。
 
-Microsoft 搜尋可確保只有對檔具有存取權和許可權的使用者才能看到其所挖掘的縮寫。 縮寫會從使用者的收件匣中挖掘，並儲存在使用者 shard 中。 只有使用者可以存取從使用者自己的收件匣中挖掘的縮寫詞。
+Microsoft 搜尋可確保只有對檔具有存取權和許可權的使用者才能看到其所挖掘的縮寫。 從使用者的信箱中挖掘縮寫時，只有該使用者可以看到該縮寫。
 
 > [!NOTE]
-> 挖掘的首字縮寫，不需要有 IT 系統管理員設定。
+> 挖掘的縮寫不需要任何設定。
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 **問：如何進行編輯及挖掘的資料排名？**
@@ -102,15 +102,7 @@ Microsoft 搜尋可確保只有對檔具有存取權和許可權的使用者才�
 
 **問：使用者如何觸發縮寫詞答案？**
 
-**答**：若要取得縮寫的答案，使用者必須在[Bing](https://bing.com)、 [Office 365](https://Office.com)或[SharePoint](https://products.office.com/sharepoint/collaboration) **搜尋**方塊中輸入特定的查詢模式。 尋找字詞*DNN*之答案的查詢範例如下：
-
-- *何謂*DNN
-- *定義*DNN
-- DNN*定義*
-- *展開*DNN
-- DNN*擴充*
-- *的意義*DNN
-- DNN*表示*
+**答**：若要取得縮寫的答案，使用者必須在[Bing](https://bing.com) **搜尋**方塊中輸入特定的查詢模式。 目前， [Office 365](https://Office.com)或[SharePoint](https://products.office.com/sharepoint/collaboration)中無法使用縮寫詞答案。
 
 **問：當您收到或傳送新的電子郵件或檔之後，挖掘的首字縮寫會出現多久時間？**
 
@@ -131,4 +123,4 @@ Microsoft 搜尋可確保只有對檔具有存取權和許可權的使用者才�
 
 **問：我何時會在[Office 365](https://Office.com)和[SharePoint Online](https://products.office.com/sharepoint/collaboration)中看到縮寫的答案？**
 
-**答**：在[Bing](https://bing.com)的 Microsoft Search 中，目前只會提供縮寫詞答案。 他們會在 Office 365 和2020中 SharePoint 線上。
+**答**： Office 365 中的縮寫答案和 SharePoint 線上是我們產品藍圖的一部分，但目前無法提供日期或時間範圍。
