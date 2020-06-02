@@ -12,31 +12,31 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
-description: 個別尋找並更新解答，或使用 Microsoft Search 工具以一次編輯所有項目
-ms.openlocfilehash: 0877de027b68589e5ba15cd8109ea7edeeae8725
-ms.sourcegitcommit: c22e8c3dcc53857da677db98a1a2b7d5ca2c6170
+description: 個別尋找並更新解答，或使用 Microsoft Search 工具來編輯 Q&一次。
+ms.openlocfilehash: af966cfaae6680a063feb25d2736303106c19978
+ms.sourcegitcommit: 0050e113517a36e3ca26028a04ac5c236caaf524
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41721739"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470270"
 ---
 # <a name="manage-qas"></a>管理問與答
 
-建立問與答的方法與建立書籤類似。 問與答可讓您回應使用者的問題，而不只是提供網頁的連結。 您可以使用可用的工具，以 RTF 格式編寫答案。 如果書籤和問與答共用相同的關鍵字，則會先顯示書籤的結果。 如同書籤，問與答索引會在新增或變更問與答後立即重新整理。
+建立問與答的方法與建立書籤類似。 Q&如可讓您回答使用者的問題，而不只是提供網頁連結。 您也可以在 rtf 文字中格式化答案。 如果書簽和 Q&共用相同的關鍵字，則會先顯示書簽結果。 如同書簽，Q&會在新增或變更 Q&A 之後立即重新整理索引。
 
 ## <a name="add-or-edit-a-single-qa"></a>新增或編輯單一問與答
 
 1. 移至 **Microsoft 365 系統管理中心**。
 1. 在功能窗格中，移至 [設定]****，然後選取 **Microsoft Search**。
-1. 選取 [問與答]**** 索引標籤。預設會選取第一個索引標籤 ([書籤]****)。
+1. 選取 [ **Q&** ] 索引標籤。
 1. 若要新增問與答，請選取 [新增]****。
-若要編輯問與答，請在相關的問與答清單中選取問與答。
-1. 當您新增或編輯資訊時，預覽會自動更新。
+若要編輯問與答，請在相關的問與答清單中選取問與答。 當您新增或編輯資訊時，預覽會自動更新。
 1. 儲存變更。
 
 ### <a name="supported-html-tags"></a>支援的 HTML 標記
 
-您可以使用現有的 HTML 內容或新增 HTML 標記至您的解答 (描述)。 會忽略不支援的標籤。  
+您可以使用現有的 HTML 內容或新增 HTML 標記至您的解答 (描述)。 會忽略不支援的標籤。
+
 支援下列的 HTML 標記：
 
 - blockquote
@@ -56,44 +56,44 @@ ms.locfileid: "41721739"
 - hr
 - img
 
-## <a name="add-or-edit-qas-using-browser-extensions"></a>新增或編輯 Q&做為使用瀏覽器延伸模組
+## <a name="add-or-edit-qas-using-browser-extensions"></a>使用瀏覽器延伸名新增或編輯 Q&
 
-搜尋系統管理員可以使用瀏覽器擴充功能輕鬆地建立搜尋內容。 安裝瀏覽器延伸模組，然後前往您要產生 Q&A 的網站 然後，您可建立 Q&的並包含來源網站的連結。
+搜尋系統管理員可以使用瀏覽器擴充功能輕鬆地建立搜尋內容。 安裝瀏覽器延伸名，然後移至您要從中產生 Q&的網站。 然後，您可以建立 Q&，並包含來源網站的連結。
 
-目前提供 Edge 和 Chrome 的瀏覽器擴充功能。
+目前，瀏覽器擴充功能可用於 Microsoft Edge 和 Chrome。
 
-- 若要下載 Edge 擴充功能，請前往[Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab)下載應用程式。
-- 若要下載 Chrome 延伸模組，請移至[Chrome web 存放區](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm)，並下載應用程式。
+- 若要下載 Edge extensions，請移至[Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab)。
+- 若要下載 Chrome extensions，請移至[chrome web store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm)。
 
 ## <a name="bulk-add-or-edit-qas"></a>大量新增或編輯問與答
 
-系統管理員可以使用匯入和匯出功能來大量建立或編輯問與答。 當系統管理員需要新增或編輯大量問與答時，此功能很實用。
+系統管理員可以使用匯入及匯出功能，以大容量方式建立或編輯 Q&。
 
-使用匯入/匯出功能，以便：
+使用匯入/匯出功能：
 
-1. 大量新增問與答 - 在問與答範本檔案中新增詳細資料，然後將它匯入。
-1. 大量編輯問與答 - 將問與答匯出至 .csv 檔案，然後編輯匯出的 .csv 檔案中問與答的詳細資料，然後匯入該 .csv 檔案。
-1. 備份問與答 - 匯出問與答至 .csv 檔案。
+- 在 Q&範本檔中，大量新增 Q&以新增詳細資料，然後將其匯入。
+- Bulk edit Q&出口 Q&如 .csv 檔案，請編輯 Q&匯出檔案中的詳細資料，然後匯入檔案。
+- 將 Q&為-Export Q&備份成 .csv 檔案。
 
-若要匯入或匯出問與答：
+若要匯入或匯出 Q&如下：
 
 1. 在 [問與答] 索引標籤的右上角，選取 [匯入]****。
-選取 [匯出]**** 來下載 .csv 檔案中所有的現有問與答。
-1. 在右窗格中，選擇使用 .csv 檔案匯入的選項。
-下載範本檔案以取得必要欄位的清單和詳細資料。
-1. 在範本檔案中新增或編輯問與答詳細資料，並將它儲存在您的電腦上。
-1. 在 [匯入問與答]**** 窗格中，選取 [瀏覽]****，然後選取您要匯入的 .csv 檔案。
+選取 [**匯出**]，下載所有現有的 Q&，如 .csv 檔案中所示。
+1. 在右窗格中，選取要使用 .csv 檔案匯入的選項。 下載範本檔案，以取得必要欄位及詳細資料的清單。
+1. 新增或編輯 Q&範本檔中的詳細資料，然後將它儲存在您的電腦上。
+1. 在 [ **Import Q&** 窗格中，選取 **[流覽]**，然後選取您要匯入的 .csv 檔案。
 1. 選取 [匯入]****。
 
-以下是有關範本檔案的一些重點：
+重要的範本檔秘訣：
 
-- 永不編輯這些欄位中的資料：*識別碼*、*上次修改日期*，以及*上次修改者*
-- 如果您包含現有書籤的*識別碼*，將會以匯入檔案中的資訊加以取代。
-- 如果有一個現有的書籤具有相同標題或 URL，則會以匯入檔案中的資訊更新書籤。
-- 範本檔案中並非所有欄位都為必要，必要欄位則會依據書籤的狀態而改變。
-- 書籤會根據狀態欄位的不同而儲存成草稿、建議、已排程或自動發佈。
-- 適用於負責管理多個組織的合作夥伴，您可以從一個組織匯出您的書籤，並匯入另一個。 但您必須在匯入之前，先移除 [識別碼]** 資料行中的資料。
+- 永不編輯這些欄位中的資料：**識別碼**、**上次修改日期**，以及**上次修改者**
+- 如果您包含現有書籤的**識別碼**，將會以匯入檔案中的資訊加以取代。
+- 如果現有的書簽具有相同的標題或 URL，則會使用匯入檔案中的資訊更新書簽。
+- 並非範本檔案中的所有欄位都是必要的，必要的欄位也視書簽狀態而有所不同。
+- 根據 [**省/州**] 欄位，書簽會儲存為*草稿*、*建議*或*排程*，或是自動發行。
+- 針對管理多個組織的合作夥伴：您可以從一個組織匯出書簽，然後將其匯入另一個組織。 但您必須在匯入之前，先移除 [識別碼]**** 資料行中的資料。
 
-**附註：** 如果範本檔案中有任何錯誤，您即無法匯入問與答。 若要避免錯誤，請確定您匯入的檔案的格式正確，並包含所有必要的資訊。
+> [!NOTE]
+> 您無法匯入 Q&，如同範本檔案中有任何錯誤。 若要防止錯誤，請確定您的匯入檔案格式正確，並包含所有必要的資訊。
 
-如需如何避免錯誤的詳細資訊，請參閱[防止匯入錯誤](manage-bookmarks.md#prevent-import-errors)。
+如需避免錯誤的詳細資訊，請參閱[防止匯入錯誤](manage-bookmarks.md#prevent-import-errors)。
