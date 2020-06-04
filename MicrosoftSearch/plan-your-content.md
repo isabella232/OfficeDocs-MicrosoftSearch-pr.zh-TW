@@ -1,8 +1,8 @@
 ---
 title: 規劃內容
-ms.author: anfowler
-author: adefowler
-manager: mnirkhe
+ms.author: jeffkizn
+author: jeffkizn
+manager: parulm
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
@@ -13,18 +13,18 @@ search.appverid:
 - MOE150
 ms.assetid: bb9d90b6-6c86-4b19-9235-3bd9b19826ab
 description: 在您使用 Microsoft Search 時提供品質良好的內容，無需額外資源
-ms.openlocfilehash: d51fb15199a4c1aedd4af0932ce9bb5683d8abc6
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: 65cc9fbec655ec849e32d7b6e14c6947ab30bbc2
+ms.sourcegitcommit: 46303c60e905c89c133278fa41e87055f81a8637
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626943"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44535345"
 ---
 # <a name="plan-your-content"></a>規劃內容
 
-**Microsoft Search**可以幫助使用者尋找相關的內容。 **Microsoft Search** 是一種能同時安全地搜尋您內部網路與 Web 內容的方式。 只有 Microsoft 能夠提供這種跨網路與組織的整合產品。 
+**Microsoft 搜尋**可協助使用者找到相關的內容。 **Microsoft Search** 是一種能同時安全地搜尋您內部網路與 Web 內容的方式。 只有 Microsoft 能夠提供這種跨網路與組織的整合產品。
 
-搜尋系統管理員會使用其組織和其使用者的知識，讓使用者易於找到相關的內容。 
+搜尋系統管理員會使用其組織和其使用者的知識，讓使用者易於找到相關的內容。
 
 ## <a name="step-1-identify-information-your-users-need"></a>步驟 1：找出使用者所需資訊
 
@@ -47,19 +47,19 @@ ms.locfileid: "38626943"
 
 ### <a name="leverage-smes"></a>利用 SME
 
-利用組織中的 SME，包括人力資源、支援、銷售、技術和其他重要區域的專家。 若要讓您的 SME 直接提供內容，請在將他們新增為 Search 編輯者。 
+利用組織中的 SME，包括人力資源、支援、銷售、技術和其他重要區域的專家。 若要讓您的 SME 直接提供內容，請在將他們新增為 Search 編輯者。
 
 ### <a name="involve-your-users"></a>納入您的使用者
 
 要求使用者建議要加入書籤的資源。 除了建議內容之外，要求使用者回報損毀或無效的連結等錯誤。
 
-## <a name="step-3-improve-findability-of-content"></a>步驟 3：改善內容的可尋找性 
+## <a name="step-3-improve-findability-of-content"></a>步驟 3：改善內容的可尋找性
 
 在 **Microsoft Search** 中，搜尋系統管理員會建立書籤、問與答、位置和 PowerApps 來改善內容的可尋找性。 每個搜尋元件都包括標題、URL，和一組能觸發書籤的關鍵字。
 
 ### <a name="titles-and-descriptions"></a>標題和描述
 
-使用者會使用標題和描述來判斷結果是否能夠回答其搜尋查詢，或他們需要嘗試不同的搜尋。 標題和描述應該能反映結果的核心用途。 良好的標題範例可能像是「托兒福利」，然後再加上類似「了解能協助您支付托兒費用的福利」的描述。 這能讓搜尋「托兒」的使用者知道可以利用財務支援福利，並提供連結給他們，以進行深入了解。 
+使用者會使用標題和描述來判斷結果是否能夠回答其搜尋查詢，或他們需要嘗試不同的搜尋。 標題和描述應該能反映結果的核心用途。 良好的標題範例可能像是「托兒福利」，然後再加上類似「了解能協助您支付托兒費用的福利」的描述。 這能讓搜尋「托兒」的使用者知道可以利用財務支援福利，並提供連結給他們，以進行深入了解。
 
 ### <a name="keywords"></a>關鍵字
 
@@ -112,7 +112,7 @@ ms.locfileid: "38626943"
 - 檢查工具、網站名稱或小組名稱的變更。
 - 考慮書籤或問與答是否獲得足夠授權，或需要更清楚的描述。
 
-**Microsoft Search** 提供書籤、問與答和位置的使用量統計資料。 使用量統計資料會顯示使用者參與您的搜尋結果的情況，以及使用者有找到所要尋找的，或是可用內容中是否有任何缺口？ 這可以協助系統管理員監控效能，並採取適當的動作來微調搜尋結果。 
+**Microsoft Search** 提供書籤、問與答和位置的使用量統計資料。 使用量統計資料會顯示使用者參與您的搜尋結果的情況，以及使用者有找到所要尋找的，或是可用內容中是否有任何缺口？ 這可以協助系統管理員監控效能，並採取適當的動作來微調搜尋結果。
 
 ### <a name="get-details-about-bookmarks-qa-and-locations"></a>取得書籤、問與答和位置的詳細資料
 
@@ -126,9 +126,9 @@ ms.locfileid: "38626943"
 
 ### <a name="review-top-search-queries"></a>檢閱熱門搜尋查詢
 
-了解過去 90 天哪些搜尋擁有最多曝光數。 曝光數是指在搜尋結果中檢視頁面的次數。 [查詢排行榜]**** 卡片會顯示每個結果類型的前 25 個使用者搜尋、搜尋的曝光數總計和其點閱率 (CTR)。 使用此報告可識別搜尋查詢量，以判定出現大量和少量搜尋活動的查詢。 
+了解過去 90 天哪些搜尋擁有最多曝光數。 曝光數是指在搜尋結果中檢視頁面的次數。 [查詢排行榜]**** 卡片會顯示每個結果類型的前 25 個使用者搜尋、搜尋的曝光數總計和其點閱率 (CTR)。 使用此報告可識別搜尋查詢量，以判定出現大量和少量搜尋活動的查詢。
 
-低搜尋次數可能表示使用者的不滿意度，可能是因為使用者不是要尋找這些搜尋內容，或使用不同的關鍵字來尋找該內容。 CTR 會顯示使用者選取提升結果的頻率，以及您的查詢規則和結果如何對使用者有幫助。 低 CTR 表示使用者找到內容，但判斷內容不符合其搜尋。 在這種情況下，系統管理員也可以決定檢閱內容，並確保其與使用者的搜尋對應，並更新標題、描述及關鍵字，以符合使用者的搜尋查詢。 
+低搜尋次數可能表示使用者的不滿意度，可能是因為使用者不是要尋找這些搜尋內容，或使用不同的關鍵字來尋找該內容。 CTR 會顯示使用者選取提升結果的頻率，以及您的查詢規則和結果如何對使用者有幫助。 低 CTR 表示使用者找到內容，但判斷內容不符合其搜尋。 在這種情況下，系統管理員也可以決定檢閱內容，並確保其與使用者的搜尋對應，並更新標題、描述及關鍵字，以符合使用者的搜尋查詢。
 
 ### <a name="analyze-impressions-by-result-type"></a>依據結果類型分析曝光數
 
