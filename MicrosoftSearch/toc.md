@@ -20,7 +20,7 @@
 ### [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
 ### [企業網站](enterprise-web-connector.md)
 ### [檔案共用](file-share-connector.md)
-### [Microsoft SQL server](MSSQL-connector.md)
+### [Azure SQL 和 SQL Server](MSSQL-connector.md)
 ### [MediaWiki](mediawiki-connector.md)
 ### [ServiceNow](servicenow-connector.md)
 ## [意見反應](connectors-feedback.md)
