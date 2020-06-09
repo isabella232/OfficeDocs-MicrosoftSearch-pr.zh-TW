@@ -1,5 +1,5 @@
 ---
-title: Microsoft Search 的 Microsoft SQL 連接器
+title: Microsoft Search 的 microsoft SQL server 和 Azure SQL connector
 ms.author: mounika.narayanan
 author: monaray
 manager: mnirkhe
@@ -11,96 +11,98 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 為 Microsoft Search 設定 Microsoft SQL 連接器。
-ms.openlocfilehash: b48fece5fccaf2a82ac343cd13130073ee6b3c21
-ms.sourcegitcommit: f4cb37fdf85b895337caee827fb72b5b7fcaa8ad
+description: 設定 microsoft SQL server 或 Azure SQL connector for Microsoft Search。
+ms.openlocfilehash: adb923527576a72663efe3a069918f38a5e89526
+ms.sourcegitcommit: 64eea81f8c1db9ee955013462a7b51612fb7d0b7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2019
-ms.locfileid: "39995048"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "44604399"
 ---
-# <a name="microsoft-sql-server-connector"></a>Microsoft SQL server 連接器
+# <a name="microsoft-sql-server-and-azure-sql-connector"></a>Microsoft SQL server 和 Azure SQL connector
 
-Microsoft SQL server 連接器，您的組織可以探索和索引資料從內部部署 SQL Server 資料庫。 連接器索引指定成 Microsoft 搜尋的內容。 若要保留最新的來源資料的索引，它所支援定期完整和累加編目。 使用 SQL Server 連接器，您也可以限制存取搜尋結果提供給特定使用者。
+透過 Microsoft SQL server 或 Azure SQL connector，您的組織可以探索內部部署 SQL Server 資料庫中的資料，以及在雲端中裝載于 Azure SQL 實例中的資料庫。 連接器會將指定的內容索引至 Microsoft 搜尋。 若要讓索引保持在最新的來來源資料中，它支援定期完整和累加編目。 透過這些 SQL 連接器，您也可以限制特定使用者對搜尋結果的存取。
 
-本文適用於 Microsoft 365 系統管理員或人設定、 執行，並監視的 Microsoft SQL server 連接器。 本文說明如何設定連接器，連接器功能、 限制和疑難排解技巧。
+本文適用于 Microsoft 365 系統管理員或任何設定、執行及監視 Microsoft SQL server connector 的人員。 它說明如何設定連接器和連接器功能、限制及疑難排解技術。
 
-## <a name="install-a-data-gateway"></a>安裝資料閘道
-若要存取您的協力廠商資料，您必須安裝及設定 Microsoft Power BI 閘道。 [安裝在內部閘道](https://docs.microsoft.com/data-integration/gateway/service-gateway-install)了解詳細資訊，請參閱。  
+## <a name="install-a-data-gateway-required-for-on-premises-microsoft-sql-server-connector-only"></a>安裝資料閘道（僅限內部部署 Microsoft SQL server 連接器所需）
+為了存取協力廠商資料，您必須安裝和設定 Microsoft Power BI 閘道。 請參閱[安裝內部部署閘道](https://docs.microsoft.com/data-integration/gateway/service-gateway-install)以深入瞭解。  
 
-## <a name="connect-to-a-data-source"></a>連線至資料來源
-若要連接您的 Microsoft SQL server 連接器至資料來源，您必須設定您要編目的資料庫伺服器和內部部署閘道。 您可以再連線到資料庫所需的驗證方法。
+## <a name="connect-to-a-data-source"></a>連接到資料來源
+若要將 Microsoft SQL server 連接器連線至資料來源，您必須設定要編目的資料庫伺服器和內部部署閘道。 然後，您就可以使用必要的驗證方法來連接至資料庫。
+
+針對 Azure SQL connector，您只需要指定您想要連線的伺服器名稱或 IP 位址。 Azure SQL connector 只支援 Azure Active Directory 開啟識別碼 connect （OIDC）驗證，以連線至資料庫。
 
 > [!NOTE]
-> 2008 或更新版本，您的資料庫必須執行 SQL server 版本。
+> 您的資料庫必須執行 SQL server 版本2008或更新版本，Microsoft SQL server 連接器才能與其連線
 
-若要搜尋您資料庫的內容，您必須指定 SQL 查詢，當您設定連接器。 下列 SQL 查詢必須命名為所有要索引 （亦即來源的屬性），包括任何不需要執行若要取得所有的資料行的 SQL 聯結的資料庫資料行。 若要限制存取權的搜尋結果，您必須指定存取控制清單 (Acl) 與 SQL 查詢時您設定 Microsoft SQL server 連接器。
+若要搜尋您的資料庫內容，當您設定連接器時，必須指定 SQL 查詢。 這些 SQL 查詢必須命名所有要索引的資料庫資料行（亦即來源屬性），包括要取得所有欄所需執行的任何 SQL 聯接。 若要限制存取搜尋結果，您必須在設定連接器時，指定 SQL 查詢中的存取控制清單（ACLs）。
 
-## <a name="full-crawl-required"></a>（必要） 的完整編目
-在此步驟中，您可以設定執行完整編目資料庫的 SQL 查詢。 完整編目會選取所有的資料行或您想要進行的屬性**設為可查詢**、**可搜尋**，或**可擷取**。 您也可以指定限制對特定使用者或群組存取搜尋結果的 ACL 欄。
+## <a name="full-crawl-required"></a>完整編目（必要）
+在這個步驟中，您會設定執行資料庫完整編目的 SQL 查詢。 完整編目會選取您想要讓其可**查詢** **、可**搜尋或可**檢索**的所有欄或屬性。 您也可以指定 ACL 欄，以限制搜尋結果對特定使用者或群組的存取。
 
 > [!Tip]
-> 若要取得您需要的所有資料行，您可以加入多個資料表。
+> 若要取得所需的所有欄，您可以加入多個表格。
 
-![指令碼顯示 OrderTable 和 AclTable 與範例屬性](media/MSSQL-fullcrawl.png)
+![腳本顯示 OrderTable 及 AclTable （含範例屬性）](media/MSSQL-fullcrawl.png)
 
-### <a name="select-data-columns-required-and-acl-columns-optional"></a>選取的資料行 （必要） 和 ACL 資料行 （選用）
-此範例將示範如何選取項目保留搜尋的資料的五個資料欄的： OrderId、 OrderTitle、 OrderDesc、 CreatedDateTime 及 IsDeleted。 若要設定檢視權限的每一列資料，您可以選擇性地選取這些 ACL 欄： AllowedUsers、 AllowedGroups、 DeniedUsers 及 DeniedGroups。 您可以進行所有這些資料行**設為可查詢**、**可搜尋**，或**可擷取**。
+### <a name="select-data-columns-required-and-acl-columns-optional"></a>選取資料欄（必要）和 ACL 欄（選用）
+這個範例會示範五個數據列的選取範圍，其中保留搜尋的資料：「訂單」、「OrderTitle」、OrderDesc、CreatedDateTime 及 IsDeleted。 若要設定每個資料列的查看許可權，您可以選擇性地選取下列 ACL 欄： AllowedUsers、AllowedGroups、DeniedUsers 及 DeniedGroups。 所有的資料欄位都可以是可**查詢**、可搜尋或**可供****檢索**。
 
-此範例會查詢中所示，請選取的資料行：`SELECT OrderId, OrderTitle, OrderDesc, AllowedUsers, AllowedGroups, DeniedUsers, DeniedGroups, CreatedDateTime, IsDeleted`
+選取下列範例查詢所示的資料行：`SELECT OrderId, OrderTitle, OrderDesc, AllowedUsers, AllowedGroups, DeniedUsers, DeniedGroups, CreatedDateTime, IsDeleted`
  
-若要管理的存取權的搜尋結果，您可以在查詢中指定一或多個 ACL 資料行。 SQL 連接器可讓您控制每筆記錄層級的存取。 您可以選擇在資料表中有相同的存取控制的所有記錄。 如果 ACL 資訊儲存在不同的資料表中，您可能需要進行與您的查詢中的這些資料表的聯結。
+若要管理搜尋結果的存取權，您可以在查詢中指定一或多個 ACL 欄。 SQL connector 可讓您控制每個記錄層級的存取。 您可以選擇對資料表中的所有記錄使用相同的存取控制。 如果 ACL 資訊儲存在不同的資料表中，您可能必須在查詢中使用這些資料表進行聯接。
 
-使用每個以上的查詢中的 ACL 欄會如下所述。 下列清單說明 4 的**存取控制機制**。 
-* **AllowedUsers**： 這會指定使用者識別碼能夠存取搜尋結果的清單。 在下列範例中，使用者清單： john@contoso.com、 keith@contoso.com，以及 lisa@contoso.com 只需要存取 OrderId 記錄 = 12。 
-* **AllowedGroups**： 這會指定群組的使用者將能夠存取搜尋結果。 在下列範例中，群組 sales-team@contoso.com 只需要存取記錄與 OrderId = 12。
-* **DeniedUsers**： 這會指定的使用者執行動作清單**不**具有存取權的搜尋結果。 在下列範例中，使用者 john@contoso.com 和 keith@contoso.com 沒有存取權與 OrderId 記錄 = 13，而其他人有權存取這筆記錄。 
-* **DeniedGroups**： 這會指定執行動作的使用者群**不**具有存取權的搜尋結果。 在下列範例中，群組 engg-team@contoso.com 和 pm-team@contoso.com 沒有存取權與 OrderId 記錄 = 15，而其他人有權存取這筆記錄。  
+在上述查詢中使用每個 ACL 欄的描述如下。 下列清單說明四種**存取控制機制**。 
+* **AllowedUsers**：這會指定可以存取搜尋結果的使用者 IDs 清單。 在下列範例中，使用者清單為： john@contoso.com、keith@contoso.com 和 lisa@contoso.com 只有具有「訂單 Id」的記錄存取權 = 12。 
+* **AllowedGroups**：這會指定可以存取搜尋結果的使用者群組。 在下列範例中，group sales-team@contoso.com 只會具有「訂單 Id = 12」的記錄存取權。
+* **DeniedUsers**：**這會指定**沒有搜尋結果存取權的使用者清單。 在下列範例中，使用者 john@contoso.com 及 keith@contoso.com 無法存取具有「訂單 Id」的記錄，而其他所有人都可以存取這筆記錄。 
+* **DeniedGroups**：這**會**指定沒有搜尋結果存取權的使用者群組。 在下列範例中，群組 engg-team@contoso.com 及 pm-team@contoso.com 沒有具有「訂單 Id」的記錄存取權，而其他所有人都可以存取這筆記錄。  
 
 ![](media/MSSQL-ACL1.png)
 
-### <a name="watermark-required"></a>浮水印 （必要）
-若要防止多載資料庫，連接器批次，而且會繼續具有完整編目浮水印資料行的完整編目查詢。 藉由使用浮水印資料行的值，會擷取每一個後續的批次，並查詢從最後一個的檢查點繼續執行。 基本上，這是一種機制可控制的完整編目的資料重新整理。
+### <a name="watermark-required"></a>水位線（必要）
+若要防止資料庫超載，連接器會批次並繼續完整編目的查詢。 使用 [浮水印] 資料行的值，每個後續的批次都會取得，而查詢會從最後一個檢查點繼續。 本質上，這是一種機制，用來控制完整編目的資料重新整理。
 
-建立查詢程式碼片段的浮水印，如以下範例所示：
-* `WHERE (CreatedDateTime > @watermark)`. 引用浮水印資料行名稱與保留的關鍵字`@watermark`。 如果浮水印資料行的排序順序遞增，使用`>`;否則，請使用`<`。
-* `ORDER BY CreatedDateTime ASC`. 浮水印欄，以遞增或遞減順序排序。
+建立浮水印的查詢程式碼片段，如下列範例所示：
+* `WHERE (CreatedDateTime > @watermark)`. 使用保留的關鍵字來引用浮水印欄名稱 `@watermark` 。 如果浮水印欄的排序次序是遞增的，請使用 `>` ，否則請使用 `<` 。
+* `ORDER BY CreatedDateTime ASC`. 在 [浮水印] 欄上以遞增或遞減順序排序。
 
-在下列影像所示設定`CreatedDateTime`是所選取的浮水印資料行。 若要擷取的資料列的第一個批次，指定浮水印欄的資料類型。 在此例中的資料類型是`DateTime`。
+在下一個影像所示的設定中， `CreatedDateTime` 是選取的 [浮水印] 欄。 若要取得第一批列，請指定 [浮水印] 資料行的資料類型。 在此情況下，資料類型為 `DateTime` 。
 
 ![](media/MSSQL-watermark.png)
 
-第一個查詢擷取資料列的第一個**N**量使用: 「 CreatedDateTime > 1753 年 1 月 1 日 00:00:00 」 （最小值的日期時間資料類型）。 第一個批次會擷取的最高值之後`CreatedDateTime`中傳回批次會儲存為檢查點，如果資料列會以遞增順序排序。 例如，2019 年 3 月 1 日 03:00:00。 然後**N**個資料列的下一個批次會擷取使用 「 CreatedDateTime > 2019 年 3 月 1 日 03:00:00 」 在查詢中。
+第一個查詢會使用： "CreatedDateTime > 1753 年1月1日，00:00:00" （DateTime 資料類型的最小值）來提取前**N**列金額。 提取第一個批次之後， `CreatedDateTime` 如果資料列是以遞增順序排序，則會將批次中傳回的最高值儲存為檢查點。 範例是 03:00:00 2019 年3月1日。 然後，在查詢中使用「CreatedDateTime > 三月份1，2019 03:00:00」提取下一批**N**列。
 
-### <a name="skipping-soft-deleted-rows-optional"></a>略過虛刪除的資料列 （選用）
-若要排除在編製索引的虛刪除資料庫中的資料列，請指定虛刪除資料行名稱和值，指出刪除資料列。
+### <a name="skipping-soft-deleted-rows-optional"></a>略過虛刪除的列（選用）
+若要排除資料庫中虛刪除的列的索引，請指定虛刪除的列名稱和值，以指出刪除列的資料行。
 
-![虛刪除的設定: 「 虛刪除資料行 」 和 「 值的虛刪除會指出刪除的資料列資料行 」](media/MSSQL-softdelete.png)
+![虛刪除設定： "Soft delete column" 和 "soft delete 欄的值，表示已刪除的資料列"](media/MSSQL-softdelete.png)
 
-### <a name="full-crawl-manage-search-permissions"></a>完整編目： 管理搜尋的權限
-按一下以選取的各種不同的存取控制 (ACL) 欄這會指定存取控制機制的**管理權限**。 選取您在完整編目] 中的 SQL 查詢中指定的欄名稱。 
+### <a name="full-crawl-manage-search-permissions"></a>完整編目：管理搜尋許可權
+按一下 [**管理許可權**]，以選取指定存取控制機制的各種存取控制（ACL）欄。 選取您在完整編目 SQL 查詢中所指定的資料行名稱。 
 
-每個 ACL 欄預期會在多重值的資料行。 這些多個識別碼值可以由分號 （;），以逗號 （，），例如分隔符號分隔等等。 您需要的**值分隔**欄位中指定此分隔符號。
+每個 ACL 欄都應該是多重值欄。 您可以使用分號（;)、逗號（，）等分隔符號來分隔這些多個 ID 值。 您必須在 [**值分隔符號**] 欄位中指定此分隔符號。
  
-使用 Acl 以支援下列的識別碼類型： 
-* **使用者主要名稱 (UPN)**: 使用者主要名稱 (UPN) 是電子郵件地址格式中的系統使用者的名稱。 UPN (例如： john.doe@domain.com) 組成的使用者名稱 （登入名稱）、 分隔符號 (@ 符號)，和網域名稱 （UPN 尾碼）。 
-* **Azure Active Directory (AAD) 識別碼**： 在 [AAD、 每個使用者或群組具有看起來像 ' e0d3ad3d-0000-1111年-2222年-3c5f5c52ab9b' 物件識別碼 
-* **Active Directory (AD) 的安全性識別碼**： 在內部部署 AD 安裝程式，每個使用者和群組具有看起來像 'S-1-5-21-3878594291-2115959936-132693609-65242'。 這不變，唯一的安全性識別碼
+下列識別碼類型可供使用 ACLs： 
+* **使用者主體名稱（upn）**：使用者主要名稱（upn）是使用電子郵件地址格式的系統使用者名稱。 UPN （例如： john.doe@domain.com）包含使用者名稱（登入名稱）、分隔符號（@ 符號）和功能變數名稱（UPN 尾碼）。 
+* **Azure Active Directory （AAD）識別碼**：在 AAD 中，每個使用者或群組都有一個類似 ' e0d3ad3d-0000-1111-2222-3c5f5c52ab9b ' 的物件識別碼。 
+* **Active Directory （AD）安全性**識別碼：在內部部署 AD 安裝程式中，每個使用者和群組都有一個無法變化的唯一安全性識別碼，看起來像是-1-5-21-3878594291-2115959936-132693609-65242。 '
 
 ![](media/MSSQL-ACL2.png)
 
-## <a name="incremental-crawl-optional"></a>累加編目 （選用）
-在此選用的步驟中，提供執行累加編目資料庫的 SQL 查詢。 此查詢中，與 Microsoft SQL server 連接器任何對資料進行變更自上次的累加編目。 如同完整編目]，選取您想要進行的所有欄**設為可查詢**、**可搜尋**，或**可擷取**。 指定相同的完整編目查詢中指定的 ACL 欄集合。
+## <a name="incremental-crawl-optional"></a>增量式編目（選用）
+在此選用的步驟中，請提供 SQL 查詢，以執行資料庫的增量式編目。 在此查詢中，SQL 連接器會決定自上次累加編目以來對資料所做的任何變更。 在完整編目中，選取您想要讓其成為可**查詢**、可搜尋或可**檢索****的所有**欄。 指定您在完整編目查詢中指定的相同 ACL 欄集。
 
-下圖中的元件與類似有一個例外狀況的完整編目元件。 在此情況下，「 ModifiedDateTime 」 是所選取的浮水印資料行。 檢閱[完整編目的步驟](#full-crawl-required)，以了解如何撰寫累加編目查詢，並查看下圖為例。
+下列映射中的元件類似于完整編目元件，但有一個例外。 在此情況下，"ModifiedDateTime" 是選取的浮水印欄。 查看[完整編目步驟](#full-crawl-required)，以瞭解如何撰寫累加編目查詢，並以範例顯示下列影像。
 
-![顯示可用的 OrderTable、 AclTable 及範例內容的累加編目指令碼。](media/MSSQL-incrcrawl.png)
+![新增編目腳本，顯示可使用的 OrderTable、AclTable 和範例屬性。](media/MSSQL-incrcrawl.png)
 
-## <a name="manage-search-permissions"></a>管理搜尋的權限 
-您可以選擇使用[[完整編目] 畫面中指定的 Acl](#full-crawl-manage-search-permissions) ，或者您可以覆寫它們，讓您的內容可以看到所有人。
+## <a name="manage-search-permissions"></a>管理搜尋許可權 
+您可以選擇使用完整編目[畫面中所指定的 ACLs](#full-crawl-manage-search-permissions) ，也可以覆寫它們，讓每個人都能看到您的內容。
 
 ## <a name="limitations"></a>限制
-Microsoft SQL server 連接器已在預覽中的釋放這些限制：
-* 內部部署資料庫必須執行 SQL server 版本，2008年或更新版本。
-* 使用使用者主要名稱 (UPN)、 Azure Active Directory (Azure AD) 或 Active Directory 安全性只支援 Acl。 
-* 不支援資料庫資料行內的豐富內容編製索引。 這類內容的範例為 HTML、 JSON、 XML、 blob，與文件 parsings 在於做為內的資料庫資料行的連結。
+在預覽版本中，SQL 連接器具有這些限制：
+* Microsoft SQL server connector：內部部署資料庫必須執行 SQL server 版本2008或更新版本。
+* 只有在使用使用者主要名稱（UPN）、Azure Active Directory （Azure AD）或 Active Directory 安全性時，才支援 ACLs。 
+* 不支援在資料庫欄中編制豐富內容的索引。 這類內容的範例為 HTML、JSON、XML、blob 及檔 parsings，以資料庫資料欄中的連結形式存在。
