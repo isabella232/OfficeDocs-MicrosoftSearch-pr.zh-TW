@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 microsoft 內置的連接器以進行 Microsoft 搜尋
-ms.openlocfilehash: 3c54f04c1ac6cc42eef2e27a2b40b6ce92357630
-ms.sourcegitcommit: 46303c60e905c89c133278fa41e87055f81a8637
+ms.openlocfilehash: eb81f9cdc9caf2020bae64984f11ae7e1b87dae9
+ms.sourcegitcommit: a8a6c949f249d106f37103e127d2ea7df730f7a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44535307"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44702756"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 
@@ -34,10 +34,10 @@ ms.locfileid: "44535307"
 
 ## <a name="set-up"></a>設定
 
-若要設定任何 Microsoft 建立的連接器，請移至系統[管理中心](https://admin.microsoft.com)：
+完成下列步驟以設定任何 Microsoft 建立的連接器。
 
-1. 使用[Microsoft 365](https://www.microsoft.com/microsoft-365)測試租使用者的認證登入您的帳戶。
-2. 移至 [**設定**  >  **Microsoft 搜尋**  >  **連接器**]。
+1. 移至[Microsoft 365 系統管理中心](https://admin.microsoft.com)中的 [[連接器]](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)索引標籤。
+2. 使用[Microsoft 365](https://www.microsoft.com/microsoft-365)租使用者的認證登入您的帳戶。
 3. 選取 [**新增連接器**]。
 4. 從可用的連接器清單中，選取您選擇的連接器。
 
@@ -67,7 +67,7 @@ ms.locfileid: "44535307"
 
 搜尋架構屬性包括可搜尋、可**查詢**及可**供****檢索**的屬性。 下表列出 Microsoft Graph 連接器所支援的每個屬性，並說明其功能。
 
-**搜尋架構屬性** | **Function** | **範例**
+搜尋架構屬性 | 函數 | 範例
 --- | --- | ---
 搜索 | 使屬性的文字內容可供搜尋。 屬性內容會包含在全文檢索索引中。 | 若屬性為**title**，**企業**查詢會傳回包含 word Enterprise 的任何文字或標題中的 word **enterprise**的查詢。
 可 | 依查詢搜尋特定屬性的相符。 您可以在查詢中以程式設計方式或逐字方式指定屬性名稱。 |  若**Title**屬性是可查詢的，則支援查詢**標題： Enterprise** 。
