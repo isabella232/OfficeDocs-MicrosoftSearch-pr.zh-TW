@@ -15,16 +15,22 @@ search.appverid:
 ms.assetid: f980b90f-95e2-4b66-8b21-69f601ff4b50
 ROBOTS: NoIndex
 description: 將 Microsoft Search 的搜尋方塊新增至任何內部網路網站或頁面，以取得相關的搜尋建議並更快速尋找工作結果。
-ms.openlocfilehash: bcf1c6890415fdd9ae22f28cdf6d3dec1ffcaac4
-ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.openlocfilehash: af12ce4d17c2695e196f8e4d79ccd515f002f238
+ms.sourcegitcommit: 92206ea179ec00b22496f6fd2866b5406449cf40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37948904"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44798223"
 ---
 # <a name="add-a-search-box-to-your-intranet-site"></a>將搜尋方塊新增至您的內部網路網站
 
-若要快速存取相關的搜尋建議和工作結果，請將 Microsoft Search 的搜尋方塊新增至任何內部網路網站或頁面。
+若要讓您的使用者能夠輕鬆存取組織的結果，請在 [Bing 搜尋] 方塊中新增 Microsoft 搜尋至任何內部網路網站或頁面。 以下是一些優點：
+
+- SharePoint 或內部網路入口網站上的搜尋方塊，提供開始搜尋的熟悉、信任的進入點。
+- 支援所有主要網頁瀏覽器（包括 Google Chrome 和 Microsoft Edge）
+- 只會顯示您組織的搜尋建議，永遠不會包含 web 建議
+- 讓使用者加入 Bing 工作成果頁面中的 Microsoft 搜尋，但不包括廣告和 web 結果
+- 您可以控制搜尋方塊的外觀和行為
   
 ## <a name="add-a-search-box-to-an-intranet-page"></a>將搜尋方塊新增至內部網路頁面
 
@@ -88,8 +94,8 @@ ms.locfileid: "37948904"
         dropShadow: true,                       // default: true
         iconColor: "#067FA6",                   // default: #067FA6
         companyNameInGhostText: "Contoso"       // default: not specified
-                                                // when absent, ghost text will be "Search work and the web"
-                                                // when specified, text will be "Search the web and [Contoso]"
+                                                // when absent, ghost text will be "Search work"
+                                                // when specified, text will be "Search <companyNameInGhostText>"
     };
 </script>
 <script async src="https://www.bing.com/business/s?k=sb"></script>
