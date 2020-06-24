@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 搜尋的 Microsoft Graph 連接器概述
-ms.openlocfilehash: 0b5420eb4eb93eb257fab30f3e56a20e6456e1b3
-ms.sourcegitcommit: 64eea81f8c1db9ee955013462a7b51612fb7d0b7
+ms.openlocfilehash: 08ddb8e61606007c706134242e865459f0399b86
+ms.sourcegitcommit: 68cd28a84df120473270f27e4eb62de9eae455f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "44604390"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44850869"
 ---
 # <a name="overview-of-microsoft-graph-connectors"></a>Microsoft Graph 連接器的概述
 
@@ -55,6 +55,12 @@ Microsoft Graph 連接器預覽版本包含6個 Microsoft 建立的連接器。 
 - **[Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)**。 透過此 Microsoft Graph 連接器，您組織中的使用者可以搜尋 Azure Blob 容器中儲存的檔案和內容。 Azure Data Lake Storage Gen2 connector 也會為您指定的 Azure Data Lake Storage Gen2 帳戶中的已啟用階層的資料夾編制索引。
 深入瞭解[Azure Data Lake Storage Gen2 connector](azure-data-lake-connector.md)。
 
+- **[Azure DevOps](https://azure.microsoft.com/services/devops)**。 使用此 Microsoft Graph 連接器，您組織中的使用者可以搜尋 Azure DevOps 實例中的工作專案。
+深入瞭解[Azure DevOps 連接器](azure-devops-connector.md)。
+
+- **[AZURE SQL](https://azure.microsoft.com/services/sql-database)**。 透過此 Microsoft Graph 連接器，您組織中的使用者可以從 Azure SQL 資料庫搜尋資料。
+深入瞭解[AZURE SQL connector](MSSQL-connector.md)。
+
 - **企業網站**。 透過此 Microsoft Graph 連接器，您組織中的使用者可以在任何非 SharePoint 企業網站中搜尋頁面。
 深入瞭解[企業網站連接器](enterprise-web-connector.md)。
 
@@ -85,8 +91,8 @@ Microsoft Graph 連接器預覽版本包含6個 Microsoft 建立的連接器。 
 
 ## <a name="license-requirements"></a>授權需求
 
-若要在搜尋結果中查看連接器的資料，使用者必須具備下列其中一種 Microsoft 365 訂閱：
+若要在搜尋結果中查看連接器的資料，使用者必須具備下列其中一項 Microsoft 365 或 Office 365 訂閱：
 
-- [適用于企業版 E3 或 E5 的 Microsoft 365](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)
+- [Microsoft 365 或 Office 365 企業版 E3 或 E5](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)
 
-- [Microsoft 365 教育版 A3 或 A5](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab:primaryr1)
+- [Microsoft 365 或 Office 365 教育版 A3 或 A5](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab:primaryr1)

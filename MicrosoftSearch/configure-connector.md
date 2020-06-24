@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 microsoft 內置的連接器以進行 Microsoft 搜尋
-ms.openlocfilehash: eb81f9cdc9caf2020bae64984f11ae7e1b87dae9
-ms.sourcegitcommit: a8a6c949f249d106f37103e127d2ea7df730f7a3
+ms.openlocfilehash: e5b40326bdd83f461e7ce9a45889ad82245e20aa
+ms.sourcegitcommit: 68cd28a84df120473270f27e4eb62de9eae455f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44702756"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44850887"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 
@@ -26,6 +26,8 @@ ms.locfileid: "44702756"
 本文將引導您逐步完成設定 Microsoft 內建連接器的步驟。 它概述在 Microsoft 365 系統[管理中心](https://admin.microsoft.com)中設定連線的流程。 如需如何設定特定 Microsoft 內置連接器的詳細資訊，請參閱下列文章：
 
 * [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
+* [Azure DevOps](azure-devops-connector.md)
+* [Azure SQL](MSSQL-connector.md)
 * [企業網站](enterprise-web-connector.md)
 * [檔案共用](file-share-connector.md)
 * [MediaWiki](mediawiki-connector.md)

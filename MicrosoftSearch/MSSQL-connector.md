@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 microsoft SQL server 或 Azure SQL connector for Microsoft Search。
-ms.openlocfilehash: adb923527576a72663efe3a069918f38a5e89526
-ms.sourcegitcommit: 64eea81f8c1db9ee955013462a7b51612fb7d0b7
+ms.openlocfilehash: e664a9a6e389531f8b5735673150839a1b106ce1
+ms.sourcegitcommit: 68cd28a84df120473270f27e4eb62de9eae455f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "44604399"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44850896"
 ---
-# <a name="microsoft-sql-server-and-azure-sql-connector"></a>Microsoft SQL server 和 Azure SQL connector
+# <a name="azure-sql-and-microsoft-sql-server-connectors"></a>Azure SQL 及 Microsoft SQL server 連接器
 
 透過 Microsoft SQL server 或 Azure SQL connector，您的組織可以探索內部部署 SQL Server 資料庫中的資料，以及在雲端中裝載于 Azure SQL 實例中的資料庫。 連接器會將指定的內容索引至 Microsoft 搜尋。 若要讓索引保持在最新的來來源資料中，它支援定期完整和累加編目。 透過這些 SQL 連接器，您也可以限制特定使用者對搜尋結果的存取。
 
@@ -31,10 +31,10 @@ ms.locfileid: "44604399"
 ## <a name="connect-to-a-data-source"></a>連接到資料來源
 若要將 Microsoft SQL server 連接器連線至資料來源，您必須設定要編目的資料庫伺服器和內部部署閘道。 然後，您就可以使用必要的驗證方法來連接至資料庫。
 
-針對 Azure SQL connector，您只需要指定您想要連線的伺服器名稱或 IP 位址。 Azure SQL connector 只支援 Azure Active Directory 開啟識別碼 connect （OIDC）驗證，以連線至資料庫。
+針對 Azure SQL connector，您只需要指定您要連線的伺服器名稱或 IP 位址。 Azure SQL connector 只支援 Azure Active Directory 開啟識別碼 connect （OIDC）驗證，以連線至資料庫。
 
 > [!NOTE]
-> 您的資料庫必須執行 SQL server 版本2008或更新版本，Microsoft SQL server 連接器才能與其連線
+> 您的資料庫必須執行 SQL server 版本2008或更新版本，Microsoft SQL server 連接器才能連線。
 
 若要搜尋您的資料庫內容，當您設定連接器時，必須指定 SQL 查詢。 這些 SQL 查詢必須命名所有要索引的資料庫資料行（亦即來源屬性），包括要取得所有欄所需執行的任何 SQL 聯接。 若要限制存取搜尋結果，您必須在設定連接器時，指定 SQL 查詢中的存取控制清單（ACLs）。
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft Search 的 azure Data Lake 連接器
+title: Microsoft 搜尋的 Azure Data Lake connector
 ms.author: mounika.narayanan
 author: monaray
 manager: shohara
@@ -11,46 +11,46 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 設定 Microsoft Search Azure Data Lake 儲存 Gen2 連接器
-ms.openlocfilehash: 392960a5f7e6c93442ac7e1f60245217e194b42b
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+description: 設定 Azure Data Lake Storage Gen2 connector for Microsoft Search
+ms.openlocfilehash: f8cb94e806e619d6dae7258b6c2d708d93afb9a8
+ms.sourcegitcommit: 7eda9b621def0659d7e7bc8b989f8adc929cce93
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626469"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44861074"
 ---
-# <a name="azure-data-lake-storage-gen2-connector-for-microsoft-search"></a>Microsoft Search 的 azure Data Lake 儲存 Gen2 連接器
+# <a name="azure-data-lake-storage-gen2-connector"></a>Azure Data Lake Storage Gen2 connector
 
-使用[Azure Data Lake 儲存 Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)連接器，您組織中的使用者可以搜尋的檔案和其內容。 此連接器存取儲存在 Azure Blob 容器和內 Azure Data Lake 儲存第 2 帳戶已啟用階層的資料夾中的資料。
+透過[Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) connector，您組織中的使用者便可搜尋檔案及其內容。 此連接器會存取 Azure Data Lake Storage Gen 2 帳戶內，Azure Blob 容器和已啟用階層的資料夾中儲存的資料。
 
-本文適用於[Microsoft 365](https://www.microsoft.com/microsoft-365)系統管理員或人設定、 執行，並監視 Azure Data Lake 儲存 Gen2 連接器。 本文說明如何設定連接器，連接器功能、 限制和疑難排解技巧。
+本文適用于[Microsoft 365](https://www.microsoft.com/microsoft-365)系統管理員或任何設定、執行及監視 Azure Data Lake Storage Gen2 connector 的人員。 它說明如何設定連接器和連接器功能、限制及疑難排解技術。
 
-## <a name="connect-to-a-data-source"></a>連線至資料來源
+## <a name="connect-to-a-data-source"></a>連接到資料來源
 
-### <a name="primary-storage-connection-string"></a>主要儲存區的連接字串 
-在 [**驗證設定**] 畫面中，提供主要存放裝置連接字串。 若要允許您儲存體帳戶的存取權，才該字串。 若要尋找您的連接字串，請移至[Azure 入口網站](https://ms.portal.azure.com/#home)，並瀏覽至 [**機碼**] 區段中的[Azure Data Lake 儲存 Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)帳戶。 複製並貼在螢幕上適當的欄位中的連接字串。
+### <a name="primary-storage-connection-string"></a>主要儲存連接字串 
+在 [**驗證] 和 [config** ] 畫面上，提供主要儲存連接字串。 該字串是允許存取您的儲存體帳戶所需的字串。 若要尋找您的連線字串，請移至[azure 入口網站](https://ms.portal.azure.com/#home)，並流覽至[Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)帳戶的 [機**碼**] 區段。 在螢幕上適當的欄位中複製並貼上連接字串。
 
-如果您不想要提供**AccountKey** （主要儲存區連接字串中的參數），您必須授與我們圖的連接器服務的讀取權限。 在您的 Azure Data Lake 儲存 Gen2 帳戶的 [**存取控制**] 索引標籤中，依照指示，授與存取權的下列應用程式] 頁面上：
-* **第一方應用程式識別碼：** 56c1da01-2129-48f7-9355-af6d59d42766
-* **第一方應用程式名稱：** Graph 連接器服務
+如果您不想要提供**AccountKey** （主要儲存連接字串中的參數），您必須授與我們的圖形連接器服務的讀取權限。 在您 Azure Data Lake Storage Gen2 帳戶的 [**存取控制**] 索引標籤中，依照該頁面上的指示，將存取權授與下列應用程式：
+* **第一方應用程式 ID:** 56c1da01-2129-48f7-9355-af6d59d42766
+* **第一方應用程式名稱：** 圖形連接器服務
 
-### <a name="storage-account-and-queue-notifications-optional"></a>儲存體帳戶和佇列通知 （選用）
-支援，以處理即時圖表連接器服務中的變更可能在未來新增。 在此情況下，我們將會監視儲存在佇列中的[Azure Data Lake 儲存 Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)變更通知。 您需要您 Azure Data Lake 儲存 Gen2 相同的帳戶或另一個儲存體帳戶中建立佇列。
+### <a name="storage-account-and-queue-notifications-optional"></a>儲存帳戶和佇列通知（選用）
+可在未來新增圖表連接器服務中即時處理變更的支援。 在這種情況下，我們會監視[Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) change 通知儲存在佇列中。 您必須使用與您的 Azure Data Lake Storage Gen2 或其他儲存體帳戶相同的帳戶建立佇列。
 
-建立佇列之後，移至 [**事件**] 索引標籤上 [佇列] 頁面上，若要設定**事件訂閱**。 選擇 [所有 Blob 事件佇列將會接收，並將佇列連線到 Azure Data Lake 儲存 Gen2 帳戶]。
+建立佇列之後，請移至佇列頁面上的 [**事件**] 索引標籤，以設定**事件訂閱**。 選擇佇列將要接收的所有 Blob 事件，並將該佇列連接至 Azure Data Lake Storage Gen2 帳戶。
 
 ## <a name="manage-the-search-schema"></a>管理搜尋結構描述
-**管理結構描述**在畫面上，您可以選擇變更的結構描述屬性 (**設為可查詢**、**可搜尋**，並**可擷取**) 相關聯的 managed 屬性。 這些 managed 的屬性的屬性是從您的[Azure Data Lake 儲存 Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)帳戶編製索引的資料。
+在 [**管理架構**] 畫面上，您可以選擇變更與 managed 屬性相關聯的架構屬性（可**查詢** **、可**搜尋及可**檢索**）。 這些 managed 屬性屬性是從[Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)帳戶編制索引的資料。
 
-## <a name="manage-search-permissions"></a>管理搜尋的權限
-在 [**管理搜尋的權限**] 畫面中，您可以選擇內嵌的存取控制清單 (Acl) 從您的儲存體帳戶。 當這些搜尋權限設定時，搜尋內容修剪根據指派給登入[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/)使用者搜尋內容的權限。 或者，您可以選擇要從組織中的每個人都可以看到您儲存體帳戶編製索引的所有內容。 在此情況下，您的組織中的每個人儲存體帳戶中有存取權的所有資料。
+## <a name="manage-search-permissions"></a>管理搜尋許可權
+在 [**管理搜尋許可權**] 畫面上，您可以選擇從您的儲存體帳戶中攝取存取控制清單（ACLs）。 當您設定這些搜尋許可權時，會根據指派給已登入之[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/)使用者搜尋內容的許可權來裁切搜尋內容。 或者，您也可以選擇讓組織中的所有人都可以看到從您的儲存體帳戶索引的所有內容。 在此情況下，您組織中的每個人都可以存取您儲存體帳戶中的所有資料。
  
 ## <a name="set-the-refresh-schedule"></a>設定重新整理排程
-在 [**重新整理設定**] 畫面中，您可以設定的累加編目間隔及完整編目間隔。 [Azure Data Lake 儲存 Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)連接器的預設間隔為 15 分鐘，進行累加編目和一週進行完整編目。
+在 [重新整理**設定**] 畫面上，您可以設定增量編目間隔和完整編目間隔。 針對增量編目， [Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) connector 的預設間隔是15分鐘，完整編目則為一周。
  
 ## <a name="limitations"></a>限制
-目前， [Azure Data Lake 儲存 Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)多重通訊協定存取只能在中央美國、 西中央美國、 加拿大中央、 美國東部、 東亞、 北歐、 東亞 US2、 東南亞、 西歐、 美國西部、 澳洲東亞、 日本東、 西 US2 和巴西南是可用。
+目前， [Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)多通訊協定存取只適用于美國中西部、West Us、加拿大中央、東 Us、東亞、北歐、東 US2、東南亞、西亞、西 US2 和巴西南部等的地區。
 
-更新與詳細資訊，請參閱[在 Azure Data Lake 儲存體 （預覽） 上存取的多重通訊協定](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-multi-protocol-access)。
+如需更新及詳細資訊，請參閱[在 Azure Data Lake Storage （預覽）上的多協定存取](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-multi-protocol-access)。
 
 
