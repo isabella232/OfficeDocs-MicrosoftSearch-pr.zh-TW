@@ -18,9 +18,10 @@
 ## Microsoft 內建連接器
 ### [連接器設定](configure-connector.md)
 ### [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
+### [Azure DevOps](azure-devops-connector.md)
+### [Azure SQL 和 Microsoft SQL 伺服器](MSSQL-connector.md)
 ### [企業網站](enterprise-web-connector.md)
 ### [檔案共用](file-share-connector.md)
-### [Azure SQL 和 SQL Server](MSSQL-connector.md)
 ### [MediaWiki](mediawiki-connector.md)
 ### [ServiceNow](servicenow-connector.md)
 ## [意見反應](connectors-feedback.md)
