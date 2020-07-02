@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
 description: 個別尋找並更新解答，或使用 Microsoft Search 工具來編輯 Q&一次。
-ms.openlocfilehash: 2ec06fb0940172621255946283290450c1f2e036
-ms.sourcegitcommit: 7ad6f4b0ab6cd7b912862273a8b4d48a6507bc29
+ms.openlocfilehash: 78a6ee0ff14f3347b0b2e2a65cc1ee0f68500981
+ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "44878231"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44996083"
 ---
 # <a name="manage-qas"></a>管理問與答
 
@@ -27,8 +27,7 @@ ms.locfileid: "44878231"
 ## <a name="add-or-edit-a-single-qa"></a>新增或編輯單一問與答
 
 1. 移至 **Microsoft 365 系統管理中心**。
-1. 在功能窗格中，移至 [設定]****，然後選取 **Microsoft Search**。
-1. 選取 [ **Q&** ] 索引標籤。
+1. 在功能窗格中，移至 [**設定**]  >  **Microsoft Search**  >  **解答**  >  [**Q&A**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/qnas)
 1. 若要新增問與答，請選取 [新增]****。
 若要編輯問與答，請在相關的問與答清單中選取問與答。 當您新增或編輯資訊時，預覽會自動更新。
 1. 儲存變更。

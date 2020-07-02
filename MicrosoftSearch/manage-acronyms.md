@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 在 Microsoft 搜尋中建立及更新縮寫的答案
-ms.openlocfilehash: cd9e1a48288e6df8f5746d937684a3f2eedd65df
-ms.sourcegitcommit: 46303c60e905c89c133278fa41e87055f81a8637
+ms.openlocfilehash: 9d58306751f735cef77eba4404597c73c0528c11
+ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44535354"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44996074"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>管理 Microsoft 搜尋中的縮寫詞答案
 
@@ -44,16 +44,16 @@ Microsoft 搜尋使用者可以在[Bing](https://Bing.com)使用首字母縮寫�
 
 ## <a name="set-up-acronyms-answers"></a>設定縮寫詞答案
 
-在 microsoft 365 系統[管理中心](https://admin.microsoft.com)中，移至 [**設定**  >  **Microsoft 搜尋**  > **縮寫**]，然後選取 [**新增縮寫**]。
+在 Microsoft 365 系統[管理中心](https://admin.microsoft.com)中，移至**Settings**[  >  **microsoft Search**  >  **解答**  >  [**縮寫**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)] 的 [設定]，然後選取 [**新增縮寫**]。
 
 Microsoft 搜尋會查詢兩個數據源，以提供使用者搜尋的縮寫答案：
 
-1. **編輯縮寫**。 由系統管理員在系統管理員[中央](https://admin.microsoft.com)提供。
+1. **編輯縮寫**。 由系統管理員在系統管理員[中央](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)提供。
 2. **挖掘的縮寫**。 由 Microsoft 搜尋從使用者的個人電子郵件和檔，以及組織內可公開使用的資料進行挖掘。
 
 ### <a name="set-up-editorial-acronyms"></a>設定編輯縮寫
 
-搜尋管理員可在[Microsoft 365 系統管理中心]( https://admin.microsoft.com)的 [[縮寫]](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch)索引標籤上設定編輯縮寫。 您可以從任何內部網站或存放庫向系統管理中心新增縮寫。 編輯縮寫可以新增至**已發佈**或**草稿**的狀態：
+搜尋管理員可以在[Microsoft 搜尋系統管理中心](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch)的 [[縮寫]](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)索引標籤上設定編輯縮寫。 您可以從任何內部網站或存放庫向系統管理中心新增縮寫。 編輯縮寫可以新增至**已發佈**或**草稿**的狀態：
 
 **發行狀態**。 組織中的雇員可透過 Microsoft 搜尋取得縮寫。
 
@@ -64,9 +64,9 @@ Microsoft 搜尋會查詢兩個數據源，以提供使用者搜尋的縮寫答�
 
 系統管理員可以個別新增首字縮寫或在 CSV 檔案中大量匯入。 使用下表所示的欄位上載 CSV 檔案：
 
-| 縮寫（強制） | 擴充（強制） | 說明  | 來源 | State （強制） |
+| 縮寫（強制） | 擴充（強制） | 描述  | 來源 | State （強制） |
 | --------- | --------- | ---------- | --------- |--------- |
-| *Xxx* | *拼寫縮寫* |  | *URL* | *已發佈或草稿* |
+| *Xxx* | *拼寫縮寫* |  | [URL]** | *已發佈或草稿* |
 
 ### <a name="csv-fields"></a>CSV 欄位
 

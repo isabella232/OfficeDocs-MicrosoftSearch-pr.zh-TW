@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 搜尋中的「平面圖」功能可協助使用者找出大樓中的人員、辦公室和其他功能。
-ms.openlocfilehash: e005767c255cb899793b6b4849882c7ec0561256
-ms.sourcegitcommit: 7ad6f4b0ab6cd7b912862273a8b4d48a6507bc29
+ms.openlocfilehash: 95941e57946f49de3a0558dc2d2c59b999151b37
+ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "44878240"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44996110"
 ---
 # <a name="manage-floor-plans"></a>管理基底計畫
 
@@ -67,7 +67,7 @@ Floor 計畫檔案必須採用 DWG 格式;DWG 檔案可包含文字標籤。 當
 
 ### <a name="step-5-add-building-locations"></a>步驟5：新增大樓位置
 
-地面計畫使用[位置](manage-locations.md)來定義您的辦公樓。 在 microsoft 365 系統[管理中心](https://admin.microsoft.com)中，移至 [**設定**  >  **Microsoft 搜尋**  >  **位置**]，然後選取 [**新增**]。 輸入組建的名稱、位址及關鍵字。 新增所需數目的辦公樓。
+地面計畫使用[位置](manage-locations.md)來定義您的辦公樓。 在 Microsoft 365 系統[管理中心](https://admin.microsoft.com)中，移至 [**設定**  >  **Microsoft 搜尋**  >  **答案**  >  [**位置**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)]，然後選取 [**新增**]。 輸入組建的名稱、位址及關鍵字。 新增所需數目的辦公樓。
 
 ![floorplans-locations.png](media/floorplans-locations.png)
 
@@ -77,13 +77,13 @@ Floor 計畫檔案必須採用 DWG 格式;DWG 檔案可包含文字標籤。 當
 
 在您可以使用基底計畫之前，必須建立 office 位置的索引。 這是一次性作業，可能需要長達48小時才能完成。 總時間將取決於您的組織的大小。
 
-在系統[管理中心](https://admin.microsoft.com)中，移至 [**設定**  >  **Microsoft 搜尋**  >  **基底計畫**]，然後選取 [**開始**]。 如果您未看到此通知，表示您的組織已完成此步驟。
+在系統[管理中心](https://admin.microsoft.com)中，移**Settings**至 [  >  **Microsoft Search**  >  **解答**  >  [**地面方案**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans) ** **] 中的 [設定]，然後選取 [開始]。 如果您未看到此通知，表示您的組織已完成此步驟。
 
 ![floorplans_hydrationstep.png](media/floorplans_hydrationstep.png)
 
 ### <a name="step-7-upload-floor-plans"></a>步驟7：上傳基底計畫
 
-1. 在系統[管理中心](https://admin.microsoft.com)中，移至 [**設定**  >  **Microsoft 搜尋**  >  **基底計畫**]，然後選取 [**新增**]。
+1. 在系統[管理中心](https://admin.microsoft.com)中，移至 [**設定**  >  **Microsoft 搜尋**  >  **答案**  >  [**基底方案**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans)]。
 2. 選取下拉式清單中的大樓，然後選取 **[下一步]**。 如果大樓未列出，請後退並[新增大樓位置](#step-5-add-building-locations)。
 3. 選取 [**上傳**檔案]，然後選擇您要上傳的地面計畫。
 4. 上傳完成後，您必須輸入在 floor 計畫檔案中所代表的 floor 編號。 然後選取 [下一步]****。
@@ -142,7 +142,7 @@ Floor 計畫檔案必須採用 DWG 格式;DWG 檔案可包含文字標籤。 當
 
 **A：** 在 Microsoft Visio、Autodesk AutoCAD 或任何其他 DWG 編輯器中建立 DWG 檔案。 請確定檔案中已標示10個或多個會議室。
 
-**問：** * DWG 檔案中的文字標籤的最佳格式是什麼？
+**問：** DWG 檔案中的文字標籤的最佳格式是什麼？
 
 **A：** 為了獲得最佳結果，文字標籤應包含底價編號和房間號碼。 下列範例會使用2或 SC 做為建立程式碼。
 <!-- markdownlint-disable no-inline-html -->

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 新增搜尋行業及自訂搜尋結果
-ms.openlocfilehash: 44b1b9ff211a65313f5c5cf532334335994c486d
-ms.sourcegitcommit: 0050e113517a36e3ca26028a04ac5c236caaf524
+ms.openlocfilehash: 60ab3423db0a86982df9c4332f0f22267c49dc04
+ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470279"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44996056"
 ---
 # <a name="customize-the-search-results-page"></a>自訂搜尋結果頁面
 
@@ -59,7 +59,7 @@ ms.locfileid: "44470279"
 
 若要在[SharePoint](https://sharepoint.com/) Home、 [Office](https://office.com)或[Bing](https://bing.com)中的 Microsoft 搜尋上建立垂直，請遵循下列步驟：
 
-1. 在 microsoft 365 系統 [管理中心](https://admin.microsoft.com)中，移至 **Settings**[   >  **microsoft 搜尋**   >  **縱向**設定]。
+1. 在 Microsoft 365 系統 [管理中心](https://admin.microsoft.com)中，移至 **Settings**[   >  **microsoft Search**   >  **自訂**  >  [**縱向**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)] [設定]。
 1. 選取 [ **新增**] 立即開始。  
 
 ### <a name="create-a-vertical-at-the-site-level"></a>在網站層級建立垂直
@@ -77,7 +77,7 @@ ms.locfileid: "44470279"
 
 您可以使用結果類型來設計版面配置，以定義結果在垂直方向上的顯示方式。 結果配置可讓您直接在搜尋結果中顯示重要資訊，因此使用者不必選取每個結果，即可查看其是否找到所要尋找的專案。
 
-搜尋「結果類型」是一種規則，可讓不同類型的搜尋結果以不同方式顯示。其由下列項目組成：
+A search result type is a rule that causes distinct kinds of search results to be displayed in different ways. It consists of the following:
 
 - **一個或多個**比較每個搜尋結果的條件，例如搜尋結果的內容來源。  
 - 用於符合條件之搜尋結果的**結果版面**配置。 結果版面配置會控制符合條件的所有結果在搜尋結果頁面上顯示和行為的方式。
@@ -88,7 +88,7 @@ ms.locfileid: "44470279"
   
 ### <a name="create-a-result-type-at-the-organization-level"></a>在組織層級建立結果類型
 
-1. 在系統[管理中心](https://admin.microsoft.com)中，移至 [**設定**  >  **Microsoft 搜尋**]，然後選取 [**結果類型**]。
+1. 在系統[管理中心](https://admin.microsoft.com)中，移至**設定**  >  **Microsoft Search**  >  **自訂**  >  [**結果類型**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes)。
 1. 若要新增**結果類型**，請選取 [ **新增**]。 若要編輯結果類型，請選取相關清單中的結果類型。
 
 ### <a name="create-a-results-type-at-the-site-level"></a>在網站層級建立結果類型
