@@ -77,7 +77,7 @@ ms.locfileid: "44996056"
 
 您可以使用結果類型來設計版面配置，以定義結果在垂直方向上的顯示方式。 結果配置可讓您直接在搜尋結果中顯示重要資訊，因此使用者不必選取每個結果，即可查看其是否找到所要尋找的專案。
 
-A search result type is a rule that causes distinct kinds of search results to be displayed in different ways. It consists of the following:
+搜尋「結果類型」是一種規則，可讓不同類型的搜尋結果以不同方式顯示。其由下列項目組成：
 
 - **一個或多個**比較每個搜尋結果的條件，例如搜尋結果的內容來源。  
 - 用於符合條件之搜尋結果的**結果版面**配置。 結果版面配置會控制符合條件的所有結果在搜尋結果頁面上顯示和行為的方式。
