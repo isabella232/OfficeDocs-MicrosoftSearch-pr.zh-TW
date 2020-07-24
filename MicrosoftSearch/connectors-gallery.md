@@ -13,21 +13,21 @@ search.appverid:
 - MET150
 - MOE150
 description: 列出 Microsoft 搜尋的所有 Microsoft Graph 連接器
-ms.openlocfilehash: 47782a9a429bf3ad75cffaadf6f67402638fd3a6
-ms.sourcegitcommit: 68cd28a84df120473270f27e4eb62de9eae455f9
+ms.openlocfilehash: 82718cdadc57bf9133b61183cdbd912e269fdc70
+ms.sourcegitcommit: f2323c43fc732890213223efac32006df5b92c28
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44850924"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45388010"
 ---
 # <a name="microsoft-graph-connectors-gallery"></a>Microsoft Graph 連接器圖庫
 
 
 #### <a name="in-this-article"></a>本文內容
-* <a href="#Microsoft">Microsoft 的連接器</a>
-* <a href="#Partners">合作夥伴的連接器</a>
+* <a href="#Microsoft"> Microsoft 連接器</a>
+* <a href="#Partners">由合作夥伴提供的連接器</a>
 
-<h2 id="Microsoft">Microsoft 的連接器</h2>
+<h2 id="Microsoft"> Microsoft 連接器</h2>
 <ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
@@ -120,27 +120,6 @@ ms.locfileid: "44850924"
             <div class="cardPadding">
                 <div class="card" style="overflow: hidden; height: 235px;">
                     <div class="cardText">
-                        <h3>檔案共用</h3>
-                        <p>由<a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p>透過此 Microsoft Graph 連接器，您組織中的使用者可以搜尋儲存在內部部署 Windows 檔案共用上的檔案。</p>
-                        <div style="margin-top:20px;bottom:15px;position:absolute;display:block">
-                            <div style="font-weight:500;width:150px;display:inline">
-                                <a href="file-share-connector.md" target="_blank" data-linktype="relative-path" style="font-weight:500;width:150px;display:inline">
-                                    <font color="0065BA">詳細資料</font>
-                                </a>
-                             <img src="media/FileConnectorLogo_Small.png" alt="File share" width="35" height="35" align="right" style="display:inline; margin-left:210px" data-linktype="relative-path"  />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card" style="overflow: hidden; height: 235px;">
-                    <div class="cardText">
                         <h3>MediaWiki</h3>
                         <p>由<a href="https://www.microsoft.com">Microsoft</a></p>
                         <p>透過此 Microsoft Graph 連接器，使用者可以在您的組織以 MediaWiki 所建立的 wiki 網站上搜尋知識型文章。</p>
@@ -157,8 +136,6 @@ ms.locfileid: "44850924"
             </div>
         </div>
     </li>
-</ul>
-<ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -180,6 +157,8 @@ ms.locfileid: "44850924"
             </div>
         </div>
     </li>
+</ul>
+<ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -205,7 +184,7 @@ ms.locfileid: "44850924"
 
 ---
 
-<h2 id="Partners">合作夥伴的連接器</h2>
+<h2 id="Partners">由合作夥伴提供的連接器</h2>
 <!--- 1 ROW --->
 <h3 id="A"></h3>
 <ul class="panelContent cardsZ">
@@ -476,7 +455,7 @@ ms.locfileid: "44850924"
                     <div class="cardText">
                         <h3>Azure Data Lake</h3>
                         <p>依<a href="https://www.accenture.com">Accenture</a></p>
-                        <p>Azure Data Lake connector 會在根或指定的路徑上，從 Azure Data Lake Store 雲端編目內容。 每個檔案都會以其中繼資料（大小、位置、最後存取時間等）提交。 自動探索更新。</p>
+                        <p>Azure Data Lake connector 會從 root 或指定的路徑編目 ADLS 雲端的內容。 每個檔案都會以其中繼資料（大小、位置、最後存取時間等）提交。 自動探索更新。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Azure+Data+Lake+Connector"><font color="0065BA">詳細資料</font></a>
                         </p>
@@ -645,7 +624,7 @@ ms.locfileid: "44850924"
                     <div class="cardText">
                         <h3>Elasticsearch</h3>
                         <p>依<a href="https://www.accenture.com">Accenture</a></p>
-                        <p>Elasticsearch 連接器會使用使用者定義的查詢來編目彈性索引的內容。 它可以自動識別更新，也可以在索引中使用時間戳。</p>
+                        <p>Elasticsearch 連接器會使用使用者定義的查詢來編目彈性索引中的內容。 它可以自動識別更新，也可以在索引中使用時間戳。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Elasticsearch+Connector"><font color="0065BA">詳細資料</font></a>
                         </p>
@@ -1104,7 +1083,7 @@ ms.locfileid: "44850924"
                     <div class="cardText">
                         <h3>iManage 工作</h3>
                         <p>透過<a href="https://www.bainsight.com">BA 真知灼見</a></p>
-                        <p>IManage 工作連接器提供完整的安全性，並以高輸送量運作，以將編目時間降至最低，同時維持對工作效能的低影響。 它只需要讀取權，而且不需要在任何 iManage 伺服器上安裝用戶端軟體。 這會使存取 iManage 中儲存的所有內容產生無縫且同時存取。</p>
+                        <p>IManage 工作連接器提供完整的安全性，並以高輸送量運作，以盡可能縮短編目時間，同時維持對工作的低效能影響。 它只需要讀取權，而且不需要在任何 iManage 伺服器上安裝用戶端軟體。 這會使存取 iManage 中儲存的所有內容產生無縫且同時存取。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/imanage-work-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細資料</font></a>
                         </p>
@@ -1222,7 +1201,7 @@ ms.locfileid: "44850924"
                     <div class="cardText">
                         <h3>Ldap</h3>
                         <p>透過<a href="https://www.bainsight.com">BA 真知灼見</a></p>
-                        <p>LDAP 連接器可讓組織連線至任何 LDAP 相容的目錄，並為其建立任何記錄的索引。 組織可以篩選為目錄的特定子集，並只檢索特定欄位，使搜尋使用者、連絡人或群組的使用者，便於搜尋目錄中的任何位置。</p>
+                        <p>LDAP 連接器可讓組織連線到任何符合 LDAP 的目錄，並為其建立任何記錄。 組織可以篩選為目錄的特定子集，並只檢索特定欄位，使搜尋使用者、連絡人或群組的使用者，便於搜尋目錄中的任何位置。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/indexing-connectors/1/"><font color="0065BA">詳細資料</font></a>
                         </p>
@@ -1511,7 +1490,7 @@ ms.locfileid: "44850924"
             <div class="cardPadding">
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
-                        <h3>目的</h3>
+                        <h3>目標</h3>
                         <p>透過<a href="https://www.bainsight.com">BA 真知灼見</a></p>
                         <p>目標連接器專為目標而開發，建立目標的安全連線，並將包含目標架構的中繼資料與內容對應至搜尋引擎架構。 然後，它會在名為編目的程式中，解壓縮內容，並將其送入搜尋引擎。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
