@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 新增搜尋行業及自訂搜尋結果
-ms.openlocfilehash: 60ab3423db0a86982df9c4332f0f22267c49dc04
-ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
+ms.openlocfilehash: 9bc0448c1105c26b0e083316db04887327d8db41
+ms.sourcegitcommit: f2323c43fc732890213223efac32006df5b92c28
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44996056"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45387983"
 ---
 # <a name="customize-the-search-results-page"></a>自訂搜尋結果頁面
 
@@ -41,7 +41,7 @@ ms.locfileid: "44996056"
 
 開始之前，請確定連接器已編制索引。 這可能需要最多48小時，視檔案大小而定。
 
-您無法為位於[SharePoint](https://sharepoint.com/)的內容，或從檔案[共用連接器](file-share-connector.md)編制索引的內容建立垂直。 瞭解如何為[內容編制索引](configure-connector.md)。
+您無法為位於[SharePoint](https://sharepoint.com/)中的內容建立垂直。
 
 新增垂直的三個基本步驟：
 

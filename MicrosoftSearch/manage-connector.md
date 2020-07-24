@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理 microsoft Search 的 Microsoft Graph 連接器。
-ms.openlocfilehash: 3e652b9afad78f784ff4c726ecab34bef883d4c3
-ms.sourcegitcommit: a8a6c949f249d106f37103e127d2ea7df730f7a3
+ms.openlocfilehash: dfbc58d7e51fca0491dc7e4452ba4312ff3dfd69
+ms.sourcegitcommit: f2323c43fc732890213223efac32006df5b92c28
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44702765"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45388001"
 ---
 # <a name="manage-your-connector-for-microsoft-search"></a>管理您的 Microsoft 搜尋連接器
 
@@ -76,7 +76,6 @@ ms.locfileid: "44702765"
 2001 | 因為佇列中的更新數目很多，所以會限制索引。 根據佇列的不同，可能需要一些時間才能完成更新。 | 請稍候，直到佇列清除為止。
 2002 | 由於不支援的專案格式設定，索引失敗。 | 如需詳細資訊，請參閱連接器特有的檔。
 2003 | 由於不支援的專案內容，索引失敗。 | 如需詳細資訊，請參閱連接器特有的檔。
-2004 | 檔案[大小](https://docs.microsoft.com/microsoftsearch/file-share-connector#content-requirements)太大，無法編制索引。 在處理前，其必須為 100 MB 或以下，且不大於 4 MB。 在此情況下，檔案會部分編制索引。 檔案中的一些片語可能不會傳回搜尋結果。 | 如需詳細資訊，請參閱檔案[共用特定檔](https://docs.microsoft.com/MicrosoftSearch/file-share-connector#content-requirements)。
 5000 | 發生錯誤。 若繼續，請與支援人員聯繫。 |
 
 ## <a name="preview-limitations"></a>預覽限制

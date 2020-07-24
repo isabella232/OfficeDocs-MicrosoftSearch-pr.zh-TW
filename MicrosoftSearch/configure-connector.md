@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 microsoft 內置的連接器以進行 Microsoft 搜尋
-ms.openlocfilehash: e5b40326bdd83f461e7ce9a45889ad82245e20aa
-ms.sourcegitcommit: 68cd28a84df120473270f27e4eb62de9eae455f9
+ms.openlocfilehash: 30c60e94e8e633bce90bbc1984eee35d3ceda771
+ms.sourcegitcommit: f2323c43fc732890213223efac32006df5b92c28
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44850887"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45387967"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 
@@ -29,7 +29,6 @@ ms.locfileid: "44850887"
 * [Azure DevOps](azure-devops-connector.md)
 * [Azure SQL](MSSQL-connector.md)
 * [企業網站](enterprise-web-connector.md)
-* [檔案共用](file-share-connector.md)
 * [MediaWiki](mediawiki-connector.md)
 * [Microsoft SQL server](MSSQL-connector.md)
 * [ServiceNow](servicenow-connector.md)
@@ -43,7 +42,7 @@ ms.locfileid: "44850887"
 3. 選取 [**新增連接器**]。
 4. 從可用的連接器清單中，選取您選擇的連接器。
 
-![可用的資料來源包括： ADLS Gen2 Connector、Enterprise 網站、ServiceNow、檔案共用、Microsoft SQL server 和 MediaWiki。](media/addconnector_final.png)
+![可用的資料來源包括： Azure DevOps Connector、ServiceNow、ADLS Gen2、Enterprise 網站、MediaWiki、Microsoft SQL server 和 Azure SQL。](media/add_connector.png)
 
 ### <a name="name-the-connector"></a>命名連接器
 
@@ -75,7 +74,7 @@ ms.locfileid: "44850887"
 可 | 依查詢搜尋特定屬性的相符。 您可以在查詢中以程式設計方式或逐字方式指定屬性名稱。 |  若**Title**屬性是可查詢的，則支援查詢**標題： Enterprise** 。
 檢索 | 在結果類型中只能使用可檢索的屬性，並顯示在搜尋結果中。 |
 
-針對除檔案共用連接器以外的所有連接器，必須手動設定自訂類型。 若要啟動每個欄位的搜尋功能，您需要對應至屬性清單的搜尋架構。 連接嚮導會根據您所選擇的來源屬性集，自動選取搜尋架構。 您可以在 [搜尋架構] 頁面中選取每個屬性和屬性的核取方塊，以修改此架構。
+針對所有連接器，必須手動設定自訂類型。 若要啟動每個欄位的搜尋功能，您需要對應至屬性清單的搜尋架構。 連接嚮導會根據您所選擇的來源屬性集，自動選取搜尋架構。 您可以在 [搜尋架構] 頁面中選取每個屬性和屬性的核取方塊，以修改此架構。
 
 ![您可以新增或移除查詢、搜尋及檢索功能，以自訂連接器的架構。](media/manageschema.png)
 
@@ -90,7 +89,7 @@ ms.locfileid: "44850887"
 
 ### <a name="manage-search-permissions"></a>管理搜尋許可權
 
-存取控制清單（ACLs）決定組織中的哪些使用者可以存取每個資料項目目。 檔案共用連接器只支援可對應至[Azure Active Directory （AZURE AD）](https://docs.microsoft.com/azure/active-directory/)的 ACLs。 所有其他連接器都支援所有使用者均可看到的搜尋許可權。
+存取控制清單（ACLs）決定組織中的哪些使用者可以存取每個資料項目目。 所有的連接器都支援所有使用者皆可看到的搜尋許可權。
 
 ### <a name="set-the-refresh-schedule"></a>設定重新整理排程
 
@@ -98,11 +97,11 @@ ms.locfileid: "44850887"
 
 使用**完整**編目時，搜尋引擎會處理及索引內容來源中的每個專案，而不論先前的編目。 在下列情況下，完整編目的運作方式最為好：
 
-* 您必須偵測資料刪除。
+* 偵測資料刪除。
 * 增量式編目無法編目錯誤的內容。
-* Microsoft 搜尋的軟體更新是必要的。 更新會修改搜尋架構。
 * 已修改 ACLs。
 * 已修改編目規則。
+* Microsoft 搜尋的軟體更新是必要的。 更新會修改搜尋架構。
 
 使用累加編目**時，搜尋**引擎只可以處理和編制自上次成功編目之後所建立或修改的專案。 因此，不會重新索引內容來源中的所有資料。 增量式編目最適合偵測內容、中繼資料、許可權及其他更新。
 
@@ -120,10 +119,10 @@ ms.locfileid: "44850887"
 
 透過 Microsoft Search 使用者介面（UI），您的使用者可以從您的[microsoft 365](https://www.microsoft.com/microsoft-365)生產力應用程式和更廣泛的 microsoft 體系中搜尋內容。 搜尋類別是指使用者在[SharePoint](https://sharepoint.com/)、 [Microsoft Office](https://Office.com)及[Bing](https://Bing.com)中的 microsoft 搜尋中查看其搜尋結果時所顯示的索引標籤。 您可以自訂搜尋範圍來縮小結果，如此只會顯示特定類型的搜尋結果。 這些縱向顯示為搜尋結果頁面頂端的 tab 鍵。 現代結果類型（MRT.LOG）是指定結果呈現方式的 UI。
 
-您必須建立自己的行業和結果類型，讓使用者可以從新的連線中查看搜尋結果。 在此步驟中，您的連線中的資料不會顯示在搜尋結果頁面上。
+建立您自己的行業和結果類型，讓使用者可以從新的連線中查看搜尋結果。 在此步驟中，您的連線中的資料不會顯示在搜尋結果頁面上。
 
 若要深入瞭解如何建立您的行業和 MRTs，請參閱[搜尋結果頁面自訂](customize-search-page.md)。
 
-## <a name="how-do-i-know-this-worked"></a>如何知道這是否正常運作？
+## <a name="how-do-i-know-the-connection-setup-worked"></a>如何知道連線設定是否運作正常？
 
 在系統[管理中心](https://admin.microsoft.com)的 [**連接器**] 索引標籤下，移至您發佈的連線清單。 若要瞭解如何進行更新和刪除，請參閱[管理您的連接器](manage-connector.md)。
