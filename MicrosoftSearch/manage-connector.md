@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理 microsoft Search 的 Microsoft Graph 連接器。
-ms.openlocfilehash: dfbc58d7e51fca0491dc7e4452ba4312ff3dfd69
-ms.sourcegitcommit: f2323c43fc732890213223efac32006df5b92c28
+ms.openlocfilehash: adf98bccab703e2ae5ecd99b059e1426a50609c5
+ms.sourcegitcommit: 89484fec9af755240d5d1bc399501d51ee40571d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45388001"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46563885"
 ---
 # <a name="manage-your-connector-for-microsoft-search"></a>管理您的 Microsoft 搜尋連接器
 
@@ -31,7 +31,7 @@ ms.locfileid: "45388001"
 
 作業 | Microsoft 建立的連接器 | 夥伴或自訂建立的連接器
 --- | --- | ---
-新增連線 | ： heavy_check_mark：（請參閱[設定您的 Microsoft 建連接器](configure-connector.md)） | ： x：（請參閱合作夥伴或自訂的連接器系統管理員 UX）
+新增連線 | ： heavy_check_mark： (請參閱[設定您的 Microsoft 建連接器](configure-connector.md))  | ： x： (參照您的合作夥伴或自訂的連接器 admin UX) 
 刪除連線 | ： heavy_check_mark： | ： heavy_check_mark：
 編輯已發佈的連線 | ： heavy_check_mark： Name<br></br> ： heavy_check_mark： Description<br></br> ： heavy_check_mark：外部資料源的驗證認證<br></br> ： heavy_check_mark：內部部署資料來源的閘道認證<br></br> ： heavy_check_mark：重新整理排程<br></br> | ： heavy_check_mark： Name<br></br> ： heavy_check_mark： Description
 編輯拔模連接 | ： heavy_check_mark： | 軸
@@ -58,7 +58,7 @@ ms.locfileid: "45388001"
 
 若要查看錯誤的特定詳細資料，請選取其錯誤碼。 螢幕會顯示錯誤詳細資料和連結。 最近的錯誤會出現在頂端。 請參閱下表中的範例。
 
-![已選取連接器的連接器清單和詳細資料窗格，顯示連接器的錯誤清單。 ](media/errormonitoring2.png)
+![已選取連接器的連接器清單和詳細資料窗格，顯示連接器的錯誤清單。](media/errormonitoring2.png)
 
 以下是針對任何連線可能會出現的不同錯誤清單。 如果這些解決方案無法運作，請聯繫支援人員或傳送我們的[意見](connectors-feedback.md)反應。
 
@@ -78,6 +78,35 @@ ms.locfileid: "45388001"
 2003 | 由於不支援的專案內容，索引失敗。 | 如需詳細資訊，請參閱連接器特有的檔。
 5000 | 發生錯誤。 若繼續，請與支援人員聯繫。 |
 
+## <a name="monitor-your-index-quota-utilization"></a>監視索引配額利用率 
+在預覽期間內，每個組織都有最多2000000個專案的固定配額，可從所有連線的外部系統編制內容索引。
+
+> [!NOTE]
+> 在預覽期間內，圖形連接器配額可供免費使用。 這會在正式供貨時變更。 
+
+可用的索引配額和消耗會顯示在 [連接器] 登陸頁面上。
+
+![索引配額使用狀況列。](media/quota_utilization.png)
+
+[配額使用狀況] 列會根據您的組織的配額使用量，指出不同的狀態：
+
+狀態 | 配額使用量
+--- | ---
+一般 | 1-69%
+高 | 70-89%
+重要 | 90%-99%
+Full | 100%
+
+已編制索引的專案數也會顯示每個連線。 每個連線編制索引的專案數會占組織可用的總配額。
+
+當您的組織超過索引配額時，所有作用中的連線將會受到影響，而且這些連線將會停止 ingesting 內容。 若要修正此問題，您可以執行下列其中一項操作：
+
+* 找出 ingested 過多內容的連線，並更新這些連線以編制索引較少的專案，以騰出空間做為配額。 若要更新連線，您必須使用新的攝取篩選來刪除及建立新的連線，而這會帶來較少的專案。
+
+* 永久刪除一或多個連線
+
+* 如果您需要增加組織的索引配額限制，請與 Microsoft 聯繫。
+
 ## <a name="preview-limitations"></a>預覽限制
 
 * 當您**發佈**Microsoft 建立的連接器時，可能需要幾分鐘的時間來建立連線。 在這段時間內，該連線會顯示其狀態為 [擱置中]。 此外，也不會自動重新整理，所以您需要手動重新整理。
@@ -85,3 +114,5 @@ ms.locfileid: "45388001"
 * [Microsoft 365 系統管理中心](https://admin.microsoft.com)不支援在發佈連接後，查看及編輯**搜尋架構**。 若要編輯搜尋架構，請刪除連接，然後建立新的連線。
 
 * 當您管理連線的重新整理**排程**時，會顯示在每個會話期間同步處理的專案數。 不過，無法使用同步處理歷程記錄。
+
+* 當您的組織達到重要或更高限制的配額利用率時，將**不**會透過訊息中心通知您。  定期檢查 [連接器管理] 頁面，以確保已設定的連線未超出組織的整體配額限制。
