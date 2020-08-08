@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 在 Microsoft 搜尋中建立及更新縮寫的答案
-ms.openlocfilehash: bbdd27b00be323db8d80994fe9ff6ab7fac17416
-ms.sourcegitcommit: b5142052ed17cd430b4c193b67d8f3d90d94ba6e
+ms.openlocfilehash: 68e62884898e3aa081fc32438ad9a80068092738
+ms.sourcegitcommit: b3738f5ab02bfba9dedf099e035f3850607be480
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "45143863"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46591506"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>管理 Microsoft 搜尋中的縮寫詞答案
 
@@ -27,7 +27,7 @@ ms.locfileid: "45143863"
 
 ## <a name="what-users-experience"></a>使用者經驗
 
-Microsoft Search 使用者可以在[Bing](https://Bing.com)和[SharePoint](https://products.office.com/sharepoint/collaboration)中取得具有縮寫的定義。 在 [**搜尋**] 方塊中，使用者輸入如下範例的查詢：
+Microsoft Search 使用者可以在[Bing](https://Bing.com)、 [SharePoint](https://products.office.com/sharepoint/collaboration)和[Office 365](https://Office.com)中取得具有縮寫的定義。 在 [**搜尋**] 方塊中，使用者輸入如下範例的查詢：
 
 - *何謂*DNN
 - *定義*DNN
@@ -64,7 +64,7 @@ Microsoft 搜尋會查詢兩個數據源，以提供使用者搜尋的縮寫答�
 
 系統管理員可以個別新增首字縮寫或在 CSV 檔案中大量匯入。 使用下表所示的欄位上載 CSV 檔案：
 
-| 縮寫（強制） | 擴充（強制） | 說明  | 來源 | State （強制） |
+| 縮寫 (強制)  | 擴充 (強制)  | 描述  | 來源 | 狀態 (強制)  |
 | --------- | --------- | ---------- | --------- |--------- |
 | *Xxx* | *拼寫縮寫* |  | [URL]** | *已發佈或草稿* |
 
@@ -108,7 +108,7 @@ Microsoft 搜尋可確保只有對檔具有存取權和許可權的使用者才�
 
 **問：使用者如何觸發縮寫詞答案？**
 
-**答**：若要取得縮寫的答案，使用者必須在[Bing](https://bing.com)或[SharePoint](https://products.office.com/sharepoint/collaboration) **搜尋**方塊中輸入特定的查詢模式。 目前， [Office 365](https://Office.com)中無法使用縮寫詞答案。
+**答**：若要取得縮寫的答案，使用者必須在 [ [Bing](https://bing.com)]、[ [SharePoint](https://products.office.com/sharepoint/collaboration)] 或 [ [Office 365](https://Office.com) **搜尋**] 方塊中輸入特定的查詢模式。
 
 **問：當您收到或傳送新的電子郵件或檔之後，挖掘的首字縮寫會出現多久時間？**
 
@@ -126,7 +126,3 @@ Microsoft 搜尋可確保只有對檔具有存取權和許可權的使用者才�
 
 **A**：若要在搜尋結果中關閉顯示挖掘的縮寫，請遵循[商務產品的連絡人支援服務](https://docs.microsoft.com/office365/admin/contact-support-for-business-products?redirectSourcePath=%252f%252farticle%252fContact-Office-365-for-business-support-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online#BKMK_call_support)中的指示，建立客戶支援憑證。
 在您建立支援票證之後，挖掘的首字縮寫會花長達48小時的時間，才會出現在搜尋結果中。
-
-**問：我何時會在[Office 365](https://Office.com)中看到縮寫的答案？**
-
-**答**： Office 365 中的縮寫答案是我們產品藍圖的一部分，但目前無法提供日期或時間範圍。
