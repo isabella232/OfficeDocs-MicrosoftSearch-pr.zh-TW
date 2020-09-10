@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
 description: 個別尋找並更新解答，或使用 Microsoft Search 工具來編輯 Q&一次。
-ms.openlocfilehash: 78a6ee0ff14f3347b0b2e2a65cc1ee0f68500981
-ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
+ms.openlocfilehash: 2a8b0727ef3540a35d617cf6c8bae7b0d99767a8
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44996083"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422998"
 ---
 # <a name="manage-qas"></a>管理問與答
 
@@ -26,9 +26,8 @@ ms.locfileid: "44996083"
 
 ## <a name="add-or-edit-a-single-qa"></a>新增或編輯單一問與答
 
-1. 移至 **Microsoft 365 系統管理中心**。
-1. 在功能窗格中，移至 [**設定**]  >  **Microsoft Search**  >  **解答**  >  [**Q&A**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/qnas)
-1. 若要新增問與答，請選取 [新增]****。
+1. 在 [Microsoft 365 系統管理中心](https://admin.microsoft.com)中，移至 [**Q&A**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/qnas)
+1. 若要在中加入 Q&，請選取 [ **新增**]。
 若要編輯問與答，請在相關的問與答清單中選取問與答。 當您新增或編輯資訊時，預覽會自動更新。
 1. 儲存變更。
 
@@ -61,8 +60,8 @@ ms.locfileid: "44996083"
 
 目前，瀏覽器擴充功能可用於 Microsoft Edge 和 Chrome。
 
-- 若要下載 Edge （舊版）的分機，請移至[Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab)。
-- 若要下載分機鑲邊或 Edge （Chromium），請移至[Chrome web store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm)。
+- 若要下載 Edge 的分機 (舊版) ，請移至 [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab)。
+- 若要下載分機鑲邊或 Edge (Chromium) ，請移至 [Chrome web store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm)。
 
 ## <a name="bulk-add-or-edit-qas"></a>大量新增或編輯問與答
 
@@ -77,7 +76,7 @@ ms.locfileid: "44996083"
 若要匯入或匯出 Q&如下：
 
 1. 在 [問與答] 索引標籤的右上角，選取 [匯入]****。
-選取 [**匯出**]，下載所有現有的 Q&，如 .csv 檔案中所示。
+選取 [ **匯出** ]，下載所有現有的 Q&，如 .csv 檔案中所示。
 1. 在右窗格中，選取要使用 .csv 檔案匯入的選項。 下載範本檔案，以取得必要欄位及詳細資料的清單。
 1. 新增或編輯 Q&範本檔中的詳細資料，然後將它儲存在您的電腦上。
 1. 在 [ **Import Q&** 窗格中，選取 **[流覽]**，然後選取您要匯入的 .csv 檔案。
@@ -89,10 +88,10 @@ ms.locfileid: "44996083"
 - 如果您包含現有書籤的**識別碼**，將會以匯入檔案中的資訊加以取代。
 - 如果現有的書簽具有相同的標題或 URL，則會使用匯入檔案中的資訊更新書簽。
 - 並非範本檔案中的所有欄位都是必要的，必要的欄位也視書簽狀態而有所不同。
-- 根據 [**省/州**] 欄位，書簽會儲存為*草稿*、*建議*或*排程*，或是自動發行。
+- 根據 [ **省/州** ] 欄位，書簽會儲存為 *草稿*、 *建議*或 *排程*，或是自動發行。
 - 針對管理多個組織的合作夥伴：您可以從一個組織匯出書簽，然後將其匯入另一個組織。 但您必須在匯入之前，先移除 [識別碼]**** 資料行中的資料。
 
 > [!NOTE]
 > 您無法匯入 Q&，如同範本檔案中有任何錯誤。 若要防止錯誤，請確定您的匯入檔案格式正確，並包含所有必要的資訊。
 
-如需避免錯誤的詳細資訊，請參閱[防止匯入錯誤](manage-bookmarks.md#prevent-import-errors)。
+如需避免錯誤的詳細資訊，請參閱 [防止匯入錯誤](manage-bookmarks.md#prevent-import-errors)。

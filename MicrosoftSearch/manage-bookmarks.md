@@ -13,24 +13,23 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: 建立和更新用來大量編輯 Microsoft 搜尋書簽結果的書簽和方式
-ms.openlocfilehash: 926fae2a4bd6bb6a436a3b5ea46f21077a23dcab
-ms.sourcegitcommit: 996b2c0538e28b71441461a371a62339cb6d476f
+ms.openlocfilehash: 2c0b42e4be1307aa45e4cab3f5c923a7808375e4
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45167455"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422872"
 ---
 # <a name="manage-bookmarks"></a>管理書籤
 
 只要幾個步驟，您便可以建立書籤。 每個書籤都包括標題、URL，和一組能觸發書籤的關鍵字。 您也可以將類別新增至可用於管理入口網站之排序和篩選的書簽。 一個書籤可以有多個關鍵字，數個書籤可以共用相同的關鍵字，但不能共用保留的關鍵字。 建立或修改書籤時，搜尋索引會立即重新整理，且書籤會立即可供使用者使用。
 
-如果您的組織已在 SharePoint 中提升結果，您可以將升級後的結果匯入**Microsoft 搜尋**中，並讓您的使用者可以使用匯入的內容。 這是一種簡單的方法，可在您設定**Microsoft 搜尋**後快速填入搜尋結果，並讓使用者更有效率。 建議您使用來自 SharePoint 提升的結果做為參考，以了解如何指定和建立相關的搜尋結果。
+如果您的組織已在 SharePoint 中提升結果，您可以將升級後的結果匯入 **Microsoft 搜尋** 中，並讓您的使用者可以使用匯入的內容。 這是一種簡單的方法，可在您設定 **Microsoft 搜尋** 後快速填入搜尋結果，並讓使用者更有效率。 建議您使用來自 SharePoint 提升的結果做為參考，以了解如何指定和建立相關的搜尋結果。
 
 ## <a name="add-or-edit-a-single-bookmark"></a>新增或編輯單一書籤
 
-1. 移至 **Microsoft 365 系統管理中心**。
-1. 在功能窗格中，移至 [**設定**  >  **Microsoft 搜尋**  >  **答案**  >  [**書簽**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks)]。
-1. 若要新增書籤，請選取 [新增]****。
+1. 在 [Microsoft 365 系統管理中心](https://admin.microsoft.com)中，移至 [ [**書簽**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks)]。
+1. 若要新增書簽，請選取 [ **新增**]。
 若要編輯書籤，請在相關的書籤清單中選取書籤。
 1. 當您新增或編輯資訊時，預覽會自動更新。
 1. 儲存變更。
@@ -41,8 +40,8 @@ ms.locfileid: "45167455"
 
 目前提供 Edge 和 Chrome 的瀏覽器擴充功能。
 
-- 若要下載 Edge extensions，請移至[Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab)並下載應用程式。
-- 若要下載 Chrome extensions，請移至[chrome web store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm)並下載應用程式。
+- 若要下載 Edge extensions，請移至 [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) 並下載應用程式。
+- 若要下載 Chrome extensions，請移至 [chrome web store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm) 並下載應用程式。
 
 ## <a name="bulk-add-or-edit-bookmarks"></a>大量新增或編輯書籤
 
@@ -88,7 +87,7 @@ ms.locfileid: "45167455"
 若要防止書簽對書簽重複錯誤，請遵循下列最佳作法：
 
 - 請勿將重複的 URL 用於不同的書簽。 如果 URL 已指派給其他書簽，而且您是從匯入檔案中重新加入，您會收到錯誤。 這也適用于其他類型的答卷的重複 URLs。
-- 更新現有的書簽時，請使用 [*書簽識別碼*] 欄。 您可以更新現有書簽的任何其他屬性，例如關鍵字或描述，但您應確定*書簽識別碼*位於匯入檔案的適當欄中。 如果*書簽識別碼*存在，服務就不會將它視為新增，也不會將其當作錯誤處理。
+- 更新現有的書簽時，請使用 [ *書簽識別碼* ] 欄。 您可以更新現有書簽的任何其他屬性，例如關鍵字或描述，但您應確定 *書簽識別碼* 位於匯入檔案的適當欄中。 如果 *書簽識別碼* 存在，服務就不會將它視為新增，也不會將其當作錯誤處理。
 
 ## <a name="power-apps"></a>Power Apps
 
@@ -104,9 +103,8 @@ ms.locfileid: "45167455"
 
 ### <a name="add-a-power-app-to-a-bookmark"></a>將電源 App 新增至書簽
 
-1. 尋找您要新增之[電源應用程式的應用程式識別碼](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id)。
-1. 登入[**Microsoft 365 系統管理中心**](https://admin.microsoft.com)。
-1. 在功能窗格中，移至 [**設定**  >  **Microsoft 搜尋**  >  **答案**  >  [**書簽**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks)]。
+1. 尋找您要新增之 [電源應用程式的應用程式識別碼](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) 。
+1. 在 [Microsoft 365 系統管理中心](https://admin.microsoft.com)中，移至 [ [**書簽**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks)]。
 1. 新增書籤或尋找您想要新增 **PowerApp** 的現有書籤。
 1. 在 [書籤設定]**** 中，選取 [PowerApp]****，然後選取 [新增 PowerApp]****。
 1. 輸入或貼上**應用程式識別碼**。

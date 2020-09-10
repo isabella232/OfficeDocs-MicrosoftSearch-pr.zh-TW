@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8ab9aa00-cd74-405f-8410-9a1c3cfacdb9
 description: 隨著時間，您可能會需要更新位置的狀態和內容以讓它保持相關。
-ms.openlocfilehash: a5d3209e2b6e9269ff2e5986cf81de705ae1cc4d
-ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
+ms.openlocfilehash: ab093cca1c340268b2fd43f7594eb48eddf32208
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44996065"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422881"
 ---
 # <a name="manage-locations"></a>管理位置
 
@@ -28,9 +28,8 @@ ms.locfileid: "44996065"
 
 ### <a name="add-or-edit-a-single-location"></a>新增或編輯單一位置
 
-1. 移至 **Microsoft 365 系統管理中心**。
-1. 在功能窗格中，移至 [**設定**  >  **Microsoft 搜尋**  >  **答案**  >  [**位置**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)]
-1. 若要新增新的位置，請選取 [新增]****。
+1. 在[Microsoft 365 系統管理中心](https://admin.microsoft.com)中，移至 [[**位置**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)]
+1. 若要新增位置， **請選取 [新增]**。
 1. 若要編輯位置，請在相關的位置清單中選取該位置。
 1. 當您新增或編輯資訊時，預覽會自動更新。
 1. 儲存變更。
@@ -58,10 +57,10 @@ ms.locfileid: "44996065"
 以下是有關範本檔案的一些重點：
 
 - 永不編輯這些欄位中的資料：*識別碼*、*上次修改日期*，以及*上次修改者*
-- 如果您包括現有位置的*識別碼*，它會被匯入檔案中的資訊所取代。
+- 如果您包括現有位置的 *識別碼* ，它會被匯入檔案中的資訊所取代。
 - 如果存在同名的現有位置，該位置將會以匯入檔案中的資訊進行更新。
 - 並非範本檔案中的所有欄位都是必要的，必要的欄位會視位置狀態而異。
-- 根據 [*省/州*] 欄位，位置將會儲存為草稿、建議、排程，或會自動發行。
+- 根據 [ *省/州* ] 欄位，位置將會儲存為草稿、建議、排程，或會自動發行。
 - 針對管理多個組織的合作夥伴，您可以從一個組織匯出您的位置，然後將其匯入另一個組織。 但您必須在匯入之前，先移除 [識別碼]** 資料行中的資料。
 
 > [!NOTE]

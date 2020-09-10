@@ -1,7 +1,7 @@
 ---
 title: 連接器預覽
-ms.author: mounika.narayanan
-author: monaray
+ms.author: monaray
+author: monaray97
 manager: shohara
 ms.audience: Admin
 ms.topic: article
@@ -12,20 +12,20 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解 microsoft 搜尋的 Microsoft Graph 連接器預覽。
-ms.openlocfilehash: 4bcd8360957be69bc701e8b356cd222de32bfc5f
-ms.sourcegitcommit: 64eea81f8c1db9ee955013462a7b51612fb7d0b7
+ms.openlocfilehash: 81d169074a316b6ab07f47156e0f057e50c12e3e
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "44604381"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422890"
 ---
 # <a name="microsoft-graph-connectors-preview"></a>Microsoft Graph 連接器預覽
 
-Microsoft Graph 連接器和 Microsoft Search APIs （查詢和索引）目前處於預覽狀態。 若要存取連接器功能，您必須在您的租使用者中開啟 [目標版本] 選項。 這是早期預覽，但沒有服務層級保證。 我們鼓勵客戶嘗試連接器功能並提供意見反應。 在預覽期間，我們不建議使用連接器進行生產用途。
+Microsoft Graph 連接器和 Microsoft Search APIs (查詢和索引) 目前在預覽狀態中。 若要存取連接器功能，您必須在您的租使用者中開啟 [目標版本] 選項。 這是早期預覽，但沒有服務層級保證。 我們鼓勵客戶嘗試連接器功能並提供意見反應。 在預覽期間，我們不建議使用連接器進行生產用途。
 
 ## <a name="set-up-targeted-release"></a>設定目標版本
 
-若要嘗試連接器，您必須為組織中的所有使用者設定 [**目標發行**選項]。 若要深入瞭解目標發行選項及設定方式，請參閱[在 Office 365 中設定標準或目標發行選項](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)。
+若要嘗試連接器，您必須為組織中的所有使用者設定 [ **目標發行** 選項]。 若要深入瞭解目標發行選項及設定方式，請參閱 [在 Office 365 中設定標準或目標發行選項](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)。
 
 ## <a name="choose-a-preview-environment"></a>選擇預覽環境
 

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 在 Microsoft 搜尋中建立及更新縮寫的答案
-ms.openlocfilehash: 68e62884898e3aa081fc32438ad9a80068092738
-ms.sourcegitcommit: b3738f5ab02bfba9dedf099e035f3850607be480
+ms.openlocfilehash: e328ecb7604a144b51f3a1483eef1b1c3a7e0bcb
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46591506"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422944"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>管理 Microsoft 搜尋中的縮寫詞答案
 
@@ -27,33 +27,33 @@ ms.locfileid: "46591506"
 
 ## <a name="what-users-experience"></a>使用者經驗
 
-Microsoft Search 使用者可以在[Bing](https://Bing.com)、 [SharePoint](https://products.office.com/sharepoint/collaboration)和[Office 365](https://Office.com)中取得具有縮寫的定義。 在 [**搜尋**] 方塊中，使用者輸入如下範例的查詢：
+Microsoft Search 使用者可以在 [Bing](https://Bing.com)、 [SharePoint](https://products.office.com/sharepoint/collaboration)和 [Office 365](https://Office.com)中取得具有縮寫的定義。 在 [ **搜尋** ] 方塊中，使用者輸入如下範例的查詢：
 
-- *何謂*DNN
-- *定義*DNN
-- DNN*定義*
-- *展開*DNN
-- DNN*擴充*
-- *的意義*DNN
-- DNN*表示*
+- *何謂* DNN
+- *定義* DNN
+- DNN *定義*
+- *展開* DNN
+- DNN *擴充*
+- *的意義* DNN
+- DNN *表示*
 
 結果會包含使用者組織中所顯示之 DNN 的所有意義。
 
 > [!NOTE]
-> 使用者必須輸入包含縮寫詞所指定*關鍵字*的查詢，以觸發其對應的答案。 縮寫詞查詢不區分大小寫。
+> 使用者必須輸入包含縮寫詞所指定 *關鍵字* 的查詢，以觸發其對應的答案。 縮寫詞查詢不區分大小寫。
 
 ## <a name="set-up-acronyms-answers"></a>設定縮寫詞答案
 
-在 Microsoft 365 系統[管理中心](https://admin.microsoft.com)中，移至**Settings**[  >  **microsoft Search**  >  **解答**  >  [**縮寫**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)] 的 [設定]，然後選取 [**新增縮寫**]。
+在 [Microsoft 365 系統管理中心](https://admin.microsoft.com)中，移至 [ [**縮寫**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)]，然後選取 [ **新增縮寫**]。
 
 Microsoft 搜尋會查詢兩個數據源，以提供使用者搜尋的縮寫答案：
 
-1. **編輯縮寫**。 由系統管理員在系統管理員[中央](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)提供。
+1. **編輯縮寫**。 由系統管理員在系統管理員 [中央](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)提供。
 2. **挖掘的縮寫**。 由 Microsoft 搜尋從使用者的個人電子郵件和檔，以及組織內可公開使用的資料進行挖掘。
 
 ### <a name="set-up-editorial-acronyms"></a>設定編輯縮寫
 
-搜尋管理員可以在[Microsoft 搜尋系統管理中心](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch)的 [[縮寫]](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)索引標籤上設定編輯縮寫。 您可以從任何內部網站或存放庫向系統管理中心新增縮寫。 編輯縮寫可以新增至**已發佈**或**草稿**的狀態：
+搜尋管理員可以在[Microsoft 搜尋系統管理中心](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch)的 [[縮寫]](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)索引標籤上設定編輯縮寫。 您可以從任何內部網站或存放庫向系統管理中心新增縮寫。 編輯縮寫可以新增至 **已發佈** 或 **草稿** 的狀態：
 
 **發行狀態**。 組織中的雇員可透過 Microsoft 搜尋取得縮寫。
 
@@ -104,11 +104,11 @@ Microsoft 搜尋可確保只有對檔具有存取權和許可權的使用者才�
 
 **問：在 Microsoft 搜尋中發佈後，編輯的首字縮寫詞必須多久才會顯示？**
 
-**A：** 已發佈的狀態最多需要三天的縮寫，以供 Microsoft 搜尋使用。
+**A：**  已發佈的狀態最多需要三天的縮寫，以供 Microsoft 搜尋使用。
 
 **問：使用者如何觸發縮寫詞答案？**
 
-**答**：若要取得縮寫的答案，使用者必須在 [ [Bing](https://bing.com)]、[ [SharePoint](https://products.office.com/sharepoint/collaboration)] 或 [ [Office 365](https://Office.com) **搜尋**] 方塊中輸入特定的查詢模式。
+**答**：若要取得縮寫的答案，使用者必須在 [ [Bing](https://bing.com)]、[ [SharePoint](https://products.office.com/sharepoint/collaboration)] 或 [ [Office 365](https://Office.com) **搜尋** ] 方塊中輸入特定的查詢模式。
 
 **問：當您收到或傳送新的電子郵件或檔之後，挖掘的首字縮寫會出現多久時間？**
 
@@ -124,5 +124,5 @@ Microsoft 搜尋可確保只有對檔具有存取權和許可權的使用者才�
 
 **問：如果我的組織不想要顯示挖掘的縮寫，該怎麼辦？是否可以停止在搜尋結果中顯示挖掘的縮寫？**
 
-**A**：若要在搜尋結果中關閉顯示挖掘的縮寫，請遵循[商務產品的連絡人支援服務](https://docs.microsoft.com/office365/admin/contact-support-for-business-products?redirectSourcePath=%252f%252farticle%252fContact-Office-365-for-business-support-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online#BKMK_call_support)中的指示，建立客戶支援憑證。
+**A**：若要在搜尋結果中關閉顯示挖掘的縮寫，請遵循 [商務產品的連絡人支援服務](https://docs.microsoft.com/office365/admin/contact-support-for-business-products?redirectSourcePath=%252f%252farticle%252fContact-Office-365-for-business-support-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online#BKMK_call_support)中的指示，建立客戶支援憑證。
 在您建立支援票證之後，挖掘的首字縮寫會花長達48小時的時間，才會出現在搜尋結果中。

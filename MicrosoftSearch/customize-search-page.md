@@ -1,7 +1,7 @@
 ---
 title: 自訂 Microsoft 搜尋頁面
-ms.author: jypal6
-author: jypal
+ms.author: jypal
+author: jypal6
 manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 新增搜尋行業及自訂搜尋結果
-ms.openlocfilehash: 9bc0448c1105c26b0e083316db04887327d8db41
-ms.sourcegitcommit: f2323c43fc732890213223efac32006df5b92c28
+ms.openlocfilehash: f9ecaa0c7aaaf75b40ed87db45f6ec4921488212
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45387983"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422980"
 ---
 # <a name="customize-the-search-results-page"></a>自訂搜尋結果頁面
 
@@ -25,49 +25,49 @@ ms.locfileid: "45387983"
 
 您可以在下列各層級建立縱向和結果類型：
 
-- **組織層級**–當您在組織層級新增垂直時，當使用者從他們的[SharePoint](https://sharepoint.com/)開始頁面、 [Office](https://office.com)或[Bing](https://bing.com)進行搜尋時，它會出現在搜尋結果頁面上。
-- **網站層級**–例如，您可能想要讓客戶服務員工直接從部門的 SharePoint 網站搜尋*嚴重性 1*事件。
+- **組織層級** –當您在組織層級新增垂直時，當使用者從他們的 [SharePoint](https://sharepoint.com/) 開始頁面、 [Office](https://office.com)或 [Bing](https://bing.com)進行搜尋時，它會出現在搜尋結果頁面上。
+- **網站層級** –例如，您可能想要讓客戶服務員工直接從部門的 SharePoint 網站搜尋 *嚴重性 1* 事件。
 
 ## <a name="search-verticals-explained"></a>說明的搜尋縱向
 
-在 [Microsoft 搜尋結果] 頁面的頂端有一列索引標籤。 這些是搜尋行業。 搜尋類別只會顯示特定類型或特定內容的結果。 例如**檔**或**新聞**。 根據預設，Microsoft 搜尋會顯示縱向**所有**的**人員**、**檔**、**網站**和**新聞**。  
+在 [Microsoft 搜尋結果] 頁面的頂端有一列索引標籤。 這些是搜尋行業。 搜尋類別只會顯示特定類型或特定內容的結果。 例如 **檔** 或 **新聞**。 根據預設，Microsoft 搜尋會顯示縱向 **所有**的 **人員**、 **檔**、 **網站**和 **新聞**。  
 
 您可以新增與您組織相關的搜尋行業。 這些會出現在 [ [SharePoint](https://sharepoint.com/)]、[ [Office](https://Office.com)] 及 [ [Bing](https://bing.com)] 的 [Microsoft 搜尋結果] 頁面上。 例如，您可以根據每個群組所需的資訊類型，為行銷相關的內容及另一個銷售人員建立垂直。 您可以新增縱向，只顯示透過連接器編制索引的內容的結果。  
 
 >[!NOTE]
-> 目前在預覽中的縱向和結果類型是 Microsoft Graph 連接器預覽的一部分。 如需預覽的詳細資訊，請參閱[連接器預覽](connectors-preview.md)。 若要參與預覽，您必須先提交[Microsoft Graph 連接器預覽註冊表單](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u)。
+> 目前在預覽中的縱向和結果類型是 Microsoft Graph 連接器預覽的一部分。 如需預覽的詳細資訊，請參閱 [連接器預覽](connectors-preview.md)。 若要參與預覽，您必須先提交 [Microsoft Graph 連接器預覽註冊表單](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u)。
 
 ## <a name="things-to-consider"></a>考慮事項
 
 開始之前，請確定連接器已編制索引。 這可能需要最多48小時，視檔案大小而定。
 
-您無法為位於[SharePoint](https://sharepoint.com/)中的內容建立垂直。
+您無法為位於 [SharePoint](https://sharepoint.com/)中的內容建立垂直。
 
 新增垂直的三個基本步驟：
 
 1. 建立垂直。 在這個步驟中，您會定義要搜尋之內容的直排名稱、內容來源及範圍。
 2. 定義此垂直方向的結果外觀。  
-3. 從垂直清單頁面啟用垂直（顯示）。
+3. 啟用從垂直清單頁面) 顯示的垂直 (。
 
 ## <a name="step-1-create-the-search-vertical"></a>步驟1：建立搜尋類別
 
 啟動該嚮導之後，您會逐步指導您定義要搜尋之內容的垂直名稱、內容來源及範圍。 會以停用狀態建立垂直。 您將在稍後啟用它。
 
-您可以使用一組有限的[關鍵字查詢語言（KQL）](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)來縮小範圍。 此頁面列出可用的屬性。 建議您使用 freetext 關鍵字和屬性限制搭配 boolean 運算子來建立 KQL。
+您可以使用一組有限的 [關鍵字查詢語言 (KQL) ](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) 來縮小範圍。 此頁面列出可用的屬性。 建議您使用 freetext 關鍵字和屬性限制搭配 boolean 運算子來建立 KQL。
 
 ### <a name="create-a-vertical-at-the-organization-level"></a>在組織層級建立垂直
 
-若要在[SharePoint](https://sharepoint.com/) Home、 [Office](https://office.com)或[Bing](https://bing.com)中的 Microsoft 搜尋上建立垂直，請遵循下列步驟：
+若要在 [SharePoint](https://sharepoint.com/) Home、 [Office](https://office.com)或 [Bing](https://bing.com)中的 Microsoft 搜尋上建立垂直，請遵循下列步驟：
 
-1. 在 Microsoft 365 系統 [管理中心](https://admin.microsoft.com)中，移至 **Settings**[   >  **microsoft Search**   >  **自訂**  >  [**縱向**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)] [設定]。
-1. 選取 [ **新增**] 立即開始。  
+1. 在 [Microsoft 365 系統管理中心](https://admin.microsoft.com)中，移至 [ [**縱向**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)]。
+1. 選取 [ **新增** ] 立即開始。  
 
 ### <a name="create-a-vertical-at-the-site-level"></a>在網站層級建立垂直
 
-1. 在您要垂直的[SharePoint](https://sharepoint.com/)網站上，移至 [**設定**]。
-1. 選取 [**網站資訊**]，然後**查看 [所有網站設定**]。
-1. 尋找 [ **Microsoft 搜尋**] 區段，然後選取 [**設定此網站集合的 microsoft search**]。
-1. 在功能窗格中，移至 [ **自訂經驗**]，然後選取 [**縱向**] 索引標籤。
+1. 在您要垂直的 [SharePoint](https://sharepoint.com/) 網站上，移至 [ **設定**]。
+1. 選取 [ **網站資訊** ]，然後 **查看 [所有網站設定**]。
+1. 尋找 [ **Microsoft 搜尋** ] 區段，然後選取 [ **設定此網站集合的 microsoft search**]。
+1. 在功能窗格中，移至 [ **自訂經驗**]，然後選取 [ **縱向** ] 索引標籤。
 1. 若要新增垂直，請選取 [ **新增**]。
   或者，若要編輯垂直，請在清單中選取它。
 
@@ -79,25 +79,25 @@ ms.locfileid: "45387983"
 
 搜尋「結果類型」是一種規則，可讓不同類型的搜尋結果以不同方式顯示。其由下列項目組成：
 
-- **一個或多個**比較每個搜尋結果的條件，例如搜尋結果的內容來源。  
-- 用於符合條件之搜尋結果的**結果版面**配置。 結果版面配置會控制符合條件的所有結果在搜尋結果頁面上顯示和行為的方式。
+- **一個或多個** 比較每個搜尋結果的條件，例如搜尋結果的內容來源。  
+- 用於符合條件之搜尋結果的 **結果版面** 配置。 結果版面配置會控制符合條件的所有結果在搜尋結果頁面上顯示和行為的方式。
 
-**您必須建立至少一個結果類型的結果，才會顯示在垂直上。** 您可以為每個垂直方向建立多種結果類型，這可讓您針對不同類型的結果使用不同的版面配置。 例如，您可以自訂*嚴重性為 1*的事件，使其具有更醒目的色彩和更大的字型，與*嚴重的 3*個事件相較。
+**您必須建立至少一個結果類型的結果，才會顯示在垂直上。** 您可以為每個垂直方向建立多種結果類型，這可讓您針對不同類型的結果使用不同的版面配置。 例如，您可以自訂 *嚴重性為 1* 的事件，使其具有更醒目的色彩和更大的字型，與 *嚴重的 3* 個事件相較。
 
 啟動該嚮導之後，您會逐步指導您定義結果類型的名稱、內容來源及條件。 您可以從清單視圖定義結果類型的優先順序。
   
 ### <a name="create-a-result-type-at-the-organization-level"></a>在組織層級建立結果類型
 
-1. 在系統[管理中心](https://admin.microsoft.com)中，移至**設定**  >  **Microsoft Search**  >  **自訂**  >  [**結果類型**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes)。
-1. 若要新增**結果類型**，請選取 [ **新增**]。 若要編輯結果類型，請選取相關清單中的結果類型。
+1. 在 [Microsoft 365 系統管理中心](https://admin.microsoft.com)中，移至 [ [**結果類型**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes)]。
+1. 若要新增 **結果類型**，請選取 [ **新增**]。 若要編輯結果類型，請選取相關清單中的結果類型。
 
 ### <a name="create-a-results-type-at-the-site-level"></a>在網站層級建立結果類型
 
-1. 在您要建立結果類型的[SharePoint](https://sharepoint.com/)網站上，移至 [**設定**]。
-1. 選取 [**網站資訊**]，然後**查看 [所有網站設定**]。
-1. 尋找 [Microsoft 搜尋] 區段，然後選取 [**設定此網站集合的 Microsoft search**]。
-1. 在功能窗格中，移至 [ **自訂經驗**]，然後選取 [**結果類型**] 索引標籤。
-2. 若要新增結果類型，請選取 [ **新增**]。  或者，若要編輯結果類型，請選取清單中的結果類型。
+1. 在您要建立結果類型的 [SharePoint](https://sharepoint.com/) 網站上，移至 [ **設定**]。
+1. 選取 [ **網站資訊** ]，然後 **查看 [所有網站設定**]。
+1. 尋找 [Microsoft 搜尋] 區段，然後選取 [ **設定此網站集合的 Microsoft search**]。
+1. 在功能窗格中，移至 [ **自訂經驗**]，然後選取 [ **結果類型** ] 索引標籤。
+1. 若要新增結果類型，請選取 [ **新增**]。  或者，若要編輯結果類型，請選取清單中的結果類型。
 
 ### <a name="view-the-vertical-after-its-enabled"></a>啟用垂直後查看
 

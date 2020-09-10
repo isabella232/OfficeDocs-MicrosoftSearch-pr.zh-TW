@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 取得有關企業搜尋和 Microsoft Search 常見問題的解答
-ms.openlocfilehash: 1acf4b5c4b3e771072ea67f4d807454723352c3f
-ms.sourcegitcommit: c22e8c3dcc53857da677db98a1a2b7d5ca2c6170
+ms.openlocfilehash: c4b0d888e7765cf965832c252a79bdcf8aa5f6cf
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41721757"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422962"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 # <a name="frequently-asked-questions"></a>常見問題集
@@ -29,33 +29,33 @@ ms.locfileid: "41721757"
 
 ## <a name="is-advanced-query-understanding-supported"></a>是否支援進階查詢理解？
 
-是的，Microsoft Search 會從較大的片語剖析查詢意圖。 此功能會使用 AI 以學習將常用多餘片語的使用者新增到查詢，但不影響使用者的搜尋意圖。 例如，當使用者搜尋*告訴我更多有關如何變更我的密碼請*我們解壓縮較重要的文字查詢和相關的項目，例如*變更密碼*為基礎的觸發程序。
+是的，Microsoft Search 會從較大的片語剖析查詢意圖。 此功能會使用 AI 以學習將常用多餘片語的使用者新增到查詢，但不影響使用者的搜尋意圖。 例如，當使用者搜尋有關 *如何變更密碼的詳細資訊*時，我們會從查詢中解壓縮較不重要的字詞，並根據相關的 *變更密碼（如變更密碼*）進行觸發。
   
-這項功能不會覆寫在 Microsoft 365[系統管理中心](https://admin.microsoft.com)中設定的關鍵字。
+這項功能不會覆寫 [Microsoft 365 系統管理中心](https://admin.microsoft.com)中的關鍵字集。
   
 ## <a name="can-you-search-for-files-on-premises"></a>可以搜尋內部部署檔案嗎？
 
-是。 如果您有 SharePoint 的混合式部署，您可以搜尋內部部署[SharePoint](http://sharepoint.com/)檔案。
+是。 如果您有 SharePoint 的混合式部署，您可以搜尋內部部署 [SharePoint](http://sharepoint.com/) 檔案。
   
 ## <a name="how-do-i-make-bing-the-default-search-engine-for-people-in-my-org"></a>如何讓 Bing 成為我的組織中人員的預設搜尋引擎？
 
-以下是設定預設搜尋引擎、 預設首頁和預設的瀏覽器的指示，授與您的使用者與 Microsoft Search 的最佳經驗， [Bing](https://Bing.com)中：
+以下是設定預設搜尋引擎、預設首頁及預設瀏覽器的指示，可讓您的使用者在 [Bing](https://Bing.com)中使用 Microsoft search 的最佳體驗：
 
-- [設為預設瀏覽器的 Microsoft Edge](set-default-browser.md)
+- [將 Microsoft Edge 設定為預設瀏覽器](set-default-browser.md)
 - [讓 Bing 成為預設搜尋引擎](set-default-search-engine.md)
 - [將 Bing.com 設為企業首頁](set-default-homepage.md)
 
 ## <a name="how-are-my-search-results-protected"></a>如何保護我的搜尋結果？
 
-我們需要[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/)驗證以存取結果從信任雲端。 已驗證的使用者只會看到他們有權存取的內容。 去除識別搜尋查詢，以及記錄檔分開的公用[Bing](https://Bing.com)搜尋流量。 這種保護層級是業界唯一的。
+我們需要 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/) 驗證，才能存取受信任的雲端的結果。 已驗證的使用者只會看到他們有權存取的內容。 搜尋查詢會解除辨識，而且記錄會與 public [Bing](https://Bing.com) 搜尋流量分開。 這種保護層級是業界唯一的。
 
 ## <a name="can-i-search-across-federated-organizations"></a>可以跨同盟組織搜尋嗎？
 
 否。
 
-## <a name="where-can-i-get-info-about-office-365-security-compliance-and-privacy"></a>哪裡可以取得 Office 365 安全性、 規範和隱私權的相關資訊？
+## <a name="where-can-i-get-info-about-office-365-security-compliance-and-privacy"></a>我可以在哪裡取得有關 Office 365 安全性、規範和隱私權的資訊？
 
-可以[運作的 Office 365 的 [信任中心] 頁面](https://www.microsoft.com/TrustCenter/CloudServices/office365/default.aspx)上找到的詳細資訊。
+詳細資料可在 [Office 365 的 [信任中心] 頁面](https://www.microsoft.com/TrustCenter/CloudServices/office365/default.aspx)上找到。
 
 ## <a name="can-users-earn-microsoft-rewards-points-with-their-work-or-school-account"></a>使用者能否使用其公司或學校帳戶來獲得 Microsoft Rewards 積分？
 

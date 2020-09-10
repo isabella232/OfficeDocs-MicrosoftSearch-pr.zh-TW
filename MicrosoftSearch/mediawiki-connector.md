@@ -1,8 +1,8 @@
 ---
-title: Microsoft Search MediaWiki 連接器
-ms.author: v-pamcn
-author: monaray
-manager: mnirkhe
+title: Microsoft 搜尋的 MediaWiki 連接器
+ms.author: monaray
+author: monaray97
+manager: jameslau
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -11,35 +11,41 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 設定 Microsoft Search MediaWiki 連接器
-ms.openlocfilehash: 2aa0ef494aa42b1a7364ec68f6532dec737b9c25
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+description: 設定 Microsoft 搜尋的 MediaWiki 連接器
+ms.openlocfilehash: b9c8d80ae5cb8e86b0f6341bfe9231b709569e7a
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626961"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47423016"
 ---
 # <a name="mediawiki-connector"></a>MediaWiki 連接器
 
-MediaWiki 連接器後，您的組織可以探索與索引資料從 wiki 建立使用 MediaWiki 軟體。 此連接器索引指定成 Microsoft Search 和支援定期編目保持最新狀態索引內容。
+透過 MediaWiki 連接器，您的組織可以從使用 MediaWiki 軟體所建立的 wiki 探索和編制資料。 此連接器會將指定的內容索引至 Microsoft 搜尋中，並支援定期編目，使索引保持在最新狀態。
 
-本文適用於 Microsoft 365 系統管理員或人設定、 執行，並監視 MediaWiki 連接器。 本文說明如何設定連接器，連接器功能、 限制和疑難排解技巧。
+本文適用于 Microsoft 365 系統管理員或任何設定、執行及監視 MediaWiki 連接器的人員。 它說明如何設定連接器和連接器功能、限制及疑難排解技術。
 
-## <a name="connect-to-a-data-source"></a>連線至資料來源
-輸入您 MediaWiki URL 與認證來驗證連線。 您將需要下列資訊：**租用戶識別碼**、**資源識別碼**、**用戶端識別碼**和**用戶端密碼**。
+## <a name="connect-to-a-data-source"></a>連接到資料來源
+
+輸入您的 MediaWiki URL 和認證以驗證連線。 您將需要下列資訊： **租使用者識別碼**、 **資源識別碼**、 **用戶端識別碼**和 **用戶端密碼**。
 
 ## <a name="manage-the-search-schema"></a>管理搜尋結構描述
-成功連線之後，設定的搜尋結構描述對應。 您可以選擇要讓屬性**設為可查詢**、**可搜尋**，並**可擷取**。
 
-## <a name="manage-search-permissions"></a>管理搜尋的權限
-MediaWiki 連接器僅支援搜尋權限以**供其他人**。 已編製索引的資料會出現在搜尋結果，並在組織中的所有使用者都都能看到。
+成功連接後，請設定搜尋架構對應。 您可以選擇哪些屬性可供**查詢**、可搜尋及可**供****檢索**。
 
-## <a name="set-the-refresh-schedule"></a>設定重新整理排程 
-此排程重新整理已編製索引的資料，以便 wiki 的變更會反映在 Microsoft Search。 所有新的頁面、 刪除的頁面、 頁面內容或中繼資料變更指定的重新整理間隔之後出現在搜尋結果。 編目時間 」 是 wiki 的大小而定。 目前連接器會在大約 50 頁面每分鐘編目。
+## <a name="manage-search-permissions"></a>管理搜尋許可權
 
-## <a name="limitations"></a>限制 
-MediaWiki 連接器預覽版本中有這些限制：
-* 支援僅雲端式 wiki。
-* 支援僅 [基本] 或 [使用 Azure Active Directory 或 Azure 驗證的 OAuth 2.0。
-* 不支援索引編製的命名空間的選取範圍。 編製索引只有**主要**、**類別**及**檔案**的命名空間。
-* 不支援存取控制清單 (Acl)。 因此，已編製索引的頁面都可以看見組織中的所有使用者。
+MediaWiki 連接器只支援 **所有人都**能看見的搜尋許可權。 已編制索引的資料會顯示在搜尋結果中，並對組織中的所有使用者顯示。
+
+## <a name="set-the-refresh-schedule"></a>設定重新整理排程
+
+此排程會重新整理已編制索引的資料，因此 wiki 的變更會反映在 Microsoft 搜尋中。 所有新頁面、刪除的頁面、頁面內容或中繼資料變更都會出現在搜尋結果中指定的重新整理間隔之後。 編目時間取決於 wiki 的大小。 目前的連接器會在每分鐘50頁面的周圍進行編目。
+
+## <a name="limitations"></a>限制
+
+MediaWiki 連接器在預覽版本中有下列限制：
+
+* 僅支援雲端型 wiki。
+* 使用 Azure Active Directory 或 Azure 驗證，僅支援 Basic 或 OAuth 2.0。
+* 不支援索引的命名空間選取。 僅索引 **主要**、 **類別**和檔案 **命名空間** 。
+* 不支援 (ACLs) 的存取控制清單。 因此，組織中的所有使用者都能看到索引頁面。
