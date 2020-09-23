@@ -1,5 +1,5 @@
 ---
-title: Microsoft Search 的 microsoft SQL server 和 Azure SQL connector
+title: Microsoft Search 的 microsoft SQL Server 和 Azure SQL connector
 ms.author: monaray
 author: monaray97
 manager: mnirkhe
@@ -11,48 +11,46 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 設定 microsoft SQL server 或 Azure SQL connector for Microsoft Search。
-ms.openlocfilehash: e67b1e6175744fd741b265c056798f18dc28b1d4
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+description: 設定 microsoft SQL Server 或 Azure SQL connector for Microsoft Search。
+ms.openlocfilehash: 71fd8b6cdf090c9dda9ac94973661d865536a984
+ms.sourcegitcommit: 6baf6f4b8a6466ee1a6ad142be8541f659fcf5d9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422908"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48214486"
 ---
-# <a name="azure-sql-and-microsoft-sql-server-connectors"></a>Azure SQL 及 Microsoft SQL server 連接器
+# <a name="azure-sql-and-microsoft-sql-server-connectors"></a>Azure SQL 及 Microsoft SQL Server 連接器
 
-透過 Microsoft SQL server 或 Azure SQL connector，您的組織可以探索內部部署 SQL Server 資料庫中的資料，以及在雲端中裝載于 Azure SQL 實例中的資料庫。 連接器會將指定的內容索引至 Microsoft 搜尋。 若要讓索引保持在最新的來來源資料中，它支援定期完整和累加編目。 透過這些 SQL 連接器，您也可以限制特定使用者對搜尋結果的存取。
+透過 Microsoft SQL Server 或 Azure SQL connector，您的組織可以探索內部部署 SQL Server 資料庫中的資料，以及在雲端中裝載于 Azure SQL 實例中的資料庫。 連接器會將指定的內容索引至 Microsoft 搜尋。 若要讓索引保持在最新的來來源資料中，它支援定期完整和累加編目。 透過這些 SQL 連接器，您也可以限制特定使用者對搜尋結果的存取。
 
-本文適用于 Microsoft 365 系統管理員或任何設定、執行及監視 Microsoft SQL server 或 Azure SQL connector 的人員。 它說明如何設定連接器和連接器功能、限制及疑難排解技術。
+本文適用于 Microsoft 365 系統管理員或任何設定、執行及監視 Microsoft SQL Server 或 Azure SQL connector 的人員。 它說明如何設定連接器和連接器功能、限制及疑難排解技術。
 
-## <a name="install-a-data-gateway-required-for-on-premises-microsoft-sql-server-connector-only"></a>安裝僅限內部部署 Microsoft SQL server 連接器所需的資料閘道 () 
+## <a name="install-a-data-gateway-required-for-on-premises-microsoft-sql-server-connector-only"></a>安裝僅限內部部署 Microsoft SQL Server 連接器所需的資料閘道 () 
 
 為了存取協力廠商資料，您必須安裝和設定 Microsoft Power BI 閘道。 請參閱 [安裝內部部署閘道](https://docs.microsoft.com/data-integration/gateway/service-gateway-install) 以深入瞭解。  
 
 ## <a name="register-an-app"></a>註冊應用程式
+針對 Azure SQL connector，您必須在 Azure Active Directory 中註冊應用程式，以允許 Microsoft Search 應用程式存取索引的資料。 若要深入瞭解如何註冊應用程式，請參閱 Microsoft Graph 檔，瞭解如何 [註冊應用程式](https://docs.microsoft.com/graph/auth-register-app-v2)。 
 
-針對 Azure SQL connector，您必須在 Azure Active Directory 中註冊應用程式，以允許 Microsoft Search 應用程式存取索引的資料。 若要深入瞭解如何註冊應用程式，請參閱 Microsoft Graph 檔，瞭解如何 [註冊應用程式](https://docs.microsoft.com/graph/auth-register-app-v2)。
-
-完成應用程式註冊並記下應用程式名稱、應用程式 (用戶端) 識別碼與租使用者識別碼後，您需要 [產生新的用戶端密碼](https://docs.microsoft.com/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret)。 用戶端密碼只會顯示一次。 請記住 & 會安全地儲存用戶端密碼。 在 Microsoft 搜尋中設定新的連線時，請使用用戶端識別碼和用戶端密碼。
+完成應用程式註冊並記下應用程式名稱、應用程式 (用戶端) 識別碼與租使用者識別碼後，您需要 [產生新的用戶端密碼](https://docs.microsoft.com/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret)。 用戶端密碼只會顯示一次。 請記住 & 會安全地儲存用戶端密碼。 在 Microsoft 搜尋中設定新的連線時，請使用用戶端識別碼和用戶端密碼。 
 
 若要將註冊的應用程式新增至 Azure SQL 資料庫，您必須：
-
-- 登入 Azure SQL DB
-- 開啟新的查詢視窗
-- 從外部提供者執行命令「建立使用者 [app 名稱]，以建立新使用者
-- 執行命令 ' exec sp_addrolemember ' db_datareader '、[app name] 或 ' ALTER ROLE db_datareader ADD MEMBER [app name] '，將使用者新增至角色
+ - 登入 Azure SQL DB
+ - 開啟新的查詢視窗
+ - 從外部提供者執行命令「建立使用者 [app 名稱]，以建立新使用者
+ - 執行命令 ' exec sp_addrolemember ' db_datareader '、[app name] 或 ' ALTER ROLE db_datareader ADD MEMBER [app name] '，將使用者新增至角色
 
 >[!NOTE]
 >若要撤銷在 Azure Active Directory 中註冊的任何應用程式的存取權，請參閱 Azure 檔中關於 [移除已註冊的應用程式](https://docs.microsoft.com/azure/active-directory/develop/quickstart-remove-app)。
 
 ## <a name="connect-to-a-data-source"></a>連接到資料來源
 
-若要將 Microsoft SQL server 連接器連線至資料來源，您必須設定要編目的資料庫伺服器和內部部署閘道。 然後，您就可以使用必要的驗證方法來連接至資料庫。
+若要將 Microsoft SQL Server 連接器連線至資料來源，您必須設定要編目的資料庫伺服器和內部部署閘道。 然後，您就可以使用必要的驗證方法來連接至資料庫。
 
 針對 Azure SQL connector，您只需要指定您要連線的伺服器名稱或 IP 位址。 Azure SQL connector 只支援 Azure Active Directory 開啟識別碼 connect (OIDC) authentication，以連接至資料庫。
 
 > [!NOTE]
-> 您的資料庫必須執行 SQL server 版本2008或更新版本，Microsoft SQL server 連接器才能連線。
+> 您的資料庫必須執行 SQL server 版本2008或更新版本，Microsoft SQL Server 連接器才能連線。
 
 若要搜尋您的資料庫內容，當您設定連接器時，必須指定 SQL 查詢。 這些 SQL 查詢必須命名所有要索引的資料庫資料欄 (亦即來源屬性) （包括需要執行以取得所有欄的任何 SQL 聯接）。 若要限制存取搜尋結果，您必須在設定連接器時，指定 (ACLs) 中的存取控制清單。
 
@@ -81,22 +79,6 @@ ms.locfileid: "47422908"
 * **DeniedGroups**：這 **會** 指定沒有搜尋結果存取權的使用者群組。 在下列範例中，群組 engg-team@contoso.com 及 pm-team@contoso.com 沒有具有「訂單 Id」的記錄存取權，而其他所有人都可以存取這筆記錄。  
 
 ![顯示 OrderTable 及 AclTable （含範例屬性）的範例資料](media/MSSQL-ACL1.png)
-
-### <a name="supported-data-types"></a>支援的資料類型
-
-下表摘要列出 MS SQL 和 Azure SQL 連接器中支援的 SQL 資料類型。 該表也會摘要支援的 SQL 資料類型的索引資料類型。 若要深入瞭解 Microsoft Graph 連接器支援的索引資料類型，請參閱 [屬性資源類型](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta#properties)的檔。
-<!-- markdownlint-disable no-inline-html -->
-| 類別 | 來源資料類型 | 索引資料類型 |
-| ------------ | ------------ | ------------ |
-| 日期和時間 | date <br> datetime <br> datetime2 <br> Smalldatetime | datetime |
-| 完全數值 | Bigint <br> int <br> Smallint <br> Tinyint | int64 |
-| 完全數值 | 位 | 布林值 |
-| 近似數值 | float <br> 真正 | double |
-| 字元字串 | 字元 <br> Varchar <br> 文字 | string |
-| Unicode 字元字串 | Nchar <br> Nvarchar <br> Ntext | string |
-| 其他資料類型 | 唯一 | string |
-
-對於目前不是直接支援的任何其他資料類型，此資料行必須明確地轉換成支援的資料類型。
 
 ### <a name="watermark-required"></a>浮水印 (必要) 
 
@@ -149,6 +131,6 @@ ms.locfileid: "47422908"
 
 在預覽版本中，SQL 連接器具有這些限制：
 
-* Microsoft SQL server connector：內部部署資料庫必須執行 SQL server 版本2008或更新版本。
+* Microsoft SQL Server connector：內部部署資料庫必須執行 SQL Server 版本2008或更新版本。
 * 只有使用使用者主要名稱 (UPN) 、Azure Active Directory (Azure AD) 或 Active Directory 安全性才能支援 ACLs。
 * 不支援在資料庫欄中編制豐富內容的索引。 這類內容的範例為 HTML、JSON、XML、blob 及檔 parsings，以資料庫資料欄中的連結形式存在。
