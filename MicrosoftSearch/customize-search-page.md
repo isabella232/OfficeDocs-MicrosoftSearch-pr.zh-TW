@@ -1,7 +1,7 @@
 ---
 title: 自訂 Microsoft 搜尋頁面
-ms.author: jypal
-author: jypal6
+ms.author: jeffkizn
+author: jypal
 manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 新增搜尋行業及自訂搜尋結果
-ms.openlocfilehash: f9ecaa0c7aaaf75b40ed87db45f6ec4921488212
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+ms.openlocfilehash: 8b212f385d126b4f6c3513b066936db28387377f
+ms.sourcegitcommit: be0c64845477127d73ee24dc727e4583ced3d0e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422980"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48206966"
 ---
 # <a name="customize-the-search-results-page"></a>自訂搜尋結果頁面
 

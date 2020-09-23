@@ -1,8 +1,8 @@
 ---
 title: Microsoft 搜尋的 ServiceNow 連接器
-ms.author: monaray
-author: monaray97
-manager: jameslau
+ms.author: mnirkhe
+author: TrishaMc1
+manager: mnirkhe
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的 ServiceNow 連接器
-ms.openlocfilehash: 29e8e490f114ce8537ddb973ed16ccb34f24f82f
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+ms.openlocfilehash: 357722f83e7f276615d231c8d3e56016bc17ba6e
+ms.sourcegitcommit: be0c64845477127d73ee24dc727e4583ced3d0e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422863"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48206957"
 ---
 # <a name="servicenow-connector"></a>ServiceNow 連接器
 
@@ -33,17 +33,17 @@ ms.locfileid: "47422863"
 
 若要驗證及同步處理 ServiceNow 中的內容，請選擇兩個支援的方法之一：
 
-1. 基本驗證
-2. OAuth (建議) 
+ - 基本驗證
+ - OAuth (建議) 
 
 > [!Note]
 > 若要使用 OAuth 進行驗證，ServiceNow 系統管理員必須布建 ServiceNow 實例中的端點，這樣 Microsoft Search 應用程式才能存取該實例。 若要深入瞭解，請參閱在 ServiceNow 檔中 [建立用戶端存取實例的端點](https://docs.servicenow.com/bundle/newyork-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html) 。
 
 下表提供如何填寫端點建立表單的指導方針：
 
-**Field** | **描述** | **建議值**
+欄位 | 描述 | 建議值
 --- | --- | ---
-姓名 | 此唯一值可識別您需要 OAuth 存取的應用程式。 | Microsoft 搜尋
+名稱 | 此唯一值可識別您需要 OAuth 存取的應用程式。 | Microsoft 搜尋
 用戶端識別碼 | 應用程式的唯讀、自動產生的唯一識別碼。 當實例要求存取權杖時，會使用用戶端識別碼。 | NA
 用戶端密碼 | 使用此共用的機密字串，ServiceNow 實例和 Microsoft 搜尋會授權彼此間的通訊。 | 請將此視為密碼，遵循安全性最佳作法。
 重新導向 URL | 授權伺服器重新導向所需的回撥 URL。 | https://gcs.office.com/v1.0/admin/oauth/callback

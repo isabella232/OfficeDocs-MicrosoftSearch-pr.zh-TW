@@ -2,7 +2,7 @@
 title: Microsoft 搜尋的 Azure Data Lake connector
 ms.author: monaray
 author: monaray97
-manager: jameslau
+manager: shohara
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Azure Data Lake Storage Gen2 connector for Microsoft Search
-ms.openlocfilehash: 788b7106c15cd9773c86f46f91ba0e91e38028f3
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+ms.openlocfilehash: 01fea60e91af5ba321ceb00578ea2b0745c9c394
+ms.sourcegitcommit: be0c64845477127d73ee24dc727e4583ced3d0e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422926"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48206930"
 ---
 # <a name="azure-data-lake-storage-gen2-connector"></a>Azure Data Lake Storage Gen2 connector
 
@@ -29,7 +29,12 @@ ms.locfileid: "47422926"
 ### <a name="primary-storage-connection-string"></a>主要儲存連接字串 
 在 [ **驗證] 和 [config** ] 畫面上，提供主要儲存連接字串。 該字串是允許存取您的儲存體帳戶所需的字串。 若要尋找您的連線字串，請移至 [Azure 入口網站](https://ms.portal.azure.com/#home) ，並流覽至相關 Azure 儲存體帳戶的 [機 **碼** ] 區段。 在螢幕上適當的欄位中複製並貼上連接字串。
 
-如果您不想要提供 **AccountKey** (主要儲存連接字串中的參數) ，您必須授與我們的圖形連接器服務的讀取權限。 流覽至您的 Azure 儲存體帳戶的 [ **存取控制** ] 索引標籤，然後依照這裡的指示，將存取權授與下列應用程式：
+如果您不想在主要儲存連接字串) 中提供 **AccountKey** (參數，您必須授與下列角色的圖形連接器服務存取權。 
+* 儲存體 Blob 資料讀取器
+* 儲存佇列資料參與者
+* 僅適用于分層儲存體) 的儲存體 Blob Delegator (
+
+流覽至您的 Azure 儲存體帳戶的 [ **存取控制** ] 索引標籤，然後依照這裡的指示，將存取權授與下列應用程式：
 * **第一方應用程式 ID:** 56c1da01-2129-48f7-9355-af6d59d42766
 * **第一方應用程式名稱：** 圖形連接器服務
 
