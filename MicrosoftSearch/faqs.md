@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 取得有關企業搜尋和 Microsoft Search 常見問題的解答
-ms.openlocfilehash: c4b0d888e7765cf965832c252a79bdcf8aa5f6cf
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+ms.openlocfilehash: 5a134116c98b4feea0c04909349ce4b972c59ffe
+ms.sourcegitcommit: 0b8c3c57384cecaa93c5cbaf3b3b30f8e20d1a69
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422962"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48408436"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 # <a name="frequently-asked-questions"></a>常見問題集
@@ -60,3 +60,7 @@ ms.locfileid: "47422962"
 ## <a name="can-users-earn-microsoft-rewards-points-with-their-work-or-school-account"></a>使用者能否使用其公司或學校帳戶來獲得 Microsoft Rewards 積分？
 
 Microsoft Search 要求企業使用者使用公司或學校帳戶登入。 但使用者無法使用這些帳戶來加入或登入 Microsoft Rewards 方案。 但有一個例子，企業使用者可能會看到 Rewards 積分累算。 當 Microsoft Search 使用者的 Rewards 帳戶是使用 [Microsoft 帳戶](https://www.microsoft.com/welcome?rtc=1)建立時，即可能發生此情況。 (與 Microsoft 帳戶相關聯的電子郵件地址可以來自 Outlook.com、Hotmail.com、Gmail、Yahoo 或其他提供者。) 如果使用者在同一位瀏覽器工作階段中同時使用他們的公司帳戶和 Microsoft 帳戶登入，則可能會對其 Rewards 帳戶累算積分。 使用者可以透過在使用 Microsoft Search 搜尋時清除其 Cookie 來停止累算積分。
+
+## <a name="can-guest-users-leverage-microsoft-search-in-my-organization"></a>來賓使用者是否可以在我的組織中利用 Microsoft 搜尋？
+
+Microsoft 365 透過[來賓存取](https://docs.microsoft.com/microsoft-365/solutions/collaborate-with-people-outside-your-organization)，與組織外部的人員進行豐富的共同作業。 這些使用者將能夠對檔、網站、群組、清單及文件庫執行搜尋作業。 不過，來賓使用者將不會取得完整、個人化的 Microsoft 搜尋體驗，而且可能需要利用頁面中的 [頁面] 搜尋方塊，而不是在頁首中的「整合的 Microsoft 搜尋」方塊。
