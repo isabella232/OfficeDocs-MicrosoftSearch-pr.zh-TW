@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 microsoft 內置的連接器以進行 Microsoft 搜尋
-ms.openlocfilehash: 19a0c21911a9c5410e13a36f0bcc694af4a5c41a
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+ms.openlocfilehash: ce2515b3eaa859a8fbb00d83c4727865ab55e174
+ms.sourcegitcommit: 6aea7102c94855e9f80711c0f3d7bf5833ce8fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422854"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464474"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 
@@ -64,7 +64,17 @@ ms.locfileid: "47422854"
 
 ### <a name="manage-the-search-schema"></a>管理搜尋結構描述
 
-系統管理員可以設定搜尋架構屬性，以控制每個來源屬性的搜尋功能。 搜尋架構可協助決定搜尋結果頁面上顯示的結果，以及使用者可以查看和存取哪些資訊。
+#### <a name="content-property"></a>Content 屬性
+
+您可以從**content**屬性下拉式清單中選取任何 string 屬性，以選取 [**內容**] 屬性 (專案) 的全文檢索索引。 或者，您可以保留預設的選取屬性（如果有的話）。
+
+請務必選取正確的屬性，因為此屬性是用於內容的全文檢索索引、搜尋結果頁面片段產生、語言偵測、HTML/文字支援、排名與相關性，以及查詢表述。
+
+如果您選取**內容**的屬性，當您[建立結果類型](customize-results-layout.md)時，可以選擇使用系統所產生的屬性**ResultSnippet** 。 此屬性用作在查詢時從 **content** 屬性產生之動態程式碼片段的預留位置。 如果您在結果類型中使用此屬性，則會在搜尋結果中產生程式碼片段。
+
+#### <a name="search-schema-attributes"></a>搜尋架構屬性
+
+您可以設定搜尋架構屬性，以控制每個來源屬性的搜尋功能。 搜尋架構可協助決定搜尋結果頁面上顯示的結果，以及使用者可以查看和存取哪些資訊。
 
 搜尋架構屬性包括可搜尋、可**查詢**及可**供****檢索**的屬性。 下表列出 Microsoft Graph 連接器所支援的每個屬性，並說明其功能。
 
@@ -78,11 +88,14 @@ ms.locfileid: "47422854"
 
 ![您可以新增或移除查詢、搜尋及檢索功能，以自訂連接器的架構。](media/manageschema.png)
 
-這些限制和建議適用于搜尋架構設定：
+#### <a name="restrictions-and-recommendations-for-search-schema-settings"></a>搜尋架構設定的限制與建議
 
-* 針對索引自訂類型的連接器，建議您不要 **標示包含** 主要內容可 **檢索**的欄位。 使用該搜尋屬性呈現搜尋結果時，會發生重大效能問題。 範例是[ServiceNow](https://www.servicenow.com)知識文庫文章的 [**文字**內容] 欄位。
+* **Content**屬性僅可供搜尋。 在下拉式清單中選取此屬性後，就無法將此屬性標示為可 **檢索** 或可 **查詢**。 使用 **content** 屬性來呈現搜尋結果時，會發生重大效能問題。 範例是[ServiceNow](https://www.servicenow.com)知識文庫文章的 [**文字**內容] 欄位。
+
 * 在搜尋結果中，只有標示為可檢索的屬性，而且可以用來 (MRTs) 建立新式結果類型。
+
 * 只能將字串屬性標示為可搜尋。
+
 
 > [!Note]
 > 建立連線之後，就 **無法** 修改架構。 若要這麼做，您必須刪除您的連線，並建立新的連線。
