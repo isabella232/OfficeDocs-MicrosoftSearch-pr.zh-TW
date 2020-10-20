@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 使用適應性卡，建立配置以查看自訂的搜尋結果
-ms.openlocfilehash: e31be1f9c1602fcd696c99d584388facee22df74
-ms.sourcegitcommit: c22e8c3dcc53857da677db98a1a2b7d5ca2c6170
+ms.openlocfilehash: 0856adfd85a921cf026cd59a8ca2c5beea2ffcf2
+ms.sourcegitcommit: 7ceefb7a96ae6886145b929791c7448c139366b4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41721775"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "48595271"
 ---
 <!-- markdownlint-disable no-hard-tabs -->
 # <a name="create-a-layout-to-customize-search-results"></a>建立版式以自訂搜尋結果
@@ -176,6 +176,10 @@ ms.locfileid: "41721775"
 
 選取版面配置中的欄位，以反白顯示需要對應的變數。 您可以將多個變數用於單一欄位，而且所有欄位都必須對應至 result 屬性。
 
+### <a name="show-snippet-on-search-result"></a>顯示搜尋結果的程式碼片段  
+
+在連接器結果的 **content** 屬性上產生的動態程式碼片段會顯示在搜尋結果中。 **ResultSnippet** 是一種系統屬性，可充當針對每個連接器結果所產生之程式碼片段的預留位置屬性。 若要在結果版面配置中顯示程式碼片段， **ResultSnippet** 系統屬性必須對應至適當的欄位，例如「描述」，在搜尋結果版面配置中。 在每個結果上產生的程式碼片段也會反白顯示程式碼片段中使用者所輸入的查詢字詞的相符專案。 
+
 ## <a name="things-to-consider"></a>考慮事項
 
 開始之前，請先執行一些工作，您應該避免使用一些事項，以確保您的版面配置順利。
@@ -194,6 +198,7 @@ ms.locfileid: "41721775"
 - 綁定值時，請勿定義不正確資料類型。 如需資料類型的相關資訊，請參閱 [管理搜尋架構](https://docs.microsoft.com/sharepoint/search/manage-the-search-schema)。
 - 請遵循結果版面 JSON 的最大高度，避免在結果頁面上裁剪結果。 如果您超出結果版面配置的最大高度，將會在結果頁面上裁剪結果。
 - 不使用 `px` 元素屬性中的值。
+- 當使用結果版面配置中的 **ResultSnippet** 屬性來突出顯示搜尋結果中的查詢比對時，請勿使用 markdown。 
 
 ## <a name="resources"></a>資源
 
