@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 新增搜尋行業及自訂搜尋結果
-ms.openlocfilehash: 8b212f385d126b4f6c3513b066936db28387377f
-ms.sourcegitcommit: be0c64845477127d73ee24dc727e4583ced3d0e6
+ms.openlocfilehash: 8999a811b6ed0e04963a87ff0170869b38dba727
+ms.sourcegitcommit: 995ce23d4e47a3456a02dba0ba7c9cd0de64528a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48206966"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48919499"
 ---
 # <a name="customize-the-search-results-page"></a>自訂搜尋結果頁面
 
@@ -30,18 +30,16 @@ ms.locfileid: "48206966"
 
 ## <a name="search-verticals-explained"></a>說明的搜尋縱向
 
-在 [Microsoft 搜尋結果] 頁面的頂端有一列索引標籤。 這些是搜尋行業。 搜尋類別只會顯示特定類型或特定內容的結果。 例如 **檔** 或 **新聞**。 根據預設，Microsoft 搜尋會顯示縱向 **所有**的 **人員**、 **檔**、 **網站**和 **新聞**。  
+在 [Microsoft 搜尋結果] 頁面的頂端有一列索引標籤。 這些是搜尋行業。 搜尋類別只會顯示特定類型或特定內容的結果。 例如 **檔** 或 **新聞** 。 根據預設，Microsoft 搜尋會顯示縱向 **所有** 的 **人員** 、 **檔** 、 **網站** 和 **新聞** 。  
 
 您可以新增與您組織相關的搜尋行業。 這些會出現在 [ [SharePoint](https://sharepoint.com/)]、[ [Office](https://Office.com)] 及 [ [Bing](https://bing.com)] 的 [Microsoft 搜尋結果] 頁面上。 例如，您可以根據每個群組所需的資訊類型，為行銷相關的內容及另一個銷售人員建立垂直。 您可以新增縱向，只顯示透過連接器編制索引的內容的結果。  
 
 >[!NOTE]
-> 目前在預覽中的縱向和結果類型是 Microsoft Graph 連接器預覽的一部分。 如需預覽的詳細資訊，請參閱 [連接器預覽](connectors-preview.md)。 若要參與預覽，您必須先提交 [Microsoft Graph 連接器預覽註冊表單](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u)。
+> 縱向和結果類型目前在預覽中做為 Microsoft Graph 連接器預覽的一部分，而且不能用於 [SharePoint](https://sharepoint.com/)中的內容。 如需預覽的詳細資訊，請參閱 [連接器預覽](connectors-preview.md)。 若要參與預覽，您必須先提交 [Microsoft Graph 連接器預覽註冊表單](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u)。
 
 ## <a name="things-to-consider"></a>考慮事項
 
 開始之前，請確定連接器已編制索引。 這可能需要最多48小時，視檔案大小而定。
-
-您無法為位於 [SharePoint](https://sharepoint.com/)中的內容建立垂直。
 
 新增垂直的三個基本步驟：
 
@@ -59,16 +57,16 @@ ms.locfileid: "48206966"
 
 若要在 [SharePoint](https://sharepoint.com/) Home、 [Office](https://office.com)或 [Bing](https://bing.com)中的 Microsoft 搜尋上建立垂直，請遵循下列步驟：
 
-1. 在 [Microsoft 365 系統管理中心](https://admin.microsoft.com)中，移至 [ [**縱向**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)]。
+1. 在  [Microsoft 365 系統管理中心](https://admin.microsoft.com)中，移至 [  [**縱向**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)]。
 1. 選取 [ **新增** ] 立即開始。  
 
 ### <a name="create-a-vertical-at-the-site-level"></a>在網站層級建立垂直
 
-1. 在您要垂直的 [SharePoint](https://sharepoint.com/) 網站上，移至 [ **設定**]。
-1. 選取 [ **網站資訊** ]，然後 **查看 [所有網站設定**]。
-1. 尋找 [ **Microsoft 搜尋** ] 區段，然後選取 [ **設定此網站集合的 microsoft search**]。
-1. 在功能窗格中，移至 [ **自訂經驗**]，然後選取 [ **縱向** ] 索引標籤。
-1. 若要新增垂直，請選取 [ **新增**]。
+1. 在您要垂直的 [SharePoint](https://sharepoint.com/) 網站上，移至 [ **設定** ]。
+1. 選取 [ **網站資訊** ]，然後 **查看 [所有網站設定** ]。
+1. 尋找 [ **Microsoft 搜尋** ] 區段，然後選取 [ **設定此網站集合的 microsoft search** ]。
+1. 在功能窗格中，移至 [  **自訂經驗** ]，然後選取 [ **縱向** ] 索引標籤。
+1. 若要新增垂直，請選取 [ **新增** ]。
   或者，若要編輯垂直，請在清單中選取它。
 
 請記住，會以停用狀態建立縱向。 您必須先啟用這些功能，使用者才能看到它們。
@@ -89,19 +87,19 @@ ms.locfileid: "48206966"
 ### <a name="create-a-result-type-at-the-organization-level"></a>在組織層級建立結果類型
 
 1. 在 [Microsoft 365 系統管理中心](https://admin.microsoft.com)中，移至 [ [**結果類型**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes)]。
-1. 若要新增 **結果類型**，請選取 [ **新增**]。 若要編輯結果類型，請選取相關清單中的結果類型。
+1. 若要新增 **結果類型** ，請選取 [  **新增** ]。 若要編輯結果類型，請選取相關清單中的結果類型。
 
 ### <a name="create-a-results-type-at-the-site-level"></a>在網站層級建立結果類型
 
-1. 在您要建立結果類型的 [SharePoint](https://sharepoint.com/) 網站上，移至 [ **設定**]。
-1. 選取 [ **網站資訊** ]，然後 **查看 [所有網站設定**]。
-1. 尋找 [Microsoft 搜尋] 區段，然後選取 [ **設定此網站集合的 Microsoft search**]。
-1. 在功能窗格中，移至 [ **自訂經驗**]，然後選取 [ **結果類型** ] 索引標籤。
-1. 若要新增結果類型，請選取 [ **新增**]。  或者，若要編輯結果類型，請選取清單中的結果類型。
+1. 在您要建立結果類型的 [SharePoint](https://sharepoint.com/) 網站上，移至 [ **設定** ]。
+1. 選取 [ **網站資訊** ]，然後 **查看 [所有網站設定** ]。
+1. 尋找 [Microsoft 搜尋] 區段，然後選取 [ **設定此網站集合的 Microsoft search** ]。
+1. 在功能窗格中，移至 [  **自訂經驗** ]，然後選取 [ **結果類型** ] 索引標籤。
+1. 若要新增結果類型，請選取 [ **新增** ]。  或者，若要編輯結果類型，請選取清單中的結果類型。
 
 ### <a name="view-the-vertical-after-its-enabled"></a>啟用垂直後查看
 
-在您啟用垂直後，可能需要一段時間，才能進行查看。 如果您不想要等到啟用它之後，您可以在[SharePoint](https://sharepoint.com/)和[Office](https://office.com)的 URL 中附加**cacheClear = true** ，以立即查看垂直。
+在您啟用垂直後，可能需要一段時間，才能進行查看。 如果您不想要等到啟用它之後，您可以在 [SharePoint](https://sharepoint.com/)和 [Office](https://office.com)的 URL 中附加 **cacheClear = true** ，以立即查看垂直。
 
 ## <a name="troubleshooting"></a>疑難排解
 

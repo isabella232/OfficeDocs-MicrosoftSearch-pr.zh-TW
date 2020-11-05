@@ -12,19 +12,19 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 搜尋的 Microsoft Graph 連接器概述
-ms.openlocfilehash: 2e3ca14b408ca6471c3163871c80fb24d62cff26
-ms.sourcegitcommit: be0c64845477127d73ee24dc727e4583ced3d0e6
+ms.openlocfilehash: d20c576c92c0ec2d794fc6f8fd21c829e468c086
+ms.sourcegitcommit: 995ce23d4e47a3456a02dba0ba7c9cd0de64528a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48206984"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48919481"
 ---
 # <a name="overview-of-microsoft-graph-connectors"></a>Microsoft Graph 連接器的概述
 
 Microsoft 搜尋會索引您的所有 [Microsoft 365](https://www.microsoft.com/microsoft-365) 資料，讓其可供使用者搜尋。 使用 Microsoft Graph 連接器，貴組織可以將協力廠商資料編制索引顯示在 Microsoft 搜尋結果中。 協力廠商資料可以位於內部部署或公用或私人雲端。 連接器展開可在 Microsoft 365 生產力應用程式中搜尋的內容來源類型，以及更廣泛的 Microsoft 生態用。
 
 > [!IMPORTANT]
-> **免責聲明**： microsoft Graph 連接器和 microsoft Search APIs (查詢和索引) 目前處於目標發行版本本中承租人的預覽狀態。 若要在 Microsoft 搜尋中使用連接器，或建立連接器，請選擇進入 [目標版本](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)。 若要深入瞭解預覽，請參閱 [連接器預覽程式](connectors-preview.md)。
+> **免責聲明** ： microsoft Graph 連接器和 microsoft Search APIs (查詢和索引) 目前處於目標發行版本本中承租人的預覽狀態。 若要在 Microsoft 搜尋中使用連接器，或建立連接器，請選擇進入 [目標版本](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)。 若要深入瞭解預覽，請參閱 [連接器預覽程式](connectors-preview.md)。
 
 ## <a name="architecture"></a>架構
 
@@ -52,25 +52,25 @@ Microsoft Graph 連接器預覽版本包含6個 Microsoft 建立的連接器。 
 
 下列各節提供這些 Microsoft 建立連接器的簡短描述。 您可以在每個連接器的連結文章中取得詳細資訊。
 
-- **[Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)**。 透過此 Microsoft Graph 連接器，您組織中的使用者可以搜尋 Azure Blob 容器中儲存的檔案和內容。 Azure Data Lake Storage Gen2 connector 也會為您指定的 Azure Data Lake Storage Gen2 帳戶中的已啟用階層的資料夾編制索引。
+- **[Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)** 。 透過此 Microsoft Graph 連接器，您組織中的使用者可以搜尋 Azure Blob 容器中儲存的檔案和內容。 Azure Data Lake Storage Gen2 connector 也會為您指定的 Azure Data Lake Storage Gen2 帳戶中的已啟用階層的資料夾編制索引。
 深入瞭解 [Azure Data Lake Storage Gen2 connector](azure-data-lake-connector.md)。
 
-- **[Azure DevOps](https://azure.microsoft.com/services/devops)**。 使用此 Microsoft Graph 連接器，您組織中的使用者可以搜尋 Azure DevOps 實例中的工作專案。
+- **[Azure DevOps](https://azure.microsoft.com/services/devops)** 。 使用此 Microsoft Graph 連接器，您組織中的使用者可以搜尋 Azure DevOps 實例中的工作專案。
 深入瞭解 [Azure DevOps 連接器](azure-devops-connector.md)。
 
-- **[AZURE SQL](https://azure.microsoft.com/services/sql-database)**。 透過此 Microsoft Graph 連接器，您組織中的使用者可以從 Azure SQL 資料庫搜尋資料。
+- **[AZURE SQL](https://azure.microsoft.com/services/sql-database)** 。 透過此 Microsoft Graph 連接器，您組織中的使用者可以從 Azure SQL 資料庫搜尋資料。
 深入瞭解 [AZURE SQL connector](MSSQL-connector.md)。
 
-- **企業網站**。 透過此 Microsoft Graph 連接器，您組織中的使用者可以在任何非 SharePoint 企業網站中搜尋頁面。
+- **企業網站** 。 透過此 Microsoft Graph 連接器，您組織中的使用者可以在任何非 SharePoint 企業網站中搜尋頁面。
 深入瞭解 [企業網站連接器](enterprise-web-connector.md)。
 
-- **[MediaWiki](https://www.mediawiki.org/wiki/MediaWiki)**。 使用此 Microsoft Graph 連接器，使用者可以在您的組織以 MediaWiki 所建立的 wiki 網站上搜尋知識文庫文章。
+- **[MediaWiki](https://www.mediawiki.org/wiki/MediaWiki)** 。 使用此 Microsoft Graph 連接器，使用者可以在您的組織以 MediaWiki 所建立的 wiki 網站上搜尋知識文庫文章。
 深入瞭解 [MediaWiki 連接器](mediawiki-connector.md)。
 
-- **[MICROSOFT SQL server](https://www.microsoft.com/sql-server/sql-server-2017)**。 透過此 Microsoft Graph 連接器，您組織中的使用者可以搜尋內部部署 SQL server 資料庫中的資料。
+- **[MICROSOFT SQL server](https://www.microsoft.com/sql-server/sql-server-2017)** 。 透過此 Microsoft Graph 連接器，您組織中的使用者可以搜尋內部部署 SQL server 資料庫中的資料。
 深入瞭解 [MICROSOFT SQL server connector](MSSQL-connector.md)。
 
-- **[ServiceNow](https://www.servicenow.com)**。 透過此 Microsoft Graph 連接器，您組織中的使用者可以從您的 ServiceNow 實例搜尋知識庫文章。
+- **[ServiceNow](https://www.servicenow.com)** 。 透過此 Microsoft Graph 連接器，您組織中的使用者可以從您的 ServiceNow 實例搜尋知識庫文章。
 深入瞭解 [ServiceNow 連接器](servicenow-connector.md)。
 
 ### <a name="connectors-from-our-partners"></a>合作夥伴的連接器
@@ -88,8 +88,6 @@ Microsoft Graph 連接器預覽版本包含6個 Microsoft 建立的連接器。 
 
 ## <a name="license-requirements"></a>授權需求
 
-若要在搜尋結果中查看連接器的資料，使用者必須具備下列其中一項 Microsoft 365 或 Office 365 訂閱：
+您為組織中的使用者需要有效的 Microsoft 365 或 Office 365 授權和足夠的圖形連接器配額，以在其搜尋結果中查看連接器的資料。
 
-- [Microsoft 365 或 Office 365 企業版 E3 或 E5](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)
-
-- [Microsoft 365 或 Office 365 教育版 A3 或 A5](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab:primaryr1)
+若要深入瞭解，請參閱 [授權需求和定價](licensing.md)。
