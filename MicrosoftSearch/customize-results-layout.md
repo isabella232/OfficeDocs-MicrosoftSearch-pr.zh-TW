@@ -1,5 +1,5 @@
 ---
-title: 自訂搜尋結果版面配置
+title: 管理搜尋結果版面配置
 ms.author: jypal
 author: jypal6
 manager: jeffkizn
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 使用適應性卡，建立配置以查看自訂的搜尋結果
-ms.openlocfilehash: 5bd42eded291781f5122cfede3759327b5222108
-ms.sourcegitcommit: 995ce23d4e47a3456a02dba0ba7c9cd0de64528a
+ms.openlocfilehash: 425e5404c14d500f6ecd84ad449dafb05bbfd31b
+ms.sourcegitcommit: 59435698bece013ae64ca2a68c43455ca10e3fdf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919508"
+ms.locfileid: "48927178"
 ---
 <!-- markdownlint-disable no-hard-tabs -->
 # <a name="create-a-layout-to-customize-search-results"></a>建立版式以自訂搜尋結果
@@ -198,7 +198,7 @@ ms.locfileid: "48919508"
 - 綁定值時，請勿定義不正確資料類型。 如需資料類型的相關資訊，請參閱 [管理搜尋架構](https://docs.microsoft.com/sharepoint/search/manage-the-search-schema)。
 - 請遵循結果版面 JSON 的最大高度，避免在結果頁面上裁剪結果。 如果您超出結果版面配置的最大高度，將會在結果頁面上裁剪結果。
 - 不使用 `px` 元素屬性中的值。
-- 當使用結果版面配置中的 **ResultSnippet** 屬性來突出顯示搜尋結果中的查詢比對時，請勿使用 markdown。
+- 在結果版面配置中，請勿使用 markdown 搭配 **ResultSnippet** 屬性，在搜尋結果中醒目提示查詢比對。
 
 ## <a name="resources"></a>資源
 

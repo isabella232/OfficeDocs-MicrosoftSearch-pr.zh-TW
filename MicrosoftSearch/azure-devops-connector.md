@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的 Azure DevOps 連接器
-ms.openlocfilehash: 1030dd2b508e5364f53f92e7c8ce8c12c040ce70
-ms.sourcegitcommit: 85d40512e8616c851da1a38c137ca0e4e8625813
+ms.openlocfilehash: a0028c3b336c2b5e3d01bb14006ee0debb4524f2
+ms.sourcegitcommit: 59435698bece013ae64ca2a68c43455ca10e3fdf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47359719"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48927187"
 ---
 # <a name="azure-devops-connector"></a>Azure DevOps 連接器
 
@@ -69,15 +69,16 @@ ms.locfileid: "47359719"
 
 ![選擇屬性](media/ADO_choose_properties.png)
 
-## <a name="manage-the-search-schema"></a>管理搜尋結構描述
-
-設定搜尋架構對應。 您可以選擇哪些屬性可供 **查詢**、可搜尋及可 **供****檢索**。
-
 ## <a name="manage-search-permissions"></a>管理搜尋許可權
 
-Azure DevOps 連接器目前只支援 **所有人皆可看到**搜尋許可權。 已編制索引的資料將會出現在所有使用者的搜尋結果中。
+Azure DevOps 連接器目前只支援 **所有人皆可看到** 搜尋許可權。 已編制索引的資料將會出現在所有使用者的搜尋結果中。
 
-## <a name="set-the-refresh-schedule"></a>設定重新整理排程
+## <a name="manage-search-schema"></a>管理搜尋結構描述
+
+設定搜尋架構對應。 您可以選擇哪些屬性可供 **查詢** 、可搜尋及可 **供****檢索** 。
+
+
+## <a name="set-refresh-schedule"></a>設定重新整理排程
 
 Azure DevOps 連接器支援完整和累加編目的更新排程。 完整編目會找到先前同步處理至 Microsoft 搜尋索引的已刪除工作專案。 會執行完整編目，以同步處理所有工作專案。 若要將新的工作專案和更新同步到現有的工作專案，您必須排程累加編目。
 
