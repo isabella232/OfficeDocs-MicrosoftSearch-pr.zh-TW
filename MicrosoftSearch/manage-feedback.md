@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: 在 Microsoft 搜尋中審閱並處理使用者意見反應
-ms.openlocfilehash: fd47403fd86be2e2fb1ba7baee7473958a8e5572
-ms.sourcegitcommit: 4b2cc0a4cd3d7cdcd8eb23a8baa9703173889a73
+ms.openlocfilehash: 332410cd29a7256cccd651c3a668fdf3eb473ba4
+ms.sourcegitcommit: 102371815e739da33d1711197cdc743ae8124baa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48986954"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48996790"
 ---
 # <a name="managing-user-feedback"></a>管理使用者意見反應
 
@@ -32,7 +32,7 @@ ms.locfileid: "48986954"
 
 ![全域意見反應表單](media/feedback/feedback-global-dialog.png)
 
-使用者也可以選擇將其查詢及其他診斷資訊以及類別和批註傳送給 Microsoft。 診斷資訊將包含一些個人資料，例如使用者識別碼。 [深入瞭解](https://privacy.microsoft.com/en-US/privacystatement) 隱私權及如何保護此資料。 診斷資料包含 Microsoft 在產品改進中使用意見反應專案所需的最重要資訊。
+使用者也可以選擇將其查詢及其他診斷資訊以及類別和批註傳送給 Microsoft。 [深入瞭解](https://privacy.microsoft.com/en-US/privacystatement) 隱私權及如何保護此資料。 診斷資料包含 Microsoft 在產品改進中使用意見反應專案所需的最重要資訊。
 
 大部分的意見反應都會出現在 Microsoft 搜尋系統管理中心的 [ [意見](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/feedback) 反應] 區段中。 使用 **我想要建議的內部連結** 類別的回饋會在 [ [書簽](https://admin-ignite.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks) ] 區段中顯示為建議的書簽，並可透過篩選 **建議** 的狀態加以看到。
 
