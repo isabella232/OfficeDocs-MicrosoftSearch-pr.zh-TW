@@ -12,33 +12,48 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的 ServiceNow 連接器
-ms.openlocfilehash: b60583e61687b13c7fd631cd1c4a9f6d663724e8
-ms.sourcegitcommit: 59435698bece013ae64ca2a68c43455ca10e3fdf
+ms.openlocfilehash: 5bcc0870df7c2ad418bb2ae29e9d4d999dcbdf3f
+ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48927196"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367593"
 ---
 # <a name="servicenow-connector"></a>ServiceNow 連接器
 
-使用 ServiceNow 連接器，您的組織可以為組織內所有使用者顯示的知識庫文章編制索引。 從 ServiceNow 設定連接器和索引內容之後，使用者可以從任何 Microsoft 搜尋用戶端搜尋這些文章。  
+使用 ServiceNow 連接器，您的組織可以為您組織內的使用者準則許可權，索引所有使用者都能看到或限制的知識庫文章。 從 ServiceNow 設定連接器和索引內容之後，使用者可以從任何 Microsoft 搜尋用戶端搜尋這些文章。  
 
 本文適用于 Microsoft 365 系統管理員或任何設定、執行及監視 ServiceNow 連接器的人員。 它說明如何設定連接器和連接器功能、限制及疑難排解技術。
 
 瞭解如何存取 Microsoft 建立的連接器 [，以設定 microsoft 的連接器以進行 Microsoft 搜尋](https://docs.microsoft.com/microsoftsearch/configure-connector)。 下列文章說明 ServiceNow 連接器特定設定。
 
 ## <a name="connection-settings"></a>連接設定
-若要連線至您的 ServiceNow 資料，您需要組織的 **ServiceNow 實例 URL** 、此帳戶的認證，以及 OAuth 驗證的用戶端識別碼和用戶端密碼。  
+若要連線至您的 ServiceNow 資料，您需要組織的 **ServiceNow 實例 URL**、此帳戶的認證，以及 OAuth 驗證的用戶端識別碼和用戶端密碼。  
 
-組織的 **ServiceNow 實例 URL** 一般會類似 **HTTPs:// &lt; 您的組織網域> service-now.com** 。 除了此 URL 之外，您還需要一個帳戶，用以設定 ServiceNow 的連線，以及允許 Microsoft 搜尋依重新整理排程，定期更新 ServiceNow 中的文章。 帳戶應具備 <em>知識</em> 角色。 [瞭解如何指派 ServiceNow 帳戶的角色](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html)。
+組織的 **ServiceNow 實例 URL** 一般會類似 **HTTPs:// &lt; 您的組織網域> service-now.com**。 除了此 URL 之外，您還需要一個帳戶，用以設定 ServiceNow 的連線，以及允許 Microsoft 搜尋依重新整理排程，定期更新 ServiceNow 中的文章。 帳戶至少應具備 <em>知識</em> 角色。 [瞭解如何指派 ServiceNow 帳戶的角色](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html)。
 
-若要驗證及同步處理 ServiceNow 中的內容，請選擇下列 **其中一** 項支援的方法：
+>[!NOTE]
+>如果您想要編目使用者和群組身分識別，以服從 Microsoft 搜尋結果中知識文章的存取權限，該帳戶應該可以存取 ServiceNow 中的下清單記錄：
+>* kb_uc_can_contribute_mtom
+>* kb_uc_can_read_mtom
+>* kb_uc_cannot_read_mtom
+>* kb_uc_cannot_contribute_mtom
+>* sys_user
+>* sys_user_has_role
+>* sys_user_grmember
+>* user_criteria
+>* kb_knowledge_base  
+> 您可以為您用來連線 Microsoft 搜尋的帳戶建立和指派角色。 可以在該角色上指派對表格的讀取權限。 若要瞭解如何設定表記錄的「讀取」存取權，請參閱 [保護資料表記錄](https://developer.servicenow.com/dev.do#!/learn/learning-plans/orlando/new_to_servicenow/app_store_learnv2_securingapps_orlando_creating_and_editing_access_controls)。
+
+若要驗證及同步處理 ServiceNow 中的內容，請選擇下列 **其中一** 項支援的方法： 
 1. 基本驗證 
 2. ServiceNow OAuth (建議) 
 3. Azure AD OpenID Connect
 
 #### <a name="basic-authentication"></a>基本驗證
-輸入具有 <em>知識</em> 角色的 ServiceNow 帳戶的使用者名稱和密碼，以向您的實例驗證。
+
+輸入具有 **知識** 角色的 ServiceNow 帳戶的使用者名稱和密碼，以向您的實例驗證。
+
 #### <a name="servicenow-oauth"></a>ServiceNow OAuth
 
 若要使用 ServiceNow OAuth 進行驗證，ServiceNow 系統管理員必須布建 ServiceNow 實例中的端點，這樣 Microsoft Search 應用程式才能存取該實例。 若要深入瞭解，請參閱在 ServiceNow 檔中 [建立用戶端存取實例的端點](https://docs.servicenow.com/bundle/newyork-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html) 。
@@ -47,7 +62,7 @@ ms.locfileid: "48927196"
 
 **Field** | **描述** | **建議值**
 --- | --- | ---
-Name | 此唯一值可識別您需要 OAuth 存取的應用程式。 | Microsoft 搜尋
+姓名 | 此唯一值可識別您需要 OAuth 存取的應用程式。 | Microsoft 搜尋
 用戶端識別碼 | 應用程式的唯讀、自動產生的唯一識別碼。 當實例要求存取權杖時，會使用用戶端識別碼。 | NA
 用戶端密碼 | 使用此共用的機密字串，ServiceNow 實例和 Microsoft 搜尋會授權彼此間的通訊。 | 請將此視為密碼，遵循安全性最佳作法。
 重新導向 URL | 授權伺服器重新導向所需的回撥 URL。 | https://gcs.office.com/v1.0/admin/oauth/callback
@@ -56,7 +71,7 @@ Name | 此唯一值可識別您需要 OAuth 存取的應用程式。 | Microsoft
 重新整理權杖生命週期 | 重新整理權杖有效的秒數。 根據預設，重新整理權杖會在100天內到期 (8640000 秒) 。 | 31536000 (1 年) 
 存取權杖使用壽命 | 存取權杖有效的秒數。 | 43200 (12 小時) 
 
-輸入用戶端識別碼和用戶端密碼以連接至您的實例。 連接後，請使用 ServiceNow 帳號憑證來驗證編目的許可權。 帳戶應具備 <em>知識</em> 角色。 
+輸入用戶端識別碼和用戶端密碼以連接至您的實例。 連接後，請使用 ServiceNow 帳號憑證來驗證編目的許可權。 帳戶至少應具備 **知識** 角色。
 
 #### <a name="azure-ad-openid-connect"></a>Azure AD OpenID Connect
 
@@ -107,7 +122,7 @@ Name | 此唯一值可識別您需要 OAuth 存取的應用程式。 | Microsoft
 
 **Field** | **描述** | **建議值**
 --- | --- | ---
-Name | 識別 OAuth OIDC 實體的唯一名稱。 | Azure AD
+姓名 | 識別 OAuth OIDC 實體的唯一名稱。 | Azure AD
 用戶端識別碼 | 在協力廠商 OAuth OIDC server 中註冊之應用程式的用戶端識別碼。 實例在要求存取權杖時使用用戶端識別碼。 | 步驟1的應用程式 (用戶端) 識別碼
 用戶端密碼 | 在協力廠商 OAuth OIDC server 中註冊之應用程式的用戶端密碼。 | 步驟2中的用戶端密碼
 
@@ -147,24 +162,43 @@ OIDC 設定快取壽命範圍 |  120
 
 使用應用程式識別碼做為用戶端識別碼 (從步驟 1) ，並從系統管理中心的「步驟 2) 用戶端密碼 (，以使用 Azure AD ServiceNow Connect 向您的 OpenID 實例進行驗證。
 
-## <a name="filter-data"></a>篩選資料 
+## <a name="filter-data"></a>篩選資料
+
 使用 ServiceNow 查詢字串，您可以指定同步處理文章的條件。 它就像是 **SQL Select** 語句中的 **Where** 子句。 例如，您可以選擇只為發佈和使用中的文章編制索引。 若要瞭解如何建立您自己的查詢字串，請參閱 [使用篩選產生編碼的查詢字串](https://docs.servicenow.com/bundle/paris-platform-user-interface/page/use/using-lists/task/t_GenEncodQueryStringFilter.html)。
 
 ## <a name="manage-search-permissions"></a>管理搜尋許可權
-ServiceNow 連接器只支援 **所有人都** 能看見的搜尋許可權。 已編制索引的資料會顯示在搜尋結果中，並對組織中的所有使用者顯示。
 
-## <a name="manage-the-search-schema"></a>管理搜尋結構描述
-成功連接後，請設定搜尋架構對應。 您可以選擇哪些屬性可供 **查詢** 、可搜尋及可 **供****檢索** 。 若要深入瞭解管理搜尋架構，請參閱 [管理搜尋架構](https://docs.microsoft.com/microsoftsearch/configure-connector#manage-the-search-schema)。
+ServiceNow 連接器支援 **所有人都** 可以看到的搜尋許可權，或是 **只有存取此資料來源的人員才能使用**。 已編制索引的資料會顯示在搜尋結果中，並可供組織中的所有使用者或分別存取這些資料的使用者看到。 ServiceNow 連接器支援不含高級腳本的預設使用者準則許可權。 當連接器使用 advanced script 遇到使用者準則時，搜尋結果中將不會顯示使用該使用者準則的所有資料。
+
+如果您只選擇可 **存取此資料來源的人員**，您需要進一步選擇您的 ServiceNow 實例是否有 Azure Active DIRECTORY (AAD) 布建使用者或非 AAD 使用者。
+
+>[!NOTE]
+>如果您選擇 [AAD] 做為身分識別來源的類型，請確定您在 ServiceNow 中為電子郵件目標屬性指派 UPN 來源屬性。 若要驗證或變更您的對應，請參閱 [自訂使用者布建屬性-在 Azure Active Directory 中 SaaS 應用程式的對應](https://docs.microsoft.com/azure/active-directory/app-provisioning/customize-application-attributes)。
+
+如果您選擇從 ServiceNow 實例中攝取一個 ACL，並為身分識別類型選取 "非 AAD"，請參閱 [Map 您的非 AZURE AD](map-non-aad.md) 身分識別，以取得對應身分識別的指示。
+
+## <a name="assign-property-labels"></a>指派屬性標籤
+
+您可以從選項的功能表中選擇，將 source 屬性指派給每個標籤。 雖然這個步驟不是必要的，但具有一些屬性標籤會提升搜尋相關性，並可確保使用者更準確的搜尋結果。
+
+## <a name="manage-schema"></a>管理架構
+
+在 [**管理架構**] 畫面上，您可以選擇變更架構屬性 (可 **查詢**、**可搜尋、可****檢索** 及 **可精簡搜尋**) 相關聯的屬性、新增選用的別名，然後選擇 **Content** 屬性。
 
 ## <a name="set-the-refresh-schedule"></a>設定重新整理排程
+
 ServiceNow 連接器支援完整和累加編目的更新排程。 我們建議您同時設定兩者。
 
 完整編目排程會找到先前同步處理至 Microsoft 搜尋索引的已刪除文章，以及任何移出同步篩選的文章。 當您第一次連線至 ServiceNow 時，會執行完整編目以同步處理所有知識文庫文章。 若要同步處理新專案並進行更新，您必須排程累加編目。
 
 建議的預設值為一天的完整編目及四小時為增量編目。
+>[!NOTE]
+>針對身分識別，只會套用已排程的完整編目。
 
 ## <a name="review-and-publish"></a>審閱及發佈
+
 設定連接器之後，即可複查及發佈連線。
 
 ## <a name="next-steps"></a>後續步驟
+
 在發佈連線後，您必須自訂搜尋結果頁面。 若要瞭解如何自訂搜尋結果，請參閱 [自訂搜尋結果頁面](https://docs.microsoft.com/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page)。

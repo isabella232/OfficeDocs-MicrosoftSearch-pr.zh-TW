@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 microsoft SQL Server 或 Azure SQL connector for Microsoft Search。
-ms.openlocfilehash: 71fd8b6cdf090c9dda9ac94973661d865536a984
-ms.sourcegitcommit: 6baf6f4b8a6466ee1a6ad142be8541f659fcf5d9
+ms.openlocfilehash: dc90693e7629c004ecc48b020262ec5cfd0808c0
+ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48214486"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367575"
 ---
 # <a name="azure-sql-and-microsoft-sql-server-connectors"></a>Azure SQL 及 Microsoft SQL Server 連接器
 
@@ -56,7 +56,7 @@ ms.locfileid: "48214486"
 
 ## <a name="full-crawl-required"></a>需要進行完整編目 () 
 
-在這個步驟中，您會設定執行資料庫完整編目的 SQL 查詢。 完整編目會選取您想要讓其可 **查詢** **、可**搜尋或可 **檢索**的所有欄或屬性。 您也可以指定 ACL 欄，以限制搜尋結果對特定使用者或群組的存取。
+在這個步驟中，您會設定執行資料庫完整編目的 SQL 查詢。 完整編目會選取您想要讓其可 **查詢** **、可** 搜尋或可 **檢索** 的所有欄或屬性。 您也可以指定 ACL 欄，以限制搜尋結果對特定使用者或群組的存取。
 
 > [!Tip]
 > 若要取得所需的所有欄，您可以加入多個表格。
@@ -65,7 +65,7 @@ ms.locfileid: "48214486"
 
 ### <a name="select-data-columns-required-and-acl-columns-optional"></a> (必要) 和 ACL 欄 (選用) 選取資料欄位
 
-這個範例會示範五個數據列的選取範圍，其中保留搜尋的資料：「訂單」、「OrderTitle」、OrderDesc、CreatedDateTime 及 IsDeleted。 若要設定每個資料列的查看許可權，您可以選擇性地選取下列 ACL 欄： AllowedUsers、AllowedGroups、DeniedUsers 及 DeniedGroups。 所有的資料欄位都可以是可**查詢**、可搜尋或**可供****檢索**。
+這個範例會示範五個數據列的選取範圍，其中保留搜尋的資料：「訂單」、「OrderTitle」、OrderDesc、CreatedDateTime 及 IsDeleted。 若要設定每個資料列的查看許可權，您可以選擇性地選取下列 ACL 欄： AllowedUsers、AllowedGroups、DeniedUsers 及 DeniedGroups。 所有的資料欄位都可以是可 **查詢**、可搜尋或 **可供****檢索**。
 
 選取下列範例查詢所示的資料行： `SELECT OrderId, OrderTitle, OrderDesc, AllowedUsers, AllowedGroups, DeniedUsers, DeniedGroups, CreatedDateTime, IsDeleted`
 
@@ -109,15 +109,15 @@ ms.locfileid: "48214486"
 
 下列識別碼類型可供使用 ACLs：
 
-* **使用者主體名稱 (upn) **：使用者主要名稱 (upn) 是以電子郵件地址格式的系統使用者名稱。 UPN (例如： john.doe@domain.com) 會包含 (登入名稱) 、分隔符號 (@ 符號) 和功能變數名稱 (UPN 尾碼) 的使用者名稱。 
+* **使用者主體名稱 (upn)**：使用者主要名稱 (upn) 是以電子郵件地址格式的系統使用者名稱。 UPN (例如： john.doe@domain.com) 會包含 (登入名稱) 、分隔符號 (@ 符號) 和功能變數名稱 (UPN 尾碼) 的使用者名稱。 
 * **Azure Active Directory (AAD) 識別碼**：在 Azure AD 中，每個使用者或群組都有一個類似 ' e0d3ad3d-0000-1111-2222-3c5f5c52ab9b ' 的物件識別碼。
-* **Active Directory (AD) 安全性**識別碼：在內部部署 AD 安裝程式中，每個使用者和群組都有一個無法變化的唯一安全性識別碼，看起來像是-1-5-21-3878594291-2115959936-132693609-65242。 '
+* **Active Directory (AD) 安全性** 識別碼：在內部部署 AD 安裝程式中，每個使用者和群組都有一個無法變化的唯一安全性識別碼，看起來像是-1-5-21-3878594291-2115959936-132693609-65242。 '
 
 ![設定存取控制清單的搜尋許可權設定](media/MSSQL-ACL2.png)
 
 ## <a name="incremental-crawl-optional"></a>增量式編目 (選用) 
 
-在此選用的步驟中，請提供 SQL 查詢，以執行資料庫的增量式編目。 在此查詢中，SQL 連接器會決定自上次累加編目以來對資料所做的任何變更。 在完整編目中，選取您想要讓其成為可**查詢**、可搜尋或可**檢索****的所有**欄。 指定您在完整編目查詢中指定的相同 ACL 欄集。
+在此選用的步驟中，請提供 SQL 查詢，以執行資料庫的增量式編目。 在此查詢中，SQL 連接器會決定自上次累加編目以來對資料所做的任何變更。 在完整編目中，選取您想要讓其成為可 **查詢**、可搜尋或可 **檢索****的所有** 欄。 指定您在完整編目查詢中指定的相同 ACL 欄集。
 
 下列映射中的元件類似于完整編目元件，但有一個例外。 在此情況下，"ModifiedDateTime" 是選取的浮水印欄。 查看 [完整編目步驟](#full-crawl-required) ，以瞭解如何撰寫累加編目查詢，並以範例顯示下列影像。
 
@@ -126,6 +126,14 @@ ms.locfileid: "48214486"
 ## <a name="manage-search-permissions"></a>管理搜尋許可權
 
 您可以選擇使用完整編目 [畫面中所指定的 ACLs](#full-crawl-manage-search-permissions) ，也可以覆寫它們，讓每個人都能看到您的內容。
+
+## <a name="assign-property-labels"></a>指派屬性標籤
+
+您可以從選項的功能表中選擇，將 source 屬性指派給每個標籤。 雖然這個步驟不是必要的，但具有一些屬性標籤會提升搜尋相關性，並可確保使用者更準確的搜尋結果。
+
+## <a name="manage-schema"></a>管理架構
+
+在 [**管理架構**] 畫面上，您可以選擇變更架構屬性 (可 **查詢**、**可搜尋、可****檢索** 及 **可精簡搜尋**) 相關聯的屬性、新增選用的別名，然後選擇 **Content** 屬性。
 
 ## <a name="limitations"></a>限制
 

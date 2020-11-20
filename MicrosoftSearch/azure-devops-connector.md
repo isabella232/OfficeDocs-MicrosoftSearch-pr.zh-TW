@@ -12,21 +12,21 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的 Azure DevOps 連接器
-ms.openlocfilehash: a0028c3b336c2b5e3d01bb14006ee0debb4524f2
-ms.sourcegitcommit: 59435698bece013ae64ca2a68c43455ca10e3fdf
+ms.openlocfilehash: b9c566e3e07bfca6d4d25b14915f0160f3928b15
+ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48927187"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367548"
 ---
-# <a name="azure-devops-connector"></a>Azure DevOps 連接器
+# <a name="azure-devops-connector-preview"></a>Azure DevOps connector (preview) 
 
 透過 Azure DevOps connector，您的組織可以在其 Azure DevOps 服務實例中編制工作專案的索引。 當您從 Azure DevOps 設定連接器和索引內容之後，使用者就可以在 Microsoft 搜尋中搜尋這些專案。
 
 本文適用于 Microsoft 365 系統管理員或任何設定、執行及監視 Azure DevOps 連接器的人員。 它說明如何設定連接器和連接器功能、限制及疑難排解技術。
 
 >[!IMPORTANT]
->Azure DevOps 連接器只支援 Azure DevOps 雲端服務。 Azure DevOps Server 2019，tfs 2018，tfs 2017，tfs 2015，及 TFS 2013 都不受此連接器支援。
+>Azure DevOps 連接器只支援 Azure DevOps 雲端服務。 Azure DevOps Server 2019，tfs 2018，tfs 2017，tfs 2015，及 TFS 2013 都不受此連接器支援。 
 
 ## <a name="connect-to-a-data-source"></a>連接到資料來源
 
@@ -34,17 +34,17 @@ ms.locfileid: "48927187"
 
 ### <a name="register-an-app"></a>註冊應用程式
 
-您必須在 Azure DevOps 中註冊應用程式，Microsoft 搜尋應用程式才能存取實例。 若要深入瞭解，請參閱 Azure DevOps 檔，以瞭解如何 [註冊應用程式](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/oauth?view=azure-devops#register-your-app)。
+您必須在 Azure DevOps 中註冊應用程式，Microsoft 搜尋應用程式才能存取實例。 若要深入瞭解，請參閱 Azure DevOps 檔，以瞭解如何 [註冊應用程式](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/oauth?view=azure-devops#register-your-app)。 
 
 下表提供如何填寫 [應用程式註冊] 表單的指導方針：
 
- **必要欄位** | **描述**      | **建議值**
---- | --- | ---
-| 公司名稱         | 這是您公司的名稱。 | 使用適當的值   |
-| 應用程式名稱     | 此唯一值可識別您要授權的應用程式。    | Microsoft 搜尋     |
-| 應用程式網站  | 此必要欄位是在連接器設定期間要求存取 Azure DevOps 實例之應用程式的 URL。  | <https://gcs.office.com/>                |
-| 授權回撥 URL        | 授權伺服器重新導向所需的回撥 URL。 | <https://gcs.office.com/v1.0/admin/oauth/callback>|
-| 授權範圍 | 這是應用程式的存取範圍 | 選取下列範圍： Identity (讀取) 、工作專案 (讀取) 、變數群組 (讀取) 、專案和團隊 (讀取) 、圖形 (讀取) |
+ **必要欄位** | **描述**      | **建議值** 
+--- | --- | --- 
+| 公司名稱         | 這是您公司的名稱。 | 使用適當的值   | 
+| 應用程式名稱     | 此唯一值可識別您要授權的應用程式。    | Microsoft 搜尋     | 
+| 應用程式網站  | 此必要欄位是在連接器設定期間要求存取 Azure DevOps 實例之應用程式的 URL。  | <https://gcs.office.com/>                | 
+| 授權回撥 URL        | 授權伺服器重新導向所需的回撥 URL。 | <https://gcs.office.com/v1.0/admin/oauth/callback>| 
+| 授權範圍 | 這是應用程式的存取範圍 | 選取下列範圍： Identity (讀取) 、工作專案 (讀取) 、變數群組 (讀取) 、專案和團隊 (讀取) 、圖形 (讀取) | 
 
 在註冊具有上述詳細資料的應用程式時，您會取得將用來設定連接器的 **應用程式識別碼** 和 **用戶端密碼** 。
 
@@ -71,15 +71,18 @@ ms.locfileid: "48927187"
 
 ## <a name="manage-search-permissions"></a>管理搜尋許可權
 
-Azure DevOps 連接器目前只支援 **所有人皆可看到** 搜尋許可權。 已編制索引的資料將會出現在所有使用者的搜尋結果中。
+Azure DevOps 連接器只支援可供  **存取此資料來源** 或 **所有人** 的使用者看到的搜尋許可權。 如果您選擇 [ **只有可存取此資料來源的人員**]，針對 Azure DevOps 中組織、專案或區域路徑層級的使用者或群組的許可權，針對其存取權的使用者，將會在搜尋結果中顯示索引的資料。 如果您選擇 [ **任何人**]，索引資料將會出現在所有使用者的搜尋結果中。
 
-## <a name="manage-search-schema"></a>管理搜尋結構描述
+## <a name="assign-property-labels"></a>指派屬性標籤
 
-設定搜尋架構對應。 您可以選擇哪些屬性可供 **查詢** 、可搜尋及可 **供****檢索** 。
+您可以從選項的功能表中選擇，將 source 屬性指派給每個標籤。 雖然這個步驟不是必要的，但具有一些屬性標籤會提升搜尋相關性，並可確保使用者更準確的搜尋結果。
 
+## <a name="manage-schema"></a>管理架構
 
-## <a name="set-refresh-schedule"></a>設定重新整理排程
+在 [**管理架構**] 畫面上，您可以選擇變更架構屬性 (可 **查詢**、**可搜尋、可****檢索** 及 **可精簡搜尋**) 相關聯的屬性、新增選用的別名，然後選擇 **Content** 屬性。
+
+## <a name="set-the-refresh-schedule"></a>設定重新整理排程
 
 Azure DevOps 連接器支援完整和累加編目的更新排程。 完整編目會找到先前同步處理至 Microsoft 搜尋索引的已刪除工作專案。 會執行完整編目，以同步處理所有工作專案。 若要將新的工作專案和更新同步到現有的工作專案，您必須排程累加編目。
 
-建議的排程為一小時用於增量編目，而一天則是完整編目。
+建議的排程為一小時用於增量編目，而一天則是完整編目。 

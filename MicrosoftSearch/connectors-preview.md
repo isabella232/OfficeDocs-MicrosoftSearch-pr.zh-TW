@@ -12,47 +12,28 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解 microsoft 搜尋的 Microsoft Graph 連接器預覽。
-ms.openlocfilehash: 81d169074a316b6ab07f47156e0f057e50c12e3e
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+ms.openlocfilehash: 592e108fe0333e4faf8ff2e4618f9d5216847b8a
+ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422890"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367665"
 ---
-# <a name="microsoft-graph-connectors-preview"></a>Microsoft Graph 連接器預覽
+# <a name="microsoft-graph-connectors-preview-release-and-features"></a>Microsoft Graph 連接器預覽發行及功能
 
-Microsoft Graph 連接器和 Microsoft Search APIs (查詢和索引) 目前在預覽狀態中。 若要存取連接器功能，您必須在您的租使用者中開啟 [目標版本] 選項。 這是早期預覽，但沒有服務層級保證。 我們鼓勵客戶嘗試連接器功能並提供意見反應。 在預覽期間，我們不建議使用連接器進行生產用途。
+現在一般會提供 microsoft Graph 連接器和 Microsoft Search APIs。 最初的首展將是針對目標版本設定的客戶。 完成所有租使用者的部署時，連接器內容的索引配額利用率會變成計費。 如需詳細資訊，請參閱 [授權需求和定價](licensing.md) 。
 
 ## <a name="set-up-targeted-release"></a>設定目標版本
 
-若要嘗試連接器，您必須為組織中的所有使用者設定 [ **目標發行** 選項]。 若要深入瞭解目標發行選項及設定方式，請參閱 [在 Office 365 中設定標準或目標發行選項](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)。
+如果您想要在展示期間在租使用者中使用圖形連接器，則必須選擇已目標的版本。 若要深入瞭解目標發行選項及設定方式，請參閱 [在 Office 365 中設定標準或目標發行選項](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)。
 
-## <a name="choose-a-preview-environment"></a>選擇預覽環境
+## <a name="preview-features"></a>預覽功能
 
-若要嘗試連接器、索引 APIs 和搜尋 APIs，我們建議這兩種方法：
+雖然現在一般會提供 Microsoft Graph 連接器和 Microsoft Search APIs，但有許多功能仍會保留在預覽中。
 
-1. **測試租**使用者。  我們鼓勵您使用測試租使用者來嘗試使用 Microsoft Graph 連接器預覽。
+預覽中的連接器和功能組包括：
 
-2. **測試網站集合**。 如果您沒有測試租使用者，您可以建立測試網站集合以嘗試使用連接器功能。 若要顯示連接器的結果，而不影響組織中任何其他位置的搜尋頁面，請自訂僅該網站集合的搜尋體驗。
-
-## <a name="preview-limitations"></a>預覽限制
-
-預覽版本有下列限制：
-
-* 接收輸送量會限制每秒大約四個專案。
-
-* 不支援架構更新。 建立連線設定後，就無法更新架構。 您只可刪除並重新建立連線。
-
-* 已編制索引的內容只會顯示在自訂垂直的搜尋結果頁面中。 這種限制適用于具有自訂類型的內容。
-
-* 您在預覽期間設定的任何連線，都可能需要刪除並重新建立。 如果這些連線與改進產品所做的變更不相容，這些連線將無法運作。
-
-* 連接限制。 每個租使用者最多可以建立10個連接。
-
-* 來源存放庫大小。 建議您預覽具有大約200000專案來源存放庫的連接器，因為這是我們經過測試的搜尋比例限制。 我們正在努力改進搜尋效能，而且我們預計會在不久的未來支援較大的存放庫大小。
-
-* 無法使用 [編輯連線支援]。 建立連線後，就無法編輯或變更它。 如果您需要變更任何詳細資料，您必須刪除並重新建立連線。
-
-* 僅能在自訂的縱向搜尋連接器內容。
-
-* 每個自訂垂直中只會顯示一個連線的連接器內容，而且需要產生結果類型。
+* [Azure DevOps 連接器](azure-devops-connector.md)
+* [Salesforce 連接器](salesforce-connector.md)
+* 具有使用來源 ACLs 之搜尋許可權的[ServiceNow 連接器](servicenow.md)
+* [管理結果叢集](result-cluster.md)

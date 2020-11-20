@@ -12,23 +12,27 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的企業網站連接器
-ms.openlocfilehash: b4d9f837892bcfd795421530e0571fa0509a2761
-ms.sourcegitcommit: be0c64845477127d73ee24dc727e4583ced3d0e6
+ms.openlocfilehash: 4b9d8a8472c81c2bc647b3cef3cdb437073d36cf
+ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48206939"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367467"
 ---
 <!-- markdownlint-disable no-inline-html -->
 # <a name="enterprise-websites-connector"></a>企業網站連接器
 
-透過企業網站連接器，您的組織可以 **從其內部網站**對文章和內容編制索引。 在您設定網站的連接器及同步內容之後，使用者可以從任何 Microsoft 搜尋用戶端搜尋該內容。
+透過企業網站連接器，您的組織可以 **從其內部網站** 對文章和內容編制索引。 在您設定網站的連接器及同步內容之後，使用者可以從任何 Microsoft 搜尋用戶端搜尋該內容。
 
 本文適用于 [Microsoft 365](https://www.microsoft.com/microsoft-365) 系統管理員或任何設定、執行及監視企業網站連接器的人員。 它說明如何設定連接器和連接器功能、限制及疑難排解技術。  
 
 ## <a name="connect-to-a-data-source"></a>連接到資料來源
 
-若要連線至資料來源，您需要根 URL 和驗證格式：無、基本驗證，或使用 [Azure Active Directory (AZURE AD) ](https://docs.microsoft.com/azure/active-directory/)的 OAuth 2.0。
+若要連線至您的資料來源，您必須填入網站的根 URL，以及您想要使用的驗證類型： [無]、[基本驗證]，或 OAuth 2.0 搭配 [Azure Active Directory (AZURE AD) ](https://docs.microsoft.com/azure/active-directory/)]。
+
+### <a name="url"></a>URL
+
+使用 [URL] 欄位可指定您要編目之網站的根目錄。 企業網站連接器會使用此 URL 做為開始點，並遵循此 URL 的所有連結進行編目。
 
 ### <a name="authentication"></a>驗證
 
@@ -45,21 +49,25 @@ ms.locfileid: "48206939"
 
 如需詳細資訊，請參閱 [快速入門：使用 Microsoft identity Platform 註冊應用程式](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)。
 
-### <a name="root-url"></a>根 URL
+## <a name="add-urls-to-exclude"></a>新增要排除的 URLs
 
-根 URL 會啟動編目，並用於驗證。 您可以從您想要編目的網站首頁取得 URL。
-
-## <a name="select-the-source-properties"></a>選取來源屬性
-
-來源屬性是根據企業網站的資料格式定義。 不過，您可以建立 **排除清單** ，以排除部分 URLs 若該內容機密或不需要編目的情況下取得編目。 若要建立排除清單，請流覽根 URL。 您可以選擇在設定過程中將排除的 URLs 新增至清單。
+您可以選擇性地建立 **排除清單** ，以排除部分 URLs 若該內容機密或不值得編目的情況，則無法取得編目。 若要建立排除清單，請流覽根 URL。 您可以選擇在設定過程中將排除的 URLs 新增至清單。
 
 ## <a name="manage-search-permissions"></a>管理搜尋許可權
 
-不支援 (ACLs) 的存取控制清單。 因此，我們建議您只連接組織內任何使用者都能看見的網站。
+企業網站連接器只支援 **所有人都** 能看見的搜尋許可權。 已編制索引的資料會顯示在搜尋結果中，並對組織中的所有使用者顯示。
+
+## <a name="assign-property-labels"></a>指派屬性標籤
+
+您可以從選項的功能表中選擇，將 source 屬性指派給每個標籤。 雖然這個步驟不是必要的，但具有一些屬性標籤會提升搜尋相關性，並可確保使用者更準確的搜尋結果。
+
+## <a name="manage-schema"></a>管理架構
+
+在 [**管理架構**] 畫面上，您可以選擇變更架構屬性 (可 **查詢**、**可搜尋、可****檢索** 及 **可精簡搜尋**) 相關聯的屬性、新增選用的別名，然後選擇 **Content** 屬性。
 
 ## <a name="set-the-refresh-schedule"></a>設定重新整理排程
 
-企業網站連接器只支援完整編目。 這表示連接器會在每次編目期間讀取網站的所有內容。 若要確定連接器有足夠的時間可讀取內容，建議您設定大型重新整理排程間隔。 建議您在一到兩周之間進行排程重新整理。
+企業網站連接器只支援完整重新整理。 這表示連接器會在每次重新整理時重新編目網站的所有內容。 若要確定連接器有足夠的時間來編目內容，建議您設定大型重新整理排程間隔。 建議您在一到兩周之間進行排程重新整理。
 
 ## <a name="troubleshooting"></a>疑難排解
 
@@ -82,4 +90,4 @@ ms.locfileid: "48206939"
 
 ## <a name="limitations"></a>限制
 
-企業網站連接器不支援搜尋 **動態網頁**上的資料。 [Confluence](https://www.atlassian.com/software/confluence)與[Unily](https://www.unily.com/)等內容管理系統中的這些網頁範例，或儲存網站內容的資料庫。
+企業網站連接器不支援搜尋 **動態網頁** 上的資料。 [Confluence](https://www.atlassian.com/software/confluence)與[Unily](https://www.unily.com/)等內容管理系統中的這些網頁範例，或儲存網站內容的資料庫。

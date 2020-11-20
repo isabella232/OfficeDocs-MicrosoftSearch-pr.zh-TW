@@ -12,82 +12,96 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 搜尋的 Microsoft Graph 連接器概述
-ms.openlocfilehash: d20c576c92c0ec2d794fc6f8fd21c829e468c086
-ms.sourcegitcommit: 995ce23d4e47a3456a02dba0ba7c9cd0de64528a
+ms.openlocfilehash: 7388653927ca6a7af0ba64c3c592f2689780c181
+ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919481"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367521"
 ---
 # <a name="overview-of-microsoft-graph-connectors"></a>Microsoft Graph 連接器的概述
 
-Microsoft 搜尋會索引您的所有 [Microsoft 365](https://www.microsoft.com/microsoft-365) 資料，讓其可供使用者搜尋。 使用 Microsoft Graph 連接器，貴組織可以將協力廠商資料編制索引顯示在 Microsoft 搜尋結果中。 協力廠商資料可以位於內部部署或公用或私人雲端。 連接器展開可在 Microsoft 365 生產力應用程式中搜尋的內容來源類型，以及更廣泛的 Microsoft 生態用。
+[Microsoft 搜尋](https://docs.microsoft.com/microsoftsearch/overview-microsoft-search) 會索引您的所有 [Microsoft 365](https://www.microsoft.com/microsoft-365) 資料，讓其可供使用者搜尋。 透過 Microsoft Graph 連接器，您的組織可以編制協力廠商資料的索引，使其出現在 Microsoft 搜尋結果中。 這可展開 Microsoft 365 生產力應用程式中可搜尋的內容來源類型，以及更廣泛的 Microsoft 生態用。 協力廠商資料可以位於內部部署或公用或私人雲端。
 
+<!---link Microsoft Graph reference in line 19 when we have access to relevant documentation--->
+
+本文的其餘部分是為了協助 Microsoft 365 系統管理員找到 avaiable 的資源，以回答下列問題：
+
+* [哪些資料來源可連接至 Microsoft 搜尋？](#what-data-sources-can-be-connected-to-microsoft-search)
+* [如何管理連線？](#how-do-i-manage-my-connections)
+* [圖形連接器的授權需求和使用期限為何？](#what-are-the-license-requirements-and-terms-of-use-for-graph-connectors)
+* [如何自訂及設定搜尋結果？](#how-do-i-customize-and-configure-search-results)
+* [如何從自訂應用程式搜尋我的連接器資料？](#how-do-i-search-my-connector-data-from-a-custom-application)
+
+<!---Modify to another note that is more accurate--->
 > [!IMPORTANT]
-> **免責聲明** ： microsoft Graph 連接器和 microsoft Search APIs (查詢和索引) 目前處於目標發行版本本中承租人的預覽狀態。 若要在 Microsoft 搜尋中使用連接器，或建立連接器，請選擇進入 [目標版本](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)。 若要深入瞭解預覽，請參閱 [連接器預覽程式](connectors-preview.md)。
+> 現在一般會提供 microsoft Graph 連接器和 Microsoft Search APIs。 第一次部署是針對目標版本所設定的客戶。 如果您想要在租使用者中使用圖形連接器，使用者和系統管理員必須選擇已 [目標發行](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)。
 
-## <a name="architecture"></a>架構
+<!---Add Value, scenario, example, and/or graphic in December updates--->
+<!---Probably remove architecture section below
+## Architecture
 
-Microsoft Graph 平臺的下列架構圖表顯示在 [Microsoft Search](https://docs.microsoft.com/microsoftsearch/overview-microsoft-search) 用戶端中，連接器內容如何透過內容索引傳送至使用者結果。 本文說明 Microsoft Graph 連接器資料流程處理常式中的每個主要組建區塊。
+The following architectural diagram of the Microsoft Graph platform shows how Graph connector content flows through content indexing to user results in [Microsoft Search](https://docs.microsoft.com/microsoftsearch/overview-microsoft-search) clients. The rest of this section explains each of the key building blocks in the diagram.
 
-![圖表：內部部署和雲端式資料是由連接器所提取，並由 Microsoft Search API 編制索引，然後 Microsoft Search 服務會將結果傳遞給使用者。](media/highlevel-connectors_FINAL.png)
+![Diagram: on-premises and cloud-based data is pulled by connectors and indexed by the Microsoft Search API, and then the Microsoft Search service delivers the results to users.](media/connectors-overview/highlevel-connectors.png)
+Graph connectors can pull data from cloud-based (SaaS) data sources and on-premises data stores. The above diagram shows connections to only two data sources, but you can add connections to up ten sources per tenant.
 
-API 會為每個資料來源具現化一個連接。 然後，API 便會編制索引並儲存資料。 已建立的連線會與 Microsoft 搜尋互動，讓使用者可以取得搜尋結果。
+The Microsoft Graph Connectors API instantiates one connection per data source. Then, the API indexes and stores the data. Established connections interact with Microsoft Search, so users can get search results.
 
-您可以在 Microsoft 365 系統 [管理中心](https://admin.microsoft.com)內設定所有的 microsoft 建連接器。 系統管理中心簡化了使用簡易使用者介面設定連接器的工作。
+You can use the Microsoft 365 [admin center](https://admin.microsoft.com) to setup and manage any of the Graph connectors by Microsoft. The admin center has a simple user interface that makes it easy to establish the connection to your data source, and monitor connection status and utilization.
 
-若要建立資料 **源的連線** ，系統管理員必須對資料和整個內容存放庫進行驗證存取。 資料會送到圖形連接器服務以編制索引。
+***Edit paragraph below**_
+To create a _*connection** to a data source, admins need authenticated access to the data and the entire content repository. The data is fed to the graph connector service for indexing.--->
 
-## <a name="available-connectors"></a>可用連接器
+## <a name="what-data-sources-can-be-connected-to-microsoft-search"></a>哪些資料來源可連接至 Microsoft 搜尋？
 
-目前有6個 Microsoft 構建的連接器，而且我們的生態系統合作夥伴可提供超過100的連接器。
+Microsoft 提供10個圖形連接器和我們的生態系統合作夥伴已透過100其他圖形連接器建立。 您也可以建立自己的圖形連接器。 
 
-若要從其中一個生態系統合作夥伴預覽連接器，請直接與他們聯繫。 如需詳細資訊，請參閱 [Microsoft Graph 連接器圖庫](connectors-gallery.md)。
+### <a name="graph-connectors-by-microsoft"></a>Microsoft 的圖形連接器
 
-您也可以 [建立您自己的連接器](https://docs.microsoft.com/graph/search-concept-overview)。
+您可以使用 Microsoft 所建立的圖形連接器，連線到下列資料來源：
 
-### <a name="connectors-by-microsoft"></a> Microsoft 連接器
+<!---Need to add a few links below when docs exist--->
+* [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
+* [Azure DevOps](azure-devops-connector.md)
+* Azure SQL
+* [企業網站](enterprise-web-connector.md)
+* [MediaWiki](mediawiki-connector.md)
+* [Microsoft SQL Server](MSSQL-connector.md)
+* [檔案共用](fileshare-connector.md)
+* Oracle (預覽) 
+* [Salesforce (預覽) ](salesforce-connector.md)
+* [ServiceNow](servicenow-connector.md)
 
-Microsoft Graph 連接器預覽版本包含6個 Microsoft 建立的連接器。 您可以在系統 [管理中心](https://admin.microsoft.com) 進行設定，並瞭解如何 [設定您的 Microsoft 建連接器](configure-connector.md)。
+[圖形連接器圖庫](connectors-gallery.md)包含每個圖形連接器的簡短描述。 如果您已準備好將其中一個資料來源連接至您的租使用者，請務必閱讀適用于資料來源之 Microsoft 安裝連接器中的 [安裝程式概述](configure-connector.md) 和任何其他文章。
 
-下列各節提供這些 Microsoft 建立連接器的簡短描述。 您可以在每個連接器的連結文章中取得詳細資訊。
+### <a name="graph-connectors-by-our-partners"></a>合作夥伴的圖形連接器
 
-- **[Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)** 。 透過此 Microsoft Graph 連接器，您組織中的使用者可以搜尋 Azure Blob 容器中儲存的檔案和內容。 Azure Data Lake Storage Gen2 connector 也會為您指定的 Azure Data Lake Storage Gen2 帳戶中的已啟用階層的資料夾編制索引。
-深入瞭解 [Azure Data Lake Storage Gen2 connector](azure-data-lake-connector.md)。
+[Microsoft Graph 連接器圖庫](connectors-gallery.md)包含合作夥伴所建立之每個圖形連接器的簡短說明，以及每個合作夥伴網站的連結。 請直接聯繫每個合作夥伴以深入瞭解。
 
-- **[Azure DevOps](https://azure.microsoft.com/services/devops)** 。 使用此 Microsoft Graph 連接器，您組織中的使用者可以搜尋 Azure DevOps 實例中的工作專案。
-深入瞭解 [Azure DevOps 連接器](azure-devops-connector.md)。
+### <a name="build-your-own-graph-connector"></a>建立您自己的圖形連接器
 
-- **[AZURE SQL](https://azure.microsoft.com/services/sql-database)** 。 透過此 Microsoft Graph 連接器，您組織中的使用者可以從 Azure SQL 資料庫搜尋資料。
-深入瞭解 [AZURE SQL connector](MSSQL-connector.md)。
+如果您想要建立自己的圖形連接器，請參閱 microsoft [graph 中的 Microsoft SEARCH API 概述](https://docs.microsoft.com/graph/search-concept-overview) ，以取得詳細資訊。
 
-- **企業網站** 。 透過此 Microsoft Graph 連接器，您組織中的使用者可以在任何非 SharePoint 企業網站中搜尋頁面。
-深入瞭解 [企業網站連接器](enterprise-web-connector.md)。
+## <a name="how-do-i-manage-my-connections"></a>如何管理連線？
 
-- **[MediaWiki](https://www.mediawiki.org/wiki/MediaWiki)** 。 使用此 Microsoft Graph 連接器，使用者可以在您的組織以 MediaWiki 所建立的 wiki 網站上搜尋知識文庫文章。
-深入瞭解 [MediaWiki 連接器](mediawiki-connector.md)。
+您可以從[Microsoft 365 系統管理中心](https://admin.microsoft.com/)的 [[連接器]](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)索引標籤管理連線。 如需詳細資訊，請參閱 [Manage a connections](manage-connector.md) 。
 
-- **[MICROSOFT SQL server](https://www.microsoft.com/sql-server/sql-server-2017)** 。 透過此 Microsoft Graph 連接器，您組織中的使用者可以搜尋內部部署 SQL server 資料庫中的資料。
-深入瞭解 [MICROSOFT SQL server connector](MSSQL-connector.md)。
-
-- **[ServiceNow](https://www.servicenow.com)** 。 透過此 Microsoft Graph 連接器，您組織中的使用者可以從您的 ServiceNow 實例搜尋知識庫文章。
-深入瞭解 [ServiceNow 連接器](servicenow-connector.md)。
-
-### <a name="connectors-from-our-partners"></a>合作夥伴的連接器
-
-我們的生態系統合作夥伴可供預覽超過100個連接器。 若要從其中一個生態系統合作夥伴預覽連接器，請直接與他們聯繫。
-深入瞭解 [Microsoft Graph 連接器圖庫](connectors-gallery.md)中合作夥伴的連接器。
-
-### <a name="build-your-own-connector"></a>建立您自己的連接器
-
-若要編制自訂資料類型或檔案的索引，開發人員可以在 [Microsoft Graph](https://developer.microsoft.com/graph/)中建立連接器。 連接器是 [建立](https://docs.microsoft.com/graph/search-index-manage-connections) 連線並將專案推入 Microsoft 搜尋索引的應用程式。 如需詳細資訊，請參閱 [為 Microsoft Graph 上的應用程式擴充 Microsoft 搜尋體驗的概述](https://docs.microsoft.com/graph/search-concept-overview)。
-
-### <a name="search-results-with-your-custom-built-connector"></a>使用自訂內置連接器的搜尋結果
-
-在索引自訂資料之後，開發人員可以 [查詢此資料](https://docs.microsoft.com/graph/search-concept-custom-types)。 您可以在任何應用程式中查看資料。 如需詳細資訊，請參閱 [為 Microsoft Graph 上的應用程式擴充 Microsoft 搜尋體驗的概述](https://docs.microsoft.com/graph/search-concept-overview)。
-
-## <a name="license-requirements"></a>授權需求
+## <a name="what-are-the-license-requirements-and-terms-of-use-for-graph-connectors"></a>圖形連接器的授權需求和使用期限為何？
 
 您為組織中的使用者需要有效的 Microsoft 365 或 Office 365 授權和足夠的圖形連接器配額，以在其搜尋結果中查看連接器的資料。
 
-若要深入瞭解，請參閱 [授權需求和定價](licensing.md)。
+若要深入瞭解，請參閱 [授權需求和價格](licensing.md) 與 [使用條款](terms-of-use.md)。
+
+## <a name="how-do-i-customize-and-configure-search-results"></a>如何自訂及設定搜尋結果？
+
+有許多方式可自訂及設定搜尋結果。 若要深入瞭解，請參閱下列文章：
+
+* [管理類別和結果類型](customize-search-page.md)
+* [管理搜尋結果版面配置](customize-results-layout.md)
+* [管理結果叢集](result-cluster.md)
+* [管理自訂篩選](custom-filters.md)
+
+## <a name="how-do-i-search-my-connector-data-from-a-custom-application"></a>如何從自訂應用程式搜尋我的連接器資料？
+
+在索引自訂資料之後，開發人員可以 [查詢此資料](https://docs.microsoft.com/graph/search-concept-custom-types)。 您可以在任何應用程式中查看資料。 如需詳細資訊，請參閱 microsoft [Graph 中的 Microsoft SEARCH API 綜述](https://docs.microsoft.com/graph/search-concept-overview)。

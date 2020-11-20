@@ -11,14 +11,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: 如何對應非 AAD 身分識別的步驟
-ms.openlocfilehash: be479cfd9dad585e83b5a39ff3ce4a84b9d41676
-ms.sourcegitcommit: 77ec27736f3c8434b2ac47e10897ac2606ee8a03
+ms.openlocfilehash: cd7d0eb17678d69ec1966e4472b38c1f18c30809
+ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48992860"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367656"
 ---
 # <a name="map-your-non-azure-ad-identities"></a>對應您的非 Azure AD 身分識別  
 
@@ -75,7 +74,7 @@ ms.locfileid: "48992860"
 在您提供公式後，您可以選擇性地按一下 [ **預覽** ]，以查看資料來源中5個隨機使用者的預覽，並套用各自的使用者對應。 預覽的輸出包含在步驟2中為該使用者所選取的非 Azure AD 使用者屬性值，以及在步驟3中為該使用者提供的最後一個公式的輸出。 此外，它也會指出是否可以透過 "Success" 或 "Failed" 圖示，將公式的輸出解析為您租使用者中的 Azure AD 使用者。  
 
 >[!NOTE]
->按一下 [ **預覽** ] 之後，如果有一或多個使用者對應的「失敗」狀態，您仍然可以繼續建立連接。 預覽會顯示5個隨機使用者，以及其從您的資料來源對應的映射。 如果您提供的對應未對應所有使用者，您可能會遇到此案例。
+>按一下 [ **預覽**] 之後，如果有一或多個使用者對應的「失敗」狀態，您仍然可以繼續建立連接。 預覽會顯示5個隨機使用者，以及其從您的資料來源對應的映射。 如果您提供的對應未對應所有使用者，您可能會遇到此案例。
 
 ## <a name="sample-non-azure-ad-mapping"></a>非 Azure AD 對應範例
 
