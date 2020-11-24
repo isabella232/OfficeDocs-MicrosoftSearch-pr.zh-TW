@@ -1,5 +1,5 @@
 ---
-title: Microsoft Search 的 microsoft SQL server 和 Azure SQL connector
+title: Microsoft 搜尋的 Oracle SQL connector
 ms.author: vivg
 author: Vivek
 manager: harshkum
@@ -12,51 +12,29 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定適用于 Microsoft 搜尋的 Oracle SQL 連接器。
-ms.openlocfilehash: 118e073f355d2ce06e63745efbf5d090ba61d582
+ms.openlocfilehash: cf7946533b3806bb730cdc6a31f7745ebad2c59d
 ms.sourcegitcommit: ac4e261c01262be747341f810d2d1faf220d3961
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 11/23/2020
-ms.locfileid: "49382594"
+ms.locfileid: "49382668"
 ---
-# <a name="azure-sql-and-microsoft-sql-server-connectors"></a>Azure SQL 及 Microsoft SQL server 連接器
+# <a name="oracle-sql-connector"></a>Oracle SQL connector
 
-透過 Microsoft SQL server 或 Azure SQL connector，您的組織可以探索內部部署 SQL Server 資料庫中的資料，以及在雲端中裝載于 Azure SQL 實例中的資料庫。 連接器會將指定的內容索引至 Microsoft 搜尋。 若要讓索引保持在最新的來來源資料中，它支援定期完整和累加編目。 透過這些 SQL 連接器，您也可以限制特定使用者對搜尋結果的存取。
+透過 Oracle SQL connector，您的組織可以探索內部部署 Oracle 資料庫中的資料並為其編制索引。 連接器會將指定的內容索引至 Microsoft 搜尋。 若要讓索引保持在最新的來來源資料中，它支援定期完整和累加編目。 透過 Oracle SQL connector，您也可以限制特定使用者對搜尋結果的存取。
 
-本文適用于 Microsoft 365 系統管理員或任何設定、執行及監視 Microsoft SQL server 或 Azure SQL connector 的人員。 它說明如何設定連接器和連接器功能、限制及疑難排解技術。 
+本文適用于 Microsoft 365 系統管理員或任何設定、執行及監視 Oracle SQL connector 的人員。 它說明如何設定連接器和連接器功能、限制及疑難排解技術。
 
-## <a name="install-the-graph-connector-agent-required-for-on-premises-microsoft-sql-server-connector-only"></a>安裝僅限內部部署 Microsoft SQL server 連接器所需的圖形連接器代理程式 () 
+## <a name="install-the-graph-connector-agent"></a>安裝圖形連接器代理程式
 為了存取您的內部部署協力廠商資料，您必須安裝及設定圖形連接器代理程式。 請參閱 [安裝 Graph connector agent](on-prem-agent.md) 以深入瞭解。  
 
-## <a name="register-an-app-for-azure-sql-connector-only"></a>僅針對 Azure SQL connector 註冊應用程式 () 
-針對 Azure SQL connector，您必須在 Azure Active Directory 中註冊應用程式，以允許 Microsoft Search 應用程式存取索引的資料。 若要深入瞭解如何註冊應用程式，請參閱 Microsoft Graph 檔，瞭解如何 [註冊應用程式](https://docs.microsoft.com/graph/auth-register-app-v2)。 
-
-完成應用程式註冊並記下應用程式名稱、應用程式 (用戶端) 識別碼與租使用者識別碼後，您需要 [產生新的用戶端密碼](https://docs.microsoft.com/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret)。 用戶端密碼只會顯示一次。 請記住 & 會安全地儲存用戶端密碼。 在 Microsoft 搜尋中設定新的連線時，請使用用戶端識別碼和用戶端密碼。 
-
-若要將註冊的應用程式新增至 Azure SQL 資料庫，您必須：
- - 登入 Azure SQL DB
- - 開啟新的查詢視窗
- - 從外部提供者執行命令「建立使用者 [app 名稱]，以建立新使用者
- - 執行命令 ' exec sp_addrolemember ' db_datareader '、[app name] 或 ' ALTER ROLE db_datareader ADD MEMBER [app name] '，將使用者新增至角色
-
->[!NOTE]
->若要撤銷在 Azure Active Directory 中註冊的任何應用程式的存取權，請參閱 Azure 檔中關於 [移除已註冊的應用程式](https://docs.microsoft.com/azure/active-directory/develop/quickstart-remove-app)。
-
 ## <a name="connect-to-a-data-source"></a>連接到資料來源
-若要將 Microsoft SQL server 連接器連線至資料來源，您必須設定要編目的資料庫伺服器和部署代理程式。 然後，您就可以使用必要的驗證方法來連接至資料庫。
+若要將 Oracle SQL 連接器連線至資料來源，您必須設定要編目的資料庫伺服器和內部部署圖形連接器代理程式。 然後，您就可以使用必要的驗證方法來連接至資料庫。
+
+對於 Oracle SQL connector，您必須指定主機名稱、埠和服務 (資料庫) 名稱，以及偏好的驗證方法、使用者名稱和密碼。
 
 > [!NOTE]
-> 您的資料庫必須執行 SQL server 版本2008或更新版本，Microsoft SQL server 連接器才能連線。
-
-針對 Azure SQL connector，您只需要指定您要連線的伺服器名稱或 IP 位址。 Azure SQL connector 只支援 Azure Active Directory 開啟識別碼 connect (OIDC) authentication，以連接至資料庫。
-
-為了增加安全性，您可以為 Azure SQL server 或資料庫設定 IP 防火牆規則。 若要深入瞭解設定 IP 防火牆規則，請參閱 [IP 防火牆規則](https://docs.microsoft.com/azure/azure-sql/database/firewall-configure)的檔。 在 [防火牆設定] 中新增下列用戶端 IP 範圍。
-
-| 區域 | IP 範圍 |
-| ------------ | ------------ |
-| NAM | 52.250.92.252/30、52.224.250.216/30 |
-| EUR | 20.54.41.208/30、51.105.159.88/30 |
-| APC | 52.139.188.212/30、20.43.146.44/30 |
+> 您的資料庫必須執行 Oracle 資料庫的11g 或更新版本，連接器才能夠連線。 連接器支援 Windows、Linux 和 Azure VM 平臺上的 Oracle 資料庫。
 
 若要搜尋您的資料庫內容，當您設定連接器時，必須指定 SQL 查詢。 這些 SQL 查詢必須命名所有要索引的資料庫資料欄 (亦即來源屬性) （包括需要執行以取得所有欄的任何 SQL 聯接）。 若要限制存取搜尋結果，您必須在設定連接器時，指定 (ACLs) 中的存取控制清單。
 
@@ -84,17 +62,16 @@ ms.locfileid: "49382594"
 ![顯示 OrderTable 及 AclTable （含範例屬性）的範例資料](media/MSSQL-ACL1.png)
 
 ### <a name="supported-data-types"></a>支援的資料類型
-下表摘要列出 MS SQL 和 Azure SQL 連接器中支援的 SQL 資料類型。 該表也會摘要支援的 SQL 資料類型的索引資料類型。 若要深入瞭解 Microsoft Graph 連接器支援的索引資料類型，請參閱 [屬性資源類型](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta#properties)的檔。 
+下表摘要 Oracle SQL 連接器支援的資料類型。 該表也會摘要支援的 SQL 資料類型的索引資料類型。 若要深入瞭解 Microsoft Graph 連接器支援的索引資料類型，請參閱 [屬性資源類型](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta#properties)的檔。 
 
 | 類別 | 來源資料類型 | 索引資料類型 |
 | ------------ | ------------ | ------------ |
-| 日期和時間 | date <br> datetime <br> datetime2 <br> Smalldatetime | datetime |
-| 完全數值 | Bigint <br> int <br> Smallint <br> Tinyint | int64 |
-| 完全數值 | 位 | 布林值 |
-| 近似數值 | float <br> 真正 | double |
-| 字元字串 | 字元 <br> Varchar <br> 文字 | string |
-| Unicode 字元字串 | Nchar <br> Nvarchar <br> Ntext | string |
-| 其他資料類型 | 唯一 | string |
+| 數位資料類型 | 數位 (p，0)  | p <的 int64 (= 18)  <br> p > 18) 的雙 ( |
+| 浮點數字資料類型 | 數位 (p，s)  <br> 浮動 (p)  | double |
+| Date datatype | 日期 <br> 時間 戳 <br> TIMESTAMP (n)  | datetime |
+| 字元資料類型 | CHAR (n)  <br> VARCHAR <br> VARCHAR2 <br> 長 <br> Clob <br> NCLOB | string |
+| Unicode 字元資料類型 | NCHAR <br> NVARCHAR | string |
+| RowID 資料類型 | ROWID <br> UROWID | string |
 
 對於目前不是直接支援的任何其他資料類型，此資料行必須明確地轉換成支援的資料類型。
 
@@ -102,8 +79,8 @@ ms.locfileid: "49382594"
 若要防止資料庫超載，連接器會批次並繼續完整編目的查詢。 使用 [浮水印] 資料行的值，每個後續的批次都會取得，而查詢會從最後一個檢查點繼續。 本質上，這是一種機制，用來控制完整編目的資料重新整理。
 
 建立浮水印的查詢程式碼片段，如下列範例所示：
-* `WHERE (CreatedDateTime > @watermark)`. 使用保留的關鍵字來引用浮水印欄名稱 `@watermark` 。 如果浮水印欄的排序次序是遞增的，請使用 `>` ，否則請使用 `<` 。
-* `ORDER BY CreatedDateTime ASC`. 在 [浮水印] 欄上以遞增或遞減順序排序。
+* `WHERE (CreatedDateTime > @watermark)`. 使用保留的關鍵字來引用浮水印欄名稱 `@watermark` 。 您只能以遞增順序排序浮水印欄。
+* `ORDER BY CreatedDateTime ASC`. 在 [浮水印] 欄上以遞增順序排序。
 
 在下一個影像所示的設定中， `CreatedDateTime` 是選取的 [浮水印] 欄。 若要取得第一批列，請指定 [浮水印] 資料行的資料類型。 在此情況下，資料類型為 `DateTime` 。
 
@@ -138,13 +115,27 @@ ms.locfileid: "49382594"
 ## <a name="manage-search-permissions"></a>管理搜尋許可權 
 您可以選擇使用完整編目 [畫面中所指定的 ACLs](#full-crawl-manage-search-permissions) ，也可以覆寫它們，讓每個人都能看到您的內容。
 
+## <a name="set-the-refresh-schedule"></a>設定重新整理排程
+Oracle SQL connector 支援完整和累加編目的更新排程。 我們建議您同時設定兩者。
+
+完整編目排程會找到先前已同步處理至 Microsoft 搜尋索引的已刪除資料列，以及移出同步篩選的任何列。 當您第一次連線至資料庫時，會執行完整編目，以同步處理所有從完整編目查詢檢索到的資料列。 若要同步處理新的資料列並進行更新，您必須排程累加編目。
+
 ## <a name="next-steps-customize-the-search-results-page"></a>後續步驟：自訂搜尋結果頁面
 建立您自己的行業和結果類型，讓使用者可以從新的連線中查看搜尋結果。 在此步驟中，您的連線中的資料不會顯示在搜尋結果頁面上。
 
 若要深入瞭解如何建立您的行業和 MRTs，請參閱 [搜尋結果頁面自訂](customize-search-page.md)。
 
 ## <a name="limitations"></a>限制
-在預覽版本中，SQL 連接器具有這些限制：
-* Microsoft SQL server connector：內部部署資料庫必須執行 SQL server 版本2008或更新版本。
+「Oracle SQL connector」在預覽版本中有下列限制：
+* 內部部署資料庫必須執行 Oracle 資料庫11g 或更新版本。
 * 只有使用使用者主要名稱 (UPN) 、Azure Active Directory (Azure AD) 或 Active Directory 安全性才能支援 ACLs。 
 * 不支援在資料庫欄中編制豐富內容的索引。 這類內容的範例為 HTML、JSON、XML、blob 及檔 parsings，以資料庫資料欄中的連結形式存在。
+
+## <a name="troubleshooting-guide"></a>疑難排解手冊
+下表是設定連接器時所觀察到的常見錯誤，以及可能的原因。
+| 設定步驟 | 錯誤訊息 | 可能的原因 (s)  |
+| ------------ | ------------ | ------------ |
+| 資料庫設定 | 來自資料庫伺服器的錯誤：連接要求超時 | 不正確主機名稱 <br> 無法到達主機 |
+| 資料庫設定 | 來自資料庫伺服器的錯誤： ORA-12541： TNS：沒有 listner | 不正確埠 |
+| 資料庫設定 | 來自資料庫伺服器的錯誤： ORA-12514： TNS： listner 目前不知道連接器描述項中所要求的服務 | 不正確服務 (資料庫) 名稱 |
+| 資料庫設定 | 來自資料庫伺服器的錯誤：使用者 ' ' 的登入失敗 `user` 。 | 不正確使用者名稱或密碼 |

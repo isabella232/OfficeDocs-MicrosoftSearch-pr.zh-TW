@@ -1,5 +1,5 @@
 ---
-title: 使用 Microsoft Search 公開預覽版： 規定
+title: Microsoft 搜尋公開預覽：使用條款
 ms.author: anfowler
 author: adefowler
 manager: shohara
@@ -11,21 +11,19 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 法律條款和條件 Microsoft Search 的 Microsoft Graph 連接器公開預覽
-ms.openlocfilehash: ee70ae9b747d6f0558426fd568a63abc6d2142f1
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+description: Microsoft 搜尋的 Microsoft Graph 連接器公開預覽的法律條款及條件
+ms.openlocfilehash: d9a8e4d55904edac845a46ed6b524ed09433135b
+ms.sourcegitcommit: ac4e261c01262be747341f810d2d1faf220d3961
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626898"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "49382568"
 ---
-# <a name="microsoft-graph-connectors-public-preview-terms-of-use"></a>Microsoft Graph 連接器公開預覽版： 使用規定
+# <a name="microsoft-graph-connectors-terms-of-use"></a>Microsoft Graph 連接器：使用條款
 
-Microsoft Graph 連接器是預覽功能並受限於的[線上服務條款](http://www.microsoftvolumelicensing.com/Downloader.aspx?documenttype=OST&lang=English)中所述 「 預覽 」 使用相同的字詞。
+您在使用 Microsoft Graph 連接器時，可能會受到協力廠商的條款及條件的制約。 Microsoft 不是您簽訂合約的協力廠商，與協力廠商之間的 () ，協力廠商的條款或服務應導向協力廠商的任何問題。 當您的資料是資料控制器時，您會負責將資料索引寫入您的 Microsoft 365 租使用者。
 
-您使用 Microsoft Graph 連接器可能會受限於第三方條款和條件。 Microsoft 不廠商與第三方任何考量您合約或協力廠商字詞的相關問題，或協力廠商應該導向服務。 您為您的資料，資料控制者身分負責為編製索引的資料到您的 Microsoft 365 租用戶。
+Microsoft 在為您的 Microsoft 365 租使用者編制索引之前，不會對協力廠商資料作出任何明示、擔保或保證。  Microsoft 不會針對在協力廠商資料編制索引時可能發生的錯誤，不承擔任何責任。  您同意來自協力廠商提供者的任何資料都是以「依原樣」提供，而且與索引有關，都是根據您的設定而提供。 Microsoft 365 租使用者中的索引資料會被視為「客戶資料」，以供 [線上服務條款](http://www.microsoftvolumelicensing.com/Downloader.aspx?documenttype=OST&lang=English)、 [隱私權](https://privacy.microsoft.com/privacystatement)和 Microsoft 其他資料義務之用。
 
-Microsoft 對於沒有呈現、 擔保、 或相對於到您的 Microsoft 365 租用戶編製索引前的協力廠商資料的保證。  Microsoft 會假設的協力廠商資料編製索引期間可能發生之錯誤的任何責任。  您同意源自協力廠商提供者的任何資料會提供 「 為是，」，且關於索引，而只提供受到您的設定。 Microsoft 365 租用戶中已編製索引的資料會被視為 「 客戶資料 」 的[線上服務條款](http://www.microsoftvolumelicensing.com/Downloader.aspx?documenttype=OST&lang=English)、[隱私權聲明](https://privacy.microsoft.com/privacystatement)，以及 Microsoft 的其他資料義務的用途。
-
-如需如何我們客戶資料的用法 M365 的詳細資訊，請參閱[線上服務條款](http://www.microsoftvolumelicensing.com/Downloader.aspx?documenttype=OST&lang=English)與[隱私權聲明](https://privacy.microsoft.com/privacystatement)。 您也可以造訪我們的[[信任中心](https://www.microsoft.com/trust-center)找到深入了解 Microsoft 的資料保護和隱私權的承諾。
+如需如何在 M365 中使用客戶資料的進一步資訊，請參閱 [線上服務條款](http://www.microsoftvolumelicensing.com/Downloader.aspx?documenttype=OST&lang=English) 和 [隱私權聲明](https://privacy.microsoft.com/privacystatement)。 您也可以造訪我們的 [信任中心](https://www.microsoft.com/trust-center)，以瞭解更多關於 Microsoft 對資料保護和隱私權的承諾。
 

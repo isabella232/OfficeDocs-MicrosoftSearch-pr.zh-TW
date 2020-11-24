@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的 ServiceNow 連接器
-ms.openlocfilehash: 5bcc0870df7c2ad418bb2ae29e9d4d999dcbdf3f
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+ms.openlocfilehash: 520232f8055d5432ccb96a840a9466ae6a4e3b1a
+ms.sourcegitcommit: ac4e261c01262be747341f810d2d1faf220d3961
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367593"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "49382558"
 ---
 # <a name="servicenow-connector"></a>ServiceNow 連接器
 
@@ -171,6 +171,9 @@ OIDC 設定快取壽命範圍 |  120
 ServiceNow 連接器支援 **所有人都** 可以看到的搜尋許可權，或是 **只有存取此資料來源的人員才能使用**。 已編制索引的資料會顯示在搜尋結果中，並可供組織中的所有使用者或分別存取這些資料的使用者看到。 ServiceNow 連接器支援不含高級腳本的預設使用者準則許可權。 當連接器使用 advanced script 遇到使用者準則時，搜尋結果中將不會顯示使用該使用者準則的所有資料。
 
 如果您只選擇可 **存取此資料來源的人員**，您需要進一步選擇您的 ServiceNow 實例是否有 Azure Active DIRECTORY (AAD) 布建使用者或非 AAD 使用者。
+
+>[!NOTE]
+>如果您只選擇可 **存取此資料來源的人員**，則會在 **預覽** ServiceNow 連接器。
 
 >[!NOTE]
 >如果您選擇 [AAD] 做為身分識別來源的類型，請確定您在 ServiceNow 中為電子郵件目標屬性指派 UPN 來源屬性。 若要驗證或變更您的對應，請參閱 [自訂使用者布建屬性-在 Azure Active Directory 中 SaaS 應用程式的對應](https://docs.microsoft.com/azure/active-directory/app-provisioning/customize-application-attributes)。
