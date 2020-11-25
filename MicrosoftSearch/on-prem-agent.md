@@ -11,13 +11,14 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
+ROBOTS: NoIndex
 description: 部署代理程式
-ms.openlocfilehash: 30ddf0ac8c6df76d1c598606754066b3d2e93615
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+ms.openlocfilehash: 487c5b179e09fd99fa26ae7a237e89ca38b7be4d
+ms.sourcegitcommit: 69a1c544cc8db364991cb58d7818d7158ff108b8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367730"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49408940"
 ---
 # <a name="on-prem-agent"></a>部署代理程式
 
@@ -59,7 +60,7 @@ ms.locfileid: "49367730"
 
 您可以在下列其中一個表單中提供驗證詳細資料。
 
-### <a name="configuring-the-client-secret-for-authentation"></a>設定 authentation 的用戶端密碼
+### <a name="configuring-the-client-secret-for-authentication"></a>設定用戶端密碼進行驗證
 
 1. 移至 [Azure 入口網站](https://portal.azure.com) ，並使用系統管理員認證登入以供租使用者使用。
 2. 從功能窗格開啟 **應用程式註冊** ，然後移至適當的應用程式。 在 [ **管理**] 下，選取 [ **憑證和機密**]。
@@ -68,7 +69,7 @@ ms.locfileid: "49367730"
 
 ## <a name="using-thumbprint-certificate-for-authentication"></a>使用指紋憑證進行驗證
 
-如果您已透過設定 [authentation 的用戶端密碼](#Configuring-the-client-secret-for-authentication) 來設定驗證詳細資料，您可以將 directy 跳到 [安裝程式概述](configure-connector.md)。
+如果您已在設定 [用戶端密碼進行驗證](#configuring-the-client-secret-for-authentication) 之後設定驗證詳細資料，則可以直接跳至 [安裝程式概述](configure-connector.md)。
 
 1. 開啟 **應用程式註冊** ，然後從功能窗格中選取 **憑證和密碼** 。 複製憑證指紋。
 ![在左窗格中選取憑證和密碼時的 thumbrint 憑證清單](media/onprem-agent/certificates.png)
