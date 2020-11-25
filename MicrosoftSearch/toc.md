@@ -17,7 +17,7 @@
 ## Microsoft Graph 連接器
 ### [設定概觀](configure-connector.md)
 ### [設定您的內部部署代理程式 (預覽)](on-prem-agent.md)
-### [對應您的非 Azure AD 身分識別 (預覽)](map-non-add)
+### [對應您的非 Azure AD 身分識別 (預覽)](map-non-aad.md)
 ### [對應您的 Azure AD 身分識別](map-aad.md)
 ### 連接器特定的資訊
 #### [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
@@ -26,6 +26,7 @@
 #### [企業網站](enterprise-web-connector.md)
 #### [檔案共用 (預覽)](fileshare-connector.md)
 #### [MediaWiki](mediawiki-connector.md)
+#### [Oracle SQL (預覽)](OracleSQL-connector.md)
 #### [Salesforce (預覽)](salesforce-connector.md)
 #### [ServiceNow](servicenow-connector.md)
 ## [管理您的連接器](manage-connector.md)
