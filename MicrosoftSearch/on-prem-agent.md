@@ -1,5 +1,5 @@
 ---
-title: 在部署代理程式上
+title: On-Premises 代理程式
 ms.author: rusamai
 author: rsamai
 manager: jameslau
@@ -13,35 +13,33 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: 部署代理程式
-ms.openlocfilehash: 487c5b179e09fd99fa26ae7a237e89ca38b7be4d
-ms.sourcegitcommit: 69a1c544cc8db364991cb58d7818d7158ff108b8
+ms.openlocfilehash: 763904f8dd96c5db8b0633e36795443502afe7d0
+ms.sourcegitcommit: 0ed8ec8b3c4e0f5f669005081fd8b2219f07b4f0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 11/25/2020
-ms.locfileid: "49408940"
+ms.locfileid: "49420831"
 ---
-# <a name="on-prem-agent"></a>部署代理程式
+# <a name="graph-connector-agent"></a>圖形連接器代理程式
 
-## <a name="graph-connector-agent"></a>圖形連接器代理程式
-
-部署圖形連接器需要安裝 *Graph 連接器代理程式* 軟體。 它允許在內部部署資料和雲端服務之間進行快速且安全的資料傳輸。 本文將引導您完成安裝及設定軟體的步驟。 設定之後，就可以從 [Microsoft 365 系統管理中心](https://admin.microsoft.com)建立部署資料來源的連線。
+使用部署圖形連接器時，需要安裝 *Graph 連接器代理程式* 軟體。 它可讓內部部署資料與圖形連接器之間的安全資料傳輸 APIs。 本文將引導您完成安裝和設定代理程式的步驟。
 
 ## <a name="installation"></a>安裝
 
-使用 [此連結](https://download.microsoft.com/download/d/d/e/dde18236-9c67-437d-a864-894a0a888ef2/AgentPackage.msi) 下載最新版的 Graph connector agent，並使用安裝精靈安裝軟體。 使用下列所述機器的建議設定，軟體可順利處理最多三個連接。 超過此數目的任何連線可能會降低效能。
+[在這裡](https://aka.ms/gcadownload)下載最新版本的圖形連接器代理程式，並使用安裝精靈安裝軟體。 使用下列所述機器的建議設定，軟體最多可以處理三個連接。 超過該數目的任何連線可能會降低代理程式上所有連接的效能。
 
 建議的設定：
 
-* Windows 10、Windows Server 2012 R2 及更新版本
-* 8核心，3GHz
-* 16GB RAM，1GB 磁碟空間
+* Windows 10、Windows Server 2016 R2 及更新版本
+* 8核心，3 GHz
+* 16 GB 的 RAM，2 GB 的磁碟空間
 * 透過443對資料來源和網際網路的網路存取
 
-## <a name="creating-app-for-the-agent"></a>建立代理程式的應用程式  
+## <a name="create-and-configure-an-app-for-the-agent"></a>建立及設定代理程式的應用程式  
 
-在建立連線之前，必須將代理實例送入少數幾個重要參數。 這些參數包含使用圖形攝取 APIs 所需的驗證詳細資料。  
+使用代理程式之前，您必須先建立應用程式，並設定驗證詳細資料。
 
-建立代理程式之應用程式的步驟。
+### <a name="create-an-app"></a>建立應用程式
 
 1. 移至 [Azure 入口網站](https://portal.azure.com) ，並使用系統管理員認證登入以供租使用者使用。
 2. 從功能窗格流覽至 [ **Azure Active Directory**  ->  **應用程式註冊**]，然後選取 [**新增註冊**]。
@@ -51,27 +49,65 @@ ms.locfileid: "49408940"
 6. 選取 [ **Microsoft Graph]** ，然後選取 [ **應用程式許可權**]。
 7. 從許可權搜尋 "ReadWrite ExternalItem" 和「Directory. all」，然後選取 [ **新增許可權**]。
 8. 選取 **[授與「TenantName] 的系統管理員同意** ，並選取 [ **是**]。
-9. 檢查許可權是否處於授與的狀態。
+9. 檢查許可權是否處於「授與」狀態。
      ![顯示為以綠色的右側欄授與的許可權。](media/onprem-agent/granted-state.png)
 
-## <a name="configuring-graph-connector-agent"></a>設定圖表連接器代理程式
+### <a name="configure-authentication"></a>設定驗證
 
-建立代理程式之後，您必須設定代理程式的適當驗證詳細資料。
+您可以使用用戶端密碼或憑證提供驗證詳細資料。 遵循您的選擇的步驟。
 
-您可以在下列其中一個表單中提供驗證詳細資料。
-
-### <a name="configuring-the-client-secret-for-authentication"></a>設定用戶端密碼進行驗證
+#### <a name="configuring-the-client-secret-for-authentication"></a>設定用戶端密碼進行驗證
 
 1. 移至 [Azure 入口網站](https://portal.azure.com) ，並使用系統管理員認證登入以供租使用者使用。
 2. 從功能窗格開啟 **應用程式註冊** ，然後移至適當的應用程式。 在 [ **管理**] 下，選取 [ **憑證和機密**]。
 3. 選取 [ **新增用戶端密碼** ]，然後選取密碼到期期限。 複製產生的密碼並加以儲存，因為它不會再次顯示。
-4. 使用此用戶端密碼和應用程式識別碼來設定代理程式。 請勿在代理程式的 [ **名稱** ] 欄位中使用任何空格。 會接受字母數位字元。
+4. 使用此用戶端密碼和應用程式識別碼來設定代理程式。 您無法在代理程式的 [ **名稱** ] 欄位中使用空格。 會接受字母數位字元。
 
-## <a name="using-thumbprint-certificate-for-authentication"></a>使用指紋憑證進行驗證
+#### <a name="using-a-certificate-for-authentication"></a>使用憑證進行驗證
 
-如果您已在設定 [用戶端密碼進行驗證](#configuring-the-client-secret-for-authentication) 之後設定驗證詳細資料，則可以直接跳至 [安裝程式概述](configure-connector.md)。
+使用憑證型驗證有三個簡單的步驟：
 
+1. 建立或取得憑證
+1. 將憑證上傳至 Azure 入口網站
+1. 將憑證指派給代理程式
+
+##### <a name="step-1-get-a-certificate"></a>步驟1：取得憑證
+
+下列腳本可用於產生自我簽署憑證。 您的組織可能不允許自我簽署的憑證。 在此情況下，請使用此資訊來瞭解需求，並根據組織的原則取得憑證。
+
+```Powershell
+$dnsName = "<TenantDomain like agent.onmicrosoft.com>" # Your DNS name
+$password = "<password>" # Certificate password
+$folderPath = "D:\New folder\" # Where do you want the files to get saved to? The folder needs to exist.
+$fileName = "agentcert" # What do you want to call the cert files? without the file extension
+$yearsValid = 10 # Number of years until you need to renew the certificate
+$certStoreLocation = "cert:\LocalMachine\My"
+$expirationDate = (Get-Date).AddYears($yearsValid)
+$certificate = New-SelfSignedCertificate -DnsName $dnsName -CertStoreLocation $certStoreLocation -NotAfter $expirationDate -KeyExportPolicy Exportable -KeySpec Signature
+$certificatePath = $certStoreLocation + '\' + $certificate.Thumbprint
+$filePath = $folderPath + '\' + $fileName
+$securePassword = ConvertTo-SecureString -String $password -Force -AsPlainText
+Export-Certificate -Cert $certificatePath -FilePath ($filePath + '.cer')
+Export-PfxCertificate -Cert $certificatePath -FilePath ($filePath + '.pfx') -Password $securePassword
+```
+
+##### <a name="step-2-upload-the-certificate-in-the-azure-portal"></a>步驟2：在 Azure 入口網站中上傳憑證
+
+1. 開啟應用程式，並流覽至左窗格中的 [憑證和機密] 區段
+1. 選取「上傳憑證」並上傳 .cer 檔案
 1. 開啟 **應用程式註冊** ，然後從功能窗格中選取 **憑證和密碼** 。 複製憑證指紋。
+
 ![在左窗格中選取憑證和密碼時的 thumbrint 憑證清單](media/onprem-agent/certificates.png)
-2. 使用用戶端密碼或指紋來註冊圖形連接器代理程式。
-![登錄表單要求名稱、應用程式識別碼、憑證類型和憑證](media/onprem-agent/register.png)
+
+##### <a name="step-3-assign-the-certificate-to-the-agent"></a>步驟3：將憑證指派給代理程式
+
+如果您使用範例腳本來產生憑證，則可以在腳本中所識別的位置找到 PFX 檔案。
+
+1. 將憑證 pfx 檔案下載到代理程式電腦上。
+1. 連按兩下 pfx 檔，以啟動 [憑證安裝] 對話方塊。
+1. 在安裝憑證時，選取存放區位置的「本機電腦」。
+1. 安裝憑證之後，請透過「開始」功能表開啟「管理電腦憑證」
+1. 選取「個人」-> ' 憑證 ' 下的新安裝憑證
+1. 在 cert 上按一下滑鼠右鍵，並選取「所有工作」-> ' 管理私密金鑰 ... ' 選項
+1. 在 [許可權] 對話方塊中，選取 [新增] 選項。 在 [使用者選擇] 對話方塊中寫入： ' NT Service\GcaHostService '，然後按一下 [確定]。 請勿按一下 [檢查名稱] 按鈕。
+1. 在 [許可權] 對話方塊中按一下 [確定]。 代理程式機器現在已設定為讓代理程式使用憑證來產生權杖。

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理 microsoft Search 的 Microsoft Graph 連接器。
-ms.openlocfilehash: a9b3feff3a5c289fef3f5091518d074970209b9d
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+ms.openlocfilehash: 04ae757e95c6d3713ad03da701f99c669fb2a59c
+ms.sourcegitcommit: 0ed8ec8b3c4e0f5f669005081fd8b2219f07b4f0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367674"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49420840"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
@@ -25,7 +25,7 @@ ms.locfileid: "49367674"
 
 若要存取和管理您的連接器，您必須指定為您租使用者的「搜尋管理員」。 請與您的租使用者管理員聯繫，為您提供搜尋系統管理員角色。
 
-## <a name="get-started"></a>開始使用
+## <a name="get-started"></a>快速入門
 
 流覽至[Microsoft 365 admin center](https://admin.microsoft.com)中的 [[連接器]](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)索引標籤。
 
@@ -92,6 +92,7 @@ ms.locfileid: "49367674"
 2001 | 因為佇列中的更新數目很多，所以會限制索引。 根據佇列的不同，可能需要一些時間才能完成更新。 | 請稍候，直到佇列清除為止。
 2002 | 由於不支援的專案格式設定，索引失敗。 | 如需詳細資訊，請參閱連接器特有的檔。
 2003 | 由於不支援的專案內容，索引失敗。 | 如需詳細資訊，請參閱連接器特有的檔。
+2010 | 因為 Microsoft 所進行的更新，所以此連線已不再有效。 請刪除連線，然後建立新的連線。 | 請刪除連線，然後建立新的連線。
 5000 | 發生錯誤。 若繼續，請與支援人員聯繫。 |
 
 ## <a name="monitor-your-index-quota-utilization"></a>監視索引配額利用率
