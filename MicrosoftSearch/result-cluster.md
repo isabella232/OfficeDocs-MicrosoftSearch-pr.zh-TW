@@ -12,18 +12,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 連接器結果聚簇體驗的詳細資料
-ms.openlocfilehash: eac4180a247fe17b4e86b57a69f2b7bdb79e56bb
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+ms.openlocfilehash: fa6ac2dc720ed43e40454b952526734accd45ea4
+ms.sourcegitcommit: a328b9764abf5cd0c1c0a8c7def0c6e334da9a1d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367726"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "49477111"
 ---
 # <a name="graph-connectors-result-cluster"></a>圖形連接器產生的聚簇
 
 ## <a name="overview-of-the-graph-connectors-result-cluster-preview"></a>圖形連接器結果叢集 (預覽的概述)   
 
- 透過圖形連接器的結果聚簇，企業可以在其預設視圖中搜尋協力廠商資料來源的內容，SharePoint 和 Office.com 中的 [全部] 索引標籤)  (。
+透過圖形連接器的結果聚簇，企業可以在其預設視圖中搜尋協力廠商資料來源的內容，SharePoint 和 Office.com 中的 [全部] 索引標籤)  (。
 
 結果聚簇可協助使用者探索所有協力廠商內容 (previoulsy 系結至單一連接器和垂直) 一個位置。 結果叢集中顯示的結果會根據租使用者管理員在搜尋類別中的設定方式，將其組合在一起。  
 
@@ -40,14 +40,14 @@ ms.locfileid: "49367726"
 ## <a name="enable-result-clusters"></a>啟用結果聚簇
   
 預設會關閉結果叢集體驗功能。  
+
 請遵循下列步驟，在組織層級開啟體驗：
 
-Microsoft 365 系統管理中心
-
 1. 在 [Microsoft 365 系統管理中心](https://admin.microsoft.com/)中，移至 [**設定**]  >  **搜尋 & 情報**  >  **自訂**  >  **縱向**。  
-2. 選取 [ **所有** 垂直]，然後移至 [ **顯示連接器結果** ] 區段。 在網站層級開啟體驗。
+2. 選取 [ **所有** 垂直]，然後啟用 [ **顯示連接器結果**]。 
 
-Sharepoint
+
+請遵循下列步驟，在網站層級開啟體驗：
 
 1. 在您想要進行結果叢集體驗的 SharePoint 網站上，移至 [ **設定**]。
 2. 移至 **網站資訊** > **查看所有網站設定**。
