@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: 部署代理程式
-ms.openlocfilehash: 763904f8dd96c5db8b0633e36795443502afe7d0
-ms.sourcegitcommit: 0ed8ec8b3c4e0f5f669005081fd8b2219f07b4f0
+ms.openlocfilehash: 5dbca392fefdcc11de253fd244cc98a6adcee68a
+ms.sourcegitcommit: e8d770fa72ac83e074a5de57098cb55d06d8db07
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "49420831"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49588365"
 ---
 # <a name="graph-connector-agent"></a>圖形連接器代理程式
 
@@ -31,6 +31,7 @@ ms.locfileid: "49420831"
 建議的設定：
 
 * Windows 10、Windows Server 2016 R2 及更新版本
+* [.NET Core Desktop Runtime 3.1 (x64) ](https://dotnet.microsoft.com/download/dotnet-core/3.1)
 * 8核心，3 GHz
 * 16 GB 的 RAM，2 GB 的磁碟空間
 * 透過443對資料來源和網際網路的網路存取
