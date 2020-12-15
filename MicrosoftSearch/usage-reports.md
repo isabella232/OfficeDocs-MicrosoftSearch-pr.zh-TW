@@ -12,19 +12,19 @@ search.appverid:
 - MET150
 - MOE150
 description: 審閱 Microsoft Search 流量報告
-ms.openlocfilehash: 96599ad18cb45feb53b3a786730a3ce506f49600
-ms.sourcegitcommit: 13e52d6c66c811cc7612197ba5d8cc3598309314
+ms.openlocfilehash: f34a82892818f00737d313285e6af7bce7c8a90a
+ms.sourcegitcommit: 3aa3623022270872a2c1ed8b86201c42bc313c1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "49586367"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49675266"
 ---
 # <a name="microsoft-search-usage-reports"></a>Microsoft 搜尋使用方式報告
 
 搜尋使用方式報告可讓您深入瞭解搜尋在組織中的運作方式。 從這些報告產生的資訊可協助您 [進行內容的尋找](https://docs.microsoft.com/microsoftsearch/make-content-easy-to-find) ，並採取動作，讓您的使用者能夠更有説明和 delightful 的體驗。
 
 > [!IMPORTANT]
-> Microsoft 搜尋使用方式報告目前在預覽中。
+> Microsoft 搜尋使用方式報告目前正在預覽中，並在目標版本中向系統管理員推出。 確定您的系統管理員帳戶位於目標的發行振鈴中，以查看這些報告。
 
 [Microsoft 搜尋使用方式報告](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights)包含從搜尋產生的圖形和表格，從 SharePoint Home 和 Office.com 搜尋方塊中執行。 您可以看到過去31天、每天或每月過去一年的資料。 這些報告只會產生，所以需要一些時間才能累算歷史資料。
 
@@ -41,11 +41,14 @@ ms.locfileid: "49586367"
 |放棄的查詢|此報告顯示可接收低點擊式的常用搜尋查詢。 使用此報告可識別出可能造成使用者不滿意的搜尋查詢，以改善內容的可探索性。 然後，您就可以判斷是否建立答案（如書簽），或透過圖形連接器 ingesting 新內容是正確的動作。|
 |無結果查詢|此報告顯示傳回查無結果的常用搜尋查詢。 使用此報告可識別出可能造成使用者不滿意的搜尋查詢，以改善內容的可探索性。 然後，您就可以判斷是否建立答案（如書簽），或透過圖形連接器 ingesting 新內容是正確的動作。|
 
+> [!NOTE]
+> 目前有問題，CTR (依序按一下 [按比率]) 前面的查詢。 儀表板上顯示的值是大於實際值的100倍。 若要取得實際的 CTR，請將儀表板上的數位分割為100，或使用 [下載] 按鈕，在 Excel 中取得顯示正確值的報表。
+
 ## <a name="viewing-reports"></a>查看報告
 
 當您流覽至 [使用狀況報告] 頁面時，所有報告都可供查看。 您可以使用日期篩選器挑選要查看的特定日或月份。
 
-下載報告可讓您查看更多時間範圍內的報告。 按一下 [下載箭號]，然後選取 [ **過去31天** ] 或 [ **最近12個月**]。 報告會下載成 Excel 試算表。 如果您選取過去31天，試算表將會有每日各有一個個別的索引標籤。 過去12個月下載將每月都有一個 tab 鍵。
+下載報告可讓您查看更多時間範圍內的報告。 按一下 [下載箭號]，然後選取 [ **過去31天** ] 或 [ **最近12個月**]。 報告會下載成 Excel 試算表。 如果您選取過去31天，試算表會每日有個別的索引標籤。 過去12個月下載將每月都有一個 tab 鍵。
 
 若要查看 Bing 的最上層查詢和印記散佈報告，請按一下頁面上的連結。
 
@@ -57,7 +60,7 @@ Microsoft search 流量報告中的行事曆 view 是一個兩步驟的處理常
 
 上、放棄和失敗的查詢表會顯示從一天或一個月份所選擇的結果。
 
-**何時會看到過去7天、過去30天等的匯總資料（如 Bing 的最上層查詢報告）？**
+**何時會看到過去7天、過去30天、等等的匯總資料。like Bing 的最上層查詢報告？**
 
 我們正在考慮這種類型的匯總，並簡化未來版本報告的資料範圍篩選。
 
