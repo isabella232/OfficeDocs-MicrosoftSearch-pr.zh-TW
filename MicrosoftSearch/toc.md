@@ -33,11 +33,13 @@
 # 自訂和設定
 ## [管理類別和結果類型](customize-search-page.md)
 ## [管理搜尋結果版面配置](customize-results-layout.md)
-## [管理結果叢集](result-cluster.md)
+## [管理結果群組](result-cluster.md)
 ## [管理自訂篩選](custom-filters.md)
 ## SharePoint 中的 Microsoft 搜尋
 ### [概觀](get-started-search-in-sharepoint-online.md)
 ### [建立自訂搜尋結果頁面](create-search-results-pages.md)
+### [管理搜尋方塊設定](manage-spo-search-box.md)
+### [在傳統頁面上使用 Microsoft 搜尋](manage-classic-spo-pages.md)
 ## Bing 中的 Microsoft Search
 ### [安全性及隱私權](security-for-search.md)
 ### [在您的內部網路網站新增搜尋方塊](add-a-search-box-to-your-intranet-site.md)
