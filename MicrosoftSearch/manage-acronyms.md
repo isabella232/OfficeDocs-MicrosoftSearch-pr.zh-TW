@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 在 Microsoft 搜尋中建立及更新縮寫的答案
-ms.openlocfilehash: e328ecb7604a144b51f3a1483eef1b1c3a7e0bcb
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+ms.openlocfilehash: 9de9de8287e3ddf206f93f53573922f3cf526580
+ms.sourcegitcommit: ad225af81060a2e3d7e4c953eeb6977d54698b60
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422944"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709680"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>管理 Microsoft 搜尋中的縮寫詞答案
 
@@ -66,7 +66,7 @@ Microsoft 搜尋會查詢兩個數據源，以提供使用者搜尋的縮寫答�
 
 | 縮寫 (強制)  | 擴充 (強制)  | 描述  | 來源 | 狀態 (強制)  |
 | --------- | --------- | ---------- | --------- |--------- |
-| *Xxx* | *拼寫縮寫* |  | [URL]** | *已發佈或草稿* |
+| *Xxx* | *拼寫縮寫* |  | *URL* | *已發佈或草稿* |
 
 ### <a name="csv-fields"></a>CSV 欄位
 
@@ -100,7 +100,7 @@ Microsoft 搜尋可確保只有對檔具有存取權和許可權的使用者才�
 
 **問：如何進行編輯及挖掘的資料排名？**
 
-**A：** 目前的功能是對已挖掘的首字母縮寫詞排名編輯縮寫。
+**A：** 結果的排名可能會隨人員而異，因為每位使用者的結果都有個人化。
 
 **問：在 Microsoft 搜尋中發佈後，編輯的首字縮寫詞必須多久才會顯示？**
 

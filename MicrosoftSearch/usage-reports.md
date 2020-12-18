@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 審閱 Microsoft Search 流量報告
-ms.openlocfilehash: f34a82892818f00737d313285e6af7bce7c8a90a
-ms.sourcegitcommit: 3aa3623022270872a2c1ed8b86201c42bc313c1f
+ms.openlocfilehash: 04de0de08423eff1368bc2b77e48d3fc8add038d
+ms.sourcegitcommit: 1d6fcf180f427abf3d8bfa4b8b6129e39f60ceb4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49675266"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49712609"
 ---
 # <a name="microsoft-search-usage-reports"></a>Microsoft 搜尋使用方式報告
 
@@ -30,19 +30,18 @@ ms.locfileid: "49675266"
 
 先前版本的此頁面包含在 Bing.com 中針對 Bing 針對 Microsoft 搜尋執行的搜尋資料。 該資料會立即整合到這些報告中，但現在您仍然可以按一下頁面底部的連結，以 **查看 Bing 的最熱門查詢和印記發佈**，以查看這些報告。
 
-![搜尋使用方式報告儀表板](media/usage-reports/usage_reports_v2.png)
+> [!div class="mx-imgBorder"]
+> ![搜尋使用方式報告儀表板](media/usage-reports/usage_reports_v2.png)
+
 
 ## <a name="overview-of-search-reports"></a>搜尋報告概述
 
-|**Report**|**描述**|
+| 報告 | 描述 |
 |:-----|:-----|
 |查詢磁片區|此報告顯示所執行的搜尋查詢數。 使用此報告可識別搜尋查詢量的趨勢，並決定高和低搜尋活動的時段。|
 |主要查詢|此報告顯示最常用的搜尋查詢。 使用此報告可瞭解使用者搜尋的資訊類型。|
 |放棄的查詢|此報告顯示可接收低點擊式的常用搜尋查詢。 使用此報告可識別出可能造成使用者不滿意的搜尋查詢，以改善內容的可探索性。 然後，您就可以判斷是否建立答案（如書簽），或透過圖形連接器 ingesting 新內容是正確的動作。|
 |無結果查詢|此報告顯示傳回查無結果的常用搜尋查詢。 使用此報告可識別出可能造成使用者不滿意的搜尋查詢，以改善內容的可探索性。 然後，您就可以判斷是否建立答案（如書簽），或透過圖形連接器 ingesting 新內容是正確的動作。|
-
-> [!NOTE]
-> 目前有問題，CTR (依序按一下 [按比率]) 前面的查詢。 儀表板上顯示的值是大於實際值的100倍。 若要取得實際的 CTR，請將儀表板上的數位分割為100，或使用 [下載] 按鈕，在 Excel 中取得顯示正確值的報表。
 
 ## <a name="viewing-reports"></a>查看報告
 
@@ -54,9 +53,9 @@ ms.locfileid: "49675266"
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
-**當我選取過去31天或過去12個月時，我為何必須分別選擇特定的一天或特定月份。**
+**當我選取過去31天或過去12個月時，我為何必須選擇特定的一天或特定月份。**
 
-Microsoft search 流量報告中的行事曆 view 是一個兩步驟的處理常式。 先從下拉式清單中選取日期範圍 (過去31天或過去12個月內) ，然後選取 [開始日] 或 [月]。
+Microsoft search 流量報告中的 [行事曆] 視圖是兩個步驟的處理常式。 先從下拉式清單中選取日期範圍 (過去31天或過去12個月內) ，然後選取 [開始日] 或 [月]。
 
 上、放棄和失敗的查詢表會顯示從一天或一個月份所選擇的結果。
 
