@@ -1,8 +1,8 @@
 ---
 title: 管理書籤
-ms.author: jeffkizn
-author: jeffkizn
-manager: parulm
+ms.author: dawholl
+author: dawholl
+manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: 建立和更新用來大量編輯 Microsoft 搜尋書簽結果的書簽和方式
-ms.openlocfilehash: 6a678464ec23c2d4c90190b6a02c0a73839b50ee
-ms.sourcegitcommit: 41d28060238091455c7b8b011c67ae60c8a41f1f
+ms.openlocfilehash: fee855e3d3fe780021530488dbaa5a864dcba2d8
+ms.sourcegitcommit: 9daa3c8f6eeab502b28975a308d4d1014a00eb25
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49619572"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49718646"
 ---
 # <a name="manage-bookmarks"></a>管理書籤
 
@@ -144,7 +144,7 @@ ms.locfileid: "49619572"
 
 **問：如何識別搜尋結果或系統管理中心中建議的書簽？**
 
-**A：** 在搜尋結果中，建議的書簽包含 URL 前面的「建議給您」的片語。 在系統管理中心中，挖掘的書簽會具有「系統」的擁有者值。
+**A：** 在搜尋結果中，建議的書簽包含 URL 前面的「建議給您」的片語。 在系統管理中心中，建議的書簽會具有「SYSTEM」的擁有者值。
 
 **問：如何存取推薦的書簽？**
 
