@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: 設定 Microsoft 搜尋的檔案共用連接器
-ms.openlocfilehash: a95cfe90ca35a385bb9ce3a4c565c18c5a42ec80
-ms.sourcegitcommit: 69a1c544cc8db364991cb58d7818d7158ff108b8
+ms.openlocfilehash: bf9fb730abd4ca6e42b681893525bbe3dd8a1419
+ms.sourcegitcommit: 249f41723dd6fda1e93ee1a8f3f7571ef066454b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "49408931"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49750895"
 ---
 # <a name="file-share-connector"></a>檔共用連接器
 
@@ -63,3 +63,7 @@ ms.locfileid: "49408931"
 ## <a name="set-the-refresh-schedule"></a>設定重新整理排程
 
 建議的預設重新整理排程間隔為15分鐘，但您可以根據喜好設定進行變更。
+
+## <a name="result-layout"></a>結果版面配置
+
+建議您使用預設的結果版面配置，以顯示您的檔共用連接器結果，因為它具有適當的圖示和控制項，可協助您流覽至檔案路徑。 如果您建立新的結果版面配置，它會覆寫預設值。
