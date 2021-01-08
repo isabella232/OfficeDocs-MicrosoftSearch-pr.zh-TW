@@ -9,6 +9,7 @@
 ## [書籤](manage-bookmarks.md)
 ## [樓面規劃](manage-floorplans.md)
 ## [位置](manage-locations.md)
+## [Power BI](manage-powerbi.md)
 ## [問與答](manage-qas.md)
 # 連接器 (預覽)
 ## [概觀](connectors-overview.md)
