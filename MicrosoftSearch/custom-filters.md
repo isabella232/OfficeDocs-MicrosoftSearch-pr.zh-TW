@@ -12,50 +12,51 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理自訂篩選
-ms.openlocfilehash: 75273035a7825683f626464df7bbc8e294b41b6f
-ms.sourcegitcommit: 59435698bece013ae64ca2a68c43455ca10e3fdf
+ms.openlocfilehash: a050921058eac50d7588f1e71f5b0f56cc8e5752
+ms.sourcegitcommit: a86265684871da86562a76c4961d0a6c1869f517
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48927378"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790328"
 ---
-# <a name="create-custom-filters"></a>建立自訂篩選
+# <a name="manage-custom-filters"></a>管理自訂篩選
 
-您可以建立篩選，以自訂使用者在 Microsoft [SharePoint](https://sharepoint.com/)、microsoft [Office](https://office.com)和 microsoft search in [Bing](https://bing.com)中搜尋時所看到的搜尋體驗。 篩選可讓使用者從其搜尋查詢快速縮小結果的集合。
+您可以使用篩選自訂 Microsoft 搜尋體驗。 篩選可讓使用者從搜尋查詢快速精煉結果集。
 
-自訂的篩選可以在以 connection 屬性為基礎的垂直內部建立。 例如，您可以在自訂垂直內為 ServiceNow 連接建立 **已發佈的 On** filter。
+自訂的篩選可以在以 connection 屬性為基礎的垂直內部建立。 例如，您可以在垂直方向的 ServiceNow 連接 **上建立已發佈的 On** filter。
 
-## <a name="things-to-consider"></a>考慮事項
-
-1. 若要在線上內容來源上建立自訂篩選，還會提供一些其他功能：
-- 您也可以在 connector 來源屬性的別名上建立篩選
-- 如果您的垂直具有多個連線，您可以在這些連線建立通用篩選。 若要完成此工作，您可以在通用別名上建立篩選，而這些別名來源屬性會在不同的連線。 例如，您可以建立別名 **，使其** 跨越 ServiceNow & Jira 連線，如下所示：
-
-| 連線 | 屬性	 | 別名 |
-| --- | --- | --- |
-| 服務現在 | 擁有者 | 作者 |
-| Jira | 發行者 | 作者 |
-
-2. 篩選器存在於垂直範圍內。 因此  
-- 如果篩選是以組織層級的垂直方式建立，則篩選只會顯示在組織層級
-- 如果篩選是以位於網站層級的垂直方式建立，則篩選只會顯示在網站層級。
-
-## <a name="steps-to-create-custom-filter"></a>建立自訂篩選的步驟
-
-### <a name="create-filter-in-organizational-level-vertical"></a>在組織層級中建立篩選：
+## <a name="create-a-filter-in-an-organizational-level-vertical"></a>在組織層級中建立篩選
 
 若要在 Microsoft 搜尋上建立篩選，請遵循下列步驟：
 
-1. 在 Microsoft 365 系統管理中心中，移至 [ [縱向](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals) ] 頁面。
-2. 建立/編輯您要建立篩選的垂直方向
-3. 流覽至嚮導中的 [篩選器] 步驟
-4. 按一下 [新增篩選] 並在新增篩選後開始，您可以查看並儲存該垂直。
+1. 在 Microsoft 365 系統管理中心中，移至 [ [縱向](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)]。
+1. 建立/編輯您要建立篩選的垂直方向
+1. 流覽至嚮導中的 [篩選器] 步驟
+1. 按一下 [新增篩選] 並開始
+1. 新增篩選後，您可以檢查並儲存垂直。
+
+## <a name="things-to-consider"></a>考慮事項
+
+1. 線上內容上存在其他篩選功能。
+
+    - 您也可以在 connector 來源屬性的別名上建立篩選
+    - 如果垂直具有多個連線，您可以在這些連線建立通用篩選。 若要執行此動作，您可以在通用別名上建立篩選，以在不同的連線中使用別名來源屬性。 例如，您可以建立別名 **篩選 ServiceNow** 和 Jira 連線，如下所示：
+
+    | 連線 | 屬性	 | 別名 |
+    | --- | --- | --- |
+    | 服務現在 | 擁有者 | 作者 |
+    | Jira | Publisher | 作者 |
+
+1. 篩選器存在於垂直範圍內。
+
+    - 如果篩選是以組織層級的垂直方式建立，則篩選只會顯示在組織層級
+    - 如果篩選是以位於網站層級的垂直方式建立，則篩選只會顯示在網站層級。
 
 ## <a name="known-limitations"></a>已知限制
 
-1. 您目前只能在 String & Date type managed 屬性上建立篩選。
-2. 您無法建立分級篩選
+1. 您目前只能在 string & date type managed 屬性上建立篩選。
+1. 您無法建立分級篩選。
 
 ## <a name="resources"></a>資源
 
-[自訂搜尋結果頁面](customize-search-page.md)
+[管理類別和結果類型](customize-search-page.md)

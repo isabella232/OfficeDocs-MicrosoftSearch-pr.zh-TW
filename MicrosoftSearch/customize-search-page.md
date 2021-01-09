@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 新增搜尋行業及自訂搜尋結果
-ms.openlocfilehash: edc541e902965472295a835906ef36fcd7fba730
-ms.sourcegitcommit: e1215758fd1325526e4b7b1612c3349137c6fbc3
+ms.openlocfilehash: 4896fdb9923c93602acc48c2360039d512e4d72e
+ms.sourcegitcommit: a86265684871da86562a76c4961d0a6c1869f517
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49716983"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790332"
 ---
 # <a name="customize-the-search-results-page"></a>自訂搜尋結果頁面
 
@@ -39,7 +39,7 @@ ms.locfileid: "49716983"
 「搜尋類別」現在可以透過多個連接器來源呈現結果。 這為設計搜尋結果頁面提供更大的彈性。 現有的垂直安裝管理體驗可讓您在「內容來源」步驟中選取多個連接。
 如果您正確指派盡可能多的語義標籤，則會增強這種體驗。 您可以在架構定義及攝取時新增語義標籤。
 
-[以下](#configure-connector-step-5-assign-property-labels) 是如何建立及管理語義標籤的其他資訊。
+[以下](configure-connector.md#step-5-assign-property-labels) 是如何建立及管理語義標籤的其他資訊。
 
 ### <a name="things-you-should-know"></a>您應該知道的事項
 
@@ -62,7 +62,7 @@ ms.locfileid: "49716983"
 
 啟動該嚮導之後，您會逐步指導您定義要搜尋之內容的垂直名稱、內容來源及範圍。 會以停用狀態建立垂直。 您將在稍後啟用它。
 
-您可以使用一組有限的 [關鍵字查詢語言 (KQL) ](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) 來縮小範圍。 此頁面列出可用的屬性。 建議您使用 freetext 關鍵字和屬性限制搭配 boolean 運算子來建立 KQL。
+您可以使用一組有限的 [關鍵字查詢語言 (KQL) ](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) 來縮小範圍。 此頁面列出可用的屬性。 建議您使用具有 boolean 運算子的任意文字關鍵字和屬性限制，以建立 KQL。
 
 ### <a name="create-a-vertical-at-the-organization-level"></a>在組織層級建立垂直
 
@@ -97,7 +97,7 @@ ms.locfileid: "49716983"
 - **一個或多個** 比較每個搜尋結果的條件，例如搜尋結果的內容來源。  
 - 用於符合條件之搜尋結果的 **結果版面** 配置。 結果版面配置會控制符合條件的所有結果在搜尋結果頁面上顯示和行為的方式。
 
-**如果適當的對應不是以顯示預設搜尋結果版面配置，則 Yyou 必須至少建立一個結果類型的結果，以顯示在垂直上。** 您可以為每個垂直方向建立多種結果類型，這可讓您針對不同類型的結果使用不同的版面配置。 例如，您可以自訂 *嚴重性為 1* 的事件，使其具有更醒目的色彩和更大的字型，與 *嚴重的 3* 個事件相較。
+**如果適當的對應無法顯示預設搜尋結果版面配置，您必須至少建立一個結果類型的結果，以顯示在垂直上。** 您可以為每個垂直方向建立多種結果類型，這可讓您針對不同類型的結果使用不同的版面配置。 例如，您可以自訂 *嚴重性為 1* 的事件，使其具有更醒目的色彩和更大的字型，與 *嚴重的 3* 個事件相較。
 
 啟動該嚮導之後，您會逐步指導您定義結果類型的名稱、內容來源及條件。 您可以從清單視圖定義結果類型的優先順序。
   
@@ -116,7 +116,7 @@ ms.locfileid: "49716983"
 
 ## <a name="step-3-view-the-vertical-after-its-enabled"></a>步驟3：在啟用垂直後查看
 
-在您啟用垂直後，可能需要一段時間，才能進行查看。 如果您不想要等到啟用它之後，您可以在 [SharePoint](https://sharepoint.com/)和 [Office](https://office.com)的 URL 中附加 **cacheClear = true** ，以立即查看垂直。 針對 [Bing](https://bing.com)，append **&features = uncachedVerticals** 至工作垂直 URL，以立即查看縱向。 
+在您啟用垂直後，可能需要一段時間，才能進行查看。 如果您不想要等到啟用它之後，您可以在 [SharePoint](https://sharepoint.com/)和 [Office](https://office.com)的 URL 中附加 **cacheClear = true** ，以立即查看垂直。 針對 [Bing](https://bing.com)，append **&features = uncachedVerticals** 至工作垂直 URL，以立即查看縱向。
 
 ## <a name="troubleshooting"></a>疑難排解
 
@@ -130,4 +130,4 @@ ms.locfileid: "49716983"
 
 ## <a name="next-steps"></a>後續步驟
 
-[步驟3：自訂結果版面配置](customize-results-layout.md)
+[自訂結果版面配置](customize-results-layout.md)
