@@ -18,7 +18,7 @@
 ## Microsoft Graph 連接器
 ### [設定概觀](configure-connector.md)
 ### [對應您的非 Azure AD 身分識別 (預覽)](map-non-aad.md)
-### [對應您的 Azure AD 身分識別](map-aad.md)
+### [對應您的 Azure AD 身分識別 (預覽)](map-aad.md)
 ### 連接器特定的資訊
 #### [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
 #### [Azure DevOps (預覽)](azure-devops-connector.md)
@@ -28,6 +28,7 @@
 #### [Salesforce (預覽)](salesforce-connector.md)
 #### [ServiceNow](servicenow-connector.md)
 ## [管理您的連接器](manage-connector.md)
+## [連線詳細資料與錯誤](connector-details-errors.md)
 ## [授權](licensing.md)
 ## [意見反應](connectors-feedback.md)
 ## [使用規定](terms-of-use.md)
@@ -44,7 +45,7 @@
 ## Bing 中的 Microsoft Search
 ### [安全性及隱私權](security-for-search.md)
 ### [在您的內部網路網站新增搜尋方塊](add-a-search-box-to-your-intranet-site.md)
-### [讓 Microsoft Edge 成為預設瀏覽器](set-default-browser.md)
+### [讓 Microsoft Edge 成為預設瀏覽器](/deployedge/edge-default-browser)
 ### [讓 Bing 成為預設搜尋引擎](set-default-search-engine.md)
 ### [讓 Bing.com 成為預設首頁](set-default-homepage.md)
 ### [使用者採用指南](user-adoption-guide.md)
