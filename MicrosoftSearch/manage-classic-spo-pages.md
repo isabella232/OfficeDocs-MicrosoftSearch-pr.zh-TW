@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 在傳統的 SharePoint 頁面上使用 Microsoft 搜尋
-ms.openlocfilehash: 605e63a30ad166c63320c7e89e1b2745e628e15d
-ms.sourcegitcommit: c5fe4e01403379b3ee7ea4dbded8b31696311d79
+ms.openlocfilehash: 9a5aeb2e683297faccfb55d3407653c1791b3961
+ms.sourcegitcommit: 7133d46ca9c3a5216ee9159db781febd17e5a831
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49700971"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49863172"
 ---
 # <a name="classic-pages-and-microsoft-search"></a>傳統頁面和 Microsoft 搜尋
 
@@ -27,14 +27,14 @@ SharePoint 現代網站之前建立的網站使用傳統搜尋方塊和傳統搜
 
 ## <a name="classic-sites-that-will-automatically-switch-to-microsoft-search"></a>將會自動切換至 Microsoft 搜尋的傳統網站
 
-如果下列所有條件皆為 true，則傳統網站會開始使用 Microsoft Search。
+當下列所有條件皆為真時，傳統網站會開始使用 Microsoft Search：
 
 * 網站是以小組網站範本為基礎， (例如 STS#0 和 STS # 1) 。
 * 網站未開啟發佈功能。
 * 網站不會使用自訂主版頁面 (不同的主版頁面，而不是 oslo 或西雅圖。主圖形) 。
 * 在預設結果來源上，除了為網站、網站集合或租使用者新增升級的結果之外，還沒有任何使用中的查詢規則。
 * 預設結果來源上沒有網站或網站集合的自訂結果類型。
-* 其所屬的網站或網站集合尚未使用下列所述的 SearchBoxInNavBar 設定從該參數中選擇。
+* 使用下列所述的 *SearchBoxInNavBar* 設定，不會選擇網站或網站集合的參數。
 
 切換至 Microsoft 搜尋後，網站中的傳統頁面會開始顯示套件導覽列中的 [搜尋] 方塊，並移除頁面上的 [傳統搜尋] 方塊。 然後，當使用者搜尋字詞時，結果會以 Microsoft 搜尋的新式搜尋體驗來顯示。
 
@@ -48,7 +48,7 @@ SharePoint 現代網站之前建立的網站使用傳統搜尋方塊和傳統搜
 
 ```powershell
 Connect-PnPOnline -Url <yoursiteurl> -UseWebLogin
-# this will prompt you to sign into your site. Use the site owner credentials
+# this will prompt you to sign in to your site. Use the site owner credentials.
 ```
 
 若要保持網站的傳統搜尋體驗，請執行下列命令：

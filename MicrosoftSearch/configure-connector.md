@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 microsoft 內置的連接器以進行 Microsoft 搜尋
-ms.openlocfilehash: 86ddf0387e3d00a005f25207a322c8470799b76b
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+ms.openlocfilehash: 61a7d444ddc4c290b5098c327faa8e70f0ef1049
+ms.sourcegitcommit: 469be70ad295a5837978d75babf5243115257f77
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367604"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49847544"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 
@@ -35,7 +35,7 @@ ms.locfileid: "49367604"
 7. 選擇 [重新整理設定]。
 8. 檢查連線。
 
-請務必注意，安裝程式與 Microsoft 的所有圖形連接器非常類似，但並不完全相同。 **除了閱讀本文之外，請務必閱讀您的資料來源連接器特有的連接器。**  
+請務必注意，安裝程式與 Microsoft 的所有圖形連接器非常類似，但並不完全相同。 **除了閱讀本文之外，請務必閱讀資料來源的連接器特定資訊。**  
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步驟1：在 Microsoft 365 系統管理中心新增圖表連接器
 
@@ -43,7 +43,7 @@ ms.locfileid: "49367604"
 
 1. 在[Microsoft 365 系統管理中心](https://admin.microsoft.com)內登入您的系統管理員帳戶
 2. 在功能窗格中，選取 [ **設定**]，然後選取 [ **搜尋 & 情報**]。 選取 [ [連接器]](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)索引標籤。
-3.  選取 [ **+ 新增**]，然後從可用選項的功能表中選取您選擇的資料來源。
+3. 選取 [ **+ 新增**]，然後從可用選項的功能表中選取您選擇的資料來源。
 
 ![可用的資料來源包括： ADLS Gen2、Enterprise 網站、Microsoft SQL server、Azure SQL、Oracle SQL database、ServiceNow、檔案共用、Azure DevOps 和 MediaWiki。](media/add-connector.png)
 

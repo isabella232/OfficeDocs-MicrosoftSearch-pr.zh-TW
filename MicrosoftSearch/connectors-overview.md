@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 搜尋的 Microsoft Graph 連接器概述
-ms.openlocfilehash: 7388653927ca6a7af0ba64c3c592f2689780c181
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+ms.openlocfilehash: 677c91f121185faa6dc96f80c517917f429a3ab0
+ms.sourcegitcommit: 469be70ad295a5837978d75babf5243115257f77
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367521"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49847517"
 ---
 # <a name="overview-of-microsoft-graph-connectors"></a>Microsoft Graph 連接器的概述
 
@@ -25,7 +25,7 @@ ms.locfileid: "49367521"
 
 <!---link Microsoft Graph reference in line 19 when we have access to relevant documentation--->
 
-本文的其餘部分是為了協助 Microsoft 365 系統管理員找到 avaiable 的資源，以回答下列問題：
+本文的其餘部分是為了協助 Microsoft 365 系統管理員找出可用來回答下列問題的資源：
 
 * [哪些資料來源可連接至 Microsoft 搜尋？](#what-data-sources-can-be-connected-to-microsoft-search)
 * [如何管理連線？](#how-do-i-manage-my-connections)
@@ -35,7 +35,7 @@ ms.locfileid: "49367521"
 
 <!---Modify to another note that is more accurate--->
 > [!IMPORTANT]
-> 現在一般會提供 microsoft Graph 連接器和 Microsoft Search APIs。 第一次部署是針對目標版本所設定的客戶。 如果您想要在租使用者中使用圖形連接器，使用者和系統管理員必須選擇已 [目標發行](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)。
+> 現在一般會提供 microsoft Graph 連接器和 Microsoft Search APIs。 第一次部署是針對目標版本所設定的客戶。 如果您想要在租使用者中使用圖形連接器，使用者和系統管理員必須選擇已 [目標發行](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide&preserve-view=true)。
 
 <!---Add Value, scenario, example, and/or graphic in December updates--->
 <!---Probably remove architecture section below
@@ -57,7 +57,7 @@ To create a _*connection** to a data source, admins need authenticated access to
 
 Microsoft 提供10個圖形連接器和我們的生態系統合作夥伴已透過100其他圖形連接器建立。 您也可以建立自己的圖形連接器。 
 
-### <a name="graph-connectors-by-microsoft"></a>Microsoft 的圖形連接器
+### <a name="graph-connectors-by-microsoft"></a>Microsoft Graph 連接器
 
 您可以使用 Microsoft 所建立的圖形連接器，連線到下列資料來源：
 
@@ -70,7 +70,7 @@ Microsoft 提供10個圖形連接器和我們的生態系統合作夥伴已透�
 * [Microsoft SQL Server](MSSQL-connector.md)
 * [檔案共用](fileshare-connector.md)
 * Oracle (預覽) 
-* [Salesforce (預覽) ](salesforce-connector.md)
+* [Salesforce (預覽)](salesforce-connector.md)
 * [ServiceNow](servicenow-connector.md)
 
 [圖形連接器圖庫](connectors-gallery.md)包含每個圖形連接器的簡短描述。 如果您已準備好將其中一個資料來源連接至您的租使用者，請務必閱讀適用于資料來源之 Microsoft 安裝連接器中的 [安裝程式概述](configure-connector.md) 和任何其他文章。
@@ -105,3 +105,17 @@ Microsoft 提供10個圖形連接器和我們的生態系統合作夥伴已透�
 ## <a name="how-do-i-search-my-connector-data-from-a-custom-application"></a>如何從自訂應用程式搜尋我的連接器資料？
 
 在索引自訂資料之後，開發人員可以 [查詢此資料](https://docs.microsoft.com/graph/search-concept-custom-types)。 您可以在任何應用程式中查看資料。 如需詳細資訊，請參閱 microsoft [Graph 中的 Microsoft SEARCH API 綜述](https://docs.microsoft.com/graph/search-concept-overview)。
+
+## <a name="limitations"></a>限制
+
+* 當您 **發佈** Microsoft 建立的連接器時，可能需要幾分鐘的時間來建立連線。 在此期間內，連接會顯示其狀態為 [擱置中]。
+
+* 在發佈連接後， [Microsoft 365 系統管理中心](https://admin.microsoft.com) 不支援編輯 **搜尋架構** 。 若要編輯搜尋架構，請刪除連接，然後建立新的連線。
+
+* 接收輸送量會限制每秒大約四個專案。
+
+* 不支援架構更新。 建立連線設定後，就無法更新架構。 您只可刪除並重新建立連線。
+
+* 連接限制。 每個租使用者最多可以建立10個連接。
+
+* 無法使用 [編輯連線支援]。 建立連線後，就無法編輯或變更它。 如果您需要變更任何詳細資料，您必須刪除並重新建立連線。
