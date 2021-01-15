@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 取得有關企業搜尋和 Microsoft Search 常見問題的解答
-ms.openlocfilehash: 5a134116c98b4feea0c04909349ce4b972c59ffe
-ms.sourcegitcommit: 0b8c3c57384cecaa93c5cbaf3b3b30f8e20d1a69
+ms.openlocfilehash: abaa1a232b08ba586dd6cd777f7e54c323159dee
+ms.sourcegitcommit: aa7774d2bdff2bd9e1b7f51fcda90fa6b0c3a5ca
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48408436"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49867376"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 # <a name="frequently-asked-questions"></a>常見問題集
@@ -29,7 +29,7 @@ ms.locfileid: "48408436"
 
 ## <a name="is-advanced-query-understanding-supported"></a>是否支援進階查詢理解？
 
-是的，Microsoft Search 會從較大的片語剖析查詢意圖。 此功能會使用 AI 以學習將常用多餘片語的使用者新增到查詢，但不影響使用者的搜尋意圖。 例如，當使用者搜尋有關 *如何變更密碼的詳細資訊*時，我們會從查詢中解壓縮較不重要的字詞，並根據相關的 *變更密碼（如變更密碼*）進行觸發。
+是的，Microsoft Search 會從較大的片語剖析查詢意圖。 此功能會使用 AI 以學習將常用多餘片語的使用者新增到查詢，但不影響使用者的搜尋意圖。 例如，當使用者搜尋有關 *如何變更密碼的詳細資訊* 時，我們會從查詢中解壓縮較不重要的字詞，並根據相關的 *變更密碼（如變更密碼*）進行觸發。
   
 這項功能不會覆寫 [Microsoft 365 系統管理中心](https://admin.microsoft.com)中的關鍵字集。
   
@@ -41,13 +41,13 @@ ms.locfileid: "48408436"
 
 以下是設定預設搜尋引擎、預設首頁及預設瀏覽器的指示，可讓您的使用者在 [Bing](https://Bing.com)中使用 Microsoft search 的最佳體驗：
 
-- [將 Microsoft Edge 設定為預設瀏覽器](set-default-browser.md)
+- [將 Microsoft Edge 設定為預設瀏覽器](/deployedge/edge-default-browser)
 - [讓 Bing 成為預設搜尋引擎](set-default-search-engine.md)
 - [將 Bing.com 設為企業首頁](set-default-homepage.md)
 
 ## <a name="how-are-my-search-results-protected"></a>如何保護我的搜尋結果？
 
-我們需要 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/) 驗證，才能存取受信任的雲端的結果。 已驗證的使用者只會看到他們有權存取的內容。 搜尋查詢會解除辨識，而且記錄會與 public [Bing](https://Bing.com) 搜尋流量分開。 這種保護層級是業界唯一的。
+我們需要 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/) 驗證，才能存取受信任的雲端的結果。 已驗證的使用者只會看到他們有權存取的內容。 搜尋查詢會解除辨識，當您在 Bing 中使用 Microsoft Search 時，記錄會與 public [Bing](https://Bing.com) 搜尋流量分開。
 
 ## <a name="can-i-search-across-federated-organizations"></a>可以跨同盟組織搜尋嗎？
 
