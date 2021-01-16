@@ -11,11 +11,11 @@
 ## [位置](manage-locations.md)
 ## [Power BI](manage-powerbi.md)
 ## [問與答](manage-qas.md)
-# 連接器 (預覽)
+# 連接器
 ## [概觀](connectors-overview.md)
 ## [預覽發行](connectors-preview.md)
 ## [連接器庫](connectors-gallery.md)
-## Microsoft Graph 連接器
+## 設定 Microsoft 連接器
 ### [設定概觀](configure-connector.md)
 ### [對應您的非 Azure AD 身分識別 (預覽)](map-non-aad.md)
 ### [對應您的 Azure AD 身分識別 (預覽)](map-aad.md)
@@ -30,7 +30,6 @@
 ## [管理您的連接器](manage-connector.md)
 ## [連線詳細資料與錯誤](connector-details-errors.md)
 ## [授權](licensing.md)
-## [意見反應](connectors-feedback.md)
 ## [使用規定](terms-of-use.md)
 # 自訂和設定
 ## [管理類別和結果類型](customize-search-page.md)
