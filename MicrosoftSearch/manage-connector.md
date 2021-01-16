@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理 microsoft Search 的 Microsoft Graph 連接器。
-ms.openlocfilehash: bf5a382ae0bd8308922599f0dfa9e087aad50c24
-ms.sourcegitcommit: b1ca58219fb16d5aff277f357dfa11ce6b0d42ca
+ms.openlocfilehash: cf1231f8003d166977398ef4bdcc1ad12104dd05
+ms.sourcegitcommit: d22fe2a34d7efe2dd5bbb456f0d00eb5f6c7608c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49695683"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49880607"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
@@ -76,7 +76,7 @@ ms.locfileid: "49695683"
 
 ![已選取連接器的連接器清單和詳細資料窗格，顯示連接器的錯誤清單。](media/errormonitoring2.png)
 
-以下是針對任何連線可能會出現的不同錯誤清單。 如果這些解決方案無法運作，請聯繫支援人員或傳送我們的 [意見](connectors-feedback.md)反應。
+以下是針對任何連線可能會出現的不同錯誤清單。
 
 錯誤碼 | 錯誤訊息 | 解決方案
 --- | --- | ---

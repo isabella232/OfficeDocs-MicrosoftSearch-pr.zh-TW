@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: 部署代理程式
-ms.openlocfilehash: 5dbca392fefdcc11de253fd244cc98a6adcee68a
-ms.sourcegitcommit: e8d770fa72ac83e074a5de57098cb55d06d8db07
+ms.openlocfilehash: 31220196849fe90ab2611e9c2b83a1cec0a02b34
+ms.sourcegitcommit: a04f1df14a3221776ccd141f6060328612d80e06
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49588365"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49876496"
 ---
 # <a name="graph-connector-agent"></a>圖形連接器代理程式
 
@@ -38,7 +38,7 @@ ms.locfileid: "49588365"
 
 ## <a name="create-and-configure-an-app-for-the-agent"></a>建立及設定代理程式的應用程式  
 
-使用代理程式之前，您必須先建立應用程式，並設定驗證詳細資料。
+首先，登入並注意，帳戶的必要許可權最低為「搜尋管理員」。 然後，代理程式會要求您提供驗證詳細資料。 使用下列步驟來建立應用程式，並產生必要的驗證詳細資料。
 
 ### <a name="create-an-app"></a>建立應用程式
 
@@ -55,7 +55,7 @@ ms.locfileid: "49588365"
 
 ### <a name="configure-authentication"></a>設定驗證
 
-您可以使用用戶端密碼或憑證提供驗證詳細資料。 遵循您的選擇的步驟。
+您可以使用用戶端密碼或憑證提供驗證詳細資料。 遵循您的選擇步驟。
 
 #### <a name="configuring-the-client-secret-for-authentication"></a>設定用戶端密碼進行驗證
 

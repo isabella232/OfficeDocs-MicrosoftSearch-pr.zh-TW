@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 連接器詳細資料和錯誤
-ms.openlocfilehash: bd091b35a1f62da9fe45ec7a955de051a1bc0a9a
-ms.sourcegitcommit: 469be70ad295a5837978d75babf5243115257f77
+ms.openlocfilehash: 23b2f0745a09bffbc5ac6ad9c2163c7a5b63cb51
+ms.sourcegitcommit: d22fe2a34d7efe2dd5bbb456f0d00eb5f6c7608c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49848787"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49880598"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
@@ -53,7 +53,7 @@ ms.locfileid: "49848787"
 
 ![已選取連接器的連接器清單和詳細資料窗格，顯示連接器的錯誤清單。](media/errormonitoring2.png)
 
-以下是針對任何連線可能會出現的不同錯誤清單。 如果這些解決方案無法運作，請聯繫支援人員或傳送我們的 [意見](connectors-feedback.md)反應。
+以下是針對任何連線可能會出現的不同錯誤清單。
 
 錯誤碼 | 錯誤訊息 | 解決方案
 --- | --- | ---
