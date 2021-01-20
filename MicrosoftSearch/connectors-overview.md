@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 搜尋的 Microsoft Graph 連接器概述
-ms.openlocfilehash: 677c91f121185faa6dc96f80c517917f429a3ab0
-ms.sourcegitcommit: 469be70ad295a5837978d75babf5243115257f77
+ms.openlocfilehash: a45a007bbb2774caaaac90fc1549c8ba634b0580
+ms.sourcegitcommit: 39bf9f0db7f9bff2ab82c99a059b0ddcf1c98f5f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49847517"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "49905949"
 ---
 # <a name="overview-of-microsoft-graph-connectors"></a>Microsoft Graph 連接器的概述
 
@@ -30,12 +30,13 @@ ms.locfileid: "49847517"
 * [哪些資料來源可連接至 Microsoft 搜尋？](#what-data-sources-can-be-connected-to-microsoft-search)
 * [如何管理連線？](#how-do-i-manage-my-connections)
 * [圖形連接器的授權需求和使用期限為何？](#what-are-the-license-requirements-and-terms-of-use-for-graph-connectors)
+* [預覽功能為何？](#what-are-the-preview-features)
 * [如何自訂及設定搜尋結果？](#how-do-i-customize-and-configure-search-results)
 * [如何從自訂應用程式搜尋我的連接器資料？](#how-do-i-search-my-connector-data-from-a-custom-application)
 
-<!---Modify to another note that is more accurate--->
+<!---Modify to another note that is more accurate after rollout completion--->
 > [!IMPORTANT]
-> 現在一般會提供 microsoft Graph 連接器和 Microsoft Search APIs。 第一次部署是針對目標版本所設定的客戶。 如果您想要在租使用者中使用圖形連接器，使用者和系統管理員必須選擇已 [目標發行](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide&preserve-view=true)。
+> 現在一般會提供 microsoft Graph 連接器和 Microsoft Search APIs。 第一個展入排定在最後一次，直到2021年2月為止。 在此之前，只有已選擇進入 [目標版本](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide&preserve-view=true) 的承租人和使用者才能使用圖形連接器。 完成所有租使用者的部署時，連接器內容的索引配額利用率會變成計費。 如需詳細資訊，請參閱 [授權需求和定價](licensing.md) 。
 
 <!---Add Value, scenario, example, and/or graphic in December updates--->
 <!---Probably remove architecture section below
@@ -92,6 +93,17 @@ Microsoft 提供10個圖形連接器和我們的生態系統合作夥伴已透�
 您為組織中的使用者需要有效的 Microsoft 365 或 Office 365 授權和足夠的圖形連接器配額，以在其搜尋結果中查看連接器的資料。
 
 若要深入瞭解，請參閱 [授權需求和價格](licensing.md) 與 [使用條款](terms-of-use.md)。
+
+## <a name="what-are-the-preview-features"></a>預覽功能為何？
+
+雖然現在一般會提供 Microsoft Graph 連接器和 Microsoft Search APIs，但預覽中有多種功能。
+
+預覽中的連接器和功能組包括：
+
+* [Azure DevOps 連接器](azure-devops-connector.md)
+* [Salesforce 連接器](salesforce-connector.md)
+* 具有使用來源 ACLs 之搜尋許可權的[ServiceNow 連接器](servicenow-connector.md)
+* [管理結果叢集](result-cluster.md)
 
 ## <a name="how-do-i-customize-and-configure-search-results"></a>如何自訂及設定搜尋結果？
 
