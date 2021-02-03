@@ -25,6 +25,7 @@
 #### [Azure SQL 和 Microsoft SQL Server](MSSQL-connector.md)
 #### [企業網站](enterprise-web-connector.md)
 #### [MediaWiki](mediawiki-connector.md)
+#### [Oracle SQL] (預覽)(OracleSQL-connector.md)
 #### [Salesforce (預覽)](salesforce-connector.md)
 #### [ServiceNow](servicenow-connector.md)
 ## 管理您的連線
