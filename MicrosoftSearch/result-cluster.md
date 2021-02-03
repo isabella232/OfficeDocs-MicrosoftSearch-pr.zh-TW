@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 連接器結果聚簇體驗的詳細資料
-ms.openlocfilehash: f2355213a0b1821968c801153841c274e539d72e
-ms.sourcegitcommit: 7294c953e7939e48f128656cc2f8f22705ae3f3d
+ms.openlocfilehash: fb29fb9c14811698fb7c5d043853b57231c76a0b
+ms.sourcegitcommit: d1bc6c41ecf47584373ce57543502bed55753d0c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49773025"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080835"
 ---
 # <a name="graph-connectors-result-cluster"></a>圖形連接器產生的聚簇
 
@@ -59,4 +59,4 @@ ms.locfileid: "49773025"
 
 ## <a name="view-the-result-cluster-experience-after-it-is-enabled"></a>在啟用結果叢集體驗後查看
 
-在您開啟結果叢集體驗後，可能需要幾分鐘的時間才能進行查看。 如果您想要立即體驗，您可以在 SharePoint 和 Office 的 URL 中附加 *cacheClear = true* 。
+在您開啟結果叢集體驗後，可能需要長達12小時才能進行查看。 如果您想要立即體驗，您可以在 SharePoint 和 Office 的 URL 中附加 *cacheClear = true* 。

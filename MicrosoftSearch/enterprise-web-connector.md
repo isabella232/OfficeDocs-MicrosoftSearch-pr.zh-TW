@@ -1,8 +1,8 @@
 ---
-title: Microsoft 搜尋的企業網站連接器
-ms.author: monaray
-author: monaray97
-manager: mnirkhe
+title: Microsoft 搜尋的企業網站圖表連接器
+ms.author: mecampos
+author: mecampos
+manager: umas
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -11,24 +11,44 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 設定 Microsoft 搜尋的企業網站連接器
-ms.openlocfilehash: 443e903e0fa371d2a056fd4bf06310eb2627b11c
-ms.sourcegitcommit: 031e7c595496d9faed9038725b04f3c8b5f9ccbd
+description: 設定 Microsoft 搜尋的企業網站圖表連接器
+ms.openlocfilehash: bf706399ec55fafbe96ce53622ce8502c81c2190
+ms.sourcegitcommit: d39113376db26333872d3a2c7baddc3a3a7aea61
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49604769"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50084882"
 ---
+<!---Previous ms.author: monaray --->
+
 <!-- markdownlint-disable no-inline-html -->
-# <a name="enterprise-websites-connector"></a>企業網站連接器
 
-透過企業網站連接器，您的組織可以 **從其內部網站** 對文章和內容編制索引。 在您設定網站的連接器及同步內容之後，使用者可以從任何 Microsoft 搜尋用戶端搜尋該內容。
+# <a name="enterprise-websites-graph-connector"></a>企業網站圖表連接器
 
-本文適用于 [Microsoft 365](https://www.microsoft.com/microsoft-365) 系統管理員或任何設定、執行及監視企業網站連接器的人員。 它說明如何設定連接器和連接器功能、限制及疑難排解技術。  
+企業網站圖表連接器可讓您的組織對 **來自內部網站** 的文章和內容編制索引。 在您設定網站的連接器及同步內容之後，使用者可以從任何 Microsoft 搜尋用戶端搜尋該內容。
 
-## <a name="connection-settings"></a>連接設定
+> [!NOTE]
+> 請閱讀 [**您的圖形連接器文章設定**](configure-connector.md) ，以瞭解一般圖表連接器設定程式。
 
-若要連線至您的資料來源，您必須填寫網站的根 URL、選擇編目來源，以及您想要使用的驗證類型： [無]、[基本驗證]，或 OAuth 2.0 搭配 [Azure Active Directory (AZURE AD) ](https://docs.microsoft.com/azure/active-directory/)。 在您完成此資訊之後，請按一下 [測試連線] 以驗證您的設定。
+本文適用于任何設定、執行及監視 ServiceNow 圖形連接器的人員。 它會補充一般設定程式，並顯示只適用于 ServiceNow 圖形連接器的指令。 本文也包含 [疑難排解](#troubleshooting) 及 [限制](#limitations)的相關資訊。
+
+<!---## Before you get started-->
+
+<!---Insert "Before you get started" recommendations for this data source-->
+
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步驟1：在 Microsoft 365 系統管理中心新增圖表連接器
+
+遵循一般 [設定指示](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
+
+## <a name="step-2-name-the-connection"></a>步驟2：命名連線
+
+遵循一般 [設定指示](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
+
+## <a name="step-3-configure-the-connection-settings"></a>步驟3：設定連接設定
+
+若要連線至您的資料來源，您必須填寫網站的根 URL、選擇編目來源，以及您想要使用的驗證類型： [無]、[基本驗證]，或 OAuth 2.0 搭配 [Azure Active Directory (AZURE AD) ](https://docs.microsoft.com/azure/active-directory/)。 在您完成此資訊之後，請選取 [測試連線] 以驗證您的設定。
 
 ### <a name="url"></a>URL
 
@@ -42,7 +62,8 @@ ms.locfileid: "49604769"
 
 若為您的內部部署網站，請選取 [ **代理程式** ] 做為編目模式，並在 [部署中的 **代理程式** ] 欄位中，選擇您先前安裝及設定的圖形連接器代理程式。  
 
-![商業網路連接器之連線設定窗格的螢幕擷取畫面](media/enterprise-web-connector/connectors-enterpriseweb-settings.png)
+> [!div class="mx-imgBorder"]
+> ![商業網路連接器之連線設定窗格的螢幕擷取畫面](media/enterprise-web-connector/connectors-enterpriseweb-settings.png)
 
 ### <a name="authentication"></a>驗證
 
@@ -59,33 +80,42 @@ ms.locfileid: "49604769"
 
 如需詳細資訊，請參閱 [快速入門：使用 Microsoft identity Platform 註冊應用程式](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)。
 
-## <a name="support-for-robotstxt"></a>robots.txt 的支援
+## <a name="step-3a-add-urls-to-exclude-optional-crawl-restrictions"></a>步驟3a：新增 URLs 以排除 (選擇性編目限制) 
+
+有兩種方式可以避免網頁進行編目：在 robots.txt 檔案中禁止這些頁面，或將其新增至排除清單。
+
+### <a name="support-for-robotstxt"></a>robots.txt 的支援
 
 連接器會檢查您的根網站是否有 robots.txt 檔案，如果有的話，則會依照該檔案中所發現的指示來查看。 如果您不想讓連接器編目網站上的某些頁面或目錄，您可以在 robots.txt 檔案中的「禁止」宣告中呼叫這些頁面或目錄。
 
-## <a name="add-urls-to-exclude"></a>新增要排除的 URLs
+### <a name="add-urls-to-exclude"></a>新增要排除的 URLs
 
-您可以選擇性地建立 **排除清單** ，以排除部分 URLs 若該內容機密或不值得編目的情況，則無法取得編目。 若要建立排除清單，請流覽根 URL。 您可以選擇在設定過程中將排除的 URLs 新增至清單。
+您可以選擇性地建立 **排除清單** ，以排除部分 URLs 若該內容機密或不值得編目的情況，則無法取得編目。 若要建立排除清單，請流覽根 URL。 您可以在設定過程中將排除的 URLs 新增至清單。
 
-## <a name="manage-search-permissions"></a>管理搜尋許可權
-
-企業網站連接器只支援 **所有人都** 能看見的搜尋許可權。 已編制索引的資料會顯示在搜尋結果中，並對組織中的所有使用者顯示。
-
-## <a name="assign-property-labels"></a>指派屬性標籤
+## <a name="step-4-assign-property-labels"></a>步驟4：指派屬性標籤
 
 您可以從選項的功能表中選擇，將 source 屬性指派給每個標籤。 雖然這個步驟不是必要的，但具有一些屬性標籤會提升搜尋相關性，並可確保使用者更準確的搜尋結果。
 
-## <a name="manage-schema"></a>管理架構
+## <a name="step-5-manage-schema"></a>步驟5：管理架構
 
-在 [**管理架構**] 畫面上，您可以選擇變更架構屬性 (可 **查詢**、**可搜尋、可****檢索** 及 **可精簡搜尋**) 相關聯的屬性、新增選用的別名，然後選擇 **Content** 屬性。
+在 [ **管理架構** ] 畫面上，您可以變更架構屬性 (選項包括「 **查詢**」、「 **搜尋**」、「 **檢索**」及「 **精煉** 」與屬性相關聯的) 、新增選用的別名，然後選擇 **Content** 屬性。
 
-## <a name="set-the-refresh-schedule"></a>設定重新整理排程
+## <a name="step-6-manage-search-permissions"></a>步驟6：管理搜尋許可權
+
+企業網站連接器只支援 **所有人都** 能看見的搜尋許可權。 已編制索引的資料會顯示在搜尋結果中，並對組織中的所有使用者顯示。
+
+## <a name="step-7-set-the-refresh-schedule"></a>步驟7：設定重新整理排程
 
 企業網站連接器只支援完整重新整理。 這表示連接器會在每次重新整理時重新編目網站的所有內容。 若要確定連接器有足夠的時間來編目內容，建議您設定大型重新整理排程間隔。 建議您在一到兩周之間進行排程重新整理。
 
+## <a name="step-8-review-connection"></a>步驟8：檢查連線
+
+遵循一般 [設定指示](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
+
 ## <a name="troubleshooting"></a>疑難排解
 
-當閱讀網站內容時，編目可能會遇到一些來源錯誤，這些錯誤是由下列詳細的錯誤碼所代表。 若要取得錯誤類型的詳細資訊，請在選取連接後，移至 [ **錯誤詳細資料** ] 頁面。 按一下 **錯誤碼** 以查看更詳細的錯誤。 此外，請參閱 [管理您的連接器](https://docs.microsoft.com/microsoftsearch/manage-connector) 以深入瞭解。
+當閱讀網站內容時，編目可能會遇到一些來源錯誤，這些錯誤是由下列詳細的錯誤碼所代表。 若要取得錯誤類型的詳細資訊，請在選取連接後，移至 [ **錯誤詳細資料** ] 頁面。 選取 **錯誤碼** 以查看更詳細的錯誤。 此外，請參閱 [管理您的連接器](https://docs.microsoft.com/microsoftsearch/manage-connector) 以深入瞭解。
 
  詳細錯誤代碼 | 錯誤訊息
  --- | ---
@@ -105,7 +135,3 @@ ms.locfileid: "49604769"
 ## <a name="limitations"></a>限制
 
 企業網站連接器不支援搜尋 **動態網頁** 上的資料。 [Confluence](https://www.atlassian.com/software/confluence)與[Unily](https://www.unily.com/)等內容管理系統中的這些網頁範例，或儲存網站內容的資料庫。
-
-## <a name="next-steps"></a>後續步驟
-
-在發佈連線後，您必須自訂搜尋結果頁面。 若要瞭解如何自訂搜尋結果，請參閱 [自訂搜尋結果頁面](https://docs.microsoft.com/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page)。

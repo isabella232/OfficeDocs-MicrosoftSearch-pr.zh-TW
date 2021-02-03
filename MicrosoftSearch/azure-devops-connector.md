@@ -1,8 +1,8 @@
 ---
-title: Microsoft 搜尋的 Azure DevOps 連接器
-ms.author: shgrover
-author: shakungrover05
-manager: jeffkizn
+title: Microsoft 搜尋的 Azure DevOps 圖形連接器
+ms.author: mecampos
+author: mecampos
+manager: umas
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -11,45 +11,66 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 設定 Microsoft 搜尋的 Azure DevOps 連接器
-ms.openlocfilehash: b9c566e3e07bfca6d4d25b14915f0160f3928b15
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+description: 設定 Microsoft 搜尋的 Azure DevOps 圖形連接器
+ms.openlocfilehash: 3d922a5384de8bf0ef3c6dfd80bd67ad9170eb66
+ms.sourcegitcommit: d39113376db26333872d3a2c7baddc3a3a7aea61
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367548"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50084936"
 ---
-# <a name="azure-devops-connector-preview"></a>Azure DevOps connector (preview) 
+<!---Previous ms.author: shgrover --->
 
-透過 Azure DevOps connector，您的組織可以在其 Azure DevOps 服務實例中編制工作專案的索引。 當您從 Azure DevOps 設定連接器和索引內容之後，使用者就可以在 Microsoft 搜尋中搜尋這些專案。
+# <a name="azure-devops-graph-connector-preview"></a>Azure DevOps Graph connector (preview) 
 
-本文適用于 Microsoft 365 系統管理員或任何設定、執行及監視 Azure DevOps 連接器的人員。 它說明如何設定連接器和連接器功能、限制及疑難排解技術。
+Azure DevOps Graph 連接器可讓您的組織為其 Azure DevOps 服務實例中的工作專案編制索引。 當您從 Azure DevOps 設定連接器和索引內容之後，使用者就可以在 Microsoft 搜尋中搜尋這些專案。
+
+> [!NOTE]
+> 請閱讀 [**您的圖形連接器文章設定**](configure-connector.md) ，以瞭解一般圖表連接器設定程式。
+
+本文適用于任何設定、執行及監視 ServiceNow 圖形連接器的人員。 它會補充一般設定程式，並顯示只適用于 ServiceNow 圖形連接器的指令。
 
 >[!IMPORTANT]
->Azure DevOps 連接器只支援 Azure DevOps 雲端服務。 Azure DevOps Server 2019，tfs 2018，tfs 2017，tfs 2015，及 TFS 2013 都不受此連接器支援。 
+>Azure DevOps 連接器只支援 Azure DevOps 雲端服務。 Azure DevOps Server 2019，tfs 2018，tfs 2017，tfs 2015，及 TFS 2013 都不受此連接器支援。
 
-## <a name="connect-to-a-data-source"></a>連接到資料來源
+<!---## Before you get started-->
+
+<!---Insert "Before you get started" recommendations for this data source-->
+
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步驟1：在 Microsoft 365 系統管理中心新增圖表連接器
+
+遵循一般 [設定指示](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
+instructions.-->
+
+## <a name="step-2-name-the-connection"></a>步驟2：命名連線
+
+遵循一般 [設定指示](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
+instructions.-->
+
+## <a name="step-3-configure-the-connection-settings"></a>步驟3：設定連接設定
 
 若要連線至 Azure DevOps 實例，您需要 Azure DevOps [組織](https://docs.microsoft.com/azure/devops/organizations/accounts/create-organization) 名稱、其應用程式識別碼，以及 OAuth 驗證的用戶端密碼。
 
 ### <a name="register-an-app"></a>註冊應用程式
 
-您必須在 Azure DevOps 中註冊應用程式，Microsoft 搜尋應用程式才能存取實例。 若要深入瞭解，請參閱 Azure DevOps 檔，以瞭解如何 [註冊應用程式](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/oauth?view=azure-devops#register-your-app)。 
+在 Azure DevOps 中註冊應用程式，以便 Microsoft 搜尋應用程式可以存取實例。 若要深入瞭解，請參閱 Azure DevOps 檔，以瞭解如何 [註冊應用程式](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/oauth?view=azure-devops#register-your-app&preserve-view=true)。
 
 下表提供如何填寫 [應用程式註冊] 表單的指導方針：
 
- **必要欄位** | **描述**      | **建議值** 
---- | --- | --- 
-| 公司名稱         | 這是您公司的名稱。 | 使用適當的值   | 
-| 應用程式名稱     | 此唯一值可識別您要授權的應用程式。    | Microsoft 搜尋     | 
-| 應用程式網站  | 此必要欄位是在連接器設定期間要求存取 Azure DevOps 實例之應用程式的 URL。  | <https://gcs.office.com/>                | 
-| 授權回撥 URL        | 授權伺服器重新導向所需的回撥 URL。 | <https://gcs.office.com/v1.0/admin/oauth/callback>| 
-| 授權範圍 | 這是應用程式的存取範圍 | 選取下列範圍： Identity (讀取) 、工作專案 (讀取) 、變數群組 (讀取) 、專案和團隊 (讀取) 、圖形 (讀取) | 
+必要欄位 | 描述 | 建議值
+--- | --- | ---
+| 公司名稱         | 您公司的名稱。 | 使用適當的值   |
+| 應用程式名稱     | 識別您要授權之應用程式的唯一值。    | Microsoft 搜尋     |
+| 應用程式網站  | 在連接器設定期間要求存取 Azure DevOps 實例之應用程式的 URL。  (必要) 。  | HTTPs://<span>gc。</span>com
+| 授權回撥 URL        | 授權伺服器重新導向所需的回撥 URL。 | HTTPs://<span>gc。</span>com/v 1.0/admin/oauth/callback|
+| 授權範圍 | 應用程式的存取範圍 | 選取下列範圍： Identity (讀取) 、工作專案 (讀取) 、變數群組 (讀取) 、專案和團隊 (讀取) 、圖形 (讀取) |
 
 在註冊具有上述詳細資料的應用程式時，您會取得將用來設定連接器的 **應用程式識別碼** 和 **用戶端密碼** 。
 
 >[!NOTE]
->若要撤銷對 Azure DevOps 中註冊的任何應用程式的存取權，請移至 Azure DevOps 實例右邊的 [使用者設定]。 按一下 [設定檔]，然後按一下側邊窗格 [安全性] 區段中的 [授權]。 將游標移到授權的 OAuth 應用程式上，以查看應用程式詳細資料右下角的 [撤銷] 按鈕。
+>若要撤銷對 Azure DevOps 中註冊的任何應用程式的存取權，請移至 Azure DevOps 實例右邊的 [使用者設定]。 選取 [設定檔]，然後選取側邊窗格的 [安全性] 區段中的 [授權]。 將游標移到授權的 OAuth 應用程式上，以查看應用程式詳細資料右下角的 [撤銷] 按鈕。
 
 ### <a name="connection-settings"></a>連接設定
 
@@ -57,11 +78,13 @@ ms.locfileid: "49367548"
 
 ![連接應用程式設定](media/ADO_Connection_settings_2.png)
 
-## <a name="select-projects-and-fields"></a>選取專案和欄位
+### <a name="configure-data-select-projects-and-fields"></a>設定資料：選取專案和欄位
 
 您可以選擇建立整個組織或特定專案之索引的連線。
 
-如果您選擇編制整個組織的索引，組織中所有專案中的專案將會獲得索引。 新專案和專案會在建立後的下一個編目期間編制索引。 如果您選擇個別專案，則只有那些專案中的工作專案將會編制索引。
+如果您選擇編制整個組織的索引，組織中所有專案中的專案將會獲得索引。 新專案和專案會在建立後的下一個編目期間編制索引。
+
+如果您選擇個別專案，則只有那些專案中的工作專案將會編制索引。
 
 ![設定資料](media/ADO_Configure_data.png)
 
@@ -69,20 +92,31 @@ ms.locfileid: "49367548"
 
 ![選擇屬性](media/ADO_choose_properties.png)
 
-## <a name="manage-search-permissions"></a>管理搜尋許可權
+## <a name="step-4-manage-search-permissions"></a>步驟4：管理搜尋許可權
 
 Azure DevOps 連接器只支援可供  **存取此資料來源** 或 **所有人** 的使用者看到的搜尋許可權。 如果您選擇 [ **只有可存取此資料來源的人員**]，針對 Azure DevOps 中組織、專案或區域路徑層級的使用者或群組的許可權，針對其存取權的使用者，將會在搜尋結果中顯示索引的資料。 如果您選擇 [ **任何人**]，索引資料將會出現在所有使用者的搜尋結果中。
 
-## <a name="assign-property-labels"></a>指派屬性標籤
+## <a name="step-5-assign-property-labels"></a>步驟5：指派屬性標籤
 
-您可以從選項的功能表中選擇，將 source 屬性指派給每個標籤。 雖然這個步驟不是必要的，但具有一些屬性標籤會提升搜尋相關性，並可確保使用者更準確的搜尋結果。
+遵循一般 [設定指示](https://docs.microsoft.com/microsoftsearch/configure-connector)。
 
-## <a name="manage-schema"></a>管理架構
+## <a name="step-6-manage-schema"></a>步驟6：管理架構
 
-在 [**管理架構**] 畫面上，您可以選擇變更架構屬性 (可 **查詢**、**可搜尋、可****檢索** 及 **可精簡搜尋**) 相關聯的屬性、新增選用的別名，然後選擇 **Content** 屬性。
+遵循一般 [設定指示](https://docs.microsoft.com/microsoftsearch/configure-connector)。
 
-## <a name="set-the-refresh-schedule"></a>設定重新整理排程
+## <a name="step-7-choose-refresh-settings"></a>步驟7：選擇重新整理設定
 
-Azure DevOps 連接器支援完整和累加編目的更新排程。 完整編目會找到先前同步處理至 Microsoft 搜尋索引的已刪除工作專案。 會執行完整編目，以同步處理所有工作專案。 若要將新的工作專案和更新同步到現有的工作專案，您必須排程累加編目。
+Azure DevOps 連接器支援完整和累加編目的更新排程。
+建議的排程為一小時用於增量編目，而一天則是完整編目。
 
-建議的排程為一小時用於增量編目，而一天則是完整編目。 
+## <a name="step-8-review-connection"></a>步驟8：檢查連線
+
+遵循一般 [設定指示](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
+instructions.-->
+
+<!---## Troubleshooting-->
+<!---Insert troubleshooting recommendations for this data source-->
+
+<!---## Limitations-->
+<!---Insert limitations for this data source-->
