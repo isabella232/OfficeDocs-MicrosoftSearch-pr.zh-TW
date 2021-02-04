@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的企業網站圖表連接器
-ms.openlocfilehash: bf706399ec55fafbe96ce53622ce8502c81c2190
-ms.sourcegitcommit: d39113376db26333872d3a2c7baddc3a3a7aea61
+ms.openlocfilehash: 526b36a798f50bed457832d576ffebd15820184d
+ms.sourcegitcommit: d53b91f8f52a4a96281b66831c2449bbffe2177c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084882"
+ms.locfileid: "50097428"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -30,7 +30,7 @@ ms.locfileid: "50084882"
 > [!NOTE]
 > 請閱讀 [**您的圖形連接器文章設定**](configure-connector.md) ，以瞭解一般圖表連接器設定程式。
 
-本文適用于任何設定、執行及監視 ServiceNow 圖形連接器的人員。 它會補充一般設定程式，並顯示只適用于 ServiceNow 圖形連接器的指令。 本文也包含 [疑難排解](#troubleshooting) 及 [限制](#limitations)的相關資訊。
+本文適用于任何設定、執行及監視企業網站連接器的人員。 它會補充一般設定程式，並顯示只適用于企業網站連接器的指示。 本文也包含 [疑難排解](#troubleshooting) 及 [限制](#limitations)的相關資訊。
 
 <!---## Before you get started-->
 

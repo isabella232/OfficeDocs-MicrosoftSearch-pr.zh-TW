@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: 設定適用于 Microsoft 搜尋的 Oracle SQL Graph 連接器。
-ms.openlocfilehash: a13c9ea71b115e84d313489214d424f77337a062
-ms.sourcegitcommit: d39113376db26333872d3a2c7baddc3a3a7aea61
+ms.openlocfilehash: 01e4cd6b04d2997ea11ef006e94ea09b03280f41
+ms.sourcegitcommit: 6a7f36769e92b714588b47efb0c185eddabe6953
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084972"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50099333"
 ---
 <!---Previous ms.author:vivg --->
 
@@ -29,7 +29,7 @@ Oracle SQL Graph 連接器可讓您的組織探索內部部署 Oracle 資料庫�
 > [!NOTE]
 > 請閱讀 [**您的圖形連接器文章設定**](configure-connector.md) ，以瞭解一般圖表連接器設定程式。
 
-本文適用于任何設定、執行及監視 ServiceNow 圖形連接器的人員。 它會補充一般設定程式，並顯示只適用于 ServiceNow 圖形連接器的指令。 本文也包含 [疑難排解](#troubleshooting) 及 [限制](#limitations)的相關資訊。
+本文適用于任何設定、執行及監視 Oracle SQL Graph 連接器的人員。 它會補充一般設定程式，並顯示只適用于 Oracle SQL Graph 連接器的指示。 本文也包含 [疑難排解](#troubleshooting) 及 [限制](#limitations)的相關資訊。
 
 ## <a name="before-you-get-started"></a>開始之前
 

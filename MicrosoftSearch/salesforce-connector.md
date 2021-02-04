@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的 Salesforce 圖形連接器
-ms.openlocfilehash: 0b80bf7d3296236887d1cc1bf8e75da976b6a1f1
-ms.sourcegitcommit: d39113376db26333872d3a2c7baddc3a3a7aea61
+ms.openlocfilehash: 6771bc0b234bc2570a8b1fa7174b9b9244cf3958
+ms.sourcegitcommit: d53b91f8f52a4a96281b66831c2449bbffe2177c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 02/03/2021
-ms.locfileid: "50085003"
+ms.locfileid: "50097446"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -28,7 +28,7 @@ Salesforce 圖形連接器可讓您的組織為您的 Salesforce 實例中的連
 > [!NOTE]
 > 請閱讀 [**您的圖形連接器文章設定**](configure-connector.md) ，以瞭解一般圖表連接器設定程式。
 
-本文適用于任何設定、執行及監視 ServiceNow 圖形連接器的人員。 它會補充一般設定程式，並顯示只適用于 Salesforce 圖形連接器的指示。 本文也包含 [限制](#limitations)的相關資訊。
+本文適用于任何設定、執行及監視 Salesforce 圖形連接器的人員。 它會補充一般設定程式，並顯示只適用于 Salesforce 圖形連接器的指示。 本文也包含 [限制](#limitations)的相關資訊。
 
 >[!IMPORTANT]
 >Salesforce 圖形連接器目前支援暑假 ' 19 或更新版本。

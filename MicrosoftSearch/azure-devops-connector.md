@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的 Azure DevOps 圖形連接器
-ms.openlocfilehash: 3d922a5384de8bf0ef3c6dfd80bd67ad9170eb66
-ms.sourcegitcommit: d39113376db26333872d3a2c7baddc3a3a7aea61
+ms.openlocfilehash: 8fe783c847c672223e051f4433af3e41678fe367
+ms.sourcegitcommit: d53b91f8f52a4a96281b66831c2449bbffe2177c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084936"
+ms.locfileid: "50097401"
 ---
 <!---Previous ms.author: shgrover --->
 
@@ -28,7 +28,7 @@ Azure DevOps Graph 連接器可讓您的組織為其 Azure DevOps 服務實例�
 > [!NOTE]
 > 請閱讀 [**您的圖形連接器文章設定**](configure-connector.md) ，以瞭解一般圖表連接器設定程式。
 
-本文適用于任何設定、執行及監視 ServiceNow 圖形連接器的人員。 它會補充一般設定程式，並顯示只適用于 ServiceNow 圖形連接器的指令。
+本文適用于設定、執行及監視 Azure DevOps Graph 連接器的任何人。 它會補充一般設定程式，並顯示只適用于 Azure DevOps Graph 連接器的指示。
 
 >[!IMPORTANT]
 >Azure DevOps 連接器只支援 Azure DevOps 雲端服務。 Azure DevOps Server 2019，tfs 2018，tfs 2017，tfs 2015，及 TFS 2013 都不受此連接器支援。

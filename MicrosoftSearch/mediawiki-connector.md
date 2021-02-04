@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的 MediaWiki 圖形連接器
-ms.openlocfilehash: 9d9d7a1ef9aeaba079f8cccef1ec4a4836768e8d
-ms.sourcegitcommit: d39113376db26333872d3a2c7baddc3a3a7aea61
+ms.openlocfilehash: e2b2b7c506d92623dd0f68801312c1820b5b9d4e
+ms.sourcegitcommit: d53b91f8f52a4a96281b66831c2449bbffe2177c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084981"
+ms.locfileid: "50097392"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -28,7 +28,7 @@ MediaWiki Graph 連接器可讓您的組織從使用 MediaWiki 軟體所建立�
 > [!NOTE]
 > 請閱讀 [**您的圖形連接器文章設定**](configure-connector.md) ，以瞭解一般圖表連接器設定程式。
 
-本文適用于任何設定、執行及監視 ServiceNow 圖形連接器的人員。 它會補充一般設定程式，並顯示只適用于 MediaWiki Graph 連接器的指示。 本文也包含 [限制](#limitations)的相關資訊。
+本文適用于任何設定、執行及監控 MediaWiki Graph 連接器的人員。 它會補充一般設定程式，並顯示只適用于 MediaWiki Graph 連接器的指示。 本文也包含 [限制](#limitations)的相關資訊。
 
 <!---## Before you get started-->
 
