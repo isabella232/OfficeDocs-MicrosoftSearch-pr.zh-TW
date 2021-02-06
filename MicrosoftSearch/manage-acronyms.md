@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 在 Microsoft 搜尋中建立及更新縮寫的答案
-ms.openlocfilehash: ff79e3d741e10d401873c29d86739e61c9f53329
-ms.sourcegitcommit: e6ceb07cae208648dadd5452a077414ab5a4513f
+ms.openlocfilehash: 45d3cc7b33f27d2f4e77d8099fbfa91e01aabcbb
+ms.sourcegitcommit: ef94ffd6111acb929c8343f0f4f82ea109b68fb6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "49728004"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50122154"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>管理 Microsoft 搜尋中的縮寫詞答案
 
@@ -64,9 +64,9 @@ Microsoft 搜尋會查詢兩個數據源，以提供使用者搜尋的縮寫答�
 
 您可以在 CSV 檔案中個別加入縮寫或大容量匯入。 使用下表所示的欄位上載 CSV 檔案：
 
-| 縮寫 (強制)  | 擴充 (強制)  | 描述  | 來源 | 狀態 (強制)  |
-| --------- | --------- | ---------- | --------- |--------- |
-| *Xxx* | *拼寫縮寫* |  | *URL* | *已發佈或草稿* |
+| 縮寫 (強制)  | 擴充 (強制)  | URL | 描述  | 狀態 (強制)  | 上次修改日期 | 上次修改者 | 識別碼 |
+| --------- | --------- | --------- | ---------- | --------- |--------- |--------- |--------- |
+| *Xxx* | *拼寫縮寫* | *Source* |  | *已發佈或草稿* |  |  |  |
 
 ### <a name="csv-fields"></a>CSV 欄位
 
@@ -124,5 +124,5 @@ Microsoft 搜尋可確保只有對檔具有存取權和許可權的使用者才�
 
 **問：如果我的組織不想要顯示系統策劃首字母縮寫，該怎麼辦？我是否可以在搜尋結果中停止顯示此類型的縮寫？**
 
-**A**：若要在搜尋結果中關閉顯示系統策劃首字母縮寫，請遵循 [商務產品的連絡人支援服務](https://docs.microsoft.com/office365/admin/contact-support-for-business-products?redirectSourcePath=%252f%252farticle%252fContact-Office-365-for-business-support-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online#BKMK_call_support)中的指示，建立客戶支援票證。
+**A**：若要在搜尋結果中關閉顯示系統策劃首字母縮寫，請遵循 [商務產品的連絡人支援服務](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)中的指示，建立客戶支援票證。
 在您建立支援票證後，系統策劃縮寫的最多需要48小時，以避免出現在搜尋結果中。
