@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: 部署代理程式
-ms.openlocfilehash: 31220196849fe90ab2611e9c2b83a1cec0a02b34
-ms.sourcegitcommit: a04f1df14a3221776ccd141f6060328612d80e06
+ms.openlocfilehash: 7aef2ea57c92929d4d4f45e1a738c84e6a3f4bba
+ms.sourcegitcommit: ab4f81ded967168689e6e81c90e115b94719335c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49876496"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50173060"
 ---
 # <a name="graph-connector-agent"></a>圖形連接器代理程式
 
@@ -35,6 +35,15 @@ ms.locfileid: "49876496"
 * 8核心，3 GHz
 * 16 GB 的 RAM，2 GB 的磁碟空間
 * 透過443對資料來源和網際網路的網路存取
+
+安裝代理程式之後，如果您組織的 proxy 伺服器或防火牆封鎖與未知網域的通訊，請將下列專案新增至 [允許] 清單。
+
+1. *.servicebus.windows.net
+2. events.data.microsoft.com
+3. https://login.microsoftonline.com
+4. https://gcs.office.com
+5. https://graph.microsoft.com/
+
 
 ## <a name="create-and-configure-an-app-for-the-agent"></a>建立及設定代理程式的應用程式  
 
