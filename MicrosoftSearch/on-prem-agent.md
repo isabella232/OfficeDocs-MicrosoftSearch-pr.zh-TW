@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: 部署代理程式
-ms.openlocfilehash: 7aef2ea57c92929d4d4f45e1a738c84e6a3f4bba
-ms.sourcegitcommit: ab4f81ded967168689e6e81c90e115b94719335c
+ms.openlocfilehash: bd5212d42fe21583aa6a4e0dc8060d5e191a7292
+ms.sourcegitcommit: 35b4246cb3e38c6fe21540686e28fe54154b33f3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50173060"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50259427"
 ---
 # <a name="graph-connector-agent"></a>圖形連接器代理程式
 
@@ -40,9 +40,9 @@ ms.locfileid: "50173060"
 
 1. *.servicebus.windows.net
 2. events.data.microsoft.com
-3. https://login.microsoftonline.com
-4. https://gcs.office.com
-5. https://graph.microsoft.com/
+3. https://<span>login.microsoftonline.</span>com
+4. HTTPs://<span>gc。</span>com
+5. HTTPs://<span>graph。</span>com
 
 
 ## <a name="create-and-configure-an-app-for-the-agent"></a>建立及設定代理程式的應用程式  
@@ -121,3 +121,6 @@ Export-PfxCertificate -Cert $certificatePath -FilePath ($filePath + '.pfx') -Pas
 1. 在 cert 上按一下滑鼠右鍵，並選取「所有工作」-> ' 管理私密金鑰 ... ' 選項
 1. 在 [許可權] 對話方塊中，選取 [新增] 選項。 在 [使用者選擇] 對話方塊中寫入： ' NT Service\GcaHostService '，然後按一下 [確定]。 請勿按一下 [檢查名稱] 按鈕。
 1. 在 [許可權] 對話方塊中按一下 [確定]。 代理程式機器現在已設定為讓代理程式使用憑證來產生權杖。
+
+## <a name="troubleshooting"></a>疑難排解
+1. 如果連線失敗，出現錯誤 ' 1011：圖形連接器代理程式無法連線或離線」。 ' 請登入安裝代理程式的機器，如果尚未執行代理程式，請將其啟動。 如果連線持續失敗，請確認在註冊期間提供給代理程式的憑證或用戶端密碼未到期且具有必要許可權。
