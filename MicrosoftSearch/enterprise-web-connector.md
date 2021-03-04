@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的企業網站圖表連接器
-ms.openlocfilehash: 526b36a798f50bed457832d576ffebd15820184d
-ms.sourcegitcommit: d53b91f8f52a4a96281b66831c2449bbffe2177c
+ms.openlocfilehash: 7d71e6e3d775c97d8916e20ab032c312c269c5f1
+ms.sourcegitcommit: 6a7522d9aeaedeedaac096c485d3f343ce98d3d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097428"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50421097"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -49,6 +49,9 @@ ms.locfileid: "50097428"
 ## <a name="step-3-configure-the-connection-settings"></a>步驟3：設定連接設定
 
 若要連線至您的資料來源，您必須填寫網站的根 URL、選擇編目來源，以及您想要使用的驗證類型： [無]、[基本驗證]，或 OAuth 2.0 搭配 [Azure Active Directory (AZURE AD) ](https://docs.microsoft.com/azure/active-directory/)。 在您完成此資訊之後，請選取 [測試連線] 以驗證您的設定。
+
+> [!NOTE]
+> 如果您要編目的網站已定義網站地圖，連接器將只會編目網站地圖中所列的 URLs。 若未定義網站地圖，連接器將會對該網站的根 URL 所找到的所有連結進行深入編目。
 
 ### <a name="url"></a>URL
 

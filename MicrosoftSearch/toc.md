@@ -13,7 +13,6 @@
 ## [問與答](manage-qas.md)
 # 連接器
 ## [概觀](connectors-overview.md)
-## [預覽發行](connectors-preview.md)
 ## [連接器庫](connectors-gallery.md)
 ## 設定 Microsoft 連接器
 ### [設定概觀](configure-connector.md)
@@ -25,6 +24,7 @@
 #### [Azure DevOps (預覽)](azure-devops-connector.md)
 #### [Azure SQL 和 Microsoft SQL Server](MSSQL-connector.md)
 #### [企業網站](enterprise-web-connector.md)
+#### [檔案共用](fileshare-connector.md)
 #### [MediaWiki](mediawiki-connector.md)
 #### [Oracle SQL (預覽)](OracleSQL-connector.md)
 #### [Salesforce (預覽)](salesforce-connector.md)

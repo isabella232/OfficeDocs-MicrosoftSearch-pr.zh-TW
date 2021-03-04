@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: 設定 Microsoft 搜尋的檔案共用圖形連接器
-ms.openlocfilehash: e8a68a1c6b9c2c8a8592fb915fe9bf846a758e77
-ms.sourcegitcommit: d53b91f8f52a4a96281b66831c2449bbffe2177c
+ms.openlocfilehash: ed1c148a018ba9492a8a93685327bf43153d65d3
+ms.sourcegitcommit: 6a7522d9aeaedeedaac096c485d3f343ce98d3d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097419"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50421072"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -65,7 +65,13 @@ ms.locfileid: "50097419"
 
 ## <a name="step-4-manage-search-permissions"></a>步驟4：管理搜尋許可權
 
-您可以根據共用存取控制清單或新的技術檔案系統，限制搜尋任何檔案的許可權 (NTFS) 存取控制清單。 如果您想要使用共用存取控制清單，請在 [ **高級設定** ] 頁面上選取適當的選項。 如果您想要使用 NTFS 存取控制清單，請在 [ **管理搜尋許可權** ] 頁面上選取適當的選項。
+您可以在 [ **管理搜尋許可權** ] 頁面中選取所需的選項，以限制可搜尋以共用存取控制清單或新技術檔案系統為基礎的任何檔案的許可權 (NTFS) 存取控制清單。 這些存取控制清單中所提供的使用者帳戶和群組必須由 Active Directory (AD) 管理。 如果您使用其他任何系統進行使用者帳戶管理，可以選取「everyone」選項，讓使用者可以搜尋所有檔案，而不需要任何訪問限制。 不過，當使用者嘗試開啟檔案時，會套用來源的 access 控制項設定。
+
+請注意，根據預設，windows 會在網路上共用資料夾時，提供「所有人」在「共用」 ACLs 中的「讀取」許可權。 根據分機，如果您在 [ **管理搜尋許可權**] 中選擇 [共用] ACLs，使用者就能夠搜尋所有檔案。 如果您想要限制存取，請移除檔案共用中「Everyone」的「讀取」存取權，並只對所需的使用者和群組提供存取權。 然後，連接器會讀取這些訪問限制，並將它們套用至搜尋。
+
+只有在您所提供的共用路徑遵循 UNC 路徑格式時，才可以選擇 [共用] ACLs。 您可以移至 [共用] 選項底下的「高級共用」，以 UNC 格式建立路徑。
+
+![Advanced_sharing](media/file-connector/file-advanced-sharing.png)
 
 ## <a name="step-5-assign-property-labels"></a>步驟5：指派屬性標籤
 
