@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理 microsoft Search 的 Microsoft Graph 連接器。
-ms.openlocfilehash: 5258f26a5c97be4ee9f90c7a8b2b9bb8fec447bc
-ms.sourcegitcommit: 39bf9f0db7f9bff2ab82c99a059b0ddcf1c98f5f
+ms.openlocfilehash: 488b6e9452e381f8fc64ad06c6f063aa170ca7f5
+ms.sourcegitcommit: 3ed4d21510020045d25e8c5b7e168013d96c1b7e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "49905928"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50464038"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
-# <a name="monitor-your-connections"></a>監視連接
+# <a name="monitor-your-connections"></a>監控您的連線
 
 若要存取和管理您的連接器，您必須指定為您租使用者的「搜尋管理員」。 請與您的租使用者管理員聯繫，為您提供搜尋系統管理員角色。
 
@@ -59,7 +59,7 @@ ms.locfileid: "49905928"
 ![索引配額使用量列](media/quota_utilization.png)
 
 >[!NOTE]
->在預覽期間內，每個嘗試繪製圖形連接器的組織，都已在所有連線中提供高達2000000專案的免費固定配額。 透過圖形連接器一般可用，在預覽中使用圖形連接器的組織，可用配額會在2月1日（2021）到期。
+>在預覽期間內，每個嘗試繪製圖形連接器的組織，都已在所有連線中提供高達2000000專案的免費固定配額。 透過圖形連接器一般可用，當已在預覽中使用圖形連接器的組織，可用配額會在2021年4月1日到期。
 >以「 [預覽](connectors-preview.md) 」標示的 Microsoft 建立圖形連接器，將不會包含在您組織的總電量索引配額內。 不過，它會計算您可以為您的組織設定的最大連線數目上限，以及您的組織可在連線上編制索引的最大7000000專案數目;每個連線都是限制700000個專案。 
 
 [配額使用狀況] 列會根據您的組織的配額使用量，指出不同的狀態：
