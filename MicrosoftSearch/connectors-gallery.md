@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 列出 Microsoft 搜尋的所有 Microsoft Graph 連接器
-ms.openlocfilehash: 6ab0518dffacb25190a0eafc20e50408fd51004b
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+ms.openlocfilehash: 936fa78ddfecf86f4e299963c70248969a37c5a7
+ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367622"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50508923"
 ---
 # <a name="microsoft-graph-connectors-gallery"></a>Microsoft Graph 連接器圖庫
 
@@ -159,6 +159,27 @@ ms.locfileid: "49367622"
     </li>
 </ul>
 <ul class="panelContent cardsZ">
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card" style="overflow: hidden; height: 235px;">
+                    <div class="cardText">
+                        <h3>Oracle SQL</h3>
+                        <p>由 <a href="https://www.microsoft.com">Microsoft</a></p>
+                        <p>透過此 Microsoft Graph 連接器，使用者可以探索內部部署 Oracle 資料庫中的資料並為其編制索引。</p>
+                        <div style="margin-top:20px;bottom:15px;position:absolute;display:block">
+                            <div style="font-weight:500;width:150px;display:inline">
+                                <a href="mediawiki-connector.md" target="_blank" data-linktype="relative-path" style="font-weight:500;width:150px;display:inline">
+                                    <font color="0065BA">詳細資料</font>
+                                </a>
+                             <img src="media/OracleSQL.png" alt="MediaWiki" width="35" height="35" align="right" style="display:inline; margin-left:210px" data-linktype="relative-path"  />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -374,7 +395,7 @@ ms.locfileid: "49367622"
                     <div class="cardText">
                         <h3>Atlassian Confluence</h3>
                         <p>依 <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>Confluence 連接器會從任何 Confluence 內容存放庫進行內容編目。 連接器會檢索共用空間、頁面、博客、附件和批註。 連接器會使用 Confluence REST API 來編目 Confluence 內容。</p>
+                        <p>Confluence 連接器會從任何 Confluence 內容存放庫進行內容編目。 連接器會檢索共用空間、頁面、博客、附件及批註。 連接器會使用 Confluence REST API 來編目 Confluence 內容。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Atlassian+Confluence+Connector"><font color="0065BA">詳細資料</font></a>
                         </p>
@@ -390,7 +411,7 @@ ms.locfileid: "49367622"
                     <div class="cardText">
                        <h3>Atlassian Confluence</h3>
                         <p>依 <a href="https://www.raytion.com">Raytion</a></p>
-                        <p>Atlassian Confluence 的連接器。 在近乎即時的情況下，為內部部署 Confluence 實例中的標籤編制索引頁面、博客文章、附件、批註、共用空間、設定檔和 hub 網站。 連接器完全支援 Confluence 的內建使用者和群組管理，以及以 Active Directory 及其他目錄服務為基礎的 Confluence 安裝。 第六代 Raytion 搜尋連接器。</p>
+                        <p>Atlassian Confluence 的連接器。 在近乎即時的情況下，為內部部署 Confluence 實例中的標記編制索引頁面、博客文章、附件、批註、共用空間、設定檔和 hub 網站。 連接器完全支援 Confluence 的內建使用者和群組管理，以及以 Active Directory 及其他目錄服務為基礎的 Confluence 安裝。 第六代 Raytion 搜尋連接器。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.raytion.com/connectors/raytion-confluence-connector"><font color="0065BA">詳細資料</font></a>
                         </p>
@@ -406,7 +427,7 @@ ms.locfileid: "49367622"
                     <div class="cardText">
                        <h3>Atlassian Confluence 雲端</h3>
                         <p>依 <a href="https://www.raytion.com">Raytion</a></p>
-                        <p>Atlassian Confluence 雲端的連接器。 在近乎即時的情況下，為內部部署 Confluence 實例中的標籤編制索引頁面、博客文章、附件、批註、共用空間、設定檔和 hub 網站。 連接器完全支援 Confluence 雲端的內建使用者和群組管理。 第六代 Raytion 搜尋連接器。</p>
+                        <p>Atlassian Confluence 雲端的連接器。 在近乎即時的情況下，為內部部署 Confluence 實例中的標記編制索引頁面、博客文章、附件、批註、共用空間、設定檔和 hub 網站。 連接器完全支援 Confluence 雲端的內建使用者和群組管理。 第六代 Raytion 搜尋連接器。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.raytion.com/connectors/raytion-confluence-cloud-connector"><font color="0065BA">詳細資料</font></a>
                         </p>
@@ -457,7 +478,7 @@ ms.locfileid: "49367622"
                     <div class="cardText">
                         <h3>Azure Blob 儲存體</h3>
                         <p>依 <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>Azure Blob 儲存連接器會從 Azure Blob 容器編目內容。 每個 blob 都會隨其中繼資料一起送出 (大小、位置、上一次存取，等等。 ) 。 自動探索更新。</p>
+                        <p>Azure Blob 儲存連接器會從 Azure Blob 容器編目內容。 每個 blob 都會隨其中繼資料一起送出 (大小、位置、上一次存取等等。 ) 。 自動探索更新。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Azure+Blob+Storage+Connector"><font color="0065BA">詳細資料</font></a>
                         </p>
@@ -476,7 +497,7 @@ ms.locfileid: "49367622"
                     <div class="cardText">
                         <h3>Azure Data Lake</h3>
                         <p>依 <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>Azure Data Lake connector 會從 root 或指定的路徑編目 ADLS 雲端的內容。 每個檔案都會以其中繼資料來送出 (大小、位置、上次存取時間等等 ) 。 自動探索更新。</p>
+                        <p>Azure Data Lake connector 會從 root 或指定的路徑編目 ADLS 雲端的內容。 每個檔案都會以其中繼資料來送出 (大小、位置、最後存取等等。 ) 。 自動探索更新。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Azure+Data+Lake+Connector"><font color="0065BA">詳細資料</font></a>
                         </p>
@@ -594,7 +615,7 @@ ms.locfileid: "49367622"
                     <div class="cardText">
                         <h3>CuadraSTAR</h3>
                         <p>透過 <a href="https://www.bainsight.com">BA 真知灼見</a></p>
-                        <p>CuadraSTAR 連接器會編目 CuadraSTAR 中的內容，並建立單一索引，讓您可以使用 Microsoft 搜尋來尋找 CuadraSTAR 中的相關資訊，以及70其他支援的存放庫，而不需要執行個別的搜尋。</p>
+                        <p>CuadraSTAR 連接器會編目 CuadraSTAR 中的內容，並建立單一索引，讓您可以使用 Microsoft 搜尋來尋找 CuadraSTAR 中的相關資訊，以及70其他支援的存放庫，不需要執行個別的搜尋。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/cuadrastar-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細資料</font></a>
                         </p>
@@ -629,7 +650,7 @@ ms.locfileid: "49367622"
                     <div class="cardText">
                         <h3>Documentum/Documentum DQL</h3>
                         <p>依 <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>Documentum 連接器會編目來自任何 Documentum 內容存放庫的內容。 DQL 是一種查詢語言，可讓您執行非常複雜的查詢，包括檔和內容管理的特殊搜尋功能。 Aspire Documentum DQL 連接器會從 Documentum 編目內容。</p>
+                        <p>Documentum 連接器會編目來自任何 Documentum 內容存放庫的內容。 DQL 是一種查詢語言，可讓您執行複雜的查詢，包括檔和內容管理的特殊搜尋功能。 Aspire Documentum DQL 連接器會從 Documentum 編目內容。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Documentum+Connector"><font color="0065BA">詳細資料</font></a>
                         </p>
@@ -731,7 +752,7 @@ ms.locfileid: "49367622"
                     <div class="cardText">
                         <h3>Facebook 工作區</h3>
                         <p>透過 <a href="https://www.bainsight.com">BA 真知灼見</a></p>
-                        <p>透過 Facebook 使用辦公的組織現在可以透過使用 [BA 真知灼見] 的「透過 Facebook」來真知灼見辦公的方式，將此資料延伸到現有的搜尋索引。</p>
+                        <p>透過 Facebook 使用 Workplace 的組織現在可以透過使用 [BA 真知灼見] 的「透過 Facebook」真知灼見網站，將此資料延伸到現有的搜尋索引。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/connector-for-workplace-by-facebook/"><font color="0065BA">詳細資料</font></a>
                         </p>
@@ -747,7 +768,7 @@ ms.locfileid: "49367622"
                     <div class="cardText">
                        <h3>Facebook 工作區</h3>
                         <p>依 <a href="https://www.raytion.com">Raytion</a></p>
-                        <p>Facebook 工作區的連接器。 以接近即時的，從 Facebook 工作區編制專案群組、交談和共用檔的索引。 連接器會完全支援 Facebook Workplace 內建的使用者和群組管理。 第六代 Raytion 搜尋連接器。</p>
+                        <p>Facebook 工作區的連接器。 從 Facebook 工作區即時編制專案群組、交談及共用檔的索引（近乎即時）。 連接器會完全支援 Facebook Workplace 內建的使用者和群組管理。 第六代 Raytion 搜尋連接器。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.raytion.com/connectors/raytion-facebook-workplace-connector"><font color="0065BA">詳細資料</font></a>
                         </p>
@@ -951,7 +972,7 @@ ms.locfileid: "49367622"
                     <div class="cardText">
                         <h3>IBM 連線</h3>
                         <p>透過 <a href="https://www.bainsight.com">BA 真知灼見</a></p>
-                        <p>IBM connection Connector 專為 IBM 連線而開發，建立連線應用程式的安全連線，並將內容（包括中繼資料和附件）從 [連接] 架構對應至搜尋引擎架構。 然後，它會在名為編目的程式中，解壓縮內容，並將其送入搜尋引擎。</p>
+                        <p>IBM connection Connector 為 IBM 連線而開發，建立連線應用程式的安全連線，並將內容（包括中繼資料和附件）從 [連接] 架構對應至搜尋引擎架構。 然後，它會在名為編目的程式中，解壓縮內容，並將其送入搜尋引擎。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/ibm-connections-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細資料</font></a>
                         </p>
@@ -1037,7 +1058,7 @@ ms.locfileid: "49367622"
                     <div class="cardText">
                         <h3>IBM FileNet P8</h3>
                         <p>透過 <a href="https://www.bainsight.com">BA 真知灼見</a></p>
-                        <p>IBM FileNet 內容管理員連接器允許 SharePoint 及其他入口網站，安全地搜尋 FileNet 存放庫中儲存的內容。 存取內容的方式是由 FileNet 中建立的安全性所決定，以確保您的內容在透過任何其他入口網站存取時以安全方式存取，因為它直接位於 FileNet 中。</p>
+                        <p>IBM FileNet 內容管理員連接器可讓 SharePoint 和其他入口網站安全地搜尋 FileNet 存放庫中儲存的內容。 存取內容的方式是由 FileNet 中建立的安全性所決定，以確保您的內容在透過任何其他入口網站存取時以安全方式存取，因為它直接位於 FileNet 中。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/ibm-filenet-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細資料</font></a>
                         </p>
@@ -1139,7 +1160,7 @@ ms.locfileid: "49367622"
                     <div class="cardText">
                         <h3>Jive</h3>
                         <p>依 <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>JIVE 連接器會將任何 JIVE 群組的內容編目至已啟用的 REST API v3。 連接器將會取得儲存在空間、群組、專案和博客中的檔，以及其中所包含的任何子資料夾。</p>
+                        <p>JIVE 連接器會將任何 JIVE 群組的內容編目至已啟用的 REST API v3。 連接器將會取得儲存在空間、群組、專案和博客及其所包含之任何子資料夾中的檔。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Jive+Connector"><font color="0065BA">詳細資料</font></a>
                         </p>
@@ -1155,7 +1176,7 @@ ms.locfileid: "49367622"
                     <div class="cardText">
                         <h3>Jive</h3>
                         <p>透過 <a href="https://www.bainsight.com">BA 真知灼見</a></p>
-                        <p>Jive 連接器專為 Jive 開發，可建立與 Jive 應用程式的安全連線，並將包含中繼資料和附件的內容，對應至搜尋引擎架構。 然後，它會在名為編目的程式中，解壓縮內容，並將其送入搜尋引擎。</p>
+                        <p>已開發用於 Jive 的 Jive 連接器，並建立與 Jive 應用程式的安全連線，並將包含中繼資料和附件的內容，對應至搜尋引擎架構。 然後，它會在名為編目的程式中，解壓縮內容，並將其送入搜尋引擎。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/jive-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">詳細資料</font></a>
                         </p>
@@ -1343,7 +1364,7 @@ ms.locfileid: "49367622"
                     <div class="cardText">
                        <h3>MediaWiki</h3>
                         <p>依 <a href="https://www.raytion.com">Raytion</a></p>
-                        <p>MediaWiki 的連接器。 以接近即時的方式從 MediaWiki 實例編制頁面、討論頁面及附件。 連接器完全支援 MediaWiki 的內建許可權模型，以及以 Active Directory 及其他目錄服務為基礎的 MediaWiki 安裝。 第六代 Raytion 搜尋連接器。</p>
+                        <p>MediaWiki 的連接器。 以接近即時的方式從 MediaWiki 實例編制頁面、討論頁面及附件。 連接器會完全支援 MediaWiki 的內建許可權模式，並會根據 Active Directory 及其他目錄服務安裝 MediaWiki 安裝。 第六代 Raytion 搜尋連接器。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.raytion.com/connectors/raytion-mediawiki-connector"><font color="0065BA">詳細資料</font></a>
                         </p>
@@ -1359,7 +1380,7 @@ ms.locfileid: "49367622"
                     <div class="cardText">
                         <h3>微焦點內容管理員 (HPE 記錄管理員/HP TRIM) </h3>
                         <p>透過 <a href="https://www.bainsight.com">BA 真知灼見</a></p>
-                        <p>HP TRIM Connector 專為 HP 記錄管理員而開發，可建立與剪裁應用程式的安全連線，以及將內容（包括中繼資料和附件）從 TRIM 架構對應至搜尋引擎架構。 然後，它會在名為編目的程式中，解壓縮內容，並將其送入搜尋引擎。</p>
+                        <p>HP TRIM Connector 是針對 HP 記錄管理員而開發，建立與剪裁應用程式的安全連線，並且將內容（包括中繼資料和附件）從 TRIM 架構對應至搜尋引擎架構。 然後，它會在名為編目的程式中，解壓縮內容，並將其送入搜尋引擎。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/hp-trim-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細資料</font></a>
                         </p>
@@ -1513,7 +1534,7 @@ ms.locfileid: "49367622"
                     <div class="cardText">
                         <h3>目標</h3>
                         <p>透過 <a href="https://www.bainsight.com">BA 真知灼見</a></p>
-                        <p>目標連接器專為目標而開發，建立目標的安全連線，並將包含目標架構的中繼資料與內容對應至搜尋引擎架構。 然後，它會在名為編目的程式中，解壓縮內容，並將其送入搜尋引擎。</p>
+                        <p>目標連接器是針對目的而開發，建立目標的安全連線，並將包含目標架構中的中繼資料與內容對應至搜尋引擎架構。 然後，它會在名為編目的程式中，解壓縮內容，並將其送入搜尋引擎。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/objective-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細資料</font></a>
                         </p>
@@ -1529,7 +1550,7 @@ ms.locfileid: "49367622"
                     <div class="cardText">
                         <h3>OneDrive</h3>
                         <p>依 <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>OneDrive 連接器會從 Microsoft OneDrive 進行內容編目，遍歷資料夾以尋找檔案。 它會針對每個專案產生簽章，以允許只對變更的專案進行增量更新。 每個檔案都會以其中繼資料來送出 (大小、位置、上一次存取，等等。 ) 和存取控制清單。</p>
+                        <p>OneDrive 連接器會從 Microsoft OneDrive 進行內容編目，遍歷資料夾以尋找檔案。 它會針對每個專案產生簽章，以允許只對變更的專案進行增量更新。 每個檔案都會以其中繼資料來送出 (大小、位置、上次存取等等。 ) 和存取控制清單。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/OneDrive+Connector"><font color="0065BA">詳細資料</font></a>
                         </p>
@@ -1599,7 +1620,7 @@ ms.locfileid: "49367622"
                     <div class="cardText">
                         <h3>OpenText eDOCS DM</h3>
                         <p>透過 <a href="https://www.bainsight.com">BA 真知灼見</a></p>
-                        <p>OpenText eDOCS DM Connector 的使用者可以直接從 Microsoft 搜尋中搜尋 eDOCS 存放庫中的內容，而不必執行多個搜尋來尋找所需的內容。 EDOCS 中建立的安全性是由連接器所維護，以確定內容只會被授與存取權的使用者看到。</p>
+                        <p>OpenText eDOCS DM Connector 的使用者可以直接在 Microsoft 搜尋中搜尋 eDOCS 存放庫中的內容，而不必執行多個搜尋來尋找所需的內容。 EDOCS 中建立的安全性是由連接器所維護，以確定內容只會被授與存取權的使用者看到。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/edocs-dm-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細資料</font></a>
                         </p>
@@ -1666,7 +1687,7 @@ ms.locfileid: "49367622"
                     <div class="cardText">
                         <h3>Oracle WebCenter</h3>
                         <p>透過 <a href="https://www.bainsight.com">BA 真知灼見</a></p>
-                        <p>WebCenter 連接器會將 WebCenter 與 Microsoft Search 整合，讓整個組織中的使用者更容易尋找儲存在 WebCenter 中的重要資訊，而不需要直接登入並執行個別的搜尋。</p>
+                        <p>WebCenter 連接器會將 WebCenter 與 Microsoft Search 整合，讓整個組織中的使用者更容易尋找儲存在 WebCenter 中的重要資訊，而不需要直接登入和進行個別的搜尋。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/oracle-webcenter-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細資料</font></a>
                         </p>
@@ -1682,7 +1703,7 @@ ms.locfileid: "49367622"
                     <div class="cardText">
                         <h3>Oracle WebCenter Content (UCM/Stellent</h3>
                         <p>透過 <a href="https://www.bainsight.com">BA 真知灼見</a></p>
-                        <p>WebCenter 內容連接器完全支援可供 Microsoft 搜尋使用的所有內容的基礎安全性，並透過排程編目將此內容保持在最新狀態，以確保使用者在執行搜尋時取得最新的更新。</p>
+                        <p>WebCenter 內容連接器完全支援所有可供 Microsoft 搜尋使用之內容的基礎安全性，並透過排程編目保持最新的內容，以確保使用者在進行搜尋時取得最新的更新。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/oracle-webcenter-content-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細資料</font></a>
                         </p>
@@ -1988,7 +2009,7 @@ ms.locfileid: "49367622"
                     <div class="cardText">
                         <h3>SharePoint Online</h3>
                         <p>依 <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>SharePoint 線上連接器會從任何 SharePoint Online 網站集合 URL 編目內容。 連接器將會檢索網站、清單、資料夾、清單專案和附件，以及其他頁面 (.aspx format) 中。 此連接器支援在 Microsoft O365 產品中執行的 SharePoint。 SharePoint 2010/2007 連接器和 SharePoint 2013 連接器支援編目 SharePoint 的內部部署產品。</p>
+                        <p>SharePoint 線上連接器會從任何 SharePoint Online 網站集合 URL 編目內容。 連接器會以 .aspx 格式) 取得網站、清單、資料夾、清單專案及附件及其他頁面 (。 此連接器支援在 Microsoft O365 產品中執行的 SharePoint。 SharePoint 2010/2007 連接器和 SharePoint 2013 連接器支援編目 SharePoint 的內部部署產品。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/SharePoint+Online+Connector"><font color="0065BA">詳細資料</font></a>
                         </p>
@@ -2039,7 +2060,7 @@ ms.locfileid: "49367622"
                     <div class="cardText">
                        <h3>Slack</h3>
                         <p>依 <a href="https://www.raytion.com">Raytion</a></p>
-                        <p>可寬延的連接器，使用 Microsoft 搜尋有效地同步處理寬延時間內容。 它可以真實即時地從所有公用通道編制郵件、執行緒及共用檔的索引。 連接器可確保所有檔都附帶一組完整的中繼資料，可讓您開發最佳的搜尋體驗。 即使在鮮豔的環境中，寬限時間連接器仍會追蹤所有的變更，並保證更新的搜尋索引。</p>
+                        <p>可寬延的連接器，使用 Microsoft 搜尋有效地同步處理寬延時間內容。 它可以真實即時地從所有公用通道編制郵件、執行緒及共用檔的索引。 連接器可確保檔附帶一組完整的中繼資料，可讓您開發最佳的搜尋體驗。 即便是在鮮豔的環境中，寬限時間連接器仍會追蹤變更，並保證更新的搜尋索引。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.raytion.com/connectors/raytion-slack-connector"><font color="0065BA">詳細資料</font></a>
                         </p>
@@ -2058,7 +2079,7 @@ ms.locfileid: "49367622"
                     <div class="cardText">
                         <h3>Smb</h3>
                         <p>依 <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>SMB 連接器會編目共用磁片磁碟機間的檔案和目錄。 它會針對每個專案產生簽章，以允許只對變更的專案進行增量更新。 每個檔案都會以其中繼資料來送出 (大小、位置、上一次存取，等等。 ) 和存取控制清單。</p>
+                        <p>SMB 連接器會編目共用磁片磁碟機間的檔案和目錄。 它會針對每個專案產生簽章，以允許只對變更的專案進行增量更新。 每個檔案都會以其中繼資料來送出 (大小、位置、上次存取等等。 ) 和存取控制清單。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/SMB+Connector"><font color="0065BA">詳細資料</font></a>
                         </p>
@@ -2277,8 +2298,8 @@ ms.locfileid: "49367622"
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
                        <h3>windream ECM-System</h3>
-                        <p>依 <a href="https://www.raytion.com">Raytion</a></p>
-                        <p>Windream ECM-系統的連接器。 從 windream ECM-System 中的檔案和資料夾近乎即時地編制索引。 第六代 Raytion 搜尋連接器。</p>
+                        <p>by <a href="https://www.raytion.com">`Raytion`</a></p>
+                        <p>Windream ECM-系統的連接器。 從 windream ECM-System 中的檔案和資料夾近乎即時地編制索引。 第六代 `Raytion` 搜尋連接器。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.raytion.com/connectors/raytion-windream-ecm-system-connector"><font color="0065BA">詳細資料</font></a>
                         </p>
@@ -2294,7 +2315,7 @@ ms.locfileid: "49367622"
                     <div class="cardText">
                         <h3>Xerox DocuShare</h3>
                         <p>透過 <a href="https://www.bainsight.com">BA 真知灼見</a></p>
-                        <p>Xerox DocuShare Connector 的使用者可以直接從 Microsoft 搜尋中搜尋 Docushare 存放庫中的內容，而不必執行多個搜尋來尋找所需的內容。</p>
+                        <p>Xerox DocuShare Connector 的使用者可以直接在 Microsoft 搜尋中搜尋 Docushare 存放庫中的內容，而不必執行多個搜尋來尋找所需的內容。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/docushare-connector-sharepoint-azure-elasticsearch"><font color="0065BA">詳細資料</font></a>
                         </p>

@@ -3,6 +3,7 @@ title: Microsoft 搜尋 ServiceNow 圖形連接器
 ms.author: mecampos
 author: mecampos
 manager: umas
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的 ServiceNow 圖形連接器
-ms.openlocfilehash: d1fdfb5f1aec5091fd526152de2bdc86932cfdb9
-ms.sourcegitcommit: d39113376db26333872d3a2c7baddc3a3a7aea61
+ms.openlocfilehash: eaf8014876b03c0b64c012cf7e83c4e4b84838b9
+ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084891"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50508677"
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -26,7 +27,7 @@ ms.locfileid: "50084891"
 「ServiceNow 圖形連接器」可讓您的組織根據組織內的使用者準則許可權，為使用者顯示可看到之知識型文章的索引。 從 ServiceNow 設定連接器和索引內容之後，使用者可以從任何 Microsoft 搜尋用戶端搜尋文章。
 
 > [!NOTE]
-> 請閱讀 [**您的圖形連接器文章設定**](configure-connector.md) ，以瞭解一般圖表連接器設定程式。
+> 請閱讀 [**您的圖形連接器**](configure-connector.md) 文章的設定，以瞭解一般圖表連接器設定指示。
 
 本文適用于任何設定、執行及監視 ServiceNow 圖形連接器的人員。 它會補充一般設定程式，並顯示只適用于 ServiceNow 圖形連接器的指示。 本文也包含 [疑難排解](#troubleshooting) 及 [限制](#limitations)的相關資訊。
   

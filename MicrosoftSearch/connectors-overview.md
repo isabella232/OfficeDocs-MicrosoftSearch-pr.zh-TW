@@ -3,6 +3,7 @@ title: Microsoft Graph 連接器概述
 ms.author: mecampos
 author: mecampos
 manager: umas
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 搜尋的 Microsoft Graph 連接器概述
-ms.openlocfilehash: 13127d092fe4e624ed448037d83f16f83ddc560a
-ms.sourcegitcommit: d39113376db26333872d3a2c7baddc3a3a7aea61
+ms.openlocfilehash: 1b3ea74cf571b1b5a048695633f6b9f698a21bf5
+ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084873"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50508911"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -35,6 +36,8 @@ ms.locfileid: "50084873"
 * [預覽功能為何？](#what-are-the-preview-features)
 * [如何自訂及設定搜尋結果？](#how-do-i-customize-and-configure-search-results)
 * [如何從自訂應用程式搜尋我的連接器資料？](#how-do-i-search-my-connector-data-from-a-custom-application)
+* [如何自訂搜尋結果？](#how-do-i-customize-search-results)
+* [連接器限制是什麼](#what-are-the-connector-limitations)
 
 <!---Modify to another note that is more accurate after rollout completion--->
 > [!IMPORTANT]
@@ -71,7 +74,7 @@ Microsoft 提供9個圖形連接器，而且我們的生態系統合作夥伴已
 * [企業網站](enterprise-web-connector.md)
 * [MediaWiki](mediawiki-connector.md)
 * [檔案共用](fileshare-connector.md)
-* [Oracle SQL (預覽) ](OracleSQL-connector.md)
+* [Oracle SQL (預覽)](OracleSQL-connector.md)
 * [Salesforce (預覽)](salesforce-connector.md)
 * [ServiceNow](servicenow-connector.md)
 
@@ -119,11 +122,11 @@ Microsoft 提供9個圖形連接器，而且我們的生態系統合作夥伴已
 
 在索引自訂資料之後，開發人員可以 [查詢此資料](https://docs.microsoft.com/graph/search-concept-custom-types)。 您可以在任何應用程式中查看資料。 如需詳細資訊，請參閱 microsoft [Graph 中的 Microsoft SEARCH API 綜述](https://docs.microsoft.com/graph/search-concept-overview)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="how-do-i-customize-search-results"></a>如何自訂搜尋結果？
 
-請務必自訂搜尋結果如本文中的建議， [如何自訂及設定搜尋結果？](#how-do-i-customize-and-configure-search-results)。 若要深入瞭解自訂搜尋結果，請參閱 [自訂搜尋結果頁面](https://docs.microsoft.com/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page)。
+下一步是自訂搜尋結果（如本文中所建議的） [如何自訂及設定搜尋結果？](#how-do-i-customize-and-configure-search-results)。 若要深入瞭解自訂搜尋結果，請參閱 [自訂搜尋結果頁面](https://docs.microsoft.com/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page)。
 
-## <a name="limitations"></a>限制
+## <a name="what-are-the-connector-limitations"></a>連接器限制為何？
 
 * 當您 **發佈** Microsoft 建立的連接器時，可能需要幾分鐘的時間來建立連線。 在此期間內，連接會顯示其狀態為 [擱置中]。
 
@@ -135,4 +138,4 @@ Microsoft 提供9個圖形連接器，而且我們的生態系統合作夥伴已
 
 * 連接限制。 每個租使用者最多可以建立10個連接。
 
-* 無法使用 [編輯連線支援]。 建立連線後，就無法編輯或變更它。 如果您需要變更任何詳細資料，您必須刪除並重新建立連線。
+* 無法使用 [編輯連線支援]。 建立連線後，您就無法編輯或變更它。 如果您需要變更任何詳細資料，您必須刪除並重新建立連線。

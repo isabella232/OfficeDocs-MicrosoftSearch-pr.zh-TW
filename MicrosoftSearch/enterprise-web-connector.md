@@ -3,6 +3,7 @@ title: Microsoft 搜尋的企業網站圖表連接器
 ms.author: mecampos
 author: mecampos
 manager: umas
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的企業網站圖表連接器
-ms.openlocfilehash: 7d71e6e3d775c97d8916e20ab032c312c269c5f1
-ms.sourcegitcommit: 6a7522d9aeaedeedaac096c485d3f343ce98d3d2
+ms.openlocfilehash: b0ed7cc4148dba6c7555fcf7c9c930184cdbc24c
+ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421097"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50508794"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -28,7 +29,7 @@ ms.locfileid: "50421097"
 企業網站圖表連接器可讓您的組織對 **來自內部網站** 的文章和內容編制索引。 在您設定網站的連接器及同步內容之後，使用者可以從任何 Microsoft 搜尋用戶端搜尋該內容。
 
 > [!NOTE]
-> 請閱讀 [**您的圖形連接器文章設定**](configure-connector.md) ，以瞭解一般圖表連接器設定程式。
+> 請閱讀 [**您的圖形連接器文章設定**](configure-connector.md) ，以瞭解一般圖表連接器設定指示。
 
 本文適用于任何設定、執行及監視企業網站連接器的人員。 它會補充一般設定程式，並顯示只適用于企業網站連接器的指示。 本文也包含 [疑難排解](#troubleshooting) 及 [限制](#limitations)的相關資訊。
 
@@ -50,12 +51,12 @@ ms.locfileid: "50421097"
 
 若要連線至您的資料來源，您必須填寫網站的根 URL、選擇編目來源，以及您想要使用的驗證類型： [無]、[基本驗證]，或 OAuth 2.0 搭配 [Azure Active Directory (AZURE AD) ](https://docs.microsoft.com/azure/active-directory/)。 在您完成此資訊之後，請選取 [測試連線] 以驗證您的設定。
 
-> [!NOTE]
-> 如果您要編目的網站已定義網站地圖，連接器將只會編目網站地圖中所列的 URLs。 若未定義網站地圖，連接器將會對該網站的根 URL 所找到的所有連結進行深入編目。
-
 ### <a name="url"></a>URL
 
 使用 [URL] 欄位可指定您要編目之網站的根目錄。 企業網站連接器會使用此 URL 做為開始點，並遵循此 URL 的所有連結進行編目。
+
+> [!NOTE]
+> 如果您要編目的網站已定義網站地圖，連接器將只會編目網站地圖中所列的 URLs。 若未定義網站地圖，連接器將會對該網站的根 URL 所找到的所有連結進行深入編目。
 
 ### <a name="crawl-mode-cloud-or-on-premises-preview"></a>編目模式：雲端或內部部署 (預覽) 
 

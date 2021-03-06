@@ -3,6 +3,7 @@ title: 管理 microsoft 搜尋的 Microsoft Graph 連接器
 ms.author: monaray
 author: monaray97
 manager: mnirkhe
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理 microsoft Search 的 Microsoft Graph 連接器。
-ms.openlocfilehash: 488b6e9452e381f8fc64ad06c6f063aa170ca7f5
-ms.sourcegitcommit: 3ed4d21510020045d25e8c5b7e168013d96c1b7e
+ms.openlocfilehash: aa2e3db8c8dc9155c06f81fc0169dd4bda8f8343
+ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/05/2021
-ms.locfileid: "50464038"
+ms.locfileid: "50508830"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
@@ -31,11 +32,11 @@ ms.locfileid: "50464038"
 
 針對每個連接器類型， [Microsoft 365 系統管理中心](https://admin.microsoft.com) 支援下表所示的作業：
 
-作業 | Microsoft 建立的連接器 | 夥伴或自訂建立的連接器
+作業 | Microsoft Graph 連接器 | 夥伴或圖形連接器
 --- | --- | ---
-新增連線 | ： heavy_check_mark： (請參閱 [設定您的 Microsoft 建連接器](configure-connector.md))  | ： x： (參照您的合作夥伴或自訂的連接器 admin UX) 
+新增連線 | ： heavy_check_mark： (請參閱 [安裝程式概述](configure-connector.md))  | ： x： (參照您的合作夥伴或自訂的連接器 admin UX) 
 刪除連線 | ： heavy_check_mark： | ： heavy_check_mark：
-編輯已發佈的連線 | ： heavy_check_mark： Name<br></br> ： heavy_check_mark： Description<br></br> ： heavy_check_mark：外部資料源的驗證認證<br></br> ： heavy_check_mark：內部部署資料來源的閘道認證<br></br> ： heavy_check_mark：重新整理排程<br></br> | ： heavy_check_mark： Name<br></br> ： heavy_check_mark： Description
+編輯已發佈的連線 | ： heavy_check_mark： Name 及 Description<br></br> ： heavy_check_mark：連線設定<br></br> ： heavy_check_mark：屬性標籤<br></br> ： heavy_check_mark：架構<br></br> ： heavy_check_mark：重新整理排程<br></br> | ： heavy_check_mark： Name<br></br> ： heavy_check_mark： Description
 編輯拔模連接 | ： heavy_check_mark： | 軸
 
 ## <a name="monitor-your-connection-status"></a>監視您的線上狀態

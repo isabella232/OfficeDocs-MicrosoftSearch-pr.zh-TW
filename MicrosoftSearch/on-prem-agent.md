@@ -3,6 +3,7 @@ title: On-Premises 代理程式
 ms.author: rusamai
 author: rsamai
 manager: jameslau
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,12 +14,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: 部署代理程式
-ms.openlocfilehash: bd5212d42fe21583aa6a4e0dc8060d5e191a7292
-ms.sourcegitcommit: 35b4246cb3e38c6fe21540686e28fe54154b33f3
+ms.openlocfilehash: 5134c0c4459f9d38825451f274e67469956756d2
+ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50259427"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50508803"
 ---
 # <a name="graph-connector-agent"></a>圖形連接器代理程式
 

@@ -3,6 +3,7 @@ title: Microsoft 搜尋的 Azure SQL 和 Microsoft SQL server Graph 連接器
 ms.author: mecampos
 author: mecampos
 manager: umas
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Azure SQL 及 Microsoft SQL Graph connector 以進行 Microsoft 搜尋。
-ms.openlocfilehash: 9f0a0a617541c6e27196a183d3283e0f05163dec
-ms.sourcegitcommit: d53b91f8f52a4a96281b66831c2449bbffe2177c
+ms.openlocfilehash: 499c0fad93f97e634086ff9025d947c4f70336fb
+ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097437"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50508902"
 ---
 <!---Previous ms.author: vivg --->
 
@@ -27,7 +28,7 @@ Microsoft SQL server 或 Azure SQL Graph 連接器可讓您的組織探索內部
 圖形連接器會將指定的內容索引放入 Microsoft 搜尋中。 若要讓索引保持在最新的來來源資料中，它支援定期完整和累加編目。 透過這些 SQL 連接器，您也可以限制特定使用者對搜尋結果的存取。
 
 > [!NOTE]
-> 請閱讀 [**您的圖形連接器文章設定**](configure-connector.md) ，以瞭解一般圖表連接器設定程式。
+> 請閱讀 [**您的圖形連接器文章設定**](configure-connector.md) ，以瞭解一般圖表連接器設定指示。
 
 本文適用于任何設定、執行及監視 Azure SQL server Graph connector 的使用者。 它會補充一般設定程式，並顯示只適用于 Azure SQL 及 Microsoft SQL server Graph 連接器的指示。 本文也包含 Microsoft SQL server 和 Azure SQL 連接器 [限制](#limitations) 的相關資訊。
 
@@ -200,11 +201,11 @@ instructions.-->
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
-## <a name="next-steps-customize-the-search-results-page"></a>後續步驟：自訂搜尋結果頁面
+<!---## Next steps: Customize the search results page
 
-建立您自己的行業和結果類型，讓使用者可以從新的連線中查看搜尋結果。 在此步驟中，您的連線中的資料不會顯示在搜尋結果頁面上。
+Create your own verticals and result types, so end users can view search results from new connections. Without this step, data from your connection won't show up on the search results page.
 
-若要深入瞭解如何建立您的行業和 MRTs，請參閱 [搜尋結果頁面自訂](customize-search-page.md)。
+To learn more about how to create your verticals and MRTs, see [Search results page customization](customize-search-page.md).-->
 
 <!---## Troubleshooting-->
 

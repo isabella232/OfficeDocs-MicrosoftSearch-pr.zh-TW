@@ -12,22 +12,22 @@ search.appverid:
 - MET150
 - MOE150
 description: 深入瞭解 Microsoft 搜尋的功能、其優點，以及哪些應用程式支援 Microsoft Search。
-ms.openlocfilehash: f06aff0ea0407983a40f60e03337d4ed281a53ad
-ms.sourcegitcommit: d6f8628be8108e6e9d6fb9efb7bd06bc2fcd561d
+ms.openlocfilehash: a7250bccd3f77eb3ad2f3c91bdfd176a2141fd98
+ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "49749384"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50508812"
 ---
 # <a name="overview-of-microsoft-search"></a>Microsoft 搜尋概觀
 
 Microsoft Search 可協助您找出完成所用專案所需的專案。 不論您正在搜尋人員、檔案、組織結構圖、網站或解答常見問題，您都可以在整個 workday 中使用 Microsoft 搜尋，以取得答案。
 
-Microsoft Search 可協助使用者找到正確的答案、人員和內容，以在他們已在使用的應用程式中完成其工作。
+Microsoft Search 可協助使用者找出正確的答案、人員和內容，以在使用者已使用的應用程式中完成其工作。
 
 - 使用者會收到他們從中搜尋的應用程式 **上下文** 中的相關結果。 例如，在 [Microsoft Outlook](https://www.microsoft.com/outlook)中搜尋時，他們會發現電子郵件，而不是 [SharePoint](http://sharepoint.com/) 網站。 在 SharePoint 中搜尋時，他們會尋找網站、頁面和檔案時。
-- 無論使用者使用哪個應用程式，Microsoft Search 都是 **個人** 的。 Microsoft 搜尋會使用 [Microsoft Graph](https://developer.microsoft.com/graph/) 的真知灼見來顯示與每個使用者相關的結果。 每個使用者可能會看到不同的結果，即使他們搜尋相同文字亦然。 他們只會看到他們有權存取的結果，Microsoft Search 不會變更權限。
-- 使用者不需要記住資訊所在的地方。 例如，使用者在 [Microsoft Word](https://products.office.com/word) 中工作，並且想要重複使用來自其 [OneDrive](https://onedrive.live.com/about/)同事共用之簡報中的資訊。 不需要切換到 OneDrive 並搜尋該簡報，而是可以直接從 Word 搜尋。
+- 無論使用者使用哪個應用程式，Microsoft Search 都是 **個人** 的。 Microsoft 搜尋會使用 [Microsoft Graph](https://developer.microsoft.com/graph/) 的真知灼見來顯示與每個使用者相關的結果。 每個使用者可能會看到不同的結果，即使他們搜尋相同文字亦然。 他們只會看到他們已經有存取權的結果，Microsoft 搜尋不會變更許可權。
+- 使用者不需要記住資訊的所在位置。 例如，使用者在 [Microsoft Word](https://products.office.com/word) 中工作，並且想要重複使用來自其 [OneDrive](https://onedrive.live.com/about/)同事共用之簡報中的資訊。 您不需要切換 OneDrive 和搜尋該簡報，只需要從 Word 搜尋即可。
 - 在 [Bing](https://bing.com) 中時，使用者可以取得來自公用網站與來自其組織內的結果。
 
 ## <a name="what-users-see"></a>使用者看到的內容
@@ -36,7 +36,7 @@ Microsoft Search 可協助使用者找到正確的答案、人員和內容，以
 
 ![標題列中具有 Microsoft Search 方塊的應用程式視窗螢幕擷取畫面](media/Headings_520.png)
 
-當使用者在 **搜尋** 方塊中按一下時，搜尋會根據其先前在 Office 365 中的活動，並根據組織中的趨勢來建議結果。 他們最近處理的檔案，他們最近使用的命令，以及與他們共同作業的人員，這些是搜尋會考慮的活動範例。 當使用者在 **搜尋** 方塊中開始輸入時，建議的結果更新。 使用者可以從 **搜尋** 方塊直接開啟搜尋結果。 以下是 [SharePoint](http://sharepoint.com/)中的搜尋範例。
+當使用者在 **搜尋** 方塊中按一下時，搜尋會根據其先前在 Office 365 中的活動，並根據組織中的趨勢來建議結果。 他們最近使用過的檔案、最近使用過的命令和其共同作業的動作，都是搜尋所考慮之活動的範例。 當使用者在 **搜尋** 方塊中開始輸入時，建議的結果更新。 使用者可以從 **搜尋** 方塊直接開啟搜尋結果。 以下是 [SharePoint](http://sharepoint.com/)中的搜尋範例。
 
 ![具有查詢及建議結果的 Microsoft Search 方塊螢幕擷取畫面](media/SERP_text_520.png)
 
@@ -68,7 +68,7 @@ Microsoft Search 可協助使用者找到正確的答案、人員和內容，以
 
 ## <a name="what-content-is-searched"></a>搜尋的內容
 
-Microsoft 搜尋會顯示您的組織已儲存在 Microsoft 365 的內容，或透過連接器編制索引的內容。 Microsoft 搜尋不會跨承租人搜尋，或顯示其他組織共用的內容結果。 如果您的組織使用雲端混合式搜尋來設定混合式 SharePoint 環境，Microsoft Search 會同時傳回線上和內部部署 SharePoint 內容的搜尋結果，包括您已連線至您的 SharePoint Server 環境的任何外部內容。 [深入了解混合式搜尋環境](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint)。
+Microsoft 搜尋會顯示您的組織已儲存在 Microsoft 365 的內容，或透過連接器編制索引的內容。 Microsoft 搜尋不會跨承租人搜尋，或顯示其他組織共用的內容結果。 如果您的組織已使用雲端混合式搜尋設定混合式 SharePoint 環境，則 Microsoft 搜尋會傳回線上和內部部署 SharePoint 內容的搜尋結果，包含您已連接至 SharePoint 伺服器環境的任何外部內容。 [深入了解混合式搜尋環境](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint)。
 
 使用者可以從其他位置取得相同的搜尋結果，也會取得來自網際網路的結果。
 

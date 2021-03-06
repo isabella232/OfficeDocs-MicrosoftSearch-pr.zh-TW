@@ -3,6 +3,7 @@ title: Microsoft 搜尋的 Salesforce 圖形連接器
 ms.author: mecampos
 author: mecampos
 manager: umas
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的 Salesforce 圖形連接器
-ms.openlocfilehash: 6771bc0b234bc2570a8b1fa7174b9b9244cf3958
-ms.sourcegitcommit: d53b91f8f52a4a96281b66831c2449bbffe2177c
+ms.openlocfilehash: 86140a4650593e08188f171be54f1753b73ecf7a
+ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097446"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50508821"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -26,7 +27,7 @@ ms.locfileid: "50097446"
 Salesforce 圖形連接器可讓您的組織為您的 Salesforce 實例中的連絡人、機會、潛在客戶和帳戶物件編制索引。 從 Salesforce 設定連接器和索引內容之後，使用者可以從任何 Microsoft 搜尋用戶端搜尋這些專案。
 
 > [!NOTE]
-> 請閱讀 [**您的圖形連接器文章設定**](configure-connector.md) ，以瞭解一般圖表連接器設定程式。
+> 請閱讀 [**您的圖形連接器**](configure-connector.md) 文章的設定，以瞭解一般圖表連接器設定指示。
 
 本文適用于任何設定、執行及監視 Salesforce 圖形連接器的人員。 它會補充一般設定程式，並顯示只適用于 Salesforce 圖形連接器的指示。 本文也包含 [限制](#limitations)的相關資訊。
 

@@ -3,6 +3,7 @@ title: Microsoft 搜尋的 Azure Data Lake Graph 連接器
 ms.author: mecampos
 author: mecampos
 manager: umas
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Azure Data Lake Storage Gen2 Graph connector for Microsoft Search
-ms.openlocfilehash: da508694929d3c83a456c664aa4613b09a1b14a3
-ms.sourcegitcommit: d39113376db26333872d3a2c7baddc3a3a7aea61
+ms.openlocfilehash: 2bb9570bc3b0a5adef7ac72ea1620c4f22a8aefb
+ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084855"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50508884"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -26,7 +27,7 @@ ms.locfileid: "50084855"
 Azure Data Lake Storage Gen2 Graph connector 可讓您組織中的使用者搜尋 [Azure Blob 儲存區](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction) 和 [Azure Data Lake Gen 2 儲存體](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) 帳戶中儲存的檔案。
 
 > [!NOTE]
-> 請閱讀 [**您的圖形連接器文章設定**](configure-connector.md) ，以瞭解一般圖表連接器設定程式。
+> 請閱讀 [**您的圖形連接器文章設定**](configure-connector.md) ，以瞭解一般圖表連接器設定指示。
 
 本文適用于任何設定、執行及監視 Azure Data Lake Storage Gen2 connector 的人員。 它會補充一般設定程式，並顯示只適用于 Azure Data Lake Storage Gen2 connector 的指示。 本文也包含 [限制](#limitations)的相關資訊。
 

@@ -3,6 +3,7 @@ title: Microsoft 搜尋的 Oracle SQL Graph 連接器
 ms.author: mecampos
 author: mecampos
 manager: umas
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,12 +14,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: 設定適用于 Microsoft 搜尋的 Oracle SQL Graph 連接器。
-ms.openlocfilehash: 01e4cd6b04d2997ea11ef006e94ea09b03280f41
-ms.sourcegitcommit: 6a7f36769e92b714588b47efb0c185eddabe6953
+ms.openlocfilehash: 901b772def7585606a090d8a7696a32ff028e2a0
+ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50099333"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50508893"
 ---
 <!---Previous ms.author:vivg --->
 
@@ -27,7 +28,7 @@ ms.locfileid: "50099333"
 Oracle SQL Graph 連接器可讓您的組織探索內部部署 Oracle 資料庫中的資料並為其編制索引。 連接器會將指定的內容索引至 Microsoft 搜尋。 若要讓索引保持在最新的來來源資料中，它支援定期完整和累加編目。 透過 Oracle SQL connector，您也可以限制特定使用者對搜尋結果的存取。
 
 > [!NOTE]
-> 請閱讀 [**您的圖形連接器文章設定**](configure-connector.md) ，以瞭解一般圖表連接器設定程式。
+> 請閱讀 [**您的圖形連接器**](configure-connector.md) 文章的設定，以瞭解一般圖表連接器設定指示。
 
 本文適用于任何設定、執行及監視 Oracle SQL Graph 連接器的人員。 它會補充一般設定程式，並顯示只適用于 Oracle SQL Graph 連接器的指示。 本文也包含 [疑難排解](#troubleshooting) 及 [限制](#limitations)的相關資訊。
 
@@ -167,11 +168,11 @@ Oracle SQL connector 支援完整和累加編目的更新排程。 我們建議�
 遵循一般 [設定指示](https://docs.microsoft.com/microsoftsearch/configure-connector)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="next-steps-customize-the-search-results-page"></a>後續步驟：自訂搜尋結果頁面
+<!--- ## Next steps: Customize the search results page
 
-建立您自己的行業和結果類型，讓使用者可以從新的連線中查看搜尋結果。 在此步驟中，您的連線中的資料不會顯示在搜尋結果頁面上。
+Create your own verticals and result types, so end users can view search results from new connections. Without this step, data from your connection won't show up on the search results page.
 
-若要深入瞭解如何建立您的行業和 MRTs，請參閱 [搜尋結果頁面自訂](customize-search-page.md)。
+To learn more about how to create your verticals and MRTs, see [Search results page customization](customize-search-page.md). -->
 
 ## <a name="troubleshooting"></a>疑難排解
 
