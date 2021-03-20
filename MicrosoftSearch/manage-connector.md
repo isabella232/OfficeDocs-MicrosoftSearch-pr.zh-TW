@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理 microsoft Search 的 Microsoft Graph 連接器。
-ms.openlocfilehash: aa2e3db8c8dc9155c06f81fc0169dd4bda8f8343
-ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
+ms.openlocfilehash: 1c152f23e9b9d9982b957830d5f4bef0eef41347
+ms.sourcegitcommit: 2f770de12b27546b18b2e86517d2c25522eb9022
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50508830"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929581"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
@@ -39,7 +39,7 @@ ms.locfileid: "50508830"
 編輯已發佈的連線 | ： heavy_check_mark： Name 及 Description<br></br> ： heavy_check_mark：連線設定<br></br> ： heavy_check_mark：屬性標籤<br></br> ： heavy_check_mark：架構<br></br> ： heavy_check_mark：重新整理排程<br></br> | ： heavy_check_mark： Name<br></br> ： heavy_check_mark： Description
 編輯拔模連接 | ： heavy_check_mark： | 軸
 
-## <a name="monitor-your-connection-status"></a>監視您的線上狀態
+## <a name="monitor-your-connection-state"></a>監視您的線上狀態
 
 在您建立連線後，已處理的專案數目會顯示在 [ **Microsoft 搜尋**] 頁面上的 [**連接器**] 索引標籤上。 在初次完整編目成功完成之後，會顯示定期增加編目的進度。 此頁面提供連接器之日常作業的相關資訊，以及記錄檔及錯誤歷程記錄的概覽。
 
@@ -47,7 +47,7 @@ ms.locfileid: "50508830"
 
 * **同步** 處理。 連接器會編目來源中的資料，以編制現有專案的索引並進行任何更新。
 
-* **已啟用**：連線已啟用，且沒有對其執行的作用中編目。 **上次同步處理時間** 表示上次成功編目的時間。 連線為最新的同步處理時間。
+* **Ready**：連線已就緒，而且沒有對其執行任何作用中的編目。 **上次同步處理時間** 表示上次成功編目的時間。 連線為最新的同步處理時間。
 
 * 已 **暫停**。 管理員會透過 pause 選項暫停編目。 下一個編目只會在手動恢復時執行。 不過，來自此連線的資料仍可供搜尋。
 
@@ -58,19 +58,23 @@ ms.locfileid: "50508830"
 可用的索引配額和使用量會顯示在 [連接器] 的 [登陸] 頁面上。
 
 ![索引配額使用量列](media/quota_utilization.png)
-
+ 
 >[!NOTE]
 >在預覽期間內，每個嘗試繪製圖形連接器的組織，都已在所有連線中提供高達2000000專案的免費固定配額。 透過圖形連接器一般可用，當已在預覽中使用圖形連接器的組織，可用配額會在2021年4月1日到期。
 >以「 [預覽](connectors-preview.md) 」標示的 Microsoft 建立圖形連接器，將不會包含在您組織的總電量索引配額內。 不過，它會計算您可以為您的組織設定的最大連線數目上限，以及您的組織可在連線上編制索引的最大7000000專案數目;每個連線都是限制700000個專案。 
 
 [配額使用狀況] 列會根據您的組織的配額使用量，指出不同的狀態：
 
-狀態 | 配額使用量
---- | ---
-一般 | 1-69%
-高 | 70-89%
+狀態 | 配額使用量層級
+--- | --- 
+一般 | 0-79%
+高 | 80-89%
 重要 | 90%-99%
 Full | 100%
+
+<!-- 
+![Quota utilization levels](media/connectors-quota-utilization-levels.png)
+-->
 
 已編制索引的專案數也會顯示每個連線。 每個連線編制索引的專案數會占組織可用的總配額。
 
