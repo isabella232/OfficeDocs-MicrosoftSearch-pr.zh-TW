@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 連接器詳細資料和錯誤
-ms.openlocfilehash: 79f6404670e6c5a655559efac7235b1e7813f8e4
-ms.sourcegitcommit: 39bf9f0db7f9bff2ab82c99a059b0ddcf1c98f5f
+ms.openlocfilehash: 6b1368818668c94a92f575609e953effe6cf21c1
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "49905973"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031303"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
-# <a name="view-connection-details-and-errors"></a>查看連線詳細資料和錯誤
+# <a name="view-connection-details-and-errors"></a>檢視連線詳細資料與錯誤
 
 若要存取和管理您的連接器，您必須指定為您租使用者的「搜尋管理員」。 請與您的租使用者管理員聯繫，為您提供搜尋系統管理員角色。
 
@@ -63,7 +63,7 @@ ms.locfileid: "49905973"
 1003 | 與連接器關聯的帳戶沒有存取該專案的許可權。 |  確定適當的帳戶有權存取您要編制索引的專案。
 1004 | 無法到達內部部署資料閘道。 請確定閘道服務正在執行，且連線設定中已更新閘道詳細資料。 | 使用閘道檢查電腦，開啟 Power BI 閘道應用程式，並確定閘道正在執行。 確認閘道使用的是與 Microsoft 搜尋相同的系統管理員帳戶，然後確定連線設定中所有的閘道詳細資料都已更新。
 1005 | 與此資料來源相關聯的認證已過期。 更新認證並更新連線。 | 按一下 [ **編輯** ] 以更新驗證認證。
-1006 | 您的閘道版本已過期，且不再支援此連接器。 您將需要更新閘道。 | 請造訪 [安裝內部部署資料閘道](https://docs.microsoft.com/data-integration/gateway/service-gateway-install) ，以在包含閘道的機器上下載並安裝最新版本的 Power BI 閘道。
+1006 | 您的閘道版本已過期，且不再支援此連接器。 您將需要更新閘道。 | 請造訪 [安裝內部部署資料閘道](/data-integration/gateway/service-gateway-install) ，以在包含閘道的機器上下載並安裝最新版本的 Power BI 閘道。
 1007 | 未偵測到有效的 Power BI 授權。 您需要有效的 Power BI 授權，才能執行這種編目。 | 您需要有效的 Power BI 授權，才能執行這種編目。 檢查您的組織是否具備有效的授權。 如果是的話，請再試一次。 如果不是，請取得授權，然後再試一次。
 1008 | 租使用者的配額利用率已達到其限制。 | 嘗試刪除連線以釋放部分配額，或調整您的攝取篩選器以引入較少的資料。 若未解決問題，請與 Microsoft 支援人員聯繫。
 1009 | 您的連線總配額使用量已達到其限制。 | 請嘗試調整您的攝取篩選，以引入較少的資料。 如果這無法解決問題，請與 Microsoft 支援人員聯繫。

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
 description: 深入了解可協助您順利將 Microsoft Search 在組織中推出的方法和程序
-ms.openlocfilehash: 76079dd2db378185a999acf9cc49cd04a7f97bbe
-ms.sourcegitcommit: b3738f5ab02bfba9dedf099e035f3850607be480
+ms.openlocfilehash: 78c94be873ba7167e9d0605b0aaa7da942ad8a8a
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46591515"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031708"
 ---
 # <a name="user-adoption-guide"></a>使用者採用指南
 
@@ -41,7 +41,7 @@ ms.locfileid: "46591515"
 |變更管理團隊  <br/> |確定產品值很容易理解。  <br/> 建立「推出」的計畫。  <br/> |IT  <br/> |
 |風雲人物  <br/> |將產品 Evangelize 至對等和團隊。  <br/> |任何人 (員工)  <br/> |
 |搜尋系統管理員  <br/> |識別使用者採用的核心小組成員。  <br/> 管理 Microsoft 搜尋，包含經驗和持續管理的外觀與風格。  <br/> [磁片磁碟機討論] 顯示 Microsoft 搜尋的值。  <br/> |IT  <br/> |
-|編輯者  <br/> |在 Microsoft 365 系統[管理中心](https://admin.microsoft.com)建立內容。  <br/> |IT/任何人  <br/> |
+|編輯者  <br/> |在 Microsoft 365 系統 [管理中心](https://admin.microsoft.com)建立內容。  <br/> |IT/任何人  <br/> |
    
 ## <a name="stage-2-scenarios"></a>階段 2：案例
 
@@ -49,7 +49,7 @@ ms.locfileid: "46591515"
   
 ### <a name="understand-what-your-users-need-and-want"></a>了解您的使用者需要及想要什麼
   
-談到尋找資訊和取得解答，了解使用者的需求和困難點是很重要的。 您可以使用定量方法，例如[Office 365](https://Office.com)的資料，以及[SharePoint](https://products.office.com/sharepoint/collaboration)搜尋使用方式或定性方法，例如調查和使用者焦點群組，以取得這類資料。 這將有助於判斷 Microsoft Search 何時、何處以及如何提供價值。
+談到尋找資訊和取得解答，了解使用者的需求和困難點是很重要的。 您可以使用定量方法，例如 [Office 365](https://Office.com) 的資料，以及 [SharePoint](https://products.office.com/sharepoint/collaboration) 搜尋使用方式或定性方法，例如調查和使用者焦點群組，以取得這類資料。 這將有助於判斷 Microsoft Search 何時、何處以及如何提供價值。
   
 針對整個組織的不同角色和團隊，請考慮：
   
@@ -59,7 +59,7 @@ ms.locfileid: "46591515"
     
 - 使用者對於搜尋資訊想要看到什麼。
     
-- Microsoft Search 能為組織帶來的優點。 如需詳細資訊，請參閱[Microsoft 搜尋一覽](overview-microsoft-search.md)。
+- Microsoft Search 能為組織帶來的優點。 如需詳細資訊，請參閱 [Microsoft 搜尋一覽](overview-microsoft-search.md)。
     
 選擇對您的使用者具有最大正面影響的使用者案例。
   
@@ -69,7 +69,7 @@ ms.locfileid: "46591515"
   
 1. **變更管理：** 決定如何測量人員對於 Microsoft Search 的意識和其相關通訊的成功程度。 
     
-2. **使用率：** 您可以利用來自深入解析儀表板的資料，包括每日及每月作用中使用者數 (DAU 和 MAU)，獲得最多檢視次數的內容類型，以及最常見的搜尋關鍵字，以隨著時間推移測量使用率。 如需詳細資訊，請參閱[Microsoft Search Insights 儀表板報告](get-insights.md)。
+2. **使用率：** 您可以利用來自深入解析儀表板的資料，包括每日及每月作用中使用者數 (DAU 和 MAU)，獲得最多檢視次數的內容類型，以及最常見的搜尋關鍵字，以隨著時間推移測量使用率。 如需詳細資訊，請參閱 [Microsoft Search Insights 儀表板報告](./usage-reports.md)。
     
 3. **使用者滿意度：** 使用您從問卷和使用者焦點座談所收集的資料，來判斷比較基準。 淨滿意度 (NSAT)，以及淨推薦分數 (NPS) 也可以提供實用的度量單位。 不論您使用的方法為何，請保持一致，這樣您就能看到隨時間的影響。 
     
@@ -77,7 +77,7 @@ ms.locfileid: "46591515"
     
 ## <a name="stage-3-readiness"></a>階段 3：整備
 
-投入時間在準備推出 Microsoft Search，可為組織帶來正面影響。 Microsoft 提供<a href="https://go.microsoft.com/fwlink/?linkid=2114710">採用套件</a>，其中包含為內部通訊網站上的共用建立的宣告電子郵件範本、輕量、視覺內容，以及訓練簡報。 此外還有一個<a href="https://resources.techcommunity.microsoft.com/microsoft-search/#adoption">Microsoft Search Resource Center</a> ，您可以在其中尋找其他訓練和採用資源，以協助您進行 Microsoft 搜尋成功部署。
+投入時間在準備推出 Microsoft Search，可為組織帶來正面影響。 Microsoft 提供 <a href="https://go.microsoft.com/fwlink/?linkid=2114710">採用套件</a> ，其中包含為內部通訊網站上的共用建立的宣告電子郵件範本、輕量、視覺內容，以及訓練簡報。 此外還有一個 <a href="https://resources.techcommunity.microsoft.com/microsoft-search/#adoption">Microsoft Search Resource Center</a> ，您可以在其中尋找其他訓練和採用資源，以協助您進行 Microsoft 搜尋成功部署。
   
 ### <a name="product-and-content-readiness"></a>產品與內容整備
   
@@ -91,13 +91,13 @@ ms.locfileid: "46591515"
   
 ### <a name="signing-in"></a>登入
   
-Microsoft 搜尋使用者必須使用工作或學校帳戶登入[Bing](https://Bing.com) 。 若要讓您的使用者的登入盡可能順暢地：
+Microsoft 搜尋使用者必須使用工作或學校帳戶登入 [Bing](https://Bing.com) 。 若要讓您的使用者的登入盡可能順暢地：
   
-- 若要確認已正確設定[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/)設定，請稍候使用者嘗試登入。 如需詳細資訊，請參閱[測試單一登入](test-single-sign-on.md)。
+- 若要確認已正確設定 [Azure Active Directory](/azure/active-directory/) 設定，請稍候使用者嘗試登入。 如需詳細資訊，請參閱[測試單一登入](test-single-sign-on.md)。
     
-- 將公司管理裝置的瀏覽器預設值設定為 Bing。 如需詳細資訊，請參閱[設定預設瀏覽器](set-default-browser.md)。
+- 將公司管理裝置的瀏覽器預設值設定為 Bing。 如需詳細資訊，請參閱[設定預設瀏覽器](/deployedge/edge-default-browser)。
     
-- 透過「群組原則」來部署[Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge)和[Google Chrome](https://www.google.com)使用者的搜尋延伸。 如需詳細資訊，請參閱[Microsoft 搜尋一覽](overview-microsoft-search.md)。
+- 透過「群組原則」來部署 [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) 和 [Google Chrome](https://www.google.com) 使用者的搜尋延伸。 如需詳細資訊，請參閱 [Microsoft 搜尋一覽](overview-microsoft-search.md)。
     
 ### <a name="draft-communications"></a>草稿通訊
   
@@ -115,13 +115,13 @@ Microsoft 搜尋使用者必須使用工作或學校帳戶登入[Bing](https://B
     
 - 使用 Microsoft Search 共用自助檔。
     
-所有通訊都應教育使用者如何登入[Bing](https://Bing.com)以尋找工作結果。
+所有通訊都應教育使用者如何登入 [Bing](https://Bing.com) 以尋找工作結果。
   
 ### <a name="engage-partner-teams"></a>吸引合作夥伴團隊
   
-Microsoft 搜尋會以[microsoft 365](https://www.microsoft.com/microsoft-365)的整數部分，遵循 GDPR 和第 C 層的指導方針。 視您的組織而定，您可能需要與您的隱私權和安全性小組共用 Microsoft 搜尋的相關資訊。 如需詳細資訊，請參閱[Bing 中的 Microsoft Search 安全性和隱私權](security-for-search.md)。
+Microsoft 搜尋會以 [microsoft 365](https://www.microsoft.com/microsoft-365)的整數部分，遵循 GDPR 和第 C 層的指導方針。 視您的組織而定，您可能需要與您的隱私權和安全性小組共用 Microsoft 搜尋的相關資訊。 如需詳細資訊，請參閱[Bing 專用 Microsoft 搜尋的安全性和隱私權](security-for-search.md)。
   
-請確認您的技術支援中心知道 Microsoft Search 的相關特性與功能，以及使用者的登入需求，使他們可以更有效率地支援使用者。 如需詳細資訊，請參閱[瞭解 Microsoft Search In microsoft 365](https://support.office.com/article/Learn-about-Microsoft-Search-in-Microsoft-365-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc)和[FAQs](faqs.md)。
+請確認您的技術支援中心知道 Microsoft Search 的相關特性與功能，以及使用者的登入需求，使他們可以更有效率地支援使用者。 如需詳細資訊，請參閱 [瞭解 Microsoft Search In microsoft 365](https://support.office.com/article/Learn-about-Microsoft-Search-in-Microsoft-365-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc) 和 [FAQs](faqs.md)。
   
 ### <a name="evaluate-with-pilot-users"></a>使用試驗使用者來評估
   

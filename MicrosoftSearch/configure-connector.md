@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 的圖形連接器安裝程式概述
-ms.openlocfilehash: e97b930f627a6336cc93b3a1f33e390cae4ff0aa
-ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
+ms.openlocfilehash: 5c674f6b9253af1145be983e5713f65be1c2b022
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50508869"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031375"
 ---
 <!-- Previous ms.author: monaray -->
 
@@ -81,13 +81,13 @@ ms.locfileid: "50508869"
 
 設定連線設定的程式會根據資料來源的類型而有所不同。 請參閱您想要新增至租使用者的資料來源類型的連接器特定資訊，以在安裝程式中完成此步驟。  
 
-若要深入瞭解連線至內部部署資料來源的詳細資訊，請參閱 [安裝內部部署資料閘道](https://aka.ms/configuregateway)。
+若要深入瞭解連線至內部部署資料來源的詳細資訊，請參閱 [安裝內部部署資料閘道](/data-integration/gateway/service-gateway-install)。
 
 ## <a name="step-4-manage-search-permissions"></a>步驟4：管理搜尋許可權
 
  (ACLs 的存取控制清單) 決定組織中的哪些使用者可以存取每個資料項目目。  
 
-有些連接器（例如 [MICROSOFT SQL](MSSQL-connector.md) 和 [Azure Data Lake Storage Gen2](azure-data-lake-connector.md) ）在本機上支援 [AZURE Active Directory (azure AD) ](https://docs.microsoft.com/azure/active-directory/) ACLs。
+有些連接器（例如 [MICROSOFT SQL](MSSQL-connector.md) 和 [Azure Data Lake Storage Gen2](azure-data-lake-connector.md) ）在本機上支援 [AZURE Active Directory (azure AD) ](/azure/active-directory/) ACLs。
 
 其他連接器（如 [ServiceNow](servicenow-connector.md)、 [Azure DevOps](azure-devops-connector.md)和 [SALESFORCE](salesforce-connector.md) ）支援非 Azure AD 使用者和群組的同步處理。  
 
@@ -204,4 +204,4 @@ ms.locfileid: "50508869"
 
 ## <a name="next-steps"></a>後續步驟
 
-在發佈連線後，您必須自訂搜尋結果頁面。 若要瞭解如何自訂搜尋結果，請參閱 [自訂搜尋結果頁面](https://docs.microsoft.com/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page)。
+在發佈連線後，您必須自訂搜尋結果頁面。 若要瞭解如何自訂搜尋結果，請參閱 [自訂搜尋結果頁面](#next-steps-customize-the-search-results-page)。

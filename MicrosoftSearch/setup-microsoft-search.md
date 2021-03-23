@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 第一次設定 Microsoft Search。
-ms.openlocfilehash: 7d0b8e1b4bbb405e254b2fe2d29b11f081f5b460
-ms.sourcegitcommit: ac4e261c01262be747341f810d2d1faf220d3961
+ms.openlocfilehash: 98499c2df1d8d732cdc1961116cafaaffeb4c5d6
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "49382585"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031663"
 ---
 # <a name="set-up-microsoft-search"></a>設定 Microsoft Search
 
@@ -42,7 +42,7 @@ Microsoft Search 預設會對支援它的所有 Microsoft 應用程式開啟，�
 1. **搜尋系統管理員：** 此角色可以建立及管理搜尋結果內容，並定義查詢設定，以改善組織內的搜尋結果。 搜尋系統管理員負責管理 Microsoft Search 組態，並可執行搜尋編輯者所能執行的所有內容管理工作。
 2. **搜尋編輯者：** 在 Microsoft 365 系統管理中心中建立、管理和刪除 Microsoft Search 的內容。 此角色可以建立及管理編輯性的內容，例如：常見問題集和解答、重要的地點和位置、經常搜尋和使用的網站與應用程式。
 
-目前，搜尋系統管理員和搜尋編輯者角色都必須由全域系統管理員來指派。如需詳細資訊，請參閱[指派系統管理員角色](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles?view=o365-worldwide)。
+目前，搜尋系統管理員和搜尋編輯者角色都必須由全域系統管理員來指派。如需詳細資訊，請參閱[指派系統管理員角色](/office365/admin/add-users/assign-admin-roles?view=o365-worldwide)。
 
 搜尋系統管理員會直接影響使用者的搜尋體驗。 這包括選擇想要呈現給使用者的結果類型。 由一個人針對組織中使用者所搜尋的許多不同主題選擇並建立授權內容，可能很困難。 建議您運用主題專家 (SME) 與其他使用者的專業技術與知識 (將他們新增為搜尋編輯者)。
 

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的 Salesforce 圖形連接器
-ms.openlocfilehash: 86140a4650593e08188f171be54f1753b73ecf7a
-ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
+ms.openlocfilehash: 59cc321a40655a1c1e5edf615dd43a2a56c8ddbc
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50508821"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031681"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -81,12 +81,12 @@ Salesforce 圖形連接器可讓您的組織為您的 Salesforce 實例中的連
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步驟1：在 Microsoft 365 系統管理中心新增圖表連接器
 
-遵循一般 [設定指示](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+遵循一般 [設定指示](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-2-name-the-connection"></a>步驟2：命名連線
 
-遵循一般 [設定指示](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+遵循一般 [設定指示](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-3-configure-the-connection-settings"></a>步驟3：設定連接設定
@@ -125,7 +125,7 @@ Salesforce 圖形連接器可讓您的組織為您的 Salesforce 實例中的連
 
 ## <a name="step-4b-map-aad-identities"></a>步驟4b：對應 AAD 身分識別
 
-如果您選擇從您的 Salesforce 實例中攝取 ACL 並為身分識別類型選取「AAD」，請參閱 [對應 AZURE AD](map-aad.md) 身分識別，以取得對應身分識別的指示。 若要瞭解如何設定適用于 Salesforce 的 Azure AD SSO，請參閱本 [教學](https://docs.microsoft.com/azure/active-directory/saas-apps/salesforce-tutorial)課程。
+如果您選擇從您的 Salesforce 實例中攝取 ACL 並為身分識別類型選取「AAD」，請參閱 [對應 AZURE AD](map-aad.md) 身分識別，以取得對應身分識別的指示。 若要瞭解如何設定適用于 Salesforce 的 Azure AD SSO，請參閱本 [教學](/azure/active-directory/saas-apps/salesforce-tutorial)課程。
 
 ## <a name="step-5-assign-property-labels"></a>步驟5：指派屬性標籤
 
@@ -150,7 +150,7 @@ Salesforce 連接器只支援目前完全編目的重新整理排程。
 
 ## <a name="step-8-review-connection"></a>步驟8：檢查連線
 
-遵循一般 [設定指示](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+遵循一般 [設定指示](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 <!---## Troubleshooting-->
@@ -162,7 +162,7 @@ Salesforce 連接器只支援目前完全編目的重新整理排程。
 - 在圖形連接器使用的 Salesforce API 中有一個已知的錯誤，目前的潛在客戶的私人組織範圍預設值並不是有效的。  
 - 如果欄位具有欄位層級安全性 (FLS) 設定設定檔，圖形連接器將無法為該 Salesforce 組織中的任何設定檔攝取該欄位。因此，使用者將無法搜尋這些欄位的值，也不會顯示在結果中。  
 - 在 [管理架構] 畫面中，這些通用的標準屬性名稱會列出一次，這些選項為 **查詢**、 **搜尋**、 **檢索** 及 **精煉**，並套用至 all 或 none。
-    - 姓名
+    - 名稱
     - URL
     - 描述
     - 傳真

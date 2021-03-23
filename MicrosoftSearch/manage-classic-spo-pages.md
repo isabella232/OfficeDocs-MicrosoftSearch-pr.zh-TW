@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 在傳統的 SharePoint 頁面上使用 Microsoft 搜尋
-ms.openlocfilehash: 9a5aeb2e683297faccfb55d3407653c1791b3961
-ms.sourcegitcommit: 7133d46ca9c3a5216ee9159db781febd17e5a831
+ms.openlocfilehash: 33215c730d34c14f8ce1d55e93730615688f1e2a
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49863172"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031429"
 ---
 # <a name="classic-pages-and-microsoft-search"></a>傳統頁面和 Microsoft 搜尋
 
@@ -44,7 +44,7 @@ SharePoint 現代網站之前建立的網站使用傳統搜尋方塊和傳統搜
 
 您可以在切換之前或之後的任何時間使用此命令，這樣就能輕鬆回到先前所用的搜尋體驗。
 
-若要執行下列命令，您會使用 PowerShell 搭配 SharePoint PnP PowerShell 擴充。 您可以安裝並深入瞭解如何開始 [這裡](https://docs.microsoft.com/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets?view=sharepoint-ps)。 您將使用下列命令登入您的網站或網站集合：
+若要執行下列命令，您會使用 PowerShell 搭配 SharePoint PnP PowerShell 擴充。 您可以安裝並深入瞭解如何開始 [這裡](/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets?view=sharepoint-ps)。 您將使用下列命令登入您的網站或網站集合：
 
 ```powershell
 Connect-PnPOnline -Url <yoursiteurl> -UseWebLogin

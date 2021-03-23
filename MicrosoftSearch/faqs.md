@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 取得有關企業搜尋和 Microsoft Search 常見問題的解答
-ms.openlocfilehash: abaa1a232b08ba586dd6cd777f7e54c323159dee
-ms.sourcegitcommit: aa7774d2bdff2bd9e1b7f51fcda90fa6b0c3a5ca
+ms.openlocfilehash: 98128297047d50e2d418a8ed062066ab9e86749e
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49867376"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031618"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 # <a name="frequently-asked-questions"></a>常見問題集
@@ -47,7 +47,7 @@ ms.locfileid: "49867376"
 
 ## <a name="how-are-my-search-results-protected"></a>如何保護我的搜尋結果？
 
-我們需要 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/) 驗證，才能存取受信任的雲端的結果。 已驗證的使用者只會看到他們有權存取的內容。 搜尋查詢會解除辨識，當您在 Bing 中使用 Microsoft Search 時，記錄會與 public [Bing](https://Bing.com) 搜尋流量分開。
+我們需要 [Azure Active Directory](/azure/active-directory/) 驗證，才能存取受信任的雲端的結果。 已驗證的使用者只會看到他們有權存取的內容。 搜尋查詢會解除辨識，當您在 Bing 中使用 Microsoft Search 時，記錄會與 public [Bing](https://Bing.com) 搜尋流量分開。
 
 ## <a name="can-i-search-across-federated-organizations"></a>可以跨同盟組織搜尋嗎？
 
@@ -63,4 +63,4 @@ Microsoft Search 要求企業使用者使用公司或學校帳戶登入。 但�
 
 ## <a name="can-guest-users-leverage-microsoft-search-in-my-organization"></a>來賓使用者是否可以在我的組織中利用 Microsoft 搜尋？
 
-Microsoft 365 透過[來賓存取](https://docs.microsoft.com/microsoft-365/solutions/collaborate-with-people-outside-your-organization)，與組織外部的人員進行豐富的共同作業。 這些使用者將能夠對檔、網站、群組、清單及文件庫執行搜尋作業。 不過，來賓使用者將不會取得完整、個人化的 Microsoft 搜尋體驗，而且可能需要利用頁面中的 [頁面] 搜尋方塊，而不是在頁首中的「整合的 Microsoft 搜尋」方塊。
+Microsoft 365 透過[來賓存取](/microsoft-365/solutions/collaborate-with-people-outside-your-organization)，與組織外部的人員進行豐富的共同作業。 這些使用者將能夠對檔、網站、群組、清單及文件庫執行搜尋作業。 不過，來賓使用者將不會取得完整、個人化的 Microsoft 搜尋體驗，而且可能需要利用頁面中的 [頁面] 搜尋方塊，而不是在頁首中的「整合的 Microsoft 搜尋」方塊。

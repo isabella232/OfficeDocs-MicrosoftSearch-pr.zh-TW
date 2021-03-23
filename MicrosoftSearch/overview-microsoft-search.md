@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 深入瞭解 Microsoft 搜尋的功能、其優點，以及哪些應用程式支援 Microsoft Search。
-ms.openlocfilehash: a7250bccd3f77eb3ad2f3c91bdfd176a2141fd98
-ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
+ms.openlocfilehash: 23bc07766bd5fb00bed21c7e739b22e7d1333630
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50508812"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031780"
 ---
 # <a name="overview-of-microsoft-search"></a>Microsoft 搜尋概觀
 
@@ -68,7 +68,7 @@ Microsoft Search 可協助使用者找出正確的答案、人員和內容，以
 
 ## <a name="what-content-is-searched"></a>搜尋的內容
 
-Microsoft 搜尋會顯示您的組織已儲存在 Microsoft 365 的內容，或透過連接器編制索引的內容。 Microsoft 搜尋不會跨承租人搜尋，或顯示其他組織共用的內容結果。 如果您的組織已使用雲端混合式搜尋設定混合式 SharePoint 環境，則 Microsoft 搜尋會傳回線上和內部部署 SharePoint 內容的搜尋結果，包含您已連接至 SharePoint 伺服器環境的任何外部內容。 [深入了解混合式搜尋環境](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint)。
+Microsoft 搜尋會顯示您的組織已儲存在 Microsoft 365 的內容，或透過連接器編制索引的內容。 Microsoft 搜尋不會跨承租人搜尋，或顯示其他組織共用的內容結果。 如果您的組織已使用雲端混合式搜尋設定混合式 SharePoint 環境，則 Microsoft 搜尋會傳回線上和內部部署 SharePoint 內容的搜尋結果，包含您已連接至 SharePoint 伺服器環境的任何外部內容。 [深入了解混合式搜尋環境](/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint)。
 
 使用者可以從其他位置取得相同的搜尋結果，也會取得來自網際網路的結果。
 

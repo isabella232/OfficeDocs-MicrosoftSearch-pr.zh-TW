@@ -3,50 +3,51 @@ title: 在 SharePoint Online 開始使用 Microsoft Search
 ms.author: tlarsen
 author: tlarsen
 manager: mnirkhe
-ms.date: 12/11/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 讓您的組織開始在 SharePoint Online 中使用 Microsoft Search
-ms.openlocfilehash: 7651339d4c531139522d844cef238d6dc90a2496
-ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
-ms.translationtype: HT
+description: 在 SharePoint Online 中使用 Microsoft 搜尋開始您的組織
+ms.openlocfilehash: d41b095dd91e277ca38b8ffc147700b94281ede3
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288980"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031600"
 ---
 # <a name="get-started-with-microsoft-search-in-sharepoint"></a>開始在 SharePoint 使用 Microsoft Search
 
-SharePoint 中的 Microsoft Search 是 SharePoint Online 中的新式搜尋體驗。 SharePoint Online 也提供傳統搜尋體驗。 身為搜尋管理員，您無法開啟或關閉任何一種搜尋體驗。 預設兩者都會開啟。 您的使用者可獲得的搜尋體驗取決於他們從何處搜尋：
+在 SharePoint 中的 Microsoft 搜尋是 [SharePoint 線上](https://products.office.com/sharepoint/collaboration)中的現代搜尋體驗。 SharePoint Online 也提供傳統搜尋體驗。 作為搜尋管理員，您無法開啟或關閉上述任何搜尋體驗。 這兩者預設都是以兩者為開啟。 您的使用者可獲得的搜尋體驗取決於他們從何處搜尋：
 
-- 使用者可以在 SharePoint 起始頁面、中樞網站、通訊網站和新式小組網站上，找到 Microsoft Search 搜尋方塊。
-- 在發佈網站、傳統小組網站和在搜尋中心時，使用者會使用傳統搜尋方塊。
+- 使用者可以在 [SharePoint](http://sharepoint.com/) 開始頁面、中樞網站、通訊網站和現代小組網站上，取得 Microsoft 搜尋方塊。
+- 使用者可以在發佈網站、傳統小組網站和 [SharePoint 搜尋中心](/sharepoint/manage-search-center)取得傳統搜尋方塊。
 
-執行下列步驟，讓您的組織在 SharePoint 中使用 Microsoft Search：
+若要讓您的組織使用 SharePoint 中的 Microsoft 搜尋，請採取下列各節中的步驟進行。
 
-## <a name="step-1-prepare-for-microsoft-search-in-sharepoint"></a>步驟 1：在 SharePoint 準備 Microsoft Search
+## <a name="prepare-for-microsoft-search-in-sharepoint"></a>在 SharePoint 中準備 Microsoft 搜尋
 
-使用者只能找到已編製索引的 SharePoint 內容。 Microsoft 搜尋和傳統搜尋對 SharePoint 內容使用的索引方式相同，且 SharePoint 內容會自動進行編目和編製索引。 如果貴組織會在 SharePoint 中同時使用傳統搜尋和 Microsoft Search，[了解如何避免 SharePoint 中傳統搜尋設定對 Microsoft Search 造成影響](https://docs.microsoft.com/sharepoint/differences-classic-modern-search)。
+使用者只會找到已編制索引的 [SharePoint](http://sharepoint.com/) 內容。 Microsoft Search 和傳統搜尋會為 SharePoint 內容共用相同的索引，這會自動進行編目和編制索引。 
 
-請依照下列指導方針大致[設定 Microsoft 搜尋](set-up-microsoft-search.md)。
+有些組織會在 SharePoint 中使用傳統搜尋和 Microsoft 搜尋。 若要瞭解如何在 SharePoint 中避免 Microsoft 搜尋中傳統搜尋設定的影響，請參閱 [線上 SharePoint 中傳統與新式搜尋體驗之間的差異](/sharepoint/differences-classic-modern-search)。
+
+遵循 [設定 Microsoft 搜尋](./setup-microsoft-search.md)的指導方針。
 
 
-## <a name="step-2-get-your-organization-to-adopt-modern-sites"></a>步驟 2：讓組織採用新式網站
+## <a name="get-your-organization-to-adopt-modern-sites"></a>讓您的組織採用新式網站
 
-影響您的組織開始使用新式網站，而不使用傳統網站。 [了解 SharePoint 中的新式體驗](https://support.office.com/article/SharePoint-classic-and-modern-experiences-5725c103-505d-4a6e-9350-300d3ec7d73f)。
+為了獲得更好的搜尋體驗，請影響您的組織以嘗試使用現代網站，而不是傳統網站。 若要深入瞭解，請參閱 [SharePoint 傳統和現代體驗](https://support.office.com/article/SharePoint-classic-and-modern-experiences-5725c103-505d-4a6e-9350-300d3ec7d73f)。
 
-## <a name="step-3-promote-searching-from-the-sharepoint-start-page"></a>步驟 3：從 SharePoint 起始頁面推廣搜尋功能
+## <a name="promote-searching-from-the-sharepoint-start-page"></a>從 SharePoint 開始頁面提升搜尋
 
-教導使用者要從 SharePoint 起始頁面進行搜尋，而非從傳統搜尋中心。 請考慮為使用者隱藏傳統搜尋中心。
+教您的使用者從 [SharePoint](http://sharepoint.com/) [開始] 頁面，而不是從傳統 [搜尋中心](/sharepoint/manage-search-center)搜尋。 請考慮為使用者隱藏傳統搜尋中心。
 
 ## <a name="see-also"></a>請參閱
 [Microsoft Search 概觀](overview-microsoft-search.md)
 
-[了解 SharePoint 中搜尋體驗](https://docs.microsoft.com/sharepoint/overview-of-search)
+[自訂搜尋體驗](/sharepoint/overview-of-search) (機器翻譯)
 
-[何時使用 SharePoint 中的何種搜尋體驗](https://docs.microsoft.com/sharepoint/get-started-with-modern-search-experience)
+[SharePoint 中的搜尋體驗](/sharepoint/get-started-with-modern-search-experience)

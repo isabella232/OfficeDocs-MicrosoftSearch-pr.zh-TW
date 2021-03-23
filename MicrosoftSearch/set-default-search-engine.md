@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: ee40010e-5d7f-4ba8-a3f8-d240dab3af6d
 description: 了解如何將 Bing 設定為公司使用 Microsoft Search 的預設搜尋引擎。
-ms.openlocfilehash: 1ac2f23a8263c01901e252e7dd830e7373380669
-ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
+ms.openlocfilehash: 346bf3bf2da10178a8bd19390920db2d9de2629e
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50508668"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031753"
 ---
 # <a name="make-bing-the-default-search-engine"></a>讓 Bing 成為預設搜尋引擎
   
@@ -30,7 +30,7 @@ ms.locfileid: "50508668"
   
 如需適用於其他版本 Windows 的最新 ADMX 檔案，請參閱[如何在 Windows 中建立和管理群組原則系統管理範本的集中存放區](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra)。
   
-如果在 GPMC 中找不到本節中描述的設定，請下載適當的 ADMX 並將它們複製到集中存放區。 如需詳細資訊，請參閱使用 [ADMX 檔案編輯網域型 GPO](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29)。 控制器上的中央存放區是具有下列命名慣例的資料夾： **%systemroot%\sysvol \\<網域 \> \policies\PolicyDefinitions**
+如果在 GPMC 中找不到本節中描述的設定，請下載適當的 ADMX 並將它們複製到集中存放區。 如需詳細資訊，請參閱使用 [ADMX 檔案編輯網域型 GPO](/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29)。 控制器上的中央存放區是具有下列命名慣例的資料夾： **%systemroot%\sysvol \\<網域 \> \policies\PolicyDefinitions**
   
 控制站處理的每個網域都應該有個別的資料夾。 可以透過命令提示字元使用下列命令來複製 ADMX 檔案：
   
@@ -48,7 +48,7 @@ ms.locfileid: "50508668"
   
 Chrome 隨附自己的一組群組原則設定，您可以從 [Google Chrome Enterprise 說明](https://support.google.com/chrome/a/answer/187202)以 ADMX 檔案的格式下載。
   
-針對網域控制站上的 ADMX 檔案，將範本檔案複製到集中存放區。 如需詳細資訊，請參閱使用 [ADMX 檔案編輯網域型 GPO](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29)。 控制器上的中央存放區是具有下列命名慣例的資料夾： **%systemroot%\sysvol \\<網域 \> \policies\PolicyDefinitions**
+針對網域控制站上的 ADMX 檔案，將範本檔案複製到集中存放區。 如需詳細資訊，請參閱使用 [ADMX 檔案編輯網域型 GPO](/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29)。 控制器上的中央存放區是具有下列命名慣例的資料夾： **%systemroot%\sysvol \\<網域 \> \policies\PolicyDefinitions**
   
 控制站處理的每個網域都應該有個別的資料夾。 可以透過命令提示字元使用下列命令來複製 ADMX 檔案：
   

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 新增搜尋行業及自訂搜尋結果
-ms.openlocfilehash: 4896fdb9923c93602acc48c2360039d512e4d72e
-ms.sourcegitcommit: a86265684871da86562a76c4961d0a6c1869f517
+ms.openlocfilehash: 75dd6193308f52e7bfbb787d8f8dc27def834751
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790332"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031645"
 ---
 # <a name="customize-the-search-results-page"></a>自訂搜尋結果頁面
 
@@ -62,7 +62,7 @@ ms.locfileid: "49790332"
 
 啟動該嚮導之後，您會逐步指導您定義要搜尋之內容的垂直名稱、內容來源及範圍。 會以停用狀態建立垂直。 您將在稍後啟用它。
 
-您可以使用一組有限的 [關鍵字查詢語言 (KQL) ](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) 來縮小範圍。 此頁面列出可用的屬性。 建議您使用具有 boolean 運算子的任意文字關鍵字和屬性限制，以建立 KQL。
+您可以使用一組有限的 [關鍵字查詢語言 (KQL) ](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) 來縮小範圍。 此頁面列出可用的屬性。 建議您使用具有 boolean 運算子的任意文字關鍵字和屬性限制，以建立 KQL。
 
 ### <a name="create-a-vertical-at-the-organization-level"></a>在組織層級建立垂直
 

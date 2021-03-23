@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: 管理 Power BI 報表和資料顯示在搜尋結果中的方式
-ms.openlocfilehash: e78b8b5d22f7a91d80832fb4f5b536afc277fb6c
-ms.sourcegitcommit: 7294c953e7939e48f128656cc2f8f22705ae3f3d
+ms.openlocfilehash: 3d67f79cce2392f949541690879ffb9202d79060
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49773043"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031438"
 ---
 # <a name="manage-power-bi-answers"></a>管理 Power BI 解答
 
@@ -46,7 +46,7 @@ Microsoft Search 使用者可以從 [Windows 搜尋] 方塊、[SharePoint]、[Of
 
 ## <a name="turn-power-bi-search-on-or-off"></a>開啟或關閉 Power BI 搜尋
 
-預設會為您的組織啟用 Power BI 結果。 您的 Power BI 系統管理員可以隨時停用這些功能。 在 Power BI 系統管理員入口網站中，移至 [租使用者設定]，並停 **用 [使用全域搜尋 POWER BI** ] 設定。 若要深入瞭解，請參閱管理 [POWER BI in admin 入口網站](https://docs.microsoft.com/power-bi/admin/service-admin-portal#use-global-search-for-power-bi-preview)。
+預設會為您的組織啟用 Power BI 結果。 您的 Power BI 系統管理員可以隨時停用這些功能。 在 Power BI 系統管理員入口網站中，移至 [租使用者設定]，並停 **用 [使用全域搜尋 POWER BI** ] 設定。 若要深入瞭解，請參閱管理 [POWER BI in admin 入口網站](/power-bi/admin/service-admin-portal#use-global-search-for-power-bi-preview)。
 
 :::image type="content" source="media/powerbi-answers/powerbi-admin.png" alt-text="開啟或關閉 Power BI 解答設定的螢幕擷取畫面" border="true":::
 

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 連接器結果聚簇體驗的詳細資料
-ms.openlocfilehash: fb29fb9c14811698fb7c5d043853b57231c76a0b
-ms.sourcegitcommit: d1bc6c41ecf47584373ce57543502bed55753d0c
+ms.openlocfilehash: ae5528f2e12c9e331b66e821f2a9c03947d788df
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080835"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031771"
 ---
 # <a name="graph-connectors-result-cluster"></a>圖形連接器產生的聚簇
 
@@ -35,7 +35,7 @@ ms.locfileid: "50080835"
 
 結果叢集顯示的頻率會因因素而異，例如您設定的搜尋縱向的數目和內容類型。 透過互動或忽略結果叢集，使用者將會以隱含方式提供提示，以調整它隨時間的觸發。
 
-結果叢集中所顯示之連接器專案的搜尋結果體驗使用您所定義的 [結果類型](https://docs.microsoft.com/microsoftsearch/customize-search-page#create-your-own-result-type) 。 如果未設定任何結果類型，則會使用 [系統產生的版面](https://docs.microsoft.com/microsoftsearch/customize-search-page#default-search-result-layout) 配置。 
+結果叢集中所顯示之連接器專案的搜尋結果體驗使用您所定義的 [結果類型](./customize-search-page.md#create-your-own-result-type) 。 如果未設定任何結果類型，則會使用 [系統產生的版面](./customize-search-page.md#default-search-result-layout) 配置。 
 
 建議使用 "title" 屬性做為搜尋結果標題，並使用 "content" 屬性做為搜尋描述。 這可透過準確觸發結果叢集和最相關的結果，為您的使用者提供最佳的體驗。 
 

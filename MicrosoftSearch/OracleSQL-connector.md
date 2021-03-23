@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: 設定適用于 Microsoft 搜尋的 Oracle SQL Graph 連接器。
-ms.openlocfilehash: 901b772def7585606a090d8a7696a32ff028e2a0
-ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
+ms.openlocfilehash: 7ad3d03c73ce051c43f3b3ea094130a837d3177f
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50508893"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031420"
 ---
 <!---Previous ms.author:vivg --->
 
@@ -40,12 +40,12 @@ Oracle SQL Graph 連接器可讓您的組織探索內部部署 Oracle 資料庫�
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步驟1：在 Microsoft 365 系統管理中心新增圖表連接器
 
-遵循一般 [設定指示](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+遵循一般 [設定指示](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-2-name-the-connection"></a>步驟2：命名連線
 
-遵循一般 [設定指示](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+遵循一般 [設定指示](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-3-configure-the-connection-settings"></a>步驟3：設定連接設定
@@ -87,7 +87,7 @@ Oracle SQL Graph 連接器可讓您的組織探索內部部署 Oracle 資料庫�
 
 ### <a name="supported-data-types"></a>支援的資料類型
 
-下表摘要 Oracle SQL 連接器支援的資料類型。 該表也會摘要支援的 SQL 資料類型的索引資料類型。 若要深入瞭解 Microsoft Graph 連接器支援的索引資料類型，請參閱 [屬性資源類型](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta#properties&preserve-view=true)的檔。
+下表摘要 Oracle SQL 連接器支援的資料類型。 該表也會摘要支援的 SQL 資料類型的索引資料類型。 若要深入瞭解 Microsoft Graph 連接器支援的索引資料類型，請參閱 [屬性資源類型](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)的檔。
 
 | 類別 | 來源資料類型 | 索引資料類型 |
 | ------------ | ------------ | ------------ |
@@ -145,12 +145,12 @@ Oracle SQL Graph 連接器可讓您的組織探索內部部署 Oracle 資料庫�
 
 ## <a name="step-4-assign-property-labels"></a>步驟4：指派屬性標籤
 
-遵循一般 [設定指示](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+遵循一般 [設定指示](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-5-manage-schema"></a>步驟5：管理架構
 
-遵循一般 [設定指示](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+遵循一般 [設定指示](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-6-manage-search-permissions"></a>步驟6：管理搜尋許可權
@@ -165,7 +165,7 @@ Oracle SQL connector 支援完整和累加編目的更新排程。 我們建議�
 
 ## <a name="step-8-review-connection"></a>步驟8：檢查連線
 
-遵循一般 [設定指示](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+遵循一般 [設定指示](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 <!--- ## Next steps: Customize the search results page

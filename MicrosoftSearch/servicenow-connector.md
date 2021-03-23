@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的 ServiceNow 圖形連接器
-ms.openlocfilehash: eaf8014876b03c0b64c012cf7e83c4e4b84838b9
-ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
+ms.openlocfilehash: 692170ef6f8332418efc7d56a56c6fa1b1cce76c
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50508677"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031762"
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -33,12 +33,12 @@ ms.locfileid: "50508677"
   
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步驟1：在 Microsoft 365 系統管理中心新增圖表連接器
 
-遵循一般 [設定指示](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+遵循一般 [設定指示](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-2-name-the-connection"></a>步驟2：命名連線
 
-遵循一般 [設定指示](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+遵循一般 [設定指示](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-3-connection-settings"></a>步驟3：連接設定
@@ -78,7 +78,7 @@ ms.locfileid: "50508677"
 
 欄位 | 描述 | 建議值 
 --- | --- | ---
-姓名 | 識別您需要 OAuth 存取之應用程式的唯一值。 | Microsoft 搜尋
+名稱 | 識別您需要 OAuth 存取之應用程式的唯一值。 | Microsoft 搜尋
 用戶端識別碼 | 應用程式的唯讀、自動產生的唯一識別碼。 當實例要求存取權杖時，會使用用戶端識別碼。 | NA
 用戶端密碼 | 使用此共用的機密字串，ServiceNow 實例和 Microsoft 搜尋會授權彼此間的通訊。 | 遵循安全性最佳作法，將密碼當做密碼對待。
 重新導向 URL | 授權伺服器重新導向所需的回撥 URL。 | https://gcs.office.com/v1.0/admin/oauth/callback
@@ -95,11 +95,11 @@ ms.locfileid: "50508677"
 
 ## <a name="step-3a-register-a-new-application-in-azure-active-directory"></a>步驟3。 a：在 Azure Active Directory 中註冊新的應用程式
 
-若要瞭解如何在 Azure Active Directory 中註冊新的應用程式，請參閱 [註冊應用程式](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#register-an-application)。 選取 [單一承租人組織目錄]。 不需要重新導向 URI。 註冊後，請記下應用程式 (用戶端) ID 及目錄 (承租人) 識別碼。
+若要瞭解如何在 Azure Active Directory 中註冊新的應用程式，請參閱 [註冊應用程式](/azure/active-directory/develop/quickstart-register-app#register-an-application)。 選取 [單一承租人組織目錄]。 不需要重新導向 URI。 註冊後，請記下應用程式 (用戶端) ID 及目錄 (承租人) 識別碼。
 
 ## <a name="step-3b-create-a-client-secret"></a>步驟3：建立用戶端密碼
 
-若要瞭解如何建立用戶端密碼，請參閱 [建立用戶端密碼](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#add-a-client-secret)。 記錄用戶端密碼。
+若要瞭解如何建立用戶端密碼，請參閱 [建立用戶端密碼](/azure/active-directory/develop/quickstart-register-app#add-a-client-secret)。 記錄用戶端密碼。
 
 ## <a name="step-3c-retrieve-service-principal-object-identifier"></a>步驟 3 .. c：取回服務主體物件識別碼
 
@@ -145,7 +145,7 @@ ServiceNow 實例需要下列設定：
 
    欄位 | 描述 | 建議值
    --- | --- | ---
-   姓名 | 識別 OAuth OIDC 實體的唯一名稱。 | Azure AD
+   名稱 | 識別 OAuth OIDC 實體的唯一名稱。 | Azure AD
    用戶端識別碼 | 在協力廠商 OAuth OIDC server 中註冊之應用程式的用戶端識別碼。 實例在要求存取權杖時使用用戶端識別碼。 | Application (Client) ID 從步驟3。
    用戶端密碼 | 在協力廠商 OAuth OIDC server 中註冊之應用程式的用戶端密碼。 | 步驟3的用戶端密碼。 b
 
@@ -204,23 +204,23 @@ ServiceNow 連接器支援 **所有人都** 可以看到的搜尋許可權，或
 >如果您只選擇可 **存取此資料來源的人員**，則會在 **預覽** ServiceNow 連接器。
 
 >[!NOTE]
->如果您選擇 [AAD] 做為身分識別來源的類型，請確定您在 ServiceNow 中為電子郵件目標屬性指派 UPN 來源屬性。 若要驗證或變更您的對應，請參閱 [自訂使用者布建屬性-在 Azure Active Directory 中 SaaS 應用程式的對應](https://docs.microsoft.com/azure/active-directory/app-provisioning/customize-application-attributes)。
+>如果您選擇 [AAD] 做為身分識別來源的類型，請確定您在 ServiceNow 中為電子郵件目標屬性指派 UPN 來源屬性。 若要驗證或變更您的對應，請參閱 [自訂使用者布建屬性-在 Azure Active Directory 中 SaaS 應用程式的對應](/azure/active-directory/app-provisioning/customize-application-attributes)。
 
 如果您選擇從 ServiceNow 實例中攝取 ACL，並為身分識別類型選取 "非 AAD"，請參閱 [Map 您的非 AZURE AD](map-non-aad.md) 身分識別，以取得對應身分識別的指示。
 
 ## <a name="step-6-assign-property-labels"></a>步驟6：指派屬性標籤
 
-遵循一般 [設定指示](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+遵循一般 [設定指示](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-7-manage-schema"></a>步驟7：管理架構
 
-遵循一般 [設定指示](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+遵循一般 [設定指示](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-8-choose-refresh-settings"></a>步驟8：選擇重新整理設定
 
-遵循一般 [設定指示](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+遵循一般 [設定指示](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 >[!NOTE]
@@ -228,7 +228,7 @@ ServiceNow 連接器支援 **所有人都** 可以看到的搜尋許可權，或
 
 ## <a name="step-9-review-connection"></a>步驟9：檢查連線
 
-遵循一般 [設定指示](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+遵循一般 [設定指示](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="troubleshooting"></a>疑難排解

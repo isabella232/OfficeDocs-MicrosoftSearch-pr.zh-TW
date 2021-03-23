@@ -13,34 +13,34 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Azure Data Lake Storage Gen2 Graph connector for Microsoft Search
-ms.openlocfilehash: 2bb9570bc3b0a5adef7ac72ea1620c4f22a8aefb
-ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
+ms.openlocfilehash: 37a035b3de9dc217f885f193992d1e74a675fb35
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50508884"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031321"
 ---
 <!---Previous ms.author: monaray --->
 
 # <a name="azure-data-lake-storage-gen2-graph-connector"></a>Azure Data Lake Storage Gen2 Graph connector
 
-Azure Data Lake Storage Gen2 Graph connector 可讓您組織中的使用者搜尋 [Azure Blob 儲存區](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction) 和 [Azure Data Lake Gen 2 儲存體](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) 帳戶中儲存的檔案。
+Azure Data Lake Storage Gen2 Graph connector 可讓您組織中的使用者搜尋 [Azure Blob 儲存區](/azure/storage/blobs/storage-blobs-introduction) 和 [Azure Data Lake Gen 2 儲存體](/azure/storage/blobs/data-lake-storage-introduction) 帳戶中儲存的檔案。
 
 > [!NOTE]
 > 請閱讀 [**您的圖形連接器文章設定**](configure-connector.md) ，以瞭解一般圖表連接器設定指示。
 
 本文適用于任何設定、執行及監視 Azure Data Lake Storage Gen2 connector 的人員。 它會補充一般設定程式，並顯示只適用于 Azure Data Lake Storage Gen2 connector 的指示。 本文也包含 [限制](#limitations)的相關資訊。
 
-在本文中，我們使用 *Azure Storage* 做為 [Azure Blob 儲存區](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction) 和 [Azure Data Lake Gen 2 儲存區](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)的一般字詞。
+在本文中，我們使用 *Azure Storage* 做為 [Azure Blob 儲存區](/azure/storage/blobs/storage-blobs-introduction) 和 [Azure Data Lake Gen 2 儲存區](/azure/storage/blobs/data-lake-storage-introduction)的一般字詞。
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步驟1：在 Microsoft 365 系統管理中心新增圖表連接器
 
-遵循一般 [設定指示](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+遵循一般 [設定指示](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-2-name-the-connection"></a>步驟2：命名連線
 
-遵循一般 [設定指示](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+遵循一般 [設定指示](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-3-configure-the-connection-settings"></a>步驟3：設定連接設定
@@ -76,13 +76,13 @@ Azure Data Lake Storage Gen2 Graph connector 可讓您組織中的使用者搜�
 
 ### <a name="azure-data-lake-gen-2"></a>Azure Data Lake Gen 2
 
-您可以選擇從您的 [Azure Data Lake Gen 2 儲存體](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) 帳戶中 (ACLs) 上插入存取控制清單。 當您設定這些搜尋許可權時，會根據使用者在 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/)中簽署的許可權來裁切搜尋內容。 或者，您也可以選擇讓組織中的所有人都可以看到從您的儲存體帳戶索引的所有內容。 在此情況下，您組織中的每個人都可以存取您儲存體帳戶中的所有資料。
+您可以選擇從您的 [Azure Data Lake Gen 2 儲存體](/azure/storage/blobs/data-lake-storage-introduction) 帳戶中 (ACLs) 上插入存取控制清單。 當您設定這些搜尋許可權時，會根據使用者在 [Azure Active Directory](/azure/active-directory/)中簽署的許可權來裁切搜尋內容。 或者，您也可以選擇讓組織中的所有人都可以看到從您的儲存體帳戶索引的所有內容。 在此情況下，您組織中的每個人都可以存取您儲存體帳戶中的所有資料。
 
 Azure Data Lake Storage Gen2 Graph connector 支援 **所有人都** 可以看到的搜尋許可權，或 **只有存取此資料來源的人員**。 可以存取每個專案的組織中的使用者看不見搜尋結果中顯示的索引資料。
 
 ### <a name="azure-blob-storage"></a>Azure Blob 儲存體
 
-若要連線至 [Azure Blob 儲存](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction)，您組織中的所有人都會看到所有從設定之來源編制索引的內容。 Azure Blob 儲存區的 Blob 層級不支援存取控制清單。
+若要連線至 [Azure Blob 儲存](/azure/storage/blobs/storage-blobs-introduction)，您組織中的所有人都會看到所有從設定之來源編制索引的內容。 Azure Blob 儲存區的 Blob 層級不支援存取控制清單。
 
 ## <a name="step-7-set-the-refresh-schedule"></a>步驟7：設定重新整理排程
 
@@ -90,7 +90,7 @@ Azure Data Lake Storage Gen2 Graph connector 支援 **所有人都** 可以看�
 
 ## <a name="step-8-review-connection"></a>步驟8：檢查連線
 
-遵循一般 [設定指示](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+遵循一般 [設定指示](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 <!---## Troubleshooting-->

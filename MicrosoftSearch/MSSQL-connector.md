@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Azure SQL 及 Microsoft SQL Graph connector 以進行 Microsoft 搜尋。
-ms.openlocfilehash: 499c0fad93f97e634086ff9025d947c4f70336fb
-ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
+ms.openlocfilehash: 81951dab058a14d687f81f7611ee624b079f0822
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50508902"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031402"
 ---
 <!---Previous ms.author: vivg --->
 
@@ -40,13 +40,13 @@ Microsoft SQL server 或 Azure SQL Graph 連接器可讓您的組織探索內部
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步驟1：在 Microsoft 365 系統管理中心新增圖表連接器
 
-遵循一般 [設定指示](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+遵循一般 [設定指示](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
 ## <a name="step-2-name-the-connection"></a>步驟2：命名連線
 
-遵循一般 [設定指示](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+遵循一般 [設定指示](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
@@ -54,9 +54,9 @@ instructions.-->
 
 ### <a name="register-an-app-for-azure-sql-connector-only"></a>僅針對 Azure SQL connector 註冊應用程式 () 
 
-針對 Azure SQL connector，您必須在 Azure Active Directory 中註冊應用程式，以允許 Microsoft Search 應用程式存取索引的資料。 若要深入瞭解如何註冊應用程式，請參閱 Microsoft Graph 檔，瞭解如何 [註冊應用程式](https://docs.microsoft.com/graph/auth-register-app-v2)。
+針對 Azure SQL connector，您必須在 Azure Active Directory 中註冊應用程式，以允許 Microsoft Search 應用程式存取索引的資料。 若要深入瞭解如何註冊應用程式，請參閱 Microsoft Graph 檔，瞭解如何 [註冊應用程式](/graph/auth-register-app-v2)。
 
-完成應用程式註冊並記下應用程式名稱、應用程式 (用戶端) 識別碼與租使用者識別碼後，您需要 [產生新的用戶端密碼](https://docs.microsoft.com/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret)。 用戶端密碼只會顯示一次。 請記住 & 會安全地儲存用戶端密碼。 在 Microsoft 搜尋中設定新的連線時，請使用用戶端識別碼和用戶端密碼。
+完成應用程式註冊並記下應用程式名稱、應用程式 (用戶端) 識別碼與租使用者識別碼後，您需要 [產生新的用戶端密碼](/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret)。 用戶端密碼只會顯示一次。 請記住 & 會安全地儲存用戶端密碼。 在 Microsoft 搜尋中設定新的連線時，請使用用戶端識別碼和用戶端密碼。
 
 若要將註冊的應用程式新增至 Azure SQL 資料庫，您必須：
 
@@ -66,7 +66,7 @@ instructions.-->
 - 執行命令 ' exec sp_addrolemember ' db_datareader '、[app name] 或 ' ALTER ROLE db_datareader ADD MEMBER [app name] '，將使用者新增至角色
 
 >[!NOTE]
->若要撤銷在 Azure Active Directory 中註冊的任何應用程式的存取權，請參閱 Azure 檔中關於 [移除已註冊的應用程式](https://docs.microsoft.com/azure/active-directory/develop/quickstart-remove-app)。
+>若要撤銷在 Azure Active Directory 中註冊的任何應用程式的存取權，請參閱 Azure 檔中關於 [移除已註冊的應用程式](/azure/active-directory/develop/quickstart-remove-app)。
 
 ### <a name="connection-settings"></a>連接設定
 
@@ -77,7 +77,7 @@ instructions.-->
 
 針對 Azure SQL connector，您只需要指定您要連線的伺服器名稱或 IP 位址。 Azure SQL connector 只支援 Azure Active Directory 開啟識別碼 connect (OIDC) authentication，以連接至資料庫。
 
-為了增加安全性，您可以為 Azure SQL server 或資料庫設定 IP 防火牆規則。 若要深入瞭解設定 IP 防火牆規則，請參閱 [IP 防火牆規則](https://docs.microsoft.com/azure/azure-sql/database/firewall-configure)的檔。 在 [防火牆設定] 中新增下列用戶端 IP 範圍。
+為了增加安全性，您可以為 Azure SQL server 或資料庫設定 IP 防火牆規則。 若要深入瞭解設定 IP 防火牆規則，請參閱 [IP 防火牆規則](/azure/azure-sql/database/firewall-configure)的檔。 在 [防火牆設定] 中新增下列用戶端 IP 範圍。
 
 | 地區 | IP 範圍 |
 | ------------ | ------------ |
@@ -115,7 +115,7 @@ instructions.-->
 
 ### <a name="supported-data-types"></a>支援的資料類型
 
-下表摘要列出 MS SQL 和 Azure SQL 連接器中支援的 SQL 資料類型。 該表也會摘要支援的 SQL 資料類型的索引資料類型。 若要深入瞭解 Microsoft Graph 連接器支援的索引資料類型，請參閱 [屬性資源類型](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta#properties&preserve-view=true)的檔。
+下表摘要列出 MS SQL 和 Azure SQL 連接器中支援的 SQL 資料類型。 該表也會摘要支援的 SQL 資料類型的索引資料類型。 若要深入瞭解 Microsoft Graph 連接器支援的索引資料類型，請參閱 [屬性資源類型](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)的檔。
 
 | 類別 | 來源資料類型 | 索引資料類型 |
 | ------------ | ------------ | ------------ |
@@ -174,14 +174,14 @@ instructions.-->
 
 ## <a name="step-4-assign-property-labels"></a>步驟4：指派屬性標籤
 
-遵循一般 [設定指示](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+遵循一般 [設定指示](./configure-connector.md)。
 
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
 ## <a name="step-5-manage-schema"></a>步驟5：管理架構
 
-遵循一般 [設定指示](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+遵循一般 [設定指示](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
@@ -191,13 +191,13 @@ instructions.-->
 
 ## <a name="step-7-choose-refresh-settings"></a>步驟7：選擇重新整理設定
 
-遵循一般 [設定指示](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+遵循一般 [設定指示](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
 ## <a name="step-8-review-connection"></a>步驟8：檢查連線
 
-遵循一般 [設定指示](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+遵循一般 [設定指示](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 

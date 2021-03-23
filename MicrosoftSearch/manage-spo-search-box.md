@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 如何在 SharePoint 網站上自訂搜尋框體驗
-ms.openlocfilehash: 6ebd084aadb38acb5475b7e43d7c4092ffc09eb8
-ms.sourcegitcommit: c5fe4e01403379b3ee7ea4dbded8b31696311d79
+ms.openlocfilehash: c58e7cf0a47d22fa9c6fd3abd93cc97087625690
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49700962"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031357"
 ---
 # <a name="search-box-settings-on-sharepoint-sites"></a>SharePoint 網站上的搜尋方塊設定
 
@@ -28,7 +28,7 @@ ms.locfileid: "49700962"
 > [!NOTE]
 > 現在所有客戶都無法使用 [套件導覽列] 搜尋方塊，但這些選項仍可供設定，而且會在可用時生效。
 
-對於下列所列的工作，您將使用 PowerShell 搭配 SharePoint PnP PowerShell 擴充。 您可以安裝並深入瞭解如何開始 [這裡](https://docs.microsoft.com/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets?view=sharepoint-ps)。 您將使用下列命令登入您的網站或網站集合：
+對於下列所列的工作，您將使用 PowerShell 搭配 SharePoint PnP PowerShell 擴充。 您可以安裝並深入瞭解如何開始 [這裡](/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets?view=sharepoint-ps)。 您將使用下列命令登入您的網站或網站集合：
 
 ```powershell
 Connect-PnPOnline -Url <yoursiteurl> -UseWebLogin

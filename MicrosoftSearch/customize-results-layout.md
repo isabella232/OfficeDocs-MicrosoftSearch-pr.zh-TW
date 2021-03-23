@@ -12,23 +12,23 @@ search.appverid:
 - MET150
 - MOE150
 description: 使用適應性卡，建立配置以查看自訂的搜尋結果
-ms.openlocfilehash: 425e5404c14d500f6ecd84ad449dafb05bbfd31b
-ms.sourcegitcommit: 59435698bece013ae64ca2a68c43455ca10e3fdf
+ms.openlocfilehash: d29b1a45f11079f4b71f71a387cf43cbf2f48e7d
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48927178"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031735"
 ---
 <!-- markdownlint-disable no-hard-tabs -->
 # <a name="create-a-layout-to-customize-search-results"></a>建立版式以自訂搜尋結果
 
 您可以使用 [搜尋版面配置設計工具]，設計自訂垂直方向的結果版面配置。 您可以選擇版面設計工具中提供的範本，以開始設計版面配置，並在符合您的需求時加以使用。 或者，您可以選擇以各種方式編輯這些範本，以符合您的需求。 例如，新增/移除影像、新增/移除文字，以及修改文字。 若所有範本都不符合您的需求，您可以選擇使用空白範本來開始設計您的版面配置。  
 
-準備好版面配置之後，請使用 [自我調整卡範本語言](https://docs.microsoft.com/adaptive-cards/templating/language) 來建立結果版面 JSON，用來定義結果類型。 您可以使用版面配置設計工具中的對應步驟，將結果屬性對應至 layout。  
+準備好版面配置之後，請使用 [自我調整卡範本語言](/adaptive-cards/templating/language) 來建立結果版面 JSON，用來定義結果類型。 您可以使用版面配置設計工具中的對應步驟，將結果屬性對應至 layout。  
 
 ## <a name="create-a-layout-on-your-own"></a>自行建立版面配置
 
-您必須瞭解 [自訂卡](https://docs.microsoft.com/adaptive-cards/authoring-cards/getting-started) 及其 [架構](https://adaptivecards.io/explorer/)，才能自行建立版面配置。 搜尋結果版面配置使用自我調整卡所提供之元素的子集，您可以使用版面配置設計工具來瞭解支援的元素集合。  
+您必須瞭解 [自訂卡](/adaptive-cards/authoring-cards/getting-started) 及其 [架構](https://adaptivecards.io/explorer/)，才能自行建立版面配置。 搜尋結果版面配置使用自我調整卡所提供之元素的子集，您可以使用版面配置設計工具來瞭解支援的元素集合。  
 
 建立您自己的版面配置時，請使用連接器中的資料建立自我調整卡的版面配置，然後完成 layout。
 建立您自己的版面配置有兩個主要步驟：
@@ -195,7 +195,7 @@ ms.locfileid: "48927178"
 
 ### <a name="dont"></a>不要
 
-- 綁定值時，請勿定義不正確資料類型。 如需資料類型的相關資訊，請參閱 [管理搜尋架構](https://docs.microsoft.com/sharepoint/search/manage-the-search-schema)。
+- 綁定值時，請勿定義不正確資料類型。 如需資料類型的相關資訊，請參閱 [管理搜尋架構](/sharepoint/search/manage-the-search-schema)。
 - 請遵循結果版面 JSON 的最大高度，避免在結果頁面上裁剪結果。 如果您超出結果版面配置的最大高度，將會在結果頁面上裁剪結果。
 - 不使用 `px` 元素屬性中的值。
 - 在結果版面配置中，請勿使用 markdown 搭配 **ResultSnippet** 屬性，在搜尋結果中醒目提示查詢比對。
@@ -204,8 +204,8 @@ ms.locfileid: "48927178"
 
 [自訂搜尋結果頁面](customize-search-page.md)
 
-[自我調整卡片](https://docs.microsoft.com/adaptive-cards/authoring-cards/getting-started)
+[自我調整卡片](/adaptive-cards/authoring-cards/getting-started)
 
-[自我調整卡片範本語言](https://docs.microsoft.com/adaptive-cards/templating/language)
+[自我調整卡片範本語言](/adaptive-cards/templating/language)
 
 [自我調整卡片架構](https://adaptivecards.io/explorer/)

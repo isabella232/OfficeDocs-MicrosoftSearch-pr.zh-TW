@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的 Azure DevOps 圖形連接器
-ms.openlocfilehash: 9307aabbf5ea1565e083abfefb90c590d356ae58
-ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
+ms.openlocfilehash: 9352f619e0a48bc2dac8441107f87f725211ab13
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50508858"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031312"
 ---
 <!---Previous ms.author: shgrover --->
 
@@ -40,23 +40,23 @@ Azure DevOps Graph 連接器可讓您的組織為其 Azure DevOps 服務實例�
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步驟1：在 Microsoft 365 系統管理中心新增圖表連接器
 
-遵循一般 [設定指示](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+遵循一般 [設定指示](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
 ## <a name="step-2-name-the-connection"></a>步驟2：命名連線
 
-遵循一般 [設定指示](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+遵循一般 [設定指示](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
 ## <a name="step-3-configure-the-connection-settings"></a>步驟3：設定連接設定
 
-若要連線至 Azure DevOps 實例，您需要 Azure DevOps [組織](https://docs.microsoft.com/azure/devops/organizations/accounts/create-organization) 名稱、其應用程式識別碼，以及 OAuth 驗證的用戶端密碼。
+若要連線至 Azure DevOps 實例，您需要 Azure DevOps [組織](/azure/devops/organizations/accounts/create-organization) 名稱、其應用程式識別碼，以及 OAuth 驗證的用戶端密碼。
 
 ### <a name="register-an-app"></a>註冊應用程式
 
-在 Azure DevOps 中註冊應用程式，以便 Microsoft 搜尋應用程式可以存取實例。 若要深入瞭解，請參閱 Azure DevOps 檔，以瞭解如何 [註冊應用程式](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/oauth?view=azure-devops#register-your-app&preserve-view=true)。
+在 Azure DevOps 中註冊應用程式，以便 Microsoft 搜尋應用程式可以存取實例。 若要深入瞭解，請參閱 Azure DevOps 檔，以瞭解如何 [註冊應用程式](/azure/devops/integrate/get-started/authentication/oauth?preserve-view=true&view=azure-devops#register-your-app)。
 
 下表提供如何填寫 [應用程式註冊] 表單的指導方針：
 
@@ -99,11 +99,11 @@ Azure DevOps 連接器只支援可供  **存取此資料來源** 或 **所有�
 
 ## <a name="step-5-assign-property-labels"></a>步驟5：指派屬性標籤
 
-遵循一般 [設定指示](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+遵循一般 [設定指示](./configure-connector.md)。
 
 ## <a name="step-6-manage-schema"></a>步驟6：管理架構
 
-遵循一般 [設定指示](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+遵循一般 [設定指示](./configure-connector.md)。
 
 ## <a name="step-7-choose-refresh-settings"></a>步驟7：選擇重新整理設定
 
@@ -112,7 +112,7 @@ Azure DevOps 連接器支援完整和累加編目的更新排程。
 
 ## <a name="step-8-review-connection"></a>步驟8：檢查連線
 
-遵循一般 [設定指示](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+遵循一般 [設定指示](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 

@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 審閱 Microsoft Search 流量報告
-ms.openlocfilehash: ad349e60794f219fa757861081b12a33c6806091
-ms.sourcegitcommit: 25b82bce1eaec5803111161b04ee9fd9e82a0bd8
+ms.openlocfilehash: 2237fc978ad7b0d7b94b342a9f2646c9da6b73a4
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50072237"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031744"
 ---
 # <a name="microsoft-search-usage-reports"></a>Microsoft 搜尋使用方式報告
 
-搜尋使用方式報告可讓您深入瞭解搜尋在組織中的運作方式。 從這些報告產生的資訊可協助您 [進行內容的尋找](https://docs.microsoft.com/microsoftsearch/make-content-easy-to-find) ，並採取動作，讓您的使用者能夠更有説明和 delightful 的體驗。
+搜尋使用方式報告可讓您深入瞭解搜尋在組織中的運作方式。 從這些報告產生的資訊可協助您 [進行內容的尋找](./make-content-easy-to-find.md) ，並採取動作，讓您的使用者能夠更有説明和 delightful 的體驗。
 
 [Microsoft 搜尋使用方式報告](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights)包含從搜尋產生的圖形和表格，從 SharePoint Home 和 Office.com 搜尋方塊中執行。 您可以看到過去31天、每天或每月過去一年的資料。 這些報告只會產生，所以需要一些時間才能累算歷史資料。
 

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: 建立和更新用來大量編輯 Microsoft 搜尋書簽結果的書簽和方式
-ms.openlocfilehash: b801e75f772a585c2ddfedd09aff3b74c1d909b5
-ms.sourcegitcommit: 2f770de12b27546b18b2e86517d2c25522eb9022
+ms.openlocfilehash: e8488146a041e7165596dafff8012adfa1122341
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929605"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031726"
 ---
 # <a name="manage-bookmarks"></a>管理書籤
 
@@ -160,4 +160,4 @@ ms.locfileid: "50929605"
 
 **問：哪裡可以找到適用于電源應用程式的應用程式識別碼？**
 
-**A**：請移至電源應用程式網站，並查看應用程式的詳細資料窗格。 深入瞭解 [取得應用程式識別碼](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id)。
+**A**：請移至電源應用程式網站，並查看應用程式的詳細資料窗格。 深入瞭解 [取得應用程式識別碼](/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id)。

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 在 Microsoft 搜尋中建立及更新縮寫的答案
-ms.openlocfilehash: 45d3cc7b33f27d2f4e77d8099fbfa91e01aabcbb
-ms.sourcegitcommit: ef94ffd6111acb929c8343f0f4f82ea109b68fb6
+ms.openlocfilehash: 5677ff6915c9e43e2559964c40086cb360a05db7
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50122154"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031366"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>管理 Microsoft 搜尋中的縮寫詞答案
 
@@ -124,5 +124,5 @@ Microsoft 搜尋可確保只有對檔具有存取權和許可權的使用者才�
 
 **問：如果我的組織不想要顯示系統策劃首字母縮寫，該怎麼辦？我是否可以在搜尋結果中停止顯示此類型的縮寫？**
 
-**A**：若要在搜尋結果中關閉顯示系統策劃首字母縮寫，請遵循 [商務產品的連絡人支援服務](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)中的指示，建立客戶支援票證。
+**A**：若要在搜尋結果中關閉顯示系統策劃首字母縮寫，請遵循 [商務產品的連絡人支援服務](/microsoft-365/admin/contact-support-for-business-products)中的指示，建立客戶支援票證。
 在您建立支援票證後，系統策劃縮寫的最多需要48小時，以避免出現在搜尋結果中。
