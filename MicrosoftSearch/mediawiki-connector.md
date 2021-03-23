@@ -13,78 +13,78 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的 MediaWiki 圖形連接器
-ms.openlocfilehash: 1c2908de859056ccb26b862820e8b3be7a158569
-ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
+ms.openlocfilehash: 5922cf76aa112430f9f6e857066acd054182058c
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50508767"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031690"
 ---
 <!---Previous ms.author: monaray --->
 
-# <a name="mediawiki-graph-connector"></a><span data-ttu-id="2e0a2-103">MediaWiki Graph 連接器</span><span class="sxs-lookup"><span data-stu-id="2e0a2-103">MediaWiki Graph connector</span></span>
+# <a name="mediawiki-graph-connector"></a><span data-ttu-id="b7d86-103">MediaWiki Graph 連接器</span><span class="sxs-lookup"><span data-stu-id="b7d86-103">MediaWiki Graph connector</span></span>
 
-<span data-ttu-id="2e0a2-104">MediaWiki Graph 連接器可讓您的組織從使用 MediaWiki 軟體所建立的 wiki 探索和編制資料。</span><span class="sxs-lookup"><span data-stu-id="2e0a2-104">The MediaWiki Graph connector allows your organization to discover and index data from a wiki created by using MediaWiki software.</span></span> <span data-ttu-id="2e0a2-105">此連接器會將指定的內容索引至 Microsoft 搜尋中，並支援定期編目，使索引保持在最新狀態。</span><span class="sxs-lookup"><span data-stu-id="2e0a2-105">This connector indexes specified content into Microsoft Search and supports periodic crawls to keep the index up to date.</span></span>
+<span data-ttu-id="b7d86-104">MediaWiki Graph 連接器可讓您的組織從使用 MediaWiki 軟體所建立的 wiki 探索和編制資料。</span><span class="sxs-lookup"><span data-stu-id="b7d86-104">The MediaWiki Graph connector allows your organization to discover and index data from a wiki created by using MediaWiki software.</span></span> <span data-ttu-id="b7d86-105">此連接器會將指定的內容索引至 Microsoft 搜尋中，並支援定期編目，使索引保持在最新狀態。</span><span class="sxs-lookup"><span data-stu-id="b7d86-105">This connector indexes specified content into Microsoft Search and supports periodic crawls to keep the index up to date.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="2e0a2-106">請閱讀 [**您的圖形連接器**](configure-connector.md) 文章的設定，以瞭解一般圖表連接器設定指示。</span><span class="sxs-lookup"><span data-stu-id="2e0a2-106">Read the [**Setup for your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup instructions.</span></span>
+> <span data-ttu-id="b7d86-106">請閱讀 [**您的圖形連接器**](configure-connector.md) 文章的設定，以瞭解一般圖表連接器設定指示。</span><span class="sxs-lookup"><span data-stu-id="b7d86-106">Read the [**Setup for your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup instructions.</span></span>
 
-<span data-ttu-id="2e0a2-107">本文適用于任何設定、執行及監控 MediaWiki Graph 連接器的人員。</span><span class="sxs-lookup"><span data-stu-id="2e0a2-107">This article is for anyone who configures, runs, and monitors a MediaWiki Graph connector.</span></span> <span data-ttu-id="2e0a2-108">它會補充一般設定程式，並顯示只適用于 MediaWiki Graph 連接器的指示。</span><span class="sxs-lookup"><span data-stu-id="2e0a2-108">It supplements the general setup process, and shows instructions that apply only for the MediaWiki Graph connector.</span></span> <span data-ttu-id="2e0a2-109">本文也包含 [限制](#limitations)的相關資訊。</span><span class="sxs-lookup"><span data-stu-id="2e0a2-109">This article also includes information about [Limitations](#limitations).</span></span>
+<span data-ttu-id="b7d86-107">本文適用于任何設定、執行及監控 MediaWiki Graph 連接器的人員。</span><span class="sxs-lookup"><span data-stu-id="b7d86-107">This article is for anyone who configures, runs, and monitors a MediaWiki Graph connector.</span></span> <span data-ttu-id="b7d86-108">它會補充一般設定程式，並顯示只適用于 MediaWiki Graph 連接器的指示。</span><span class="sxs-lookup"><span data-stu-id="b7d86-108">It supplements the general setup process, and shows instructions that apply only for the MediaWiki Graph connector.</span></span> <span data-ttu-id="b7d86-109">本文也包含 [限制](#limitations)的相關資訊。</span><span class="sxs-lookup"><span data-stu-id="b7d86-109">This article also includes information about [Limitations](#limitations).</span></span>
 
 <!---## Before you get started-->
 
 <!---Insert "Before you get started" recommendations for this data source-->
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a><span data-ttu-id="2e0a2-110">步驟1：在 Microsoft 365 系統管理中心新增圖表連接器</span><span class="sxs-lookup"><span data-stu-id="2e0a2-110">Step 1: Add a Graph connector in the Microsoft 365 admin center</span></span>
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a><span data-ttu-id="b7d86-110">步驟1：在 Microsoft 365 系統管理中心新增圖表連接器</span><span class="sxs-lookup"><span data-stu-id="b7d86-110">Step 1: Add a Graph connector in the Microsoft 365 admin center</span></span>
 
-<span data-ttu-id="2e0a2-111">遵循一般 [設定指示](https://docs.microsoft.com/microsoftsearch/configure-connector)。</span><span class="sxs-lookup"><span data-stu-id="2e0a2-111">Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).</span></span>
+<span data-ttu-id="b7d86-111">遵循一般 [設定指示](./configure-connector.md)。</span><span class="sxs-lookup"><span data-stu-id="b7d86-111">Follow the general [setup instructions](./configure-connector.md).</span></span>
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="step-2-name-the-connection"></a><span data-ttu-id="2e0a2-112">步驟2：命名連線</span><span class="sxs-lookup"><span data-stu-id="2e0a2-112">Step 2: Name the connection</span></span>
+## <a name="step-2-name-the-connection"></a><span data-ttu-id="b7d86-112">步驟2：命名連線</span><span class="sxs-lookup"><span data-stu-id="b7d86-112">Step 2: Name the connection</span></span>
 
-<span data-ttu-id="2e0a2-113">遵循一般 [設定指示](https://docs.microsoft.com/microsoftsearch/configure-connector)。</span><span class="sxs-lookup"><span data-stu-id="2e0a2-113">Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).</span></span>
+<span data-ttu-id="b7d86-113">遵循一般 [設定指示](./configure-connector.md)。</span><span class="sxs-lookup"><span data-stu-id="b7d86-113">Follow the general [setup instructions](./configure-connector.md).</span></span>
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="step-3-configure-the-connection-settings"></a><span data-ttu-id="2e0a2-114">步驟3：設定連接設定</span><span class="sxs-lookup"><span data-stu-id="2e0a2-114">Step 3: Configure the connection settings</span></span>
+## <a name="step-3-configure-the-connection-settings"></a><span data-ttu-id="b7d86-114">步驟3：設定連接設定</span><span class="sxs-lookup"><span data-stu-id="b7d86-114">Step 3: Configure the connection settings</span></span>
 
-<span data-ttu-id="2e0a2-115">輸入您的 **WIKI URL** ，然後從下拉式功能表的 [選項] 功能表中選擇 **驗證類型** 。</span><span class="sxs-lookup"><span data-stu-id="2e0a2-115">Enter your **Wiki URL** and choose the **Authentication type** from the drop-down menu of options.</span></span> <span data-ttu-id="2e0a2-116">選項為 **None**、 **Basic** 及 **OAuth 2.0 AAD**。</span><span class="sxs-lookup"><span data-stu-id="2e0a2-116">The options are **None**, **Basic**, and **OAuth 2.0 AAD**.</span></span>
+<span data-ttu-id="b7d86-115">輸入您的 **WIKI URL** ，然後從下拉式功能表的 [選項] 功能表中選擇 **驗證類型** 。</span><span class="sxs-lookup"><span data-stu-id="b7d86-115">Enter your **Wiki URL** and choose the **Authentication type** from the drop-down menu of options.</span></span> <span data-ttu-id="b7d86-116">選項為 **None**、 **Basic** 及 **OAuth 2.0 AAD**。</span><span class="sxs-lookup"><span data-stu-id="b7d86-116">The options are **None**, **Basic**, and **OAuth 2.0 AAD**.</span></span>
 
-<span data-ttu-id="2e0a2-117">如果您選擇 [ **基本** ] 做為驗證類型，您將需要提供 wiki 的使用者 **名稱** 和 **密碼** 。</span><span class="sxs-lookup"><span data-stu-id="2e0a2-117">If you choose **Basic** as the Authentication type, you will need to provide the **Username** and **Password** for the wiki.</span></span>
+<span data-ttu-id="b7d86-117">如果您選擇 [ **基本** ] 做為驗證類型，您將需要提供 wiki 的使用者 **名稱** 和 **密碼** 。</span><span class="sxs-lookup"><span data-stu-id="b7d86-117">If you choose **Basic** as the Authentication type, you will need to provide the **Username** and **Password** for the wiki.</span></span>
 
-<span data-ttu-id="2e0a2-118">如果您選擇 **OAuth 2.0 AAD** 作為驗證類型，您將需要提供 wiki 安裝的 **資源識別碼** 。</span><span class="sxs-lookup"><span data-stu-id="2e0a2-118">If you choose **OAuth 2.0 AAD** as the Authentication type, you will need to provide the **Resource ID** of the wiki installation.</span></span> <span data-ttu-id="2e0a2-119">您也需要提供在 AAD 應用程式註冊頁面上產生的 **用戶端識別碼** 和 **用戶端密碼** 。</span><span class="sxs-lookup"><span data-stu-id="2e0a2-119">You will also need to provide the **Client ID** and **Client secret** generated on the AAD Application registration page.</span></span>
+<span data-ttu-id="b7d86-118">如果您選擇 **OAuth 2.0 AAD** 作為驗證類型，您將需要提供 wiki 安裝的 **資源識別碼** 。</span><span class="sxs-lookup"><span data-stu-id="b7d86-118">If you choose **OAuth 2.0 AAD** as the Authentication type, you will need to provide the **Resource ID** of the wiki installation.</span></span> <span data-ttu-id="b7d86-119">您也需要提供在 AAD 應用程式註冊頁面上產生的 **用戶端識別碼** 和 **用戶端密碼** 。</span><span class="sxs-lookup"><span data-stu-id="b7d86-119">You will also need to provide the **Client ID** and **Client secret** generated on the AAD Application registration page.</span></span>
 
-## <a name="step-4-manage-search-permissions"></a><span data-ttu-id="2e0a2-120">步驟4：管理搜尋許可權</span><span class="sxs-lookup"><span data-stu-id="2e0a2-120">Step 4: Manage search permissions</span></span>
+## <a name="step-4-manage-search-permissions"></a><span data-ttu-id="b7d86-120">步驟4：管理搜尋許可權</span><span class="sxs-lookup"><span data-stu-id="b7d86-120">Step 4: Manage search permissions</span></span>
 
-<span data-ttu-id="2e0a2-121">MediaWiki 連接器只支援 **所有人都** 能看見的搜尋許可權。</span><span class="sxs-lookup"><span data-stu-id="2e0a2-121">The MediaWiki connector only supports search permissions visible to **Everyone**.</span></span> <span data-ttu-id="2e0a2-122">已編制索引的資料會顯示在搜尋結果中，並對組織中的所有使用者顯示。</span><span class="sxs-lookup"><span data-stu-id="2e0a2-122">Indexed data appears in the search results and is visible to all users in the organization.</span></span>
+<span data-ttu-id="b7d86-121">MediaWiki 連接器只支援 **所有人都** 能看見的搜尋許可權。</span><span class="sxs-lookup"><span data-stu-id="b7d86-121">The MediaWiki connector only supports search permissions visible to **Everyone**.</span></span> <span data-ttu-id="b7d86-122">已編制索引的資料會顯示在搜尋結果中，並對組織中的所有使用者顯示。</span><span class="sxs-lookup"><span data-stu-id="b7d86-122">Indexed data appears in the search results and is visible to all users in the organization.</span></span>
 
-## <a name="step-5-assign-property-labels"></a><span data-ttu-id="2e0a2-123">步驟5：指派屬性標籤</span><span class="sxs-lookup"><span data-stu-id="2e0a2-123">Step 5: Assign property labels</span></span>
+## <a name="step-5-assign-property-labels"></a><span data-ttu-id="b7d86-123">步驟5：指派屬性標籤</span><span class="sxs-lookup"><span data-stu-id="b7d86-123">Step 5: Assign property labels</span></span>
 
-<span data-ttu-id="2e0a2-124">遵循一般 [設定指示](https://docs.microsoft.com/microsoftsearch/configure-connector)。</span><span class="sxs-lookup"><span data-stu-id="2e0a2-124">Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).</span></span>
+<span data-ttu-id="b7d86-124">遵循一般 [設定指示](./configure-connector.md)。</span><span class="sxs-lookup"><span data-stu-id="b7d86-124">Follow the general [setup instructions](./configure-connector.md).</span></span>
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="step-6-manage-schema"></a><span data-ttu-id="2e0a2-125">步驟6：管理架構</span><span class="sxs-lookup"><span data-stu-id="2e0a2-125">Step 6: Manage schema</span></span>
+## <a name="step-6-manage-schema"></a><span data-ttu-id="b7d86-125">步驟6：管理架構</span><span class="sxs-lookup"><span data-stu-id="b7d86-125">Step 6: Manage schema</span></span>
 
-<span data-ttu-id="2e0a2-126">遵循一般 [設定指示](https://docs.microsoft.com/microsoftsearch/configure-connector)。</span><span class="sxs-lookup"><span data-stu-id="2e0a2-126">Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).</span></span>
+<span data-ttu-id="b7d86-126">遵循一般 [設定指示](./configure-connector.md)。</span><span class="sxs-lookup"><span data-stu-id="b7d86-126">Follow the general [setup instructions](./configure-connector.md).</span></span>
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="step-7-choose-refresh-settings"></a><span data-ttu-id="2e0a2-127">步驟7：選擇重新整理設定</span><span class="sxs-lookup"><span data-stu-id="2e0a2-127">Step 7: Choose refresh settings</span></span>
+## <a name="step-7-choose-refresh-settings"></a><span data-ttu-id="b7d86-127">步驟7：選擇重新整理設定</span><span class="sxs-lookup"><span data-stu-id="b7d86-127">Step 7: Choose refresh settings</span></span>
 
-<span data-ttu-id="2e0a2-128">遵循一般 [設定指示](https://docs.microsoft.com/microsoftsearch/configure-connector)。</span><span class="sxs-lookup"><span data-stu-id="2e0a2-128">Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).</span></span>
+<span data-ttu-id="b7d86-128">遵循一般 [設定指示](./configure-connector.md)。</span><span class="sxs-lookup"><span data-stu-id="b7d86-128">Follow the general [setup instructions](./configure-connector.md).</span></span>
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="step-8-review-connection"></a><span data-ttu-id="2e0a2-129">步驟8：檢查連線</span><span class="sxs-lookup"><span data-stu-id="2e0a2-129">Step 8: Review connection</span></span>
+## <a name="step-8-review-connection"></a><span data-ttu-id="b7d86-129">步驟8：檢查連線</span><span class="sxs-lookup"><span data-stu-id="b7d86-129">Step 8: Review connection</span></span>
 
-<span data-ttu-id="2e0a2-130">遵循一般 [設定指示](https://docs.microsoft.com/microsoftsearch/configure-connector)。</span><span class="sxs-lookup"><span data-stu-id="2e0a2-130">Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).</span></span>
+<span data-ttu-id="b7d86-130">遵循一般 [設定指示](./configure-connector.md)。</span><span class="sxs-lookup"><span data-stu-id="b7d86-130">Follow the general [setup instructions](./configure-connector.md).</span></span>
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 <!---## Troubleshooting-->
 <!---To be added-->
 
-## <a name="limitations"></a><span data-ttu-id="2e0a2-131">限制</span><span class="sxs-lookup"><span data-stu-id="2e0a2-131">Limitations</span></span>
+## <a name="limitations"></a><span data-ttu-id="b7d86-131">限制</span><span class="sxs-lookup"><span data-stu-id="b7d86-131">Limitations</span></span>
 
-<span data-ttu-id="2e0a2-132">MediaWiki 連接器在預覽版本中有下列限制：</span><span class="sxs-lookup"><span data-stu-id="2e0a2-132">The MediaWiki connector has these limitations in the preview release:</span></span>
+<span data-ttu-id="b7d86-132">MediaWiki 連接器在預覽版本中有下列限制：</span><span class="sxs-lookup"><span data-stu-id="b7d86-132">The MediaWiki connector has these limitations in the preview release:</span></span>
 
-* <span data-ttu-id="2e0a2-133">僅支援雲端型 wiki。</span><span class="sxs-lookup"><span data-stu-id="2e0a2-133">Supports only cloud-based wikis.</span></span>
-* <span data-ttu-id="2e0a2-134">使用 Azure Active Directory 或 Azure 驗證，僅支援 Basic 或 OAuth 2.0。</span><span class="sxs-lookup"><span data-stu-id="2e0a2-134">Supports only Basic or OAuth 2.0 with Azure Active Directory or Azure authentication.</span></span>
-* <span data-ttu-id="2e0a2-135">不支援索引的命名空間選取。</span><span class="sxs-lookup"><span data-stu-id="2e0a2-135">Doesn't support namespace selection for indexing.</span></span> <span data-ttu-id="2e0a2-136">僅索引主要、類別和檔案命名空間。</span><span class="sxs-lookup"><span data-stu-id="2e0a2-136">Indexes only Main, Category, and File namespaces.</span></span>
-* <span data-ttu-id="2e0a2-137">不支援 (ACLs) 的存取控制清單。</span><span class="sxs-lookup"><span data-stu-id="2e0a2-137">Doesn't support Access Control Lists (ACLs).</span></span> <span data-ttu-id="2e0a2-138">因此，組織中的所有使用者都能看到索引頁面。</span><span class="sxs-lookup"><span data-stu-id="2e0a2-138">Thus, indexed pages are visible to all users in the organization.</span></span>
+* <span data-ttu-id="b7d86-133">僅支援雲端型 wiki。</span><span class="sxs-lookup"><span data-stu-id="b7d86-133">Supports only cloud-based wikis.</span></span>
+* <span data-ttu-id="b7d86-134">使用 Azure Active Directory 或 Azure 驗證，僅支援 Basic 或 OAuth 2.0。</span><span class="sxs-lookup"><span data-stu-id="b7d86-134">Supports only Basic or OAuth 2.0 with Azure Active Directory or Azure authentication.</span></span>
+* <span data-ttu-id="b7d86-135">不支援索引的命名空間選取。</span><span class="sxs-lookup"><span data-stu-id="b7d86-135">Doesn't support namespace selection for indexing.</span></span> <span data-ttu-id="b7d86-136">僅索引主要、類別和檔案命名空間。</span><span class="sxs-lookup"><span data-stu-id="b7d86-136">Indexes only Main, Category, and File namespaces.</span></span>
+* <span data-ttu-id="b7d86-137">不支援 (ACLs) 的存取控制清單。</span><span class="sxs-lookup"><span data-stu-id="b7d86-137">Doesn't support Access Control Lists (ACLs).</span></span> <span data-ttu-id="b7d86-138">因此，組織中的所有使用者都能看到索引頁面。</span><span class="sxs-lookup"><span data-stu-id="b7d86-138">Thus, indexed pages are visible to all users in the organization.</span></span>
