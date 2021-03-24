@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 搜尋的 Microsoft Graph 連接器概述
-ms.openlocfilehash: 2d49471c703b765f6e99324f39dbe730f6dea814
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: 77f145f58cf06e49f88af25bcb4d28cfa7d2bd56
+ms.sourcegitcommit: 08a7086185d28df14b06d1f7fdfbb1637288f7a5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031654"
+ms.locfileid: "51042572"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -124,7 +124,7 @@ Microsoft 提供9個圖形連接器，而且我們的生態系統合作夥伴已
 
 ## <a name="how-do-i-customize-search-results"></a>如何自訂搜尋結果？
 
-下一步是自訂搜尋結果（如本文中所建議的） [如何自訂及設定搜尋結果？](#how-do-i-customize-and-configure-search-results)。 若要深入瞭解自訂搜尋結果，請參閱 [自訂搜尋結果頁面](./configure-connector.md#next-steps-customize-the-search-results-page)。
+下一步是自訂搜尋結果（如本文中所建議的） [如何自訂及設定搜尋結果？](#how-do-i-customize-and-configure-search-results)。 若要深入瞭解自訂搜尋結果，請參閱 [自訂搜尋結果頁面](customize-search-page.md)。
 
 ## <a name="what-are-the-connector-limitations"></a>連接器限制為何？
 
