@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 搜尋的 Microsoft Graph 連接器公開預覽的授權需求和價格
-ms.openlocfilehash: efee543ff864b72e39df228ac2c577d911ff31e4
-ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
+ms.openlocfilehash: 23eed2c107b8b0ee04d772b3d2a77fb5db9c1902
+ms.sourcegitcommit: 62cb7b8c6a311760cc728f2c70a9a22ca76e977e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50508776"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408703"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -38,7 +38,7 @@ ms.locfileid: "50508776"
 
 ## <a name="entitlement-built-into-microsoft-365-or-office-365-e5-licenses"></a>Microsoft 365 或 Office 365 E5 授權中內建的權利
 
-Microsoft 365 E5 或 Office 365 E5 授權類型包含從索引配額的500專案的權利，這些專案會向您組織的 ingesting 內容從圖形連接器中計數。
+Microsoft 365 E5 或 Office 365 E5 授權類型包含從索引配額的500專案的權利，這些專案會向您組織的 ingesting 內容從圖形連接器中計數。 請注意，這不會包含在 Microsoft 365 A5 或 Office 365 A5 中。
 
 例如，如果您的組織有 100 Microsoft 365 E5 授權，則您的組織有 100 x 500 = 包含圖形連接器索引配額的50000專案。
 
