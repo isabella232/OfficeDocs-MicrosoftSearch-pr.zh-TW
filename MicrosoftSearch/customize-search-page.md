@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 新增搜尋行業及自訂搜尋結果
-ms.openlocfilehash: 75dd6193308f52e7bfbb787d8f8dc27def834751
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: c6104383698203fde48d217506da57941efa680f
+ms.sourcegitcommit: 0aca0a5c9152b1b5e8345c91edadfae0b30f57c8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031645"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587737"
 ---
 # <a name="customize-the-search-results-page"></a>自訂搜尋結果頁面
 
@@ -116,7 +116,10 @@ ms.locfileid: "51031645"
 
 ## <a name="step-3-view-the-vertical-after-its-enabled"></a>步驟3：在啟用垂直後查看
 
-在您啟用垂直後，可能需要一段時間，才能進行查看。 如果您不想要等到啟用它之後，您可以在 [SharePoint](https://sharepoint.com/)和 [Office](https://office.com)的 URL 中附加 **cacheClear = true** ，以立即查看垂直。 針對 [Bing](https://bing.com)，append **&features = uncachedVerticals** 至工作垂直 URL，以立即查看縱向。
+在您啟用垂直後，您可以花幾小時的時間，才能進行查看。 如果您不想要等到啟用它之後，您可以在 [SharePoint](https://sharepoint.com/)和 [Office](https://office.com)的 URL 中附加 **cacheClear = true** ，以立即查看垂直。 針對 [Bing](https://bing.com)，append **&features = uncachedVerticals** 至工作垂直 URL，以立即查看縱向。 
+
+> [!NOTE]
+> 從行動網頁瀏覽器查看時，在 [SharePoint](https://sharepoint.com/) 和 [Office](https://office.com) 上看不到所增添的縱向。
 
 ## <a name="troubleshooting"></a>疑難排解
 
