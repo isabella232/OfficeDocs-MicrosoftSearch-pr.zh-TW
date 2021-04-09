@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 新增搜尋行業及自訂搜尋結果
-ms.openlocfilehash: c6104383698203fde48d217506da57941efa680f
-ms.sourcegitcommit: 0aca0a5c9152b1b5e8345c91edadfae0b30f57c8
+ms.openlocfilehash: e5c4ab8d507e0e6096a5b9d52dc0e818faebefb6
+ms.sourcegitcommit: a07c957dfa1d31542f0362379251bc9679dfae41
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587737"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51639851"
 ---
 # <a name="customize-the-search-results-page"></a>自訂搜尋結果頁面
 
@@ -40,6 +40,9 @@ ms.locfileid: "51587737"
 如果您正確指派盡可能多的語義標籤，則會增強這種體驗。 您可以在架構定義及攝取時新增語義標籤。
 
 [以下](configure-connector.md#step-5-assign-property-labels) 是如何建立及管理語義標籤的其他資訊。
+
+> [!NOTE]
+> 垂直中的多個連線目前正在預覽中。 如需預覽的詳細資訊，請參閱 [連接器預覽功能](connectors-overview.md#what-are-the-preview-features)。
 
 ### <a name="things-you-should-know"></a>您應該知道的事項
 

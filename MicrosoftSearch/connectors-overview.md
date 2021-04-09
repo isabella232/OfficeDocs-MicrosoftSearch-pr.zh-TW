@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 搜尋的 Microsoft Graph 連接器概述
-ms.openlocfilehash: 77f145f58cf06e49f88af25bcb4d28cfa7d2bd56
-ms.sourcegitcommit: 08a7086185d28df14b06d1f7fdfbb1637288f7a5
+ms.openlocfilehash: ccf1e746c2a8bf97429bf5b13c8340db015e3eb1
+ms.sourcegitcommit: a07c957dfa1d31542f0362379251bc9679dfae41
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51042572"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51639860"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -108,6 +108,7 @@ Microsoft 提供9個圖形連接器，而且我們的生態系統合作夥伴已
 * [Salesforce 連接器](salesforce-connector.md)
 * 具有使用來源 ACLs 之搜尋許可權的[ServiceNow 連接器](servicenow-connector.md)
 * [管理結果叢集](result-cluster.md)
+* [垂直中的多個連接](customize-search-page.md#multiple-connections-in-a-vertical)
 
 ## <a name="how-do-i-customize-and-configure-search-results"></a>如何自訂及設定搜尋結果？
 
@@ -128,14 +129,12 @@ Microsoft 提供9個圖形連接器，而且我們的生態系統合作夥伴已
 
 ## <a name="what-are-the-connector-limitations"></a>連接器限制為何？
 
-* 當您 **發佈** Microsoft 建立的連接器時，可能需要幾分鐘的時間來建立連線。 在此期間內，連接會顯示其狀態為 [擱置中]。
+* 當您 **發佈** Microsoft 建立的連接器時，可能需要幾分鐘的時間才能建立連線。 在此期間內，連接會顯示其狀態為 [擱置中]。
 
-* 在發佈連接後， [Microsoft 365 系統管理中心](https://admin.microsoft.com) 不支援編輯 **搜尋架構** 。 若要編輯搜尋架構，請刪除連接，然後建立新的連線。
-
-* 接收輸送量會限制每秒大約四個專案。
+* 接收輸送量會以每秒 approimately 四個專案的速率加以限制。
 
 * 不支援架構更新。 建立連線設定後，就無法更新架構。 您只可刪除並重新建立連線。
 
 * 連接限制。 每個租使用者最多可以建立10個連接。
 
-* 無法使用 [編輯連線支援]。 建立連線後，您就無法編輯或變更它。 如果您需要變更任何詳細資料，您必須刪除並重新建立連線。
+* 建立的連線之後，就無法進行編輯或變更。 如果您需要變更任何詳細資料，您必須刪除並重新建立連線。
