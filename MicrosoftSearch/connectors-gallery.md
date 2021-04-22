@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 列出 Microsoft 搜尋的所有 Microsoft Graph 連接器
-ms.openlocfilehash: e3d28aa9db3053fc47b03304e211956e366b6aa9
-ms.sourcegitcommit: 2a178850c521189a221879151faa7b3b0aff95d2
+ms.openlocfilehash: c5eaa19f599598066929b8c45da47a5ac3426928
+ms.sourcegitcommit: 2a24caf029caa97feeabaf7345aebaf28de4b2d9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51905562"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51928576"
 ---
 # <a name="microsoft-graph-connectors-gallery"></a>Microsoft Graph 連接器圖庫
 
@@ -2198,9 +2198,9 @@ SAP HANA (雲端版本) 連接器會利用來源資料庫的安全性，並提�
 
 依 [Accenture](https://www.accenture.com/)
 
+目前的服務連接器會編目來自 ServiceNow 的內容。
 
-
-[詳細資料]()
+[詳細資料](https://contentanalytics.digital.accenture.com/display/aspire40/ServiceNow+Connector)
 
    :::column-end:::
 
@@ -2220,9 +2220,9 @@ SAP HANA (雲端版本) 連接器會利用來源資料庫的安全性，並提�
 
 透過 [BA 真知灼見](https://www.bainsight.com/)
 
+ ServiceNow 連接器會考慮來源系統的安全性，並提供完整和累加編目，讓使用者永遠都能使用最新的資訊。
 
-
-[詳細資料]()
+[詳細資料](https://www.bainsight.com/connectors/servicenow-connector-sharepoint-azure-elasticsearch)
 
 :::column-end:::
 :::column span="":::
