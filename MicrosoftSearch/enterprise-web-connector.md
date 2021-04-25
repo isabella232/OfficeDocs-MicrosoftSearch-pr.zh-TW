@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的企業網站圖表連接器
-ms.openlocfilehash: 42c3f0a80b21e23bb625db06c4f9e89f2c10de4a
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: 4b8a14b216d7df68d0898bb72d926abe671047a4
+ms.sourcegitcommit: 56b7b5aa55413141c805f766bdf7bc63d721ef53
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031627"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51951019"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -58,11 +58,11 @@ ms.locfileid: "51031627"
 > [!NOTE]
 > 如果您要編目的網站已定義網站地圖，連接器將只會編目網站地圖中所列的 URLs。 若未定義網站地圖，連接器將會對該網站的根 URL 所找到的所有連結進行深入編目。
 
-### <a name="crawl-mode-cloud-or-on-premises-preview"></a>編目模式：雲端或內部部署 (預覽) 
+### <a name="crawl-mode-cloud-or-on-premises"></a>編目模式：雲端或內部部署
 
 編目模式會決定您要建立索引的網站類型（雲端或內部部署）。 針對您的雲端網站，選取 **雲端** 做為編目模式。
 
-此外，連接器現在也支援對內部部署網站進行編目。 此模式為預覽模式。 若要存取您的內部部署資料，您必須先安裝及設定圖形連接器代理程式。 若要深入瞭解，請參閱 [Graph connector agent](./on-prem-agent.md)。
+此外，連接器現在也支援對內部部署網站進行編目。 若要存取您的內部部署資料，您必須先安裝及設定圖形連接器代理程式。 若要深入瞭解，請參閱 [Graph connector agent](./on-prem-agent.md)。
 
 若為您的內部部署網站，請選取 [ **代理程式** ] 做為編目模式，並在 [部署中的 **代理程式** ] 欄位中，選擇您先前安裝及設定的圖形連接器代理程式。  
 
