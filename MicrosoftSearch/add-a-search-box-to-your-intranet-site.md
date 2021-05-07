@@ -3,7 +3,6 @@ title: 將搜尋方塊新增至您的內部網路網站
 ms.author: dawholl
 author: dawholl
 manager: kellis
-ms.date: 10/31/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -14,23 +13,23 @@ search.appverid:
 - MOE150
 ms.assetid: f980b90f-95e2-4b66-8b21-69f601ff4b50
 ROBOTS: NoIndex
-description: 將 Microsoft Search 的搜尋方塊新增至任何內部網路網站或頁面，以取得相關的搜尋建議並更快速尋找工作結果。
-ms.openlocfilehash: af12ce4d17c2695e196f8e4d79ccd515f002f238
-ms.sourcegitcommit: 92206ea179ec00b22496f6fd2866b5406449cf40
+description: 將 Microsoft 搜尋搜尋方塊新增至您的內部網路網站或頁面，以取得相關的搜尋建議並快速尋找工作結果。
+ms.openlocfilehash: c71f61971bf69c2eaa5fb7a48d0cb3d26af0ad07
+ms.sourcegitcommit: 5f0a8bdf274d02132a3b5211fb4738eb38d159db
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44798223"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52247761"
 ---
 # <a name="add-a-search-box-to-your-intranet-site"></a>將搜尋方塊新增至您的內部網路網站
 
-若要讓您的使用者能夠輕鬆存取組織的結果，請在 [Bing 搜尋] 方塊中新增 Microsoft 搜尋至任何內部網路網站或頁面。 以下是一些優點：
+若要讓您的使用者能夠輕鬆存取組織的結果，請在任何內部網路網站或頁面 Bing 搜尋方塊中新增 Microsoft 搜尋。 以下是一些優點：
 
 - SharePoint 或內部網路入口網站上的搜尋方塊，提供開始搜尋的熟悉、信任的進入點。
-- 支援所有主要網頁瀏覽器（包括 Google Chrome 和 Microsoft Edge）
+- 支援所有主要網頁瀏覽器，包括 Google Chrome 和 Microsoft Edge
 - 只會顯示您組織的搜尋建議，永遠不會包含 web 建議
-- 讓使用者加入 Bing 工作成果頁面中的 Microsoft 搜尋，但不包括廣告和 web 結果
-- 您可以控制搜尋方塊的外觀和行為
+- 在 Bing 工作成果] 頁面中，使用使用者來進行 Microsoft 搜尋，但不包括廣告和 web 結果
+- 您可以控制搜尋方塊的外觀和行為，包括讓使用者在預設垂直或自訂垂直上進行土地的功能。
   
 ## <a name="add-a-search-box-to-an-intranet-page"></a>將搜尋方塊新增至內部網路頁面
 
@@ -91,8 +90,10 @@ ms.locfileid: "44798223"
         height: 40,                             // default: 40, min: 40, max: 72
         cornerRadius: 6,                        // default: 6, min: 0, max: 25                                   
         strokeOutline: true,                    // default: true
-        dropShadow: true,                       // default: true
+        dropShadow: true,                       // default: false
         iconColor: "#067FA6",                   // default: #067FA6
+        title: "Search box",                    // default: "Search box"
+        vertical: "Person-people",              // default: not specified, search box directs to the All vertical on the WORK results page
         companyNameInGhostText: "Contoso"       // default: not specified
                                                 // when absent, ghost text will be "Search work"
                                                 // when specified, text will be "Search <companyNameInGhostText>"
@@ -101,10 +102,26 @@ ms.locfileid: "44798223"
 <script async src="https://www.bing.com/business/s?k=sb"></script>
 ```
 
+## <a name="direct-users-to-a-default-or-custom-vertical"></a>將使用者定向至預設或自訂的垂直
+
+若要在企業營運人員或內部網路網站與您的工作結果之間提供簡便的整合，您也可以自訂搜尋方塊，方法是指定使用者在按下搜尋建議時所應居住在該位置的預設或自訂垂直。
+
+使用 bfbSearchBoxConfig 中的 [垂直] 選項來定義您想要的垂直方向。 例如，如果您想要讓使用者永遠在網站上水準土地，其中一個預設的縱向，請使用「網站網站」值。
+
+![Microsoft 搜尋中的工作結果頁面螢幕擷取畫面 Bing 顯示網站的縱向結果和 URL](media/sites-vertical-esb.png)
+
+若為自訂的縱向，請在 URL 的結尾使用雜湊。 您可以從 Bing 中的 [工作] 頁面進行搜尋，按一下垂直標籤，然後在數位 sign ( # ) 之後複製值，以找到這些值。
+
+![Microsoft 搜尋中的工作結果頁面螢幕擷取畫面 Bing 顯示自訂簡報垂直結果和 URL](media/custom-vertical-esb.png)
+
 ## <a name="use-an-iframe-to-embed-a-search-box"></a>使用 iFrame 來內嵌搜尋方塊
 
-如果該網站沒有內嵌指令碼的選項，請使用 iFrame 來新增搜尋方塊。 您無法自訂搜尋方塊的外觀。
+如果該網站沒有內嵌指令碼的選項，請使用 iFrame 來新增搜尋方塊。 您將無法自訂搜尋方塊。
   
 ```html
 <iframe width="564" height="400" src="https://www.bing.com/business/searchbox"></iframe>
 ```
+
+## <a name="inprivate-mode-and-conditional-access"></a>InPrivate 模式和條件式存取
+
+如果在 InPrivate 視窗中開啟頁面或網站，就會停用內嵌搜尋方塊。 此外，在 Microsoft Edge 中使用 Azure AD 條件式存取支援，Bing 在使用 InPrivate 模式時不支援 AAD 登入。 如需 Edge 中的條件式存取的詳細資訊，請參閱[Microsoft Edge 和條件式存取](https://docs.microsoft.com/deployedge/ms-edge-security-conditional-access#accessing-conditional-access-protected-resources-in-microsoft-edge)。 
