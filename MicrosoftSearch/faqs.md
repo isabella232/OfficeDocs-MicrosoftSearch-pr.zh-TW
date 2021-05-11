@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 取得有關企業搜尋和 Microsoft Search 常見問題的解答
-ms.openlocfilehash: 98128297047d50e2d418a8ed062066ab9e86749e
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: 614fa241f353533b1c1e181904eb961fd55d0dfa
+ms.sourcegitcommit: ea784081bc9c3ae7981a87a493d3a74503859dda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031618"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52306068"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 # <a name="frequently-asked-questions"></a>常見問題集
@@ -31,23 +31,23 @@ ms.locfileid: "51031618"
 
 是的，Microsoft Search 會從較大的片語剖析查詢意圖。 此功能會使用 AI 以學習將常用多餘片語的使用者新增到查詢，但不影響使用者的搜尋意圖。 例如，當使用者搜尋有關 *如何變更密碼的詳細資訊* 時，我們會從查詢中解壓縮較不重要的字詞，並根據相關的 *變更密碼（如變更密碼*）進行觸發。
   
-這項功能不會覆寫 [Microsoft 365 系統管理中心](https://admin.microsoft.com)中的關鍵字集。
+這項功能不會覆寫[Microsoft 365 系統管理中心](https://admin.microsoft.com)的關鍵字集。
   
 ## <a name="can-you-search-for-files-on-premises"></a>可以搜尋內部部署檔案嗎？
 
-是。 如果您有 SharePoint 的混合式部署，您可以搜尋內部部署 [SharePoint](http://sharepoint.com/) 檔案。
+是。 如果您有 SharePoint 的混合式部署，您可以搜尋內部部署[SharePoint](http://sharepoint.com/)檔案。
   
 ## <a name="how-do-i-make-bing-the-default-search-engine-for-people-in-my-org"></a>如何讓 Bing 成為我的組織中人員的預設搜尋引擎？
 
-以下是設定預設搜尋引擎、預設首頁及預設瀏覽器的指示，可讓您的使用者在 [Bing](https://Bing.com)中使用 Microsoft search 的最佳體驗：
+以下是設定預設搜尋引擎、預設首頁及預設瀏覽器的指示，可讓您的使用者在[Bing](https://Bing.com)中使用 Microsoft 搜尋的最佳體驗：
 
-- [將 Microsoft Edge 設定為預設瀏覽器](/deployedge/edge-default-browser)
+- [將 Microsoft Edge 設定為您的預設瀏覽器](/deployedge/edge-default-browser)
 - [讓 Bing 成為預設搜尋引擎](set-default-search-engine.md)
 - [將 Bing.com 設為企業首頁](set-default-homepage.md)
 
 ## <a name="how-are-my-search-results-protected"></a>如何保護我的搜尋結果？
 
-我們需要 [Azure Active Directory](/azure/active-directory/) 驗證，才能存取受信任的雲端的結果。 已驗證的使用者只會看到他們有權存取的內容。 搜尋查詢會解除辨識，當您在 Bing 中使用 Microsoft Search 時，記錄會與 public [Bing](https://Bing.com) 搜尋流量分開。
+我們需要[Azure Active Directory](/azure/active-directory/)驗證，才能存取受信任的雲端的結果。 已驗證的使用者只會看到他們有權存取的內容。 搜尋查詢會解除辨識，當您在 Bing 中使用 Microsoft 搜尋時，記錄會與公用[Bing](https://Bing.com)搜尋流量分開。
 
 ## <a name="can-i-search-across-federated-organizations"></a>可以跨同盟組織搜尋嗎？
 
@@ -55,11 +55,7 @@ ms.locfileid: "51031618"
 
 ## <a name="where-can-i-get-info-about-office-365-security-compliance-and-privacy"></a>我可以在哪裡取得有關 Office 365 安全性、規範和隱私權的資訊？
 
-詳細資料可在 [Office 365 的 [信任中心] 頁面](https://www.microsoft.com/TrustCenter/CloudServices/office365/default.aspx)上找到。
-
-## <a name="can-users-earn-microsoft-rewards-points-with-their-work-or-school-account"></a>使用者能否使用其公司或學校帳戶來獲得 Microsoft Rewards 積分？
-
-Microsoft Search 要求企業使用者使用公司或學校帳戶登入。 但使用者無法使用這些帳戶來加入或登入 Microsoft Rewards 方案。 但有一個例子，企業使用者可能會看到 Rewards 積分累算。 當 Microsoft Search 使用者的 Rewards 帳戶是使用 [Microsoft 帳戶](https://www.microsoft.com/welcome?rtc=1)建立時，即可能發生此情況。 (與 Microsoft 帳戶相關聯的電子郵件地址可以來自 Outlook.com、Hotmail.com、Gmail、Yahoo 或其他提供者。) 如果使用者在同一位瀏覽器工作階段中同時使用他們的公司帳戶和 Microsoft 帳戶登入，則可能會對其 Rewards 帳戶累算積分。 使用者可以透過在使用 Microsoft Search 搜尋時清除其 Cookie 來停止累算積分。
+詳細資料可在 Office 365 的[信任中心頁面](https://www.microsoft.com/TrustCenter/CloudServices/office365/default.aspx)上找到。
 
 ## <a name="can-guest-users-leverage-microsoft-search-in-my-organization"></a>來賓使用者是否可以在我的組織中利用 Microsoft 搜尋？
 
