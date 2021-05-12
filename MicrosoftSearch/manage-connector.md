@@ -1,6 +1,6 @@
 ---
-title: 管理 microsoft 搜尋的 Microsoft Graph 連接器
-ms.author: monaray
+title: 管理 microsoft 搜尋的 microsoft Graph 連接器
+ms.author: mecampos
 author: monaray97
 manager: mnirkhe
 audience: Admin
@@ -12,13 +12,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 管理 microsoft Search 的 Microsoft Graph 連接器。
-ms.openlocfilehash: cba50d8eb558b4d74ed46554dc155d4f275b1332
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+description: 管理 microsoft 搜尋的 microsoft Graph 連接器。
+ms.openlocfilehash: 685b501f3afe25d75c13a1fe6cc2c1b5db8a3511
+ms.sourcegitcommit: e5d695c40b68c2f1fa082fa9de20b9aa6d5b8050
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031717"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52325166"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
@@ -28,11 +28,11 @@ ms.locfileid: "51031717"
 
 ## <a name="connection-operations"></a>連接作業
 
-流覽至[Microsoft 365 admin center](https://admin.microsoft.com)中的 [[連接器]](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)索引標籤。
+流覽至[Microsoft 365 系統管理中心](https://admin.microsoft.com)的 [[連接器]](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)索引標籤。
 
-針對每個連接器類型， [Microsoft 365 系統管理中心](https://admin.microsoft.com) 支援下表所示的作業：
+針對每個連接器類型， [Microsoft 365 系統管理中心](https://admin.microsoft.com)都支援下表所示的作業：
 
-作業 | Microsoft Graph 連接器 | 夥伴或圖形連接器
+作業 | Microsoft Graph 連接器 | 夥伴或 Graph 連接器
 --- | --- | ---
 新增連線 | ： heavy_check_mark： (請參閱 [安裝程式概述](configure-connector.md))  | ： x： (參照您的合作夥伴或自訂的連接器 admin UX) 
 刪除連線 | ： heavy_check_mark： | ： heavy_check_mark：
@@ -43,7 +43,7 @@ ms.locfileid: "51031717"
 
 在您建立連線後，已處理的專案數目會顯示在 [ **Microsoft 搜尋**] 頁面上的 [**連接器**] 索引標籤上。 在初次完整編目成功完成之後，會顯示定期增加編目的進度。 此頁面提供連接器之日常作業的相關資訊，以及記錄檔及錯誤歷程記錄的概覽。
 
-每個連線會在 [ **狀態** ] 欄中顯示四個狀態：
+每個連線的 [ **狀態** ] 欄中會顯示五種狀態：
 
 * **同步** 處理。 連接器會編目來源中的資料，以編制現有專案的索引並進行任何更新。
 
@@ -53,6 +53,8 @@ ms.locfileid: "51031717"
 
 * **失敗**。 連接發生嚴重失敗。 此錯誤需要手動干預。 管理員需要根據所顯示的錯誤訊息採取適當的動作。 在發生錯誤之前，已編制索引的資料可供搜尋。
 
+* **Delete 失敗**。 刪除連接失敗。 根據失敗原因，資料可能仍然會編制索引，專案配額可能仍然會消耗，而且編目仍會執行連線。 建議您在此狀態再次嘗試刪除連線。
+
 ## <a name="monitor-your-index-quota-utilization"></a>監視索引配額利用率
 
 可用的索引配額和使用量會顯示在 [連接器] 的 [登陸] 頁面上。
@@ -60,8 +62,8 @@ ms.locfileid: "51031717"
 ![索引配額使用量列](media/quota_utilization.png)
  
 >[!NOTE]
->在預覽期間內，每個嘗試繪製圖形連接器的組織，都已在所有連線中提供高達2000000專案的免費固定配額。 透過圖形連接器一般可用，當已在預覽中使用圖形連接器的組織，可用配額會在2021年4月1日到期。
->以「 [預覽](./connectors-overview.md) 」標示的 Microsoft 建立圖形連接器，將不會包含在您組織的總電量索引配額內。 不過，它會計算您可以為您的組織設定的最大連線數目上限，以及您的組織可在連線上編制索引的最大7000000專案數目;每個連線都是限制700000個專案。 
+>在預覽期間內，每個嘗試 Graph 連接器的組織，都提供所有連線中高達2000000專案的免費固定配額。 使用目前可用的 Graph 連接器，在預覽中使用 Graph 連接器的組織中，可用配額會在2021年4月1日到期。
+>以「[預覽](./connectors-overview.md)」標示的 Microsoft 內建 Graph 連接器不會包含在您組織的總電量索引配額內。 不過，它會計算您可以為您的組織設定的最大連線數目上限，以及您的組織可在連線上編制索引的最大7000000專案數目;每個連線都是限制700000個專案。 
 
 [配額使用狀況] 列會根據您的組織的配額使用量，指出不同的狀態：
 
@@ -69,7 +71,7 @@ ms.locfileid: "51031717"
 --- | --- 
 一般 | 0-79%
 高 | 80-89%
-重要 | 90%-99%
+嚴重 | 90%-99%
 Full | 100%
 
 <!-- 
