@@ -1,5 +1,5 @@
 ---
-title: Microsoft 搜尋 ServiceNow 圖形連接器
+title: Microsoft 搜尋 ServiceNow Graph 連接器
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,26 +12,26 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 設定 Microsoft 搜尋的 ServiceNow 圖形連接器
-ms.openlocfilehash: 692170ef6f8332418efc7d56a56c6fa1b1cce76c
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+description: 設定 Microsoft 搜尋的 ServiceNow Graph 連接器
+ms.openlocfilehash: 08947381dff7cd06007c68a7f1614b23c53f7510
+ms.sourcegitcommit: 1b154441f3a3abba0f2719e66a767432bc9506ca
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031762"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "52720962"
 ---
 <!---Previous ms.author: kam1 --->
 
-# <a name="servicenow-graph-connector"></a>ServiceNow 圖形連接器
+# <a name="servicenow-graph-connector"></a>ServiceNow Graph 連接器
 
-「ServiceNow 圖形連接器」可讓您的組織根據組織內的使用者準則許可權，為使用者顯示可看到之知識型文章的索引。 從 ServiceNow 設定連接器和索引內容之後，使用者可以從任何 Microsoft 搜尋用戶端搜尋文章。
+ServiceNow Graph 連接器可讓您的組織根據組織內的使用者準則許可權，為使用者顯示對其所看到之知識型文章的索引。 從 ServiceNow 設定連接器和索引內容之後，使用者可以從任何 Microsoft 搜尋用戶端搜尋文章。
 
 > [!NOTE]
-> 請閱讀 [**您的圖形連接器**](configure-connector.md) 文章的設定，以瞭解一般圖表連接器設定指示。
+> 請閱讀 [**Graph 連接器**](configure-connector.md)文章的設定，以瞭解一般 Graph 連接器設定指示。
 
-本文適用于任何設定、執行及監視 ServiceNow 圖形連接器的人員。 它會補充一般設定程式，並顯示只適用于 ServiceNow 圖形連接器的指示。 本文也包含 [疑難排解](#troubleshooting) 及 [限制](#limitations)的相關資訊。
-  
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步驟1：在 Microsoft 365 系統管理中心新增圖表連接器
+本文適用于設定、執行及監視 ServiceNow Graph 連接器的任何人。 它會補充一般設定程式，並顯示只適用于 ServiceNow Graph 連接器的指示。 本文也包含 [疑難排解](#troubleshooting) 及 [限制](#limitations)的相關資訊。
+
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步驟1：在 Microsoft 365 系統管理中心新增 Graph 連接器
 
 遵循一般 [設定指示](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -64,7 +64,7 @@ ms.locfileid: "51031762"
 
 1. 基本驗證
 1. ServiceNow OAuth (建議) 
-1. Azure AD OpenID Connect
+1. Azure AD OpenID 連線
 
 ### <a name="basic-authentication"></a>基本驗證
 
@@ -89,13 +89,13 @@ ms.locfileid: "51031762"
 
 輸入用戶端識別碼和用戶端密碼以連接至您的實例。 連接後，請使用 ServiceNow 帳號憑證來驗證編目的許可權。 帳戶至少應具備 **知識** 角色。
 
-### <a name="azure-ad-openid-connect"></a>Azure AD OpenID Connect
+### <a name="azure-ad-openid-connect"></a>Azure AD OpenID 連線
 
-若要使用 Azure AD OpenID Connect 以進行驗證，請遵循下列步驟。
+若要使用 Azure AD OpenID 連線進行驗證，請遵循下列步驟。
 
 ## <a name="step-3a-register-a-new-application-in-azure-active-directory"></a>步驟3。 a：在 Azure Active Directory 中註冊新的應用程式
 
-若要瞭解如何在 Azure Active Directory 中註冊新的應用程式，請參閱 [註冊應用程式](/azure/active-directory/develop/quickstart-register-app#register-an-application)。 選取 [單一承租人組織目錄]。 不需要重新導向 URI。 註冊後，請記下應用程式 (用戶端) ID 及目錄 (承租人) 識別碼。
+若要瞭解如何在 Azure Active Directory 中註冊新的應用程式，請參閱[註冊應用程式](/azure/active-directory/develop/quickstart-register-app#register-an-application)。 選取 [單一承租人組織目錄]。 不需要重新導向 URI。 註冊後，請記下應用程式 (用戶端) ID 及目錄 (承租人) 識別碼。
 
 ## <a name="step-3b-create-a-client-secret"></a>步驟3：建立用戶端密碼
 
@@ -113,7 +113,7 @@ ms.locfileid: "51031762"
    Install-Module -Name Az -AllowClobber -Scope CurrentUser
    ```
 
-3. 連接到 Azure。
+3. 連線 Azure。
 
    ```powershell
    Connect-AzAccount
@@ -130,7 +130,7 @@ ms.locfileid: "51031762"
 
 屬性	 | 描述 
 --- | ---
-目錄識別碼 (租使用者識別碼)  | Azure Active Directory 租使用者的唯一識別碼，從步驟3。
+目錄識別碼 (租使用者識別碼)  | 步驟 3 Azure Active Directory 租使用者的唯一識別碼。
  (用戶端識別碼的應用程式識別碼)  | 在步驟3中註冊之應用程式的唯一識別碼。
 用戶端密碼 | 從步驟 3 () 的應用程式的機密機碼。 請將它當作密碼對待。
 服務主體識別碼 | 作為服務執行之應用程式的身分識別。 步驟 3 () 
@@ -163,7 +163,7 @@ ServiceNow 實例需要下列設定：
    應用程式 | 全域
    使用者宣告 | 子
    使用者欄位 | 使用者識別碼
-   啟用 JTI 宣告驗證 | 停用
+   啟用 JTI 宣告驗證 | 已停用
 
 5. 選取 [提交並更新 OAuth OIDC 實體表單]。
 
@@ -184,13 +184,13 @@ ServiceNow 實例需要下列設定：
 
 存取您用 ServiceNow 主體識別碼建立的 ServiceNow 帳戶做為使用者識別碼，並指派知識角色。 您可以在以下位置找到將角色指派給 ServiceNow 帳戶的指示： [指派角色給使用者](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html)。
 
-使用應用程式識別碼做為用戶端識別碼從步驟3。 a 及用戶端密碼，以使用 Azure AD OpenID Connect 向您的 ServiceNow 實例進行驗證。
+使用應用程式識別碼做為用戶端識別碼從步驟3。 a 和用戶端密碼的步驟3，使用 Azure AD OpenID 連線來驗證您的 ServiceNow 實例。
 
 ## <a name="step-4-select-properties-and-filter-data"></a>步驟4：選取屬性和篩選資料
 
-在這個步驟中，您可以從 ServiceNow 資料來源新增或移除可用屬性。 Microsoft 365 預設已經選取一些屬性。
+在這個步驟中，您可以從 ServiceNow 資料來源新增或移除可用屬性。 Microsoft 365 已經預設會選取一些屬性。
 
-使用 ServiceNow 查詢字串，您可以指定同步處理文章的條件。 它就像是 **SQL Select** 語句中的 **Where** 子句。 例如，您可以選擇只為發佈和使用中的文章編制索引。 若要瞭解如何建立您自己的查詢字串，請參閱 [使用篩選產生編碼的查詢字串](https://docs.servicenow.com/bundle/paris-platform-user-interface/page/use/using-lists/task/t_GenEncodQueryStringFilter.html)。
+使用 ServiceNow 查詢字串，您可以指定同步處理文章的條件。 就像 **SQL Select** 語句中的 **Where** 子句。 例如，您可以選擇只為發佈和使用中的文章編制索引。 若要瞭解如何建立您自己的查詢字串，請參閱 [使用篩選產生編碼的查詢字串](https://docs.servicenow.com/bundle/paris-platform-user-interface/page/use/using-lists/task/t_GenEncodQueryStringFilter.html)。
 
 使用 [預覽結果] 按鈕，檢查所選屬性和查詢篩選器的範例值。
 
@@ -198,15 +198,21 @@ ServiceNow 實例需要下列設定：
 
 ServiceNow 連接器支援 **所有人都** 可以看到的搜尋許可權，或是 **只有存取此資料來源的人員才能使用**。 已編制索引的資料會顯示在搜尋結果中，並可供組織中的使用者在其上分別存取。 ServiceNow 連接器支援不含高級腳本的預設使用者準則許可權。 當連接器找到具有 advanced script 的使用者準則時，搜尋結果中將不會顯示使用該使用者準則的所有資料。
 
-如果您只選取可 **存取此資料來源的人員**，您需要進一步選擇 ServiceNow 實例是否有 Azure Active DIRECTORY (AAD) 布建使用者或非 AAD 使用者。
+如果您只選取可 **存取此資料來源的人員**，您需要進一步選擇是否 ServiceNow 實例具有 Azure Active Directory (AAD) 布建使用者或非 AAD 使用者。
 
 >[!NOTE]
 >如果您只選擇可 **存取此資料來源的人員**，則會在 **預覽** ServiceNow 連接器。
 
 >[!NOTE]
->如果您選擇 [AAD] 做為身分識別來源的類型，請確定您在 ServiceNow 中為電子郵件目標屬性指派 UPN 來源屬性。 若要驗證或變更您的對應，請參閱 [自訂使用者布建屬性-在 Azure Active Directory 中 SaaS 應用程式的對應](/azure/active-directory/app-provisioning/customize-application-attributes)。
+>如果您選擇 [AAD] 做為身分識別來源的類型，請確定您在 ServiceNow 中為電子郵件目標屬性指派 UPN 來源屬性。 若要驗證或變更您的對應，請參閱[自訂使用者布建屬性-Azure Active Directory 中 SaaS 應用程式的對應](/azure/active-directory/app-provisioning/customize-application-attributes)。
 
 如果您選擇從 ServiceNow 實例中攝取 ACL，並為身分識別類型選取 "非 AAD"，請參閱 [Map 您的非 AZURE AD](map-non-aad.md) 身分識別，以取得對應身分識別的指示。
+
+### <a name="managing-search-permissions-in-microsoft-search"></a>在 Microsoft 搜尋中管理搜尋許可權
+
+在下列影片中，您可以瞭解如何使用 Servicenow 連接器來編制知識庫文章、定義使用者準則的許可權，並無縫同步處理 ServiceNow 和 Microsoft 搜尋索引之間的變更。
+
+> [!VIDEO https://www.youtube.com/watch?v=TVSkJpk1RiE]
 
 ## <a name="step-6-assign-property-labels"></a>步驟6：指派屬性標籤
 
@@ -237,7 +243,7 @@ ServiceNow 連接器支援 **所有人都** 可以看到的搜尋許可權，或
 
 ## <a name="limitations"></a>限制
 
-在最新版本中，ServiceNow 圖形連接器的限制如下：
+ServiceNow Graph 連接器在其最新版本中有下列限制：
 
 - 組織中的每個人都可以使用的索引知識文章是一項普遍可用的功能。
 - *只有存取此資料來源功能的使用者* 才會在 [管理搜尋許可權] 步驟中使用預覽，而且只會處理 [使用者準則](https://hi.service-now.com/kb_view.do?sysparm_article=KB0550924) 許可權。 任何其他類型的存取權限都不會套用到搜尋結果中。

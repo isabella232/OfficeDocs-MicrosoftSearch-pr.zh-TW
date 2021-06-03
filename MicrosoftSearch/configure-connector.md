@@ -1,5 +1,5 @@
 ---
-title: 設定 microsoft 所建的圖形連接器以進行 Microsoft 搜尋
+title: 設定 microsoft 搜尋的 microsoft 內部 Graph 連接器
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,24 +12,24 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Microsoft 的圖形連接器安裝程式概述
-ms.openlocfilehash: 169e78fd4a0148d8bb4e52968b2efd785045806e
-ms.sourcegitcommit: 08a7086185d28df14b06d1f7fdfbb1637288f7a5
+description: Microsoft Graph 連接器的安裝程式概述
+ms.openlocfilehash: ef94d530af63d8b8b33dfae3c4b411164ef31feb
+ms.sourcegitcommit: 1b154441f3a3abba0f2719e66a767432bc9506ca
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51042581"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "52720941"
 ---
 <!-- Previous ms.author: monaray -->
 
 <!-- markdownlint-disable no-trailing-punctuation -->
 
-# <a name="setup-overview-for-graph-connectors-by-microsoft"></a>Microsoft 的圖形連接器安裝程式概述 
+# <a name="setup-overview-for-graph-connectors-by-microsoft"></a>Microsoft Graph 連接器的安裝程式概述 
 
-本文說明 microsoft [365 系統管理中心](https://admin.microsoft.com)設定 **microsoft** 的圖形連接器所需的基本程式。 基本套裝程式含下列步驟：  
+本文說明在 [Microsoft 365 系統管理中心](https://admin.microsoft.com)設定 **Microsoft** 的 Graph 連接器所需的基本程式。 基本程序包含下列步驟：  
 <!---Add links to each section in the doc--->
 
-1. [在 Microsoft 365 系統管理中心新增圖表連接器](#step-1-add-a-graph-connector-in-the-microsoft-365-admin-center)
+1. [在 Microsoft 365 系統管理中心新增 Graph 連接器](#step-1-add-a-graph-connector-in-the-microsoft-365-admin-center)
 2. [命名連接](#step-2-name-the-connection)
 3. [設定連接設定](#step-3-configure-the-connection-settings)
 4. [管理搜尋許可權](#step-4-manage-search-permissions)
@@ -45,27 +45,27 @@ ms.locfileid: "51042581"
 * [後續步驟](#next-steps)
 
 > [!NOTE]
-> Microsoft 所有圖形連接器的設定程式都類似，但不完全相同。 **除了閱讀本文之外，請務必閱讀資料來源的連接器特定資訊。**  
+> Microsoft 的所有 Graph 連接器會類似設定程式，但不完全相同。 **除了閱讀本文之外，請務必閱讀資料來源的連接器特定資訊。**  
 
 <!---## Before you get started-->
 
 <!---Insert "Before you get started" recommendations for this data source-->
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步驟1：在 Microsoft 365 系統管理中心新增圖表連接器
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步驟1：在 Microsoft 365 系統管理中心新增 Graph 連接器
 
-完成下列步驟以設定任何 Microsoft 建的圖形連接器：
+完成下列步驟以設定任何 Microsoft 建立的 Graph 連接器：
 
-1. 在 [Microsoft 365 系統管理中心](https://admin.microsoft.com)內登入您的系統管理員帳戶。
+1. 在[Microsoft 365 系統管理中心](https://admin.microsoft.com)登入您的系統管理員帳戶。
 
-2. 在功能窗格中，選取 [ **設定**]，然後選取 [ **搜尋 & 情報**]。 選取 [ [連接器]](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)索引標籤。
+2. 在功能窗格中，選取 [**設定**]，然後選取 [**搜尋 & 情報**]。 選取 [ [連接器]](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)索引標籤。
 
 3. 選取 [ **+ 新增**]，然後從可用選項的功能表中選取您選擇的資料來源。
 
    > [!div class="mx-imgBorder"]
-   > ![可用的資料來源包括： ADLS Gen2、Enterprise 網站、Microsoft SQL server、Azure SQL、Oracle SQL database、ServiceNow、檔案共用、Azure DevOps 和 MediaWiki。](media/add-connector.png)
+   > ![可用的資料來源包括： ADLS Gen2、Enterprise 網站、Microsoft SQL server、Azure SQL、Oracle SQL 資料庫、ServiceNow、檔案共用、Azure DevOps 和 MediaWiki。](media/add-connector.png)
 
 > [!NOTE]
-> 每個租使用者最多可以新增10個圖形連線。
+> 每個租使用者最多可以加入10個 Graph 連接。
 
 ## <a name="step-2-name-the-connection"></a>步驟2：命名連線
 
@@ -87,13 +87,13 @@ ms.locfileid: "51042581"
 
  (ACLs 的存取控制清單) 決定組織中的哪些使用者可以存取每個資料項目目。  
 
-有些連接器（例如 [MICROSOFT SQL](MSSQL-connector.md) 和 [Azure Data Lake Storage Gen2](azure-data-lake-connector.md) ）在本機上支援 [AZURE Active Directory (azure AD) ](/azure/active-directory/) ACLs。
+某些連接器（如[Microsoft SQL](MSSQL-connector.md)和[Azure Data Lake 儲存體 Gen2](azure-data-lake-connector.md)本身支援[Azure Active Directory (Azure AD) ](/azure/active-directory/) ACLs）。
 
-其他連接器（如 [ServiceNow](servicenow-connector.md)、 [Azure DevOps](azure-devops-connector.md)和 [SALESFORCE](salesforce-connector.md) ）支援非 Azure AD 使用者和群組的同步處理。  
+其他連接器（如[ServiceNow](servicenow-connector.md)、 [Azure DevOps](azure-devops-connector.md)和[Salesforce](salesforce-connector.md) ）支援非 Azure AD 使用者和群組的同步處理。  
 
 ## <a name="step-5-assign-property-labels"></a>步驟5：指派屬性標籤
 
-您可以在 [指派屬性標籤] 頁面上，將語義標籤指派給來源屬性。 標籤是由 Microsoft 提供的已知標記，可提供語義意義。 其允許 Microsoft 將您的連接器資料整合到 Microsoft 365 體驗，例如增強型搜尋、人員卡片、智慧探索等等。  
+您可以在 [指派屬性標籤] 頁面上，將語義標籤指派給來源屬性。 標籤是由 Microsoft 提供的已知標記，可提供語義意義。 它們可讓 Microsoft 將您的連接器資料整合到 Microsoft 365 體驗，例如增強型搜尋、人員卡片、智慧探索等等。  
 
 下表列出目前支援的標籤及其描述。  
 
@@ -107,7 +107,7 @@ ms.locfileid: "51042581"
 **createdDateTime** | 專案的建立時間
 **lastModifiedDateTime** | 專案最近編輯的時間
 **檔案名** | 檔專案的名稱
-**fileExtension** | 檔專案的類型（例如 .pdf 或單字）
+**fileExtension** | 檔專案的類型，例如 .pdf 或 word。
 
 此頁面上的屬性會根據您的資料來源預先選取，但是如果有其他屬性更適合特定標籤，您可以變更此選取範圍。  
 
@@ -131,12 +131,12 @@ ms.locfileid: "51042581"
 
 您可以設定搜尋架構屬性，以控制每個來源屬性的搜尋功能。 搜尋架構可協助決定搜尋結果頁面上顯示的結果，以及使用者可以查看和存取哪些資訊。
 
-搜尋架構屬性包含 **查詢**、 **搜尋**、 **檢索** 及 **精煉** 的選項。 下表列出 Microsoft Graph 連接器所支援的每個屬性，並說明其功能。
+搜尋架構屬性包含 **查詢**、 **搜尋**、 **檢索** 及 **精煉** 的選項。 下表列出 Microsoft Graph 連接器支援的每個屬性，並說明其功能。
 
 搜尋架構屬性 | 函數 | 範例
 --- | --- | ---
-搜索 | 使屬性的文字內容可供搜尋。 屬性內容會包含在全文檢索索引中。 | 若屬性為 **title**， **企業** 查詢會傳回包含 word Enterprise 的任何文字或標題中的 word **enterprise** 的查詢。
-查詢 | 依查詢搜尋特定屬性的相符。 您可以在查詢中以程式設計方式或逐字方式指定屬性名稱。 |  如果可以查詢 **title** 屬性，則會支援查詢 **標題： Enterprise** 。
+搜索 | 使屬性的文字內容可供搜尋。 屬性內容會包含在全文檢索索引中。 | 如果屬性為 **title**， **Enterprise** 的查詢會傳回包含字 **Enterprise** 任何文字或標題的答案。
+查詢 | 依查詢搜尋特定屬性的相符。 您可以在查詢中以程式設計方式或逐字方式指定屬性名稱。 |  如果可以查詢 **title** 屬性，則支援查詢 **標題： Enterprise** 。
 檢索 | 在結果類型中只能使用可檢索的屬性，並顯示在搜尋結果中。 |
 完善 | [調整] 選項可以像在 Microsoft 搜尋結果頁面中那樣使用。 | 您組織中的使用者可以在 [搜尋結果] 頁面中以 **URL** [篩選](custom-filters.md)，如果在連線設定期間標示了精煉屬性
 
@@ -164,7 +164,7 @@ ms.locfileid: "51042581"
 
 有兩種重新整理間隔類型，也就是 **完整** 重新 **整理和累加** 重新整理，但是部分資料來源無法使用增量更新。
 
-使用完整重新整理時，搜尋引擎會處理及索引內容來源中的每個專案，而不論先前的編目。 完整重新整理最適合下列情況：
+不論先前的編目為何，搜尋引擎都會處理並索引內容來源中已變更的專案。 完整重新整理最適合下列情況：
 
 * 偵測資料刪除。
 * 增量式重新整理找到錯誤，但失敗。
@@ -198,9 +198,9 @@ ms.locfileid: "51042581"
 
 ## <a name="limitations"></a>限制
 <!---Insert limitations for this data source-->
-若要瞭解適用于所有資料來源的限制，請參閱 [Microsoft Graph 連接器](connectors-overview.md) 文章的概述。
+若要瞭解適用于所有資料來源的限制，請參閱[Microsoft Graph](connectors-overview.md) connector 文章的概述。
 
-請參閱資料來源連接器特有的資訊，以找出其他限制是否適用于該特定圖表連接器。
+請參閱資料來源連接器特有的資訊，以找出其他限制是否適用于該特定 Graph 連接器。
 
 ## <a name="next-steps"></a>後續步驟
 
