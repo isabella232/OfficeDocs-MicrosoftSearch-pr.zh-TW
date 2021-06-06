@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的 ServiceNow Graph 連接器
-ms.openlocfilehash: 08947381dff7cd06007c68a7f1614b23c53f7510
-ms.sourcegitcommit: 1b154441f3a3abba0f2719e66a767432bc9506ca
+ms.openlocfilehash: 31b581af2c51a5c26b161e778b242e396afe91fd
+ms.sourcegitcommit: 6cffa2d29448be9a22514e7b4c3009c522af0860
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "52720962"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52774078"
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -212,7 +212,7 @@ ServiceNow 連接器支援 **所有人都** 可以看到的搜尋許可權，或
 
 在下列影片中，您可以瞭解如何使用 Servicenow 連接器來編制知識庫文章、定義使用者準則的許可權，並無縫同步處理 ServiceNow 和 Microsoft 搜尋索引之間的變更。
 
-> [!VIDEO https://www.youtube.com/watch?v=TVSkJpk1RiE]
+> [!VIDEO https://www.youtube-nocookie.com/embed/TVSkJpk1RiE]
 
 ## <a name="step-6-assign-property-labels"></a>步驟6：指派屬性標籤
 

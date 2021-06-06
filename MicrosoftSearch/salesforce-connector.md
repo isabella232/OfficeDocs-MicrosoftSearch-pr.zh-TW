@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的 Salesforce Graph 連接器
-ms.openlocfilehash: d4d19c05f82ddb28c4dc3e6719bf8ea8d7284cc3
-ms.sourcegitcommit: 1b154441f3a3abba0f2719e66a767432bc9506ca
+ms.openlocfilehash: 7d73454fb909db24514c969f34158e3f2be5e34c
+ms.sourcegitcommit: 6cffa2d29448be9a22514e7b4c3009c522af0860
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "52720986"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52774087"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -131,7 +131,7 @@ salesforce Graph connector 可讓您的組織為您的 Salesforce 實例中的�
 
 在此影片中，您可以看到對您的 salesforce 實例進行驗證的程式、將非 Azure Active Directory 身分同步處理至您的 Azure Active Directory 身分識別，以及套用適當的安全性 trimmings 至您的 salesforce 專案。
 
-> [!VIDEO https://www.youtube.com/watch?v=SZYiFxZMKcM]
+> [!VIDEO https://www.youtube-nocookie.com/embed/SZYiFxZMKcM]
 
 ## <a name="step-5-assign-property-labels"></a>步驟5：指派屬性標籤
 
