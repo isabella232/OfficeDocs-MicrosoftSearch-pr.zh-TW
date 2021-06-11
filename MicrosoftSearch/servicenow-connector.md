@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的 ServiceNow Graph 連接器
-ms.openlocfilehash: 0b7e752ec67a7c14e4afc2e3bad32124694f8f39
-ms.sourcegitcommit: 668930032e77a065c23551b3e8820dcc2c63c0f8
+ms.openlocfilehash: ac5d0b23547ce7ccd0d8bb6399b092f9bc9e5303
+ms.sourcegitcommit: f12e7ff0a94d30a9de1f93266715180e7530de3f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52853812"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879306"
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -64,15 +64,15 @@ ms.locfileid: "52853812"
 
 若要驗證及同步處理 ServiceNow 中的內容，請選擇下列 **其中一** 項支援的方法： 
  
-1. 基本驗證 
-1. ServiceNow OAuth (建議) 
-1. Azure AD OpenID 連線
+- 基本驗證 
+- ServiceNow OAuth (建議) 
+- Azure AD OpenID 連線
 
-### <a name="basic-authentication"></a>基本驗證
+## <a name="step-31-basic-authentication"></a>步驟3.1：基本驗證
 
 輸入具有 **知識** 角色的 ServiceNow 帳戶的使用者名稱和密碼，以向您的實例驗證。
 
-### <a name="servicenow-oauth"></a>ServiceNow OAuth
+## <a name="step-32-servicenow-oauth"></a>步驟3.2： ServiceNow OAuth
 
 若要使用 ServiceNow OAuth 進行驗證，ServiceNow 系統管理員必須布建 ServiceNow 實例中的端點，這樣 Microsoft Search 應用程式才能存取它。 若要深入瞭解，請參閱在 ServiceNow 檔中 [建立用戶端存取實例的端點](https://docs.servicenow.com/bundle/newyork-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html) 。
 
@@ -80,7 +80,7 @@ ms.locfileid: "52853812"
 
 欄位 | 描述 | 建議值 
 --- | --- | ---
-名稱 | 識別您需要 OAuth 存取之應用程式的唯一值。 | Microsoft 搜尋
+姓名 | 識別您需要 OAuth 存取之應用程式的唯一值。 | Microsoft 搜尋
 用戶端識別碼 | 應用程式的唯讀、自動產生的唯一識別碼。 當實例要求存取權杖時，會使用用戶端識別碼。 | NA
 用戶端密碼 | 使用此共用的機密字串，ServiceNow 實例和 Microsoft 搜尋會授權彼此間的通訊。 | 遵循安全性最佳作法，將密碼當做密碼對待。
 重新導向 URL | 授權伺服器重新導向所需的回撥 URL。 | https://gcs.office.com/v1.0/admin/oauth/callback
@@ -91,19 +91,19 @@ ms.locfileid: "52853812"
 
 輸入用戶端識別碼和用戶端密碼以連接至您的實例。 連接後，請使用 ServiceNow 帳號憑證來驗證編目的許可權。 帳戶至少應具備 **知識** 角色。 請參閱「 [步驟3：連線設定](#step-3-connection-settings) 」的開頭中的表格，以提供更多 ServiceNow 表記錄的讀取權，以及索引使用者準則許可權。
 
-### <a name="azure-ad-openid-connect"></a>Azure AD OpenID 連線
+## <a name="step-33-azure-ad-openid-connect"></a>步驟3.3： Azure AD OpenID 連線
 
 若要使用 Azure AD OpenID 連線進行驗證，請遵循下列步驟。
 
-## <a name="step-3a-register-a-new-application-in-azure-active-directory"></a>步驟3。 a：在 Azure Active Directory 中註冊新的應用程式
+### <a name="step-331-register-a-new-application-in-azure-active-directory"></a>步驟3.3.1：在 Azure Active Directory 中註冊新的應用程式
 
 若要瞭解如何在 Azure Active Directory 中註冊新的應用程式，請參閱[註冊應用程式](/azure/active-directory/develop/quickstart-register-app#register-an-application)。 選取 [單一承租人組織目錄]。 不需要重新導向 URI。 註冊後，請記下應用程式 (用戶端) ID 及目錄 (承租人) 識別碼。
 
-## <a name="step-3b-create-a-client-secret"></a>步驟3：建立用戶端密碼
+### <a name="step-332-create-a-client-secret"></a>步驟3.3.2：建立用戶端密碼
 
 若要瞭解如何建立用戶端密碼，請參閱 [建立用戶端密碼](/azure/active-directory/develop/quickstart-register-app#add-a-client-secret)。 記錄用戶端密碼。
 
-## <a name="step-3c-retrieve-service-principal-object-identifier"></a>步驟 3 .. c：取回服務主體物件識別碼
+### <a name="step-333-retrieve-service-principal-object-identifier"></a>步驟3.3.3：取回服務主體物件識別碼
 
 遵循下列步驟以取得服務主體物件識別碼
 
@@ -130,14 +130,14 @@ ms.locfileid: "52853812"
 
 現在，您已具備 Azure 入口網站所需的所有資訊。 下表提供資訊的快速摘要。
 
-屬性	 | 說明 
+屬性	 | 描述 
 --- | ---
 目錄識別碼 (租使用者識別碼)  | 步驟 3 Azure Active Directory 租使用者的唯一識別碼。
  (用戶端識別碼的應用程式識別碼)  | 在步驟3中註冊之應用程式的唯一識別碼。
 用戶端密碼 | 從步驟 3 () 的應用程式的機密機碼。 請將它當作密碼對待。
 服務主體識別碼 | 作為服務執行之應用程式的身分識別。 步驟 3 () 
 
-## <a name="step-3d-register-servicenow-application"></a>步驟 3 ..：註冊 ServiceNow 應用程式
+### <a name="step-334-register-servicenow-application"></a>步驟3.3.4：註冊 ServiceNow 應用程式
 
 ServiceNow 實例需要下列設定：
 
@@ -147,7 +147,7 @@ ServiceNow 實例需要下列設定：
 
    欄位 | 描述 | 建議值
    --- | --- | ---
-   名稱 | 識別 OAuth OIDC 實體的唯一名稱。 | Azure AD
+   姓名 | 識別 OAuth OIDC 實體的唯一名稱。 | Azure AD
    用戶端識別碼 | 在協力廠商 OAuth OIDC server 中註冊之應用程式的用戶端識別碼。 實例在要求存取權杖時使用用戶端識別碼。 | Application (Client) ID 從步驟3。
    用戶端密碼 | 在協力廠商 OAuth OIDC server 中註冊之應用程式的用戶端密碼。 | 步驟3的用戶端密碼。 b
 
@@ -169,7 +169,7 @@ ServiceNow 實例需要下列設定：
 
 5. 選取 [提交並更新 OAuth OIDC 實體表單]。
 
-## <a name="step-3e-create-a-servicenow-account"></a>步驟 3 .. e：建立 ServiceNow 帳戶
+### <a name="step-335-create-a-servicenow-account"></a>步驟3.3.5：建立 ServiceNow 帳戶
 
 請參閱指示建立 ServiceNow 帳戶、 [在 ServiceNow 中建立使用者](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_CreateAUser.html)。
 
@@ -182,7 +182,7 @@ ServiceNow 實例需要下列設定：
 
 其他所有值都可以保留預設值。
 
-##### <a name="step-36-enable-knowledge-role-for-the-servicenow-account"></a>步驟3.6：啟用 ServiceNow 帳戶的知識角色
+### <a name="step-336-enable-knowledge-role-for-the-servicenow-account"></a>步驟3.3.6：啟用 ServiceNow 帳戶的知識角色
 
 存取您用 ServiceNow 主體識別碼建立的 ServiceNow 帳戶做為使用者識別碼並指派知識角色。 您可以在這裡找到將角色指派給 ServiceNow 帳戶的指示， [將角色指派給使用者](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html)。 請參閱「 [步驟3：連線設定](#step-3-connection-settings) 」的開頭中的表格，以提供更多 ServiceNow 表記錄的讀取權，以及索引使用者準則許可權。
 
@@ -267,4 +267,4 @@ Graph如果連接器位於網路防火牆之後，連接器可能無法與您的
 促使 | 亞太地區 | 52.139.188.212/30、20.43.146.44/30 
 
 
-如果您有任何其他問題，或想要提供意見反應，請寫信給我們 aka.ms/TalkToGraphConnectors
+如果您有任何其他問題，或想要提供意見反應，請寫信給我們 [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors)
