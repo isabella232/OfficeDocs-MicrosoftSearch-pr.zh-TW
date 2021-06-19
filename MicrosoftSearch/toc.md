@@ -11,29 +11,32 @@
 ## [位置](manage-locations.md)
 ## [Power BI](manage-powerbi.md)
 ## [問與答](manage-qas.md)
-# 連接器
-## [概觀](connectors-overview.md)
-## [連接器庫](connectors-gallery.md)
-## 設定 Microsoft 連接器
-### [設定概觀](configure-connector.md)
-### [設定圖形連接器代理程式](on-prem-agent.md)
-### [對應非 Azure AD 身分識別 (預覽)](map-non-aad.md)
-### [對應 Azure AD 身分識別 (預覽)](map-aad.md)
-### 連接器特定的資訊
-#### [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
-#### [Azure DevOps (預覽)](azure-devops-connector.md)
-#### [Azure SQL 和 Microsoft SQL Server](MSSQL-connector.md)
-#### [企業網站](enterprise-web-connector.md)
-#### [檔案共用](fileshare-connector.md)
-#### [MediaWiki](mediawiki-connector.md)
-#### [Oracle SQL](OracleSQL-connector.md)
-#### [Salesforce (預覽)](salesforce-connector.md)
-#### [ServiceNow](servicenow-connector.md)
-## 管理連線
-### [監控連線](manage-connector.md)
-### [檢視連線詳細資料與錯誤](connector-details-errors.md)
-## [授權](licensing.md)
-## [使用規定](terms-of-use.md)
+# 資料來源
+## 圖表連接器
+### [概觀](connectors-overview.md)
+### [連接器庫](connectors-gallery.md)
+### 設定 Microsoft 連接器
+#### [設定概觀](configure-connector.md)
+#### [設定圖形連接器代理程式](on-prem-agent.md)
+#### [對應非 Azure AD 身分識別 (預覽)](map-non-aad.md)
+#### [對應 Azure AD 身分識別 (預覽)](map-aad.md)
+#### 連接器特定的資訊
+##### [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
+##### [Azure DevOps (預覽)](azure-devops-connector.md)
+##### [Azure SQL 和 Microsoft SQL Server](MSSQL-connector.md)
+##### [企業網站](enterprise-web-connector.md)
+##### [檔案共用](fileshare-connector.md)
+##### [MediaWiki](mediawiki-connector.md)
+##### [Oracle SQL](OracleSQL-connector.md)
+##### [Salesforce (預覽)](salesforce-connector.md)
+##### [ServiceNow](servicenow-connector.md)
+### 管理連線
+#### [監控連線](manage-connector.md)
+#### [檢視連線詳細資料與錯誤](connector-details-errors.md)
+### [授權](licensing.md)
+### [使用規定](terms-of-use.md)
+## 同盟連接器
+### [Dynamics 365](manage-dynamics365.md)
 # 自訂和設定
 ## [管理類別和結果類型](customize-search-page.md)
 ## [管理搜尋結果版面配置](customize-results-layout.md)
