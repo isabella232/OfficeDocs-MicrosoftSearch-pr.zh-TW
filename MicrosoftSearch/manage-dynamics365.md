@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: mssearch
 localization_priority: Normal
 description: 管理在搜尋結果中顯示 Dynamics 365 內容的方式
-ms.openlocfilehash: 8818d2e6a412feb167c67f465f485b23e868a12a
-ms.sourcegitcommit: be989950a7b63281c2348cfd9e6cc13e79b7c067
+ms.openlocfilehash: 5f642bcb026358e57258e5e736fc263616fc4b05
+ms.sourcegitcommit: f07a2e578b6c9ed5a1a3b22266cca371782870a7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53021832"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53067930"
 ---
 # <a name="dynamics-365-federation-search-preview"></a>Dynamics 365 同盟搜尋 (預覽) 
 
@@ -51,7 +51,9 @@ Dynamics 365 的答案會出現在所有 Microsoft 搜尋畫布上的搜尋結�
 
 :::image type="content" alt-text="Dynamics 365 中詳細資料頁面的螢幕擷取畫面" source="media/dynamics365/dynamics365-detail-page.png" lightbox="media/dynamics365/dynamics365-detail-page.png":::
 
-不管您的使用者從何處開始搜尋，其經驗都會是一致的，讓他們能夠快速找到最相關的 Dynamics 365 結果。 請參閱 [Microsoft 組建2021影片](https://youtu.be/TH9QUkQoEJM) 以取得示範。
+不管您的使用者從何處開始搜尋，其經驗都會是一致的，讓他們能夠快速找到最相關的 Dynamics 365 結果。 請參閱 Microsoft 組建2021影片以取得示範。
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4P83t]
 
 ## <a name="supported-query-patterns"></a>支援的查詢模式
 
