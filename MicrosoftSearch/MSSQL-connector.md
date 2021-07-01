@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 為 Microsoft 搜尋設定 Azure SQL 和 Microsoft SQL Graph 連接器。
-ms.openlocfilehash: 1cc28561d7572c3a554f1cf93b582b4787414f48
-ms.sourcegitcommit: a8867bbdfa8c5fd3debde8e6b2bba4f79768e3f6
+ms.openlocfilehash: 0f8501e36754235b43846b80d60d4b0156a504b9
+ms.sourcegitcommit: 93fc70f0073ab45b4dbd702441ac2fc07a7668bc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52955616"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "53230914"
 ---
 <!---Previous ms.author: vivg --->
 
@@ -30,7 +30,7 @@ Graph 連接器會將指定的內容索引放入 Microsoft 搜尋中。 若要�
 > [!NOTE]
 > 請閱讀 [**設定 Graph 連接器**](configure-connector.md)文章，以瞭解一般 Graph 連接器設定指示。
 
-本文適用于設定、執行及監視 Azure SQL 和 Microsoft SQL Server Graph 連接器的任何人。 它會補充一般設定程式，並顯示只適用于 Azure SQL 和 Microsoft SQL Server Graph 連接器的指令。 本文也包含 Microsoft SQL Server 和 Azure SQL 連接器[限制](#limitations)的相關資訊。
+本文適用于任何設定、執行及監視 Azure SQL 和 Microsoft SQL server Graph connector 的使用者。 它會補充一般設定程式，並顯示只適用于 Azure SQL 和 Microsoft SQL server Graph 連接器的指示。 本文也包含 Microsoft SQL server 和 Azure SQL 連接器[限制](#limitations)的相關資訊。
 
 ## <a name="before-you-get-started"></a>開始之前
 
@@ -209,7 +209,7 @@ To learn more about how to create your verticals and MRTs, see [Search results p
 
 ## <a name="troubleshooting"></a>疑難排解
 
-以下是設定連接器時所觀察到的常見錯誤，以及其可能的原因。
+以下是設定連接器時所觀察到的常見錯誤及其可能的原因。
 
 | 設定步驟 | 錯誤訊息 | 可能的原因 (s)  |
 | ------------ | ------------ | ------------ |
@@ -220,6 +220,7 @@ To learn more about how to create your verticals and MRTs, see [Search results p
 SQL 連接器在預覽版本中有這些限制：
 
 - Microsoft SQL Server 連接器：內部部署資料庫必須執行 SQL Server 版本2008或更新版本。
+
 - 主控 azure SQL 資料庫) 的 Microsoft 365 訂閱和 Azure 訂閱 (必須位於相同的 Azure Active Directory 內。
 - 只有使用使用者主要名稱 (UPN) 、Azure Active Directory (Azure AD) 或 Active Directory 安全性才能支援 ACLs。
 - 不支援在資料庫欄中編制豐富內容的索引。 這類內容的範例為 HTML、JSON、XML、blob 及檔 parsings，以資料庫資料欄中的連結形式存在。

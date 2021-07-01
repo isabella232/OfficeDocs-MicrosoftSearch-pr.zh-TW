@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的 Salesforce Graph 連接器
-ms.openlocfilehash: 7d73454fb909db24514c969f34158e3f2be5e34c
-ms.sourcegitcommit: 6cffa2d29448be9a22514e7b4c3009c522af0860
+ms.openlocfilehash: 4bef771538934722deaa5deac3959f21246e4529
+ms.sourcegitcommit: 93fc70f0073ab45b4dbd702441ac2fc07a7668bc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52774087"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "53230932"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -77,9 +77,9 @@ salesforce Graph connector 可讓您的組織為您的 Salesforce 實例中的�
   > [!div class="mx-imgBorder"]
   > ![選取名為 "Refresh token 有效直到撤銷" 的重新整理權杖原則。](media/salesforce-connector/oauthpolicies.png)
 
-您現在可以使用[M365 系統管理中心](https://admin.microsoft.com/)完成 Graph 連接器的其餘設定程式。
+您現在可以使用[Microsoft 365 系統管理中心](https://admin.microsoft.com/)完成 Graph 連接器的其餘設定程式。
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步驟1：在 Microsoft 365 系統管理中心新增 Graph 連接器
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步驟1：在 Microsoft 365 系統管理中心中新增 Graph 連接器
 
 遵循一般 [設定指示](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -150,7 +150,7 @@ salesforce Graph connector 可讓您的組織為您的 Salesforce 實例中的�
 Salesforce 連接器只支援目前完全編目的重新整理排程。
 
 >[!IMPORTANT]
->完整編目會找到先前同步處理至 Microsoft 搜尋索引的已刪除物件和使用者。
+>完整編目會找出先前同步處理至 Microsoft 搜尋索引的已刪除物件和使用者。
 
 建議的排程為一周完整編目。
 
