@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 搜尋的 Microsoft Graph 連接器的概覽
-ms.openlocfilehash: 4bcfb871fabae07270611762d2112a6e72d4762b
-ms.sourcegitcommit: 93fc70f0073ab45b4dbd702441ac2fc07a7668bc
+ms.openlocfilehash: 87645e32e274eb166d6ba008c4ac720667105a1f
+ms.sourcegitcommit: 52129e0129a201ec056903b2461d012fda6d3636
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53230887"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53383481"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -38,10 +38,6 @@ ms.locfileid: "53230887"
 * [如何從自訂應用程式搜尋我的連接器資料？](#how-do-i-search-my-connector-data-from-a-custom-application)
 * [如何自訂搜尋結果？](#how-do-i-customize-search-results)
 * [連接器限制是什麼](#what-are-the-connector-limitations)
-
-<!---Modify to another note that is more accurate after rollout completion--->
-> [!IMPORTANT]
-> Microsoft Graph 連接器和 Microsoft 搜尋 APIs 現在一般皆可使用。 第一次部署是針對目標版本所設定的客戶。 如果您想要在租使用者中使用 Graph 連接器，使用者和系統管理員必須選擇已[目標發行](/microsoft-365/admin/manage/release-options-in-office-365?preserve-view=true&view=o365-worldwide)。
 
 <!---Add Value, scenario, example, and/or graphic in December updates--->
 <!---Probably remove architecture section below
