@@ -1,5 +1,5 @@
 ---
-title: Microsoft 搜尋的企業網站圖表連接器
+title: Enterprise Microsoft 搜尋的網站 Graph 連接器
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,32 +12,32 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 設定 Microsoft 搜尋的企業網站圖表連接器
-ms.openlocfilehash: 4b8a14b216d7df68d0898bb72d926abe671047a4
-ms.sourcegitcommit: 56b7b5aa55413141c805f766bdf7bc63d721ef53
+description: 設定 Enterprise 的網站 Graph 連接器 Microsoft 搜尋
+ms.openlocfilehash: f986736218768b4979e6e8aa474081c6aa87cb75
+ms.sourcegitcommit: 56e6c0706067e383d826ec97feb80f0742a726e0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51951019"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419890"
 ---
 <!---Previous ms.author: monaray --->
 
 <!-- markdownlint-disable no-inline-html -->
 
-# <a name="enterprise-websites-graph-connector"></a>企業網站圖表連接器
+# <a name="enterprise-websites-graph-connector"></a>Enterprise 網站 Graph 連接器
 
-企業網站圖表連接器可讓您的組織對 **來自內部網站** 的文章和內容編制索引。 在您設定網站的連接器及同步內容之後，使用者可以從任何 Microsoft 搜尋用戶端搜尋該內容。
+Enterprise 網站 Graph 連接器可讓您的組織編制 **來自內部網站** 的文章和內容。 從網站設定連接器及同步內容之後，使用者可以從任何 Microsoft 搜尋用戶端搜尋該內容。
 
 > [!NOTE]
-> 請閱讀 [**您的圖形連接器文章設定**](configure-connector.md) ，以瞭解一般圖表連接器設定指示。
+> 請閱讀 [**設定 Graph 連接器**](configure-connector.md)文章，以瞭解一般 Graph 連接器設定指示。
 
-本文適用于任何設定、執行及監視企業網站連接器的人員。 它會補充一般設定程式，並顯示只適用于企業網站連接器的指示。 本文也包含 [疑難排解](#troubleshooting) 及 [限制](#limitations)的相關資訊。
+本文適用于任何設定、執行及監視 Enterprise 網站連接器的人員。 它會補充一般設定程式，並顯示只適用于 Enterprise 網站連接器的指示。 本文也包含 [疑難排解](#troubleshooting) 及 [限制](#limitations)的相關資訊。
 
 <!---## Before you get started-->
 
 <!---Insert "Before you get started" recommendations for this data source-->
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步驟1：在 Microsoft 365 系統管理中心新增圖表連接器
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步驟1：在 Microsoft 365 系統管理中心中新增 Graph 連接器
 
 遵循一般 [設定指示](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -49,40 +49,41 @@ ms.locfileid: "51951019"
 
 ## <a name="step-3-configure-the-connection-settings"></a>步驟3：設定連接設定
 
-若要連線至您的資料來源，您必須填寫網站的根 URL、選擇編目來源，以及您想要使用的驗證類型： [無]、[基本驗證]，或 OAuth 2.0 搭配 [Azure Active Directory (AZURE AD) ](/azure/active-directory/)。 在您完成此資訊之後，請選取 [測試連線] 以驗證您的設定。
+若要連線至您的資料來源，請填入網站的根 URL、選擇編目來源，以及您想要使用的驗證類型： [無]、[基本驗證]，或 OAuth 2.0 搭配[Azure Active Directory (Azure AD) ](/azure/active-directory/)。 在您完成此資訊之後，請選取 [測試連線] 以驗證您的設定。
 
 ### <a name="url"></a>URL
 
 使用 [URL] 欄位可指定您要編目之網站的根目錄。 企業網站連接器會使用此 URL 做為開始點，並遵循此 URL 的所有連結進行編目。
 
-> [!NOTE]
-> 如果您要編目的網站已定義網站地圖，連接器將只會編目網站地圖中所列的 URLs。 若未定義網站地圖，連接器將會對該網站的根 URL 所找到的所有連結進行深入編目。
+### <a name="crawl-websites-listed-in-the-sitemap"></a>編目網站地圖中所列的網站
+
+選取此選項時，連接器只會編目網站地圖中所列的 URLs。 若未選取或未找到任何網站圖形，連接器將會對該網站的根 URL 所找到的所有連結進行深入編目。
+
+> [!div class="mx-imgBorder"]
+> ![Enterprise 網頁連接器之連線設定窗格的螢幕擷取畫面](media/enterprise-web-connector/connectors-enterpriseweb-connectionsettings-with-sitemap.png)
 
 ### <a name="crawl-mode-cloud-or-on-premises"></a>編目模式：雲端或內部部署
 
 編目模式會決定您要建立索引的網站類型（雲端或內部部署）。 針對您的雲端網站，選取 **雲端** 做為編目模式。
 
-此外，連接器現在也支援對內部部署網站進行編目。 若要存取您的內部部署資料，您必須先安裝及設定圖形連接器代理程式。 若要深入瞭解，請參閱 [Graph connector agent](./on-prem-agent.md)。
+此外，連接器現在也支援對內部部署網站進行編目。 若要存取您的內部部署資料，您必須先安裝及設定 Graph 連接器代理程式。 若要深入瞭解，請參閱[Graph connector agent](./on-prem-agent.md)。
 
-若為您的內部部署網站，請選取 [ **代理程式** ] 做為編目模式，並在 [部署中的 **代理程式** ] 欄位中，選擇您先前安裝及設定的圖形連接器代理程式。  
-
-> [!div class="mx-imgBorder"]
-> ![商業網路連接器之連線設定窗格的螢幕擷取畫面](media/enterprise-web-connector/connectors-enterpriseweb-settings.png)
+若為您的內部部署網站，請選取 [**代理程式**] 做為編目模式，並在 [部署中的 **代理程式**] 欄位中，選擇您先前安裝及設定的 Graph 連接器代理程式。  
 
 ### <a name="authentication"></a>驗證
 
-基本驗證需要使用者名稱和密碼。 使用 [Microsoft 365 系統管理中心](https://admin.microsoft.com)建立此 bot 帳戶。
+基本驗證需要使用者名稱和密碼。 使用[Microsoft 365 系統管理中心](https://admin.microsoft.com)建立此 bot 帳戶。
 
 使用 [AZURE AD](/azure/active-directory/) OAuth 2.0 需要資源識別碼、用戶端識別碼和用戶端密碼。 OAuth 2.0 僅適用于雲端模式。
 
-如需詳細資訊，請參閱 [使用 OAuth 2.0 程式碼授與流程授權存取 Azure Active Directory web 應用程式](/azure/active-directory/develop/v1-protocols-oauth-code)。 使用下列值進行註冊：
+如需詳細資訊，請參閱[使用 OAuth 2.0 代碼授與流程授權存取 Azure Active Directory web 應用程式](/azure/active-directory/develop/v1-protocols-oauth-code)。 使用下列值進行註冊：
 
 **名稱：** Microsoft 搜尋 <br/>
 **Redirect_URI：**`https://gcs.office.com/v1.0/admin/oauth/callback`
 
 若要取得資源、client_id 及 client_secret 的值，請移至 **使用授權碼以要求** 重新導向 URL 網頁上的存取權杖。
 
-如需詳細資訊，請參閱 [快速入門：使用 Microsoft identity Platform 註冊應用程式](/azure/active-directory/develop/quickstart-register-app)。
+如需詳細資訊，請參閱[快速入門：使用 Microsoft 身分識別平臺註冊應用程式](/azure/active-directory/develop/quickstart-register-app)。
 
 ## <a name="step-3a-add-urls-to-exclude-optional-crawl-restrictions"></a>步驟3a：新增 URLs 以排除 (選擇性編目限制) 
 
@@ -98,7 +99,7 @@ ms.locfileid: "51951019"
 
 ## <a name="step-4-assign-property-labels"></a>步驟4：指派屬性標籤
 
-您可以從選項的功能表中選擇，將 source 屬性指派給每個標籤。 雖然這個步驟不是必要的，但具有一些屬性標籤會提升搜尋相關性，並可確保使用者更準確的搜尋結果。
+您可以從選項的功能表中選擇，將 source 屬性指派給每個標籤。 雖然這個步驟不是必要的，但具有一些屬性標籤會提升搜尋相關性，並確保使用者可以更精確的搜尋結果。
 
 ## <a name="step-5-manage-schema"></a>步驟5：管理架構
 
@@ -106,11 +107,11 @@ ms.locfileid: "51951019"
 
 ## <a name="step-6-manage-search-permissions"></a>步驟6：管理搜尋許可權
 
-企業網站連接器只支援 **所有人都** 能看見的搜尋許可權。 已編制索引的資料會顯示在搜尋結果中，並對組織中的所有使用者顯示。
+Enterprise 網站連接器只支援 **所有人都** 能看見的搜尋許可權。 已編制索引的資料會顯示在搜尋結果中，並對組織中的所有使用者顯示。
 
 ## <a name="step-7-set-the-refresh-schedule"></a>步驟7：設定重新整理排程
 
-企業網站連接器只支援完整重新整理。 這表示連接器會在每次重新整理時重新編目網站的所有內容。 若要確定連接器有足夠的時間來編目內容，建議您設定大型重新整理排程間隔。 建議您在一到兩周之間進行排程重新整理。
+Enterprise 網站連接器只支援完整重新整理。 這表示連接器會在每次重新整理時重新編目網站的所有內容。 若要確定連接器有足夠的時間來編目內容，建議您設定大型重新整理排程間隔。 建議您在一到兩周之間進行排程重新整理。
 
 ## <a name="step-8-review-connection"></a>步驟8：檢查連線
 
@@ -138,4 +139,4 @@ ms.locfileid: "51951019"
 
 ## <a name="limitations"></a>限制
 
-企業網站連接器不支援搜尋 **動態網頁** 上的資料。 [Confluence](https://www.atlassian.com/software/confluence)與[Unily](https://www.unily.com/)等內容管理系統中的這些網頁範例，或儲存網站內容的資料庫。
+Enterprise 網站連接器不支援搜尋 **動態網頁** 上的資料。 [Confluence](https://www.atlassian.com/software/confluence)與[Unily](https://www.unily.com/)等內容管理系統中的這些網頁範例，或儲存網站內容的資料庫。
