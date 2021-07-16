@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Enterprise 的網站 Graph 連接器 Microsoft 搜尋
-ms.openlocfilehash: f986736218768b4979e6e8aa474081c6aa87cb75
-ms.sourcegitcommit: 56e6c0706067e383d826ec97feb80f0742a726e0
+ms.openlocfilehash: 32e38c9bef036556dae2734e23b1d26ba4fe2c27
+ms.sourcegitcommit: 38a0f09596c2bca0e12bf4cada7b4c64fd4c48e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53419890"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53449043"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -31,7 +31,7 @@ Enterprise 網站 Graph 連接器可讓您的組織編制 **來自內部網站**
 > [!NOTE]
 > 請閱讀 [**設定 Graph 連接器**](configure-connector.md)文章，以瞭解一般 Graph 連接器設定指示。
 
-本文適用于任何設定、執行及監視 Enterprise 網站連接器的人員。 它會補充一般設定程式，並顯示只適用于 Enterprise 網站連接器的指示。 本文也包含 [疑難排解](#troubleshooting) 及 [限制](#limitations)的相關資訊。
+本文適用于任何設定、執行及監視 Enterprise 網站連接器的人員。 它會補充一般設定程式，並顯示只適用于 Enterprise 網站連接器的指示。 本文也包含 [疑難排解](#troubleshooting)的相關資訊。
 
 <!---## Before you get started-->
 
@@ -59,8 +59,21 @@ Enterprise 網站 Graph 連接器可讓您的組織編制 **來自內部網站**
 
 選取此選項時，連接器只會編目網站地圖中所列的 URLs。 若未選取或未找到任何網站圖形，連接器將會對該網站的根 URL 所找到的所有連結進行深入編目。
 
+### <a name="dynamic-site-configuration"></a>動態網站設定
+
+例如，如果您的網站包含動態內容，例如 Confluence 或 Unily 等內容管理系統中的網頁，您可以啟用動態編目程式。 若要將其開啟，請選取 [ **啟用動態網站的** 編目]。 編目程式會在開始編目之前，等待動態內容進行轉譯。
+
 > [!div class="mx-imgBorder"]
-> ![Enterprise 網頁連接器之連線設定窗格的螢幕擷取畫面](media/enterprise-web-connector/connectors-enterpriseweb-connectionsettings-with-sitemap.png)
+> ![Enterprise 網頁連接器之連線設定窗格的螢幕擷取畫面](media/enterprise-web-connector/connectors-enterpriseweb-connectionsettings-dynamicconfig-small.png)
+
+除了核取方塊之外，還有三個可供選用的欄位：
+
+1. **Dom 就緒**：輸入 dom 專案，編目程式應使用它做為內容完全呈現及編目應該開始的信號。
+1. **要新增的標頭**：指定編目程式在傳送該特定 web URL 時應包含的 HTTP 標頭。 您可以為不同的網站設定多個標頭。 建議包括 auth token 值。
+1. **略過標頭**：指定應從動態編目要求排除的任何不必要標頭。
+
+> [!NOTE]
+> 只有代理程式編目模式支援動態編目。
 
 ### <a name="crawl-mode-cloud-or-on-premises"></a>編目模式：雲端或內部部署
 
@@ -136,7 +149,3 @@ Enterprise 網站連接器只支援完整重新整理。 這表示連接器會�
 
 * 當資料來源由於網路問題或資料來源本身被刪除、移動或重新命名時，就會發生錯誤6001-6013。 檢查提供的資料來源詳細資料是否仍然有效。
 * 當資料來源包含頁面上的非文字內容或頁面不是 HTML 時，就會發生錯誤6021-6024。 請檢查資料來源，並將此頁面加入排除清單，或略過錯誤。
-
-## <a name="limitations"></a>限制
-
-Enterprise 網站連接器不支援搜尋 **動態網頁** 上的資料。 [Confluence](https://www.atlassian.com/software/confluence)與[Unily](https://www.unily.com/)等內容管理系統中的這些網頁範例，或儲存網站內容的資料庫。

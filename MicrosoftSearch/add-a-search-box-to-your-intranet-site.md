@@ -14,21 +14,21 @@ search.appverid:
 ms.assetid: f980b90f-95e2-4b66-8b21-69f601ff4b50
 ROBOTS: NoIndex
 description: 將 Microsoft 搜尋搜尋方塊新增至您的內部網路網站或頁面，以取得相關的搜尋建議並快速尋找工作結果。
-ms.openlocfilehash: c71f61971bf69c2eaa5fb7a48d0cb3d26af0ad07
-ms.sourcegitcommit: 5f0a8bdf274d02132a3b5211fb4738eb38d159db
+ms.openlocfilehash: 7d9ca4be8d3be27a7549ffb940d6dc55b3763baf
+ms.sourcegitcommit: 38a0f09596c2bca0e12bf4cada7b4c64fd4c48e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52247761"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53449059"
 ---
 # <a name="add-a-search-box-to-your-intranet-site"></a>將搜尋方塊新增至您的內部網路網站
 
-若要讓您的使用者能夠輕鬆存取組織的結果，請在任何內部網路網站或頁面 Bing 搜尋方塊中新增 Microsoft 搜尋。 以下是一些優點：
+若要讓您的使用者能夠輕鬆存取組織的結果，請在 Bing 搜尋方塊中，將 Microsoft 搜尋新增至任何內部網路網站或頁面。 以下是一些優點：
 
 - SharePoint 或內部網路入口網站上的搜尋方塊，提供開始搜尋的熟悉、信任的進入點。
 - 支援所有主要網頁瀏覽器，包括 Google Chrome 和 Microsoft Edge
 - 只會顯示您組織的搜尋建議，永遠不會包含 web 建議
-- 在 Bing 工作成果] 頁面中，使用使用者來進行 Microsoft 搜尋，但不包括廣告和 web 結果
+- 讓使用者在 Bing 工作結果頁面中的 Microsoft 搜尋，但不包括廣告和 web 結果
 - 您可以控制搜尋方塊的外觀和行為，包括讓使用者在預設垂直或自訂垂直上進行土地的功能。
   
 ## <a name="add-a-search-box-to-an-intranet-page"></a>將搜尋方塊新增至內部網路頁面
@@ -108,11 +108,11 @@ ms.locfileid: "52247761"
 
 使用 bfbSearchBoxConfig 中的 [垂直] 選項來定義您想要的垂直方向。 例如，如果您想要讓使用者永遠在網站上水準土地，其中一個預設的縱向，請使用「網站網站」值。
 
-![Microsoft 搜尋中的工作結果頁面螢幕擷取畫面 Bing 顯示網站的縱向結果和 URL](media/sites-vertical-esb.png)
+:::image type="content" alt-text="Microsoft 搜尋中的工作結果頁面的螢幕擷取畫面 Bing 顯示網站的縱向結果和 URL。" source="media/sites-vertical-esb.png" lightbox="media/sites-vertical-esb.png":::
 
 若為自訂的縱向，請在 URL 的結尾使用雜湊。 您可以從 Bing 中的 [工作] 頁面進行搜尋，按一下垂直標籤，然後在數位 sign ( # ) 之後複製值，以找到這些值。
 
-![Microsoft 搜尋中的工作結果頁面螢幕擷取畫面 Bing 顯示自訂簡報垂直結果和 URL](media/custom-vertical-esb.png)
+:::image type="content" alt-text="Bing 顯示自訂簡報垂直結果和 URL 的 Microsoft 搜尋中的工作結果頁面的螢幕擷取畫面。" source="media/custom-vertical-esb.png" lightbox="media/custom-vertical-esb.png":::
 
 ## <a name="use-an-iframe-to-embed-a-search-box"></a>使用 iFrame 來內嵌搜尋方塊
 
@@ -124,4 +124,4 @@ ms.locfileid: "52247761"
 
 ## <a name="inprivate-mode-and-conditional-access"></a>InPrivate 模式和條件式存取
 
-如果在 InPrivate 視窗中開啟頁面或網站，就會停用內嵌搜尋方塊。 此外，在 Microsoft Edge 中使用 Azure AD 條件式存取支援，Bing 在使用 InPrivate 模式時不支援 AAD 登入。 如需 Edge 中的條件式存取的詳細資訊，請參閱[Microsoft Edge 和條件式存取](https://docs.microsoft.com/deployedge/ms-edge-security-conditional-access#accessing-conditional-access-protected-resources-in-microsoft-edge)。 
+如果在 InPrivate 視窗中開啟頁面或網站，就會停用內嵌搜尋方塊。 此外，在 Microsoft Edge 中使用 Azure AD 條件式存取支援，Bing 在使用 InPrivate 模式時不支援 AAD 登入。 如需 Edge 中的條件式存取的詳細資訊，請參閱[Microsoft Edge 和條件式存取](/deployedge/ms-edge-security-conditional-access#accessing-conditional-access-protected-resources-in-microsoft-edge)。 
