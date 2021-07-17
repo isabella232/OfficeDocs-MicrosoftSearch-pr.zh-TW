@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 新增搜尋行業及自訂搜尋結果
-ms.openlocfilehash: 6b6f0593a668e9c2c5c7fc5a62f7b5dd4a43a8bb
-ms.sourcegitcommit: ea6905626de67090141039565282e4e0c53b43ac
+ms.openlocfilehash: 4dd3f08f6d7e3df0aa983684eb0d4f649bc409a1
+ms.sourcegitcommit: 1e766e1f549c46882f47df6679f5a3cdf48d70d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53314017"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53463224"
 ---
 # <a name="customize-the-search-results-page"></a>自訂搜尋結果頁面
 
@@ -135,7 +135,7 @@ KQL 也支援使用 [設定檔查詢變數](#profile-query-variables) ，在垂�
 
 這會縮小搜尋結果，以顯示受託人為執行搜尋之使用者的專案。
 
-[設定檔資源](https://graph.microsoft.com/graph/api/resources/profile?view=graph-rest-beta) 公開屬性做為集合。 例如，電子郵件地址相關的資訊會透過電子郵件集合、工作職位集合等方式公開。 使用者設定檔中所有可用的屬性，都是以「AAD」為來源類型的方式公開為查詢變數。
+[設定檔資源](/graph/api/resources/profile?view=graph-rest-beta) 公開屬性做為集合。 例如，電子郵件地址相關的資訊會透過電子郵件集合、工作職位集合等方式公開。 使用者設定檔中所有可用的屬性，都是以「AAD」為來源類型的方式公開為查詢變數。
 
 請考慮電子郵件集合中有三個可用電子郵件地址的使用者，如下所示。
 
