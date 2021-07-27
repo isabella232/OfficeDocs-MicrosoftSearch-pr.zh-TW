@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 為 Microsoft 搜尋設定 Azure SQL 和 Microsoft SQL Graph 連接器。
-ms.openlocfilehash: 0f8501e36754235b43846b80d60d4b0156a504b9
-ms.sourcegitcommit: 93fc70f0073ab45b4dbd702441ac2fc07a7668bc
+ms.openlocfilehash: ae17b99fa0b83b38c8681652af0fdfdb32969f28
+ms.sourcegitcommit: 9cfe9b7f6d4ddf783ee31a6d2a02a73f0c0aef79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53230914"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53590259"
 ---
 <!---Previous ms.author: vivg --->
 
@@ -36,7 +36,10 @@ Graph 連接器會將指定的內容索引放入 Microsoft 搜尋中。 若要�
 
 ### <a name="install-the-graph-connector-agent-required-for-on-premises-microsoft-sql-server-connector-only"></a>僅限內部部署 Microsoft SQL Server 連接器 (安裝 Graph 連接器代理程式) 
 
-為了存取您的內部部署協力廠商資料，您必須安裝及設定 Graph 連接器代理程式。 請參閱[Install the Graph connector agent](on-prem-agent.md)以深入瞭解。  
+為了存取您的內部部署協力廠商資料，您必須安裝及設定 Graph 連接器代理程式。 請參閱[Install the Graph connector agent](on-prem-agent.md)以深入瞭解。
+
+>[!NOTE]
+>若您在設定 Microsoft SQL Server Graph 連接器時使用 Windows 驗證，您嘗試登入的使用者，必須對安裝 Graph 連接器代理程式的機器具有互動式登入許可權。 請參閱 [登錄原則管理](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) 的檔，以檢查登入許可權。
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步驟1：在 Microsoft 365 系統管理中心中新增 Graph 連接器
 
@@ -220,7 +223,6 @@ To learn more about how to create your verticals and MRTs, see [Search results p
 SQL 連接器在預覽版本中有這些限制：
 
 - Microsoft SQL Server 連接器：內部部署資料庫必須執行 SQL Server 版本2008或更新版本。
-
 - 主控 azure SQL 資料庫) 的 Microsoft 365 訂閱和 Azure 訂閱 (必須位於相同的 Azure Active Directory 內。
 - 只有使用使用者主要名稱 (UPN) 、Azure Active Directory (Azure AD) 或 Active Directory 安全性才能支援 ACLs。
 - 不支援在資料庫欄中編制豐富內容的索引。 這類內容的範例為 HTML、JSON、XML、blob 及檔 parsings，以資料庫資料欄中的連結形式存在。

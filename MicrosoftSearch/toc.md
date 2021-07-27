@@ -18,8 +18,8 @@
 ### 設定 Microsoft 連接器
 #### [設定概觀](configure-connector.md)
 #### [設定圖形連接器代理程式](on-prem-agent.md)
-#### [對應非 Azure AD 身分識別 (預覽)](map-non-aad.md)
-#### [對應 Azure AD 身分識別 (預覽)](map-aad.md)
+#### [對應非 Azure AD 身分識別](map-non-aad.md)
+#### [對應 Azure AD 身分識別](map-aad.md)
 #### 連接器特定的資訊
 ##### [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
 ##### [Azure DevOps (預覽)](azure-devops-connector.md)
@@ -28,7 +28,7 @@
 ##### [檔案共用](fileshare-connector.md)
 ##### [MediaWiki](mediawiki-connector.md)
 ##### [Oracle SQL](OracleSQL-connector.md)
-##### [Salesforce (預覽)](salesforce-connector.md)
+##### [Salesforce](salesforce-connector.md)
 ##### [ServiceNow](servicenow-connector.md)
 ### 管理連線
 #### [監控連線](manage-connector.md)

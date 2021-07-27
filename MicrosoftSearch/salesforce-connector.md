@@ -13,18 +13,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的 Salesforce Graph 連接器
-ms.openlocfilehash: 4bef771538934722deaa5deac3959f21246e4529
-ms.sourcegitcommit: 93fc70f0073ab45b4dbd702441ac2fc07a7668bc
+ms.openlocfilehash: b0b3ba0e41c0e28cac15f4fed491ac8507aa0e59
+ms.sourcegitcommit: 8270e4271b1eeb57b988ea5265e5b6d9d6ef64a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53230932"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53529372"
 ---
 <!---Previous ms.author: rusamai --->
 
-# <a name="salesforce-graph-connector-preview"></a>Salesforce Graph connector (preview) 
+# <a name="salesforce-graph-connector"></a>Salesforce Graph 連接器
 
-salesforce Graph connector 可讓您的組織為您的 Salesforce 實例中的連絡人、商機、潛在客戶和帳戶物件編制索引。 從 Salesforce 設定連接器和索引內容之後，使用者可以從任何 Microsoft 搜尋用戶端搜尋這些專案。
+salesforce Graph connector 可讓您的組織為您的 Salesforce 實例中的連絡人、機會、潛在客戶、案例及帳戶物件編制索引。 從 Salesforce 設定連接器和索引內容之後，使用者可以從任何 Microsoft 搜尋用戶端搜尋這些專案。
 
 > [!NOTE]
 > 請閱讀 [**Graph 連接器**](configure-connector.md)文章的設定，以瞭解一般 Graph 連接器設定指示。
@@ -105,13 +105,20 @@ salesforce Graph connector 可讓您的組織為您的 Salesforce 實例中的�
 搜尋綠色橫幅（如下列螢幕擷取畫面所示）中的 [連線成功]，以檢查連線是否成功。
 
   > [!div class="mx-imgBorder"]
-  > ![成功登入的螢幕擷取畫面。 [連線成功] 的綠色旗標位於您的 Salesforce 實例 URL 的欄位底下。](media/salesforce-connector/sf5.png)
+  > ![成功登入的螢幕擷取畫面。 [連線成功] 的綠色旗標位於您的 Salesforce 實例 URL 的欄位底下。](media/salesforce-connector/salesforce-connector-connection-settings.png)
 
-## <a name="step-4-manage-search-permissions"></a>步驟4：管理搜尋許可權
+## <a name="step-4-select-properties"></a>步驟4：選取屬性
+
+選取您要連接線進行編目及包含在搜尋結果中的 Salesforce 物件。 如果選取 [連絡人]，系統也會自動選取帳戶。
+
+>[!NOTE]
+>如果欄位具有欄位層級安全性 (FLS) 設定設定檔，連接器將不會為該 Salesforce 組織中的任何設定檔攝取該欄位。因此，使用者將無法搜尋這些欄位的值，也不會顯示在結果中。
+
+## <a name="step-5-manage-search-permissions"></a>步驟5：管理搜尋許可權
 
 您必須選擇哪一使用者會看到來自此資料來源的搜尋結果。 如果您只允許特定 Azure Active Directory (Azure ad) 或非 Azure ad 使用者看到搜尋結果，請確定您對應的是識別碼。
 
-### <a name="step-4a-select-permissions"></a>步驟4：選取許可權
+### <a name="step-5a-select-permissions"></a>步驟5：選取許可權
 
 您可以選擇從您的 Salesforce 實例中 (ACLs) 來攝取存取控制清單，或允許組織中的每個人都看到來自此資料來源的搜尋結果。 ACLs 可以包含 Azure Active Directory (AAD) 身分識別， (從 azure ad 同盟到 Salesforce) 的使用者、非 Azure ad 身分識別 (在 Azure AD) 中具有對應身分識別的原生使用者，或兩者皆有。
 
@@ -123,7 +130,7 @@ salesforce Graph connector 可讓您的組織為您的 Salesforce 實例中的�
 
 如果您選擇從您的 Salesforce 實例或為身分識別類型選取 "非 AAD" 的 ACL，請參閱 [Map 您的非 AZURE AD](map-non-aad.md) 身分識別，以取得對應身分識別的指示。
 
-### <a name="step-4b-map-aad-identities"></a>步驟4： b：對應 AAD 身分識別
+### <a name="step-5b-map-aad-identities"></a>步驟5： b：對應 AAD 身分識別
 
 如果您選擇從您的 Salesforce 實例中攝取 ACL 並為身分識別類型選取「AAD」，請參閱 [對應 AZURE AD](map-aad.md) 身分識別，以取得對應身分識別的指示。 若要瞭解如何設定適用于 Salesforce 的 Azure AD SSO，請參閱本 [教學](/azure/active-directory/saas-apps/salesforce-tutorial)課程。
 
@@ -133,11 +140,11 @@ salesforce Graph connector 可讓您的組織為您的 Salesforce 實例中的�
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/SZYiFxZMKcM]
 
-## <a name="step-5-assign-property-labels"></a>步驟5：指派屬性標籤
+## <a name="step-6-assign-property-labels"></a>步驟6：指派屬性標籤
 
 您可以從選項的功能表中選擇，將 source 屬性指派給每個標籤。 這個步驟不是必要的，具有一些屬性標籤會提升搜尋相關性，並確保使用者的更好搜尋結果。 根據預設，有些標籤（如 "Title"、"URL"、"CreatedBy"、"LastModifiedBy"）已被指派來源屬性。
 
-## <a name="step-6-manage-schema"></a>步驟6：管理架構
+## <a name="step-7-manage-schema"></a>步驟7：管理架構
 
 您可以選取應該編制索引的來源屬性，使其顯示在搜尋結果中。 依預設，連接嚮導會根據一組來源屬性選取搜尋架構。 您可以在 [搜尋架構] 頁面中選取每個屬性和屬性的核取方塊，以加以修改。 搜尋架構屬性包括搜尋、查詢、檢索及精煉。
 精煉功能可讓您定義以後可用作自訂精簡器或篩選搜尋體驗的屬性。  
@@ -145,7 +152,7 @@ salesforce Graph connector 可讓您的組織為您的 Salesforce 實例中的�
 > [!div class="mx-imgBorder"]
 > ![選取每個來源屬性的架構。 選項包括查詢、搜尋、檢索及精煉](media/salesforce-connector/sf9.png)
 
-## <a name="step-7-set-the-refresh-schedule"></a>步驟7：設定重新整理排程
+## <a name="step-8-set-the-refresh-schedule"></a>步驟8：設定重新整理排程
 
 Salesforce 連接器只支援目前完全編目的重新整理排程。
 
@@ -154,9 +161,15 @@ Salesforce 連接器只支援目前完全編目的重新整理排程。
 
 建議的排程為一周完整編目。
 
-## <a name="step-8-review-connection"></a>步驟8：檢查連線
+## <a name="step-9-review-connection"></a>步驟9：檢查連線
 
 遵循一般 [設定指示](./configure-connector.md)。
+
+>[!TIP]
+>**預設結果類型**
+>* 在發佈連接器之後，Salesforce 連接器會自動註冊 [結果類型](./customize-search-page.md#step-2-create-the-result-types) 。 結果類型會根據在步驟3中選取的欄位，使用動態產生的 [結果版面](./customize-results-layout.md) 配置。
+>* 您可以流覽至 [Microsoft 365 系統管理中心](https://admin.microsoft.com)中的 [**結果類型**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes)來管理結果類型。 預設結果類型將命名為 " `ConnectionId` default"。 例如，如果您的連線識別碼為 `Salesforce` ，您的結果版面配置將會命名為： "SalesforceDefault"
+>* 此外，您也可以視需要選擇建立您自己的結果類型。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 <!---## Troubleshooting-->

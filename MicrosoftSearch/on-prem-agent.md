@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: 部署代理程式
-ms.openlocfilehash: d6dabbbb5ee34acedd92166564f560bbc64c7da7
-ms.sourcegitcommit: 93fc70f0073ab45b4dbd702441ac2fc07a7668bc
+ms.openlocfilehash: cfd02fa4ef05ae35738742d9a5d3194d6181ff05
+ms.sourcegitcommit: 0e26abf728cc8df91a85bb22f21426612cf0d57d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53230923"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53565220"
 ---
 # <a name="microsoft-graph-connector-agent"></a>Microsoft Graph connector 代理程式
 
@@ -91,8 +91,8 @@ ms.locfileid: "53230923"
 使用憑證型驗證有三個簡單的步驟：
 
 1. 建立或取得憑證
-1. 將憑證 Upload 至 Azure 入口網站
-1. 將憑證指派給代理程式
+2. 將憑證 Upload 至 Azure 入口網站
+3. 將憑證指派給代理程式
 
 ##### <a name="step-1-get-a-certificate"></a>步驟1：取得憑證
 
@@ -118,9 +118,9 @@ Export-PfxCertificate -Cert $certificatePath -FilePath ($filePath + '.pfx') -Pas
 
 1. 開啟應用程式，並流覽至左窗格中的 [憑證和機密] 區段。
 
-1. 選取 [ **Upload 憑證**] 並上傳 .cer 檔案。
+2. 選取 [ **Upload 憑證**] 並上傳 .cer 檔案。
 
-1. 開啟 **應用程式註冊** ，然後從功能窗格中選取 **憑證和密碼** 。 複製憑證指紋。
+3. 開啟 **應用程式註冊** ，然後從功能窗格中選取 **憑證和密碼** 。 複製憑證指紋。
 
 :::image type="content" alt-text="在左窗格中選取憑證和密碼時的 thumbrint 憑證清單" source="media/onprem-agent/certificates.png" lightbox="media/onprem-agent/certificates.png":::
 
@@ -130,20 +130,33 @@ Export-PfxCertificate -Cert $certificatePath -FilePath ($filePath + '.pfx') -Pas
 
 1. 將憑證 pfx 檔案下載到代理程式電腦上。
 
-1. 連按兩下 pfx 檔，以啟動 [憑證安裝] 對話方塊。
+2. 連按兩下 pfx 檔，以啟動 [憑證安裝] 對話方塊。
 
-1. 安裝憑證時，選取存放區位置的 **本機電腦** 。
+3. 安裝憑證時，選取存放區位置的 **本機電腦** 。
 
-1. 安裝憑證之後，請透過 [開始] 功能表開啟 **管理電腦憑證**。
+4. 安裝憑證之後，請透過 [開始] 功能表開啟 **管理電腦憑證**。
 
-1. 選取 [**個人** 憑證] 底下的新安裝憑證  >  ****。
+5. 選取 [**個人** 憑證] 底下的新安裝憑證  >  ****。
 
-1. 以滑鼠右鍵按一下 [cert]，然後選取 [**所有任務**  >  **管理私密金鑰**] 選項。
+6. 以滑鼠右鍵按一下 [cert]，然後選取 [**所有任務**  >  **管理私密金鑰**] 選項。
 
-1. 在 [許可權] 對話方塊中，選取 [新增] 選項。 在 [使用者選擇] 對話方塊中，寫入： **NT Service\GcaHostService** ，然後按一下 **[確定]**。 不要按一下 [ **檢查名稱** ] 按鈕。
+7. 在 [許可權] 對話方塊中，選取 [新增] 選項。 在 [使用者選擇] 對話方塊中，寫入： **NT Service\GcaHostService** ，然後按一下 **[確定]**。 不要按一下 [ **檢查名稱** ] 按鈕。
 
-1. 在 [許可權] 對話方塊中按一下 [確定]。 代理程式機器現在已設定為讓代理程式使用憑證來產生權杖。
+8. 在 [許可權] 對話方塊中按一下 [確定]。 代理程式機器現在已設定為讓代理程式使用憑證來產生權杖。
 
 ## <a name="troubleshooting"></a>疑難排解
 
-1. 如果連線失敗，錯誤為 "1011：無法存取或離線 Graph connector 代理程式]。請登入安裝代理程式的機器，並在未執行代理程式的情況下，將其啟動。 如果連線持續失敗，請確認在註冊期間提供給代理程式的憑證或用戶端密碼未到期且具有必要許可權。
+### <a name="installation-failure"></a>安裝失敗
+若安裝失敗，請執行下列動作來檢查安裝記錄檔： msiexec/i " <path to msi>\GcaInstaller.msi"/l * V " <destination path> \install.log"。 如果錯誤無法解析，請使用記錄檔以 MicrosoftGraphConnectorsFeedback@service.microsoft.com 支援。
+
+### <a name="registration-failure"></a>註冊失敗
+
+如果登入 config 應用失敗，錯誤為「登入失敗」。 請按一下 [登入] 按鈕，再試一次。 在瀏覽器驗證成功之後，請開啟 services.msc，並檢查 GcaHostService 是否正在執行中。 如果不是，請手動啟動。
+
+如果服務無法啟動，錯誤為「因為登入失敗而無法啟動服務」，請檢查虛擬帳戶 NT Service\GcaHostService 是否有權在機器上以服務的身分登入。 如需相關指示，請查看 [此連結](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/log-on-as-a-service) 。 [！注意] 如果新增使用者或群組的選項會在本機使用者管理員許可權指派中灰顯，則表示嘗試新增此帳戶的使用者在此機器上沒有系統管理員許可權，或有群組原則覆寫此項。 必須更新群組原則，才能允許主機服務登入為服務。
+
+### <a name="connection-failure"></a>連接失敗
+
+如果使用「測試連線」動作建立連線時，發生錯誤 ' 請檢查 username/password 和 datasource 路徑 ' 時，即使提供的使用者名稱和密碼正確，也請確認使用者帳戶對安裝 Graph 連接器代理程式的機器具有互動登入許可權。 請參閱 [登錄原則管理](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) 的檔，以檢查登入許可權。 此外，請確定資料來源和代理程式機器位於相同的網路上。
+
+如果連線失敗，錯誤為 "1011：無法存取或離線 Graph connector 代理程式]。請登入安裝代理程式的機器，並在未執行代理程式的情況下，將其啟動。 如果連線持續失敗，請確認在註冊期間提供給代理程式的憑證或用戶端密碼未到期且具有必要許可權。
