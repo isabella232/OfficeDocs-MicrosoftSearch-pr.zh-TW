@@ -1,5 +1,5 @@
 ---
-title: Microsoft 搜尋 ServiceNow Graph 連接器
+title: ServiceNow Graph 連接器 Microsoft 搜尋
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的 ServiceNow Graph 連接器
-ms.openlocfilehash: ac5d0b23547ce7ccd0d8bb6399b092f9bc9e5303
-ms.sourcegitcommit: f12e7ff0a94d30a9de1f93266715180e7530de3f
+ms.openlocfilehash: 11abe956e624fa23cd19e2dfc2ae9a4af31a0f81407f6e2c5672723c5fdfc8b5
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879306"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54534129"
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -31,7 +31,7 @@ ms.locfileid: "52879306"
 
 安裝程式中的每個步驟都會列在下面，也就是指出應該遵循一般設定指示或僅適用于 ServiceNow Graph 連接器（包括[疑難排解](#troubleshooting)及[限制](#limitations)的相關資訊）的說明。  
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步驟1：在 Microsoft 365 系統管理中心新增 Graph 連接器。
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步驟1：在 Microsoft 365 系統管理中心中新增 Graph 連接器。
 遵循一般設定指示。
 
 ## <a name="step-2-name-the-connection"></a>步驟2：命名連線。
@@ -41,7 +41,7 @@ ms.locfileid: "52879306"
 ## <a name="step-3-connection-settings"></a>步驟3：連接設定
 若要連線至您的 ServiceNow 資料，您需要組織的 **ServiceNow 實例 URL**。 組織的 ServiceNow 實例 URL 一般會類似 **HTTPs:// &lt; 您的組織網域> service-now.com**。 
 
-除了此 URL 之外，您還需要一種 **服務帳戶** ，用以設定 ServiceNow 的連線，以及允許 Microsoft 搜尋定期更新以重新整理排程為基礎的知識文章。 服務帳戶必須具有下列 **ServiceNow 表記錄** 的讀取權限，才可成功編目各種實體。
+除了此 URL 之外，您還需要一個 **服務帳戶**，用以設定 ServiceNow 的連線，以及允許 Microsoft 搜尋定期更新以重新整理排程為基礎的知識文章。 服務帳戶必須具有下列 **ServiceNow 表記錄** 的讀取權限，才可成功編目各種實體。
 
 **功能** | **讀取 access 所需的表格** | **描述**
 --- | --- | ---
@@ -56,7 +56,7 @@ ms.locfileid: "52879306"
 | | user_criteria | 讀取使用者準則許可權
 | | kb_knowledge_base | 閱讀知識文庫資訊
 
-您可以為您用來連線 Microsoft 搜尋的服務帳戶 **建立和指派角色** 。 [瞭解如何指派 ServiceNow 帳戶的角色](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html)。 您可以在建立的角色上指派對表格的讀取權限。 若要瞭解如何設定表記錄的「讀取」存取權，請參閱 [保護資料表記錄](https://developer.servicenow.com/dev.do#!/learn/learning-plans/orlando/new_to_servicenow/app_store_learnv2_securingapps_orlando_creating_and_editing_access_controls)。 
+您可以為您用來連線 Microsoft 搜尋的服務帳戶 **建立並指派角色**。 [瞭解如何指派 ServiceNow 帳戶的角色](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html)。 您可以在建立的角色上指派對表格的讀取權限。 若要瞭解如何設定表記錄的「讀取」存取權，請參閱 [保護資料表記錄](https://developer.servicenow.com/dev.do#!/learn/learning-plans/orlando/new_to_servicenow/app_store_learnv2_securingapps_orlando_creating_and_editing_access_controls)。 
 
 
 >[!NOTE]
@@ -74,15 +74,15 @@ ms.locfileid: "52879306"
 
 ## <a name="step-32-servicenow-oauth"></a>步驟3.2： ServiceNow OAuth
 
-若要使用 ServiceNow OAuth 進行驗證，ServiceNow 系統管理員必須布建 ServiceNow 實例中的端點，這樣 Microsoft Search 應用程式才能存取它。 若要深入瞭解，請參閱在 ServiceNow 檔中 [建立用戶端存取實例的端點](https://docs.servicenow.com/bundle/newyork-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html) 。
+若要使用 ServiceNow OAuth 進行驗證，ServiceNow 系統管理員必須布建 ServiceNow 實例中的端點，這樣 Microsoft 搜尋應用程式才能存取它。 若要深入瞭解，請參閱在 ServiceNow 檔中 [建立用戶端存取實例的端點](https://docs.servicenow.com/bundle/newyork-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html) 。
 
 下表提供如何填寫端點建立表單的指導方針：
 
 欄位 | 描述 | 建議值 
 --- | --- | ---
-姓名 | 識別您需要 OAuth 存取之應用程式的唯一值。 | Microsoft 搜尋
+名稱 | 識別您需要 OAuth 存取之應用程式的唯一值。 | Microsoft 搜尋
 用戶端識別碼 | 應用程式的唯讀、自動產生的唯一識別碼。 當實例要求存取權杖時，會使用用戶端識別碼。 | NA
-用戶端密碼 | 使用此共用的機密字串，ServiceNow 實例和 Microsoft 搜尋會授權彼此間的通訊。 | 遵循安全性最佳作法，將密碼當做密碼對待。
+用戶端密碼 | 使用此共用的機密字串，ServiceNow 實例和 Microsoft 搜尋會授權彼此進行通訊。 | 遵循安全性最佳作法，將密碼當做密碼對待。
 重新導向 URL | 授權伺服器重新導向所需的回撥 URL。 | https://gcs.office.com/v1.0/admin/oauth/callback
 標誌 URL | 包含應用程式標誌之圖像的 URL。 | NA
 作用中 | 選取此核取方塊，讓應用程式登錄成為使用中。 | 設定為 active
@@ -147,7 +147,7 @@ ServiceNow 實例需要下列設定：
 
    欄位 | 描述 | 建議值
    --- | --- | ---
-   姓名 | 識別 OAuth OIDC 實體的唯一名稱。 | Azure AD
+   名稱 | 識別 OAuth OIDC 實體的唯一名稱。 | Azure AD
    用戶端識別碼 | 在協力廠商 OAuth OIDC server 中註冊之應用程式的用戶端識別碼。 實例在要求存取權杖時使用用戶端識別碼。 | Application (Client) ID 從步驟3。
    用戶端密碼 | 在協力廠商 OAuth OIDC server 中註冊之應用程式的用戶端密碼。 | 步驟3的用戶端密碼。 b
 

@@ -1,5 +1,5 @@
 ---
-title: 線上和 Microsoft 搜尋 SharePoint 中的傳統頁面
+title: SharePoint 線上及 Microsoft 搜尋中的傳統頁面
 ms.author: keremy
 author: jeffkizn
 manager: parulm
@@ -11,23 +11,23 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 在傳統的 SharePoint 頁面上使用 Microsoft 搜尋
-ms.openlocfilehash: 33215c730d34c14f8ce1d55e93730615688f1e2a
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+description: 在傳統 SharePoint 頁面上使用 Microsoft 搜尋
+ms.openlocfilehash: 187a8c78b9f1b78cf1c5ad04ede91a38fe88759d34037226949a441034cb13b9
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031429"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533597"
 ---
 # <a name="classic-pages-and-microsoft-search"></a>傳統頁面和 Microsoft 搜尋
 
-SharePoint 現代網站之前建立的網站使用傳統搜尋方塊和傳統搜尋結果體驗。 我們將推出使用 Microsoft Search 的新式搜尋體驗來開始使用預設傳統頁面的功能，其可提供具有較高相關性的個人化結果。
+SharePoint 現代網站之前建立的網站使用傳統搜尋方塊和傳統搜尋結果體驗。 我們將推出使用 Microsoft 搜尋的新式搜尋體驗來開始使用預設傳統頁面的功能，這會提供具有較高相關性的個人化結果。
 
-針對所有網站（包括傳統）都建議使用 Microsoft Search，但是如果您的傳統網站使用自訂主版頁面和/或您已自訂傳統的搜尋結果體驗，我們將會自動偵測這些自訂，而不會切換至 Microsoft 搜尋。
+建議所有網站使用 Microsoft 搜尋，但如果傳統網站使用自訂主版頁面和/或您已自訂傳統的搜尋結果體驗，我們會自動偵測這些自訂，而不會切換至 Microsoft 搜尋。
 
 ## <a name="classic-sites-that-will-automatically-switch-to-microsoft-search"></a>將會自動切換至 Microsoft 搜尋的傳統網站
 
-當下列所有條件皆為真時，傳統網站會開始使用 Microsoft Search：
+如果下列所有條件皆為真，則傳統網站會開始使用 Microsoft 搜尋：
 
 * 網站是以小組網站範本為基礎， (例如 STS#0 和 STS # 1) 。
 * 網站未開啟發佈功能。
@@ -36,11 +36,11 @@ SharePoint 現代網站之前建立的網站使用傳統搜尋方塊和傳統搜
 * 預設結果來源上沒有網站或網站集合的自訂結果類型。
 * 使用下列所述的 *SearchBoxInNavBar* 設定，不會選擇網站或網站集合的參數。
 
-切換至 Microsoft 搜尋後，網站中的傳統頁面會開始顯示套件導覽列中的 [搜尋] 方塊，並移除頁面上的 [傳統搜尋] 方塊。 然後，當使用者搜尋字詞時，結果會以 Microsoft 搜尋的新式搜尋體驗來顯示。
+切換至 Microsoft 搜尋後，網站中的傳統頁面會開始顯示套件導覽列中的 [搜尋] 方塊，並移除頁面上的 [傳統搜尋] 方塊。 然後，當使用者搜尋字詞時，會使用 Microsoft 搜尋的新式搜尋體驗來顯示結果。
 
 ## <a name="staying-with-the-classic-search-experience"></a>保持傳統搜尋體驗
 
-如果您的網站符合以上所列的準則，但您不想要切換至 Microsoft 搜尋體驗，您可以選擇以網站或網站集合擁有者的身分使用下列命令。
+如果您的網站符合以上所列的準則，但您不想要切換至 Microsoft 搜尋體驗，您可以選擇使用下列命令做為網站或網站集合擁有者。
 
 您可以在切換之前或之後的任何時間使用此命令，這樣就能輕鬆回到先前所用的搜尋體驗。
 
@@ -84,4 +84,4 @@ Set-PnPSearchSettings -Scope Site -SearchBoxInNavBar AllPages
 ```
 
 > [!NOTE]
-> 您可以針對包含 "STS"、"CMSPUBLISHING"、"BLANKINTERNET" 和「GROUP」 ) 的小組網站或發佈網站 (範本識別碼，手動啟用 Microsoft Search。
+> 您可以針對包含 "STS"、"CMSPUBLISHING"、"BLANKINTERNET" 及 "GROUP" ) 的小組網站或發佈網站 (範本識別碼，手動啟用 Microsoft 搜尋。

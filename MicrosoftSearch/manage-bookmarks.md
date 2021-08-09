@@ -12,13 +12,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
-description: 建立和更新用來大量編輯 Microsoft 搜尋書簽結果的書簽和方式
-ms.openlocfilehash: e8488146a041e7165596dafff8012adfa1122341
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+description: 建立和更新大量編輯 Microsoft 搜尋書簽結果的書簽和方式
+ms.openlocfilehash: 1362082bf33bd4a30ff2ae76e2fa05a3ccd8962c4ef5f5cb15f41fc183d0c4b9
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031726"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533798"
 ---
 # <a name="manage-bookmarks"></a>管理書籤
 
@@ -38,7 +38,7 @@ ms.locfileid: "51031726"
 
 ## <a name="create-bookmark-answers"></a>建立書簽答案
 
-在 [Microsoft 365 系統管理中心](https://admin.microsoft.com/)中，移至 [ [書簽](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks) ]，然後選擇您要建立新書簽的方式：
+在[Microsoft 365 系統管理中心](https://admin.microsoft.com/)中，移至 [[書簽](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks)]，然後選擇您要建立新書簽的方式：
 
 - 新增書簽
 - 匯入 SharePoint 結果
@@ -48,27 +48,27 @@ ms.locfileid: "51031726"
 
 ### <a name="add-bookmarks"></a>新增書簽
 
-「搜尋管理員」和「編輯」可以在 Microsoft 365 系統管理中心新增書簽，並將其發佈或儲存至草稿。 發佈書簽會立即重新整理搜尋索引，讓使用者立即可以發現。 您也可以指定要發佈的日期和時間，以排程書簽。
+「搜尋管理員」和「編輯」可以在 Microsoft 365 系統管理中心中新增書簽，並將其發佈或儲存至草稿。 發佈書簽會立即重新整理搜尋索引，讓使用者立即可以發現。 您也可以指定要發佈的日期和時間，以排程書簽。
 
-- **已發佈**：書簽可透過 Microsoft 搜尋以供組織的使用者使用。
+- **已發佈**：書簽可透過 Microsoft 搜尋取得給組織的使用者。
 - **草稿**：您的使用者無法使用儲存為草稿的書簽。 如果您或其他專案關係人想要在發佈之前複查或更新書簽，請使用此狀態。
 - 已 **排程**：將在指定日期和時間發佈的書簽。
 
 您可以使用 Microsoft 搜尋內容建立者瀏覽器延伸名輕鬆新增書簽。 若要安裝瀏覽器延伸名，請移至您要新增為書簽的網站，然後按一下分機號碼中的 [新增]。
 安裝 Edge 和 Chrome 的分機：
 
-- 若為 Chromium Edge 或 Chrome：請移至 [Chrome 網頁存放區](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm) ，並新增分機號碼。
-- 若為舊版 Edge：請移至 [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) 並新增分機號碼。
+- 若為 Chromium Edge 或 Chrome：請移至[Chrome 網頁存放區](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm)，並新增分機號碼。
+- 若為舊版 Edge：請移至[Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab)並新增分機號碼。
 
 ### <a name="import-sharepoint-results"></a>匯入 SharePoint 結果
 
-如果您的組織在 SharePoint 中設定提升的結果，您可以將您租使用者的標題、URLs 和描述匯入 Microsoft 搜尋，然後讓您的使用者可以使用匯入的內容。 在大多數情況下，匯入 SharePoint 結果只需要數分鐘。 如果您要匯入大量結果，可能需要長達48小時。 這是一種簡單的方法，可快速填入搜尋結果，讓使用者更有效率。 建議您使用從 SharePoint 升級的結果做為參考，以瞭解如何命名及建立相關的搜尋結果。
+如果您的組織在 SharePoint 中設定升級的結果，您可以將您租使用者的已升級結果中的標題、URLs 和描述匯入 Microsoft 搜尋，並讓您的使用者可以使用匯入的內容。 在大多數情況下，匯入 SharePoint 結果只需要數分鐘。 如果您要匯入大量結果，可能需要長達48小時。 這是一種簡單的方法，可快速填入搜尋結果，讓使用者更有效率。 建議您使用從 SharePoint 升級的結果做為參考，以瞭解如何命名及建立相關的搜尋結果。
 
 ### <a name="add-default-and-suggested-bookmarks"></a>新增預設和建議的書簽
 
 我們已包含一些預設建議的書簽，您的使用者可能會發現這些書簽，包括 HR、權益、IT 支援、密碼管理等的書簽。 請複查、更新及發佈這些建議的書簽，以立即向您的使用者提供高品質的結果。
 
-您的使用者也可以建議使用 Microsoft 搜尋中的意見反應所新增的書簽。 其建議會顯示為建議的書簽。
+您的使用者也可以建議使用 Microsoft 搜尋中的意見連結所新增的書簽。 其建議會顯示為建議的書簽。
 
 ### <a name="import-bookmarks"></a>匯入書簽
 
@@ -106,9 +106,9 @@ ms.locfileid: "51031726"
 
 ### <a name="publish-or-review-recommended-bookmarks"></a>發佈或查看建議的書簽
 
-為了減少新增書簽所需的手動操作，Microsoft Search 可以評估您組織的 SharePoint 連結和建議書簽。 您可以在發佈之前加以檢查，或將其設為自動發行。 建議的書簽不需要任何安裝程式，預設會啟用並設定為 autopublish。 若要隨時變更這些設定，請選取 [ **管理書簽** ] 以開啟 [書簽設定] 面板。
+若要減少新增書簽所需的手動操作，Microsoft 搜尋可以評估組織的 SharePoint 連結和建議書簽。 您可以在發佈之前加以檢查，或將其設為自動發行。 建議的書簽不需要任何安裝程式，預設會啟用並設定為 autopublish。 若要隨時變更這些設定，請選取 [ **管理書簽** ] 以開啟 [書簽設定] 面板。
 
-![Microsoft 365 系統管理員入口網站中建議的書簽設定的螢幕擷取畫面](media/bookmarks-recommendedsettings.png)
+![Microsoft 365 管理入口網站中建議的書簽設定的螢幕擷取畫面](media/bookmarks-recommendedsettings.png)
 
 如果已啟用建議的書簽，則建議引擎會評估組織中的 SharePoint 網站，以識別高流量連結。 在初始評估期間之後，建議的書簽會 autopublished 或加入至建議的書簽清單。 接下來的週期（30天評估期間後接 autopublishing 或加入建議的書簽）會開始。
 
@@ -126,21 +126,21 @@ ms.locfileid: "51031726"
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
-**問：發佈書簽後，它需要多久才能顯示在 Microsoft 搜尋中？**
+**問：在發佈 Microsoft 搜尋後，該書簽在中看起來需要多久？**
 
-**A：**  在發佈後，會立即在 Microsoft 搜尋中使用書簽。
+**A：** 書簽可在發佈後的 Microsoft 搜尋中立即使用。
 
 **問：建議的書簽顯示需要多久時間？**
 
-**A：**  建議的書簽只會出現在 Microsoft Search 中（如果建議的書簽和 autopublishing 皆已啟用）。 在初始評估期間內，建議引擎會評估 SharePoint 流量，以識別適當的書簽，然後 autopublish 這些書簽。 一旦發佈，便會立即在 Microsoft 搜尋中使用。
+**A：** 建議的書簽只會出現在 Microsoft 搜尋同時啟用建議的書簽和 autopublishing 時。 在初始評估期間內，建議引擎會評估 SharePoint 流量，以識別適當的書簽，然後 autopublish 這些書簽。 一旦發佈，便會立即可在 Microsoft 搜尋中取得。
 
 **問：從 Microsoft 搜尋結果中移除已刪除的書簽需要多久時間？**
 
 **A**：已刪除的書簽會立即從工作結果中移除。
 
-**問： Microsoft Search 是否要從所有語言的網站上推薦書簽？**
+**問：是否要從所有語言的網站 Microsoft 搜尋建議書簽？**
 
-**A**：是的，Microsoft Search 可以從任何內部 SharePoint 網站（不論語言的語言）建議書簽。
+**A**：是的，Microsoft 搜尋可以從任何內部 SharePoint 網站（不論語言的語言）建議書簽。
 
 **問：我是否可以在搜尋結果中停止顯示建議的書簽？**
 
@@ -160,4 +160,4 @@ ms.locfileid: "51031726"
 
 **問：哪裡可以找到適用于電源應用程式的應用程式識別碼？**
 
-**A**：請移至電源應用程式網站，並查看應用程式的詳細資料窗格。 深入瞭解 [取得應用程式識別碼](/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id)。
+**A**：請移至 Power Apps 網站，並查看應用程式的 [詳細資料] 窗格。 深入瞭解 [取得應用程式識別碼](/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id)。

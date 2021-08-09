@@ -12,13 +12,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
-description: 個別尋找並更新解答，或使用 Microsoft Search 工具來編輯 Q&一次。
-ms.openlocfilehash: 2a8b0727ef3540a35d617cf6c8bae7b0d99767a8
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+description: 個別尋找及更新答案，或使用 Microsoft 搜尋工具&一次即可編輯 Q。
+ms.openlocfilehash: 2e54169a6196ec78bd96b33aa1ba71fc498b6ff13d8d872ad06ca0db1d9fc2c0
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422998"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54532864"
 ---
 # <a name="manage-qas"></a>管理問與答
 
@@ -60,36 +60,36 @@ ms.locfileid: "47422998"
 
 目前，瀏覽器擴充功能可用於 Microsoft Edge 和 Chrome。
 
-- 若要下載 Edge 的分機 (舊版) ，請移至 [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab)。
-- 若要下載分機鑲邊或 Edge (Chromium) ，請移至 [Chrome web store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm)。
+- 若要下載 Edge 的分機 (舊版) ，請移至[Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab)。
+- 若要下載分機鑲邊或 Edge (Chromium) ，請移至[Chrome web store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm)。
 
 ## <a name="bulk-add-or-edit-qas"></a>大量新增或編輯問與答
 
 系統管理員可以使用匯入及匯出功能，以大容量方式建立或編輯 Q&。
 
-使用匯入/匯出功能：
+使用匯入/匯出功能可：
 
 - 在 Q&範本檔中，大量新增 Q&以新增詳細資料，然後將其匯入。
-- Bulk edit Q&出口 Q&如 .csv 檔案，請編輯 Q&匯出檔案中的詳細資料，然後匯入檔案。
-- 將 Q&為-Export Q&備份成 .csv 檔案。
+- Bulk edit Q&出口 Q&為 .csv 檔案，請編輯 Q&匯出檔案中的詳細資料，然後匯入檔案。
+- 將 Q&為-Export Q&改為 .csv 檔。
 
 若要匯入或匯出 Q&如下：
 
-1. 在 [問與答] 索引標籤的右上角，選取 [匯入]****。
-選取 [ **匯出** ]，下載所有現有的 Q&，如 .csv 檔案中所示。
+1. 在 [問與答] 索引標籤的右上角，選取 [匯入]。
+選取 [ **匯出** ]，以下載 .csv 檔案中的所有現有 Q&。
 1. 在右窗格中，選取要使用 .csv 檔案匯入的選項。 下載範本檔案，以取得必要欄位及詳細資料的清單。
 1. 新增或編輯 Q&範本檔中的詳細資料，然後將它儲存在您的電腦上。
 1. 在 [ **Import Q&** 窗格中，選取 **[流覽]**，然後選取您要匯入的 .csv 檔案。
-1. 選取 [匯入]****。
+1. 選取 [匯入]。
 
 重要的範本檔秘訣：
 
-- 永不編輯這些欄位中的資料：**識別碼**、**上次修改日期**，以及**上次修改者**
-- 如果您包含現有書籤的**識別碼**，將會以匯入檔案中的資訊加以取代。
+- 永不編輯這些欄位中的資料：**識別碼**、**上次修改日期**，以及 **上次修改者**
+- 如果您包含現有書籤的 **識別碼**，將會以匯入檔案中的資訊加以取代。
 - 如果現有的書簽具有相同的標題或 URL，則會使用匯入檔案中的資訊更新書簽。
 - 並非範本檔案中的所有欄位都是必要的，必要的欄位也視書簽狀態而有所不同。
-- 根據 [ **省/州** ] 欄位，書簽會儲存為 *草稿*、 *建議*或 *排程*，或是自動發行。
-- 針對管理多個組織的合作夥伴：您可以從一個組織匯出書簽，然後將其匯入另一個組織。 但您必須在匯入之前，先移除 [識別碼]**** 資料行中的資料。
+- 根據 [ **省/州** ] 欄位，書簽會儲存為 *草稿*、 *建議* 或 *排程*，或是自動發行。
+- 針對管理多個組織的合作夥伴：您可以從一個組織匯出書簽，然後將其匯入另一個組織。 但您必須在匯入之前，先移除 [識別碼] 資料行中的資料。
 
 > [!NOTE]
 > 您無法匯入 Q&，如同範本檔案中有任何錯誤。 若要防止錯誤，請確定您的匯入檔案格式正確，並包含所有必要的資訊。

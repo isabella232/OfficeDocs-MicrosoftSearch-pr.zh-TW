@@ -12,26 +12,26 @@ search.appverid:
 - MET150
 - MOE150
 description: 第一次設定 Microsoft Search。
-ms.openlocfilehash: 98499c2df1d8d732cdc1961116cafaaffeb4c5d6
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: 9a52695f3a7494b27849ff21798302777716b9bda755ff372e605ec45a6d94b5
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031663"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54534120"
 ---
 # <a name="set-up-microsoft-search"></a>設定 Microsoft Search
 
-Microsoft 搜尋提供方便使用的介面，可協助使用者尋找諸如檔案和檔、內部網站與商務工具、人員和群組、位置與方向、交談及答案等資訊。 這樣做的方式是安全地存取所有資料來源，包括電子郵件、檔案、SharePoint 檔案、OneDrive 內容及其他共用資源。 使用 [Bing] 中的 Microsoft 搜尋時，您也可以從網際網路取得搜尋結果。
+Microsoft 搜尋提供方便使用的介面，可協助使用者尋找諸如檔案與檔、內部網站和商務工具、人員和群組、位置和方向、交談及答案等資訊。 這樣做的方式是安全地存取所有資料來源，包括電子郵件、檔案、SharePoint 檔案、OneDrive 內容及其他共用資源。 使用 Bing 中的 Microsoft 搜尋，您也可以從網際網路取得搜尋結果。
 
 若要深入了解 Microsoft Search 功能，請參閱 [Microsoft Search 概觀](overview-microsoft-search.md)。
 
 ## <a name="get-started"></a>開始使用
 
-Microsoft Search 預設會對支援它的所有 Microsoft 應用程式開啟，成為 Microsoft 365 的一部分。 不需要進行任何設定，但是您可以透過某些基本的管理工作，來改善 Microsoft 的整體搜尋體驗。
+Microsoft Search 預設會對支援它的所有 Microsoft 應用程式開啟，成為 Microsoft 365 的一部分。 不需要進行任何設定，但是您可以透過某些基本的管理工作來改善整體 Microsoft 搜尋體驗。
 
 您可透過 Microsoft 365 系統管理中心來管理 Microsoft 搜尋。
 
-1. 在 Microsoft 365 系統管理中心中，移至 [**設定**]  >  [**搜尋 & 智慧**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch)。
+1. 在 Microsoft 365 系統管理中心中，移至 **設定**  >  [**搜尋 & 智慧**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch)。
 
 身為系統管理員，請考慮幾個可讓 Microsoft Search 體驗更有效且對組織使用者更友善的事項。
 
@@ -48,10 +48,10 @@ Microsoft Search 預設會對支援它的所有 Microsoft 應用程式開啟，�
 
 ## <a name="step-2-create-answers"></a>步驟2：建立答案
 
-Microsoft Search 會提供工具給系統管理員，讓其用來為使用者建立功能強大的搜尋體驗。 在 Microsoft Search 中，系統管理員有三個不同的搜尋內容可以建立，以取得更好的搜尋體驗，並改善內容的 "findability"：
+Microsoft Search 會提供工具給系統管理員，讓其用來為使用者建立功能強大的搜尋體驗。 在 Microsoft 搜尋中，系統管理員可以使用三個不同的搜尋內容來建立更好的搜尋體驗，並改善內容的 "findability"：
 
 書簽是最常使用的答案類型。 他們會將使用者查詢的最佳結果提升至搜尋結果的最上層，讓使用者能輕鬆找到他們所要尋找的專案。
-可供所有人使用的資訊性內容;例如，有關公司的資訊、Windows 和 Office 應用程式的相關資訊等等。組織中的人員一般會在日常工作中搜尋的內容。 常見的工作相關搜尋包括員工福利、時間與支出報告、提交訂購單和取得 IT 服務協助等。
+可供所有人使用的資訊性內容;例如，公司的相關資訊、Windows 與 Office 應用程式的相關資訊等等。組織中的人員一般會在日常工作中搜尋的內容。 常見的工作相關搜尋包括員工福利、時間與支出報告、提交訂購單和取得 IT 服務協助等。
 
 若要建立及管理答案，請參閱 [規劃您的內容](plan-your-content.md)。
 

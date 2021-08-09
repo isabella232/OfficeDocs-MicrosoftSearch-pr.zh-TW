@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: a220c1bf-7cee-448a-90a3-310284d03e81
 description: 減少您的 Windows 10 使用者登入 Microsoft Search 和 Office 365 的提示次數
-ms.openlocfilehash: 9fa7e067a5d72b7044981491f8526e6de727cfae
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: d3628503c9150c1d71b4d390a9e9c34f5e6faedfac4e33c44cdd038f90d591d0
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626889"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54534111"
 ---
 # <a name="test-single-sign-on"></a>測試單一登入
 
@@ -37,7 +37,7 @@ ms.locfileid: "38626889"
     
 2. 按一下瀏覽窗格中的 **[工具]**
     
-3. 在 [工具] 清單中，下載**適用於 Chrome 的 Windows 10 和 AAD 登入擴充功能**
+3. 在 [工具] 清單中，下載 **適用於 Chrome 的 Windows 10 和 AAD 登入擴充功能**
     
 4. 與 Windows 10 上的 Chrome 使用者共用擴充功能
 

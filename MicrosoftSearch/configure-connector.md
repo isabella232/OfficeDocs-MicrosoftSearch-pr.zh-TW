@@ -1,5 +1,5 @@
 ---
-title: 設定 microsoft 搜尋的 microsoft 內部 Graph 連接器
+title: 設定 Microsoft 搜尋的 Microsoft 內部 Graph 連接器
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,31 +12,31 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Microsoft Graph 連接器的安裝程式概述
-ms.openlocfilehash: ef94d530af63d8b8b33dfae3c4b411164ef31feb
-ms.sourcegitcommit: 1b154441f3a3abba0f2719e66a767432bc9506ca
+description: Microsoft Graph 連接器的設定概觀
+ms.openlocfilehash: 0c67081d3efab421b563e82dba506da85e65cb91d34b31f128f3bcff945c68a1
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "52720941"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533300"
 ---
 <!-- Previous ms.author: monaray -->
 
 <!-- markdownlint-disable no-trailing-punctuation -->
 
-# <a name="setup-overview-for-graph-connectors-by-microsoft"></a>Microsoft Graph 連接器的安裝程式概述 
+# <a name="setup-overview-for-graph-connectors-by-microsoft"></a>Microsoft Graph 連接器的設定概觀 
 
-本文說明在 [Microsoft 365 系統管理中心](https://admin.microsoft.com)設定 **Microsoft** 的 Graph 連接器所需的基本程式。 基本程序包含下列步驟：  
+本文說明在 [Microsoft 365 系統管理中心](https://admin.microsoft.com)中設定 **Microsoft** Graph 連接器所需的基本程式。 基本程序包含下列步驟：  
 <!---Add links to each section in the doc--->
 
 1. [在 Microsoft 365 系統管理中心新增 Graph 連接器](#step-1-add-a-graph-connector-in-the-microsoft-365-admin-center)
-2. [命名連接](#step-2-name-the-connection)
-3. [設定連接設定](#step-3-configure-the-connection-settings)
-4. [管理搜尋許可權](#step-4-manage-search-permissions)
+2. [為連線命名](#step-2-name-the-connection)
+3. [設定連線設定](#step-3-configure-the-connection-settings)
+4. [管理搜尋權限](#step-4-manage-search-permissions)
 5. [指派屬性標籤](#step-5-assign-property-labels)
-6. [管理架構](#step-6-manage-schema)
+6. [管理結構描述](#step-6-manage-schema)
 7. [重新整理設定](#step-7-refresh-settings)
-8. [檢查連線](#step-8-review-connection)
+8. [檢閱連線](#step-8-review-connection)
 
 本文也包含疑難排解、限制及後續步驟的相關資訊：
 
@@ -51,11 +51,11 @@ ms.locfileid: "52720941"
 
 <!---Insert "Before you get started" recommendations for this data source-->
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步驟1：在 Microsoft 365 系統管理中心新增 Graph 連接器
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步驟1：在 Microsoft 365 系統管理中心中新增 Graph 連接器
 
 完成下列步驟以設定任何 Microsoft 建立的 Graph 連接器：
 
-1. 在[Microsoft 365 系統管理中心](https://admin.microsoft.com)登入您的系統管理員帳戶。
+1. 在[Microsoft 365 系統管理中心](https://admin.microsoft.com)中登入您的系統管理員帳戶。
 
 2. 在功能窗格中，選取 [**設定**]，然後選取 [**搜尋 & 情報**]。 選取 [ [連接器]](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)索引標籤。
 
@@ -138,7 +138,7 @@ ms.locfileid: "52720941"
 搜索 | 使屬性的文字內容可供搜尋。 屬性內容會包含在全文檢索索引中。 | 如果屬性為 **title**， **Enterprise** 的查詢會傳回包含字 **Enterprise** 任何文字或標題的答案。
 查詢 | 依查詢搜尋特定屬性的相符。 您可以在查詢中以程式設計方式或逐字方式指定屬性名稱。 |  如果可以查詢 **title** 屬性，則支援查詢 **標題： Enterprise** 。
 檢索 | 在結果類型中只能使用可檢索的屬性，並顯示在搜尋結果中。 |
-完善 | [調整] 選項可以像在 Microsoft 搜尋結果頁面中那樣使用。 | 您組織中的使用者可以在 [搜尋結果] 頁面中以 **URL** [篩選](custom-filters.md)，如果在連線設定期間標示了精煉屬性
+完善 | [調整] 選項可以像在 Microsoft 搜尋結果] 頁面中那樣使用。 | 您組織中的使用者可以在 [搜尋結果] 頁面中以 **URL** [篩選](custom-filters.md)，如果在連線設定期間標示了精煉屬性
 
 針對除檔案共用連接器以外的所有連接器，必須手動設定自訂類型。 若要啟動每個欄位的搜尋功能，您需要對應至屬性清單的搜尋架構。 連接嚮導會根據您所選擇的來源屬性集，自動選取搜尋架構。 您可以在 [搜尋架構] 頁面中選取每個屬性和屬性的核取方塊，以修改此架構。
 

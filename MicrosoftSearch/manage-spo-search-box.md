@@ -12,18 +12,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 如何在 SharePoint 網站上自訂搜尋框體驗
-ms.openlocfilehash: c58e7cf0a47d22fa9c6fd3abd93cc97087625690
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: 151b5b066cd0164d4f7689192c37867d75b6eb6c57c82588cee654871c5e32b0
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031357"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533579"
 ---
 # <a name="search-box-settings-on-sharepoint-sites"></a>SharePoint 網站上的搜尋方塊設定
 
-在 SharePoint 網站上可自訂的幾種方式之一，是要調整套件導覽列中的搜尋方塊在 SharePoint 網站中的運作方式，以最適合您的需求。
+您可以在 SharePoint 網站上自訂 Microsoft 搜尋其中一種方式，以定制套件導覽列中的 [搜尋] 方塊如何在 SharePoint 網站中運作，以最適合您的需求。
 
-如需其他自訂選項，請參閱 [變更 Microsoft 搜尋結果頁面以新增自訂的縱向、結果類型及佈局](customize-search-page.md)，以及 [建立自訂搜尋結果頁面](create-search-results-pages.md)。
+如需其他自訂選項，請參閱[變更「Microsoft 搜尋結果」頁面以新增自訂的縱向、結果類型及佈局](customize-search-page.md)，以及[建立自訂搜尋結果頁面](create-search-results-pages.md)。
 
 > [!NOTE]
 > 現在所有客戶都無法使用 [套件導覽列] 搜尋方塊，但這些選項仍可供設定，而且會在可用時生效。
@@ -37,7 +37,7 @@ Connect-PnPOnline -Url <yoursiteurl> -UseWebLogin
 
 ## <a name="changing-the-scope-of-search"></a>變更搜尋範圍
 
-當您今天在 SharePoint Online 中建立新的網站，並在 [搜尋] 方塊中輸入時，您會進入 [Microsoft 搜尋結果] 頁面。 此頁面預設會顯示目前網站的結果，並可讓您將搜尋範圍擴充至目前網站 (關聯的中樞（如果有一個) 或整個組織）。
+當您今天在 SharePoint Online 中建立新網站，然後在搜尋方塊中輸入時，將會進入 [Microsoft 搜尋結果] 頁面。 此頁面預設會顯示目前網站的結果，並可讓您將搜尋範圍擴充至目前網站 (關聯的中樞（如果有一個) 或整個組織）。
 
 [搜尋] 方塊預設使用的範圍取決於網站類型。
 
@@ -84,7 +84,7 @@ Set-PnPSearchSettings -Scope Site -SearchBoxInNavBar Hidden
 
 * 此設定僅適用于套件導覽列中的 [搜尋] 方塊。 它不會套用到頁面中的搜尋方塊，也不會套用到傳統頁面上的搜尋方塊。
 
-* 當您停用導覽列中的 [搜尋] 方塊時，如果您想要在網站中搜尋功能，您必須使用自訂網頁元件或 SharePoint 架構擴充，自行提供。
+* 當您停用導覽列中的搜尋方塊時，如果您想要在網站中使用搜尋功能，您必須自行使用自訂網頁元件或 SharePoint 架構延伸提供該功能。
 
 * 此方案也會從網站的清單和文件庫中移除搜尋方塊。 除了整個網站搜尋之外，您的自訂搜尋解決方案也必須考慮 SharePoint 清單和文件庫的內容搜尋。
 

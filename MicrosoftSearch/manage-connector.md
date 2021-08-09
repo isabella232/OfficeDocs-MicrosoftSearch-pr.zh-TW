@@ -1,5 +1,5 @@
 ---
-title: 管理 microsoft 搜尋的 microsoft Graph 連接器
+title: 管理 Microsoft 搜尋的 Microsoft Graph 連接器
 ms.author: mecampos
 author: monaray97
 manager: mnirkhe
@@ -12,13 +12,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 管理 microsoft 搜尋的 microsoft Graph 連接器。
-ms.openlocfilehash: 685b501f3afe25d75c13a1fe6cc2c1b5db8a3511
-ms.sourcegitcommit: e5d695c40b68c2f1fa082fa9de20b9aa6d5b8050
+description: 管理 Microsoft 搜尋的 Microsoft Graph 連接器。
+ms.openlocfilehash: e8cf01cb3af3dea96ba98ab65e12d54a027ab77fa92e00c354331ac887578b0f
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52325166"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54532903"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
@@ -28,9 +28,9 @@ ms.locfileid: "52325166"
 
 ## <a name="connection-operations"></a>連接作業
 
-流覽至[Microsoft 365 系統管理中心](https://admin.microsoft.com)的 [[連接器]](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)索引標籤。
+流覽至[Microsoft 365 系統管理中心](https://admin.microsoft.com)中的 [[連接器]](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)索引標籤。
 
-針對每個連接器類型， [Microsoft 365 系統管理中心](https://admin.microsoft.com)都支援下表所示的作業：
+針對每個連接器類型， [Microsoft 365 系統管理中心](https://admin.microsoft.com)支援下表所示的作業：
 
 作業 | Microsoft Graph 連接器 | 夥伴或 Graph 連接器
 --- | --- | ---
@@ -51,7 +51,7 @@ ms.locfileid: "52325166"
 
 * 已 **暫停**。 管理員會透過 pause 選項暫停編目。 下一個編目只會在手動恢復時執行。 不過，來自此連線的資料仍可供搜尋。
 
-* **失敗**。 連接發生嚴重失敗。 此錯誤需要手動干預。 管理員需要根據所顯示的錯誤訊息採取適當的動作。 在發生錯誤之前，已編制索引的資料可供搜尋。
+* **已失敗**。 連接發生嚴重失敗。 此錯誤需要手動干預。 管理員需要根據所顯示的錯誤訊息採取適當的動作。 在發生錯誤之前，已編制索引的資料可供搜尋。
 
 * **Delete 失敗**。 刪除連接失敗。 根據失敗原因，資料可能仍然會編制索引，專案配額可能仍然會消耗，而且編目仍會執行連線。 建議您在此狀態再次嘗試刪除連線。
 
@@ -71,7 +71,7 @@ ms.locfileid: "52325166"
 --- | --- 
 一般 | 0-79%
 高 | 80-89%
-嚴重 | 90%-99%
+關鍵 | 90%-99%
 Full | 100%
 
 <!-- 

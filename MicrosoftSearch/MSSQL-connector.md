@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 為 Microsoft 搜尋設定 Azure SQL 和 Microsoft SQL Graph 連接器。
-ms.openlocfilehash: ae17b99fa0b83b38c8681652af0fdfdb32969f28
-ms.sourcegitcommit: 9cfe9b7f6d4ddf783ee31a6d2a02a73f0c0aef79
+ms.openlocfilehash: ed9284de968921f40003e011348e3e6d4321b59d86207b6c7d054765c6837a1e
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53590259"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533507"
 ---
 <!---Previous ms.author: vivg --->
 
@@ -36,7 +36,7 @@ Graph 連接器會將指定的內容索引放入 Microsoft 搜尋中。 若要�
 
 ### <a name="install-the-graph-connector-agent-required-for-on-premises-microsoft-sql-server-connector-only"></a>僅限內部部署 Microsoft SQL Server 連接器 (安裝 Graph 連接器代理程式) 
 
-為了存取您的內部部署協力廠商資料，您必須安裝及設定 Graph 連接器代理程式。 請參閱[Install the Graph connector agent](on-prem-agent.md)以深入瞭解。
+為了存取您的內部部署協力廠商資料，您必須安裝及設定 Graph 連接器代理程式。 請參閱[Install the Graph connector agent](graph-connector-agent.md)以深入瞭解。
 
 >[!NOTE]
 >若您在設定 Microsoft SQL Server Graph 連接器時使用 Windows 驗證，您嘗試登入的使用者，必須對安裝 Graph 連接器代理程式的機器具有互動式登入許可權。 請參閱 [登錄原則管理](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) 的檔，以檢查登入許可權。
@@ -127,8 +127,8 @@ instructions.-->
 | 完全數值 | 位 | 布林值 |
 | 近似數值 | float <br> 真正 | double |
 | 字元字串 | 字元 <br> Varchar <br> 文字 | string |
-| Unicode 字元字串 | Nchar <br> Nvarchar <br> Ntext | string |
-| 其他資料類型 | 唯一 | string |
+| Unicode 字元字串 | Nchar <br> Nvarchar <br> Ntext | 字串 |
+| 其他資料類型 | 唯一 | 字串 |
 
 對於目前不是直接支援的任何其他資料類型，此資料行必須明確地轉換成支援的資料類型。
 

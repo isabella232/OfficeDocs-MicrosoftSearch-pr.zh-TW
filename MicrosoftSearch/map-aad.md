@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 description: 如何對應 AAD 身分識別的步驟
-ms.openlocfilehash: db0378e596c560edebd2ceb942e6327b47a5286b
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+ms.openlocfilehash: 676e06d4019dabe0f07846dd8918b8070765a7ffd9deb02b11dd68f2014dc7e5
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367701"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54532803"
 ---
-# <a name="map-your-azure-ad-identities"></a>對應 Azure AD 身分識別  
+# <a name="map-your-azure-ad-identities"></a>對應您的 Azure AD 身分識別  
 
 本文將引導您完成將 Azure AD 身分識別對應至資料來源的唯一識別碼的步驟 (非 Azure AD 身分識別) ，這樣，您的存取控制清單中的人員) 與非 Azure AD 身分識別的存取控制 (清單中的人員，便可查看限制範圍的連接器搜尋結果。
 

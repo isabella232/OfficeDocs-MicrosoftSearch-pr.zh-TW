@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 90d3190d-1add-490f-bef2-10b528252a2e
 description: Microsoft Search 是一種能夠為您的組織提供更相關的搜尋結果，藉此提高生產力並節省時間的企業搜尋體驗
-ms.openlocfilehash: a9fe47012a5c4a97811f2a6028f0c1fa9c5037da
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+ms.openlocfilehash: 15c209942e413d2dded067be9bd447d644f8a9cedd6e58f61d1a2526a9d220ab
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47423007"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533851"
 ---
 <!-- markdownlint-disable no-inline-html -->
 # <a name="microsoft-search"></a>Microsoft Search

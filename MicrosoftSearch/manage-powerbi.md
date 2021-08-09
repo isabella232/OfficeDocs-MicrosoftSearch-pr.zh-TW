@@ -13,16 +13,16 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: 管理搜尋結果中顯示 Power BI 報表及資料的方式
-ms.openlocfilehash: 4b2251bdb8039c25fb1ec5290f3374a9f4eb3fd1
-ms.sourcegitcommit: 4b72a31910753d46373a829a64ffec77fe6bc855
+ms.openlocfilehash: a9148ab621703d89ddbe0f225ac2b0697748d8a2e85ffe96cec1763e04deeda9
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547698"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533610"
 ---
 # <a name="manage-power-bi-answers"></a>管理 Power BI 的答案
 
-為了讓您的使用者更容易找到所需的資料和分析，以作出合理的決策，Microsoft Search 已新增對 Power BI 儀表板和報表的支援。 以下是 Power BI 搜尋的一些優點：
+為了讓您的使用者更容易找到所需的資料和分析，以進行合理決策，Microsoft 搜尋已新增對 Power BI 儀表板和報表的支援。 以下是 Power BI 搜尋的一些優點：
 
 * **便於使用：** 這種現成的搜尋體驗可協助使用者輕鬆且快速地尋找組織中 Power BI 的儀表板與報表。
 * **更豐富的內容：** 為了讓 Power BI 搜尋結果更有用，他們包含內容類型的重要資訊：儀表板或報告，以及擁有該專案的小組或人員。
@@ -31,7 +31,7 @@ ms.locfileid: "52547698"
 
 ## <a name="what-users-experience"></a>使用者經驗
 
-Microsoft 搜尋使用者可以從 Windows 搜尋方塊、SharePoint、Office 365 及 Bing 搜尋，以尋找 Power BI 結果。 使用者可以搜尋報表及儀表板，其查詢如下：
+Microsoft 搜尋使用者可以從 [Windows] 搜尋方塊、SharePoint、Office 365 和 Bing 搜尋 Power BI 結果。 使用者可以搜尋報表及儀表板，其查詢如下：
 
 * Power BI 關於`<topic>`
 * Power BI`<topic>`
@@ -57,7 +57,7 @@ Microsoft 搜尋使用者可以從 Windows 搜尋方塊、SharePoint、Office 36
 
 **問：是否 Power BI 預設啟用搜尋？**
 
-**A：** 是的。 預設會為 Microsoft search 啟用 Power BI 搜尋。 此功能不是租使用者管理員所需的首次設定。
+**A：** 是的。 預設會為 Microsoft 搜尋啟用 Power BI 搜尋。 此功能不是租使用者管理員所需的首次設定。
 
 **Q：是否可以為特定群組或使用者啟用或停用搜尋 Power BI？**
 
@@ -73,7 +73,7 @@ Microsoft 搜尋使用者可以從 Windows 搜尋方塊、SharePoint、Office 36
 
 **問：我會看到我無法存取 Power BI 搜尋結果？**
 
-**A：** 不。 Microsoft 搜尋只會傳回您可以存取的 Power BI 結果。
+**A：** 不。 Microsoft 搜尋只會傳回您可以存取 Power BI 結果。
 
 **問：我可以自訂 Power BI 搜尋結果 (例如，報表類型或報表擁有者) ？**
 

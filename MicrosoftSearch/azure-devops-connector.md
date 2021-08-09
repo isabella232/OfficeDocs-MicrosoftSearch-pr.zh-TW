@@ -1,5 +1,5 @@
 ---
-title: Microsoft 搜尋 Azure DevOps Graph 連接器
+title: Azure DevOps Graph 連接器 Microsoft 搜尋
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的 Azure DevOps Graph 連接器
-ms.openlocfilehash: bfe04a022360a968424b673ad03ba05f27c8c333
-ms.sourcegitcommit: 1b154441f3a3abba0f2719e66a767432bc9506ca
+ms.openlocfilehash: b7c5ab48288fdc421cda87b8afbadf08b8cf42ef023e8f56decd7b5c177c619a
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "52720950"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533333"
 ---
 <!---Previous ms.author: shgrover --->
 
@@ -38,7 +38,7 @@ Azure DevOps Graph 連接器可讓您的組織為其 Azure DevOps 服務實例�
 
 <!---Insert "Before you get started" recommendations for this data source-->
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步驟1：在 Microsoft 365 系統管理中心新增 Graph 連接器
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步驟1：在 Microsoft 365 系統管理中心中新增 Graph 連接器
 
 遵循一般 [設定指示](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
@@ -56,7 +56,7 @@ instructions.-->
 
 ### <a name="register-an-app"></a>註冊應用程式
 
-在 Azure DevOps 中註冊應用程式，讓 Microsoft Search 應用程式可以存取實例。 若要深入瞭解，請參閱 Azure DevOps 檔，瞭解如何[註冊應用程式](/azure/devops/integrate/get-started/authentication/oauth?preserve-view=true&view=azure-devops#register-your-app)。
+在 Azure DevOps 中註冊應用程式，讓 Microsoft 搜尋應用程式可以存取實例。 若要深入瞭解，請參閱 Azure DevOps 檔，瞭解如何[註冊應用程式](/azure/devops/integrate/get-started/authentication/oauth?preserve-view=true&view=azure-devops#register-your-app)。
 
 下表提供如何填寫 [應用程式註冊] 表單的指導方針：
 
@@ -78,7 +78,7 @@ instructions.-->
 
 ### <a name="connection-settings"></a>連接設定
 
-在 Azure DevOps 註冊 Microsoft Search 應用程式之後，您可以完成 [連線設定] 步驟。 輸入您的組織名稱、應用程式識別碼和用戶端密碼。
+使用 Azure DevOps 註冊 Microsoft 搜尋應用程式之後，即可完成 [連線設定] 步驟。 輸入您的組織名稱、應用程式識別碼和用戶端密碼。
 
 ![連接應用程式設定](media/ADO_Connection_settings_2.png)
 
@@ -120,7 +120,7 @@ Azure DevOps 連接器支援完整和累加編目的更新排程。
 >[!TIP]
 >**預設結果類型**
 >* 在發佈連接器之後，Azure DevOps 連接器會自動註冊[結果類型](./customize-search-page.md#step-2-create-the-result-types)。 結果類型會根據在步驟3中選取的欄位，使用動態產生的 [結果版面](./customize-results-layout.md) 配置。 
->* 您可以流覽至 [Microsoft 365 系統管理中心](https://admin.microsoft.com)內的 [**結果類型**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes)來管理結果類型。 預設結果類型將命名為 " `ConnectionId` default"。 例如，如果您的連線識別碼為 `AzureDevOps` ，您的結果版面配置將會命名為： "AzureDevOpsDefault"
+>* 您可以流覽至 [Microsoft 365 系統管理中心](https://admin.microsoft.com)中的 [**結果類型**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes)來管理結果類型。 預設結果類型將命名為 " `ConnectionId` default"。 例如，如果您的連線識別碼為 `AzureDevOps` ，您的結果版面配置將會命名為： "AzureDevOpsDefault"
 >* 此外，您也可以視需要選擇建立您自己的結果類型。
 
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 

@@ -12,24 +12,24 @@ search.appverid:
 - MET150
 - MOE150
 ROBOTS: NoIndex
-description: 在管理導覽中重新命名 Microsoft 搜尋以搜尋 & 情報
-ms.openlocfilehash: 272bcd95a701c0e86c6296f2945ec5080c0ab287
-ms.sourcegitcommit: 404a4c9125f10235675b318f0dcf22742e7a7f4b
+description: 在管理導覽中將 Microsoft 搜尋重新命名為搜尋 & 情報
+ms.openlocfilehash: b0a5912ba02c74daffe677f3fbd22c0fb3df12289f155ad4beef69484771fcf3
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868714"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533966"
 ---
 # <a name="search--intelligence"></a>搜尋 & 情報
 
-Microsoft 搜尋管理目前可在[microsoft 365 系統管理中心](https://admin.microsoft.com)的 [**設定**  >  ** [microsoft 搜尋](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch)** ] 底下找到。 我們正在將導覽重新命名為 **[搜尋 & 情報](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch)。**
+Microsoft 搜尋管理目前位於 **設定** Microsoft 搜尋底下的 [Microsoft 365 系統管理中心](https://admin.microsoft.com)中  >  **[](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch)。** 我們正在將導覽重新命名為 **[搜尋 & 情報](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch)。**
 
 > [!Important]
 > 這項變更將會在2020年10月1日向客戶進行首展，並在幾周後接觸所有客戶。
 
 ## <a name="why-we-are-making-this-change"></a>為何要進行這種變更
 
-Microsoft 搜尋可協助使用者快速找出所需的內容，讓您的組織更有效率。 當我們繼續改進和演化 Microsoft 搜尋時，我們會將超越資訊探索的功能與知識管理、工作完成、隱私權控制項等方面的功能相交。
+Microsoft 搜尋可協助使用者快速找到所需的內容，讓您的組織更有效率。 當我們繼續改善和演化 Microsoft 搜尋時，我們會將超越資訊探索的功能與知識管理、工作完成、隱私權控制項等方面的功能進行交比對。
 我們已學到與客戶合作的方式，就是在大多數情況下，對這些領域進行管理的人員都是相同的人員。
 
 我們的核心原則之一就是以人員和經驗（不是技術）來組織管理。 這會結合一組系統管理控制，讓我們在這裡經歷。
@@ -38,4 +38,4 @@ Microsoft 搜尋可協助使用者快速找出所需的內容，讓您的組織�
 
 ## <a name="no-change-in-the-brand"></a>品牌沒有任何變更
 
-導覽中的變更不代表 Microsoft 搜尋產品及（或）品牌的變更，其設計目的是為了提供未來整合相關產品及技術的位置。
+導覽中的變更不代表對 Microsoft 搜尋產品及（或）品牌所做的變更，其設計目的是為了提供未來整合相關產品及技術的位置。

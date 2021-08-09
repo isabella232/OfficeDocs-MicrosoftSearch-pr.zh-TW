@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理自訂篩選
-ms.openlocfilehash: a050921058eac50d7588f1e71f5b0f56cc8e5752
-ms.sourcegitcommit: a86265684871da86562a76c4961d0a6c1869f517
+ms.openlocfilehash: 339c7e96a00860a044a4e1af7382932f8e440e01b8b6d12445c24c1ea9b8cad0
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790328"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533126"
 ---
 # <a name="manage-custom-filters"></a>管理自訂篩選
 
@@ -29,7 +29,7 @@ ms.locfileid: "49790328"
 
 若要在 Microsoft 搜尋上建立篩選，請遵循下列步驟：
 
-1. 在 Microsoft 365 系統管理中心中，移至 [ [縱向](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)]。
+1. 在 Microsoft 365 系統管理中心中，移至 [[縱向](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)]。
 1. 建立/編輯您要建立篩選的垂直方向
 1. 流覽至嚮導中的 [篩選器] 步驟
 1. 按一下 [新增篩選] 並開始

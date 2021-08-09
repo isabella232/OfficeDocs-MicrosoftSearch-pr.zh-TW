@@ -12,61 +12,61 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Microsoft 搜尋的 Microsoft Graph 連接器公開預覽的授權需求和價格
-ms.openlocfilehash: a7236f647e6513508e50519f9c6b1af166a3b2d9
-ms.sourcegitcommit: 2a178850c521189a221879151faa7b3b0aff95d2
+description: 適用于 Microsoft 搜尋的 Microsoft Graph 連接器公開預覽的授權需求和價格
+ms.openlocfilehash: 15bf91506b28a308f285e0f93d5a38f473a8ae77e10489168880e42143b7d9ae
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51905526"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54532946"
 ---
 <!---Previous ms.author: rusamai --->
 
 # <a name="license-requirements-and-pricing"></a>授權需求和價格
 
-本文適用于全球性或計費系統管理員，想要深入瞭解如何購買更多組織的圖形連接器配額。
+本文適用于全球性或計費系統管理員，想要瞭解如何為其組織購買更多 Graph 連接器配額。
 
 任何有效的 **Microsoft 365 或 Office 365 授權** 可讓您在搜尋結果中查看連接器中的資料。
 
 > [!TIP]
-> **Microsoft Graph connector & Viva 主題試用版現已提供**：如果您沒有可用的索引配額，且想要立即嘗試使用 microsoft graph 連接器，您可以在 [這裡](#microsoft-graph-connectors-now-available-with-microsoft-viva-topics-trial)詳述，向 Microsoft [Viva 主題](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot:overviewtab)要求 **促銷代碼**。
+> **Microsoft Graph connector & Viva 主題試用版現可供使用**：如果您沒有可用的索引配額，且想要立即嘗試使用 Microsoft Graph 連接器，則您可以在 [這裡](#microsoft-graph-connectors-now-available-with-microsoft-viva-topics-trial)詳述的 [Microsoft Viva 主題](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot:overviewtab)要求 **促銷碼**。
 
 >[!IMPORTANT]
->所有 Microsoft 的圖形連接器皆為免費。 不過，您需要有足夠的索引配額，才能從這些連接器中攝取內容。
+>所有 Microsoft 的 Graph 連接器皆為免費。 不過，您需要有足夠的索引配額，才能從這些連接器中攝取內容。
 
-若要使用圖形連接器索引內容，您需要有足夠的索引配額。 圖形連接器索引配額可透過：
+若要使用 Graph 連接器來索引內容，您需要有足夠的索引配額。 您可以透過下列方式取得 Graph 連接器索引配額：
 
-## <a name="entitlement-built-into-microsoft-365-or-office-365-e5-licenses"></a>Microsoft 365 或 Office 365 E5 授權中內建的權利
+## <a name="entitlement-built-into-microsoft-365-or-office-365-e5-licenses"></a>內建 Microsoft 365 或 Office 365 E5 授權的權利
 
-下列授權包含500個專案的索引配額的權利，這些專案會向您組織的 ingesting 內容從圖形連接器中計數：
+下列授權包含500個索引配額專案的權利，這些專案會向您的組織提供來自 Graph 連接器之 ingesting 內容的配額：
 
 * Microsoft 365 E5 或 Office 365 E5
 * [Microsoft Viva Topics](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot:overviewtab)
 
-例如，如果您的組織有 100 Microsoft 365 E5 授權，則您的組織有 100 x 500 = 包含圖形連接器索引配額的50000專案。
+例如，如果您的組織有 100 Microsoft 365 E5 授權，則您的組織有 100 x 500 = 50000 專案值得 Graph 連接器索引配額。
 
 <!---Comment requested in PR#143--->
 請注意，Microsoft 365 A5 或 Office 365 A5 不包含此權利。
 
 ## <a name="purchase-of-add-on-index-quota"></a>購買附加元件索引配額
-若要購買更多的圖形連接器配額，請與您的 Microsoft 帳戶管理員取得聯繫，或完成下列步驟：
+若要購買更多 Graph 連接器配額與您的 Microsoft 帳戶管理員取得聯繫，或完成下列步驟：
 
-1. 在 **microsoft 365 系統管理中心**： HTTPs://系統 <span>管理員。</span>com 導覽功能表，移至 **帳單 > 購買服務**。
+1. 在 **Microsoft 365 系統管理中心**： HTTPs://<span>admin。</span>com 導覽功能表，移至 **帳單 > 購買服務**。
 2. 在 [購買服務] 頁面的底部，選取 [ **附加** 元件]。
-3. 選取 **額外的圖形連接器容量**。
+3. 選取 [**額外的 Graph 連接器容量**]。
 4. 選取 [ **購買** ]，然後完成您的訂單喜好設定。
 5. 選取 [ **立即查看**]。
 
 ## <a name="microsoft-graph-connectors-now-available-with-microsoft-viva-topics-trial"></a>Microsoft Graph 連接器現在可搭配 Microsoft Viva 主題試用版使用
- 新的 Viva 主題試用功能可讓您在開發和/或實際執行環境中評估 Microsoft Graph 連接器和 Viva 主題。 除了存取 Viva 主題之外，它還提供有限的連接器容量。
+ 新的 Viva 主題試用版可讓您在開發和/或實際執行環境中評估 Microsoft Graph 連接器和 Viva 主題。 除了存取 Viva 主題之外，它還提供有限的連接器容量。
 
-有兩個選項可供您探索圖形連接器與 Microsoft Viva 主題：
+有兩個選項可用於探索 Graph 連接器與 Microsoft Viva 主題：
 
 1. **開始免費試用版**，並在一月內取得25位使用者的存取權。
 
-     流覽 [Microsoft Viva 主題](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot:overviewtab) ，然後選取 [免費試用] 選項。
+     流覽[Microsoft Viva 主題](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot:overviewtab)，然後選取 [免費試用] 選項。
 
-2. 若要使用 Microsoft Viva 主題試用版，向您的 Microsoft 帳戶管理員索取試用索引容量的 **促銷碼** 。 使用 **促銷代碼** ，您可以在六個月內，針對50使用者取得存取權。
+2. 若要使用 Microsoft Viva 主題試用版，請與您的 Microsoft 帳戶管理員聯繫，以索取試用索引容量的 **促銷代碼**。 使用 **促銷代碼** ，您可以在六個月內，針對50使用者取得存取權。
 
 > [!NOTE]
-> 目前，Microsoft Graph 連接器只支援最多7000000個專案的總索引配額，包括所有內建于 Microsoft 365 或 Office 365 E5 授權的內建配額。 此平臺未來會支援較高的限制。 如有任何問題，請與 Microsoft 支援部門或您的 Microsoft 客戶經理聯繫。
+> 目前，Microsoft Graph 連接器只支援最多7000000個索引配額的專案，包括所有內建于 Microsoft 365 或 Office 365 E5 授權的內建配額。 此平臺未來會支援較高的限制。 如有任何問題，請與 Microsoft 支援部門或您的 Microsoft 客戶經理聯繫。

@@ -12,18 +12,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 如何對應非 AAD 身分識別的步驟
-ms.openlocfilehash: cd7d0eb17678d69ec1966e4472b38c1f18c30809
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+ms.openlocfilehash: 48f462318b005f426cd2e0ee3ade0ee895b1c38b36ccf53faf5631a5c002c3d6
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367656"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533563"
 ---
 # <a name="map-your-non-azure-ad-identities"></a>對應您的非 Azure AD 身分識別  
 
 本文將引導您完成將您的非 Azure AD 身分識別對應至 Azure AD 身分識別的步驟，讓您的存取控制清單中的人員 (具有非 Azure AD 身分識別的 ACL) 可以查看其範圍內的連接器搜尋結果。
 
-這些步驟只與使用「存取此資料來源的人」和「 [Salesforce](salesforce-connector.md)非 AAD」的「搜尋」許可權設定 Microsoft 的「搜尋」許可權[ServiceNow](servicenow-connector.md)設定的搜尋系統管理員相關。
+這些步驟只與使用「存取此資料來源的人」和「 [](salesforce-connector.md)非 AAD」的「搜尋」許可權設定 Microsoft 的「搜尋」許可權[ServiceNow](servicenow-connector.md)設定的搜尋系統管理員相關。
 
 >[!NOTE]
 >如果您是在 [搜尋許可權] 畫面上設定 Salesforce 連接器並 **只選取可存取此資料來源** 和身分 **識別類型的** 人員，請參閱 [對應 azure ad](map-aad.md) 身分識別文章，以取得如何對應 azure ad 身分識別的步驟。  
@@ -50,7 +50,7 @@ ms.locfileid: "49367656"
 
 以下是一些正則運算式範例及其輸出套用至範例字串的範例： 
 
-| 範例字串                  | 正則運算式                 | 範例字串上正則運算式的輸出           |
+| 範例字串                  | 規則運算式                 | 範例字串上正則運算式的輸出           |
 | :------------------- | :------------------- |:---------------|
 | Alexis Vasquez  | .* | Alexis Vasquez |
 | Alexis Vasquez                 | ..$                 | Ez            |

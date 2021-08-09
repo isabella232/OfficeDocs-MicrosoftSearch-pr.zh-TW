@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 新增搜尋行業及自訂搜尋結果
-ms.openlocfilehash: 4dd3f08f6d7e3df0aa983684eb0d4f649bc409a1
-ms.sourcegitcommit: 1e766e1f549c46882f47df6679f5a3cdf48d70d6
+ms.openlocfilehash: 0bcb8d8588edf44d4291802d1d9c73b75fd6bf327b19f9a9b1ef0555baca38ad
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "53463224"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533063"
 ---
 # <a name="customize-the-search-results-page"></a>自訂搜尋結果頁面
 
@@ -180,8 +180,8 @@ KQL 也支援使用 [設定檔查詢變數](#profile-query-variables) ，在垂�
 
 | #         | 語法 |  傳回值  |
 | --------- | ------ | --- |
-| 1     | MyProperty： {設定檔. 電子郵件地址}  |   "Megan.Bowen@contoso.com"  |
-| 2  | MyProperty： {Profile} 電子郵件}   |    因為電子郵件是物件，所以 {Profile} 電子郵件} 這不會解決。|
+| 1    | MyProperty： {設定檔. 電子郵件地址}  |   "Megan.Bowen@contoso.com"  |
+| 第 | MyProperty： {Profile} 電子郵件}   |    因為電子郵件是物件，所以 {Profile} 電子郵件} 這不會解決。|
 | 3     | {?MyProperty： {Profile. 電子郵件}}  |  這不會解決，因為電子郵件是物件。 "？" 運算子會忽略不會解析的查詢變數。 在查詢堆疊上進一步傳遞時，將會移除此變數。   |
 | 4  | {&#124;MyProperty： {Profile. Type}}    |   ( (MyProperty： "官方" ) 或 (MyProperty： "非官方" ) 或 (MyProperty： "personal" ) )     |
 

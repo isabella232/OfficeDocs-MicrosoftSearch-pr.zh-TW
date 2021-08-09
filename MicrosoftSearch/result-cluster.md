@@ -12,18 +12,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 連接器結果聚簇體驗的詳細資料
-ms.openlocfilehash: ae5528f2e12c9e331b66e821f2a9c03947d788df
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: 912e27942e9ae3bfef874ae66227880af676b7a1a28449cc82ae8fc02f4446c0
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031771"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533975"
 ---
-# <a name="graph-connectors-result-cluster"></a>圖形連接器產生的聚簇
+# <a name="graph-connectors-result-cluster"></a>Graph 連接器結果叢集
 
-## <a name="overview-of-the-graph-connectors-result-cluster-preview"></a>圖形連接器結果叢集 (預覽的概述)   
+## <a name="overview-of-the-graph-connectors-result-cluster-preview"></a>Graph 連接器結果叢集 (預覽的概述)   
 
-透過圖形連接器的結果聚簇，企業可以在其預設視圖、[ **全部** ] 索引標籤、SharePoint、Office.com 及 Microsoft Search in Bing 中搜尋協力廠商資料來源的內容。
+透過 Graph 連接器的結果聚簇，企業可以在其預設視圖、[**全部**] 索引標籤、SharePoint、Office .com 及 Microsoft 搜尋的 Bing 中搜尋協力廠商資料來源的內容。
 
 結果聚簇可協助使用者在一個位置探索所有協力廠商內容。 結果叢集中顯示的結果會根據搜尋類別設定分組在一起。
 
@@ -45,18 +45,18 @@ ms.locfileid: "51031771"
 
 請遵循下列步驟，在組織層級開啟體驗：
 
-1. 在 [Microsoft 365 系統管理中心](https://admin.microsoft.com)中，移至 [ [**縱向**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)]。
+1. 在 [Microsoft 365 系統管理中心](https://admin.microsoft.com)中，移至 [[**縱向**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)]。
 2. 選取 [ **所有** 垂直]，然後啟用 [ **顯示連接器結果**]。 
 
 
 請遵循下列步驟，在 SharePoint 網站層級開啟體驗：
 
-1. 在您想要進行結果叢集體驗的 SharePoint 網站上，移至 [ **設定**]。
+1. 在您想要進行結果叢集體驗的 SharePoint 網站上，移至 **設定**。
 2. 移至 **網站資訊** > **查看所有網站設定**。
-3. 移至 [Microsoft 搜尋] 區段，然後選取 [ **設定此網站集合的 Microsoft search**]。
+3. 移至 [Microsoft 搜尋] 區段，然後 **為此網站集合選取 [設定 Microsoft 搜尋**]。
 4. 在功能窗格中，移至 [ **自訂經驗**]，然後選取 [ **縱向**]。
 5. 選取 [ **所有** 垂直]，然後啟用 [ **顯示連接器結果**]。
 
 ## <a name="view-the-result-cluster-experience-after-it-is-enabled"></a>在啟用結果叢集體驗後查看
 
-在您開啟結果叢集體驗後，可能需要長達12小時才能進行查看。 如果您想要立即體驗，您可以在 SharePoint 和 Office 的 URL 中附加 *cacheClear = true* 。
+在您開啟結果叢集體驗後，可能需要長達12小時才能進行查看。 如果您想要立即體驗，您可以將 *cacheClear = true* 新增至 SharePoint 和 Office 中的 URL。

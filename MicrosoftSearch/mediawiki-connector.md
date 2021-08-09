@@ -1,5 +1,5 @@
 ---
-title: Microsoft Search 的 MediaWiki Graph connector
+title: MediaWiki Graph connector Microsoft 搜尋
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,30 +12,30 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 設定 Microsoft 搜尋的 MediaWiki 圖形連接器
-ms.openlocfilehash: 5922cf76aa112430f9f6e857066acd054182058c
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+description: 設定 Microsoft 搜尋的 MediaWiki Graph 連接器
+ms.openlocfilehash: fff24ce918e3eab6a50d78977749a030ef17d0aef235e6d98e02bdf54fc63a0c
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031690"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54532692"
 ---
 <!---Previous ms.author: monaray --->
 
 # <a name="mediawiki-graph-connector"></a>MediaWiki Graph 連接器
 
-MediaWiki Graph 連接器可讓您的組織從使用 MediaWiki 軟體所建立的 wiki 探索和編制資料。 此連接器會將指定的內容索引至 Microsoft 搜尋中，並支援定期編目，使索引保持在最新狀態。
+MediaWiki Graph connector 可讓您的組織從使用 MediaWiki 軟體所建立的 wiki 探索和編制索引資料。 此連接器會將指定的內容索引至 Microsoft 搜尋，並支援定期編目，使索引保持最新狀態。
 
 > [!NOTE]
-> 請閱讀 [**您的圖形連接器**](configure-connector.md) 文章的設定，以瞭解一般圖表連接器設定指示。
+> 請閱讀 [**Graph 連接器**](configure-connector.md)文章的設定，以瞭解一般 Graph 連接器設定指示。
 
-本文適用于任何設定、執行及監控 MediaWiki Graph 連接器的人員。 它會補充一般設定程式，並顯示只適用于 MediaWiki Graph 連接器的指示。 本文也包含 [限制](#limitations)的相關資訊。
+本文適用于設定、執行及監視 MediaWiki Graph 連接器的任何人。 它會補充一般設定程式，並顯示只適用于 MediaWiki Graph 連接器的指示。 本文也包含 [限制](#limitations)的相關資訊。
 
 <!---## Before you get started-->
 
 <!---Insert "Before you get started" recommendations for this data source-->
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步驟1：在 Microsoft 365 系統管理中心新增圖表連接器
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步驟1：在 Microsoft 365 系統管理中心中新增 Graph 連接器
 
 遵循一般 [設定指示](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->

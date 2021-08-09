@@ -12,13 +12,13 @@ search.appverid:
 - MET150
 - MOE150
 ROBOTS: NoIndex
-description: 在 Microsoft 搜尋中審閱並處理使用者意見反應
-ms.openlocfilehash: 332410cd29a7256cccd651c3a668fdf3eb473ba4
-ms.sourcegitcommit: 102371815e739da33d1711197cdc743ae8124baa
+description: 在 Microsoft 搜尋中查看並處理使用者意見反應
+ms.openlocfilehash: ab6f25a8454c1c1e61488179107b3bbec96ef099d29afcce1f303a7f3e7c39e1
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48996790"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54532884"
 ---
 # <a name="managing-user-feedback"></a>管理使用者意見反應
 
@@ -34,7 +34,7 @@ ms.locfileid: "48996790"
 
 使用者也可以選擇將其查詢及其他診斷資訊以及類別和批註傳送給 Microsoft。 [深入瞭解](https://privacy.microsoft.com/en-US/privacystatement) 隱私權及如何保護此資料。 診斷資料包含 Microsoft 在產品改進中使用意見反應專案所需的最重要資訊。
 
-大部分的意見反應都會出現在 Microsoft 搜尋系統管理中心的 [ [意見](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/feedback) 反應] 區段中。 使用 **我想要建議的內部連結** 類別的回饋會在 [ [書簽](https://admin-ignite.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks) ] 區段中顯示為建議的書簽，並可透過篩選 **建議** 的狀態加以看到。
+大部分的意見反應都會出現在 Microsoft 搜尋系統管理中心的 [[意見](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/feedback)反應] 區段中。 使用 **我想要建議的內部連結** 類別的回饋會在 [ [書簽](https://admin-ignite.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks) ] 區段中顯示為建議的書簽，並可透過篩選 **建議** 的狀態加以看到。
 
 ## <a name="review-feedback"></a>審閱意見反應
 
@@ -60,11 +60,11 @@ ms.locfileid: "48996790"
 
 ## <a name="export-feedback"></a>匯出意見反應
 
-如果您想要與其他人共用搜尋意見反應或保留超過30天，請按一下 [ **匯出]。** 會自動下載名為 Feedbacks 的 .csv 檔案，該檔案的日期為 "Feedbacks_10_31_2020.csv" （如 ""）。
+如果您想要與其他人共用搜尋意見反應或保留超過30天，請按一下 [ **匯出]。** 會自動下載名為 Feedbacks 的 .csv 檔案，其日期為 "Feedbacks_10_31_2020.csv" （如 ""）。
 
 ## <a name="send-user-feedback-to-microsoft"></a>將使用者回饋傳送給 Microsoft
 
-根據預設，所有的使用者意見反應都會傳送給 Microsoft，此外還會傳送給您。 若要停止傳送對 Microsoft 的意見反應，請按一下 [ **管理設定** ]，然後清除 [ **自動傳送使用者對 Microsoft 的意見** 反應] 核取方塊。 最多可能需要24小時的時間，此變更才會生效。
+根據預設，所有的使用者意見反應都會傳送給 Microsoft，此外還會傳送給您。 若要停止傳送對 Microsoft 的意見反應，請按一下 [ **管理設定**]，然後清除 [ **自動傳送使用者對 Microsoft 的意見** 反應] 核取方塊。 最多可能需要24小時的時間，此變更才會生效。
 
 如果您已決定不自動傳送意見反應給 Microsoft，您仍然可以將個別的意見反應傳送給 Microsoft。
 

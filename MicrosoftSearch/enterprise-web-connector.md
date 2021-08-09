@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Enterprise 的網站 Graph 連接器 Microsoft 搜尋
-ms.openlocfilehash: 32e38c9bef036556dae2734e23b1d26ba4fe2c27
-ms.sourcegitcommit: 38a0f09596c2bca0e12bf4cada7b4c64fd4c48e4
+ms.openlocfilehash: 7e308c8239fbc4ea0da5449731d25442490270f9d604a40944d17cd2bf367a0c
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53449043"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533075"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -79,7 +79,7 @@ Enterprise 網站 Graph 連接器可讓您的組織編制 **來自內部網站**
 
 編目模式會決定您要建立索引的網站類型（雲端或內部部署）。 針對您的雲端網站，選取 **雲端** 做為編目模式。
 
-此外，連接器現在也支援對內部部署網站進行編目。 若要存取您的內部部署資料，您必須先安裝及設定 Graph 連接器代理程式。 若要深入瞭解，請參閱[Graph connector agent](./on-prem-agent.md)。
+此外，連接器現在也支援對內部部署網站進行編目。 若要存取您的內部部署資料，您必須先安裝及設定 Graph 連接器代理程式。 若要深入瞭解，請參閱[Graph connector agent](./graph-connector-agent.md)。
 
 若為您的內部部署網站，請選取 [**代理程式**] 做為編目模式，並在 [部署中的 **代理程式**] 欄位中，選擇您先前安裝及設定的 Graph 連接器代理程式。  
 

@@ -14,12 +14,12 @@ search.appverid:
 ms.assetid: f980b90f-95e2-4b66-8b21-69f601ff4b50
 ROBOTS: NoIndex
 description: 將 Microsoft 搜尋搜尋方塊新增至您的內部網路網站或頁面，以取得相關的搜尋建議並快速尋找工作結果。
-ms.openlocfilehash: 7d9ca4be8d3be27a7549ffb940d6dc55b3763baf
-ms.sourcegitcommit: 38a0f09596c2bca0e12bf4cada7b4c64fd4c48e4
+ms.openlocfilehash: f11fcbeee23346041e4ebc720e4256d3aba29d57bed9266ed04bb02ee31c2ada
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53449059"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533385"
 ---
 # <a name="add-a-search-box-to-your-intranet-site"></a>將搜尋方塊新增至您的內部網路網站
 

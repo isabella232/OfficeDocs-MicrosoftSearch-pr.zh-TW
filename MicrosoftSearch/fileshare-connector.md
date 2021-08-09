@@ -1,5 +1,5 @@
 ---
-title: Microsoft 搜尋的檔案共用圖形連接器
+title: Microsoft 搜尋的檔案共用 Graph 連接器
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -13,28 +13,28 @@ search.appverid:
 - MET150
 - MOE150
 ROBOTS: NoIndex
-description: 設定 Microsoft 搜尋的檔案共用圖形連接器
-ms.openlocfilehash: 792e853e5d2b7a23835dc031ff4ba4c09d619f9c
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+description: 設定 Microsoft 搜尋的檔案共用 Graph 連接器
+ms.openlocfilehash: af4c3996fdc8ac753404f4b4519175a9054fa18bce3862b0c5841c7bd5369cdd
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031609"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533020"
 ---
 <!---Previous ms.author: rusamai --->
 
-# <a name="file-share-graph-connector"></a>檔案共用圖形連接器
+# <a name="file-share-graph-connector"></a>檔案共用 Graph 連接器
 
-檔案共用圖表連接器可讓組織中的使用者搜尋內部部署 Windows 檔案共用。
+檔案共用 Graph 連接器可讓組織中的使用者搜尋內部部署 Windows 檔案共用。
 
 > [!NOTE]
-> 請閱讀 [**您的圖形連接器文章設定**](configure-connector.md) ，以瞭解一般圖表連接器設定程式。
+> 請閱讀 [**Graph 連接器**](configure-connector.md)文章的設定，以瞭解一般 Graph 連接器設定程式。
 
 ## <a name="before-you-get-started"></a>開始之前
 
-### <a name="install-the-graph-connector-agent"></a>安裝圖形連接器代理程式
+### <a name="install-the-graph-connector-agent"></a>安裝 Graph 連接器代理程式
 
-若要編制 Windows 檔案共用的索引，您必須安裝並註冊 Graph 連接器代理程式。 請參閱 [安裝 Graph connector agent](on-prem-agent.md) 以深入瞭解。  
+若要編制 Windows 檔案共用的索引，您必須安裝並註冊 Graph 連接器代理程式。 請參閱[Install the Graph connector agent](graph-connector-agent.md)以深入瞭解。  
 
 ### <a name="content-requirements"></a>內容需求
 
@@ -46,7 +46,7 @@ ms.locfileid: "51031609"
 
 支援的檔案大小上限為 100 MB。 超過 100 MB 的檔案不會編制索引。 後處理的最大大小限制為 4 MB。 當檔案大小達到 4 MB 時，處理便會停止。 因此，檔案中所提供的某些片語可能無法用於搜尋。
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步驟1：在 Microsoft 365 系統管理中心新增圖表連接器
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步驟1：在 Microsoft 365 系統管理中心中新增 Graph 連接器
 
 遵循一般 [設定指示](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -58,7 +58,7 @@ ms.locfileid: "51031609"
 
 ## <a name="step-3-configure-the-connection-settings"></a>步驟3：設定連接設定
 
-在 [連線 **至資料來源]** 頁面上，選取 [檔案 **共用** ]，並提供名稱、連線識別碼及描述。 在下一個頁面上，提供檔案共用的路徑，然後選取您先前安裝的圖形連接器代理程式。 輸入 [Microsoft Windows](https://microsoft.com/windows) 使用者帳戶的認證，該帳戶具有檔案共用中所有檔案的讀取權限。
+在 [**連線至資料來源**] 頁面上，選取 [檔案 **共用**]，並提供名稱、連線識別碼及描述。 在下一個頁面上，提供檔案共用的路徑，然後選取您先前安裝的 Graph 連接器代理程式。 輸入[Microsoft Windows](https://microsoft.com/windows)使用者帳戶的認證，該使用者帳戶具有檔案共用中所有檔案的讀取權限。
 
 ### <a name="preserve-last-access-time"></a>保留上次存取時間
 
