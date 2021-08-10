@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: 設定 Microsoft 搜尋的檔案共用 Graph 連接器
-ms.openlocfilehash: af4c3996fdc8ac753404f4b4519175a9054fa18bce3862b0c5841c7bd5369cdd
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 387a04c435045d620f8e35aa9fbdd37e23da32a61489d0102dc7bda09920e980
+ms.sourcegitcommit: 07d04a81d30b04d1f7e3c556bd711dc7efd710d9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533020"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "57823011"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -64,7 +64,27 @@ ms.locfileid: "54533020"
 
 當連接器嘗試編目檔案時，會更新其中繼資料中的「最後存取時間」欄位。 如果您依賴該欄位進行任何封存與備份解決方案，而且不想要在連接器存取時加以更新，您可以在 [ **高級設定** ] 頁面中設定此選項。
 
-## <a name="step-4-manage-search-permissions"></a>步驟4：管理搜尋許可權
+## <a name="step-4-limits-for-file-indexing"></a>步驟4：檔案索引限制
+
+設定檔案共用連線時，系統管理員可以限制檔案和資料夾的索引。 有多種方式可供您執行：
+
+#### <a name="based-on-file-types"></a>根據檔案類型
+
+只有這些格式的文字內容為已編制索引： DOC、.DOCM、.DOCX、DOT、DOTX、.EML、HTML、MHT、MHTML、MSG、NWS、OBD、OBT、ODP、ODS、ODT、ONE、PDF、.POT、PPS、PPT、PPTM、XLS、TXT、、XLB、XML、XPS。 若為不屬於此格式的多媒體檔案和檔案，只會編制索引的中繼資料。
+
+#### <a name="based-on-last-modified-date-or-number-of-days-since-last-modification"></a>根據上次修改日期或自上次修改的天數
+
+#### <a name="full-network-path-of-filefolder-or-regular-expression-to-limit-indexing"></a>要限制索引的檔案/資料夾或正則運算式的完整網路路徑 
+
+在 [網路路徑] 中 (\\) 的特殊字元之前的逸出字元 \\ 。 範例：針對路徑 \\ \\ CONTOSO \\ file \\ SHAREDFOLDER，正確的輸入方式是 \\ \\ \\ \\ CONTOSO \\ \\ file \\ \\ SHAREDFOLDER
+
+您可以在[這裡](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference)找到撰寫正則運算式的規則
+
+系統管理員也會有能力對限制規則提供例外狀況。 例外規則的優先順序會取代限制規則。 以類似的方式，您可以透過提供要包含在索引中的專案的資料夾/檔案路徑來定義例外狀況。
+
+![限制和例外狀況](media/file-connector/ExclusionRule.png)
+
+## <a name="step-5-manage-search-permissions"></a>步驟5：管理搜尋許可權
 
 您可以在 [ **管理搜尋許可權** ] 頁面中選取所需的選項，以限制可搜尋以共用存取控制清單或新技術檔案系統為基礎的任何檔案的許可權 (NTFS) 存取控制清單。 這些存取控制清單中所提供的使用者帳戶和群組必須由 Active Directory (AD) 管理。 如果您使用其他任何系統進行使用者帳戶管理，可以選取「everyone」選項，讓使用者可以搜尋所有檔案，而不需要任何訪問限制。 不過，當使用者嘗試開啟檔案時，會套用來源的 access 控制項設定。
 
@@ -74,22 +94,22 @@ ms.locfileid: "54533020"
 
 ![Advanced_sharing](media/file-connector/file-advanced-sharing.png)
 
-## <a name="step-5-assign-property-labels"></a>步驟5：指派屬性標籤
+## <a name="step-6-assign-property-labels"></a>步驟6：指派屬性標籤
 
 遵循一般 [設定指示](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="step-6-manage-schema"></a>步驟6：管理架構
+## <a name="step-7-manage-schema"></a>步驟7：管理架構
 
 遵循一般 [設定指示](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="step-7-choose-refresh-settings"></a>步驟7：選擇重新整理設定
+## <a name="step-8-choose-refresh-settings"></a>步驟8：選擇重新整理設定
 
 遵循一般 [設定指示](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="step-8-review-connection"></a>步驟8：檢查連線
+## <a name="step-9-review-connection"></a>步驟9：檢查連線
 
 遵循一般 [設定指示](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
