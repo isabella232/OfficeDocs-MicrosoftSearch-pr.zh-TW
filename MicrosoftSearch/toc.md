@@ -17,7 +17,7 @@
 ### [連接器庫](connectors-gallery.md)
 ### 設定 Microsoft 連接器
 #### [設定概觀](configure-connector.md)
-#### [設定圖形連接器代理程式](on-prem-agent.md)
+#### [設定圖形連接器代理程式](graph-connector-agent.md)
 #### [對應非 Azure AD 身分識別](map-non-aad.md)
 #### [對應 Azure AD 身分識別](map-aad.md)
 #### 連接器特定的資訊

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: 建立和更新大量編輯 Microsoft 搜尋書簽結果的書簽和方式
-ms.openlocfilehash: 1362082bf33bd4a30ff2ae76e2fa05a3ccd8962c4ef5f5cb15f41fc183d0c4b9
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: ed46583d857d97fa28773b64401ae4f85f88650a
+ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533798"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58235962"
 ---
 # <a name="manage-bookmarks"></a>管理書籤
 
@@ -54,11 +54,7 @@ ms.locfileid: "54533798"
 - **草稿**：您的使用者無法使用儲存為草稿的書簽。 如果您或其他專案關係人想要在發佈之前複查或更新書簽，請使用此狀態。
 - 已 **排程**：將在指定日期和時間發佈的書簽。
 
-您可以使用 Microsoft 搜尋內容建立者瀏覽器延伸名輕鬆新增書簽。 若要安裝瀏覽器延伸名，請移至您要新增為書簽的網站，然後按一下分機號碼中的 [新增]。
-安裝 Edge 和 Chrome 的分機：
-
-- 若為 Chromium Edge 或 Chrome：請移至[Chrome 網頁存放區](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm)，並新增分機號碼。
-- 若為舊版 Edge：請移至[Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab)並新增分機號碼。
+您可以使用 Microsoft 搜尋內容建立者瀏覽器延伸名輕鬆新增書簽。 移至您要新增為書簽的網站，然後按一下分機號碼中的 [新增]。 若要安裝 Microsoft Edge 或 Google Chrome 的分機號碼，請移至[Chrome 網頁存放區](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm)，並將其新增至您的瀏覽器。
 
 ### <a name="import-sharepoint-results"></a>匯入 SharePoint 結果
 

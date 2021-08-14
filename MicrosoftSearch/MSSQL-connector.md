@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 為 Microsoft 搜尋設定 Azure SQL 和 Microsoft SQL Graph 連接器。
-ms.openlocfilehash: ed9284de968921f40003e011348e3e6d4321b59d86207b6c7d054765c6837a1e
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 9e8a9784c139873b4584f9be0a42e51f101bd7d6
+ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533507"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58236031"
 ---
 <!---Previous ms.author: vivg --->
 

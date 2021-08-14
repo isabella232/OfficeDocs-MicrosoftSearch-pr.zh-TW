@@ -12,18 +12,21 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理自訂篩選
-ms.openlocfilehash: 339c7e96a00860a044a4e1af7382932f8e440e01b8b6d12445c24c1ea9b8cad0
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 256cf9748aa3050aacf48c3562f6f84b4ba2e460
+ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533126"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58235921"
 ---
 # <a name="manage-custom-filters"></a>管理自訂篩選
 
 您可以使用篩選自訂 Microsoft 搜尋體驗。 篩選可讓使用者從搜尋查詢快速精煉結果集。
 
 自訂的篩選可以在以 connection 屬性為基礎的垂直內部建立。 例如，您可以在垂直方向的 ServiceNow 連接 **上建立已發佈的 On** filter。
+
+> [!NOTE]
+> 自訂篩選器目前是針對系統管理員和使用者在目標發行中的預覽。 如需預覽的詳細資訊，請參閱 [連接器預覽功能](connectors-overview.md#what-are-the-preview-features)。
 
 ## <a name="create-a-filter-in-an-organizational-level-vertical"></a>在組織層級中建立篩選
 

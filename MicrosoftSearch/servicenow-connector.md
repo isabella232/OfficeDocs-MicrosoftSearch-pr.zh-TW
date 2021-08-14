@@ -1,8 +1,8 @@
 ---
 title: ServiceNow Graph 連接器 Microsoft 搜尋
-ms.author: mecampos
-author: mecampos
-manager: umas
+ms.author: kam1
+author: TheKarthikeyan
+manager: harshkum
 audience: Admin
 ms.audience: Admin
 ms.topic: article
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的 ServiceNow Graph 連接器
-ms.openlocfilehash: 11abe956e624fa23cd19e2dfc2ae9a4af31a0f81407f6e2c5672723c5fdfc8b5
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: b07776dfd6e2ae8ae87b43ac61e9f92495311ca8
+ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54534129"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58235877"
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -26,6 +26,10 @@ ms.locfileid: "54534129"
 # <a name="servicenow-graph-connector"></a>ServiceNow Graph 連接器
 
 透過使用 Microsoft Graph Connector ServiceNow，您的組織可以為您組織內的使用者準則許可權，編制對所有使用者可見或限制的知識庫文章的索引。 從 ServiceNow 設定連接器和索引內容之後，使用者可以從任何 Microsoft 搜尋用戶端搜尋這些文章。  
+
+您也可以參閱[下列影片](https://www.youtube.com/watch?v=TVSkJpk1RiE)，深入瞭解 Graph 連接器在管理搜尋許可權中的功能。
+
+[![在 Microsoft Graph Connector 中管理 ServiceNow 的搜尋許可權](https://img.youtube.com/vi/TVSkJpk1RiE/hqdefault.jpg)](https://www.youtube.com/watch?v=TVSkJpk1RiE)
 
 本文適用于 Microsoft 365 系統管理員或任何設定、執行及監視 ServiceNow Graph 連接器的人員。 它會補充[設定 Graph 連接器](configure-connector.md)文章中提供的一般指示。 若尚未這麼做，請閱讀整個設定 Graph 連接器文章，以瞭解一般的設定程式。
 
@@ -165,7 +169,7 @@ ServiceNow 實例需要下列設定：
    應用程式 | 全域
    使用者宣告 | 子
    使用者欄位 | 使用者識別碼
-   啟用 JTI 宣告驗證 | 停用
+   啟用 JTI 宣告驗證 | 已停用
 
 5. 選取 [提交並更新 OAuth OIDC 實體表單]。
 
@@ -202,9 +206,6 @@ ServiceNow 連接器支援 **所有人都** 可以看到的搜尋許可權，或
 
 ServiceNow Graph 連接器支援不含高級腳本的預設使用者準則許可權。 當連接器使用 advanced script 遇到使用者準則時，所有使用該使用者準則的資料都不會出現在搜尋結果中。
 
->[!NOTE]
->若要 **只選擇可存取此資料來源的人員**，請在您的租使用者上啟用目標版本更新。 若要瞭解如何設定目標版本，請參閱設定 [目標版本選項。](/microsoft-365/admin/manage/release-options-in-office-365?preserve-view=true&view=o365-worldwide)
-
 如果您只選擇可 **存取此資料來源的人員**，您需要進一步選擇是否 ServiceNow 實例 Azure Active Directory (AAD) 已布建的使用者或非 AAD 使用者。
 
 >[!NOTE]
@@ -212,9 +213,6 @@ ServiceNow Graph 連接器支援不含高級腳本的預設使用者準則許可
 
 如果您已針對身分識別類型選擇「非 AAD」，請參閱 [對應您的非 AZURE AD](map-non-aad.md) 身分識別，以取得對應身分識別的指示。 
 
-您也可以參閱下列影片以深入瞭解管理搜尋許可權。
-
-[![在 Microsoft Graph Connector 中管理 ServiceNow 的搜尋許可權](https://img.youtube.com/vi/TVSkJpk1RiE/hqdefault.jpg)](https://www.youtube.com/watch?v=TVSkJpk1RiE)
 
 ## <a name="step-6-assign-property-labels"></a>步驟6：指派屬性標籤
 
@@ -266,5 +264,7 @@ Graph如果連接器位於網路防火牆之後，連接器可能無法與您的
 促使 | 歐洲 | 20.54.41.208/30、51.105.159.88/30 
 促使 | 亞太地區 | 52.139.188.212/30、20.43.146.44/30 
 
+#### <a name="23-access-permissions-not-working-as-expected"></a>2.3。 存取權未如預期般運作
+如果您觀察套用至搜尋結果的存取權限中的差異，請在 [管理知識庫和文章存取](https://docs.servicenow.com/bundle/rome-servicenow-platform/page/product/knowledge-management/concept/user-access-knowledge.html)中的使用者準則中驗證 access 流程圖表。
 
 如果您有任何其他問題，或想要提供意見反應，請寫信給我們 [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors)

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 取得有關企業搜尋和 Microsoft Search 常見問題的解答
-ms.openlocfilehash: 94161d3ac53ca72a9f8298674a53fdaa0a80caaf5ca3802d47ea693043a30530
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 84f53755625e65328f8ffe8aabf78f93a9a36a22
+ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533930"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58235874"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 # <a name="frequently-asked-questions"></a>常見問題集
@@ -29,7 +29,7 @@ ms.locfileid: "54533930"
 
 ## <a name="is-advanced-query-understanding-supported"></a>是否支援進階查詢理解？
 
-是的，Microsoft Search 會從較大的片語剖析查詢意圖。 此功能會使用 AI 以學習將常用多餘片語的使用者新增到查詢，但不影響使用者的搜尋意圖。 例如，當使用者搜尋有關 *如何變更密碼的詳細資訊* 時，我們會從查詢中解壓縮較不重要的字詞，並根據相關的 *變更密碼（如變更密碼*）進行觸發。
+是的，Microsoft Search 會從較大的片語剖析查詢意圖。 這項功能會使用 AI 來瞭解常見的多餘片語，使用者會將其新增至不會影響其搜尋意圖的查詢。 例如，當使用者搜尋有關 *如何變更密碼的詳細資訊* 時，我們會從查詢中解壓縮較不重要的字詞，並根據相關的 *變更密碼（如變更密碼*）進行觸發。
   
 這項功能不會覆寫[Microsoft 365 系統管理中心](https://admin.microsoft.com)中所設定的關鍵字。
   
@@ -47,7 +47,7 @@ ms.locfileid: "54533930"
 
 ## <a name="how-are-my-search-results-protected"></a>如何保護我的搜尋結果？
 
-我們需要[Azure Active Directory](/azure/active-directory/)驗證，才能存取受信任的雲端的結果。 已驗證的使用者只會看到他們有權存取的內容。 在 Bing 中使用 Microsoft 搜尋時，會解除發現搜尋查詢，並將記錄與公用[Bing](https://Bing.com)搜尋流量分開。
+我們需要[Azure Active Directory](/azure/active-directory/)驗證，才能存取受信任的雲端的結果。 已驗證的使用者只會看到他們有權存取的內容。 在 Bing 中使用 Microsoft 搜尋時，會解除發現搜尋查詢，並以公用[Bing](https://Bing.com)搜尋流量分開記錄。
 
 ## <a name="can-i-search-across-federated-organizations"></a>可以跨同盟組織搜尋嗎？
 
@@ -57,6 +57,12 @@ ms.locfileid: "54533930"
 
 詳細資料可在 Office 365 的[信任中心頁面](https://www.microsoft.com/TrustCenter/CloudServices/office365/default.aspx)上找到。
 
-## <a name="can-guest-users-leverage-microsoft-search-in-my-organization"></a>來賓使用者是否可以利用組織中的 Microsoft 搜尋？
+## <a name="can-guest-users-access-microsoft-search-in-my-organization"></a>來賓使用者可以在我的組織中存取 Microsoft 搜尋嗎？
 
-Microsoft 365 透過[來賓存取](/microsoft-365/solutions/collaborate-with-people-outside-your-organization)，與組織外部的人員進行豐富的共同作業。 這些使用者將能夠對檔、網站、群組、清單及文件庫執行搜尋作業。 不過，來賓使用者將不會收到完整、個人化、Microsoft 搜尋體驗，而且可能需要利用頁面上的 [網頁搜尋] 方塊，而不是頁首中的 [統一 Microsoft 搜尋] 方塊。
+Microsoft 365 透過[來賓存取](/microsoft-365/solutions/collaborate-with-people-outside-your-organization)，與組織外部的人員進行豐富的共同作業。 這些使用者可搜尋檔、網站、群組、清單及文件庫。 不過，來賓使用者不會收到完整、個人化的 Microsoft 搜尋體驗，而且可能需要使用頁面上的搜尋方塊，而不是標頭中的 [統一 Microsoft 搜尋] 方塊。
+
+## <a name="how-do-i-turn-microsoft-search-in-bing-on-or-off"></a>如何開啟或關閉 Bing 中的 Microsoft 搜尋？
+
+大多陣列織（包括企業和教育版） Bing 中 Microsoft 搜尋預設為開啟。 若要在 Bing 中開啟 Microsoft 搜尋，請移至 Microsoft 365 系統管理中心中[的 [設定](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/configurations)] 頁面。 在 [Bing 設定] 下的 [Microsoft 搜尋] 下，選擇 [**變更設定**]，然後開啟 [**允許您的組織在 Bing 使用 Microsoft 搜尋**]。 這種變更需要長達24小時才會生效。
+
+若此設定為 [關閉]，當使用者搜尋 Bing、Windows 搜尋或 Microsoft Edge 時，不會收到內部結果。 在 Bing 中關閉 Microsoft 搜尋不會停止或防止內部內容新增至您的搜尋索引。 它只會停用 Bing 進入 Microsoft 搜尋的進入點。 若要尋找答案和內部結果，使用者將需要使用其他進入點，例如 SharePoint 線上或 Office 365 應用程式。
