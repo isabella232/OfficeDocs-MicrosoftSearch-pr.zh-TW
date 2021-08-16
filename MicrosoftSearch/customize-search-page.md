@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 新增搜尋行業及自訂搜尋結果
-ms.openlocfilehash: 0bcb8d8588edf44d4291802d1d9c73b75fd6bf327b19f9a9b1ef0555baca38ad
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 440b9afbbeb4c4cd86b2b9f67443e644c36ce042
+ms.sourcegitcommit: 8ac77db22002d47bb461222b81b7cfc1c15a72fb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533063"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58340076"
 ---
 # <a name="customize-the-search-results-page"></a>自訂搜尋結果頁面
 
@@ -39,7 +39,7 @@ ms.locfileid: "54533063"
 「搜尋類別」現在可以透過多個連接器來源呈現結果。 這為設計搜尋結果頁面提供更大的彈性。 現有的垂直安裝管理體驗可讓您在「內容來源」步驟中選取多個連接。
 如果您正確指派盡可能多的語義標籤，則會增強這種體驗。 您可以在架構定義及攝取時新增語義標籤。
 
-[以下](configure-connector.md#step-5-assign-property-labels) 是如何建立及管理語義標籤的其他資訊。
+[以下](configure-connector.md#step-6-assign-property-labels) 是如何建立及管理語義標籤的其他資訊。
 
 > [!NOTE]
 > 垂直中的多個連線目前正在預覽中。 如需預覽的詳細資訊，請參閱 [連接器預覽功能](connectors-overview.md#what-are-the-preview-features)。
@@ -180,7 +180,7 @@ KQL 也支援使用 [設定檔查詢變數](#profile-query-variables) ，在垂�
 
 | #         | 語法 |  傳回值  |
 | --------- | ------ | --- |
-| 1    | MyProperty： {設定檔. 電子郵件地址}  |   "Megan.Bowen@contoso.com"  |
+| 1     | MyProperty： {設定檔. 電子郵件地址}  |   "Megan.Bowen@contoso.com"  |
 | 第 | MyProperty： {Profile} 電子郵件}   |    因為電子郵件是物件，所以 {Profile} 電子郵件} 這不會解決。|
 | 3     | {?MyProperty： {Profile. 電子郵件}}  |  這不會解決，因為電子郵件是物件。 "？" 運算子會忽略不會解析的查詢變數。 在查詢堆疊上進一步傳遞時，將會移除此變數。   |
 | 4  | {&#124;MyProperty： {Profile. Type}}    |   ( (MyProperty： "官方" ) 或 (MyProperty： "非官方" ) 或 (MyProperty： "personal" ) )     |

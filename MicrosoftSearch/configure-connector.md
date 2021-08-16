@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Graph 連接器的設定概觀
-ms.openlocfilehash: 0c67081d3efab421b563e82dba506da85e65cb91d34b31f128f3bcff945c68a1
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: b08363421ed143eb32c112ef53ac47cff44722e0
+ms.sourcegitcommit: 8ac77db22002d47bb461222b81b7cfc1c15a72fb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533300"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58340085"
 ---
 <!-- Previous ms.author: monaray -->
 
@@ -32,11 +32,12 @@ ms.locfileid: "54533300"
 1. [在 Microsoft 365 系統管理中心新增 Graph 連接器](#step-1-add-a-graph-connector-in-the-microsoft-365-admin-center)
 2. [為連線命名](#step-2-name-the-connection)
 3. [設定連線設定](#step-3-configure-the-connection-settings)
-4. [管理搜尋權限](#step-4-manage-search-permissions)
-5. [指派屬性標籤](#step-5-assign-property-labels)
-6. [管理結構描述](#step-6-manage-schema)
-7. [重新整理設定](#step-7-refresh-settings)
-8. [檢閱連線](#step-8-review-connection)
+4. [選取屬性](#step-4-select-properties)
+5. [管理搜尋權限](#step-5-manage-search-permissions)
+6. [指派屬性標籤](#step-6-assign-property-labels)
+7. [管理結構描述](#step-7-manage-schema)
+8. [重新整理設定](#step-8-refresh-settings)
+9. [檢閱連線](#step-9-review-connection)
 
 本文也包含疑難排解、限制及後續步驟的相關資訊：
 
@@ -57,7 +58,7 @@ ms.locfileid: "54533300"
 
 1. 在[Microsoft 365 系統管理中心](https://admin.microsoft.com)中登入您的系統管理員帳戶。
 
-2. 在功能窗格中，選取 [**設定**]，然後選取 [**搜尋 & 情報**]。 選取 [ [連接器]](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)索引標籤。
+2. 在功能窗格中，選取 [**設定**]，然後選取 [**搜尋 & 情報**]。 選取 [ [資料來源]](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)索引標籤。
 
 3. 選取 [ **+ 新增**]，然後從可用選項的功能表中選取您選擇的資料來源。
 
@@ -74,24 +75,33 @@ ms.locfileid: "54533300"
 *  (必要的名稱) 
 * 需要 (連線識別碼) 
 * Description (optional) 
+*  (必要，請選取核取方塊) 
 
 連接識別碼會建立連接器的隱含屬性。 它必須只包含字母數位字元，最多可以有32個字元。
 
 ## <a name="step-3-configure-the-connection-settings"></a>步驟3：設定連接設定
 
-設定連線設定的程式會根據資料來源的類型而有所不同。 請參閱您想要新增至租使用者的資料來源類型的連接器特定資訊，以在安裝程式中完成此步驟。  
+設定連線設定的程式會根據資料來源的類型而有所不同。 請參閱您想要新增至租使用者的資料來源類型的 [連接器特定資訊](/microsoftsearch/servicenow-connector#step-31-basic-authentication) ，以在安裝程式中完成此步驟。  
 
 若要深入瞭解連線至內部部署資料來源的詳細資訊，請參閱 [安裝內部部署資料閘道](/data-integration/gateway/service-gateway-install)。
 
-## <a name="step-4-manage-search-permissions"></a>步驟4：管理搜尋許可權
+## <a name="step-4-select-properties"></a>步驟4：選取屬性
 
- (ACLs 的存取控制清單) 決定組織中的哪些使用者可以存取每個資料項目目。  
+您可以選擇 Microsoft 搜尋所編制索引的屬性。 
+
+ServiceNow 查詢可用於在資料按 Microsoft 搜尋編制索引之前加以篩選。這可讓您更深入地控制可搜尋的資料。 若要深入瞭解 ServiceNow 查詢，請參閱 [瞭解 ServiceNow 查詢](https://go.microsoft.com/fwlink/?linkid=2151447)。 
+
+## <a name="step-5-manage-search-permissions"></a>步驟5：管理搜尋許可權
+
+ (ACLs 的存取控制清單) 決定組織中的哪些使用者可以存取每個專案。  
 
 某些連接器（如[Microsoft SQL](MSSQL-connector.md)和[Azure Data Lake 儲存體 Gen2](azure-data-lake-connector.md)本身支援[Azure Active Directory (Azure AD) ](/azure/active-directory/) ACLs）。
 
 其他連接器（如[ServiceNow](servicenow-connector.md)、 [Azure DevOps](azure-devops-connector.md)和[Salesforce](salesforce-connector.md) ）支援非 Azure AD 使用者和群組的同步處理。  
 
-## <a name="step-5-assign-property-labels"></a>步驟5：指派屬性標籤
+選取 [所有人] 可讓組織中的每個人都看到來自此資料來源的搜尋結果。
+
+## <a name="step-6-assign-property-labels"></a>步驟6：指派屬性標籤
 
 您可以在 [指派屬性標籤] 頁面上，將語義標籤指派給來源屬性。 標籤是由 Microsoft 提供的已知標記，可提供語義意義。 它們可讓 Microsoft 將您的連接器資料整合到 Microsoft 365 體驗，例如增強型搜尋、人員卡片、智慧探索等等。  
 
@@ -101,13 +111,13 @@ ms.locfileid: "54533300"
 --- | ---  
 **title** | 您想要顯示在搜尋和其他體驗中的專案標題
 **url** | 來源系統中專案的目標 url
-**createdBy** | 建立專案的人員名稱
-**lastModifiedBy** | 最近編輯專案的人員名稱
-**作者** | 參與或合作專案的人員名稱
-**createdDateTime** | 專案的建立時間
-**lastModifiedDateTime** | 專案最近編輯的時間
-**檔案名** | 檔專案的名稱
-**fileExtension** | 檔專案的類型，例如 .pdf 或 word。
+**建立者** | 建立專案的人員名稱
+**上次修改者** | 最近編輯專案的人員名稱
+**Authors** | 參與或合作專案的人員名稱
+**建立日期時間** | 專案的建立時間
+**上次修改日期時間** | 專案最近編輯的時間
+**檔案名稱** | 檔專案的名稱
+**檔案副檔名** | 檔專案的類型，例如 .pdf 或 word。
 
 此頁面上的屬性會根據您的資料來源預先選取，但是如果有其他屬性更適合特定標籤，您可以變更此選取範圍。  
 
@@ -115,7 +125,7 @@ ms.locfileid: "54533300"
 
 不正確地對應標籤會導致 deteriorated 搜尋體驗。 有些標籤不會有指派屬性。  
 
-## <a name="step-6-manage-schema"></a>步驟6：管理架構
+## <a name="step-7-manage-schema"></a>步驟7：管理架構
 
 ### <a name="content-property"></a>Content 屬性
 
@@ -158,7 +168,7 @@ ms.locfileid: "54533300"
 > [!NOTE]
 > 建立連線之後，就 **無法** 修改架構。 若要這麼做，您必須刪除您的連線，並建立新的連線。
 
-## <a name="step-7-refresh-settings"></a>步驟7：重新整理設定
+## <a name="step-8-refresh-settings"></a>步驟8：重新整理設定
 
 [重新整理間隔] 會決定資料來源與 Microsoft 搜尋之間的同步處理頻率。 每個資料來源類型都有一組不同的最佳重新整理排程，取決於修改資料的頻率及修改的類型。
 
@@ -181,7 +191,7 @@ ms.locfileid: "54533300"
 
 <!---Change screenshot for one that shows both options in new UI (try ServiceNow)--->
 
-## <a name="step-8-review-connection"></a>步驟8：檢查連線
+## <a name="step-9-review-connection"></a>步驟9：檢查連線
 
 您可以視需要複查整個設定及編輯設定，然後再完成連線。 **若尚未閱讀資料來源的連接器特有資訊，請務必先將其讀取。** 當您準備好完成連線時，請選取 **[完成更新]** 。
 

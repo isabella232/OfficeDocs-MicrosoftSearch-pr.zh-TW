@@ -12,14 +12,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-ROBOTS: NoIndex
 description: 部署代理程式
-ms.openlocfilehash: 1fcd1b6848d950c9f7cefa87d086f6607ac5df4f
-ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
+ms.openlocfilehash: b6303b71910dc300ba5297fde155e538452ef99d
+ms.sourcegitcommit: 8ac77db22002d47bb461222b81b7cfc1c15a72fb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 08/13/2021
-ms.locfileid: "58235940"
+ms.locfileid: "58340094"
 ---
 # <a name="microsoft-graph-connector-agent"></a>Microsoft Graph connector 代理程式
 
@@ -45,6 +44,8 @@ ms.locfileid: "58235940"
 4. HTTPs://<span>gc。</span>com
 5. HTTPs://<span>graph。</span>com
 
+>[!NOTE]
+>不支援 Proxy 驗證。 如果您的環境具有需要驗證的 proxy，我們建議的做法是讓連接器代理程式略過 proxy。
 
 ## <a name="create-and-configure-an-app-for-the-agent"></a>建立及設定代理程式的應用程式  
 
@@ -147,6 +148,7 @@ Export-PfxCertificate -Cert $certificatePath -FilePath ($filePath + '.pfx') -Pas
 ## <a name="troubleshooting"></a>疑難排解
 
 ### <a name="installation-failure"></a>安裝失敗
+
 若安裝失敗，請執行下列動作來檢查安裝記錄檔： msiexec/i " <path to msi>\GcaInstaller.msi"/l * V " <destination path> \install.log"。 如果錯誤無法解析，請使用記錄檔以 MicrosoftGraphConnectorsFeedback@service.microsoft.com 支援。
 
 ### <a name="registration-failure"></a>註冊失敗
