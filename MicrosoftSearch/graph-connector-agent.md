@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 部署代理程式
-ms.openlocfilehash: b6303b71910dc300ba5297fde155e538452ef99d
-ms.sourcegitcommit: 8ac77db22002d47bb461222b81b7cfc1c15a72fb
+ms.openlocfilehash: a27b5225d6a9f804d9122fbb237adb453eaf34ba
+ms.sourcegitcommit: 7148807ee9c857bd900916bed24176892a7d1d66
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58340094"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58363239"
 ---
 # <a name="microsoft-graph-connector-agent"></a>Microsoft Graph connector 代理程式
 
@@ -141,15 +141,17 @@ Export-PfxCertificate -Cert $certificatePath -FilePath ($filePath + '.pfx') -Pas
 
 6. 以滑鼠右鍵按一下 [cert]，然後選取 [**所有任務**  >  **管理私密金鑰**] 選項。
 
-7. 在 [許可權] 對話方塊中，選取 [新增] 選項。 在 [使用者選擇] 對話方塊中，寫入： **NT Service\GcaHostService** ，然後按一下 **[確定]**。 不要按一下 [ **檢查名稱** ] 按鈕。
+7. 在 [許可權] 對話方塊中，選取 [新增] 選項。 它會向裡彈出新的視窗。 選取其中的 [位置] 選項。 在顯示的位置清單中，選取代理安裝所在的機器，然後按一下 **[確定]**。
 
-8. 在 [許可權] 對話方塊中按一下 [確定]。 代理程式機器現在已設定為讓代理程式使用憑證來產生權杖。
+8. 在 [使用者選擇] 對話方塊中，寫入： **NT Service\GcaHostService** ，然後按一下 **[確定]**。 不要按一下 [ **檢查名稱** ] 按鈕。
+
+9. 在 [許可權] 對話方塊中按一下 [確定]。 代理程式機器現在已設定為讓代理程式使用憑證來產生權杖。
 
 ## <a name="troubleshooting"></a>疑難排解
 
 ### <a name="installation-failure"></a>安裝失敗
 
-若安裝失敗，請執行下列動作來檢查安裝記錄檔： msiexec/i " <path to msi>\GcaInstaller.msi"/l * V " <destination path> \install.log"。 如果錯誤無法解析，請使用記錄檔以 MicrosoftGraphConnectorsFeedback@service.microsoft.com 支援。
+若安裝失敗，請執行下列步驟來檢查安裝記錄檔： msiexec/i "< msi # A1\GcaInstaller.msi"/L * V "< 目的地路徑 > \install.log" 的路徑。 如果錯誤無法解析，請使用記錄檔以 MicrosoftGraphConnectorsFeedback@service.microsoft.com 支援。
 
 ### <a name="registration-failure"></a>註冊失敗
 
