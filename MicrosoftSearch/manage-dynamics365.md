@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: mssearch
 localization_priority: Normal
 description: 管理在搜尋結果中顯示 Dynamics 365 內容的方式
-ms.openlocfilehash: 65d6d27028f46751270cb3a50a154063de4fbab72d917f94aa8925693ac9ea2b
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: d2874febe39abf68653fa82d6a50121ebd1a357b
+ms.sourcegitcommit: fbe565b1a8994425b4f7ff0114a69044659e3892
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533641"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58380031"
 ---
 # <a name="dynamics-365-federation-search-preview"></a>Dynamics 365 同盟搜尋 (預覽) 
 
@@ -25,7 +25,7 @@ ms.locfileid: "54533641"
 * 無法留下系統界限的資料
 * 儲存在部署上的敏感性資料，您的組織不想要在雲端上建立索引
 
-透過同盟搜尋連線存取的資料不會在 Microsoft 搜尋中編制索引。 此外，您也可以使用 Microsoft 的內建連接器，輕鬆設定同盟搜尋連線。 我們的 Dynamics 365 connector 目前正在預覽中。 如果您有興趣加入預覽，請在 [aka.ms/D365FederationSearchPreview](https://aka.ms/D365FederationSearchPreview)中告知我們。
+透過同盟搜尋連線存取的資料不會在 Microsoft 搜尋中編制索引。 此外，您也可以使用 Microsoft 的內建連接器，輕鬆設定同盟搜尋連線。 我們的 Dynamics 365 connector 目前正在預覽中。 如果您有興趣加入預覽，請在 [aka.ms/D365FederationSearchPreview](https://aka.ms/D365FederationSearchPreview)中告知我們。 如需發行時間範圍，請參閱[Microsoft 搜尋藍圖](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Search)。
 
 ## <a name="dynamics-365-federation-connector"></a>Dynamics 365 同盟連接器
 
