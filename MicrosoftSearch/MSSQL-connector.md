@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 為 Microsoft 搜尋設定 Azure SQL 和 Microsoft SQL Graph 連接器。
-ms.openlocfilehash: 9e8a9784c139873b4584f9be0a42e51f101bd7d6
-ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
+ms.openlocfilehash: f80e3e1b86a120981c4dafd95715c00cd766f5e9
+ms.sourcegitcommit: 17cc660ec51bea11ab65f62655584c65c84a1d79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58236031"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58406943"
 ---
 <!---Previous ms.author: vivg --->
 
@@ -75,8 +75,9 @@ instructions.-->
 
 若要將 Microsoft SQL Server 連接器連線至資料來源，您必須設定要編目的資料庫伺服器和部署代理程式。 然後，您就可以使用必要的驗證方法來連接至資料庫。
 
-> [!NOTE] 
-> 您的資料庫必須執行 SQL Server 版本2008或更新版本，Microsoft SQL Server 連接器才能連線。
+> [!NOTE]
+> - 您的資料庫必須執行 SQL Server 版本2008或更新版本，Microsoft SQL Server 連接器才能連線。
+> - azure SQL graph 連接器只會允許從 Microsoft 365 相同[承租人](/azure/active-directory/develop/quickstart-create-new-tenant)中的 Azure SQL 實例攝取。 不支援跨承租人資料流程。
 
 針對 Azure SQL 連接器，您只需要指定您要連線的伺服器名稱或 IP 位址。 Azure SQL 連接器只支援 Azure Active Directory 開啟識別碼 connect (OIDC) 驗證，以連線至資料庫。
 
@@ -104,6 +105,8 @@ instructions.-->
 這個範例會示範五個數據列的選取範圍，其中包含搜尋的資料： [訂單 Id]、[OrderTitle]、[OrderDesc]、[CreatedDateTime] 及 [IsDeleted]。 若要設定每個資料列的查看許可權，您可以選擇性地選取下列 ACL 欄： AllowedUsers、AllowedGroups、DeniedUsers 及 DeniedGroups。 所有的資料欄位也都有 **查詢**、 **搜尋** 或 **檢索** 的選項。
 
 選取下列範例查詢所示的資料行： `SELECT OrderId, OrderTitle, OrderDesc, AllowedUsers, AllowedGroups, DeniedUsers, DeniedGroups, CreatedDateTime, IsDeleted`
+
+請注意，SQL 連接器不允許在 SELECT 子句中使用非數位元字元的資料行名稱。 使用別名從欄名稱移除任何非字母數位的字元。 範例-選取 *column_name* 為 *columnName*
 
 若要管理搜尋結果的存取權，您可以在查詢中指定一或多個 ACL 欄。 SQL 連接器可讓您控制每個記錄層級的存取。 您可以選擇對資料表中的所有記錄使用相同的存取控制。 如果 ACL 資訊儲存在不同的資料表中，您可能必須在查詢中使用這些資料表進行聯接。
 
@@ -217,6 +220,7 @@ To learn more about how to create your verticals and MRTs, see [Search results p
 | 設定步驟 | 錯誤訊息 | 可能的原因 (s)  |
 | ------------ | ------------ | ------------ |
 | 完整編目 | `Error from database server: A transport level error has occurred when receiving results from the server.` | 由於網路問題，導致此錯誤。 建議您使用 [microsoft 網路監視器](https://www.microsoft.com/download/details.aspx?id=4865) 檢查網路記錄，並與 microsoft 客戶支援部門聯繫。 |
+| 完整編目 | `Column column_name returned from full crawl SQL query contains non-alphanumeric character` | 非字母數位的字元 (例如底線) 不允許選取子句中的資料列名稱。 使用別名重新命名欄，並移除非數位元字元 (例如，選取 column_name 為 columnName) 。 |
 
 ## <a name="limitations"></a>限制
 
