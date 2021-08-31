@@ -7,18 +7,18 @@ audience: Admin
 ms.audience: Global or Billing Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 適用于 Microsoft 搜尋的 Microsoft Graph 連接器公開預覽的授權需求和價格
-ms.openlocfilehash: 15bf91506b28a308f285e0f93d5a38f473a8ae77e10489168880e42143b7d9ae
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: df91bb0ae68dd86d61855eed6d70a09ed0986800
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54532946"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702082"
 ---
 <!---Previous ms.author: rusamai --->
 

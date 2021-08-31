@@ -8,18 +8,18 @@ ms.service: mssearch
 audience: Admin
 ms.audience: Admin
 ms.date: 07/02/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 複查 Microsoft 搜尋流量報告
-ms.openlocfilehash: 9798cdaf0f88ca2f247bb8d10fce526f07adbabc1bbe5566eaddfc071346f751
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 9de48331efbc956ee7d980b919d9bd2f025fc8aa
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533110"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701451"
 ---
 # <a name="microsoft-search-usage-reports"></a>Microsoft 搜尋使用報告
 
@@ -33,7 +33,7 @@ ms.locfileid: "54533110"
 此頁面的先前版本包含僅針對 Bing 上 Bing .com 的 Microsoft 搜尋所執行之搜尋中的資料。 現在，該資料已整合至這些報告;您仍然可以查看舊的頁面，方法是按一下頁面底部的連結，以 **查看 Bing 的主要查詢和印記發佈**。 這個連結和舊的頁面會很快移除。
 
 > [!div class="mx-imgBorder"]
-> ![搜尋使用方式報告儀表板](media/usage-reports/usage_reports_v2.png)
+> ![搜尋使用方式報告儀表板。](media/usage-reports/usage_reports_v2.png)
 
 ## <a name="overview-of-search-reports"></a>搜尋報告概述
 

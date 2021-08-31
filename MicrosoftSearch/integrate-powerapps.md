@@ -6,19 +6,19 @@ manager: kellis
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: 1fadcba3-4a7f-4a55-8476-d4e64d49a15f
 description: 在 Microsoft 搜尋的書簽結果中包含以瀏覽器為基礎的應用程式
-ms.openlocfilehash: 4571862919c2f8bd92f1756a70baef908eaa0eade649e6890c1ba56d314398c2
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 55df0d6d6d39742548db497ed77f530b6a591895
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54532955"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702100"
 ---
 # <a name="integrate-power-apps-in-microsoft-search-bookmarks"></a>整合 Microsoft 搜尋書簽中的 Power Apps
    

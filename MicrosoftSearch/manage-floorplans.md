@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 搜尋中的「平面圖」功能可協助使用者找出大樓中的人員、辦公室和其他功能。
-ms.openlocfilehash: 6ca32db0afafe328d872b87c2ba7ebf5bee40148ae8aea089e097a3b6ec4dedf
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 6cbba6d764fd3904d251fa53fd96c3a66a6aed6b
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533715"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470021"
 ---
 # <a name="manage-floor-plans"></a>管理基底計畫
 
@@ -43,7 +43,7 @@ Floor 計畫檔案必須採用 DWG 格式;DWG 檔案可包含文字標籤。 當
 
 |**包含會議室標籤的文字標籤**|**文字標籤，但沒有會議室標籤**|**無文字標籤**|
 |:-----:|:-----:|:-----:|
-|![floorplans-textandroomlabels.png](media/floorplans-textandroomlabels.png)|![floorplans-textnoroomlabels.png](media/floorplans-textnoroomlabels.png)|![floorplans-nolabels.png](media/floorplans-nolabels.png)|
+|![floorplans-textandroomlabels.png。](media/floorplans-textandroomlabels.png)|![floorplans-textnoroomlabels.png](media/floorplans-textnoroomlabels.png)|![floorplans-nolabels.png](media/floorplans-nolabels.png)|
 
 如需查看和更新 DWG 檔案的詳細資訊，請參閱 [FAQ](#frequently-asked-questions) 一節。
 
@@ -54,7 +54,7 @@ Floor 計畫檔案必須採用 DWG 格式;DWG 檔案可包含文字標籤。 當
 為您組織中的每位使用者新增或更新辦公地點。 您可以在[Microsoft 365 系統管理中心](https://admin.microsoft.com)中變更使用者設定檔上的 office 位置，也可以在內部部署 Active Directory 中變更，以同步處理至 Azure Active Directory。 *PhysicalDeliveryOfficeName* 是用於 office 位置的欄位。 如果您的會議室標籤不含底價編號，請參閱秘訣的常見問題。
 
 在此範例中，Allan 的 office 位於組建2第1座第1座的房間1173。
-![floorplans-userlestview.png](media/floorplans-userlistview.png)
+![floorplans-userlestview.png。](media/floorplans-userlistview.png)
 
 > [!NOTE]
 > 若要在搜尋地面計畫時查看更新的 office 位置，您必須在每個地面更新 **至少10個人** 的 office 位置。
@@ -63,13 +63,13 @@ Floor 計畫檔案必須採用 DWG 格式;DWG 檔案可包含文字標籤。 當
 
 使用 **Microsoft 搜尋** 尋找使用者，並確認其辦公室位置是否正確顯示。 如果您只有更新的位置，您可能需要等候 **72 小時** ，更新才會出現在搜尋結果中。
 
-![floorplans-peoplecard.png](media/floorplans-peoplecard.png)
+![floorplans-peoplecard.png。](media/floorplans-peoplecard.png)
 
 ### <a name="step-5-add-building-locations"></a>步驟5：新增大樓位置
 
 地面計畫使用 [位置](manage-locations.md) 來定義您的辦公樓。 在 [Microsoft 365 系統管理中心](https://admin.microsoft.com)中，移至 [[**位置**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)]，然後選取 [**新增**]。 輸入組建的名稱、位址及關鍵字。 新增所需數目的辦公樓。
 
-![floorplans-locations.png](media/floorplans-locations.png)
+![floorplans-locations.png。](media/floorplans-locations.png)
 
 如需位置的詳細資訊，請參閱 [管理位置](manage-locations.md)
 
@@ -79,7 +79,7 @@ Floor 計畫檔案必須採用 DWG 格式;DWG 檔案可包含文字標籤。 當
 
 在系統 [管理中心](https://admin.microsoft.com)中，移至 [ [**Floor 方案**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans)]，然後選取 [ **開始**]。 如果您未看到此通知，表示您的組織已完成此步驟。
 
-![floorplans_hydrationstep.png](media/floorplans_hydrationstep.png)
+![floorplans_hydrationstep.png。](media/floorplans_hydrationstep.png)
 
 ### <a name="step-7-upload-floor-plans"></a>步驟7： Upload 基底計畫
 
@@ -99,13 +99,13 @@ Floor 計畫檔案必須採用 DWG 格式;DWG 檔案可包含文字標籤。 當
 > [!NOTE]
 > **發佈平面方案需要48小時的時間。** 之後，當使用者搜尋共同工作者的辦公室時，會看到與下列類似的地面計畫結果。
 
-![floorplans-officelocation.png](media/floorplans-officelocation.png)
+![floorplans-officelocation.png。](media/floorplans-officelocation.png)
 
 ### <a name="step-8-optional-specify-location-patterns"></a>步驟8： (選用) 指定位置模式
 
 上傳平面圖後，文字標籤會與使用者設定檔中的辦公室位置進行比較。 如果相符的專案少於10個，則會出現 [ **指定位置模式** ] 畫面。 位置模式是用來從辦公室位置提取底價、翼和會議室資訊。
 
-![floorplans-locationpattern.png](media/floorplans-locationpattern.png)
+![floorplans-locationpattern.png。](media/floorplans-locationpattern.png)
 
 只需要會議室、floor 和翼是選用的，您可以視需要略過位置。
 
@@ -152,13 +152,13 @@ Floor 計畫檔案必須採用 DWG 格式;DWG 檔案可包含文字標籤。 當
 || 21|45|21045|2/21045|
 ||至|萬美元|23-10 萬美元|2/23-100K|
 ||1|G06-07|1G06-07|2/1G06-07|
-||第|1024A|02.1024 a|2/02.1024 a|
-||第|1024A|02.1024 a|2/02.1024 a|
-||第|105.01|2105.01|2/2105.01|
+||2 |1024A|02.1024 a|2/02.1024 a|
+||2 |1024A|02.1024 a|2/02.1024 a|
+||2 |105.01|2105.01|2/2105.01|
 |有建立程式碼、基底及房間號碼|0|X-11-M-12|2-0-X-11-M-12|2/2-0-X-11-M-12<br/>2-0-X-11-M-12|
-||第|128A|22128A|2/22128A<br/>22128A|
+||2 |128A|22128A|2/22128A<br/>22128A|
 ||1|B2-11|21-B2-11|2/21-B2-11<br/>21-B2-11|
-||第|45|SC2045|SC/SC2045<br/>SC2045|
+||2 |45|SC2045|SC/SC2045<br/>SC2045|
 
 **問：** 我可以使用不含底價編號的 DWG 檔案嗎？
 
@@ -166,6 +166,6 @@ Floor 計畫檔案必須採用 DWG 格式;DWG 檔案可包含文字標籤。 當
 
 例如，包含房間號碼，但沒有底價編號的 DWG 檔案，看起來可能類似如下：
 
-![floorplans-nofloors.png](media/floorplans-nofloors.png)
+![floorplans-nofloors.png。](media/floorplans-nofloors.png)
 
 使用者設定檔中的 office 位置應該是2/1175，其中 ' 2 ' 是組建碼，' 1 ' 是底價號碼，而 ' 175 ' 是房間號碼。

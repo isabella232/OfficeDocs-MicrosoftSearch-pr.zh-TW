@@ -6,7 +6,7 @@ manager: kellis
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
@@ -14,12 +14,12 @@ search.appverid:
 ms.assetid: 3d2a1498-174e-4214-9cf1-8b58cce5a872
 ROBOTS: NOINDEX
 description: 使用來自 SharePoint 的搜尋查詢建立 Microsoft 搜尋的工作結果
-ms.openlocfilehash: cfd5fafd0529f537a55e436ef078800a4b9714177e04c63e65e968f16fcf322e
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 13ea273ce20f6aae3376468a638c27dedddf8cdc
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533822"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702109"
 ---
 # <a name="import-sharepoint-promoted-results-and-top-queries"></a>匯入 SharePoint 升級的結果和熱門查詢
 

@@ -7,18 +7,18 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的 Azure DevOps Graph 連接器
-ms.openlocfilehash: b7c5ab48288fdc421cda87b8afbadf08b8cf42ef023e8f56decd7b5c177c619a
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: fcf381a92ef397f900b300ca667fa80067a6672a
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533333"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701388"
 ---
 <!---Previous ms.author: shgrover --->
 
@@ -60,13 +60,13 @@ instructions.-->
 
 下表提供如何填寫 [應用程式註冊] 表單的指導方針：
 
-必要欄位 | 描述 | 建議值
+必要欄位 | 說明 | 建議值
 --- | --- | ---
 | 公司名稱         | 您公司的名稱。 | 使用適當的值   |
 | 應用程式名稱     | 識別您要授權之應用程式的唯一值。    | Microsoft 搜尋     |
 | 應用程式網站  | 在連接器設定期間要求存取 Azure DevOps 實例之應用程式的 URL。  (必要) 。  | HTTPs://<span>gc。</span>com
 | 授權回撥 URL        | 授權伺服器重新導向所需的回撥 URL。 | HTTPs://<span>gc。</span>com/v 1.0/admin/oauth/callback|
-| 授權範圍 | 應用程式的存取範圍 | 選取下列範圍： Identity (讀取) 、工作專案 (讀取) 、變數群組 (讀取) 、Project 和團隊 (讀取) Graph (讀取) |
+| 授權範圍 | 應用程式的存取範圍 | 選取下列範圍： Identity (讀取) 、工作專案 (讀取) 、變數群組 (讀取) 、Project 和團隊 (讀取) ，Graph (讀取) ，分析 (讀取) |
 
 >[!IMPORTANT]
 >您為應用程式選取的授權範圍應與上述範圍完全相符。 如果您省略清單中的其中一個授權範圍，或新增其他範圍，則授權會失敗。
@@ -80,7 +80,7 @@ instructions.-->
 
 使用 Azure DevOps 註冊 Microsoft 搜尋應用程式之後，即可完成 [連線設定] 步驟。 輸入您的組織名稱、應用程式識別碼和用戶端密碼。
 
-![連接應用程式設定](media/ADO_Connection_settings_2.png)
+![連接應用程式設定。](media/ADO_Connection_settings_2.png)
 
 ### <a name="configure-data-select-projects-and-fields"></a>設定資料：選取專案和欄位
 
@@ -90,11 +90,11 @@ instructions.-->
 
 如果您選擇個別專案，則只有那些專案中的工作專案將會編制索引。
 
-![設定資料](media/ADO_Configure_data.png)
+![設定資料。](media/ADO_Configure_data.png)
 
 接下來，選取您要連線索引及預覽這些欄位中資料的欄位，然後再繼續進行。
 
-![選擇屬性](media/ADO_choose_properties.png)
+![選擇 [屬性]。](media/ADO_choose_properties.png)
 
 ## <a name="step-4-manage-search-permissions"></a>步驟4：管理搜尋許可權
 
@@ -119,15 +119,19 @@ Azure DevOps 連接器支援完整和累加編目的更新排程。
 
 >[!TIP]
 >**預設結果類型**
->* 在發佈連接器之後，Azure DevOps 連接器會自動註冊[結果類型](./customize-search-page.md#step-2-create-the-result-types)。 結果類型會根據在步驟3中選取的欄位，使用動態產生的 [結果版面](./customize-results-layout.md) 配置。 
+>* 在發佈連接器之後，Azure DevOps 連接器會自動註冊[結果類型](./customize-search-page.md#step-2-create-result-types)。 結果類型會根據在步驟3中選取的欄位，使用動態產生的 [結果版面](./customize-results-layout.md) 配置。 
 >* 您可以流覽至 [Microsoft 365 系統管理中心](https://admin.microsoft.com)中的 [**結果類型**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes)來管理結果類型。 預設結果類型將命名為 " `ConnectionId` default"。 例如，如果您的連線識別碼為 `AzureDevOps` ，您的結果版面配置將會命名為： "AzureDevOpsDefault"
 >* 此外，您也可以視需要選擇建立您自己的結果類型。
 
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
-<!---## Troubleshooting-->
-<!---Insert troubleshooting recommendations for this data source-->
+## <a name="troubleshooting"></a>疑難排解
+以下是設定連接器時所觀察到的常見錯誤及其可能的原因。
+
+| 設定步驟 | 錯誤訊息 | 可能的原因 (s)  |
+| ------------ | ------------ | ------------ |
+|  | `The account associated with the connector doesn't have permission to access the item.` | 已註冊的應用程式沒有任何必要的 OAuth 範圍。  (記事-已于8/31/2021 引進新的 OAuth 範圍需求 ' Analytics： read ')   |
 
 <!---## Limitations-->
 <!---Insert limitations for this data source-->

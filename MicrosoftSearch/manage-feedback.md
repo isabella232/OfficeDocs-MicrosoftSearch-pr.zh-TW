@@ -11,14 +11,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-ROBOTS: NoIndex
 description: 在 Microsoft 搜尋中查看並處理使用者意見反應
-ms.openlocfilehash: ab6f25a8454c1c1e61488179107b3bbec96ef099d29afcce1f303a7f3e7c39e1
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 8b512f0bbfe5c72ff1a7a2296b0b76c5430e082f
+ms.sourcegitcommit: 2f5868e50caa9743d298188003a24545b5078c5b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54532884"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58528981"
 ---
 # <a name="managing-user-feedback"></a>管理使用者意見反應
 
@@ -30,7 +29,7 @@ ms.locfileid: "54532884"
 
 當您組織中的人員使用 Microsoft 搜尋時，他們可能會獲得經驗的意見反應。 當他們按一下 [結果] 頁面上的 [回饋] 連結時，他們可以將其意見分類，並包含其他批註。
 
-![全域意見反應表單](media/feedback/feedback-global-dialog.png)
+![全域意見反應表單。](media/feedback/feedback-global-dialog.png)
 
 使用者也可以選擇將其查詢及其他診斷資訊以及類別和批註傳送給 Microsoft。 [深入瞭解](https://privacy.microsoft.com/en-US/privacystatement) 隱私權及如何保護此資料。 診斷資料包含 Microsoft 在產品改進中使用意見反應專案所需的最重要資訊。
 
@@ -45,6 +44,9 @@ ms.locfileid: "54532884"
 您可以使用意見反應清單上方的搜尋方塊，來搜尋特定查詢的意見反應。
 
 在 [意見反應] 清單中，逐字欄會指出使用者的意見反應也包含批註或建議。 若要閱讀它，請按一下 [查詢] 以開啟 [ **詳細資料** ] 面板。
+
+>[!NOTE]
+>在整個系統管理員和使用者搜尋體驗期間初次推出時，可能需要長達兩周的意見反應專案出現在管理入口網站。
 
 ## <a name="update-feedback-state"></a>更新意見反應狀態
 

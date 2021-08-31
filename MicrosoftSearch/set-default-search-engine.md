@@ -6,19 +6,19 @@ manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: ee40010e-5d7f-4ba8-a3f8-d240dab3af6d
 description: 了解如何將 Bing 設定為公司使用 Microsoft Search 的預設搜尋引擎。
-ms.openlocfilehash: 7ad9ff2a0fde5ad5d84a7a51785767fd2e5d21df6654a76b09e9796917a92a0f
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 5feef972d5c61c9cefba6981084e005271b39f15
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54534180"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701901"
 ---
 # <a name="make-bing-the-default-search-engine"></a>讓 Bing 成為預設搜尋引擎
   
@@ -89,7 +89,7 @@ Windows 登錄編輯程式 5.00 版
   
 按兩下所建立的檔案，然後按照步驟操作以匯入檔案。 成功匯入後應該會出現下列對話方塊：
   
-![登錄編輯程式成功匯入訊息](media/ea3686b9-f6d7-481e-9a0d-2c96891bc501.png)
+![登錄編輯程式成功的匯入訊息。](media/ea3686b9-f6d7-481e-9a0d-2c96891bc501.png)
   
 ### <a name="step-2-open-the-group-policy-management-console-gpmcmsc-and-switch-to-editing-an-existing-policy-or-creating-a-new-one"></a>步驟 2： 開啟 [群組原則管理主控台] (gpmc.msc)，然後切換以編輯現有原則或建立新原則
 
@@ -98,7 +98,7 @@ Windows 登錄編輯程式 5.00 版
 3. 瀏覽至 **HKEY_CURRENT_USER\SOFTWARE\Microsoft\Internet Explorer\SearchScopes**。
 4. 請務必從此機碼選取 DefaultScope。
 
-    ![選取了 DefaultScope 的登錄瀏覽器](media/ec5a450d-0cba-4e9c-acba-1a09e8e90bad.png)
+    ![選取 DefaultScope 的註冊表瀏覽器。](media/ec5a450d-0cba-4e9c-acba-1a09e8e90bad.png)
 5. 選取包含 Bing 中 Microsoft Search 的 GUID 的所有子機碼，以及該機碼下的所有值，但不要選取任何使用者設定檔的路徑。 向下捲動以選取其他項目。
 6. 按一下 [完成] 以完成此組態。
 

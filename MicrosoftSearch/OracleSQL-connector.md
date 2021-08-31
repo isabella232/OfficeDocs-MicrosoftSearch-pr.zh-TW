@@ -7,19 +7,19 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ROBOTS: NoIndex
 description: 為 Microsoft 搜尋設定 Oracle SQL Graph 連接器。
-ms.openlocfilehash: 21585d1d60e5dcd73a45a3ccda151fbb144e85eb
-ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
+ms.openlocfilehash: 804bee89f8529630df5741f68b9f112c69307b4f
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58236008"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701424"
 ---
 <!---Previous ms.author:vivg --->
 
@@ -66,7 +66,7 @@ Oracle SQL Graph 連接器可讓您的組織探索內部部署 Oracle 資料庫�
 > [!Tip]
 > 若要取得所需的所有欄，您可以加入多個表格。
 
-![腳本顯示 OrderTable 及 AclTable （含範例屬性）](media/MSSQL-fullcrawl.png)
+![腳本顯示 OrderTable 及 AclTable，具有範例屬性。](media/MSSQL-fullcrawl.png)
 
 ### <a name="select-data-columns-required-and-acl-columns-optional"></a> (必要) 和 ACL 欄 (選用) 選取資料欄位
 
@@ -83,7 +83,7 @@ Oracle SQL Graph 連接器可讓您的組織探索內部部署 Oracle 資料庫�
 * **DeniedUsers**：此選項會 **指定沒有搜尋** 結果存取權的使用者清單。 在下列範例中，使用者 john@contoso.com 及 keith@contoso.com 無法存取具有「訂單 Id」的記錄，而其他所有人都可以存取這筆記錄。
 * **DeniedGroups**：此選項會 **指定沒有搜尋** 結果存取權的使用者群組。 在下列範例中，群組 engg-team@contoso.com 及 pm-team@contoso.com 沒有具有「訂單 Id」的記錄存取權，而其他所有人都可以存取這筆記錄。  
 
-![顯示 OrderTable 及 AclTable （含範例屬性）的範例資料](media/MSSQL-ACL1.png)
+![使用範例屬性顯示 OrderTable 及 AclTable 的範例資料。](media/MSSQL-ACL1.png)
 
 ### <a name="supported-data-types"></a>支援的資料類型
 
@@ -94,7 +94,7 @@ Oracle SQL Graph 連接器可讓您的組織探索內部部署 Oracle 資料庫�
 | 數位資料類型 | 數位 (p，0)  | p <的 int64 (= 18)  <br> p > 18) 的雙 ( |
 | 浮點數字資料類型 | 數位 (p，s)  <br> 浮動 (p)  | double |
 | Date datatype | 日期 <br> 時間 戳 <br> TIMESTAMP (n)  | datetime |
-| 字元資料類型 | CHAR (n)  <br> VARCHAR <br> VARCHAR2 <br> 長 <br> Clob <br> NCLOB | 字串 |
+| 字元資料類型 | CHAR (n)  <br> VARCHAR <br> VARCHAR2 <br> 長 <br> CLOB <br> NCLOB | 字串 |
 | Unicode 字元資料類型 | NCHAR <br> NVARCHAR | 字串 |
 | RowID 資料類型 | ROWID <br> UROWID | 字串 |
 
@@ -111,7 +111,7 @@ Oracle SQL Graph 連接器可讓您的組織探索內部部署 Oracle 資料庫�
 
 在下一個影像所示的設定中， `CreatedDateTime` 是選取的 [浮水印] 欄。 若要取得第一批列，請指定 [浮水印] 資料行的資料類型。 在此情況下，資料類型為 `DateTime` 。
 
-![浮水印欄設定](media/MSSQL-watermark.png)
+![浮水印欄設定。](media/MSSQL-watermark.png)
 
 第 **一個查詢** 會使用： "CreatedDateTime > 1753 年1月1日，00:00:00" (最小值 DateTime 的資料類型) 。 提取第一個批次之後， `CreatedDateTime` 如果資料列是以遞增順序排序，則會將批次中傳回的最高值儲存為檢查點。 範例是 03:00:00 2019 年3月1日。 然後，在查詢中使用「CreatedDateTime > 三月份1，2019 03:00:00」提取下一批 **N** 列。
 
@@ -119,7 +119,7 @@ Oracle SQL Graph 連接器可讓您的組織探索內部部署 Oracle 資料庫�
 
 若要排除資料庫中虛刪除的列的索引，請指定虛刪除的列名稱和值，以指出刪除列的資料行。
 
-![虛刪除設定： "Soft delete column" 和 "soft delete 欄的值，表示已刪除的資料列"](media/MSSQL-softdelete.png)
+![虛刪除設定：「Soft delete column」和「虛刪除」欄位的值，表示已刪除的資料列。](media/MSSQL-softdelete.png)
 
 ### <a name="full-crawl-manage-search-permissions"></a>完整編目：管理搜尋許可權
 
@@ -133,7 +133,7 @@ Oracle SQL Graph 連接器可讓您的組織探索內部部署 Oracle 資料庫�
 * **Azure Active Directory (AAD) 識別碼**：在 Azure AD 中，每個使用者或群組都有一個類似 ' e0d3ad3d-0000-1111-2222-3c5f5c52ab9b ' 的物件識別碼。
 * **Active Directory (AD) 安全性** 識別碼：在內部部署 AD 安裝程式中，每個使用者和群組都有一個無法變化的唯一安全性識別碼，看起來像是-1-5-21-3878594291-2115959936-132693609-65242。 '
 
-![設定存取控制清單的搜尋許可權設定](media/MSSQL-ACL2.png)
+![搜尋許可權設定，以設定存取控制清單。](media/MSSQL-ACL2.png)
 
 ## <a name="step-3b-incremental-crawl-optional"></a>步驟3b：增量編目 (選用) 
 

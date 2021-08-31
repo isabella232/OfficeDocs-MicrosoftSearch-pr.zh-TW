@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的 Salesforce Graph 連接器
-ms.openlocfilehash: f63dacd4e1c7da7d8eac53bc04bcbd108182df132c2e1fa61bdc2ffd0a549d2b
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: ea8de1b33787e9c08e50e99ace0afaa83e75394d
+ms.sourcegitcommit: be5dcc7005447d6139e39d86211c7ec4cd5dd907
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54532716"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58639577"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -150,7 +150,7 @@ salesforce Graph connector 可讓您的組織為您的 Salesforce 實例中的�
 精煉功能可讓您定義以後可用作自訂精簡器或篩選搜尋體驗的屬性。  
 
 > [!div class="mx-imgBorder"]
-> ![選取每個來源屬性的架構。 選項包括查詢、搜尋、檢索及精煉](media/salesforce-connector/sf9.png)
+> ![選取每個來源屬性的架構。 選項包括查詢、搜尋、檢索及精煉。](media/salesforce-connector/sf9.png)
 
 ## <a name="step-8-set-the-refresh-schedule"></a>步驟8：設定重新整理排程
 
@@ -167,7 +167,7 @@ Salesforce 連接器只支援目前完全編目的重新整理排程。
 
 >[!TIP]
 >**預設結果類型**
->* 在發佈連接器之後，Salesforce 連接器會自動註冊 [結果類型](./customize-search-page.md#step-2-create-the-result-types) 。 結果類型會根據在步驟3中選取的欄位，使用動態產生的 [結果版面](./customize-results-layout.md) 配置。
+>* 在發佈連接器之後，Salesforce 連接器會自動註冊 [結果類型](./customize-search-page.md#step-2-create-result-types) 。 結果類型會根據在步驟3中選取的欄位，使用動態產生的 [結果版面](./customize-results-layout.md) 配置。
 >* 您可以流覽至 [Microsoft 365 系統管理中心](https://admin.microsoft.com)中的 [**結果類型**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes)來管理結果類型。 預設結果類型將命名為 " `ConnectionId` default"。 例如，如果您的連線識別碼為 `Salesforce` ，您的結果版面配置將會命名為： "SalesforceDefault"
 >* 此外，您也可以視需要選擇建立您自己的結果類型。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -181,15 +181,15 @@ Salesforce 連接器只支援目前完全編目的重新整理排程。
 - Graph 連接器所使用的 Salesforce API 有已知的缺陷，在此情況下，潛在客戶的私人組織範圍預設值目前不會生效。  
 - 如果欄位具有欄位層級安全性 (FLS) 設定設定檔，Graph 連接器將不會為該 Salesforce 組織中的任何設定檔攝取該欄位。因此，使用者將無法搜尋這些欄位的值，也不會顯示在結果中。  
 - 在 [管理架構] 畫面中，這些通用的標準屬性名稱會列出一次，這些選項為 **查詢**、 **搜尋**、 **檢索** 及 **精煉**，並套用至 all 或 none。
-    - 名稱
+    - 姓名
     - URL
-    - 描述
+    - 說明
     - 傳真
     - Phone
     - MobilePhone
     - 電子郵件
     - 類型
-    - 標題
+    - 職稱
     - AccountId
     - AccountName
     - AccountUrl

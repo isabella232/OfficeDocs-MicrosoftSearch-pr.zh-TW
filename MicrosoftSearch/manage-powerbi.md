@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: 管理搜尋結果中顯示 Power BI 報表及資料的方式
-ms.openlocfilehash: a9148ab621703d89ddbe0f225ac2b0697748d8a2e85ffe96cec1763e04deeda9
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 951b1849cd3c9f60e93c98bde189eef85680b372
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533610"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470255"
 ---
 # <a name="manage-power-bi-answers"></a>管理 Power BI 的答案
 
@@ -42,13 +42,13 @@ Microsoft 搜尋使用者可以從 [Windows] 搜尋方塊、SharePoint、Office 
 
 `<topic>`請以上述範例取代您所需的資訊，例如銷售、使用方式、容量、2021、Q1 等等，以查看 Power BI 的相關結果。
 
-:::image type="content" source="media/powerbi-answers/powerbi-serp.png" alt-text="具有 Power BI 的答案及垂直 SERP 的螢幕擷取畫面" border="true":::
+:::image type="content" source="media/powerbi-answers/powerbi-serp.png" alt-text="具有 Power BI 的答案及垂直之 SERP 的螢幕擷取畫面。" border="true":::
 
 ## <a name="turn-power-bi-search-on-or-off"></a>開啟或關閉 Power BI 搜尋
 
 預設會為您的組織啟用 Power BI 結果。 您的 Power BI 系統管理員可以隨時停用這些檔案。 在 Power BI 管理員入口網站中，移至 [租使用者設定]，並停 **用 [使用全域搜尋 Power BI** ] 設定。 若要深入瞭解，請參閱管理[Power BI 在管理入口網站](/power-bi/admin/service-admin-portal#use-global-search-for-power-bi-preview)。
 
-:::image type="content" source="media/powerbi-answers/powerbi-admin.png" alt-text="開啟或關閉 Power BI 應答之設定的螢幕擷取畫面" border="true":::
+:::image type="content" source="media/powerbi-answers/powerbi-admin.png" alt-text="開啟或關閉 Power BI 應答設定的螢幕擷取畫面。" border="true":::
 
 > [!NOTE]
 > 使用 Microsoft 搜尋時，您的搜尋查詢及從 Power BI 傳回的結果可能會在不同于 Power BI 租使用者資料所在的地區或地理位置進行處理。

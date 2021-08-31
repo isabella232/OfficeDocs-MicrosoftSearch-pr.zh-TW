@@ -6,19 +6,19 @@ manager: shohara
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: c020bd72-9906-4dfd-bc77-57287f5927ce
 description: 了解如何將 Bing 設定為公司使用 Microsoft Search 的預設首頁。
-ms.openlocfilehash: 1ec0ffc097324b3c2d985f6eada4fb3fa3b079b7caab9d6af0e4073c4d91b562
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 745e4a81e4b53ff88b612cd19295cb89dc041ddc
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54534158"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701442"
 ---
 # <a name="make-bingcom-the-default-home-page"></a>讓 Bing.com 成為預設首頁
 
@@ -86,7 +86,7 @@ ms.locfileid: "54534158"
     
 5. 在進行任何設定之前，請先按 **F8** 以停用所有設定。 畫面看起來應該像這樣： 
     
-    ![Internet Explorer 10 [內容] 對話方塊](media/2fd55755-5007-4e33-a795-c42ce2fcef4a.jpg)
+    ![Internet Explorer 10屬性] 對話方塊。](media/2fd55755-5007-4e33-a795-c42ce2fcef4a.jpg)
   
 6. 在首頁設定上按下 **F6**，然後輸入 `https://www.bing.com/business?form=BFBSPR`
     

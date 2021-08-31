@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 在 Microsoft 搜尋中建立和更新縮寫的答案
-ms.openlocfilehash: 14b46e8f689a4df1e41d1852f49157faf67f7fdece2fa09fb740b5652d719a34
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 3b0f87fb252c3e88160f1b3753aad09b1e3f5083
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54532918"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470246"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>在 Microsoft 搜尋中管理縮寫的答案
 
@@ -27,7 +27,7 @@ ms.locfileid: "54532918"
 
 ## <a name="what-users-experience"></a>使用者經驗
 
-Microsoft 搜尋使用者可以在[Bing](https://Bing.com)、 [SharePoint](https://products.office.com/sharepoint/collaboration)和[Office 365](https://Office.com)中取得縮寫的定義。 在 [ **搜尋** ] 方塊中，使用者輸入如下範例的查詢：
+Microsoft 搜尋使用者可以在[Bing](https://Bing.com)、 [SharePoint](https://products.office.com/sharepoint/collaboration)、 [Office 365](https://Office.com)、Outlook 網頁版、Outlook mobile (Android) 以及 Teams 行動 (iOS 和 Android) 中取得定義。 在 [ **搜尋** ] 方塊中，使用者輸入如下範例的查詢：
 
 - *何謂* DNN
 - *定義* DNN
@@ -59,7 +59,7 @@ Microsoft 搜尋查詢兩個數據源，以提供使用者搜尋的縮寫答案�
 **發行狀態**。 組織中的使用者可以透過 Microsoft 搜尋使用縮寫。
 
 > [!NOTE]
-> 在 Microsoft 搜尋中，最多可能需要三天的縮寫以加入已發佈的狀態，才可使用。
+> 最多需要一天的縮寫，加入至發佈的狀態，可在 Microsoft 搜尋中使用。
 
 **草稿狀態**。 如果您想要在 Microsoft 搜尋中查看縮寫，您可以新增草稿狀態的縮寫。 草稿狀態中的縮寫不會出現在搜尋結果中。 您必須將縮寫詞移至發佈的狀態，使其顯示在搜尋結果中。
 
@@ -67,9 +67,9 @@ Microsoft 搜尋查詢兩個數據源，以提供使用者搜尋的縮寫答案�
 
 您可以在 CSV 檔案中個別加入縮寫或大容量匯入。 使用下表所示的欄位 Upload CSV 檔案：
 
-| 縮寫 (強制)  | 代表 (強制)  | URL | 描述  | 狀態 (強制)  | 上次修改日期 | 上次修改者 | 識別碼 |
+| 縮寫 (強制)  | 代表 (強制)  | URL | 說明  | 狀態 (強制)  | 上次修改日期 | 上次修改者 | 識別碼 |
 | --------- | --------- | --------- | ---------- | --------- |--------- |--------- |--------- |
-| *Xxx* | *拼寫縮寫* | *Source* |  | *已發佈、草稿或排除* |  |  |  |
+| *XXX* | *拼寫縮寫* | *Source* |  | *已發佈、草稿或排除* |  |  |  |
 
 ### <a name="csv-fields"></a>CSV 欄位
 
@@ -106,13 +106,17 @@ Microsoft 搜尋會確保只有對檔具有存取權和許可權的使用者可�
 
 **A：** 結果的排名可能會隨人員而異，因為每位使用者的結果都有個人化。 這兩種類別都不一定優先于另一種。
 
+**問：使用者如何觸發縮寫詞答案？**
+
+**A：** 若要取得縮寫的答案，使用者必須在 [Bing](https://bing.com)、 [SharePoint](https://products.office.com/sharepoint/collaboration)、 [Office 365](https://Office.com)、Outlook 網頁版、Outlook mobile (Android) 或 Teams 行動 (iOS 和 Android) **搜尋** 方塊中輸入特定查詢模式。
+
+**問：在搜尋時，使用者是否可以只輸入縮寫？**
+
+**A：** 在 Bing 中，使用者現在只要搜尋縮寫，就能找到縮寫的答案。您已不再需要關鍵字。 在階段中，其他 Microsoft 搜尋的進入點都會啟用相同的體驗。
+
 **問：在發佈 Microsoft 搜尋後，系統管理員必須使用多久的縮寫才能顯示出來？**
 
 **A：** 最多需要一天的縮寫，加入至發佈的狀態，可在 Microsoft 搜尋中使用。
-
-**問：使用者如何觸發縮寫詞答案？**
-
-**答**：若要取得縮寫的答案，使用者必須在 [Bing](https://bing.com)、 [SharePoint](https://products.office.com/sharepoint/collaboration)或 [Office 365](https://Office.com) **搜尋** 方塊中輸入特定查詢模式。
 
 **問：當您收到或傳送新的電子郵件或檔之後，系統策劃的首字母縮寫會出現多久時間？**
 
@@ -124,7 +128,7 @@ Microsoft 搜尋會確保只有對檔具有存取權和許可權的使用者可�
 
 **問：從 Microsoft 搜尋結果中排除縮寫需要多久時間？**
 
-**A**：在搜尋結果中，不會有一天的時間可用於排除的首字。
+**A：** 排除的首字的首字，會花費一天的時間，而不會出現在搜尋結果中。
 
 **Q：針對系統策劃首字母縮寫，是否需要使用特定格式的檔？**
 
@@ -132,9 +136,9 @@ Microsoft 搜尋會確保只有對檔具有存取權和許可權的使用者可�
 
 **問： Microsoft 是否會從所有語言的檔中探索縮寫？**
 
-**A**： Microsoft 只支援英文、西班牙文、法文、義大利文、德文和葡萄牙文的檔中的策劃首字母縮寫。 其他語言的支援會分階段新增。
+**A：** Microsoft 僅支援英文、西班牙文、法文、義大利文、德文和葡萄牙文的檔中的策劃首字母縮寫。 其他語言的支援會分階段新增。
 
 **問：如果我的組織不想要顯示系統策劃首字母縮寫，該怎麼辦？我是否可以在搜尋結果中停止顯示此類型的縮寫？**
 
-**A**：若要在搜尋結果中關閉顯示系統策劃首字母縮寫，請遵循 [商務產品的連絡人支援服務](/microsoft-365/admin/contact-support-for-business-products)中的指示，建立客戶支援票證。
+**A：** 若要在搜尋結果中關閉顯示系統策劃首字母縮寫，請遵循 [商務產品的連絡人支援服務](/microsoft-365/admin/contact-support-for-business-products)中的指示，建立客戶支援票證。
 在您建立支援票證後，系統策劃縮寫的最多需要48小時，以避免出現在搜尋結果中。

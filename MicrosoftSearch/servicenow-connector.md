@@ -7,18 +7,18 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的 ServiceNow Graph 連接器
-ms.openlocfilehash: b07776dfd6e2ae8ae87b43ac61e9f92495311ca8
-ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
+ms.openlocfilehash: fccae6c2a007470eb9ef56130cb952158c01610c
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58235877"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701910"
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -29,7 +29,7 @@ ms.locfileid: "58235877"
 
 您也可以參閱[下列影片](https://www.youtube.com/watch?v=TVSkJpk1RiE)，深入瞭解 Graph 連接器在管理搜尋許可權中的功能。
 
-[![在 Microsoft Graph Connector 中管理 ServiceNow 的搜尋許可權](https://img.youtube.com/vi/TVSkJpk1RiE/hqdefault.jpg)](https://www.youtube.com/watch?v=TVSkJpk1RiE)
+[![在 Microsoft Graph Connector 中管理 ServiceNow 的搜尋許可權。](https://img.youtube.com/vi/TVSkJpk1RiE/hqdefault.jpg)](https://www.youtube.com/watch?v=TVSkJpk1RiE)
 
 本文適用于 Microsoft 365 系統管理員或任何設定、執行及監視 ServiceNow Graph 連接器的人員。 它會補充[設定 Graph 連接器](configure-connector.md)文章中提供的一般指示。 若尚未這麼做，請閱讀整個設定 Graph 連接器文章，以瞭解一般的設定程式。
 
@@ -84,7 +84,7 @@ ms.locfileid: "58235877"
 
 欄位 | 描述 | 建議值 
 --- | --- | ---
-名稱 | 識別您需要 OAuth 存取之應用程式的唯一值。 | Microsoft 搜尋
+姓名 | 識別您需要 OAuth 存取之應用程式的唯一值。 | Microsoft 搜尋
 用戶端識別碼 | 應用程式的唯讀、自動產生的唯一識別碼。 當實例要求存取權杖時，會使用用戶端識別碼。 | NA
 用戶端密碼 | 使用此共用的機密字串，ServiceNow 實例和 Microsoft 搜尋會授權彼此進行通訊。 | 遵循安全性最佳作法，將密碼當做密碼對待。
 重新導向 URL | 授權伺服器重新導向所需的回撥 URL。 | https://gcs.office.com/v1.0/admin/oauth/callback
@@ -134,7 +134,7 @@ ms.locfileid: "58235877"
 
 現在，您已具備 Azure 入口網站所需的所有資訊。 下表提供資訊的快速摘要。
 
-屬性	 | 描述 
+屬性	 | 說明 
 --- | ---
 目錄識別碼 (租使用者識別碼)  | 步驟 3 Azure Active Directory 租使用者的唯一識別碼。
  (用戶端識別碼的應用程式識別碼)  | 在步驟3中註冊之應用程式的唯一識別碼。
@@ -151,7 +151,7 @@ ServiceNow 實例需要下列設定：
 
    欄位 | 描述 | 建議值
    --- | --- | ---
-   名稱 | 識別 OAuth OIDC 實體的唯一名稱。 | Azure AD
+   姓名 | 識別 OAuth OIDC 實體的唯一名稱。 | Azure AD
    用戶端識別碼 | 在協力廠商 OAuth OIDC server 中註冊之應用程式的用戶端識別碼。 實例在要求存取權杖時使用用戶端識別碼。 | Application (Client) ID 從步驟3。
    用戶端密碼 | 在協力廠商 OAuth OIDC server 中註冊之應用程式的用戶端密碼。 | 步驟3的用戶端密碼。 b
 
@@ -169,7 +169,7 @@ ServiceNow 實例需要下列設定：
    應用程式 | 全域
    使用者宣告 | 子
    使用者欄位 | 使用者識別碼
-   啟用 JTI 宣告驗證 | 已停用
+   啟用 JTI 宣告驗證 | 停用
 
 5. 選取 [提交並更新 OAuth OIDC 實體表單]。
 

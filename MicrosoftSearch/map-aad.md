@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 如何對應 AAD 身分識別的步驟
-ms.openlocfilehash: 676e06d4019dabe0f07846dd8918b8070765a7ffd9deb02b11dd68f2014dc7e5
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 69d4164e6d0acc245eee5c631db39ed7fb178325
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54532803"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470294"
 ---
 # <a name="map-your-azure-ad-identities"></a>對應您的 Azure AD 身分識別  
 
@@ -58,7 +58,7 @@ ms.locfileid: "54532803"
 
 如需 Azure AD 對應範例，請參閱下列快照。
 
-![如何填滿 Azure AD 對應頁面的範例快照](media/aad-mapping.png)
+![如何填滿 Azure AD 對應頁面的範例快照。](media/aad-mapping.png)
 
 ## <a name="limitations"></a>限制  
 

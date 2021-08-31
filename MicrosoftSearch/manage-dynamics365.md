@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: mssearch
 localization_priority: Normal
 description: 管理在搜尋結果中顯示 Dynamics 365 內容的方式
-ms.openlocfilehash: d2874febe39abf68653fa82d6a50121ebd1a357b
-ms.sourcegitcommit: fbe565b1a8994425b4f7ff0114a69044659e3892
+ms.openlocfilehash: ff7b1d86716233910ba6c1ba3141fbe13beb5a98
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58380031"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470228"
 ---
 # <a name="dynamics-365-federation-search-preview"></a>Dynamics 365 同盟搜尋 (預覽) 
 
@@ -49,7 +49,7 @@ Dynamics 365 的答案會出現在所有 Microsoft 搜尋畫布上的搜尋結�
 
 按一下或攻絲任何結果會開啟 Dynamics 365 並顯示詳細資訊。
 
-:::image type="content" alt-text="Dynamics 365 中詳細資料頁面的螢幕擷取畫面" source="media/dynamics365/dynamics365-detail-page.png" lightbox="media/dynamics365/dynamics365-detail-page.png":::
+:::image type="content" alt-text="Dynamics 365 中詳細資料頁面的螢幕擷取畫面。" source="media/dynamics365/dynamics365-detail-page.png" lightbox="media/dynamics365/dynamics365-detail-page.png":::
 
 不管您的使用者從何處開始搜尋，其經驗都會是一致的，讓他們能夠快速找到最相關的 Dynamics 365 結果。 請參閱 Microsoft 組建2021影片以取得示範。
 
@@ -97,6 +97,6 @@ Dynamics 365 的答案會出現在所有 Microsoft 搜尋畫布上的搜尋結�
 
 7. 選取 [ **儲存** ] 以完成連接設定。
 
-:::image type="content" alt-text="Microsoft 365 系統管理中心中的 Dynamics 365 設定面板的螢幕擷取畫面" source="media/dynamics365/dynamic365-connection-setup.png" lightbox="media/dynamics365/dynamic365-connection-setup.png":::
+:::image type="content" alt-text="Microsoft 365 系統管理中心中的 Dynamics 365 設定面板的螢幕擷取畫面。" source="media/dynamics365/dynamic365-connection-setup.png" lightbox="media/dynamics365/dynamic365-connection-setup.png":::
 
 當設定完成時，只有具有有效 Dynamics 365 授權的使用者和存取互連的 Dynamics 365 環境，才會顯示 Dynamics 365 的答案和垂直。 任何時候，您都可以回到這些設定，並變更連線端點環境或停用連接。

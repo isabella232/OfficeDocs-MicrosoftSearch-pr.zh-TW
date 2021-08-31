@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Enterprise 的網站 Graph 連接器 Microsoft 搜尋
-ms.openlocfilehash: 002a1504915c2c882492c894595e39598c692bcf
-ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
+ms.openlocfilehash: 2be52bc83718c2450ad91444a6176f5f63c03890
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58235936"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58469976"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -64,7 +64,7 @@ Enterprise 網站 Graph 連接器可讓您的組織編制 **來自內部網站**
 例如，如果您的網站包含動態內容，例如 Confluence 或 Unily 等內容管理系統中的網頁，您可以啟用動態編目程式。 若要將其開啟，請選取 [ **啟用動態網站的** 編目]。 編目程式會在開始編目之前，等待動態內容進行轉譯。
 
 > [!div class="mx-imgBorder"]
-> ![Enterprise 網頁連接器之連線設定窗格的螢幕擷取畫面](media/enterprise-web-connector/connectors-enterpriseweb-connectionsettings-dynamicconfig-small.png)
+> ![Enterprise Web connector 之連線設定窗格的螢幕擷取畫面。](media/enterprise-web-connector/connectors-enterpriseweb-connectionsettings-dynamicconfig-small.png)
 
 除了核取方塊之外，還有三個可供選用的欄位：
 

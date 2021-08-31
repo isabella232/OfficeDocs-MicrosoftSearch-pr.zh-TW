@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: 設定 Microsoft 搜尋的檔案共用 Graph 連接器
-ms.openlocfilehash: 71bcc86c2a1bf2f3d20693028ce006812aa170b5
-ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
+ms.openlocfilehash: b91f10704b536ecc3a62c492ef23ba8745c4dcf8
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58235914"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58469949"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -82,7 +82,7 @@ ms.locfileid: "58235914"
 
 系統管理員也會有能力對限制規則提供例外狀況。 例外規則的優先順序會取代限制規則。 以類似的方式，您可以透過提供要包含在索引中的專案的資料夾/檔案路徑來定義例外狀況。
 
-![限制和例外狀況](media/file-connector/ExclusionRule.png)
+![限制和例外狀況。](media/file-connector/ExclusionRule.png)
 
 ## <a name="step-5-manage-search-permissions"></a>步驟5：管理搜尋許可權
 
@@ -92,7 +92,7 @@ ms.locfileid: "58235914"
 
 只有在您所提供的共用路徑遵循 UNC 路徑格式時，才可以選擇 [共用] ACLs。 您可以移至 [共用] 選項底下的「高級共用」，以 UNC 格式建立路徑。
 
-![Advanced_sharing](media/file-connector/file-advanced-sharing.png)
+![Advanced_sharing。](media/file-connector/file-advanced-sharing.png)
 
 ## <a name="step-6-assign-property-labels"></a>步驟6：指派屬性標籤
 

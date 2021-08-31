@@ -7,18 +7,18 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Microsoft Graph 連接器的設定概觀
-ms.openlocfilehash: b08363421ed143eb32c112ef53ac47cff44722e0
-ms.sourcegitcommit: 8ac77db22002d47bb461222b81b7cfc1c15a72fb
+ms.openlocfilehash: 3b8ae9068b445e09f2df95fb5b29feb5ec3af74b
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58340085"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701874"
 ---
 <!-- Previous ms.author: monaray -->
 
@@ -107,7 +107,7 @@ ServiceNow 查詢可用於在資料按 Microsoft 搜尋編制索引之前加以�
 
 下表列出目前支援的標籤及其描述。  
 
-標籤 | 描述
+標籤 | 說明
 --- | ---  
 **title** | 您想要顯示在搜尋和其他體驗中的專案標題
 **url** | 來源系統中專案的目標 url

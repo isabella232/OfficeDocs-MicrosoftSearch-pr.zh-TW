@@ -7,18 +7,18 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 為 Microsoft 搜尋設定 Azure SQL 和 Microsoft SQL Graph 連接器。
-ms.openlocfilehash: f80e3e1b86a120981c4dafd95715c00cd766f5e9
-ms.sourcegitcommit: 17cc660ec51bea11ab65f62655584c65c84a1d79
+ms.openlocfilehash: ae953d55de4a4f5e8afc32cc6b55f6e0b32e2811
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58406943"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701433"
 ---
 <!---Previous ms.author: vivg --->
 
@@ -98,7 +98,7 @@ instructions.-->
 > [!Tip]
 > 若要取得所需的所有欄，您可以加入多個表格。
 
-![腳本顯示 OrderTable 及 AclTable （含範例屬性）](media/MSSQL-fullcrawl.png)
+![腳本顯示 OrderTable 及 AclTable，具有範例屬性。](media/MSSQL-fullcrawl.png)
 
 ### <a name="select-data-columns-required-and-acl-columns-optional"></a> (必要) 和 ACL 欄 (選用) 選取資料欄位
 
@@ -117,7 +117,7 @@ instructions.-->
 - **DeniedUsers**：此欄會 **指定沒有搜尋** 結果存取權的使用者清單。 在下列範例中，使用者 john@contoso.com 及 keith@contoso.com 無法存取具有「訂單 Id」的記錄，而其他所有人都可以存取這筆記錄。
 - **DeniedGroups**：此欄 **指定沒有搜尋** 結果存取權的使用者群組。 在下列範例中，群組 engg-team@contoso.com 及 pm-team@contoso.com 沒有具有「訂單 Id」的記錄存取權，而其他所有人都可以存取這筆記錄。  
 
-![顯示 OrderTable 及 AclTable （含範例屬性）的範例資料](media/MSSQL-ACL1.png)
+![使用範例屬性顯示 OrderTable 及 AclTable 的範例資料。](media/MSSQL-ACL1.png)
 
 ### <a name="supported-data-types"></a>支援的資料類型
 
@@ -146,7 +146,7 @@ instructions.-->
 
 在下一個影像所示的設定中， `CreatedDateTime` 是選取的 [浮水印] 欄。 若要取得第一批列，請指定 [浮水印] 資料行的資料類型。 在此情況下，資料類型為 `DateTime` 。
 
-![浮水印欄設定](media/MSSQL-watermark.png)
+![浮水印欄設定。](media/MSSQL-watermark.png)
 
 第 **一個查詢** 會使用： "CreatedDateTime > 1753 年1月1日，00:00:00" (最小值 DateTime 的資料類型) 。 提取第一個批次之後， `CreatedDateTime` 如果資料列是以遞增順序排序，則會將批次中傳回的最高值儲存為檢查點。 範例是 03:00:00 2019 年3月1日。 然後，在查詢中使用「CreatedDateTime > 三月份1，2019 03:00:00」提取下一批 **N** 列。
 
@@ -154,7 +154,7 @@ instructions.-->
 
 若要排除資料庫中虛刪除的列的索引，請指定虛刪除的列名稱和值，以指出刪除列的資料行。
 
-![虛刪除設定： "Soft delete column" 和 "soft delete 欄的值，表示已刪除的資料列"](media/MSSQL-softdelete.png)
+![虛刪除設定：「Soft delete column」和「虛刪除」欄位的值，表示已刪除的資料列。](media/MSSQL-softdelete.png)
 
 ### <a name="full-crawl-manage-search-permissions"></a>完整編目：管理搜尋許可權
 
@@ -168,7 +168,7 @@ instructions.-->
 - **Azure Active Directory (AAD) 識別碼**：在 Azure AD 中，每個使用者或群組都有一個類似 ' e0d3ad3d-0000-1111-2222-3c5f5c52ab9b ' 的物件識別碼。
 - **Active Directory (AD) 安全性** 識別碼：在內部部署 AD 安裝程式中，每個使用者和群組都有一個無法變化的唯一安全性識別碼，看起來像是-1-5-21-3878594291-2115959936-132693609-65242。 '
 
-![設定存取控制清單的搜尋許可權設定](media/MSSQL-ACL2.png)
+![搜尋許可權設定，以設定存取控制清單。](media/MSSQL-ACL2.png)
 
 ## <a name="step-3b-incremental-crawl-optional"></a>步驟3b：增量編目 (選用) 
 

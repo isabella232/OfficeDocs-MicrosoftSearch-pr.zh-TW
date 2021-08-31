@@ -6,18 +6,18 @@ manager: jameslau
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 如何對應非 AAD 身分識別的步驟
-ms.openlocfilehash: 48f462318b005f426cd2e0ee3ade0ee895b1c38b36ccf53faf5631a5c002c3d6
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: e90db3bb8d20a0389ddbf2d2845bf91843513404
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533563"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701956"
 ---
 # <a name="map-your-non-azure-ad-identities"></a>對應您的非 Azure AD 身分識別  
 
@@ -80,7 +80,7 @@ ms.locfileid: "54533563"
 
 請參閱下方的快照，以取得非 Azure AD 的範例對應。
 
-![如何填寫非 Azure AD 對應頁面的範例快照](media/non-aad-mapping.png)
+![如何填滿非 Azure AD 對應頁面的範例快照。](media/non-aad-mapping.png)
 
 ## <a name="limitations"></a>限制  
 

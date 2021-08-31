@@ -6,18 +6,18 @@ manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 連接器結果聚簇體驗的詳細資料
-ms.openlocfilehash: c90cc98415be6a42d32b646894cb04305ecb6542
-ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
+ms.openlocfilehash: f815c52681a7fc2027b587be980b5e9125e04917
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58235890"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701928"
 ---
 # <a name="graph-connectors-result-cluster"></a>Graph 連接器結果叢集
 
@@ -41,7 +41,7 @@ ms.locfileid: "58235890"
 
 結果叢集會顯示在頁面中間的 [全部] 垂直位置。 例如，從 ' MediaWiki ' 垂直的結果叢集如下所示。
 
-![MediaWiki 結果叢集的範例](media/result-cluster/result-cluster-example.png)
+![MediaWiki 結果叢集的範例。](media/result-cluster/result-cluster-example.png)
 
 ## <a name="result-clusters-default-settings"></a>結果聚簇預設設定
   

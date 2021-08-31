@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 部署代理程式
-ms.openlocfilehash: a27b5225d6a9f804d9122fbb237adb453eaf34ba
-ms.sourcegitcommit: 7148807ee9c857bd900916bed24176892a7d1d66
+ms.openlocfilehash: 4b9dddba7741388f2e6c96510e5f41b196def330
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58363239"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58469958"
 ---
 # <a name="microsoft-graph-connector-agent"></a>Microsoft Graph connector 代理程式
 
@@ -123,7 +123,7 @@ Export-PfxCertificate -Cert $certificatePath -FilePath ($filePath + '.pfx') -Pas
 
 3. 開啟 **應用程式註冊** ，然後從功能窗格中選取 **憑證和密碼** 。 複製憑證指紋。
 
-:::image type="content" alt-text="在左窗格中選取憑證和密碼時的 thumbrint 憑證清單" source="media/onprem-agent/certificates.png" lightbox="media/onprem-agent/certificates.png":::
+:::image type="content" alt-text="在左窗格中選取憑證和機密時，thumbrint 憑證的清單。" source="media/onprem-agent/certificates.png" lightbox="media/onprem-agent/certificates.png":::
 
 ##### <a name="step-3-assign-the-certificate-to-the-agent"></a>步驟3：將憑證指派給代理程式
 
