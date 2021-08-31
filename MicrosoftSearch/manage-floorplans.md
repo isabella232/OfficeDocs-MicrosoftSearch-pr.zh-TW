@@ -6,18 +6,18 @@ manager: tonytha
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Microsoft 搜尋中的「平面圖」功能可協助使用者找出大樓中的人員、辦公室和其他功能。
-ms.openlocfilehash: 6cbba6d764fd3904d251fa53fd96c3a66a6aed6b
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+ms.openlocfilehash: beeef26cc7413da654cc3ab01d92aa6cdc74e5cb
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58470021"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702019"
 ---
 # <a name="manage-floor-plans"></a>管理基底計畫
 
