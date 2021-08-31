@@ -1,0 +1,81 @@
+## YamlMime:Hub
+title: Microsoft 搜尋管理檔
+summary: 管理 Microsoft 搜尋以透過為您的組織提供更相關的搜尋結果，以提升生產力。
+metadata:
+  title: Microsoft 搜尋檔
+  description: Microsoft 搜尋可為您的組織提供更相關的搜尋結果，以提升生產力並節省時間。
+  ms.service: mssearch
+  ms.topic: landing-page
+  author: jeffkizn
+  ms.author: jeffkizn
+  ms.date: 05/29/2020
+highlightedContent:
+  items:
+    - title: 深入瞭解 Microsoft 搜尋
+      itemType: overview
+      url: 'https://resources.techcommunity.microsoft.com/microsoft-search/'
+    - title: Microsoft 搜尋藍圖
+      itemType: reference
+      url: 'https://www.microsoft.com/microsoft-365/roadmap?rtc=1&filters=Microsoft%20Search'
+    - title: 採用資源
+      itemType: get-started
+      url: 'https://resources.techcommunity.microsoft.com/microsoft-search/#adoption'
+    - title: YouTube 上的 Microsoft 搜尋
+      itemType: video
+      url: 'https://www.youtube.com/channel/UC-d4Q5pvRf6IVJuWY8wpAFw/'
+additionalContent:
+  sections:
+    - title: 系統管理
+      items:
+        - title: 管理員的 Microsoft 搜尋
+          links:
+            - text: 一般概述
+              url: overview-microsoft-search.md
+            - text: 設定 Microsoft Search
+              url: setup-microsoft-search.md
+            - text: 常見問題集
+              url: faqs.md
+        - title: 取得使用者的洞察力
+          links:
+            - text: 搜尋使用方式報告
+              url: usage-reports.md
+            - text: 查看使用者的意見反應
+              url: manage-feedback.md
+        - title: 提供解答
+          links:
+            - text: 管理書籤
+              url: manage-bookmarks.md
+            - text: 管理縮寫
+              url: manage-acronyms.md
+            - text: 管理基底計畫
+              url: manage-floorplans.md
+            - text: 管理位置
+              url: manage-locations.md
+            - text: 管理 Power BI
+              url: manage-powerbi.md
+            - text: 管理 Q&
+              url: manage-qas.md
+        - title: 管理資料來源
+          links:
+            - text: Graph連接器概述
+              url: connectors-overview.md
+            - text: 設定 Graph 連接器
+              url: configure-connector.md
+            - text: 同盟連接器管理
+              url: manage-dynamics365.md
+        - title: 自訂使用者 UX
+          links:
+            - text: 管理類別和結果類型
+              url: customize-search-page.md
+            - text: 自訂 SERP 版面配置
+              url: customize-results-layout.md
+            - text: 管理篩選
+              url: custom-filters.md
+            - text: 管理結果聚簇
+              url: result-cluster.md
+        - title: 搜尋用戶端
+          links:
+            - text: 瞭解 SharePoint 中的 Microsoft 搜尋
+              url: get-started-search-in-sharepoint-online.md
+            - text: 瞭解 Bing 中的 Microsoft 搜尋
+              url: security-for-search.md
