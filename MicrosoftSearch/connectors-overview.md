@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 搜尋的 Microsoft Graph 連接器的概覽
-ms.openlocfilehash: e1aea93c927d933a63c3eb0456bb18d3f99e9291
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.openlocfilehash: 0d0a1a89edfbcba0fed167c8b3f7bb2166da9439
+ms.sourcegitcommit: 134749c0f3a10f63d667f86dca55656b020b920f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702209"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "58923141"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -71,7 +71,7 @@ Microsoft 提供9個連接器和我們的生態系統合作夥伴已透過100以
 * [MediaWiki](mediawiki-connector.md)
 * [檔案共用](fileshare-connector.md)
 * [Oracle SQL](OracleSQL-connector.md)
-* [Salesforce (預覽)](salesforce-connector.md)
+* [Salesforce ](salesforce-connector.md)
 * [ServiceNow](servicenow-connector.md)
 
 [Microsoft Graph 連接器圖庫](https://www.microsoft.com/microsoft-search/connectors)包含每個連接器的簡短描述。 如果您已準備好將其中一個資料來源連線至您的租使用者，請務必閱讀套用至資料來源之 Microsoft 安裝連接器中的 [安裝程式概述](configure-connector.md) 及其他任何文章。
@@ -101,8 +101,6 @@ Microsoft 提供9個連接器和我們的生態系統合作夥伴已透過100以
 預覽中的連接器和功能組包括：
 
 * [Azure DevOps 連接器](azure-devops-connector.md)
-* [Salesforce 連接器](salesforce-connector.md)
-* 具有使用來源 ACLs 之搜尋許可權的[ServiceNow 連接器](servicenow-connector.md)
 * [管理自訂篩選](custom-filters.md)
 * [垂直中的多個連接](customize-search-page.md#multiple-connections-in-a-vertical)
 
