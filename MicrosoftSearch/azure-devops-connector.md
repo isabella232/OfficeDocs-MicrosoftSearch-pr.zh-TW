@@ -7,18 +7,18 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的 Azure DevOps Graph 連接器
-ms.openlocfilehash: 9c3c5d994f8470cdd70dc07445ede2c74f688383
-ms.sourcegitcommit: be5dcc7005447d6139e39d86211c7ec4cd5dd907
+ms.openlocfilehash: fcf381a92ef397f900b300ca667fa80067a6672a
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58639568"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973412"
 ---
 <!---Previous ms.author: shgrover --->
 
@@ -60,7 +60,7 @@ instructions.-->
 
 下表提供如何填寫 [應用程式註冊] 表單的指導方針：
 
-必要欄位 | 說明 | 建議值
+必要欄位 | 描述 | 建議值
 --- | --- | ---
 | 公司名稱         | 您公司的名稱。 | 使用適當的值   |
 | 應用程式名稱     | 識別您要授權之應用程式的唯一值。    | Microsoft 搜尋     |

@@ -12,28 +12,30 @@ search.appverid:
 - MET150
 - MOE150
 description: 系統管理員如何在組織內適當地限制存取網站和檔案的方式。
-ms.openlocfilehash: c85cce6208743b884cce86cc11c46aab3e01254d
-ms.sourcegitcommit: 70c48e470262099feb79553e36593521cc5e7abc
+ms.openlocfilehash: c19442e1d89ddfe65a772213a8b0225ca680d699
+ms.sourcegitcommit: 3e069fd920b5fcdfe97a0261930447e9e87d9013
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58835016"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "58973776"
 ---
 # <a name="manage-access-to-files-and-sites"></a>管理檔與網站的存取權
 
-並非每個檔案或網站都應該可供組織中的每個人使用。 管理員和使用者可以使用最能解決特定問題的解決方案，管理敏感或機密資訊的存取。 如果有足夠的存取控制不會持續套用，可能會產生所謂的「oversharing」。 更容易尋找組織內共用的資訊，使用 Microsoft 搜尋不會不慎存取具有不正確限制的檔案和網站。
+並非每個檔案或網站都應該可供組織中的每個人使用。 管理員和使用者可以使用最能解決特定問題的解決方案，管理敏感或機密資訊的存取。 如果有足夠的存取控制不會持續套用，可能會產生所謂的「oversharing」。 讓您更容易尋找組織內共用的資訊，使用 Microsoft 搜尋不會不慎存取具有不正確限制的檔案和網站。
 
 搜尋管理員無法解決這些 oversharing 問題。 不受限制存取的檔案和網站將會出現在內部搜尋結果中，而且會透過其他探索途徑來呈現。 不過，當控制以避免 oversharing 時，就會關閉所有的可包含搜尋的功能。
 
 ## <a name="solutions-to-prevent-oversharing"></a>避免 oversharing 的解決方案
 
-使用下列工具、原則及技術來限制或模糊存取訊號，以協助防止 oversharing。 若要執行這些解決方案，可能需要全球通用、法規遵從性或安全性系統管理員存取權。 我們也建議使用內部活動，向您的使用者講解如何正確保護、標記和許可權其網站與檔案。
+使用下列工具、原則及技術來限制或模糊存取訊號，以協助防止 oversharing。 若要執行這些解決方案，可能需要全域、規範或安全性系統管理員存取權。 我們也建議使用內部活動，向您的使用者講解如何正確保護、標記和許可權其網站與檔案。
 
-### <a name="public-sites-or-sites-with-public-owners"></a>具有公用擁有者的公用網站或網站
+### <a name="public-sites-or-sites-with-public-groups-as-owners"></a>使用公用群組做為擁有者的公用網站或網站
 
-您組織中的每個人都可以共用一種方法，就是透過公用的擁有者的公用網站或網站。 敏感度標籤可以防止使用者建立公用群組或網站。 這是透過設定所有標籤來建立私人群組，並需要群組標籤來完成。 如需詳細資訊，請參閱[使用敏感度標籤來保護 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站中的內容](/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)。 您必須為使用者定義個別的處理常式，以要求或建立公用群組。
+可與所有人共用的單向檔案是透過公用網站或具有公用群組的網站擁有者。 敏感度標籤可以防止使用者建立公用群組或網站。 如需設定所有標籤以建立私人群組/網站，以及要求群組/網站標籤的詳細資訊，請參閱[使用敏感度標籤來保護 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站中的內容](/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)。
 
-另一個選項是定義誰可以在組織中建立 Microsoft 365 群組。 如需詳細資訊，請參閱[為需要建立 Microsoft 365 群組的使用者建立群組](/microsoft-365/solutions/manage-creation-of-groups#step-1-create-a-group-for-users-who-need-to-create-microsoft-365-groups)。 全域系統管理員將需要為使用者設定一套使用者來提交群組建立要求的處理常式。 我們也建議您通知使用者這種變更。
+另一個選項是控制誰可以在您的組織中建立 Microsoft 365 群組。 如需詳細資訊，請參閱[為需要建立 Microsoft 365 群組的使用者建立群組](/microsoft-365/solutions/manage-creation-of-groups#step-1-create-a-group-for-users-who-need-to-create-microsoft-365-groups)。
+
+在實施上述任一項解決方案時，我們也建議您為使用者設定可要求建立公用群組的處理常式，並通知使用者有關變更。
 
 若限制建立群組的能力無法讓您的組織使用，您可以透過審核監控活動，包括群組的建立。 如需有關基本及高級審核的詳細資訊，請參閱[Microsoft 365 中的審計方案](/microsoft-365/compliance/auditing-solutions-overview)。
 
@@ -41,7 +43,7 @@ ms.locfileid: "58835016"
 
 若要限制所有分類為商務機密的檔案的存取權，您可以定義及套用組織的資料分類。 需要收集資料範例，以協助訓練新的分類器。 如需必要條件和許可權的詳細資訊，請參閱 [瞭解資料分類](/microsoft-365/compliance/data-classification-overview)。
 
-若要限制檔案存取特定群組的成員，如主管，您可以建立範圍設定為安全性群組的自訂標籤。 然後，當安全性群組成員套用標籤時，它會自動限制對群組的存取。 若要深入瞭解自訂標籤，請參閱 [建立和設定敏感度標籤及其原則](/microsoft-365/compliance/create-sensitivity-labels) ，並 [使用敏感度標籤來限制對內容的存取，以套用加密](/microsoft-365/compliance/encryption-sensitivity-labels)。
+若要限制檔案存取特定群組的成員，如主管，您可以建立範圍設定為安全性群組的自訂標籤。 然後，當安全性群組成員套用標籤時，會自動限制對群組的存取。 若要深入瞭解自訂標籤，請參閱 [建立和設定敏感度標籤及其原則](/microsoft-365/compliance/create-sensitivity-labels) ，並 [使用敏感度標籤來限制對內容的存取，以套用加密](/microsoft-365/compliance/encryption-sensitivity-labels)。
 
 為了確保檔和電子郵件已正確標示，系統管理員也可以設定預設的標籤原則，並要求使用者貼上標籤。 如需詳細資訊，請參閱[要求使用者在電子郵件和文件中套用標籤](/microsoft-365/compliance/sensitivity-labels-office-apps#require-users-to-apply-a-label-to-their-email-and-documents) (部分機器翻譯)。
 

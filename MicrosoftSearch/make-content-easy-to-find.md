@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: 建立書籤、位置和問與答項目，讓組織的內容易於尋找。
 ms.openlocfilehash: 77b6507c7643e6cf2176f37a9a2cf0def1c640ba
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702073"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973671"
 ---
 # <a name="make-content-easy-to-find"></a>讓內容易於尋找
 
@@ -90,7 +90,7 @@ Microsoft Search 可協助使用者找到相關內容。 它是一種能同時�
 
 透過 [位置](manage-locations.md)，您的使用者可以尋找位址並找到您組織的大樓。 **位置** 功能可為辦公室、校園和辦公樓提供正確的位置，以及方位和導覽。 為了獲得最佳結果，系統管理員必須將其組織的所有重要位置新增至 Microsoft 搜尋。 不同于 [書簽](manage-bookmarks.md) 和 [Q&A](manage-qas.md)，位置索引不會立即重新整理。 新的或已變更的位置出現在搜尋結果中，可能需要數小時的時間。
 
-## <a name="get-started"></a>快速入門
+## <a name="get-started"></a>開始使用
 若要瞭解您的使用者所需的資訊，並使該資訊易於探索，請嘗試下列其中一種方法：
 
 - 使用內部網路搜尋記錄來判斷獲得最多流量的網站與頁面。

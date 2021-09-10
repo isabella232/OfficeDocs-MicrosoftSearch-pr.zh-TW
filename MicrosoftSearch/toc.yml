@@ -4,6 +4,8 @@
       href: overview-microsoft-search.md
     - name: 設定
       href: setup-microsoft-search.md
+    - name: 管理檔與網站的存取權
+      href: manage-access-files-sites.md
     - name: 常見問題集
       href: faqs.md
 - name: 取得深入資訊
@@ -54,6 +56,10 @@
                   href: azure-devops-connector.md
                 - name: Azure SQL 和 Microsoft SQL Server
                   href: MSSQL-connector.md
+                - name: 'Confluence 雲端 (預覽) '
+                  href: confluence-cloud-connector.md
+                - name: 'Jira 雲端 (預覽) '
+                  href: jira-connector.md
                 - name: 企業網站
                   href: enterprise-web-connector.md
                 - name: 檔案共用
@@ -64,8 +70,10 @@
                   href: OracleSQL-connector.md
                 - name: Salesforce
                   href: salesforce-connector.md
-                - name: ServiceNow
-                  href: servicenow-connector.md
+                - name: 'ServiceNow 目錄 (預覽) '
+                  href: servicenow-catalog-connector.md
+                - name: ServiceNow 知識
+                  href: servicenow-knowledge-connector.md
         - name: 管理連線
           items:
             - name: 監控連線

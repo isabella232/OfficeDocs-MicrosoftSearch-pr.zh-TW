@@ -7,19 +7,19 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ROBOTS: NoIndex
 description: 為 Microsoft 搜尋設定 Oracle SQL Graph 連接器。
-ms.openlocfilehash: 1fe45fa6f92b16290148ef72282418c41942a3c7
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+ms.openlocfilehash: 804bee89f8529630df5741f68b9f112c69307b4f
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58470012"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973429"
 ---
 <!---Previous ms.author:vivg --->
 

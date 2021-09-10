@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 搜尋的 Microsoft Graph 連接器的概覽
-ms.openlocfilehash: 0d0a1a89edfbcba0fed167c8b3f7bb2166da9439
-ms.sourcegitcommit: 134749c0f3a10f63d667f86dca55656b020b920f
+ms.openlocfilehash: 006ab3f56eb4976b44904e5191ae8fd256c8d5de
+ms.sourcegitcommit: 3e069fd920b5fcdfe97a0261930447e9e87d9013
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "58923141"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "58973524"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -67,12 +67,15 @@ Microsoft 提供9個連接器和我們的生態系統合作夥伴已透過100以
 * [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
 * [Azure DevOps](azure-devops-connector.md)
 * [Azure SQL 和 Microsoft SQL Server](MSSQL-connector.md)
+* [Confluence 雲端 (預覽) ](confluence-cloud-connector.md)
 * [企業網站](enterprise-web-connector.md)
 * [MediaWiki](mediawiki-connector.md)
 * [檔案共用](fileshare-connector.md)
 * [Oracle SQL](OracleSQL-connector.md)
-* [Salesforce ](salesforce-connector.md)
-* [ServiceNow](servicenow-connector.md)
+* [Salesforce](salesforce-connector.md)
+* [ServiceNow 知識](servicenow-knowledge-connector.md)
+* [ServiceNow 目錄 (預覽) ](servicenow-catalog-connector.md)
+
 
 [Microsoft Graph 連接器圖庫](https://www.microsoft.com/microsoft-search/connectors)包含每個連接器的簡短描述。 如果您已準備好將其中一個資料來源連線至您的租使用者，請務必閱讀套用至資料來源之 Microsoft 安裝連接器中的 [安裝程式概述](configure-connector.md) 及其他任何文章。
 
@@ -101,6 +104,8 @@ Microsoft 提供9個連接器和我們的生態系統合作夥伴已透過100以
 預覽中的連接器和功能組包括：
 
 * [Azure DevOps 連接器](azure-devops-connector.md)
+* [Confluence 雲端連接器](confluence-cloud-connector.md)
+* [ServiceNow 目錄連接器](servicenow-catalog-connector.md)
 * [管理自訂篩選](custom-filters.md)
 * [垂直中的多個連接](customize-search-page.md#multiple-connections-in-a-vertical)
 

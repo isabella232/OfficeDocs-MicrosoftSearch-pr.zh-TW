@@ -14,11 +14,11 @@ search.appverid:
 - MOE150
 description: 管理 Microsoft 搜尋的 Microsoft Graph 連接器。
 ms.openlocfilehash: dd82114ff6aa651b57ce1941685840906ecf7318
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702046"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973424"
 ---
 # <a name="monitor-your-connections"></a>監控您的連線
 
@@ -65,7 +65,7 @@ ms.locfileid: "58702046"
 --- | --- 
 一般 | 0-79%
 高 | 80-89%
-嚴重 | 90%-99%
+重大 | 90%-99%
 完整 | 100%
 
 已編制索引的專案數也會顯示每個連線。 每個連線編制索引的專案數會占組織可用的總配額。

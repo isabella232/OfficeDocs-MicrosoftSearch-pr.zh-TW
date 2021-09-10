@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: 在線上 SharePoint 使用 Microsoft 搜尋來開始您的組織
 ms.openlocfilehash: b506c2259b514b604f4285d3ec8351ce9ac860db
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702127"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973622"
 ---
 # <a name="get-started-with-microsoft-search-in-sharepoint"></a>開始在 SharePoint 使用 Microsoft Search
 

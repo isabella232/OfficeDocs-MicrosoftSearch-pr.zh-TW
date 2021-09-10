@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Graph 連接器的設定概觀
-ms.openlocfilehash: 3b8ae9068b445e09f2df95fb5b29feb5ec3af74b
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.openlocfilehash: 95a2640652bd1289962c888be4ba771629806a6b
+ms.sourcegitcommit: 3e069fd920b5fcdfe97a0261930447e9e87d9013
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701874"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "58973529"
 ---
 <!-- Previous ms.author: monaray -->
 
@@ -63,7 +63,7 @@ ms.locfileid: "58701874"
 3. 選取 [ **+ 新增**]，然後從可用選項的功能表中選取您選擇的資料來源。
 
    > [!div class="mx-imgBorder"]
-   > ![可用的資料來源包括： ADLS Gen2、Enterprise 網站、Microsoft SQL server、Azure SQL、Oracle SQL 資料庫、ServiceNow、檔案共用、Azure DevOps 和 MediaWiki。](media/add-connector.png)
+   > ![可用的資料來源包括： ADLS Gen2、Enterprise 網站、Microsoft SQL server、Azure SQL、Oracle SQL 資料庫、ServiceNow 知識、ServiceNow 目錄、檔案共用、Azure DevOps 和 MediaWiki。](media/add-connector.png)
 
 > [!NOTE]
 > 每個租使用者最多可以加入10個 Graph 連接。
@@ -97,7 +97,7 @@ ServiceNow 查詢可用於在資料按 Microsoft 搜尋編制索引之前加以�
 
 某些連接器（如[Microsoft SQL](MSSQL-connector.md)和[Azure Data Lake 儲存體 Gen2](azure-data-lake-connector.md)本身支援[Azure Active Directory (Azure AD) ](/azure/active-directory/) ACLs）。
 
-其他連接器（如[ServiceNow](servicenow-connector.md)、 [Azure DevOps](azure-devops-connector.md)和[Salesforce](salesforce-connector.md) ）支援非 Azure AD 使用者和群組的同步處理。  
+其他如[ServiceNow 知識](servicenow-knowledge-connector.md)的連接器[，ServiceNow 目錄](servicenow-catalog-connector.md)、 [Azure DevOps](azure-devops-connector.md)和[Salesforce](salesforce-connector.md)支援非 Azure AD 使用者和群組的同步處理。  
 
 選取 [所有人] 可讓組織中的每個人都看到來自此資料來源的搜尋結果。
 
@@ -107,7 +107,7 @@ ServiceNow 查詢可用於在資料按 Microsoft 搜尋編制索引之前加以�
 
 下表列出目前支援的標籤及其描述。  
 
-標籤 | 說明
+標籤 | 描述
 --- | ---  
 **title** | 您想要顯示在搜尋和其他體驗中的專案標題
 **url** | 來源系統中專案的目標 url

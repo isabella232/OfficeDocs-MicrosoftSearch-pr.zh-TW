@@ -13,18 +13,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 列出 Microsoft 搜尋的所有 Microsoft Graph 連接器
-ms.openlocfilehash: 26e0450c7fa714f91a998a333d719d09bdc2a92f
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.openlocfilehash: 57bb36d398c261d8df7b8dcf2b2301b35e30bc96
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702227"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973772"
 ---
 # <a name="microsoft-graph-connectors-gallery"></a>Microsoft Graph 連接器圖庫
 
-[microsoft Graph connector 圖庫](http://www.microsoft.com/microsoft-search/connectors)包含由 microsoft 和我們的合作夥伴所建立之每個連接器的簡短說明，以及每個合作夥伴網站的連結。
+[microsoft Graph connector 圖庫](https://www.microsoft.com/microsoft-search/connectors)包含由 microsoft 和我們的合作夥伴所建立之每個連接器的簡短說明，以及每個合作夥伴網站的連結。
 
-目前有超過100個連接器可供您連線至流行的 Microsoft 和非 Microsoft 服務，例如 Azure 服務、Box、MediaWiki、ServiceNow、SalesForce、Google services、MediaWiki 及其他許多。
+目前有超過100連接器可供您連線至流行的 Microsoft 和非 Microsoft 服務，例如 Azure 服務、Box、Confluence、MediaWiki、ServiceNow、SalesForce、Google services、MediaWiki 等等。
 
 立即流覽[Microsoft Graph 連接器圖庫](http://www.microsoft.com/microsoft-search/connectors)，並尋找您需要的所有資訊。
 

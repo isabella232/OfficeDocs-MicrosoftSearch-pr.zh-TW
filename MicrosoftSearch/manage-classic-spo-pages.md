@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: 在傳統 SharePoint 頁面上使用 Microsoft 搜尋
 ms.openlocfilehash: 5b9c40da63ccf3b28cf2d61282763d3d4f62f867
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702037"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973761"
 ---
 # <a name="classic-pages-and-microsoft-search"></a>傳統頁面和 Microsoft 搜尋
 

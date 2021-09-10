@@ -6,24 +6,24 @@ manager: jameslau
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 如何對應非 AAD 身分識別的步驟
-ms.openlocfilehash: bece23677f07f10d40471fb6ec27c2d96e7018fb
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+ms.openlocfilehash: f433da10347ef59acf7675ec65da8acbd7f0f347
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58470303"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973401"
 ---
 # <a name="map-your-non-azure-ad-identities"></a>對應您的非 Azure AD 身分識別  
 
 本文將引導您完成將您的非 Azure AD 身分識別對應至 Azure AD 身分識別的步驟，讓您的存取控制清單中的人員 (具有非 Azure AD 身分識別的 ACL) 可以查看其範圍內的連接器搜尋結果。
 
-這些步驟只與使用「存取此資料來源的人」和「 [](salesforce-connector.md)非 AAD」的「搜尋」許可權設定 Microsoft 的「搜尋」許可權[ServiceNow](servicenow-connector.md)設定的搜尋系統管理員相關。
+這些步驟只與使用「存取此資料來源的人」和「非 AAD」的「搜尋」許可權設定 [Confluence 雲端](confluence-cloud-connector.md)、 [ServiceNow 知識](servicenow-knowledge-connector.md) [ServiceNow 目錄](servicenow-catalog-connector.md) 或 [Salesforce](salesforce-connector.md) 連接器的搜尋系統管理員相關。
 
 >[!NOTE]
 >如果您是在 [搜尋許可權] 畫面上設定 Salesforce 連接器並 **只選取可存取此資料來源** 和身分 **識別類型的** 人員，請參閱 [對應 azure ad](map-aad.md) 身分識別文章，以取得如何對應 azure ad 身分識別的步驟。  
@@ -44,9 +44,9 @@ ms.locfileid: "58470303"
 
 ### <a name="2-select-non-azure-ad-user-properties-to-map"></a>2. 選取非 Azure AD 使用者屬性以進行對應
 
-您可以從您的資料來源中選取要套用正則運算式的非 Azure AD 屬性。 若要深入瞭解在資料來源中找到這些屬性的詳細資訊，請參閱 [ServiceNow](servicenow-connector.md) 和 [Salesforce](salesforce-connector.md) 頁面。  
+您可以從您的資料來源中選取要套用正則運算式的非 Azure AD 屬性。 若要深入瞭解在資料來源中找到這些屬性的詳細資訊，請參閱 [Confluence Cloud](confluence-cloud-connector.md)、 [ServiceNow 知識](servicenow-knowledge-connector.md) [ServiceNow 目錄](servicenow-catalog-connector.md) 及 [Salesforce](salesforce-connector.md) 頁面。  
 
-您可以從下拉式清單中選取非 Azure AD 使用者屬性，並提供在這些使用者屬性值上套用正則運算式。 若要深入瞭解正則運算式，請參閱 [正則運算式參考]( https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference)。  
+您可以從下拉式清單中選取非 Azure AD 使用者屬性，並提供在這些使用者屬性值上套用正則運算式。
 
 以下是一些正則運算式範例及其輸出套用至範例字串的範例： 
 

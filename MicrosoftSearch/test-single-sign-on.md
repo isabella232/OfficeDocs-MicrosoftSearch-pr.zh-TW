@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: a220c1bf-7cee-448a-90a3-310284d03e81
 description: 減少您的 Windows 10 使用者登入 Microsoft Search 和 Office 365 的提示次數
 ms.openlocfilehash: ab4e9c8c3fc8f89abf60c9aa09671105e7c40451
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701415"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973768"
 ---
 # <a name="test-single-sign-on"></a>測試單一登入
 

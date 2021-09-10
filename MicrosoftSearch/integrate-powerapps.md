@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 1fadcba3-4a7f-4a55-8476-d4e64d49a15f
 description: 在 Microsoft 搜尋的書簽結果中包含以瀏覽器為基礎的應用程式
 ms.openlocfilehash: 55df0d6d6d39742548db497ed77f530b6a591895
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702100"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973683"
 ---
 # <a name="integrate-power-apps-in-microsoft-search-bookmarks"></a>整合 Microsoft 搜尋書簽中的 Power Apps
    

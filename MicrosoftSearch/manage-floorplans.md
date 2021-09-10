@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: Microsoft 搜尋中的「平面圖」功能可協助使用者找出大樓中的人員、辦公室和其他功能。
 ms.openlocfilehash: beeef26cc7413da654cc3ab01d92aa6cdc74e5cb
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702019"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973665"
 ---
 # <a name="manage-floor-plans"></a>管理基底計畫
 
@@ -152,13 +152,13 @@ Floor 計畫檔案必須採用 DWG 格式;DWG 檔案可包含文字標籤。 當
 || 21|45|21045|2/21045|
 ||至|萬美元|23-10 萬美元|2/23-100K|
 ||1|G06-07|1G06-07|2/1G06-07|
-||2 |1024A|02.1024 a|2/02.1024 a|
-||2 |1024A|02.1024 a|2/02.1024 a|
-||2 |105.01|2105.01|2/2105.01|
+||第|1024A|02.1024 a|2/02.1024 a|
+||第|1024A|02.1024 a|2/02.1024 a|
+||第|105.01|2105.01|2/2105.01|
 |有建立程式碼、基底及房間號碼|0|X-11-M-12|2-0-X-11-M-12|2/2-0-X-11-M-12<br/>2-0-X-11-M-12|
-||2 |128A|22128A|2/22128A<br/>22128A|
+||第|128A|22128A|2/22128A<br/>22128A|
 ||1|B2-11|21-B2-11|2/21-B2-11<br/>21-B2-11|
-||2 |45|SC2045|SC/SC2045<br/>SC2045|
+||第|45|SC2045|SC/SC2045<br/>SC2045|
 
 **問：** 我可以使用不含底價編號的 DWG 檔案嗎？
 

@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: 新增搜尋行業及自訂搜尋結果
 ms.openlocfilehash: 1ca436a2617e32e285715e4fffd622dc7a571ca1
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702172"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973421"
 ---
 # <a name="customize-the-search-results-page"></a>自訂搜尋結果頁面
 
@@ -186,7 +186,7 @@ Microsoft 搜尋結果] 頁面的頂端有一列索引標籤。 這些是搜尋�
 | #         | 語法 |  傳回值  |
 | --------- | ------ | --- |
 | 1    | MyProperty： {設定檔. 電子郵件地址}  |   "Megan \. Bowen@contoso.com"  |
-| 2  | MyProperty： {Profile} 電子郵件}   |    因為 *電子郵件* 是物件，所以 {Profile} 電子郵件} 這不會解決。|
+| 第 | MyProperty： {Profile} 電子郵件}   |    因為 *電子郵件* 是物件，所以 {Profile} 電子郵件} 這不會解決。|
 | 3     | {?MyProperty： {Profile. 電子郵件}}  |  這不會解決，因為 *電子郵件* 是物件。 "？" 運算子會忽略未解析的查詢變數。 在查詢堆疊上進一步傳遞時，將會移除此變數。   |
 | 4  | {&#124;MyProperty： {Profile. Type}}    |   ( (MyProperty： "官方" ) 或 (MyProperty： "非官方" ) 或 (MyProperty： "personal" ) )     |
 

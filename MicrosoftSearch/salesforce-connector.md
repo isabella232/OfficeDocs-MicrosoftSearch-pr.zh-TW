@@ -14,11 +14,11 @@ search.appverid:
 - MOE150
 description: 設定 Microsoft 搜尋的 Salesforce Graph 連接器
 ms.openlocfilehash: c2679002affe494ba31777718d265b5526b744c0
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701865"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973413"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -183,7 +183,7 @@ Salesforce 連接器只支援目前完全編目的重新整理排程。
 - 在 [管理架構] 畫面中，這些通用的標準屬性名稱會列出一次，這些選項為 **查詢**、 **搜尋**、 **檢索** 及 **精煉**，並套用至 all 或 none。
     - 姓名
     - URL
-    - 說明
+    - 描述
     - 傳真
     - Phone
     - MobilePhone

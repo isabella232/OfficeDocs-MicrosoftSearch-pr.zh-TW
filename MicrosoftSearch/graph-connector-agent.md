@@ -14,11 +14,11 @@ search.appverid:
 - MOE150
 description: 部署代理程式
 ms.openlocfilehash: 9994b84c8db05b6b269edb6f5b6f463ab8da1529
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702136"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973416"
 ---
 # <a name="microsoft-graph-connector-agent"></a>Microsoft Graph connector 代理程式
 
