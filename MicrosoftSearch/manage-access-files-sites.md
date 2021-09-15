@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: 系統管理員如何在組織內適當地限制存取網站和檔案的方式。
 ms.openlocfilehash: c19442e1d89ddfe65a772213a8b0225ca680d699
-ms.sourcegitcommit: 3e069fd920b5fcdfe97a0261930447e9e87d9013
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "58973776"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375716"
 ---
 # <a name="manage-access-to-files-and-sites"></a>管理檔與網站的存取權
 

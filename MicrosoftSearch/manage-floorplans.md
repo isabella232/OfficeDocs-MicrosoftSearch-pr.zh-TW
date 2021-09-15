@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: Microsoft 搜尋中的「平面圖」功能可協助使用者找出大樓中的人員、辦公室和其他功能。
 ms.openlocfilehash: beeef26cc7413da654cc3ab01d92aa6cdc74e5cb
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973665"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59334489"
 ---
 # <a name="manage-floor-plans"></a>管理基底計畫
 

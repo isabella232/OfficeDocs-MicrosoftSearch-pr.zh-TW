@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 在 Microsoft 搜尋中查看並處理使用者意見反應
-ms.openlocfilehash: 37ea70862cd4881170288339427f5ab1f150bf31
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.openlocfilehash: db2854205b3006328919e22bd69c11a075ffc15d
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973625"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59334485"
 ---
 # <a name="managing-user-feedback"></a>管理使用者意見反應
 
@@ -66,7 +66,7 @@ ms.locfileid: "58973625"
 
 ## <a name="send-user-feedback-to-microsoft"></a>將使用者回饋傳送給 Microsoft
 
-根據預設，所有的使用者意見反應都會傳送給 Microsoft，此外還會傳送給您。 若要停止傳送對 Microsoft 的意見反應，請按一下 [ **管理設定**]，然後清除 [ **自動傳送使用者對 Microsoft 的意見** 反應] 核取方塊。 最多可能需要24小時的時間，此變更才會生效。
+根據預設，除了您之外，所有的使用者意見反應都會傳送給 Microsoft。 若要停止傳送對 Microsoft 的意見反應，請按一下 [ **管理設定**]，然後清除 [ **自動傳送使用者對 Microsoft 的意見** 反應] 核取方塊。 最多可能需要24小時的時間，此變更才會生效。
 
 如果您已決定不自動傳送意見反應給 Microsoft，您仍然可以將個別的意見反應傳送給 Microsoft。
 

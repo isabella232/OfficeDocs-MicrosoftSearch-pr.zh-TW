@@ -14,11 +14,11 @@ search.appverid:
 - MOE150
 description: 設定 Microsoft 搜尋的 ServiceNow 目錄 Graph 連接器
 ms.openlocfilehash: c46388a086f563eec36dbd7e5492d8065b1ae296
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973400"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375809"
 ---
 <!---Previous ms.author: kam1 --->
 

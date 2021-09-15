@@ -14,11 +14,11 @@ search.appverid:
 - MOE150
 description: 設定 Microsoft 搜尋的 Atlassian Jira Graph 連接器
 ms.openlocfilehash: 0b4b1dc0ed1f9e9d3ca57f98dc3878f63e68d510
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973756"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375730"
 ---
 # <a name="atlassian-jira-graph-connector-preview"></a>Atlassian Jira Graph connector (preview) 
 
