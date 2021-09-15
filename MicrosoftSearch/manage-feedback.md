@@ -17,7 +17,7 @@ ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 09/15/2021
-ms.locfileid: "59334485"
+ms.locfileid: "59375475"
 ---
 # <a name="managing-user-feedback"></a>管理使用者意見反應
 
