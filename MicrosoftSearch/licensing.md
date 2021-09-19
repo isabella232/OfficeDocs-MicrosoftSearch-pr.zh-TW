@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 適用于 Microsoft 搜尋的 Microsoft Graph 連接器公開預覽的授權需求和價格
-ms.openlocfilehash: b62187f0618405bdd691f923437b7b1e0edea1f9
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: d4601e06d49ec860652d42517c79af2343c9b6ec
+ms.sourcegitcommit: bafd15a17ca20bac0f2c5f65e36ef81262eafc06
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59375729"
+ms.lasthandoff: 09/19/2021
+ms.locfileid: "59448626"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -29,12 +29,15 @@ ms.locfileid: "59375729"
 任何有效的 **Microsoft 365 或 Office 365 授權** 可讓您在搜尋結果中查看連接器中的資料。
 
 > [!TIP]
-> **Microsoft Graph connector & Viva 主題試用版現可供使用**：如果您沒有可用的索引配額，且想要立即嘗試使用 Microsoft Graph 連接器，則您可以在 [這裡](#microsoft-graph-connectors-now-available-with-microsoft-viva-topics-trial)詳述的 [Microsoft Viva 主題](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot:overviewtab)要求 **促銷碼**。
+> **Microsoft Graph 連接器促銷代碼**：如果您沒有可用的索引配額，且想要嘗試使用 microsoft Graph 連接器，現在您可以從您的 microsoft 帳戶管理員要求 **促銷代碼**。 使用促銷代碼時，您將會收到六個月的試用版。
 
 >[!IMPORTANT]
 >所有 Microsoft 的 Graph 連接器皆為免費。 不過，您需要有足夠的索引配額，才能從這些連接器中攝取內容。
 
 若要使用 Graph 連接器來索引內容，您需要有足夠的索引配額。 您可以透過下列方式取得 Graph 連接器索引配額：
+
+- 內建的權利
+- 購買附加元件索引配額
 
 ## <a name="entitlement-built-into-microsoft-365-or-office-365-e5-licenses"></a>內建 Microsoft 365 或 Office 365 E5 授權的權利
 
@@ -56,17 +59,6 @@ ms.locfileid: "59375729"
 3. 選取 [**額外的 Graph 連接器容量**]。
 4. 選取 [ **購買** ]，然後完成您的訂單喜好設定。
 5. 選取 [ **立即查看**]。
-
-## <a name="microsoft-graph-connectors-now-available-with-microsoft-viva-topics-trial"></a>Microsoft Graph 連接器現在可搭配 Microsoft Viva 主題試用版使用
- 新的 Viva 主題試用版可讓您在開發和/或實際執行環境中評估 Microsoft Graph 連接器和 Viva 主題。 除了存取 Viva 主題之外，它還提供有限的連接器容量。
-
-有兩個選項可用於探索 Graph 連接器與 Microsoft Viva 主題：
-
-1. **開始免費試用版**，並在一月內取得25位使用者的存取權。
-
-     流覽[Microsoft Viva 主題](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot:overviewtab)，然後選取 [免費試用] 選項。
-
-2. 若要使用 Microsoft Viva 主題試用版，請與您的 Microsoft 帳戶管理員聯繫，以索取試用索引容量的 **促銷代碼**。 使用 **促銷代碼** ，您可以在六個月內，針對50使用者取得存取權。
 
 > [!NOTE]
 > 目前，Microsoft Graph 連接器只支援最多7000000個索引配額的專案，包括所有內建于 Microsoft 365 或 Office 365 E5 授權的內建配額。 此平臺未來會支援較高的限制。 如有任何問題，請與 Microsoft 支援部門或您的 Microsoft 客戶經理聯繫。
