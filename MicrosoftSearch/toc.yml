@@ -110,7 +110,9 @@
           href: manage-classic-spo-pages.md
     - name: Bing 中的 Microsoft Search
       items:
-        - name: 安全性及隱私權
+        - name: 概觀
+          href: overview-microsoft-search-bing.md
+        - name: 安全性和隱私權
           href: security-for-search.md
         - name: 將搜尋方塊新增至您的內部網路網站
           href: add-a-search-box-to-your-intranet-site.md
