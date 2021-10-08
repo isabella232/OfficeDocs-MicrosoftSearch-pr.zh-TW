@@ -13,18 +13,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Graph 連接器的設定概觀
-ms.openlocfilehash: 95a2640652bd1289962c888be4ba771629806a6b
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: f3e622abbc54103a47a06c587a1d20190639504c
+ms.sourcegitcommit: 02d4f91210d992da080fd39d5b60f8cf30d8f0b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59375728"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60238437"
 ---
 <!-- Previous ms.author: monaray -->
 
 <!-- markdownlint-disable no-trailing-punctuation -->
 
-# <a name="setup-overview-for-graph-connectors-by-microsoft"></a>Microsoft Graph 連接器的設定概觀 
+# <a name="setup-overview-for-graph-connectors-by-microsoft"></a>Microsoft Graph 連接器的設定概觀
 
 本文說明在 [Microsoft 365 系統管理中心](https://admin.microsoft.com)中設定 **Microsoft** Graph 連接器所需的基本程式。 基本程序包含下列步驟：  
 <!---Add links to each section in the doc--->
@@ -87,9 +87,9 @@ ms.locfileid: "59375728"
 
 ## <a name="step-4-select-properties"></a>步驟4：選取屬性
 
-您可以選擇 Microsoft 搜尋所編制索引的屬性。 
+您可以選擇 Microsoft 搜尋所編制索引的屬性。
 
-ServiceNow 查詢可用於在資料按 Microsoft 搜尋編制索引之前加以篩選。這可讓您更深入地控制可搜尋的資料。 若要深入瞭解 ServiceNow 查詢，請參閱 [瞭解 ServiceNow 查詢](https://go.microsoft.com/fwlink/?linkid=2151447)。 
+ServiceNow 查詢可用於在資料按 Microsoft 搜尋編制索引之前加以篩選。這可讓您更深入地控制可搜尋的資料。 若要深入瞭解 ServiceNow 查詢，請參閱 [瞭解 ServiceNow 查詢](https://go.microsoft.com/fwlink/?linkid=2151447)。
 
 ## <a name="step-5-manage-search-permissions"></a>步驟5：管理搜尋許可權
 
@@ -152,8 +152,7 @@ ServiceNow 查詢可用於在資料按 Microsoft 搜尋編制索引之前加以�
 
 針對除檔案共用連接器以外的所有連接器，必須手動設定自訂類型。 若要啟動每個欄位的搜尋功能，您需要對應至屬性清單的搜尋架構。 連接嚮導會根據您所選擇的來源屬性集，自動選取搜尋架構。 您可以在 [搜尋架構] 頁面中選取每個屬性和屬性的核取方塊，以修改此架構。
 
-> [!div class="mx-imgBorder"]
-> ![您可以新增或移除查詢、搜尋及檢索功能，以自訂連接器的架構。](media/manageschema.png)
+:::image type="content" alt-text="您可以新增或移除查詢、搜尋及檢索功能，以自訂連接器的架構。" source="media/manageschema.png" lightbox="media/manageschema.png":::
 
 ### <a name="restrictions-and-recommendations-for-search-schema-settings"></a>搜尋架構設定的限制與建議
 
@@ -201,7 +200,7 @@ ServiceNow 查詢可用於在資料按 Microsoft 搜尋編制索引之前加以�
 
 ## <a name="troubleshooting"></a>疑難排解
 <!---Insert troubleshooting recommendations for this data source-->
-閱讀資料來源的連接器特定資訊。 
+閱讀資料來源的連接器特定資訊。
 
 > [!NOTE]
 > 並非所有連接器特有的文章都包含疑難排解建議。
@@ -214,4 +213,4 @@ ServiceNow 查詢可用於在資料按 Microsoft 搜尋編制索引之前加以�
 
 ## <a name="next-steps"></a>後續步驟
 
-在發佈連線後，您必須自訂搜尋結果頁面。 若要瞭解如何自訂搜尋結果，請參閱 [自訂搜尋結果頁面](customize-search-page.md)。
+在發佈連線後，您必須使用縱向和結果類型自訂搜尋結果頁面。 若要瞭解如何自訂搜尋結果，您可以回顧如何 [管理縱向](manage-verticals.md) 和 [結果類型](manage-result-types.md)。

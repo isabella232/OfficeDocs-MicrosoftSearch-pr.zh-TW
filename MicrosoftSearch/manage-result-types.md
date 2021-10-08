@@ -11,14 +11,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-ROBOTS: NOINDEX
 description: 管理搜尋結果頁面上的結果類型
-ms.openlocfilehash: ea6926a8923f4436f21047c9ac4cb95625ecb163
-ms.sourcegitcommit: 967a02ee932f8a6cee70cfd78bb0c8b1b78d07c4
+ms.openlocfilehash: eb0c00cbc05f899a31cd961d89147ac63c97e82c
+ms.sourcegitcommit: 02d4f91210d992da080fd39d5b60f8cf30d8f0b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60127767"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60238419"
 ---
 # <a name="manage-result-types"></a>管理結果類型
 

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 搜尋的 Microsoft Graph 連接器的概覽
-ms.openlocfilehash: 006ab3f56eb4976b44904e5191ae8fd256c8d5de
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: 2dec2d17479368bc6d85c0a5bd275461a4114800
+ms.sourcegitcommit: 02d4f91210d992da080fd39d5b60f8cf30d8f0b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59375765"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60238392"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -76,7 +76,6 @@ Microsoft 提供9個連接器和我們的生態系統合作夥伴已透過100以
 * [ServiceNow 知識](servicenow-knowledge-connector.md)
 * [ServiceNow 目錄 (預覽) ](servicenow-catalog-connector.md)
 
-
 [Microsoft Graph 連接器圖庫](https://www.microsoft.com/microsoft-search/connectors)包含每個連接器的簡短描述。 如果您已準備好將其中一個資料來源連線至您的租使用者，請務必閱讀套用至資料來源之 Microsoft 安裝連接器中的 [安裝程式概述](configure-connector.md) 及其他任何文章。
 
 ### <a name="microsoft-graph-connectors-by-our-partners"></a>由我們的合作夥伴提供的 Microsoft Graph 連接器
@@ -113,7 +112,7 @@ Microsoft 提供9個連接器和我們的生態系統合作夥伴已透過100以
 
 有許多方式可自訂及設定搜尋結果。 若要深入瞭解，請參閱下列文章：
 
-* [管理類別和結果類型](customize-search-page.md)
+* [管理縱向](manage-verticals.md) 和 [結果類型](manage-result-types.md)
 * [管理搜尋結果版面配置](customize-results-layout.md)
 * [管理結果叢集](result-cluster.md)
 * [管理自訂篩選](custom-filters.md)
